@@ -1,0 +1,283 @@
+#header {
+	background: $dark-blue;
+	padding: 12px 0 5px;
+	border-bottom: 1px solid $dark-blue;
+	position: relative;
+
+	.homepage & {
+		background-color: $white;
+		border-bottom-color: $gray-light;
+
+		.menu {
+			a {
+				color: $gray;
+
+				&:hover {
+					color: $orange;
+				}
+			}
+		}
+
+		.btn-white {
+			color: $gray-100;
+
+			&:hover {
+				background-color: $gray-100;
+				color: $white;
+			}
+		}
+
+		.nav-opener {
+			span,
+			&:before,
+			&:after {
+				background-color: $gray;
+			}
+		}
+
+		#nav {
+			@include media('<desktop') {
+				background-color: $white;
+			}
+		}
+
+		.lang-item {
+			&:hover {
+				& > a {
+					color: $orange;
+				}
+			}
+
+			a {
+				color: #2c2c2c;
+			}
+		}
+	}
+
+	.nav-holder {
+		@include media('<desktop') {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+
+	.container {
+
+		@include media('>=desktop') {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+		}
+	}
+}
+
+.nav-opener {
+	display: none;
+
+	@include media('<desktop') {
+		display: block;
+		width: 20px;
+		height: 20px;
+		overflow: hidden;
+		text-indent: -9999px;
+		position: relative;
+	}
+
+	&:after,
+	&:before,
+	span {
+		@include animate(all);
+
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 2px;
+		background-color: $white;
+	}
+
+	span {
+		top: 7px;
+	}
+
+	&:after {
+		top: 14px;
+	}
+
+	.nav-active & {
+		span {
+			opacity: 0;
+		}
+
+		&:after {
+			top: 7px;
+			transform: rotate(45deg);
+		}
+
+		&:before {
+			top: 7px;
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+#nav {
+	@include media('<desktop') {
+		@include animate(opacity visibility);
+		
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		top: calc(100% + 1px);
+		background-color: $dark-blue;
+		left: 0;
+		right: 0;
+		height: calc(100vh - 63px);
+		z-index: 5;
+	}
+
+	@include media('>=desktop') {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: calc(100% - 121px);
+		padding-left: 22px;
+	}
+
+	.nav-active & {
+		@include media('<desktop') {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+.menu {
+	@extend %listreset;
+
+	text-align: center;
+	padding: 20px 0 0;
+
+	@include media('>=desktop') {
+		padding: 0;
+		text-align: left;
+		max-width: 50%;
+		font-size: 15px;
+		font-weight: 500;
+	}
+
+	li {
+		margin-bottom: 20px;
+
+		@include media('>=desktop') {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 22px;
+			margin-bottom: 0;
+		}
+	}
+
+	a {
+		color: $white;
+
+		&:hover {
+			color: $orange;
+		}
+	}
+}
+
+.extra-nav {
+	text-align: center;
+
+	@include media('>=desktop') {
+		padding: 7px 0 0;
+		text-align: left;
+	}
+
+	.lang-item {
+		@include animate(color);
+
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		margin-bottom: 20px;
+
+		@include media('>=desktop') {
+			margin-bottom: 7px;
+			margin-right: 7px;
+		}
+
+		&:hover {
+
+			& > a {
+				color: $orange;
+			}
+
+			.drop {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+
+		& > a {
+			color: $white;
+			padding-right: 15px;
+			display: block;
+		}
+
+		i {
+			position: absolute;
+			right: 0;
+			top: 0;
+			font-size: 8px;
+			display: block;
+			line-height: 21px;
+		}
+
+		.drop {
+			@extend %listreset;
+			@include animate(opacity visibility);
+
+			position: absolute;
+			top: 100%;
+			left: -10px;
+			width: 50px;
+			background-color: $white;
+			opacity: 0;
+			visibility: hidden;
+			text-align: center;
+			box-shadow: 0 4px 9px rgba($black, 0.13);
+			z-index: 10;
+
+			a {
+				padding: 5px 0;
+				display: block;
+			}
+		}
+	}
+
+	.btn-holder {
+		@include media('>=desktop') {
+			display: inline-block;
+			vertical-align: middle;
+			max-width: 90%;
+		}
+	}
+
+	.btn {
+		margin-left: 8px;
+		font-size: 15px;
+		margin-bottom: 7px;
+
+		&.btn-white {
+			color: $dark-blue;
+
+			&:hover {
+				background-color: $dark-blue;
+				color: $white;
+			}
+		}
+	}
+}
