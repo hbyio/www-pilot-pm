@@ -34,3 +34,16 @@ $media-expressions: (
 @import 'layout/common';
 @import 'layout/header';
 @import 'layout/footer';
+
+.page-enter-active, .page-leave-active {
+transition: opacity .3s;
+}
+.page-enter, .page-leave-to {
+opacity: 0;
+}
+
+@import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/elements/button.sass";
+@import "bulma/sass/components/navbar.sass";
+// @import "bulma/sass/components/dropdown.sass";
+

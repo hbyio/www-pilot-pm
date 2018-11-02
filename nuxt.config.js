@@ -15,13 +15,22 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    bodyAttrs: {
+      class: 'homepage'
+    },
+    htmlAttrs:{
+      class: 'has-navbar-fixed-top'
+    }
   },
 
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#000' },
+ loading: {
+    color: 'blue',
+    height: '3px'
+  },
 
   /*
   ** Global CSS
@@ -45,7 +54,39 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
     // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    // '@nuxtjs/bulma'
+    //'@nuxtjs/bulma',
+    ['nuxt-i18n', {
+      locales: [
+        {
+          code: 'en',
+          name: 'English',
+          iso: 'en-US',
+        },
+        {
+          code: 'fr',
+          name: 'Français',
+          iso: 'fr-FR',
+        }
+      ],
+      defaultLocale: 'en',
+      vueI18nLoader: true,
+      baseUrl: 'https://www.pilot.pm',
+      vueI18n: {
+        fallbackLocale: 'en',
+        messages: {
+          en: {
+            features: 'features',
+            prices:'prices',
+            resources:'resources'
+          },
+          fr: {
+            features: 'fonctionnalités',
+            prices:'tarifs',
+            resources:'ressources'
+          }
+        }
+      }
+    }],
   ],
   /*
   ** Axios module configuration

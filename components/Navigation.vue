@@ -1,42 +1,115 @@
 
 <template>
-    <header id="header">
-      <div class="container">
-        <div class="nav-holder">
-          <strong class="logo">
-            <nuxt-link to="/">
-              <img src="images/logo-01.svg" width="121" height="34" alt="LastEdit">
-            </nuxt-link>
-          </strong>
-          <a href="#" class="nav-opener"><span>Menu</span></a>
-        </div>
-        <nav id="nav">
-          <ul class="menu">
-            <li><a href="#">{{ $t('features') }}</a></li>
-            <li><a href="#">{{ $t('prices') }}</a></li>
-            <li><a href="#">clients</a></li>
-            <li><nuxt-link to="/resources">{{ $t('resources') }}</nuxt-link></li>
-          </ul>
-          <div class="extra-nav">
-            <div class="lang-item">
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <nuxt-link class="navbar-item" :to="localePath('index', $i18n.locale)">
+        <img src="/images/logo-01.svg" width="121" height="34" alt="LastEdit">
+      </nuxt-link>
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
 
-              <a href="#">{{ $i18n.locale }}<i class="icon-angle-down"></i></a>
-              <ul class="drop">
-                <li v-for="locale in $i18n.locales" :key="locale.code">
-                  <nuxt-link :to="switchLocalePath(locale.code)">
-                    {{ locale.name }}
-                  </nuxt-link>
-                </li>
-              </ul> 
-            </div>
-            <div class="btn-holder">
-              <a href="#" class="btn">Essai Gratuit</a>
-              <a href="#" class="btn btn-white">Login</a>
-            </div>
-          </div>
-        </nav>
+    <div id="navbarBasicExample" class="navbar-menu">
+
+      <div class="navbar-start">
+        <nuxt-link class="navbar-item" :to="localePath('resources', $i18n.locale)">{{ $t('features') }}</nuxt-link>
+        <nuxt-link class="navbar-item" :to="localePath('resources', $i18n.locale)">{{ $t('prices') }}</nuxt-link>
+        <nuxt-link class="navbar-item" :to="localePath('resources', $i18n.locale)">{{ $t('resources') }}</nuxt-link>
       </div>
-    </header>
+
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            {{ $i18n.locale }}
+          </a>
+
+          <div class="navbar-dropdown is-boxed">
+            <nuxt-link  class="navbar-item" 
+                        v-for="locale in $i18n.locales" 
+                        :key="locale.code" 
+                        :class="{'is-active': locale.code === $i18n.locale}"
+                        :to="switchLocalePath(locale.code)">
+              {{ locale.name }}
+            </nuxt-link>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-info" :class="{'is-medium is-fullwidth':isOpen}">
+              {{ $t('signup') }}
+            </a>
+            <a class="button is-outlined" :class="{'is-medium is-fullwidth':isOpen}">
+              {{ $t('login') }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
 </template>
 
+<script>
+export default {
+  name:'Navigation',
+  data: ()=>{
+    return {
+      isOpen:false
+    }
+  },
+  mounted() {
+      console.log(this)
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach( el => {
+          el.addEventListener('click', () => {
+
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+          this.isOpen = !this.isOpen
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+          });
+      });
+      }
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+@import "@/assets/scss/base/_variables.scss";
+
+.navbar {
+  border-bottom: 1px solid $gray-light;
+}
+.navbar-menu.is-active{
+  .navbar-start, .navbar-item, .navbar-end, .buttons, .navbar-dropdown{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .buttons{
+    padding: 0 1em;
+  }
+  .navbar-item{
+    padding: 1em 0;
+  }
+}
+
+.navbar-item{
+  text-transform: capitalize;
+}
+</style>
