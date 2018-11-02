@@ -1,3 +1,4 @@
+
 <template>
     <header id="header">
       <div class="container">
@@ -11,19 +12,22 @@
         </div>
         <nav id="nav">
           <ul class="menu">
-            <li><a href="#">Fonctionnalités</a></li>
-            <li><a href="#">Tarifs</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><nuxt-link to="/resources">Resources</nuxt-link></li>
+            <li><a href="#">{{ $t('features') }}</a></li>
+            <li><a href="#">{{ $t('prices') }}</a></li>
+            <li><a href="#">clients</a></li>
+            <li><nuxt-link to="/resources">{{ $t('resources') }}</nuxt-link></li>
           </ul>
           <div class="extra-nav">
             <div class="lang-item">
-              <a href="#">FR <i class="icon-angle-down"></i></a>
+
+              <a href="#">{{ $i18n.locale }}<i class="icon-angle-down"></i></a>
               <ul class="drop">
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-              </ul>
+                <li v-for="locale in $i18n.locales" :key="locale.code">
+                  <nuxt-link :to="switchLocalePath(locale.code)">
+                    {{ locale.name }}
+                  </nuxt-link>
+                </li>
+              </ul> 
             </div>
             <div class="btn-holder">
               <a href="#" class="btn">Essai Gratuit</a>
@@ -34,3 +38,5 @@
       </div>
     </header>
 </template>
+
+
