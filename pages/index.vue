@@ -50,7 +50,7 @@
     <section class="functionality-section">
       <div class="container">
         <h1>Fonctionnalités</h1>
-        <span class="subtitle">The Basics Of Buying A Telescope</span>
+        <!-- <span class="subtitle">--</span> -->
       </div>
       <div class="relative-holder">
         <div class="container">

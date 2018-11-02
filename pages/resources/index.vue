@@ -3,7 +3,7 @@
         <section class="intro-section ressources-page">
             <div class="container">
                 <div class="text-holder">
-                    <h1>Ressources</h1>
+                    <h1 class="capitalize">{{ $t('resources') }}</h1>
                     <p>Pour vraiment pouvoir découvrir plus facilement et le plus simplement possible l’application nous avons disposé de nombreux guides interactifs au sein de l’interface.</p>
                 </div>
             </div>
