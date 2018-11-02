@@ -12,8 +12,9 @@ $light-blue: #0899ff;
 $dark-blue: #012640;
 $orange: #ff9808;
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,600,600i|Rubik:400,400i,500,500i,600,600i,700,700i');
+
 $roboto-font: 'Roboto', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
-$ibm-plex-font: 'IBM Plex Sans','Times New Roman', 'Times', 'Baskerville', 'Georgia', serif;
 $rubik-font: 'Rubik', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
 
 // This is the default html and body font-size for the base rem value.
@@ -53,7 +54,7 @@ $h4-font-size: 22px;
 $h5-font-size: 17px !default;
 $h6-font-size: 15px !default;
 
-$headings-font-family: $ibm-plex-font;
+$headings-font-family: $rubik-font;
 $headings-color: inherit !default;
 
 

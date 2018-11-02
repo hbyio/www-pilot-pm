@@ -118,7 +118,7 @@ h4 {
 	@extend %listreset;
 
 	color: #4f5a62;
-	font-family: $ibm-plex-font;
+	font-family: $roboto-font;
 	text-align: left;
 
 	li {
@@ -319,7 +319,7 @@ h4 {
 		white-space: nowrap;
 		width: 100%;
 		text-transform: uppercase;
-		font: 600 12px $ibm-plex-font;
+		font: 600 12px $roboto-font;
 
 		@include media('>=tablet') {
 			font-size: 14px;
@@ -596,7 +596,7 @@ h4 {
 	}
 
 	.btn {
-		font: 600 14px $ibm-plex-font;
+		font: 600 14px $roboto-font;
 		text-transform: uppercase;
 		padding: 15px 19px;
 		min-width: 168px;
@@ -728,7 +728,7 @@ h4 {
 		}
 
 		.text-holder {
-			font: 500 14px $ibm-plex-font;
+			font: 500 14px $roboto-font;
 			color: rgba(92, 115, 131, 0.54);
 			text-align: left;
 
@@ -934,7 +934,7 @@ h4 {
 		.info-list {
 			@extend %listreset;
 
-			font: 500 15px $ibm-plex-font;
+			font: 500 15px $roboto-font;
 			border-top: 1px solid #f2efef;
 			margin-bottom: 17px;
 
