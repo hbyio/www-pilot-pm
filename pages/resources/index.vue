@@ -12,7 +12,7 @@
             <div class="container">
                 <div class="row card-holder">
                     <div class="card">
-                        <div class="card-heading dark-blue-overlay" style="background-image: url(images/img-overlay-1.png)">
+                        <div class="card-heading dark-blue-overlay" style="background-image: url(/images/img-overlay-1.png)">
                             <div class="heading-text">
                                 <i class="icon icon-letter"></i>
                                 <h6>Les contenus</h6>
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-heading purple-overlay" style="background-image: url(images/img-overlay-2.png)">
+                        <div class="card-heading purple-overlay" style="background-image: url(/images/img-overlay-2.png)">
                             <div class="heading-text">
                                 <i class="icon icon-folder-2"></i>
                                 <h6>Les projets</h6>
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-heading blue-overlay" style="background-image: url(images/img-overlay-3.png)">
+                        <div class="card-heading blue-overlay" style="background-image: url(/images/img-overlay-3.png)">
                             <div class="heading-text">
                                 <i class="icon icon-radio"></i>
                                 <h6>Les canaux</h6>
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-heading green-overlay" style="background-image: url(images/img-overlay-4.png)">
+                        <div class="card-heading green-overlay" style="background-image: url(/images/img-overlay-4.png)">
                             <div class="heading-text">
                                 <i class="icon icon-ask"></i>
                                 <h6>Questions Fréquentes</h6>
@@ -72,7 +72,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-heading brown-overlay" style="background-image: url(images/img-overlay-5.png)">
+                        <div class="card-heading brown-overlay" style="background-image: url(/images/img-overlay-5.png)">
                             <div class="heading-text">
                                 <i class="icon icon-book"></i>
                                 <h6>Les guides dans l’application</h6>
@@ -108,7 +108,7 @@
                 <div class="row">
                     <div class="col">
                         <div class="text-holder">
-                            <div class="img-holder" style="background-image: url(images/image-08.jpg)">
+                            <div class="img-holder" style="background-image: url(/images/image-08.jpg)">
                             </div>
                             <h6>Using Banner Stands To Increase Trade Show Traffic.</h6>
                             <p>A thought experiment on how we measure risk when the fate of the world hangs in the balance</p>
@@ -117,7 +117,7 @@
                     </div>
                     <div class="col">
                         <div class="text-holder">
-                            <div class="img-holder" style="background-image: url(images/image-09.jpg)">
+                            <div class="img-holder" style="background-image: url(/images/image-09.jpg)">
                             </div>
                             <h6>Using Banner Stands To Increase Trade Show Traffic.</h6>
                             <p>A thought experiment on how we measure risk when the fate of the world hangs in the balance</p>
@@ -126,7 +126,7 @@
                     </div>
                     <div class="col">
                         <div class="text-holder">
-                            <div class="img-holder" style="background-image: url(images/image-10.jpg)">
+                            <div class="img-holder" style="background-image: url(/images/image-10.jpg)">
                             </div>
                             <h6>Using Banner Stands To Increase Trade Show Traffic.</h6>
                             <p>A thought experiment on how we measure risk when the fate of the world hangs in the balance</p>
@@ -143,10 +143,8 @@ export default {
  mounted () {
    this.$nextTick(() => {
      this.$nuxt.$loading.start()
-
-     setTimeout(() => this.$nuxt.$loading.finish(), 500)
+     setTimeout(() => this.$nuxt.$loading.finish(), 200)
    })
  }
 }
-
 </script>

@@ -17,29 +17,29 @@
             </div>
           </form>
           <p>30 jours gratuits - pas de CB demandée</p>
-          <img src="images/image-01.png" alt="image description">
+          <img src="/images/image-01.png" alt="image description">
           <ul class="tag-block">
             <li>
               <div class="img-holder">
-                <img src="images/icon-03.svg" width="37" height="44" alt="image description">
+                <img src="/images/icon-03.svg" width="37" height="44" alt="image description">
               </div>
               <strong class="title">Planning</strong>
             </li>
             <li>
               <div class="img-holder">
-                <img src="images/icon-02.svg" width="50" height="55" alt="image description">
+                <img src="/images/icon-02.svg" width="50" height="55" alt="image description">
               </div>
               <strong class="title">Tâches</strong>
             </li>
             <li>
               <div class="img-holder">
-                <img src="images/icon-01.svg" width="54" height="54" alt="image description">
+                <img src="/images/icon-01.svg" width="54" height="54" alt="image description">
               </div>
               <strong class="title">Calendrier</strong>
             </li>
             <li>
               <div class="img-holder">
-                <img src="images/icon-04.svg" width="68" height="52" alt="image description">
+                <img src="/images/icon-04.svg" width="68" height="52" alt="image description">
               </div>
               <strong class="title">Versioning</strong>
             </li>
@@ -65,7 +65,7 @@
               <p>Annoter vos documents précisément et engagez des conversations sans perdre de temps. Les membres de l’équipe seront notifiés avec un lien les menant directement vers le document et l’annotation.</p>
             </div>
             <div class="col">
-              <img src="images/image-02.png" alt="image description">
+              <img src="/images/image-02.png" alt="image description">
             </div>
           </div>
           <div class="row">
@@ -79,7 +79,7 @@
               <p>Définissez vos statuts de workflow et attribuez les à vos contenus au fil du process de production. Grâce aux filtres avancés filtrez la liste en fonction des statuts qui vous concernent.</p>
             </div>
             <div class="col">
-              <img src="images/image-03.png" alt="image description">
+              <img src="/images/image-03.png" alt="image description">
             </div>
           </div>
           <div class="row reverse">
@@ -93,7 +93,7 @@
               <p>Affectez des tâches à vos contenus, pour vous même ou d’autres membres de l’équipe et retrouvez dans un calendrier unique toutes les dates limites de livraison à l’imprimeur</p>
             </div>
             <div class="col">
-              <img src="images/image-04.png" alt="image description">
+              <img src="/images/image-04.png" alt="image description">
             </div>
           </div>
           <div class="row">
@@ -107,7 +107,7 @@
               <p>Organisez vos contenus en projets, assignez des responsables, des ordres de priorité. Notez en un seul endroit tous les éléments importants comme le brief, joignez des press kit ou des vidéos haute définition, autant d’éléments pouvant servir aux personnes en charge de la production</p>
             </div>
             <div class="col">
-              <img src="images/image-05.png" alt="image description">
+              <img src="/images/image-05.png" alt="image description">
             </div>
           </div>
           <div class="row reverse">
@@ -121,7 +121,7 @@
               <p>Créez facilement des plannings éditoriaux ou de tâches, sauvegardez, partagez des calendriers personnalisés avec vos clients. Changez votre programmation de publication simplement par drag&drop</p>
             </div>
             <div class="col">
-              <img src="images/image-06.png" alt="image description">
+              <img src="/images/image-06.png" alt="image description">
             </div>
           </div>
           <div class="row">
@@ -136,7 +136,7 @@
               <a href="#" class="btn">DÉTAILS <i class="icon-arrow-right"></i></a>
             </div>
             <div class="col">
-              <img src="images/image-07.png" alt="image description">
+              <img src="/images/image-07.png" alt="image description">
             </div>
           </div>
         </div>
@@ -147,11 +147,11 @@
         <h1>Faites comme eux</h1>
         <span class="subtitle">Débutez votre période d’essai dès maintenant</span>
         <ul class="logo-list">
-          <li><img src="images/logo-02.png" width="160" height="73" class="grayscale" alt="Harmonie mutuelle"></li>
-          <li><img src="images/logo-03.png" width="133" height="36" class="grayscale" alt="VINCI construction"></li>
-          <li><img src="images/logo-04.png" width="150" height="53" class="grayscale" alt="BANQUE POPULAIRE MEDITERRANEE"></li>
-          <li><img src="images/logo-05.png" width="80" height="74" class="grayscale" alt="SUEZ"></li>
-          <li><img src="images/logo-06.png" width="146" height="33" class="grayscale" alt="EDHEC business school"></li>
+          <li><img src="/images/logo-02.png" width="160" height="73" class="grayscale" alt="Harmonie mutuelle"></li>
+          <li><img src="/images/logo-03.png" width="133" height="36" class="grayscale" alt="VINCI construction"></li>
+          <li><img src="/images/logo-04.png" width="150" height="53" class="grayscale" alt="BANQUE POPULAIRE MEDITERRANEE"></li>
+          <li><img src="/images/logo-05.png" width="80" height="74" class="grayscale" alt="SUEZ"></li>
+          <li><img src="/images/logo-06.png" width="146" height="33" class="grayscale" alt="EDHEC business school"></li>
         </ul>
       </div>
     </section>

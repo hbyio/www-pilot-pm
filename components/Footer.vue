@@ -47,7 +47,7 @@
         <div class="contact-holder">
           <div class="info-block">
             <strong class="logo">
-              <a href="#"><img src="images/logo.svg" alt="LastEdit"></a>
+              <a href="#"><img src="/images/logo.svg" alt="LastEdit"></a>
             </strong>
             <ul class="social-networks">
               <li><a href="#"><i class="icon icon-twitter"></i>@lastedit</a></li>
