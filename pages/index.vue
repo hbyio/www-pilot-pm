@@ -47,7 +47,7 @@
         </div>
       </div>
     </section>
-    <section class="functionality-section">
+    <section id="functionality-section" class="functionality-section">
       <div class="container">
         <h1>Fonctionnalités</h1>
         <span class="subtitle">--</span>

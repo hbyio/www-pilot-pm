@@ -16,8 +16,8 @@
     <div id="navbarBasicExample" class="navbar-menu">
 
       <div class="navbar-start">
-        <nuxt-link class="navbar-item is-tab" :to="localePath('index', $i18n.locale)" v-scroll-to="'.functionality-section'">{{ $t('features') }}</nuxt-link>
-        <nuxt-link class="navbar-item is-tab" :to="localePath('index', $i18n.locale)" v-scroll-to="'.prices-section'">{{ $t('prices') }}</nuxt-link>
+        <nuxt-link class="navbar-item is-tab" to="/#functionality-section">{{ $t('features') }}</nuxt-link>
+        <nuxt-link class="navbar-item is-tab" to="/#prices-section">{{ $t('prices') }}</nuxt-link>
         <nuxt-link class="navbar-item is-tab" :to="localePath('resources', $i18n.locale)">{{ $t('resources') }}</nuxt-link>
       </div>
 
