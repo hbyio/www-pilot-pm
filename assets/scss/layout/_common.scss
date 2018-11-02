@@ -382,7 +382,7 @@ h4 {
 			right: -210px;
 			width: 930px;
 			height: 500px;
-			background: url(../images/pattern-1.png) no-repeat;
+			background: url(~static/images/pattern-1.png) no-repeat;
 			z-index: -1;
 
 			@include media('>=tablet') {
@@ -474,7 +474,7 @@ h4 {
 			left: -28%;
 			width: 100%;
 			height: 100%;
-			background: url(../images/oval-1.svg) top right no-repeat;
+			background: url(~static/images/oval-1.svg) top right no-repeat;
 			z-index: -1;
 		}
 	}
@@ -668,7 +668,7 @@ h4 {
 		left: 0;
 		width: 60%;
 		height: 500px;
-		background: url(../images/oval-2.svg) top right no-repeat;
+		background: url(~static/images/oval-2.svg) top right no-repeat;
 		z-index: -1;
 	}
 
@@ -812,7 +812,7 @@ h4 {
 		left: -54%;
 		right: -41%;
 		height: 611px;
-		background: url(../images/pattern-2.svg) center/cover no-repeat;
+		background: url('~static/images/pattern-2.svg') center/cover no-repeat;
 		z-index: -1;
 
 		@include media('>=1600px') {

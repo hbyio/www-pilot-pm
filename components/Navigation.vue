@@ -1,0 +1,36 @@
+<template>
+    <header id="header">
+      <div class="container">
+        <div class="nav-holder">
+          <strong class="logo">
+            <nuxt-link to="/">
+              <img src="images/logo-01.svg" width="121" height="34" alt="LastEdit">
+            </nuxt-link>
+          </strong>
+          <a href="#" class="nav-opener"><span>Menu</span></a>
+        </div>
+        <nav id="nav">
+          <ul class="menu">
+            <li><a href="#">Fonctionnalités</a></li>
+            <li><a href="#">Tarifs</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><nuxt-link to="/resources">Resources</nuxt-link></li>
+          </ul>
+          <div class="extra-nav">
+            <div class="lang-item">
+              <a href="#">FR <i class="icon-angle-down"></i></a>
+              <ul class="drop">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+              </ul>
+            </div>
+            <div class="btn-holder">
+              <a href="#" class="btn">Essai Gratuit</a>
+              <a href="#" class="btn btn-white">Login</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+</template>
