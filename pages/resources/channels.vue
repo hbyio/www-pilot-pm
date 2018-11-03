@@ -19,10 +19,10 @@ export default {
   },
   computed: {
     title() {
-      return this.txt.fr.matter.data.title;
+      return this.txt[this.$i18n.locale].matter.data.title;
     },
     body() {
-      return this.txt.fr.content;
+      return this.txt[this.$i18n.locale].content;
     }
   },
   created() {

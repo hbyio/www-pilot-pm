@@ -1,6 +1,6 @@
 ---
 date: 2018-01-27
-title: Les canaux
+title: Channels
 author: mb
 slug: channels
 menu: docs
