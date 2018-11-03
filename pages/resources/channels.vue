@@ -1,7 +1,7 @@
 <template>
 <div>
   <h1>{{ title }}</h1>
-  <p v-html="body" />>
+  <p v-html="body" />
 </div>
 </template>
 
@@ -14,25 +14,34 @@ import MarkdownIt from "markdown-it";
 export default {
   data: () => {
     return {
-      txt: {}
+      document: {
+        matter: null,
+        content: null
+      },
+      cont: null
     };
   },
   computed: {
     title() {
-      return this.txt[this.$i18n.locale].matter.data.title;
+      return this.document.data.title;
     },
     body() {
-      return this.txt[this.$i18n.locale].content;
+      var md = new MarkdownIt();
+      return md.render(this.document.content);
     }
   },
-  created() {
-    var md = new MarkdownIt();
-    this.txt.fr = {};
-    this.txt.en = {};
-    this.txt.fr.matter = matter(versionfr);
-    this.txt.fr.content = md.render(matter(versionfr).content);
-    this.txt.en.matter = matter(versionen);
-    this.txt.en.content = md.render(matter(versionen).content);
+  asyncData(context) {
+    console.log(context.app);
+    let locale = context.app.i18n.locale;
+    // This line could be delete if all filename were hamronized : myfile.fr.md and myfile.en.md
+    let urlPiece = locale === "fr" ? "" : "." + locale;
+    let url = `/content/resources/channels${urlPiece}.md`;
+    return context.app.$axios
+      .get(url)
+      .then(resp => {
+        return { document: matter(resp.data) };
+      })
+      .catch(err => console.log(err));
   }
 };
 </script>
