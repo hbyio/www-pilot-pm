@@ -1,16 +1,18 @@
-+++
-date        = "2018-01-27"
-title       = "Channels"
-author      = "mb"
-slug        = "channels"
-menu        = "docs"
-weight      = 4
-draft       = false
-illustration = "channels.png"
-+++
+---
+date: 2018-01-27
+title: Les canaux
+author: mb
+slug: channels
+menu: docs
+weight: 4
+draft: false
+illustration: channels.png
+---
 
 For Pilot a channel represents a space where to broadcast content.
+
 <!--more-->
+
 Examples :
 
 - One or more Twitter / Facebook / Linkedin accounts etc....
@@ -22,7 +24,7 @@ Examples :
 - An institutional site (and/or its subset: HR, news, ..)
 - ..
 
-Each channel has one or more publication managers (webmaster, community manager, printer, etc.). 
+Each channel has one or more publication managers (webmaster, community manager, printer, etc.).
 
 Pilot is not a publishing and formatting tool like InDesign or Hootsuite can be. We only manage the production, validation of the raw content. It is up to the channel managers to publish these materials from validated sources.
 

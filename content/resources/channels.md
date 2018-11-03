@@ -1,16 +1,18 @@
-+++
-date        = "2018-01-27"
-title       = "Les canaux"
-author      = "mb"
-slug        = "channels"
-menu        = "docs"
-weight      = 4
-draft       = false
-illustration = "channels.png"
-+++
+---
+date: 2018-01-27
+title: Les canaux
+author: mb
+slug: channels
+menu: docs
+weight: 4
+draft: false
+illustration: channels.png
+---
 
 Pour Pilot un canal représente un espace où diffuser un contenu.
+
 <!--more-->
+
 Exemples :
 
 - Un ou plusieurs comptes Twitter / Facebook / Linkedin etc ..
@@ -22,7 +24,7 @@ Exemples :
 - Un site institutionnel (et/ou ses sous-ensemble : RH, actualités, ..)
 - ..
 
-Chaque canal a un ou plusieurs responsables en charge de la publication (webmaster, community manager, imprimeur, ..). 
+Chaque canal a un ou plusieurs responsables en charge de la publication (webmaster, community manager, imprimeur, ..).
 
 Pilot n'est pas un outil de publication et de mise en forme comme peuvent l'être InDesign ou Hootsuite. Nous gérons uniquement la production, validation du contenu brut. A charge aux responsables des canaux de publier ces matériels à partir des sources validées.
 
