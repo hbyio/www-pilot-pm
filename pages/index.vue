@@ -188,7 +188,7 @@
         </div>
       </div>
     </section>
-    <section class="prices-section">
+    <section id="prices-section" class="prices-section">
       <div class="container">
         <h1>Nos tarifs</h1>
         <span class="subtitle">Débutez votre période d’essai dès maintenant</span>
@@ -272,13 +272,12 @@
 </template>
 <script>
 export default {
- mounted () {
-   this.$nextTick(() => {
-     this.$nuxt.$loading.start()
+  mounted() {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start();
 
-     setTimeout(() => this.$nuxt.$loading.finish(), 200)
-   })
- }
-}
-
+      setTimeout(() => this.$nuxt.$loading.finish(), 200);
+    });
+  }
+};
 </script>
