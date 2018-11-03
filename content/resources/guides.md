@@ -1,16 +1,12 @@
-+++
-date        = "2018-01-27"
-title       = "Les guides dans l'application"
-slug        = "guides"
-menu        = "docs"
-weight      = 100
-draft       = false
-illustration = "trackedtime.png"
-+++
-
-
-
-<!--more-->
+---
+date: 2018-01-27
+title: Les guides au sein de l'application
+slug: guides
+menu: docs
+weight: 100
+draft: false
+illustration: trackedtime.png
+---
 
 ## Tous les guides
 
@@ -25,4 +21,3 @@ Certains guides sont aussi placés directement dans leur contexte d'interface co
 ![menu guides en contexte](/img/screenshots/guide_in_place.png)
 
 Ces guides sont fréquemment mis à jour et suivent l'évolution de la plateforme. Ils vous permettent d'avoir accès à l'information pertinente au moment où vous en avez besoin sans être obligé de revenir vers cette documentation
-

@@ -1,22 +1,18 @@
-+++
-date        = "2018-01-27"
-title       = "Application tour guides"
-slug        = "guides"
-menu        = "docs"
-weight      = 100
-draft       = false
-illustration = "trackedtime.png"
-+++
-
-
-
-<!--more-->
+---
+date: 2018-01-27
+title: Application tour guides
+slug: guides
+menu: docs
+weight: 100
+draft: false
+illustration: trackedtime.png
+---
 
 ## All guides
 
 They are available in your user menu
 
-![menu guides](/img/screenshots/guides.png)
+![menu guides](/images/screenshots/guides.png)
 
 ## Guides in context
 
@@ -25,4 +21,3 @@ Some guides are also placed directly in their interface context as in the exampl
 ![menu guides en contexte](/img/screenshots/guide_in_place.png)
 
 These guides are frequently updated and follow the evolution of the platform. They allow you to access relevant information when you need it without having to go back to that documentation
-
