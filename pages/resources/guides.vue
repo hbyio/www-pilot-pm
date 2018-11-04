@@ -7,8 +7,8 @@
 
 <script>
 import DetailLayout from './_DetailLayout.vue'
-import versionfr from "@/content/resources/channels.md";
-import versionen from "@/content/resources/channels.en.md";
+import versionfr from "@/content/resources/guides.md";
+import versionen from "@/content/resources/guides.en.md";
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
 

@@ -36,7 +36,7 @@ $media-expressions: (
 @import 'layout/footer';
 
 .page-enter-active, .page-leave-active {
-transition: opacity .3s;
+transition: opacity 0.5s;
 }
 .page-enter, .page-leave-to {
 opacity: 0;
