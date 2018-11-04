@@ -23,7 +23,12 @@
                         </div>
                         <div class="card-footer">
                             <a href="#" class="ressources-link">13 ressources</a>
-                            <a href="#" class="btn btn-lg">View</a>
+                            <nuxt-link 
+                              :to="localePath({name: 'resources-slug', params: { slug:'items' } },$i18n.locale)"
+                              class="button is-info is-medium is-fullwidth" 
+                            >
+                              {{ $t('view') }}
+                            </nuxt-link>
                         </div>
                     </div>
                     <div class="card">
@@ -38,7 +43,12 @@
                         </div>
                         <div class="card-footer">
                             <a href="#" class="ressources-link">13 ressources</a>
-                            <a href="#" class="btn btn-lg">View</a>
+                            <nuxt-link 
+                              :to="localePath({name: 'resources-slug', params: { slug:'projects' } },$i18n.locale)"
+                              class="button is-info is-medium is-fullwidth" 
+                            >
+                              {{ $t('view') }}
+                            </nuxt-link>
                         </div>
                     </div>
                     <div class="card">
@@ -55,7 +65,7 @@
                             <a href="#" class="ressources-link">13 ressources</a>
                         
                             <nuxt-link 
-                              :to="localePath({name:'resources-channels'},$i18n.locale)"
+                              :to="localePath({name: 'resources-channels' },$i18n.locale)"
                               class="button is-info is-medium is-fullwidth" 
                             >
                               {{ $t('view') }}
@@ -74,7 +84,12 @@
                         </div>
                         <div class="card-footer">
                             <a href="#" class="ressources-link">13 ressources</a>
-                            <a href="#" class="btn btn-lg">View</a>
+                            <nuxt-link 
+                              :to="localePath({name: 'resources-slug', params: { slug:'faq' } },$i18n.locale)"
+                              class="button is-info is-medium is-fullwidth" 
+                            >
+                              {{ $t('view') }}
+                            </nuxt-link>
                         </div>
                     </div>
                     <div class="card">
@@ -90,7 +105,7 @@
                         <div class="card-footer">
                             <a href="#" class="ressources-link">13 ressources</a>
                             <nuxt-link 
-                              :to="localePath({name:'resources-guides'},$i18n.locale)"
+                              :to="localePath({name: 'resources-slug', params: { slug:'guides' } },$i18n.locale)"
                               class="button is-info is-medium is-fullwidth" 
                             >
                               {{ $t('view') }}

@@ -30,18 +30,16 @@ export default {
       return md.render(this.document.content);
     }
   },
-  asyncData(context) {
-    console.log(context.app);
+  async asyncData(context) {
+    //console.log(context.app);
     let locale = context.app.i18n.locale;
     // This line could be delete if all filename were hamronized : myfile.fr.md and myfile.en.md
-    let urlPiece = locale === "fr" ? "" : "." + locale;
-    let url = `/content/resources/channels${urlPiece}.md`;
-    return context.app.$axios
-      .get(url)
-      .then(resp => {
-        return { document: matter(resp.data) };
-      })
-      .catch(err => console.log(err));
+
+    if (locale === "fr") {
+      return { document: matter(versionfr) };
+    } else {
+      return { document: matter(versionen) };
+    }
   }
 };
 </script>
