@@ -1,17 +1,14 @@
 <template>
-<DetailLayout>
-  <h1 slot="title">{{ title }}</h1>
-  <p v-html="body" slot="body" />
-</DetailLayout>
+  <DetailLayout>
+      <h1 slot="title">{{ title }}</h1>
+      <p slot="body" v-html="body"></p>
+  </DetailLayout>
 </template>
 
 <script>
 import DetailLayout from './_DetailLayout.vue'
-import versionfr from "@/content/resources/channels.md";
-import versionen from "@/content/resources/channels.en.md";
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
-
 
 export default {
   components:{
@@ -19,10 +16,7 @@ export default {
   },
   data: () => {
     return {
-      document: {
-        matter: null,
-        content: null
-      },
+      document: {},
       cont: null
     };
   },
@@ -35,12 +29,18 @@ export default {
       return md.render(this.document.content);
     }
   },
-  async asyncData(context) {
+  async asyncData (context) {
+    const versionfr = await import(`@/content/resources/${context.params.slug}.md`)
+    const versionen = await import(`@/content/resources/${context.params.slug}.en.md`)
+    // console.log(versionfr.default)
+    
     let locale = context.app.i18n.locale;
     if (locale === "fr") {
-      return { document: matter(versionfr) };
+      console.log("fr mode")
+      return { document: matter(versionfr.default) };
     } else {
-      return { document: matter(versionen) };
+      console.log("en mode")
+      return { document: matter(versionen.default) };
     }
   }
 };

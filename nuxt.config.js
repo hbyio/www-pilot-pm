@@ -1,6 +1,7 @@
 const pkg = require("./package");
 
 module.exports = {
+  mode: 'universal',
   /*
   ** Headers of the page
   */
@@ -137,6 +138,7 @@ module.exports = {
           }
         ],
         defaultLocale: "en",
+        parsePages: false,
         vueI18nLoader: true,
         baseUrl: "https://www.pilot.pm",
         vueI18n: {
@@ -185,7 +187,7 @@ module.exports = {
     */
     extend(config, ctx) {
       // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
+      if (ctx.isClient) {
         config.module.rules.push({
           enforce: "pre",
           test: /\.(js)$/,
