@@ -149,14 +149,16 @@ module.exports = {
               prices: "prices",
               resources: "resources",
               signup: "Signup",
-              login: "Login"
+              login: "Login",
+              view:"see"
             },
             fr: {
               features: "fonctionnalités",
               prices: "tarifs",
               resources: "ressources",
               signup: "Essai gratuit",
-              login: "Se connecter"
+              login: "Se connecter",
+              view:"voir"
             }
           }
         }

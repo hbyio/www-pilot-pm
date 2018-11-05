@@ -33,14 +33,11 @@ export default {
     const versionfr = await import(`@/content/resources/${context.params.slug}.md`)
     const versionen = await import(`@/content/resources/${context.params.slug}.en.md`)
     // console.log(versionfr.default)
-    
     let locale = context.app.i18n.locale;
     if (locale === "fr") {
-      console.log("fr mode")
-      return { document: matter(versionfr.default) };
+      return { document: matter(versionfr) };
     } else {
-      console.log("en mode")
-      return { document: matter(versionen.default) };
+      return { document: matter(versionen) };
     }
   }
 };
