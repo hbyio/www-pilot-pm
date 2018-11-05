@@ -4,13 +4,14 @@
 	border-bottom: 1px solid $dark-blue;
 	position: relative;
 
-	.homepage & {
+	&.header {
 		background-color: $white;
 		border-bottom-color: $gray-light;
 
 		.menu {
 			a {
 				color: $gray;
+				text-decoration: none;
 
 				&:hover {
 					color: $orange;
@@ -50,8 +51,15 @@
 
 			a {
 				color: #2c2c2c;
+				text-decoration: none;
 			}
 		}
+	}
+
+	&.header-transparent {
+		background: transparent;
+		z-index: 99;
+		border: none;
 	}
 
 	.nav-holder {
@@ -181,6 +189,7 @@
 
 	a {
 		color: $white;
+		text-decoration: none;
 
 		&:hover {
 			color: $orange;
@@ -225,6 +234,7 @@
 			color: $white;
 			padding-right: 15px;
 			display: block;
+			text-decoration: none;
 		}
 
 		i {
@@ -247,16 +257,14 @@
 			background-color: $white;
 			opacity: 0;
 			visibility: hidden;
-	
+			text-align: center;
 			box-shadow: 0 4px 9px rgba($black, 0.13);
 			z-index: 10;
-			padding: 1em;
-			display: flex;
-			flex-direction: column;
 
 			a {
 				padding: 5px 0;
-				
+				display: block;
+				text-decoration: none;
 			}
 		}
 	}
@@ -273,6 +281,7 @@
 		margin-left: 8px;
 		font-size: 15px;
 		margin-bottom: 7px;
+		text-decoration: none;
 
 		&.btn-white {
 			color: $dark-blue;

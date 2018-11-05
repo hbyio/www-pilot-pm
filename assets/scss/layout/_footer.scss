@@ -9,6 +9,10 @@
 		padding: 0 15px;
 	}
 
+	a {
+		text-decoration: none;
+	}
+
 	.row {
 		@include media ('>=phone') {
 			margin: 0 -15px;

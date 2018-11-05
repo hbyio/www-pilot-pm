@@ -13,9 +13,6 @@ module.exports = {
       { hid: "description", name: "description", content: pkg.description }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-    bodyAttrs: {
-      class: "homepage"
-    },
     htmlAttrs: {
       class: "has-navbar-fixed-top"
     }

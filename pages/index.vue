@@ -1,6 +1,6 @@
 <template>
   <main id="main">
-    <section class="intro-section">
+    <section class="intro-section homepage">
       <div class="container">
         <div class="text-holder">
           <h1>La plateforme de production de contenus <strong>pour les équipes.</strong></h1>
