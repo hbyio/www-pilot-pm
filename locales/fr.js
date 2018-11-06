@@ -1,11 +1,11 @@
 export default {
   annotations:"annotations",
   annotationsShort:"Annoter vos documents précisément et engagez des conversations sans perdre de temps. Les membres de l’équipe seront notifiés avec un lien les menant directement vers le document et l’annotation.", 
-  calendar:"calendrier",
-  calendars:"calendriers",
-  calendarsShort:"Créez facilement des plannings éditoriaux ou de tâches, sauvegardez, partagez des calendriers personnalisés avec vos clients. Changez votre programmation de publication simplement par drag&drop",
-  features: "fonctionnalités",
-  features:"Fonctionnalités",
+  calendars:{
+    sigular:"calendrier",
+    plural:"calendriers",
+    short:"Créez facilement des plannings éditoriaux ou de tâches, sauvegardez, partagez des calendriers personnalisés avec vos clients. Changez votre programmation de publication simplement par drag&drop"
+  },
   home: {
     catchphrase:"Gérez vos projets, tâches, versions de documents et planning éditoriaux.",
     createYourDesk:"Créer votre desk",
@@ -21,7 +21,7 @@ export default {
     doNotWait:"N’attendez plus",
     enterYourEmail:"Entrez votre email…",
     features:{
-      singular:"fonctioannlité",
+      singular:"fonctionnalité",
       plural:"fonctionnalités",
       none:"Pas de fonctionnalités avancées",
       advanced:"Fonctioannlités avancées"
@@ -52,18 +52,25 @@ export default {
     plural:"projets",
     singular:"projet",
     unlimited:"projets illimités",
+    short:"Organisez vos contenus en projets, assignez des responsables, des ordres de priorité. Notez en un seul endroit tous les éléments importants comme le brief, joignez des press kit ou des vidéos haute définition, autant d’éléments pouvant servir aux personnes en charge de la production",
   },
   resources: "ressources",
   signup: "Essai gratuit",
   storage:"stockage",
-  tasks:"tâches",
-  tasks:"tâches",
-  tasksShort:"Affectez des tâches à vos contenus, pour vous même ou d’autres membres de l’équipe et retrouvez dans un calendrier unique toutes les dates limites de livraison à l’imprimeur",
+  tasks:{
+    singular:"tâche",
+    plural:"tâches",
+    short:"Affectez des tâches à vos contenus, pour vous même ou d’autres membres de l’équipe et retrouvez dans un calendrier unique toutes les dates limites de livraison à l’imprimeur",
+  },
   user:"personne",
   versionning:"versionning",
-  versions:"versions",
-  versionsShort:"Nous conservons toutes les versions de tous les documents. Analysez rapidement les différences, restaurez d’anciennes versions ou découvrez qui a fait cette faute de conjuguaison et à quelle date.",
+  versions:{
+    plural:"versions",
+    short:"Nous conservons toutes les versions de tous les documents. Analysez rapidement les différences, restaurez d’anciennes versions ou découvrez qui a fait cette faute de conjuguaison et à quelle date.",
+  },
   view:"voir",
-  workflows:"workflows",
-  workflowsShort:"Définissez vos statuts de workflow et attribuez les à vos contenus au fil du process de production. Grâce aux filtres avancés filtrez la liste en fonction des statuts qui vous concernent.",
-}
+  workflows:{
+    plural:"workflows",
+    short:"Définissez vos statuts de workflow et attribuez les à vos contenus au fil du process de production. Grâce aux filtres avancés filtrez la liste en fonction des statuts qui vous concernent.",
+  },
+ }

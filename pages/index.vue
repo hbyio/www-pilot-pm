@@ -29,13 +29,13 @@
               <div class="img-holder">
                 <img src="/images/icon-02.svg" width="50" height="55" alt="image description">
               </div>
-              <strong class="title capitalize">{{ $t('tasks') }}</strong>
+              <strong class="title capitalize">{{ $t('tasks.plural') }}</strong>
             </li>
             <li>
               <div class="img-holder">
                 <img src="/images/icon-01.svg" width="54" height="54" alt="image description">
               </div>
-              <strong class="title capitalize">{{ $t('calendar') }}</strong>
+              <strong class="title capitalize">{{ $t('calendars.plural') }}</strong>
             </li>
             <li>
               <div class="img-holder">
@@ -49,7 +49,7 @@
     </section>
     <section id="functionality-section" class="functionality-section">
       <div class="container">
-        <h1 class="capitalize">{{ $t('features') }}</h1>
+        <h1 class="capitalize">{{ $t('home.features.plural') }}</h1>
         <span class="subtitle"></span>
       </div>
       <div class="relative-holder">
@@ -74,9 +74,9 @@
                 <div class="icon-holder green-holder">
                   <i class="icon-flag"></i>
                 </div>
-                <h2 class="capitalize">{{ $t('workflows') }}</h2>
+                <h2 class="capitalize">{{ $t('workflows.plural') }}</h2>
               </div>
-              <p>{{ $t('workflowsShort') }}</p>
+              <p>{{ $t('workflows.short') }}</p>
             </div>
             <div class="col">
               <img src="/images/image-03.png" alt="image description">
@@ -88,9 +88,9 @@
                 <div class="icon-holder yellow-holder">
                   <i class="icon-check-2"></i>
                 </div>
-                <h2 class="capitalize">{{ $t('tasks') }}</h2>
+                <h2 class="capitalize">{{ $t('tasks.plural') }}</h2>
               </div>
-              <p>{{ $t('tasksShort') }}</p>
+              <p>{{ $t('tasks.short') }}</p>
             </div>
             <div class="col">
               <img src="/images/image-04.png" alt="image description">
@@ -102,9 +102,9 @@
                 <div class="icon-holder purple-holder">
                   <i class="icon-folder-1"></i>
                 </div>
-                <h2>Projects</h2>
+                <h2>{{ $t('projects.plural') }}</h2>
               </div>
-              <p>Organisez vos contenus en projets, assignez des responsables, des ordres de priorité. Notez en un seul endroit tous les éléments importants comme le brief, joignez des press kit ou des vidéos haute définition, autant d’éléments pouvant servir aux personnes en charge de la production</p>
+              <p>{{ $t('projects.short') }}</p>
             </div>
             <div class="col">
               <img src="/images/image-05.png" alt="image description">
@@ -116,9 +116,9 @@
                 <div class="icon-holder pink-holder">
                   <i class="icon-plan"></i>
                 </div>
-                <h2 class="capitalize">{{ $t('calendars') }}</h2>
+                <h2 class="capitalize">{{ $t('calendars.plural') }}</h2>
               </div>
-              <p>{{ $t('calendarsShort') }}</p>
+              <p>{{ $t('calendars.short') }}</p>
             </div>
             <div class="col">
               <img src="/images/image-06.png" alt="image description">
@@ -130,9 +130,9 @@
                 <div class="icon-holder purple-holder">
                   <i class="icon-papers"></i>
                 </div>
-                <h2 class="capitalize">{{ $t('versions') }}</h2>
+                <h2 class="capitalize">{{ $t('versions.plural') }}</h2>
               </div>
-              <p>{{ $t('versionsShort') }}</p>
+              <p>{{ $t('versions.short') }}</p>
               <a href="#" class="btn">{{ $t('view') }} <i class="icon-arrow-right"></i></a>
             </div>
             <div class="col">
