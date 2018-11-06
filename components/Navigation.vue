@@ -34,7 +34,7 @@
             :to="localePath({name:'index', hash:'#prices-section'},$i18n.locale)"
             class="navbar-item" 
           >
-            {{ $t('prices') }}
+            {{ $t('ourPrices') }}
           </nuxt-link>
           <nuxt-link 
             :to="localePath({name:'resources'}, $i18n.locale)"

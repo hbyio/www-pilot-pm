@@ -4,7 +4,7 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <h5>GUIDES &amp; DOCUMENTATION</h5>
+              <h5>{{ $t('resources') }}</h5>
               <ul class="nav-list">
                 <li><a href="#">Les contenus</a></li>
                 <li><a href="#">Les projets</a></li>
@@ -14,7 +14,7 @@
               </ul>
             </div>
             <div class="col">
-              <h5>ÉTUDE DE CAS</h5>
+              <h5>{{ $t('useCases') }}</h5>
               <ul class="nav-list">
                 <li><a href="#">Organiser son workflow de contenus</a></li>
                 <li><a href="#">Refondre un site internet</a></li>
@@ -22,7 +22,7 @@
               </ul>
             </div>
             <div class="col">
-              <h5>SOCIÉTÉ</h5>
+              <h5>{{ $t('company') }}</h5>
               <ul class="nav-list">
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Mentions légales</a></li>
@@ -32,7 +32,7 @@
               </ul>
             </div>
             <div class="col">
-              <h5>NOTRE PRODUIT</h5>
+              <h5>{{ $t('product') }}</h5>
               <ul class="nav-list">
                 <li><a href="#">Les Fonctionnalités</a></li>
                 <li><a href="#">Nos Tarifs</a></li>
@@ -57,11 +57,11 @@
           <div class="form-block">
             <form action="#" class="subscribe-form">
               <div class="input-holder">
-                <input type="email" placeholder="S’inscrire à la newsletter">
+                <input type="email" :placeholder="$t('leaveYourEmail')">
                 <i class="icon-mail"></i>
               </div>
               <div class="submit-holder">
-                <button type="submit" class="btn">S’inscrire</button>
+                <button type="submit" class="btn">{{ $t('newsletterSignUp') }}</button>
               </div>
             </form>
           </div>
@@ -69,3 +69,25 @@
       </div>
     </footer>
 </template>
+<vue-i18n>
+  :,
+</vue-i18n>
+
+<i18n>
+{
+  "en": {
+    "company": "Company",
+    "leaveYourEmail": "Subscribe to the newsletter",
+    "newsletterSignUp": "Subscribe",
+    "product": "Product",
+    "useCases": "Case studies"
+  },
+  "fr": {
+    "company":"Société",
+    "leaveYourEmail": "S’inscrire à la newsletter",
+    "newsletterSignUp":"S'incrire",
+    "product":"Produit",
+    "useCases":"Cas pratiques"
+  }
+}
+</i18n>

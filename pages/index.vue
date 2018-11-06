@@ -3,45 +3,45 @@
     <section class="intro-section homepage">
       <div class="container">
         <div class="text-holder">
-          <h1>La plateforme de production de contenus <strong>pour les équipes.</strong></h1>
-          <p>Gérez vos projets de production, tâches, versions de documents et planning éditoriaux. En un seul lieu.</p>
+          <h1 v-html="$t('home.title')"></h1>
+          <p>{{ $t('home.catchphrase') }}</p>
         </div>
         <div class="relative-holder">
           <form action="#" class="subscribe-form">
             <div class="input-holder">
-              <input type="email" placeholder="Entrez votre email…">
+              <input type="email" :placeholder="$t('home.enterYourEmail')">
               <i class="icon-mail"></i>
             </div>
             <div class="submit-holder">
-              <button type="submit" class="btn">COMMENCER L’ESSAI <i class="icon-arrow-right"></i></button>
+              <button type="submit" class="btn">{{ $t('home.startTrial') }}<i class="icon-arrow-right"></i></button>
             </div>
           </form>
-          <p>30 jours gratuits - pas de CB demandée</p>
+          <p>{{ $t('home.trialConditions') }}</p>
           <img src="/images/image-01.png" alt="image description">
           <ul class="tag-block">
             <li>
               <div class="img-holder">
                 <img src="/images/icon-03.svg" width="37" height="44" alt="image description">
               </div>
-              <strong class="title">Planning</strong>
+              <strong class="title capitalize">{{ $t('planning') }}</strong>
             </li>
             <li>
               <div class="img-holder">
                 <img src="/images/icon-02.svg" width="50" height="55" alt="image description">
               </div>
-              <strong class="title">Tâches</strong>
+              <strong class="title capitalize">{{ $t('tasks') }}</strong>
             </li>
             <li>
               <div class="img-holder">
                 <img src="/images/icon-01.svg" width="54" height="54" alt="image description">
               </div>
-              <strong class="title">Calendrier</strong>
+              <strong class="title capitalize">{{ $t('calendar') }}</strong>
             </li>
             <li>
               <div class="img-holder">
                 <img src="/images/icon-04.svg" width="68" height="52" alt="image description">
               </div>
-              <strong class="title">Versioning</strong>
+              <strong class="title capitalize">{{ $t('versionning') }}</strong>
             </li>
           </ul>
         </div>
@@ -49,8 +49,8 @@
     </section>
     <section id="functionality-section" class="functionality-section">
       <div class="container">
-        <h1>Fonctionnalités</h1>
-        <span class="subtitle">--</span>
+        <h1 class="capitalize">{{ $t('features') }}</h1>
+        <span class="subtitle"></span>
       </div>
       <div class="relative-holder">
         <div class="container">
@@ -60,9 +60,9 @@
                 <div class="icon-holder blue-holder">
                   <i class="icon-pen"></i>
                 </div>
-                <h2>Annotations</h2>
+                <h2 class="capitalize">{{ $t('annotations') }}</h2>
               </div>
-              <p>Annoter vos documents précisément et engagez des conversations sans perdre de temps. Les membres de l’équipe seront notifiés avec un lien les menant directement vers le document et l’annotation.</p>
+              <p>{{ $t('annotationsShort') }}</p>
             </div>
             <div class="col">
               <img src="/images/image-02.png" alt="image description">
@@ -74,9 +74,9 @@
                 <div class="icon-holder green-holder">
                   <i class="icon-flag"></i>
                 </div>
-                <h2>Workflows</h2>
+                <h2 class="capitalize">{{ $t('workflows') }}</h2>
               </div>
-              <p>Définissez vos statuts de workflow et attribuez les à vos contenus au fil du process de production. Grâce aux filtres avancés filtrez la liste en fonction des statuts qui vous concernent.</p>
+              <p>{{ $t('workflowsShort') }}</p>
             </div>
             <div class="col">
               <img src="/images/image-03.png" alt="image description">
@@ -88,9 +88,9 @@
                 <div class="icon-holder yellow-holder">
                   <i class="icon-check-2"></i>
                 </div>
-                <h2>Tasks</h2>
+                <h2 class="capitalize">{{ $t('tasks') }}</h2>
               </div>
-              <p>Affectez des tâches à vos contenus, pour vous même ou d’autres membres de l’équipe et retrouvez dans un calendrier unique toutes les dates limites de livraison à l’imprimeur</p>
+              <p>{{ $t('tasksShort') }}</p>
             </div>
             <div class="col">
               <img src="/images/image-04.png" alt="image description">
@@ -116,9 +116,9 @@
                 <div class="icon-holder pink-holder">
                   <i class="icon-plan"></i>
                 </div>
-                <h2>Planning</h2>
+                <h2 class="capitalize">{{ $t('calendars') }}</h2>
               </div>
-              <p>Créez facilement des plannings éditoriaux ou de tâches, sauvegardez, partagez des calendriers personnalisés avec vos clients. Changez votre programmation de publication simplement par drag&drop</p>
+              <p>{{ $t('calendarsShort') }}</p>
             </div>
             <div class="col">
               <img src="/images/image-06.png" alt="image description">
@@ -130,10 +130,10 @@
                 <div class="icon-holder purple-holder">
                   <i class="icon-papers"></i>
                 </div>
-                <h2>Versions</h2>
+                <h2 class="capitalize">{{ $t('versions') }}</h2>
               </div>
-              <p>Nous conservons toutes les versions de tous les documents. Analysez rapidement les différences, restaurez d’anciennes versions ou découvrez qui a fait cette faute de conjuguaison et à quelle date.</p>
-              <a href="#" class="btn">DÉTAILS <i class="icon-arrow-right"></i></a>
+              <p>{{ $t('versionsShort') }}</p>
+              <a href="#" class="btn">{{ $t('view') }} <i class="icon-arrow-right"></i></a>
             </div>
             <div class="col">
               <img src="/images/image-07.png" alt="image description">
@@ -144,8 +144,8 @@
     </section>
     <section class="partners-section">
       <div class="container">
-        <h1>Faites comme eux</h1>
-        <span class="subtitle">Débutez votre période d’essai dès maintenant</span>
+        <h1>Clients</h1>
+        <span class="subtitle"></span>
         <ul class="logo-list">
           <li><img src="/images/logo-02.png" width="160" height="73" class="grayscale" alt="Harmonie mutuelle"></li>
           <li><img src="/images/logo-03.png" width="133" height="36" class="grayscale" alt="VINCI construction"></li>
@@ -157,32 +157,32 @@
     </section>
     <section class="contact-us">
       <div class="container">
-        <h1>N’attendez plus</h1>
-        <span class="subtitle">Débutez votre période d’essai dès maintenant</span>
+        <h1>{{ $t('home.doNotWait') }}</h1>
+        <span class="subtitle">{{ $t('home.startTrialNow') }}</span>
         <div class="form-holder">
           <div class="col">
-            <h4>Des avantages immédiats</h4>
+            <h4>{{ $t('home.benefits.title') }}</h4>
             <ul class="check-list">
-              <li>Suivez et gérez la production des contenus en un seul lieu.</li>
-              <li>Tout le monde en permanence à jour avec la bonne info.</li>
-              <li>Plus besoin de tableurs Excels de planification éditoriale </li>
-              <li>Vous savez ce qui est fait, par qui et quand.</li>
-              <li>Le cycle de vie d'un projet est plus court </li>
+              <li>{{ $t('home.benefits.onePlace') }}</li>
+              <li>{{ $t('home.benefits.sourceTruth') }}</li>
+              <li>{{ $t('home.benefits.noMoreExcel') }}</li>
+              <li>{{ $t('home.benefits.WhoWhatWhen') }}</li>
+              <li>{{ $t('home.benefits.shortLifecycle') }}</li>
             </ul>
           </div>
           <div class="col">
-            <h4>Un essai de <strong>30 jours offerts</strong></h4>
+            <h4>{{ $t('home.daysOnUs') }}</h4>
             <div class="text-holder">
               <form action="#" class="subscribe-form">
                 <div class="input-holder">
-                  <input type="email" placeholder="Entrez votre email…">
+                  <input type="email" :placeholder="$t('home.enterYourEmail')">
                   <i class="icon-mail"></i>
                 </div>
                 <div class="submit-holder">
-                  <button type="submit" class="btn">DÉBUTER L’ESSAI <i class="icon-arrow-right"></i></button>
+                  <button type="submit" class="btn">{{ $t('home.startTrial') }}<i class="icon-arrow-right"></i></button>
                 </div>
               </form>
-              <p>30 jours offerts - Ne requiert pas de CB</p>
+              <p>{{ $t('home.trialConditions') }}</p>
             </div>
           </div>
         </div>
@@ -190,30 +190,30 @@
     </section>
     <section id="prices-section" class="prices-section">
       <div class="container">
-        <h1>Nos tarifs</h1>
-        <span class="subtitle">Débutez votre période d’essai dès maintenant</span>
+        <h1 class="capitalize">{{ $t('ourPrices') }}</h1>
+        <span class="subtitle">{{ $t('home.startTrialNow') }}</span>
         <div class="row">
           <div class="col">
             <div class="info-block">
               <div class="info-head">
                 <h4>Small</h4>
-                <span class="comment">Pour les timides</span>
+                <span class="comment">{{ $t('home.smallIsFor') }}</span>
                 <div class="price-info">
                   <strong class="price">9€</strong>
                   <div class="text-holder">
-                    <p>/mois<br>/user</p>
+                    <p>/{{ $t('month') }}<br>/{{ $t('user') }}</p>
                   </div>
                 </div>
               </div>
-              <ul class="info-list">
-                <li>5 projets</li>
-                <li>100 documents</li>
-                <li>10G stockage</li>
-                <li>Pas de fonctionnalités avancées</li>
-                <li>Pas de support</li>
-              </ul>
+              <div class="info-list">
+                <div>5 {{ $t('projects.plural') }}</div>
+                <div>100 {{ $t('items.plural') }}</div>
+                <div>10G {{ $t('storage') }}</div>
+                <div>{{ $t('home.features.none') }}</div>
+                <div>{{ $t('home.support.none') }}</div>
+              </div>
               <div class="btn-holder">
-                <a href="#" class="btn btn-white">Créer votre desk</a>
+                <a href="#" class="btn btn-white">{{ $t('home.createYourDesk') }}</a>
               </div>
             </div>
           </div>
@@ -221,23 +221,23 @@
             <div class="info-block active-block">
               <div class="info-head">
                 <h4>Medium</h4>
-                <span class="comment">Pour les moyennes entreprises</span>
+                <span class="comment">{{ $t('home.mediumIsFor') }}</span>
                 <div class="price-info">
                   <strong class="price">19€</strong>
                   <div class="text-holder">
-                    <p>/mois<br>/user</p>
+                    <p>/{{ $t('month') }}<br>/{{ $t('user') }}</p>
                   </div>
                 </div>
               </div>
-              <ul class="info-list">
-                <li>10 projets</li>
-                <li>300 Documents</li>
-                <li>30 GO Stockage </li>
-                <li>Pas de fonctionnalités avancées</li>
-                <li>Support email J+2</li>
-              </ul>
+              <div class="info-list">
+                <div>10 {{ $t('projects.plural') }}</div>
+                <div>300 {{ $t('items.plural') }}</div>
+                <div>30Go {{ $t('storage') }} </div>
+                <div>{{ $t('home.features.none') }}</div>
+                <div>{{ $t('home.support.medium') }}</div>
+              </div>
               <div class="btn-holder">
-                <a href="#" class="btn">Créer votre desk</a>
+                <a href="#" class="btn">{{ $t('home.createYourDesk') }}</a>
               </div>
             </div>
           </div>
@@ -245,23 +245,23 @@
             <div class="info-block">
               <div class="info-head">
                 <h4>Enterprise</h4>
-                <span class="comment">Pour les grosses entreprises</span>
+                <span class="comment">{{ $t('home.enterpriseIsFor') }}</span>
                 <div class="price-info">
                   <strong class="price">39€</strong>
                   <div class="text-holder">
-                    <p>/mois<br>/user</p>
+                    <p>/{{ $t('month') }}<br>/{{ $t('user') }}</p>
                   </div>
                 </div>
               </div>
-              <ul class="info-list">
-                <li>Projets Illimités</li>
-                <li>Documents illimités</li>
-                <li>1 TO Stockage</li>
-                <li>Fonctionnalités avancées</li>
-                <li>Support In-app or email J+1</li>
-              </ul>
+              <div class="info-list">
+                <div>{{ $t('projects.unlimited') }}</div>
+                <div>{{ $t('items.unlimited') }}</div>
+                <div>1To {{ $t('storage') }}</div>
+                <div>{{ $t('home.features.advanced') }}</div>
+                <div>{{ $t('home.support.advanced') }}</div>
+              </div>
               <div class="btn-holder">
-                <a href="#" class="btn btn-white">Créer votre desk</a>
+                <a href="#" class="btn btn-white">{{ $t('home.createYourDesk') }}</a>
               </div>
             </div>
           </div>
