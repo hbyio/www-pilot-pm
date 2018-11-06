@@ -19,26 +19,26 @@
         </a>
       </div>
 
-      <div @click="toggleMenu()" 
-      class="navbar-menu" 
-      :class="{'is-active':isMenuOpen}">
-
+      <div  @click="closeMenu()" 
+            class="navbar-menu" 
+            :class="{'is-active':isMenuOpen}"
+      >
         <div class="navbar-start">
           <nuxt-link 
             :to="localePath({name:'index', hash:'#functionality-section'},$i18n.locale)"
-            class="navbar-item is-tab" 
+            class="navbar-item" 
           >
             {{ $t('features') }}
           </nuxt-link>
           <nuxt-link 
             :to="localePath({name:'index', hash:'#prices-section'},$i18n.locale)"
-            class="navbar-item is-tab" 
+            class="navbar-item" 
           >
             {{ $t('prices') }}
           </nuxt-link>
           <nuxt-link 
             :to="localePath({name:'resources'}, $i18n.locale)"
-            class="navbar-item is-tab" 
+            class="navbar-item" 
           >
             {{ $t('resources') }}
           </nuxt-link>
@@ -87,6 +87,9 @@ export default {
   methods: {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
+    },
+    closeMenu() {
+      this.isMenuOpen = false
     }
   }
 };
@@ -94,6 +97,10 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/assets/scss/base/_variables.scss";
+
+a{
+  text-decoration: none;
+}
 
 .navbar {
   border-bottom: 1px solid $gray-light;
