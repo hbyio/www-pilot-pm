@@ -254,8 +254,8 @@
                 </div>
               </div>
               <div class="info-list">
-                <div>{{ $t('projects') }}</div>
-                <div>{{ $t('items') }}</div>
+                <div class="capitalize">{{ $t('projectsUnlimited') }}</div>
+                <div class="capitalize">{{ $t('itemsUnlimited') }}</div>
                 <div>1To {{ $t('storage') }}</div>
                 <div>{{ $t('featuresAdvanced') }}</div>
                 <div>{{ $t('home.support.advanced') }}</div>
