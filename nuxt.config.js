@@ -126,39 +126,22 @@ module.exports = {
           {
             code: "en",
             name: "English",
-            iso: "en-US"
+            iso: "en-US",
+            file:"en.js"
           },
           {
             code: "fr",
             name: "Français",
-            iso: "fr-FR"
+            iso: "fr-FR",
+            file:"fr.js"
           }
         ],
         defaultLocale: "en",
         parsePages: false,
         vueI18nLoader: true,
         baseUrl: "https://www.pilot.pm",
-        vueI18n: {
-          fallbackLocale: "en",
-          messages: {
-            en: {
-              features: "features",
-              prices: "prices",
-              resources: "resources",
-              signup: "Signup",
-              login: "Login",
-              view:"see"
-            },
-            fr: {
-              features: "fonctionnalités",
-              prices: "tarifs",
-              resources: "ressources",
-              signup: "Essai gratuit",
-              login: "Se connecter",
-              view:"voir"
-            }
-          }
-        }
+        lazy: true,
+        langDir: 'locales/'
       }
     ]
   ],
