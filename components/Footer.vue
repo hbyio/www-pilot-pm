@@ -67,11 +67,20 @@
           </div>
         </div>
       </div>
+      <div class="credits">© Huckleberry 2018 🤖 🚀 - SIRET 79817197100012 - TVA FR18798171971 - Fabriqué en Europe 🇪🇺 / 🇫🇷 .</div>
     </footer>
 </template>
-<vue-i18n>
-  :,
-</vue-i18n>
+<style lang="scss" scoped>
+.credits{
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  font-size: 0.8em;
+  color: #f9f9f9;
+  margin-top: 2em;
+}
+</style>
+
 
 <i18n>
 {
