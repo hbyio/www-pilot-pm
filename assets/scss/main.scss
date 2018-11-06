@@ -32,24 +32,23 @@ $media-expressions: (
 @import 'base/forms';
 
 @import 'layout/common';
-@import 'layout/header';
+//@import 'layout/header';
 @import 'layout/footer';
+
+
+@import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/elements/button.sass";
+@import "bulma/sass/components/navbar.sass";
+// @import "bulma/sass/components/dropdown.sass";
 
 
 .page-enter-active, .page-leave-active {
 	transition: opacity 0.5s;
-	}
-	.page-enter, .page-leave-to {
+}
+.page-enter, .page-leave-to {
 	opacity: 0;
-	}
-	
-	@import "bulma/sass/utilities/_all.sass";
-	@import "bulma/sass/elements/button.sass";
-	@import "bulma/sass/components/navbar.sass";
-	// @import "bulma/sass/components/dropdown.sass";
-	
-	
-	.capitalize{
-		text-transform: capitalize;
-	};
-	
+}
+
+.capitalize{
+	text-transform: capitalize;
+};

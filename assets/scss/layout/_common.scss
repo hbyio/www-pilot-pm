@@ -1272,7 +1272,7 @@ blockquote {
 			border-top: 1px solid #f2efef;
 			margin-bottom: 17px;
 
-			li {
+			> * {
 				padding: 14px 0;
 				border-bottom: 1px solid #f2efef;
 			}
@@ -1301,7 +1301,7 @@ blockquote {
 }
 
 .card-holder {
-	font-size: 14px;
+	font-size: 0.8em;
 	margin: 0 -5px 55px;
 
 	@include media ('>=tablet') {
@@ -1335,7 +1335,7 @@ blockquote {
 			display: flex;
 			justify-content: center;
 			color: $white;
-			font-size: 17px;
+			font-size: 1em;
 
 			.heading-text {
 				text-align: center;
@@ -1345,7 +1345,7 @@ blockquote {
 
 		h6 {
 			font-weight: 500;
-			font-size: 17px;
+			font-size: 1em;
 		}
 
 		.card-body {
