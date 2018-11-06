@@ -24,7 +24,7 @@ export default {
       singular:"fonctionnalité",
       plural:"fonctionnalités",
       none:"Pas de fonctionnalités avancées",
-      advanced:"Fonctioannlités avancées"
+      advanced:"Fonctionnalités avancées"
     },
     mediumIsFor:"Agences, collectifs, ..",
     enterpriseIsFor:"Grands groupes, marketing, communication, juridique",
