@@ -105,7 +105,7 @@
 						<div class="card-footer">
 							<a href="#" class="ressources-link">13 ressources</a>
 							<nuxt-link 
-							  :to="localePath({name: 'resources-guides' },$i18n.locale)"
+							  :to="localePath({name: 'resources-slug', params: { slug:'guides' } },$i18n.locale)"
 							  class="button is-info is-medium is-fullwidth" 
 							>
 							  {{ $t('view') }}

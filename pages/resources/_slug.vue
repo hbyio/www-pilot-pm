@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import DetailLayout from './_DetailLayout.vue'
+import DetailLayout from '@/layouts/detailResource.vue'
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
 
@@ -16,8 +16,7 @@ export default {
   },
   data: () => {
     return {
-      document: {},
-      cont: null
+      document: {}
     };
   },
   computed: {
