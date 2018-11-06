@@ -102,7 +102,7 @@
                 <div class="icon-holder purple-holder">
                   <i class="icon-folder-1"></i>
                 </div>
-                <h2>{{ $t('projects.plural') }}</h2>
+                <h2 class="capitalize">{{ $t('projects.plural') }}</h2>
               </div>
               <p>{{ $t('projects.short') }}</p>
             </div>
