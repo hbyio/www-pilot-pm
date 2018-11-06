@@ -28,13 +28,13 @@
             :to="localePath({name:'index', hash:'#functionality-section'},$i18n.locale)"
             class="navbar-item" 
           >
-            {{ $t('home.features.plural') }}
+            {{ $t('features') }}
           </nuxt-link>
           <nuxt-link 
             :to="localePath({name:'index', hash:'#prices-section'},$i18n.locale)"
             class="navbar-item" 
           >
-            {{ $t('ourPrices') }}
+            {{ $t('prices') }}
           </nuxt-link>
           <nuxt-link 
             :to="localePath({name:'resources'}, $i18n.locale)"

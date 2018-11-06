@@ -29,13 +29,13 @@
               <div class="img-holder">
                 <img src="/images/icon-02.svg" width="50" height="55" alt="image description">
               </div>
-              <strong class="title capitalize">{{ $t('tasks.plural') }}</strong>
+              <strong class="title capitalize">{{ $t('tasks') }}</strong>
             </li>
             <li>
               <div class="img-holder">
                 <img src="/images/icon-01.svg" width="54" height="54" alt="image description">
               </div>
-              <strong class="title capitalize">{{ $t('calendars.plural') }}</strong>
+              <strong class="title capitalize">{{ $t('calendars') }}</strong>
             </li>
             <li>
               <div class="img-holder">
@@ -49,7 +49,7 @@
     </section>
     <section id="functionality-section" class="functionality-section">
       <div class="container">
-        <h1 class="capitalize">{{ $t('home.features.plural') }}</h1>
+        <h1 class="capitalize">{{ $t('features') }}</h1>
         <span class="subtitle"></span>
       </div>
       <div class="relative-holder">
@@ -74,9 +74,9 @@
                 <div class="icon-holder green-holder">
                   <i class="icon-flag"></i>
                 </div>
-                <h2 class="capitalize">{{ $t('workflows.plural') }}</h2>
+                <h2 class="capitalize">{{ $t('workflows') }}</h2>
               </div>
-              <p>{{ $t('workflows.short') }}</p>
+              <p>{{ $t('workflowsShort') }}</p>
             </div>
             <div class="col">
               <img src="/images/image-03.png" alt="image description">
@@ -88,9 +88,9 @@
                 <div class="icon-holder yellow-holder">
                   <i class="icon-check-2"></i>
                 </div>
-                <h2 class="capitalize">{{ $t('tasks.plural') }}</h2>
+                <h2 class="capitalize">{{ $t('tasks') }}</h2>
               </div>
-              <p>{{ $t('tasks.short') }}</p>
+              <p>{{ $t('tasksShort') }}</p>
             </div>
             <div class="col">
               <img src="/images/image-04.png" alt="image description">
@@ -102,9 +102,9 @@
                 <div class="icon-holder purple-holder">
                   <i class="icon-folder-1"></i>
                 </div>
-                <h2 class="capitalize">{{ $t('projects.plural') }}</h2>
+                <h2 class="capitalize">{{ $t('projects') }}</h2>
               </div>
-              <p>{{ $t('projects.short') }}</p>
+              <p>{{ $t('projectsShort') }}</p>
             </div>
             <div class="col">
               <img src="/images/image-05.png" alt="image description">
@@ -116,9 +116,9 @@
                 <div class="icon-holder pink-holder">
                   <i class="icon-plan"></i>
                 </div>
-                <h2 class="capitalize">{{ $t('calendars.plural') }}</h2>
+                <h2 class="capitalize">{{ $t('calendars') }}</h2>
               </div>
-              <p>{{ $t('calendars.short') }}</p>
+              <p>{{ $t('calendarsShort') }}</p>
             </div>
             <div class="col">
               <img src="/images/image-06.png" alt="image description">
@@ -130,9 +130,9 @@
                 <div class="icon-holder purple-holder">
                   <i class="icon-papers"></i>
                 </div>
-                <h2 class="capitalize">{{ $t('versions.plural') }}</h2>
+                <h2 class="capitalize">{{ $t('versions') }}</h2>
               </div>
-              <p>{{ $t('versions.short') }}</p>
+              <p>{{ $t('versionsShort') }}</p>
               <a href="#" class="btn">{{ $t('view') }} <i class="icon-arrow-right"></i></a>
             </div>
             <div class="col">
@@ -190,7 +190,7 @@
     </section>
     <section id="prices-section" class="prices-section">
       <div class="container">
-        <h1 class="capitalize">{{ $t('ourPrices') }}</h1>
+        <h1 class="capitalize">{{ $t('prices') }}</h1>
         <span class="subtitle">{{ $t('home.startTrialNow') }}</span>
         <div class="row">
           <div class="col">
@@ -206,10 +206,10 @@
                 </div>
               </div>
               <div class="info-list">
-                <div>5 {{ $t('projects.plural') }}</div>
-                <div>100 {{ $t('items.plural') }}</div>
+                <div>5 {{ $t('projects') }}</div>
+                <div>100 {{ $t('items') }}</div>
                 <div>10G {{ $t('storage') }}</div>
-                <div>{{ $t('home.features.none') }}</div>
+                <div>{{ $t('featuresNone') }}</div>
                 <div>{{ $t('home.support.none') }}</div>
               </div>
               <div class="btn-holder">
@@ -230,10 +230,10 @@
                 </div>
               </div>
               <div class="info-list">
-                <div>10 {{ $t('projects.plural') }}</div>
-                <div>300 {{ $t('items.plural') }}</div>
+                <div>10 {{ $t('projects') }}</div>
+                <div>300 {{ $t('items') }}</div>
                 <div>30Go {{ $t('storage') }} </div>
-                <div>{{ $t('home.features.none') }}</div>
+                <div>{{ $t('featuresNone') }}</div>
                 <div>{{ $t('home.support.medium') }}</div>
               </div>
               <div class="btn-holder">
@@ -244,7 +244,7 @@
           <div class="col">
             <div class="info-block">
               <div class="info-head">
-                <h4>Enterprise</h4>
+                <h4>{{ $t('enterprise') }}</h4>
                 <span class="comment">{{ $t('home.enterpriseIsFor') }}</span>
                 <div class="price-info">
                   <strong class="price">39€</strong>
@@ -254,10 +254,10 @@
                 </div>
               </div>
               <div class="info-list">
-                <div>{{ $t('projects.unlimited') }}</div>
-                <div>{{ $t('items.unlimited') }}</div>
+                <div>{{ $t('projects') }}</div>
+                <div>{{ $t('items') }}</div>
                 <div>1To {{ $t('storage') }}</div>
-                <div>{{ $t('home.features.advanced') }}</div>
+                <div>{{ $t('featuresAdvanced') }}</div>
                 <div>{{ $t('home.support.advanced') }}</div>
               </div>
               <div class="btn-holder">
