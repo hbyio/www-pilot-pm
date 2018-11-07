@@ -1,5 +1,5 @@
 <template>
-  <DetailLayout>
+  <DetailLayout :slug="slug">
       <h1 slot="title">{{ title }}</h1>
       <p slot="body" v-html="body"></p>
   </DetailLayout>
@@ -26,6 +26,9 @@ export default {
     body() {
       var md = new MarkdownIt();
       return md.render(this.document.content);
+    },
+    slug() {
+      return this.$route.params.slug;
     }
   },
   async asyncData(context) {

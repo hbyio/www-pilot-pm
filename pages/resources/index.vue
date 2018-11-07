@@ -14,7 +14,7 @@
 					<div class="card">
 						<div class="card-heading dark-blue-overlay" style="background-image: url(/images/img-overlay-1.png)">
 							<div class="heading-text">
-								<i class="icon icon-letter"></i>
+								<i class="icon icon-items"></i>
 								<h6>Les contenus</h6>
 							</div>
 						</div>
@@ -34,7 +34,7 @@
 					<div class="card">
 						<div class="card-heading purple-overlay" style="background-image: url(/images/img-overlay-2.png)">
 							<div class="heading-text">
-								<i class="icon icon-folder-2" />
+								<i class="icon icon-projects" />
 								<h6>Les projets</h6>
 							</div>
 						</div>

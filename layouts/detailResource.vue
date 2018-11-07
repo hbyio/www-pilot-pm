@@ -3,7 +3,7 @@
         <section class="intro-section ressources-page ressources-detail-page">
             <div class="container">
                 <div class="text-holder">
-                    <i class="icon-details icon-letter"></i>
+                    <i class="icon-details" :class="pageIcon"></i>
                     <h3> <slot name="title"></slot> </h3>
                 </div>
             </div>
@@ -67,3 +67,19 @@
         </section>
     </main>
 </template>
+
+<script>
+export default {
+  name: "DetailResource",
+  props: {
+    slug: {
+      required: true
+    }
+  },
+  computed: {
+    pageIcon() {
+      return `icon-${this.slug}`;
+    }
+  }
+};
+</script>

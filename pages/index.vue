@@ -100,7 +100,7 @@
             <div class="col col-sm">
               <div class="title-holder">
                 <div class="icon-holder purple-holder">
-                  <i class="icon-folder-1"></i>
+                  <i class="icon-projects"></i>
                 </div>
                 <h2 class="capitalize">{{ $t('projects') }}</h2>
               </div>
