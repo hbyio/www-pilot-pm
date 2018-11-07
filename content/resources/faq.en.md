@@ -1,15 +1,16 @@
-+++
-date        = "2018-01-27"
-title       = "Frequently asked questions"
-author      = "mb"
-slug        = "faq"
-menu        = "docs"
-weight      = 10
-draft       = false
-illustration = "trackedtime.png"
-+++
+---
+author: mb
+date: 2018-01-27
+draft: false
+illustration: trackedtime.png
+menu: docs
+slug: faq
+title: Frequently asked questions
+weight: 10
+---
 
 Frequently asked questions ..
+
 <!--more-->
 
 ## What problem solves Pilot?
@@ -28,18 +29,8 @@ Of course, all you have to do is write to us at support@pilot.pm and we will gla
 
 ## Do I have to pay anything before the test phase?
 
-Absolutely nothing, we ask you nothing, no credit card or bank information. You test freely with your team. 
+Absolutely nothing, we ask you nothing, no credit card or bank information. You test freely with your team.
 
 ## My contents on the platform remain my property?
 
 Of course, it's insured by contract. You can export them whenever you want from the platform.
-
-
-
-
-
-
-
-
-
-

@@ -1,11 +1,11 @@
 ---
 date: 2018-01-27
-title: Les guides au sein de l'application
-slug: guides
-menu: docs
-weight: 100
 draft: false
 illustration: trackedtime.png
+menu: docs
+slug: guides
+title: Les guides au sein de l'application
+weight: 100
 ---
 
 ## Tous les guides

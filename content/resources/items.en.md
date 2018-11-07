@@ -1,23 +1,23 @@
-+++
-date        = "2018-01-27"
-title       = "Contents"
-author      = "mb"
-slug        = "contenus"
-menu        = "docs"
-weight      = 2
-draft       = false
-illustration = "items.png"
-+++
+---
+author: mb
+date: 2018-01-27
+draft: false
+illustration: items.png
+menu: docs
+slug: items
+title: Contents
+weight: 2
+---
 
 A content is the simplest element managed by Pilot. It is an understandable editorial unit out of context.
+
 <!--more-->
 
-An article, an interview, a tweet are contents in the sense of Pilot as opposed to a chapô or a paragraph of an article. 
+An article, an interview, a tweet are contents in the sense of Pilot as opposed to a chapô or a paragraph of an article.
 
 Each content has its own life cycle (draft > to validate > to publish > ..) as well as its own comments, versions, shares.
 
 Contents can be gathered in a <a href="{{< relref path="/documentation/projects" lang="en" >}}">project</a> and/or in a <a href="{{< relref path="/documentation/channels" lang="en" >}}">channel</a>.
-
 
 ## Create a content
 
@@ -34,10 +34,11 @@ Later in the documentation we will refer to this view as a "detail view" of a co
 ![vue de détail d'un contenu](/img/screenshots/item_detail.png)
 
 ## Content specific tools
-<img style="float:right; margin-left:1em;" src="/img/screenshots/item_detail_menu.png" alt="">
-### Information 
 
-This menu displays general information about the content: 
+<img style="float:right; margin-left:1em;" src="/img/screenshots/item_detail_menu.png" alt="">
+### Information
+
+This menu displays general information about the content:
 
 - The project to which the content is assigned
 - The channel where the content will be published
@@ -46,7 +47,7 @@ This menu displays general information about the content:
 
 ### Versions and differences
 
-Each time content is saved we create a "minor version" (1.1, 1.2, etc.) with the time of creation and the reference to the person who created this version. 
+Each time content is saved we create a "minor version" (1.1, 1.2, etc.) with the time of creation and the reference to the person who created this version.
 
 It is impossible to save a document without creating a version. It is the concept of "immutability" of a document that allows you to know with confidence what has been done, by whom and when on a text.
 
@@ -56,7 +57,6 @@ In order to fully benefit from this version system, the application offers a "di
 
 <img src="/img/screenshots/diff.png" alt="vue des différences" />
 
-
 ### Comments
 
 You will be able to discuss the document's evolution thanks to this feature which also offers a simple system for mentioning and alerting team members.
@@ -65,7 +65,7 @@ The undeniable advantage of this type of tool is to be able to consult the histo
 
 ### Tasks
 
-You can freely assign tasks to each content. Each of these tasks will have a rendering date and one or more persons responsible. 
+You can freely assign tasks to each content. Each of these tasks will have a rendering date and one or more persons responsible.
 
 ### Sharing
 
@@ -73,7 +73,7 @@ Sharing with external validation is useful for interviewing people who do not ha
 
 ### Related files
 
-You can link one or more files to your content (**without document size limit**) in two ways : 
+You can link one or more files to your content (**without document size limit**) in two ways :
 
 1. By directly uploading a file ("Add a file" button): The file will be linked exclusively to this content. It cannot be "linked" from other content.
 

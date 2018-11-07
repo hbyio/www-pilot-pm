@@ -1,12 +1,12 @@
 ---
-date: 2018-01-27
-title: Channels
 author: mb
-slug: channels
-menu: docs
-weight: 4
+date: 2018-01-27
 draft: false
 illustration: channels.png
+menu: docs
+slug: channels
+title: Channels
+weight: 4
 ---
 
 For Pilot a channel represents a space where to broadcast content.

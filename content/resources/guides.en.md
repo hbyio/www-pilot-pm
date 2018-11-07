@@ -1,11 +1,11 @@
 ---
 date: 2018-01-27
-title: Application tour guides
-slug: guides
-menu: docs
-weight: 100
 draft: false
 illustration: trackedtime.png
+menu: docs
+slug: guides
+title: Application tour guides
+weight: 100
 ---
 
 ## All guides

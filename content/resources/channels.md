@@ -1,12 +1,12 @@
 ---
-date: 2018-01-27
-title: Les canaux
 author: mb
-slug: channels
-menu: docs
-weight: 4
+date: 2018-01-27
 draft: false
 illustration: channels.png
+menu: docs
+slug: channels
+title: Les canaux
+weight: 4
 ---
 
 Pour Pilot un canal représente un espace où diffuser un contenu.

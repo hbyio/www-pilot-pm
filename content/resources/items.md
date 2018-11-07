@@ -1,23 +1,23 @@
-+++
-date        = "2018-01-27"
-title       = "Les contenus"
-author      = "mb"
-slug        = "contenus"
-menu        = "docs"
-weight      = 2
-draft       = false
-illustration = "items.png"
-+++
+---
+author: mb
+date: 2018-01-27
+draft: false
+illustration: items.png
+menu: docs
+slug: items
+title: Contenus
+weight: 2
+---
 
 Un contenu est le plus simple élément géré par Pilot. C'est une unité éditoriale compréhensible hors contexte.
+
 <!--more-->
 
-Un article, une interview, un tweet sont des contenus au sens de l'application à l'inverse d'un chapô ou un d'un paragraphe d'article. 
+Un article, une interview, un tweet sont des contenus au sens de l'application à l'inverse d'un chapô ou un d'un paragraphe d'article.
 
 Chaque contenu a un cycle de vie propre (brouillon > à valider > à publier > ..) ainsi que ses propres commentaires, versions, partages.
 
 Des contenus peuvent être rassemblés dans un <a href="{{< relref path="/documentation/projects" lang="fr" >}}">projet</a> et/ou dans un <a href="{{< relref path="/documentation/channels" lang="fr" >}}">canal</a>.
-
 
 ## Créer un contenu
 
@@ -34,10 +34,11 @@ Plus loin dans la documentation nous nous référerons à cette vue comme "vue d
 ![vue de détail d'un contenu](/img/screenshots/item_detail.png)
 
 ## Les outils spécifiques aux contenus
-<img style="float:right; margin-left:1em;" src="/img/screenshots/item_detail_menu.png" alt="">
-### Informations 
 
-Ce menu permet d'afficher les informations générales relatives au contenu : 
+<img style="float:right; margin-left:1em;" src="/img/screenshots/item_detail_menu.png" alt="">
+### Informations
+
+Ce menu permet d'afficher les informations générales relatives au contenu :
 
 - Le projet auquel le contenu est affecté
 - Le canal où le contenu sera publié
@@ -46,7 +47,7 @@ Ce menu permet d'afficher les informations générales relatives au contenu :
 
 ### Versions et différences
 
-A chaque sauvegarde d'un contenu nous créons une "version mineure" (1.1, 1.2, etc ..) avec l'heure de la création et la référence à la personne ayant créé cette version. 
+A chaque sauvegarde d'un contenu nous créons une "version mineure" (1.1, 1.2, etc ..) avec l'heure de la création et la référence à la personne ayant créé cette version.
 
 Il est impossible de sauvegarder un document sans créer de version. C'est le concept "d'immutabilité" d'un document qui vous permet de savoir avec assurance ce qui a été fait, par qui et quand sur un texte.
 
@@ -56,7 +57,6 @@ Afin de bénéficier totalement de ce système de version l'application propose 
 
 <img src="/img/screenshots/diff.png" alt="vue des différences" />
 
-
 ### Commentaires
 
 Vous pourrez discuter de l'évolution du document grâce à cette fonctionnalité qui offre en outre un système simple de mention et d'alerte des membres de l'équipe.
@@ -65,7 +65,7 @@ L'avantage indéniable de ce type d'outil est de pouvoir consulter l'historique 
 
 ### Tâches
 
-A chaque contenu vous pourrez affecter des tâches librement. Chacune de ces tâches aura une date de rendu et un ou plusieurs responsables. 
+A chaque contenu vous pourrez affecter des tâches librement. Chacune de ces tâches aura une date de rendu et un ou plusieurs responsables.
 
 ### Partage
 
@@ -73,7 +73,7 @@ Le partage avec validation externe est utile pour interroger des personnes ne po
 
 ### Fichiers liés
 
-Vous pouvez lier un ou plusieurs fichiers à votre contenu (**sans limite de taille de document**) et ce de deux manières : 
+Vous pouvez lier un ou plusieurs fichiers à votre contenu (**sans limite de taille de document**) et ce de deux manières :
 
 1. En uploadant directement un fichier (bouton "Ajouter un fichier") : Le fichier sera lié exclusivement à ce contenu. On ne pourra pas le "lier" depuis d'autres contenus.
 

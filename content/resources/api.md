@@ -1,12 +1,12 @@
-+++
-date        = "2018-01-27"
-title       = "api"
-author      = "mb"
-slug        = "api"
-menu        = "docs"
-weight      = 20
-draft       = true
-+++
+---
+author: mb
+date: 2018-01-27
+draft: true
+menu: docs
+slug: api
+title: api
+weight: 20
+---
 
 ## Introduction
 
@@ -17,19 +17,20 @@ Pilot propose une API Rest aux applications tierces pour leur permettre d'accèd
 <div class="alert alert-warning" role="alert">La v1 atteindra son terme le 12/12/2016 à minuit date à laquelle elle ne sera plus accessible.</div>
 
 Le principal endpoint est :
-``https://app.pilot.pm/publicapi/v2/``
+`https://app.pilot.pm/publicapi/v2/`
 
 La réponse est sous format JSON uniquement.
 
 ## Authentification & HTTPS
 
 L'authentification se fera par token. Un token peut être généré par un administrateur du compte Pilot concerné pour chaque canal.
-Un token est obligatoire à chaque requête. En l'absence un ``HTTP 401 Unauthorized`` sera retourné.
+Un token est obligatoire à chaque requête. En l'absence un `HTTP 401 Unauthorized` sera retourné.
 
 Attention : nous acceptons uniquement les requêtes HTTPS. Merci de bien prendre garde de ne pas faire de requête en HTTP. Cela aurait pour conséquence de transmettre en clair le token.
 Si c'est le cas générez simplement un nouveau token.
 
-Exemple de requête avec l'outil Curl (tous les exemples seront basés sur cet outil) : 
+Exemple de requête avec l'outil Curl (tous les exemples seront basés sur cet outil) :
+
 <pre>
   <code>
     curl \
@@ -41,17 +42,18 @@ Exemple de requête avec l'outil Curl (tous les exemples seront basés sur cet o
 
 ## GET items/
 
-Ce endpoint permet de récupérer tous les contenus auxquels le token a accès. 
+Ce endpoint permet de récupérer tous les contenus auxquels le token a accès.
 
-Un token peut être associé à un canal, auquel cas la réponse contiendra tous les contenus de ce canal. 
+Un token peut être associé à un canal, auquel cas la réponse contiendra tous les contenus de ce canal.
 
 Si le token est associé à plusieurs canaux tous les contenus de tous les canaux seront renvoyés (voir GET channels/ ci-dessous pour lister les canaux accessibles au token)
 
-La réponse JSON contient le nombre total de contenus renvoyés (``count``). 
+La réponse JSON contient le nombre total de contenus renvoyés (`count`).
 
-La liste est paginée avec 10 résultats par page. ``next`` et ``previous`` permettent de circuler dans les pages de résultats.
+La liste est paginée avec 10 résultats par page. `next` et `previous` permettent de circuler dans les pages de résultats.
 
 Exemple de requête
+
 <pre>
   <code>
     curl \
@@ -62,6 +64,7 @@ Exemple de requête
 </pre>
 
 Exemple de réponse
+
 <pre>  
 {
     "count": 18,
@@ -73,11 +76,12 @@ Exemple de réponse
 
 ### Filtrer les résultats
 
-Vous pouvez filtrer les résultats grâce aux paramètres suivants : 
+Vous pouvez filtrer les résultats grâce aux paramètres suivants :
 
-####``state``
+####`state`
 
-Plusieurs états de workflow sont disponibles pour un contenu     
+Plusieurs états de workflow sont disponibles pour un contenu
+
 <ul>
   <li>'idea' (contenu en phase de réflexion)</li>
   <li>'rejected' (contenu refusé, ne passera pas en production)</li>
@@ -91,6 +95,7 @@ Plusieurs états de workflow sont disponibles pour un contenu
 En terme de logique métier et pour le moment le principal filtre intéressant est 'publication_ready' qui permet de récupérer les contenus à publier
 
 Exemple de requête pour récupérer tous les contenus marqués 'A publier'
+
 <pre>
   <code>
     curl \
@@ -100,12 +105,12 @@ Exemple de requête pour récupérer tous les contenus marqués 'A publier'
   </code>
 </pre>
 
-
-####``channel``
+####`channel`
 
 Si votre token à accès à plusieurs canaux ou si le canal auquel vous avez accès possède des canaux enfants, vous pouvez filtrer par un ou plusieurs canaux.
 
 Exemple de requête pour un canal
+
 <pre>
   <code>
     curl \
@@ -115,8 +120,8 @@ Exemple de requête pour un canal
   </code>
 </pre>
 
-
 Exemple de requête pour plusieurs canaux
+
 <pre>
   <code>
     curl \
@@ -126,14 +131,14 @@ Exemple de requête pour plusieurs canaux
   </code>
 </pre>
 
-
-####``publication_dt``
+####`publication_dt`
 
 Filtre selon la date de publication
 
 Il doit être obligatoirement formaté comme suit : 'YYYY-MM-DD'
 
 Exemple de requête
+
 <pre>
   <code>
     curl \
@@ -143,13 +148,13 @@ Exemple de requête
   </code>
 </pre>
 
-Deux paramètres supplémentaires sont disponibles pour délimiter des plages de date : 
+Deux paramètres supplémentaires sont disponibles pour délimiter des plages de date :
 
-``publication_dt__gte`` (greater than or equal) et ``publication_dt__lte`` (less than or equal): chacun de ces paramètres étant, comme son acronyme l'indique, inclusif.
+`publication_dt__gte` (greater than or equal) et `publication_dt__lte` (less than or equal): chacun de ces paramètres étant, comme son acronyme l'indique, inclusif.
 
 Exemple pour récupérer les items dont la date de publication est comprise entre le premier et 31 mars 2016
 
-``items?publication_dt__gte=2016-03-01&publication_dt__lte=2016-03-31``
+`items?publication_dt__gte=2016-03-01&publication_dt__lte=2016-03-31`
 
 ### Exemple
 
@@ -160,6 +165,7 @@ La requête la plus fréquente sera celle permettant de récupérer les contenus
 En supposant que vous avez déjà généré la date du jour au format demandé ("YYYY-MM-DD"). La date du jour sera le 5 avril 2016 dans notre exemple.
 
 Exemple de requête
+
 <pre>
   <code>
     curl \
@@ -176,26 +182,26 @@ Permet de récupérer un item (contenu)
 ### Description des attributs JSON
 
 #### id
-   
-   Entier - ID unique du contenu sur la plateforme
+
+Entier - ID unique du contenu sur la plateforme
 
 #### url
-   
-   Endpoint de détail de la ressource
+
+Endpoint de détail de la ressource
 
 #### updated_at
-   
-   Date de dernière mise à jour
+
+Date de dernière mise à jour
 
 #### type
-   
-   Le type du contenu. 
-   
-   ``is_custom`` : (Boolean) Indique si le type de contenu est défini par l'utilisateur ou non.
-   
-   ``technical_name`` : Nom technique du type de contenu, sera permanent tout au long de son cycle de vie. 
-   
-   ``name`` : Nom associé à ce type de contenu, définit par l'utilisateur qui peut le modifier comme il le souhaite.
+
+Le type du contenu.
+
+`is_custom` : (Boolean) Indique si le type de contenu est défini par l'utilisateur ou non.
+
+`technical_name` : Nom technique du type de contenu, sera permanent tout au long de son cycle de vie.
+
+`name` : Nom associé à ce type de contenu, définit par l'utilisateur qui peut le modifier comme il le souhaite.
 
    <pre>
       "type": {
@@ -206,23 +212,23 @@ Permet de récupérer un item (contenu)
 
 #### state
 
-   L'état (workflow) actuel du contenu
+L'état (workflow) actuel du contenu
 
 #### publication_dt
 
-   La date de publication prévue.
+La date de publication prévue.
 
 #### state_dates
 
-   Les différents états *datés* du contenu. Cet attribut ne présente pas tous les états dans lequel le contenu peut être.
+Les différents états _datés_ du contenu. Cet attribut ne présente pas tous les états dans lequel le contenu peut être.
 
 #### tags
 
-   Liste des tags du contenu
+Liste des tags du contenu
 
 #### files
 
-   Liste des fichiers liés au contenu. 
+Liste des fichiers liés au contenu.
 
    <div class="alert alert-danger" role="alert">
     <p><strong>Attention</strong></p>
@@ -249,31 +255,34 @@ Permet de récupérer un item (contenu)
    </pre>
 
 #### campaign
-   La campagne liée au contenu
+
+La campagne liée au contenu
 
 #### channel
-   Le canal lié au contenu
+
+Le canal lié au contenu
 
 #### targets
-   Liste des cibles marketing liées au contenu
+
+Liste des cibles marketing liées au contenu
 
 #### cfields
 
-"Content fields" : Liste des champs éditoriaux du contenu. 
+"Content fields" : Liste des champs éditoriaux du contenu.
 
-Cet attribut est primordial car il contient l'ensemble des contenus exploitables du document. 
+Cet attribut est primordial car il contient l'ensemble des contenus exploitables du document.
 
 Ces champs de contenu sont définis par l'utilisateur pour qualifier ce contenu. L'utilisateur peut ajouter des champs date, file upload, select, etc ..
 
 Vous devez vous entendre avec l'administrateur du compte Pilot pour définir les champs qui pourront être utilisés en fonction des types de contenus.
 
-Chaque content field aura obligatoirement 3 attributs : 
+Chaque content field aura obligatoirement 3 attributs :
 
       "field_label": L'intitulé du champ, défini par l'utilisateur,
       "field_name": Nom technique du champ,
       "field_content": Le contenu tel que saisi par l'utilisateur.
 
-A l'exception du content field ``content`` qui en aura 4 : 
+A l'exception du content field `content` qui en aura 4 :
 
       "field_label": L'intitulé du champ, défini par l'utilisateur,
       "field_name": Nom technique du champ,
@@ -288,10 +297,10 @@ A l'exception du content field ``content`` qui en aura 4 :
   <p>La façon dont vous consommez l'API doit prendre en compte cet aspect de l'utilisation de Pilot ou le modeèle de contenu est variable et doit faire l'objet de discussions entre l'administrateur du compte et le développeur utilisant l'API.</p>
 </div>
 
-
 ### Exemple
 
 Requête
+
 <pre>
   <code>
     curl \
@@ -302,6 +311,7 @@ Requête
 </pre>
 
 Réponse
+
 <pre>
   <code>
     {
@@ -353,8 +363,6 @@ Réponse
   </code>
 </pre>
 
-
-
 ## PUT items/
 
 Une fois le contenu récupéré et éventuellement publié sur le support externe concerné vous pouvez changer l'état du contenu pour en informer les utilsiateurs de Pilot.
@@ -372,18 +380,18 @@ L'exemple ci-dessous présente le changement de statut vers 'published' du conte
   </code>
 </pre>
 
-
 ## GET channels/
 
 Liste les canaux accessibles au token.
 
-``id`` : Identifiant unique du canal
+`id` : Identifiant unique du canal
 
-``name`` : Nom fournit par l'utilisateur
+`name` : Nom fournit par l'utilisateur
 
-``parent`` : ID du canal parent. Si **null** le canal n'a pas de parent.
+`parent` : ID du canal parent. Si **null** le canal n'a pas de parent.
 
 Exemple de réponse
+
 <pre>
   <code>
     [
@@ -400,5 +408,3 @@ Exemple de réponse
     ]
   </code>
 </pre>
-
-

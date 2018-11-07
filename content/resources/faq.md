@@ -1,15 +1,16 @@
-+++
-date        = "2018-01-27"
-title       = "Questions fréquentes"
-author      = "mb"
-slug        = "faq"
-menu        = "docs"
-weight      = 10
-draft       = false
-illustration = "trackedtime.png"
-+++
+---
+author: mb
+date: 2018-01-27
+draft: false
+illustration: trackedtime.png
+menu: docs
+slug: faq
+title: Questions fréquentes
+weight: 10
+---
 
 Collection des questions que vous nous posez le plus souvent
+
 <!--more-->
 
 ## Quel problème règle Pilot ?
@@ -28,18 +29,8 @@ Bien entendu, il vous suffit de nous écrire à support@pilot.pm et nous vous aj
 
 ## Dois je payer quelquechose avant la phase de test ?
 
-Absolument rien, on ne vous demande rien, pas de carte bleue ou d'informations bancaires. Vous testez librement avec votre équipe. 
+Absolument rien, on ne vous demande rien, pas de carte bleue ou d'informations bancaires. Vous testez librement avec votre équipe.
 
 ## Mes contenus sur la plateforme restent bien ma propriété ?
 
 Evidemment, c'est assuré par contrat. Vous pouvez les exporter quand vous le souhaitez depuis la plateforme.
-
-
-
-
-
-
-
-
-
-
