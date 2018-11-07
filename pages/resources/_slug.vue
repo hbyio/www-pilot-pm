@@ -6,12 +6,12 @@
 </template>
 
 <script>
-import DetailLayout from '@/layouts/detailResource.vue'
+import DetailLayout from "@/layouts/detailResource.vue";
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
 
 export default {
-  components:{
+  components: {
     DetailLayout
   },
   data: () => {
@@ -28,9 +28,13 @@ export default {
       return md.render(this.document.content);
     }
   },
-  async asyncData (context) {
-    const versionfr = await import(`@/content/resources/${context.params.slug}.md`)
-    const versionen = await import(`@/content/resources/${context.params.slug}.en.md`)
+  async asyncData(context) {
+    const versionfr = await import(`@/content/resources/${
+      context.params.slug
+    }.md`);
+    const versionen = await import(`@/content/resources/${
+      context.params.slug
+    }.en.md`);
     // console.log(versionfr.default)
     let locale = context.app.i18n.locale;
     if (locale === "fr") {
