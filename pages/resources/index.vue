@@ -132,7 +132,7 @@
 	</main>
 </template>
 <script>
-import BlogSection from "@/layouts/blogSection.vue";
+import BlogSection from "@/components/blogSection.vue";
 export default {
   components: {
     BlogSection

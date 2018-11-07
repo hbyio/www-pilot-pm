@@ -1,14 +1,27 @@
 <template>
-  <DetailLayout :slug="slug">
-      <h1 slot="title">{{ title }}</h1>
-      <p slot="body" v-html="body"></p>
-  </DetailLayout>
+<main id="main">
+    <section class="intro-section ressources-page ressources-detail-page">
+        <div class="container">
+            <div class="text-holder">
+                <i class="icon-details" :class="pageIcon"></i>
+                <h3> {{title}} </h3>
+            </div>
+        </div>
+    </section>
+    <section class="details-section container">
+        <ContentMenu  class="menu"></ContentMenu>
+
+        <div class="content-block" v-html="body"></div>
+    </section>
+    <BlogSection></BlogSection>
+</main>
 </template>
 
 <script>
-import DetailLayout from "@/layouts/detailResource.vue";
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
+import BlogSection from "@/components/blogSection.vue";
+import ContentMenu from "@/components/ContentMenu.vue";
 
 var string = require("string");
 
@@ -33,7 +46,8 @@ const md = MarkdownIt({
 
 export default {
   components: {
-    DetailLayout
+    BlogSection,
+    ContentMenu
   },
   data: () => {
     return {
@@ -49,6 +63,49 @@ export default {
     },
     slug() {
       return this.$route.params.slug;
+    },
+    pageIcon() {
+      return `icon-${this.slug}`;
+    }
+  },
+  mounted() {
+    this.addListeners();
+  },
+  beforeDestroy() {
+    this.removeListeners();
+  },
+  watch: {
+    content: "contentUpdated"
+  },
+  methods: {
+    navigate(event) {
+      const href = event.target.getAttribute("href");
+      if (href && href[0] === "/") {
+        event.preventDefault();
+        var destination = href;
+        if (this.$i18n.locale === "fr") {
+          var destination = "/" + this.$i18n.locale + href;
+        }
+        this.$router.push(destination);
+      }
+    },
+    contentUpdated() {
+      this.removeListeners();
+      this.$nextTick(() => {
+        this.addListeners();
+      });
+    },
+    addListeners() {
+      this._links = this.$el.getElementsByTagName("a");
+      for (let i = 0; i < this._links.length; i++) {
+        this._links[i].addEventListener("click", this.navigate, false);
+      }
+    },
+    removeListeners() {
+      for (let i = 0; i < this._links.length; i++) {
+        this._links[i].removeEventListener("click", this.navigate, false);
+      }
+      this._links = [];
     }
   },
   async asyncData(context) {
@@ -69,3 +126,12 @@ export default {
 };
 </script>
 
+<style lang="scss" scoped>
+.details-section {
+  display: flex;
+  flex-direction: row;
+  .content-block {
+    margin-left: 300px;
+  }
+}
+</style>
