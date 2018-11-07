@@ -19,7 +19,19 @@ module.exports = {
   },
 
   generate: {
-    routes: ["/resources/channels", "resources/projects"]
+    routes: [
+      "/resources/channels",
+      "/resources/projects",
+      "/resources/items",
+      "/resources/guides",
+      "/resources/faq",
+
+      "/fr/resources/channels",
+      "/fr/resources/projects",
+      "/fr/resources/items",
+      "/fr/resources/guides",
+      "/fr/resources/faq"
+    ]
   },
   server: {
     port: 3000, // default: 3000
