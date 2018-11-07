@@ -8,27 +8,11 @@
                 </div>
             </div>
         </section>
-        <section class="details-section">
-            <div class="container">
-                <aside class="sidebar">
-                    <div class="heading">
-                        <h6>Table de matières</h6>
-                    </div>
-                    <ul class="page-nav">
-                        <li><a href="#">Créer un contenu</a></li>
-                        <li><a href="#">Vue de détail d’un contenu</a></li>
-                        <li><a href="#">Les outils spécifiques aux contenus</a></li>
-                        <li><a href="#">Informations</a></li>
-                        <li><a href="#">Versions et différences</a></li>
-                        <li><a href="#">Commentaires</a></li>
-                        <li><a href="#">Tâches</a></li>
-                        <li><a href="#">Partage</a></li>
-                        <li><a href="#">Fichiers liés</a></li>
-                    </ul>
-                </aside>
-                <div class="content-block">
-                    <slot name="body"></slot>
-                </div>
+        <section class="details-section container">
+            <ContentMenu  class="menu"></ContentMenu>
+
+            <div class="content-block">
+                <slot name="body"></slot>
             </div>
         </section>
         <BlogSection></BlogSection>
@@ -37,12 +21,20 @@
 
 <script>
 import BlogSection from "./blogSection.vue";
+import ContentMenu from "@/components/ContentMenu.vue";
 
 export default {
   name: "DetailResource",
   components: {
-    BlogSection
+    BlogSection,
+    ContentMenu
   },
+  // data: () => {
+  //   return {};
+  // },
+  // mounted() {
+
+  // },
   props: {
     slug: {
       required: true
@@ -52,42 +44,56 @@ export default {
     pageIcon() {
       return `icon-${this.slug}`;
     }
-  },
-  mounted() {
-    this.addListeners();
-  },
-  beforeDestroy() {
-    this.removeListeners();
-  },
-  watch: {
-    content: "contentUpdated"
-  },
-  methods: {
-    navigate(event) {
-      const href = event.target.getAttribute("href");
-      if (href && href[0] === "/") {
-        event.preventDefault();
-        this.$router.push(href);
-      }
-    },
-    contentUpdated() {
-      this.removeListeners();
-      this.$nextTick(() => {
-        this.addListeners();
-      });
-    },
-    addListeners() {
-      this._links = this.$el.getElementsByTagName("a");
-      for (let i = 0; i < this._links.length; i++) {
-        this._links[i].addEventListener("click", this.navigate, false);
-      }
-    },
-    removeListeners() {
-      for (let i = 0; i < this._links.length; i++) {
-        this._links[i].removeEventListener("click", this.navigate, false);
-      }
-      this._links = [];
-    }
   }
+  // mounted() {
+  //   this.addListeners();
+  // },
+  // beforeDestroy() {
+  //   this.removeListeners();
+  // },
+  // watch: {
+  //   content: "contentUpdated"
+  // },
+  // methods: {
+  //   navigate(event) {
+  //     const href = event.target.getAttribute("href");
+  //     if (href && href[0] === "/") {
+  //       event.preventDefault();
+  //       this.$router.push(href);
+  //     }
+  //   },
+  //   contentUpdated() {
+  //     this.removeListeners();
+  //     this.$nextTick(() => {
+  //       this.addListeners();
+  //     });
+  //   },
+  //   addListeners() {
+  //     this._links = this.$el.getElementsByTagName("a");
+  //     for (let i = 0; i < this._links.length; i++) {
+  //       this._links[i].addEventListener("click", this.navigate, false);
+  //     }
+  //   },
+  //   removeListeners() {
+  //     for (let i = 0; i < this._links.length; i++) {
+  //       this._links[i].removeEventListener("click", this.navigate, false);
+  //     }
+  //     this._links = [];
+  //   }
+  // }
 };
 </script>
+
+<style lang="scss" scoped>
+.withmenu {
+  display: flex;
+  flex-direction: row;
+}
+.details-section {
+  display: flex;
+  flex-direction: row;
+  .content-block {
+    margin-left: 300px;
+  }
+}
+</style>

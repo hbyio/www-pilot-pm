@@ -1,7 +1,7 @@
 const pkg = require("./package");
 
 module.exports = {
-  mode: 'universal',
+  mode: "universal",
   /*
   ** Headers of the page
   */
@@ -19,7 +19,7 @@ module.exports = {
   },
 
   generate: {
-    routes: ["/resources/channels"]
+    routes: ["/resources/channels", "resources/projects"]
   },
   server: {
     port: 3000, // default: 3000
@@ -127,13 +127,13 @@ module.exports = {
             code: "en",
             name: "English",
             iso: "en-US",
-            file:"en.js"
+            file: "en.js"
           },
           {
             code: "fr",
             name: "Français",
             iso: "fr-FR",
-            file:"fr.js"
+            file: "fr.js"
           }
         ],
         defaultLocale: "en",
@@ -141,7 +141,7 @@ module.exports = {
         vueI18nLoader: true,
         baseUrl: "https://www.pilot.pm",
         lazy: true,
-        langDir: 'locales/'
+        langDir: "locales/"
       }
     ]
   ],

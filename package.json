@@ -16,8 +16,11 @@
     "@nuxtjs/axios": "^5.0.0",
     "@nuxtjs/bulma": "^1.2.0",
     "cross-env": "^5.2.0",
+    "markdown-it-anchor": "^5.0.2",
     "nuxt": "1",
-    "nuxt-i18n": "^5.4.4"
+    "nuxt-i18n": "^5.4.4",
+    "string": "^3.3.3",
+    "tocbot": "^4.4.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

@@ -1,54 +1,55 @@
 $breakpoints: (
-	'xs-phone': 320px,
-	'phone': 480px,
-	'tablet': 768px,
-	'desktop': 1024px,
-	'widescreen': 1200px
+  "xs-phone": 320px,
+  "phone": 480px,
+  "tablet": 768px,
+  "desktop": 1024px,
+  "widescreen": 1200px
 );
 
 // keywords
 $media-expressions: (
-	'screen': 'screen',
-	'print': 'print',
-	'handheld': 'handheld',
-	'landscape': '(orientation: landscape)',
-	'portrait': '(orientation: portrait)',
-	'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
-	'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+  "screen": "screen",
+  "print": "print",
+  "handheld": "handheld",
+  "landscape": "(orientation: landscape)",
+  "portrait": "(orientation: portrait)",
+  "retina2x": "(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)",
+  "retina3x": "(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)"
 );
 
 // ligatured operators ≥ ≤
 
-@import 'vendors/include-media';
-@import 'vendors/normalize';
-@import 'vendors/icomoon';
+@import "vendors/include-media";
+@import "vendors/normalize";
+@import "vendors/icomoon";
 
-@import 'base/functions';
-@import 'base/variables';
-@import 'base/mixins';
-@import 'base/helpers';
-@import 'base/reset';
-@import 'base/typography';
-@import 'base/forms';
+@import "base/functions";
+@import "base/variables";
+@import "base/mixins";
+@import "base/helpers";
+@import "base/reset";
+@import "base/typography";
+@import "base/forms";
 
-@import 'layout/common';
+@import "layout/common";
 //@import 'layout/header';
-@import 'layout/footer';
-
+@import "layout/footer";
 
 @import "bulma/sass/utilities/_all.sass";
 @import "bulma/sass/elements/button.sass";
 @import "bulma/sass/components/navbar.sass";
+//@import "bulma/sass/components/menu.sass";
 // @import "bulma/sass/components/dropdown.sass";
 
-
-.page-enter-active, .page-leave-active {
-	transition: opacity 0.5s;
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
 }
-.page-enter, .page-leave-to {
-	opacity: 0;
+.page-enter,
+.page-leave-to {
+  opacity: 0;
 }
 
-.capitalize{
-	text-transform: capitalize;
-};
+.capitalize {
+  text-transform: capitalize;
+}
