@@ -10,6 +10,14 @@ import DetailLayout from "@/layouts/detailResource.vue";
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
 
+const md = require("markdown-it")({
+  html: true, // Enable HTML tags in source
+  xhtmlOut: false, // Use '/' to close single tags (<br />).
+  // This is only for full CommonMark compatibility.
+  breaks: true, // Convert '\n' in paragraphs into <br>
+  linkify: true // Autoconvert URL-like text to links
+});
+
 export default {
   components: {
     DetailLayout
@@ -24,7 +32,6 @@ export default {
       return this.document.data.title;
     },
     body() {
-      var md = new MarkdownIt();
       return md.render(this.document.content);
     },
     slug() {

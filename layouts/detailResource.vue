@@ -31,46 +31,18 @@
                 </div>
             </div>
         </section>
-        <section class="blog-section">
-            <div class="container">
-                <h3>Retrouvez nos articles sur le blog</h3>
-                <div class="row">
-                    <article class="col">
-                        <div class="text-holder">
-                            <div class="img-holder" style="background-image: url(images/image-08.jpg)">
-                            </div>
-                            <h6><a href="#">Using Banner Stands To Increase Trade Show Traffic.</a></h6>
-                            <p>A thought experiment on how we measure risk when the fate of the world hangs in the balance</p>
-                        </div>
-                        <a href="#" class="btn btn-white">Read the article</a>
-                    </article>
-                    <article class="col">
-                        <div class="text-holder">
-                            <div class="img-holder" style="background-image: url(images/image-09.jpg)">
-                            </div>
-                            <h6><a href="#">Using Banner Stands To Increase Trade Show Traffic.</a></h6>
-                            <p>A thought experiment on how we measure risk when the fate of the world hangs in the balance</p>
-                        </div>
-                        <a href="#" class="btn btn-white">Read the article</a>
-                    </article>
-                    <article class="col">
-                        <div class="text-holder">
-                            <div class="img-holder" style="background-image: url(images/image-10.jpg)">
-                            </div>
-                            <h6><a href="#">Using Banner Stands To Increase Trade Show Traffic.</a></h6>
-                            <p>A thought experiment on how we measure risk when the fate of the world hangs in the balance</p>
-                        </div>
-                        <a href="#" class="btn btn-white">Read the article</a>
-                    </article>
-                </div>
-            </div>
-        </section>
+        <BlogSection></BlogSection>
     </main>
 </template>
 
 <script>
+import BlogSection from "./blogSection.vue";
+
 export default {
   name: "DetailResource",
+  components: {
+    BlogSection
+  },
   props: {
     slug: {
       required: true
@@ -79,6 +51,42 @@ export default {
   computed: {
     pageIcon() {
       return `icon-${this.slug}`;
+    }
+  },
+  mounted() {
+    this.addListeners();
+  },
+  beforeDestroy() {
+    this.removeListeners();
+  },
+  watch: {
+    content: "contentUpdated"
+  },
+  methods: {
+    navigate(event) {
+      const href = event.target.getAttribute("href");
+      if (href && href[0] === "/") {
+        event.preventDefault();
+        this.$router.push(href);
+      }
+    },
+    contentUpdated() {
+      this.removeListeners();
+      this.$nextTick(() => {
+        this.addListeners();
+      });
+    },
+    addListeners() {
+      this._links = this.$el.getElementsByTagName("a");
+      for (let i = 0; i < this._links.length; i++) {
+        this._links[i].addEventListener("click", this.navigate, false);
+      }
+    },
+    removeListeners() {
+      for (let i = 0; i < this._links.length; i++) {
+        this._links[i].removeEventListener("click", this.navigate, false);
+      }
+      this._links = [];
     }
   }
 };

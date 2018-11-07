@@ -17,7 +17,7 @@ An article, an interview, a tweet are contents in the sense of Pilot as opposed 
 
 Each content has its own life cycle (draft > to validate > to publish > ..) as well as its own comments, versions, shares.
 
-Contents can be gathered in a <a href="{{< relref path="/documentation/projects" lang="en" >}}">project</a> and/or in a <a href="{{< relref path="/documentation/channels" lang="en" >}}">channel</a>.
+Contents can be gathered in a <a href="/resources/projects">project</a> and/or in a <a href="/resources/channels">channels</a>.
 
 ## Create a content
 

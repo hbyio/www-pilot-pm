@@ -17,7 +17,7 @@ Un article, une interview, un tweet sont des contenus au sens de l'application �
 
 Chaque contenu a un cycle de vie propre (brouillon > à valider > à publier > ..) ainsi que ses propres commentaires, versions, partages.
 
-Des contenus peuvent être rassemblés dans un <a href="{{< relref path="/documentation/projects" lang="fr" >}}">projet</a> et/ou dans un <a href="{{< relref path="/documentation/channels" lang="fr" >}}">canal</a>.
+Des contenus peuvent être rassemblés dans un <a href="/resources/projects">projet</a> et/ou dans un <a href="/resources/channels">canal</a>.
 
 ## Créer un contenu
 
