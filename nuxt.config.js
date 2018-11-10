@@ -58,7 +58,7 @@ module.exports = {
   */
   css: [
     // Load a Node.js module directly (here it's a Sass file)
-    // 'bulma',
+    //"bulma",
     "@/assets/scss/main.scss"
   ],
 

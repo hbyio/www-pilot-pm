@@ -9,7 +9,7 @@
         </div>
     </section>
     <section class="details-section container">
-        <nav class="toc js-toc is-position-fixed"></nav>
+        <aside class="menu toc js-toc transition--300"></aside>
         <div class="content-block js-toc-content" v-html="body"></div>
     </section>
     <BlogSection></BlogSection>
@@ -83,14 +83,17 @@ export default {
       // not too rapid (for performance reasons).
       throttleTimeout: 50,
       // Element to add the positionFixedClass to.
-      positionFixedSelector: ".details-section",
+      positionFixedSelector: ".toc",
       // Fixed position class to add to make sidebar fixed after scrolling
       // down past the fixedSidebarOffset.
       positionFixedClass: "is-menu-fixed",
       // fixedSidebarOffset can be any number but by default is set
       // to auto which sets the fixedSidebarOffset to the sidebar
       // element's offsetTop from the top of the document on init.
-      fixedSidebarOffset: "auto"
+      fixedSidebarOffset: "auto",
+      // orderedList can be set to false to generate unordered lists (ul)
+      // instead of ordered lists (ol)
+      orderedList: false
     });
   },
   beforeDestroy() {
@@ -149,34 +152,61 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~tocbot/src/scss/tocbot-core";
-@import "~tocbot/src/scss/tocbot-default-theme";
 .details-section {
   display: flex;
   justify-content: space-between;
   .toc {
     width: 300px;
+    padding-right: 20px;
     flex-shrink: 0;
     flex-basis: 300px;
     position: absolute !important;
-    top: 200px;
   }
   .content-block {
     max-width: 700px;
     margin-left: 300px;
   }
 }
-.details-section.is-menu-fixed {
-  .toc {
-    width: 300px;
-    flex-shrink: 0;
-    flex-basis: 300px;
-    position: fixed !important;
-    top: 65px;
+.menu > ul {
+  padding-left: 10px;
+}
+.menu > li {
+  height: 2em;
+}
+.toc.is-menu-fixed {
+  position: fixed !important;
+  top: 54px;
+}
+.toc-list {
+  list-style: none;
+  .toc-list-item {
+    a {
+      padding-left: 0.5em;
+      border-left: 3px solid #fafafa;
+      text-decoration: none;
+      color: #546e7a;
+      height: 2em;
+    }
+    a:hover {
+      background-color: #fafafa;
+    }
   }
-  .content-block {
-    margin-left: 300px;
-    max-width: 700px;
+  a.is-active-link {
+    border-left: 3px solid #2196f3;
   }
+}
+</style>
+<style scoped>
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+  display: block;
+  content: " ";
+  height: 60px;
+  margin-top: 60px;
+  visibility: hidden;
 }
 </style>

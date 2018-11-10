@@ -89,7 +89,7 @@ export default {
       this.isMenuOpen = !this.isMenuOpen;
     },
     closeMenu() {
-      this.isMenuOpen = false
+      this.isMenuOpen = false;
     }
   }
 };
@@ -98,7 +98,7 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/scss/base/_variables.scss";
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -122,6 +122,10 @@ a{
   .navbar-item {
     padding: 1em 0;
   }
+}
+
+.container {
+  padding: 0;
 }
 
 .navbar-item {
