@@ -9,6 +9,8 @@ title: Contenus
 weight: 2
 ---
 
+## Qu'est ce qu'un contenu ?
+
 Un contenu est le plus simple élément géré par Pilot. C'est une unité éditoriale compréhensible hors contexte.
 
 <!--more-->
@@ -36,6 +38,7 @@ Plus loin dans la documentation nous nous référerons à cette vue comme "vue d
 ## Les outils spécifiques aux contenus
 
 <img style="float:right; margin-left:1em;" src="/img/screenshots/item_detail_menu.png" alt="">
+
 ### Informations
 
 Ce menu permet d'afficher les informations générales relatives au contenu :

@@ -9,9 +9,8 @@
         </div>
     </section>
     <section class="details-section container">
-        <ContentMenu  class="menu"></ContentMenu>
-
-        <div class="content-block" v-html="body"></div>
+        <nav class="toc js-toc is-position-fixed"></nav>
+        <div class="content-block js-toc-content" v-html="body"></div>
     </section>
     <BlogSection></BlogSection>
 </main>
@@ -20,8 +19,8 @@
 <script>
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
+import tocbot from "tocbot";
 import BlogSection from "@/components/blogSection.vue";
-import ContentMenu from "@/components/ContentMenu.vue";
 
 var string = require("string");
 
@@ -46,8 +45,7 @@ const md = MarkdownIt({
 
 export default {
   components: {
-    BlogSection,
-    ContentMenu
+    BlogSection
   },
   data: () => {
     return {
@@ -70,6 +68,30 @@ export default {
   },
   mounted() {
     this.addListeners();
+    tocbot.init({
+      // Which headings to grab inside of the contentSelector element.
+      headingSelector: "h1, h2, h3, h4,h5,h6",
+      // How many heading levels should not be collpased.
+      // For example, number 6 will show everything since
+      // there are only 6 heading levels and number 0 will collpase them all.
+      // The sections that are hidden will open
+      // and close as you scroll to headings within them.
+      collapseDepth: 6,
+      // Headings offset between the headings and the top of the document (this is meant for minor adjustments).
+      headingsOffset: 1,
+      // Timeout between events firing to make sure it's
+      // not too rapid (for performance reasons).
+      throttleTimeout: 50,
+      // Element to add the positionFixedClass to.
+      positionFixedSelector: ".details-section",
+      // Fixed position class to add to make sidebar fixed after scrolling
+      // down past the fixedSidebarOffset.
+      positionFixedClass: "is-menu-fixed",
+      // fixedSidebarOffset can be any number but by default is set
+      // to auto which sets the fixedSidebarOffset to the sidebar
+      // element's offsetTop from the top of the document on init.
+      fixedSidebarOffset: "auto"
+    });
   },
   beforeDestroy() {
     this.removeListeners();
@@ -126,12 +148,35 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+@import "~tocbot/src/scss/tocbot-core";
+@import "~tocbot/src/scss/tocbot-default-theme";
 .details-section {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  .toc {
+    width: 300px;
+    flex-shrink: 0;
+    flex-basis: 300px;
+    position: absolute !important;
+    top: 200px;
+  }
+  .content-block {
+    max-width: 700px;
+    margin-left: 300px;
+  }
+}
+.details-section.is-menu-fixed {
+  .toc {
+    width: 300px;
+    flex-shrink: 0;
+    flex-basis: 300px;
+    position: fixed !important;
+    top: 65px;
+  }
   .content-block {
     margin-left: 300px;
+    max-width: 700px;
   }
 }
 </style>

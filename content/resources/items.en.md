@@ -9,6 +9,8 @@ title: Contents
 weight: 2
 ---
 
+## What an "item" is exactly ?
+
 A content is the simplest element managed by Pilot. It is an understandable editorial unit out of context.
 
 <!--more-->
@@ -36,6 +38,7 @@ Later in the documentation we will refer to this view as a "detail view" of a co
 ## Content specific tools
 
 <img style="float:right; margin-left:1em;" src="/img/screenshots/item_detail_menu.png" alt="">
+
 ### Information
 
 This menu displays general information about the content:
