@@ -4,6 +4,7 @@
   "description": "My exceptional Nuxt.js project",
   "author": "Matthieu Bellon",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -20,7 +21,8 @@
     "nuxt": "1",
     "nuxt-i18n": "^5.4.4",
     "string": "^3.3.3",
-    "tocbot": "^4.4.2"
+    "vue-affix": "^0.4.0",
+    "vue-scrollactive": "^0.7.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

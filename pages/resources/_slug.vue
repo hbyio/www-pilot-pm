@@ -9,8 +9,20 @@
         </div>
     </section>
     <section class="details-section container">
-        <aside class="menu toc js-toc transition--300"></aside>
-        <div class="content-block js-toc-content" v-html="body"></div>
+ 
+
+      <div class="menu">
+        <affix  relative-element-selector="#example-content" :offset="{ top: 70, bottom: 40 }" :scroll-affix="false">
+          <scrollactive class="menu-list" :offset="80">
+            <nuxt-link class="menu-item scrollactive-item" v-for="heading in headings" :key="heading.hash" :class="heading.tagName" :to="{hash:heading.id}">
+                 {{heading.firstChild.data}}
+            </nuxt-link>
+          </scrollactive>
+        </affix>
+      </div>
+    
+
+      <div id="example-content"  class="content-block js-toc-content" v-html="body"></div>
     </section>
     <BlogSection></BlogSection>
 </main>
@@ -38,7 +50,7 @@ const md = MarkdownIt({
   linkify: true // Autoconvert URL-like text to links
 }).use(require("markdown-it-anchor"), {
   permalink: true,
-  permalinkBefore: true,
+  permalinkBefore: false,
   permalinkSymbol: "§",
   slugify: legacySlugify
 });
@@ -49,7 +61,8 @@ export default {
   },
   data: () => {
     return {
-      document: {}
+      document: {},
+      headings: []
     };
   },
   computed: {
@@ -68,33 +81,14 @@ export default {
   },
   mounted() {
     this.addListeners();
-    tocbot.init({
-      // Which headings to grab inside of the contentSelector element.
-      headingSelector: "h1, h2, h3, h4,h5,h6",
-      // How many heading levels should not be collpased.
-      // For example, number 6 will show everything since
-      // there are only 6 heading levels and number 0 will collpase them all.
-      // The sections that are hidden will open
-      // and close as you scroll to headings within them.
-      collapseDepth: 6,
-      // Headings offset between the headings and the top of the document (this is meant for minor adjustments).
-      headingsOffset: 1,
-      // Timeout between events firing to make sure it's
-      // not too rapid (for performance reasons).
-      throttleTimeout: 50,
-      // Element to add the positionFixedClass to.
-      positionFixedSelector: ".toc",
-      // Fixed position class to add to make sidebar fixed after scrolling
-      // down past the fixedSidebarOffset.
-      positionFixedClass: "is-menu-fixed",
-      // fixedSidebarOffset can be any number but by default is set
-      // to auto which sets the fixedSidebarOffset to the sidebar
-      // element's offsetTop from the top of the document on init.
-      fixedSidebarOffset: "auto",
-      // orderedList can be set to false to generate unordered lists (ul)
-      // instead of ordered lists (ol)
-      orderedList: false
-    });
+    var contentBlock = document.querySelector(".content-block");
+    this.headings = contentBlock.querySelectorAll("h1,h2,h3,h4,h5,h6");
+    console.log(this.headings);
+    //console.log(this.$route);
+    //console.log(this);
+    // if (this.$route.hash) {
+    //   VueScrollTo.scrollTo(this.$route.hash);
+    // }
   },
   beforeDestroy() {
     this.removeListeners();
@@ -155,58 +149,27 @@ export default {
 .details-section {
   display: flex;
   justify-content: space-between;
-  .toc {
-    width: 300px;
-    padding-right: 20px;
+
+  .menu {
     flex-shrink: 0;
-    flex-basis: 300px;
-    position: absolute !important;
+    position: absolute;
+    a.H3 {
+      padding-left: 1em;
+    }
+  }
+  .menu-list {
+    display: flex;
+    flex-direction: column;
   }
   .content-block {
     max-width: 700px;
     margin-left: 300px;
   }
 }
-.menu > ul {
-  padding-left: 10px;
-}
-.menu > li {
-  height: 2em;
-}
-.toc.is-menu-fixed {
-  position: fixed !important;
-  top: 54px;
-}
-.toc-list {
-  list-style: none;
-  .toc-list-item {
-    a {
-      padding-left: 0.5em;
-      border-left: 3px solid #fafafa;
-      text-decoration: none;
-      color: #546e7a;
-      height: 2em;
-    }
-    a:hover {
-      background-color: #fafafa;
-    }
-  }
-  a.is-active-link {
-    border-left: 3px solid #2196f3;
-  }
+
+.is-active {
+  background-color: #2196f3;
+  color: white;
 }
 </style>
-<style scoped>
-h1::before,
-h2::before,
-h3::before,
-h4::before,
-h5::before,
-h6::before {
-  display: block;
-  content: " ";
-  height: 60px;
-  margin-top: 60px;
-  visibility: hidden;
-}
-</style>
+

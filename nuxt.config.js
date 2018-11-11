@@ -65,61 +65,42 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: ["~plugins/vue-scrollto.js"],
+  plugins: [
+    "~plugins/vue-scrollto.js",
+    { src: "~plugins/vue-affix.js", ssr: false },
+    { src: "~plugins/vue-scrollactive.js", ssr: false }
+  ],
 
   router: {
-    scrollBehavior: function(to, from, savedPosition) {
-      // if the returned position is falsy or an empty object,
-      // will retain current scroll position.
-      // console.log("to", to);
-      // console.log("from", from);
-      // console.log("savedPosition", savedPosition);
-      let position = false;
-
-      // if no children detected
-      if (to.matched.length < 2) {
-        // scroll to the top of the page
-        position = { x: 0, y: 0 };
-        position.offset = { x: 0, y: 70 };
-        //console.log("no children", position);
-      } else if (
-        to.matched.some(r => r.components.default.options.scrollToTop)
-      ) {
-        // if one of the children has scrollToTop option set to true
-        position = { x: 0, y: 0 };
-        position.offset = { x: 0, y: 70 };
-        //console.log("scrollToTop present", position);
-      }
-
-      // savedPosition is only available for popstate navigations (back button)
+    scrollBehavior: async (to, from, savedPosition) => {
       if (savedPosition) {
-        position = savedPosition;
-        //console.log("Saved position", position);
+        return savedPosition;
       }
 
-      if (to.name === from.name && to.hash && document.querySelector(to.hash)) {
-        //console.log("to hash same page", to.hash);
-        // scroll to anchor by returning the selector
-        position = { selector: to.hash };
-        position.offset = { x: 0, y: 70 };
-        return position;
+      const findEl = async (hash, x) => {
+        return (
+          document.querySelector(hash) ||
+          new Promise((resolve, reject) => {
+            if (x > 50) {
+              return resolve();
+            }
+            setTimeout(() => {
+              resolve(findEl(hash, ++x || 1));
+            }, 100);
+          })
+        );
+      };
+
+      if (to.hash) {
+        let el = await findEl(to.hash);
+        if ("scrollBehavior" in document.documentElement.style) {
+          return window.scrollTo({ top: el.offsetTop, behavior: "smooth" });
+        } else {
+          return window.scrollTo(0, el.offsetTop);
+        }
       }
-      return new Promise(resolve => {
-        // wait for the out transition to complete (if necessary)
-        window.$nuxt.$once("triggerScroll", () => {
-          //console.log("scroll triggered");
-          // coords will be used if no selector is provided,
-          // or if the selector didn't match any element.
-          if (to.hash && document.querySelector(to.hash)) {
-            //console.log("tohash in trigger", to.hash);
-            // scroll to anchor by returning the selector
-            position = { selector: to.hash };
-            position.offset = { x: 0, y: 70 };
-          }
-          //console.log("before resolve IN TRIGGER : ", position);
-          resolve(position);
-        });
-      });
+
+      return { x: 0, y: 0 };
     }
   },
 

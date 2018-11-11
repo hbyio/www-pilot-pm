@@ -244,7 +244,7 @@
           <div class="col">
             <div class="info-block">
               <div class="info-head">
-                <h4>{{ $t('enterprise') }}</h4>
+                <h4 class="capitalize">{{ $t('enterprise') }}</h4>
                 <span class="comment">{{ $t('home.enterpriseIsFor') }}</span>
                 <div class="price-info">
                   <strong class="price">39€</strong>

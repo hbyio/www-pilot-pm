@@ -7562,11 +7562,6 @@ to-regex@^3.0.1, to-regex@^3.0.2:
     regex-not "^1.0.2"
     safe-regex "^1.1.0"
 
-tocbot@^4.4.2:
-  version "4.4.2"
-  resolved "https://registry.yarnpkg.com/tocbot/-/tocbot-4.4.2.tgz#5c1ab4b38ee287a08b161f893de2982106cbdb26"
-  integrity sha512-WBf5KP1tOOPTfPb2EW/7JZRtVadNV1ilRV8t6ARj7Gb6DGyaW7rW0ju1UEOuj6/q1I2VoQjFZEky+66izO5z3A==
-
 toposort@^1.0.0:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/toposort/-/toposort-1.0.7.tgz#2e68442d9f64ec720b8cc89e6443ac6caa950029"
@@ -7947,6 +7942,11 @@ vm2@^3.5.0:
   resolved "https://registry.yarnpkg.com/vm2/-/vm2-3.6.4.tgz#88b27a9f328a0630671841363692a57d24dead33"
   integrity sha512-LFj8YL9DyGn+fwgG2J+10HyuIpdIRHHN8/3NwKoc2e2t2Pr0aXV/2OSODceDR7NP7VNr8RTqmxHRYcwbNvpbwg==
 
+vue-affix@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/vue-affix/-/vue-affix-0.4.0.tgz#42c4e148749d7c77ba107fb5355a2cbd40b42757"
+  integrity sha512-iXI8qh0W6XZZFawpjkA9poPTl7nLHqwD3nggGsCevtrwL/L3Juc2/AVljwRTcMwdfBwhQN8dPpkMe+WMvON57A==
+
 vue-eslint-parser@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-2.0.3.tgz#c268c96c6d94cfe3d938a5f7593959b0ca3360d1"
@@ -8008,6 +8008,13 @@ vue-router@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.1.tgz#d9b05ad9c7420ba0f626d6500d693e60092cc1e9"
   integrity sha512-vLLoY452L+JBpALMP5UHum9+7nzR9PeIBCghU9ZtJ1eWm6ieUI8Zb/DI3MYxH32bxkjzYV1LRjNv4qr8d+uX/w==
+
+vue-scrollactive@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/vue-scrollactive/-/vue-scrollactive-0.7.1.tgz#b9f768d0b32b428ef6c646e584b228ed8ac69b8a"
+  integrity sha512-Vt2IpsyZblqlQo47Nf3PFAAGCc12jjyPeha5uRqbR/vQzJXXAkFHhOOO+tvQXNOrh07/G3sorgA8OvqgYodkZA==
+  dependencies:
+    bezier-easing "^2.0.3"
 
 vue-scrollto@^2.13.0:
   version "2.13.0"
