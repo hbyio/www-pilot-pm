@@ -86,10 +86,10 @@ export default {
   },
   computed:{
       registrationUrl(){
-        return process.env.baseUrl+"/registration"
+        return process.env.baseUrl+"/registration?lang="+this.$store.app.i18n.locale
       },
       loginUrl(){
-        return process.env.baseUrl+"/login"
+        return process.env.baseUrl+"/login?lang="+this.$store.app.i18n.locale
       }
   },
   methods: {

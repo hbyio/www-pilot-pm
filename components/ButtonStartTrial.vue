@@ -39,7 +39,7 @@ export default {
     },
     computed:{
         registrationUrl(){
-            return process.env.baseUrl+"/registration"
+            return process.env.baseUrl+"/registration?lang="+this.$store.app.i18n.defaultLocale
         }
     }
 }
