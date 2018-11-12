@@ -68,7 +68,8 @@ module.exports = {
   plugins: [
     "~plugins/vue-scrollto.js",
     { src: "~plugins/vue-affix.js", ssr: false },
-    { src: "~plugins/vue-scrollactive.js", ssr: false }
+    { src: "~plugins/vue-scrollactive.js", ssr: false },
+    { src: "~plugins/vue-mq.js", ssr: false },
   ],
 
   router: {

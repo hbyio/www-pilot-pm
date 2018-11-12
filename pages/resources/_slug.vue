@@ -4,25 +4,41 @@
         <div class="container">
             <div class="text-holder">
                 <i class="icon-details" :class="pageIcon"></i>
-                <h3> {{title}} </h3>
+                <h1> {{title}} </h1>
             </div>
         </div>
     </section>
     <section class="details-section container">
-
-      <div class="menu">
+      <affix  class="js-mobilemenu"
+              relative-element-selector=".js-content" 
+              :offset="{ top: 80, bottom: 40 }" 
+              :scroll-affix="true">
+              <button class="button is-fullwidth is-primary is-rounded"
+                      @click="toggleMobileMenu"
+              >
+                {{ $t('menu') }}
+              </button>
+      </affix>
+      <div class="menu" :class="{isOpened:isMobileMenuOpen}" @click="toggleMobileMenu">
+        <button class="button closeMenu is-fullwidth is-medium is-light"
+                @click="toggleMobileMenu"
+                v-show="!menuIsAffix"
+        >
+          {{ $t('close') }}
+        </button>
         <affix  relative-element-selector=".js-content" 
                 :offset="{ top: 80, bottom: 40 }" 
-                :scroll-affix="false">
+                :scroll-affix="false"
+                :enabled="menuIsAffix">
           <scrollactive class="menu-list" :offset="80"
-          :duration="800"
-          bezier-easing-value=".5,0,.35,1">
+                        :duration="800"
+                        bezier-easing-value=".5,0,.35,1">
             <nuxt-link  class="menu-item scrollactive-item"
-            v-for="heading in headings" 
-            :key="heading.hash"
+                        v-for="heading in headings" 
+                        :key="heading.hash"
                         :class="heading.tagName" 
                         :to="{hash:heading.id}">
-                        {{heading.firstChild.data}}
+                          {{heading.firstChild.data}}
             </nuxt-link>
           </scrollactive>
         </affix>
@@ -66,7 +82,8 @@ export default {
   data: () => {
     return {
       document: {},
-      headings: []
+      headings: [],
+      isMobileMenuOpen:false,
     };
   },
   computed: {
@@ -81,6 +98,9 @@ export default {
     },
     pageIcon() {
       return `icon-${this.slug}`;
+    },
+    menuIsAffix() {
+      return this.$mq === 'desktop'
     }
   },
   mounted() {
@@ -101,6 +121,9 @@ export default {
     content: "contentUpdated"
   },
   methods: {
+    toggleMobileMenu(){
+      this.isMobileMenuOpen = !this.isMobileMenuOpen
+    },
     navigate(event) {
       const href = event.target.getAttribute("href");
       if (href && href[0] === "/") {
@@ -151,16 +174,27 @@ export default {
 
 <style lang="scss">
 @import "@/assets/scss/vendors/_include-media.scss";
-// @include media("<tablet") {
-//   position: relative !important;
-// }
 
 .details-section {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  @include media("<tablet") {
+    position: relative !important;
+    flex-direction: column;
+  }
 }
-
+.js-mobilemenu{
+  display:none;
+  padding: 0 2em;    
+  @include media("<tablet") {
+    display: block;
+    &.affix{
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+}
 .menu {
   box-sizing: border-box;
   //border-right: 1px solid #eaecef;
@@ -170,16 +204,40 @@ export default {
   .affix{
     width: 250px;
   }
+
+
+
+  @include media("<tablet") {
+    display: none;
+    padding: 2em;
+    position: fixed;
+    top: 0;
+    z-index: 100000000000;
+    opacity: .98;
+    background-color: #fff !important;
+    width: 100%;
+    height: 100%;
+    &.isOpened{
+      display: block;
+    }
+  }
+  
 }
 .menu-list {
   display: flex;
   flex-direction: column;
+  @include media("<tablet") {
+    margin-top: 2em;
+  }
   .menu-item{
     padding: 0.3em 1em;
-    border-left:3px solid #fefefe;
+    border-left:3px solid #eceff1;
     text-decoration: none;
     color: #546e7a;
     width: 100%;
+    @include media("<tablet") {
+      padding: 1em;
+    }
 
     &:hover {
       background: #eceff1;
@@ -204,6 +262,9 @@ export default {
 .content-block {
   flex-grow: 4;
   max-width: 700px;
+  @include media("<tablet") {
+    padding: 2em;
+  }
 }
 
 
