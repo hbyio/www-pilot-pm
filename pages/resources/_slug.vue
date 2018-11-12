@@ -31,7 +31,6 @@
 <script>
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
-import tocbot from "tocbot";
 import BlogSection from "@/components/blogSection.vue";
 
 var string = require("string");
