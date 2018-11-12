@@ -9,20 +9,25 @@
         </div>
     </section>
     <section class="details-section container">
- 
 
       <div class="menu">
-        <affix  relative-element-selector="#example-content" :offset="{ top: 70, bottom: 40 }" :scroll-affix="false">
-          <scrollactive class="menu-list" :offset="80">
-            <nuxt-link class="menu-item scrollactive-item" v-for="heading in headings" :key="heading.hash" :class="heading.tagName" :to="{hash:heading.id}">
-                 {{heading.firstChild.data}}
+        <affix  relative-element-selector=".js-content" 
+                :offset="{ top: 80, bottom: 40 }" 
+                :scroll-affix="false">
+          <scrollactive class="menu-list" :offset="80"
+          :duration="800"
+          bezier-easing-value=".5,0,.35,1">
+            <nuxt-link  class="menu-item scrollactive-item"
+            v-for="heading in headings" 
+            :key="heading.hash"
+                        :class="heading.tagName" 
+                        :to="{hash:heading.id}">
+                        {{heading.firstChild.data}}
             </nuxt-link>
           </scrollactive>
         </affix>
       </div>
-    
-
-      <div id="example-content"  class="content-block js-toc-content" v-html="body"></div>
+      <div class="content-block js-content" v-html="body"></div>
     </section>
     <BlogSection></BlogSection>
 </main>
@@ -145,30 +150,65 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/scss/vendors/_include-media.scss";
+// @include media("<tablet") {
+//   position: relative !important;
+// }
+
 .details-section {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+}
 
-  .menu {
-    flex-shrink: 0;
-    position: absolute;
-    a.H3 {
-      padding-left: 1em;
+.menu {
+  box-sizing: border-box;
+  //border-right: 1px solid #eaecef;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis:250px;
+  .affix{
+    width: 250px;
+  }
+}
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  .menu-item{
+    padding: 0.3em 1em;
+    border-left:3px solid #fefefe;
+    text-decoration: none;
+    color: #546e7a;
+    width: 100%;
+
+    &:hover {
+      background: #eceff1;
+      border-left:3px solid #2196f3;
+      color: #2196f3;
     }
-  }
-  .menu-list {
-    display: flex;
-    flex-direction: column;
-  }
-  .content-block {
-    max-width: 700px;
-    margin-left: 300px;
+    &.is-active {
+      border-left:3px solid #2196f3;
+      color: #2196f3;
+      font-weight: 600;
+    }
+    &.H3 {
+      padding-left: 2em;
+    }
+
   }
 }
 
-.is-active {
-  background-color: #2196f3;
-  color: white;
+
+
+
+.content-block {
+  flex-grow: 4;
+  max-width: 700px;
 }
+
+
+
+
+
 </style>
 
