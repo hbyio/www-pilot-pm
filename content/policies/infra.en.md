@@ -1,11 +1,14 @@
-+++
-date        = "2015-01-27T11:27:27-04:00"
-title       = "Infra & security"
-author      = "mb"
-slug        = "infra"
-menu        = "policies"
-inSitemap   = "false"
-+++
+---
+date: 2015-01-27T11:27:27-04:00
+title: Infra & security
+author: mb
+slug: infra
+menu: policies
+weight: 3
+inSitemap: false
+---
+
+
 
 Pilot is hosted by Amazon Web Services.
 Part of the system administration is delegated to the Heroku service which acts as Paas (heroku.com, member of the SalesForce group)

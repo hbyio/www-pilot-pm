@@ -1,12 +1,12 @@
-+++
-date        = "2015-01-27T11:27:27-04:00"
-title       = "Service level agreement"
-author      = "mb"
-slug        = "SLA"
-menu        = "policies"
-weight      = 2
-inSitemap   = "false"
-+++
+---
+date: 2015-01-27T11:27:27-04:00
+title: Service level agreement
+author: mb
+slug: sla
+menu: policies
+weight: 3
+inSitemap: false
+---
 
 Pilot est hébergé par les services d’Amazon Web Services.
 Une partie de l’administration système est déléguée au service Heroku qui agit en tant que Paas (heroku.com, membre du groupe SalesForce)

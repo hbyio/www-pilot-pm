@@ -1,12 +1,12 @@
-+++
-date        = "2015-01-27T11:27:27-04:00"
-title       = "Conditions générales d'utilisation"
-author      = "mb"
-slug        = "cgu"
-menu        = "policies"
-weight      = 3
-inSitemap   = "false"
-+++
+---
+date: 2015-01-27T11:27:27-04:00
+title: Conditions générales d'utilisation
+author: mb
+slug: terms
+menu: policies
+weight: 3
+inSitemap: false
+---
 
 PILOT est une plateforme de production de contenus proposée en mode SAAS. La solution s’adresse à toute structure souhaitant produire du contenu de manière collaborative, et en particulier aux équipes des services communication / marketing des entreprises et à leurs partenaires / clients / prestataires. 
 
