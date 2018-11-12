@@ -7,16 +7,7 @@
           <p>{{ $t('home.catchphrase') }}</p>
         </div>
         <div class="relative-holder">
-          <form action="#" class="subscribe-form">
-            <div class="input-holder">
-              <input type="email" :placeholder="$t('home.enterYourEmail')">
-              <i class="icon-mail"></i>
-            </div>
-            <div class="submit-holder">
-              <button type="submit" class="btn">{{ $t('home.startTrial') }}<i class="icon-arrow-right"></i></button>
-            </div>
-          </form>
-          <p>{{ $t('home.trialConditions') }}</p>
+          <ButtonStartTrial buttonClasses="is-info is-medium"></ButtonStartTrial>
           <img src="/images/image-01.png" alt="image description">
           <ul class="tag-block">
             <li>
@@ -133,7 +124,7 @@
                 <h2 class="capitalize">{{ $t('versions') }}</h2>
               </div>
               <p>{{ $t('versionsShort') }}</p>
-              <a href="#" class="btn">{{ $t('view') }} <i class="icon-arrow-right"></i></a>
+              <!-- <a href="#" class="btn">{{ $t('view') }} <i class="icon-arrow-right"></i></a> -->
             </div>
             <div class="col">
               <img src="/images/image-07.png" alt="image description">
@@ -173,16 +164,7 @@
           <div class="col">
             <h4>{{ $t('home.daysOnUs') }}</h4>
             <div class="text-holder">
-              <form action="#" class="subscribe-form">
-                <div class="input-holder">
-                  <input type="email" :placeholder="$t('home.enterYourEmail')">
-                  <i class="icon-mail"></i>
-                </div>
-                <div class="submit-holder">
-                  <button type="submit" class="btn">{{ $t('home.startTrial') }}<i class="icon-arrow-right"></i></button>
-                </div>
-              </form>
-              <p>{{ $t('home.trialConditions') }}</p>
+              <ButtonStartTrial buttonClasses="is-info is-fullwidth"></ButtonStartTrial>
             </div>
           </div>
         </div>
@@ -213,7 +195,7 @@
                 <div>{{ $t('home.support.none') }}</div>
               </div>
               <div class="btn-holder">
-                <a href="#" class="btn btn-white">{{ $t('home.createYourDesk') }}</a>
+                <ButtonStartTrial buttonClasses="is-light"></ButtonStartTrial>
               </div>
             </div>
           </div>
@@ -237,7 +219,7 @@
                 <div>{{ $t('home.support.medium') }}</div>
               </div>
               <div class="btn-holder">
-                <a href="#" class="btn">{{ $t('home.createYourDesk') }}</a>
+                <ButtonStartTrial></ButtonStartTrial>
               </div>
             </div>
           </div>
@@ -261,7 +243,7 @@
                 <div>{{ $t('home.support.advanced') }}</div>
               </div>
               <div class="btn-holder">
-                <a href="#" class="btn btn-white">{{ $t('home.createYourDesk') }}</a>
+                <ButtonStartTrial buttonClasses="is-light"></ButtonStartTrial>
               </div>
             </div>
           </div>
@@ -271,11 +253,14 @@
   </main>
 </template>
 <script>
+import ButtonStartTrial from '@/components/ButtonStartTrial.vue'
 export default {
+  components:{
+    ButtonStartTrial
+  },
   mounted() {
     this.$nextTick(() => {
       this.$nuxt.$loading.start();
-
       setTimeout(() => this.$nuxt.$loading.finish(), 200);
     });
   }

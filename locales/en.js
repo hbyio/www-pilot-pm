@@ -27,7 +27,7 @@ export default {
     mediumIsFor: "Agencies, collectives,...",
     enterpriseIsFor: "Big corp, marketing, communication, legal",
     smallIsFor: "Freelancers, consultants, translators,...",
-    startTrial: "START YOUR TRIAL",
+    startTrial: "Start your trial",
     startTrialNow: "Start your trial now",
     support:{
       none: "No support",

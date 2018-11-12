@@ -102,7 +102,7 @@ export default {
   },
   mounted() {
     this.addListeners();
-    var contentBlock = document.querySelector(".content-block");
+    var contentBlock = this.$el.querySelector(".content-block");
     this.headings = contentBlock.querySelectorAll("h1,h2,h3,h4,h5,h6");
     console.log(this.headings);
     //console.log(this.$route);

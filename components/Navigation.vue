@@ -62,10 +62,10 @@
           </div>
           <div class="navbar-item">
             <div class="buttons">
-              <a class="button is-info" :class="{'is-medium is-fullwidth':isMenuOpen}">
+              <a :href="registrationUrl" class="button is-info" :class="{'is-medium is-fullwidth':isMenuOpen}">
                 {{ $t('signup') }}
               </a>
-              <a class="button is-outlined" :class="{'is-medium is-fullwidth':isMenuOpen}">
+              <a :href="loginUrl" class="button is-outlined" :class="{'is-medium is-fullwidth':isMenuOpen}">
                 {{ $t('login') }}
               </a>
             </div>
@@ -83,6 +83,14 @@ export default {
     return {
       isMenuOpen: false
     };
+  },
+  computed:{
+      registrationUrl(){
+        return process.env.baseUrl+"/registration"
+      },
+      loginUrl(){
+        return process.env.baseUrl+"/login"
+      }
   },
   methods: {
     toggleMenu() {

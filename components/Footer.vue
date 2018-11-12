@@ -55,21 +55,23 @@
             </ul>
           </div>
           <div class="form-block">
-            <form action="#" class="subscribe-form">
-              <div class="input-holder">
-                <input type="email" :placeholder="$t('leaveYourEmail')">
-                <i class="icon-mail"></i>
-              </div>
-              <div class="submit-holder">
-                <button type="submit" class="btn">{{ $t('newsletterSignUp') }}</button>
-              </div>
-            </form>
+            <!-- <NewsletterSignup></NewsletterSignup> -->
           </div>
         </div>
       </div>
       <div class="credits">© Huckleberry 2018 🤖 🚀 - SIRET 79817197100012 - TVA FR18798171971 - Fabriqué en Europe 🇪🇺 / 🇫🇷 .</div>
     </footer>
 </template>
+<script>
+import NewsletterSignup from '@/components/NewsletterSignup.vue'
+export default {
+  name:"Footer",
+  components:{
+    NewsletterSignup
+  }
+}
+</script>
+
 <style lang="scss" scoped>
 .credits{
   display: flex;
@@ -78,6 +80,7 @@
   font-size: 0.8em;
   color: #f9f9f9;
   margin-top: 2em;
+  padding: 2em;
 }
 </style>
 
@@ -86,16 +89,12 @@
 {
   "en": {
     "company": "Company",
-    "leaveYourEmail": "Subscribe to the newsletter",
-    "newsletterSignUp": "Subscribe",
     "product": "Product",
     "useCases": "Case studies",
     "resources":"resources"
   },
   "fr": {
     "company":"Société",
-    "leaveYourEmail": "S’inscrire à la newsletter",
-    "newsletterSignUp":"S'incrire",
     "product":"Produit",
     "useCases":"Cas pratiques",
     "resources":"resources"

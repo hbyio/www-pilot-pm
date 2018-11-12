@@ -27,7 +27,7 @@ export default {
     mediumIsFor:"Agences, collectifs, ..",
     enterpriseIsFor:"Grands groupes, marketing, communication, juridique",
     smallIsFor:"Freelances, consultants, traducteurs/trices,..",
-    startTrial:"COMMENCER L’ESSAI",
+    startTrial:"Créez votre compte",
     startTrialNow:"Débutez votre période d’essai dès maintenant",
     support:{
       none:"Pas de support",
