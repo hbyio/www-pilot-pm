@@ -89,14 +89,16 @@
     "leaveYourEmail": "Subscribe to the newsletter",
     "newsletterSignUp": "Subscribe",
     "product": "Product",
-    "useCases": "Case studies"
+    "useCases": "Case studies",
+    "resources":"resources"
   },
   "fr": {
     "company":"Société",
     "leaveYourEmail": "S’inscrire à la newsletter",
     "newsletterSignUp":"S'incrire",
     "product":"Produit",
-    "useCases":"Cas pratiques"
+    "useCases":"Cas pratiques",
+    "resources":"resources"
   }
 }
 </i18n>

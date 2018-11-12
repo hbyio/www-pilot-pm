@@ -13,17 +13,14 @@
               relative-element-selector=".js-content" 
               :offset="{ top: 80, bottom: 40 }" 
               :scroll-affix="true">
-              <button class="button is-fullwidth is-primary is-rounded"
+              <button class="button  is-info "
                       @click="toggleMobileMenu"
               >
                 {{ $t('menu') }}
               </button>
       </affix>
       <div class="menu" :class="{isOpened:isMobileMenuOpen}" @click="toggleMobileMenu">
-        <button class="button closeMenu is-fullwidth is-medium is-light"
-                @click="toggleMobileMenu"
-                v-show="!menuIsAffix"
-        >
+        <button class="button closeMenu is-fullwidth is-medium is-light" v-show="isMobileMenuOpen">
           {{ $t('close') }}
         </button>
         <affix  relative-element-selector=".js-content" 
@@ -186,15 +183,18 @@ export default {
 }
 .js-mobilemenu{
   display:none;
-  padding: 0 2em;    
+  padding: 0 2em;
+  justify-content: flex-end;
+  align-items: flex-end;
   @include media("<tablet") {
-    display: block;
+    display: flex;
     &.affix{
       width: 100%;
       margin-top: 10px;
     }
   }
 }
+
 .menu {
   box-sizing: border-box;
   //border-right: 1px solid #eaecef;
