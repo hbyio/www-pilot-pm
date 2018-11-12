@@ -265,6 +265,22 @@ export default {
   @include media("<tablet") {
     padding: 2em;
   }
+  >:first-child{
+     margin-top:0; 
+  }
+  h2{
+     margin-top:2em; 
+     font-size: 1.85em;
+     font-weight: 300;
+     margin-bottom: .3em;
+  }
+  h3{
+    margin-top: 1em;
+    text-align: left;
+    font-size: 1.55em;
+    font-weight: 500;
+    margin-bottom: .3em;
+  }
 }
 
 
