@@ -104,7 +104,7 @@ export default {
     this.addListeners();
     var contentBlock = this.$el.querySelector(".content-block");
     this.headings = contentBlock.querySelectorAll("h1,h2,h3,h4,h5,h6");
-    console.log(this.headings);
+    //console.log(this.headings);
     //console.log(this.$route);
     //console.log(this);
     // if (this.$route.hash) {
@@ -152,19 +152,11 @@ export default {
     }
   },
   async asyncData(context) {
-    const versionfr = await import(`@/content/resources/${
-      context.params.slug
-    }.md`);
-    const versionen = await import(`@/content/resources/${
-      context.params.slug
-    }.en.md`);
-    // console.log(versionfr.default)
     let locale = context.app.i18n.locale;
-    if (locale === "fr") {
-      return { document: matter(versionfr) };
-    } else {
-      return { document: matter(versionen) };
-    }
+    let resp = await context.app.$axios.get(`/api/content?path=resources/${
+      context.params.slug
+    }.${locale}.md`)
+    return { document: matter(resp.data) };
   }
 };
 </script>

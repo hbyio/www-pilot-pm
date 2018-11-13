@@ -22,6 +22,10 @@ module.exports = {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
 
+  serverMiddleware: [
+    '~/api/index.js',
+  ],
+
   generate: {
     routes: [
       "/resources/channels",
@@ -76,38 +80,38 @@ module.exports = {
     { src: "~plugins/vue-mq.js", ssr: false },
   ],
 
-  router: {
-    scrollBehavior: async (to, from, savedPosition) => {
-      if (savedPosition) {
-        return savedPosition;
-      }
+  // router: {
+  //   scrollBehavior: async (to, from, savedPosition) => {
+  //     if (savedPosition) {
+  //       return savedPosition;
+  //     }
 
-      const findEl = async (hash, x) => {
-        return (
-          document.querySelector(hash) ||
-          new Promise((resolve, reject) => {
-            if (x > 50) {
-              return resolve();
-            }
-            setTimeout(() => {
-              resolve(findEl(hash, ++x || 1));
-            }, 100);
-          })
-        );
-      };
+  //     const findEl = async (hash, x) => {
+  //       return (
+  //         document.querySelector(hash) ||
+  //         new Promise((resolve, reject) => {
+  //           if (x > 50) {
+  //             return resolve();
+  //           }
+  //           setTimeout(() => {
+  //             resolve(findEl(hash, ++x || 1));
+  //           }, 100);
+  //         })
+  //       );
+  //     };
 
-      if (to.hash) {
-        let el = await findEl(to.hash);
-        if ("scrollBehavior" in document.documentElement.style) {
-          return window.scrollTo({ top: el.offsetTop, behavior: "smooth" });
-        } else {
-          return window.scrollTo(0, el.offsetTop);
-        }
-      }
+  //     if (to.hash) {
+  //       let el = await findEl(to.hash);
+  //       if ("scrollBehavior" in document.documentElement.style) {
+  //         return window.scrollTo({ top: el.offsetTop, behavior: "smooth" });
+  //       } else {
+  //         return window.scrollTo(0, el.offsetTop);
+  //       }
+  //     }
 
-      return { x: 0, y: 0 };
-    }
-  },
+  //     return { x: 0, y: 0 };
+  //   }
+  // },
 
   /*
   ** Nuxt.js modules
@@ -148,13 +152,17 @@ module.exports = {
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
-    //baseUrl: process.env.BASE_URL || "http://localhost:3000"
+    baseUrl: "http://localhost:3000",
+    //debug: true,
   },
 
   /*
   ** Build configuration
   */
   build: {
+    watch: [
+      'api/**/*.js' 
+    ],
     postcss: {
       preset: {
         features: {
@@ -179,6 +187,7 @@ module.exports = {
         test: /\.(md)$/,
         loader: "raw-loader"
       });
+      config.node = { fs: 'empty' };
     }
   }
 };

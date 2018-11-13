@@ -6,7 +6,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nodemon --watch api --exec \"nuxt\"",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "BASE_URL=https://app.pilot.pm nuxt generate",
@@ -17,6 +17,7 @@
     "@nuxtjs/axios": "^5.0.0",
     "@nuxtjs/bulma": "^1.2.0",
     "cross-env": "^5.2.0",
+    "express": "^4.16.4",
     "markdown-it-anchor": "^5.0.2",
     "nuxt": "1",
     "nuxt-i18n": "^5.4.4",
