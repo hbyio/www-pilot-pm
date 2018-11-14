@@ -6,7 +6,7 @@ draft: false
 illustration: /img/blog/daria-nepriakhina-474036-unsplash.jpg
 short: Un bon workflow de contenus s'appuie sur les personnes qui le composent et non sur les outils qui ne sont là que pour "informer" les parties prenantes...
 slug: content-workflow
-tag: best practice
+tag: retour d'expérience
 tagColor: purple
 title: Content Workflow, Comment le mettre en place ? (et faire confiance aux parties prenantes)
 featured: true
