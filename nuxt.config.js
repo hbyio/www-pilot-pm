@@ -1,4 +1,5 @@
 const pkg = require("./package");
+const axios = require('axios')
 
 module.exports = {
   mode: "universal",
@@ -119,16 +120,11 @@ module.exports = {
     hostname: process.env.BASE_URL || 'http://localhost:3000',
     cacheTime: 1000 * 60 * 15,
     gzip: true,
-    exclude: [
-      '/secret',
-      '/admin/**'
-    ],
-    routes: [
-      // routes () {
-      //   return axios.get('https://jsonplaceholder.typicode.com/users')
-      //   .then(res => res.data.map(user =>  '/users/' + user.username))
-      // }
-    ]
+    routes () {
+      let endpoint = process.env.BASE_URL || 'http://localhost:3000'
+      return axios.get(`${endpoint}/api/routes`)
+      .then(res => res.data)
+    }
   },
 
 

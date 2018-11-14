@@ -3,14 +3,31 @@ const { Router } = require('express')
 const fs = require('fs')
 const path = require('path');
 const _ = require('lodash')
+const readdir = require('readdir-enhanced')
 
 const router = Router()
 
 /* GET markdown files listing. */
 router.get('/routes', function (req, res, next) {
 
-  let mdFiles = fs.readdirSync(`./content`)
-  res.json(mdFiles)
+  //let mdFiles = fs.readdirSync(`./content`)
+  let menu = []
+  readdir('./content', {filter: '**/*.md',deep: true}, function(err, files) {
+    
+    files.forEach(file => {
+        let fileCuts = path.parse(file);
+        // Returns:
+        // { root: '/',
+        //   dir: '/home/user/dir',
+        //   base: 'file.txt',
+        //   ext: '.txt',
+        //   name: 'file' }
+        let menuItem = path.join(fileCuts.dir, fileCuts.name);
+        menu.push(menuItem)
+    });
+    res.json(menu)
+  });
+  
 })
 
 

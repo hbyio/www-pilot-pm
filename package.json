@@ -27,6 +27,7 @@
     "moment": "^2.22.2",
     "nuxt": "1",
     "nuxt-i18n": "^5.4.4",
+    "readdir-enhanced": "^2.2.2",
     "redirect-ssl": "^1.4.0",
     "string": "^3.3.3",
     "vue-affix": "^0.4.0",
