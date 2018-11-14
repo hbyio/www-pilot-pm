@@ -11,6 +11,7 @@ router.get('/section', function (req, res, next) {
   const path = req.query.path
   const lang = req.query.lang
   const order = req.query.order || null
+  const slice = req.query.slice || null
 
   let mdFiles = fs.readdirSync(`./content/${lang}/${path}`)
 
@@ -23,6 +24,9 @@ router.get('/section', function (req, res, next) {
 
   if(order != null){
     menu = _.sortBy(menu, order);
+  }
+  if(slice != null){
+    menu = _.slice(menu, 0, parseInt(slice));
   }
   res.json(menu)
 })

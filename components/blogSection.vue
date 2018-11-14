@@ -1,36 +1,56 @@
 <template>
 <section class="blog-section">
     <div class="container">
-        <h3>Retrouvez nos articles sur le blog</h3>
+        <h3>{{ $t('lastNotes') }}</h3>
         <div class="row">
-            <div class="col">
+            <div class="col"
+                v-for="article in section"
+                :key="article.slug"
+                v-if="!article.draft"
+            >
                 <div class="text-holder">
-                    <div class="img-holder" style="background-image: url(/images/image-08.jpg)">
+                    <div class="img-holder" :style="{ 'background-image': 'url(' + article.illustration + ')' }">
                     </div>
-                    <h6>Using Banner Stands To Increase Trade Show Traffic.</h6>
-                    <p>A thought experiment on how we measure risk when the fate of the world hangs in the balance</p>
+                    <h6>{{ article.title }}</h6>
+                    <p>{{article.short}}</p>
                 </div>
-                <a href="#" class="btn btn-white">Read the article</a>
-            </div>
-            <div class="col">
-                <div class="text-holder">
-                    <div class="img-holder" style="background-image: url(/images/image-09.jpg)">
-                    </div>
-                    <h6>Using Banner Stands To Increase Trade Show Traffic.</h6>
-                    <p>A thought experiment on how we measure risk when the fate of the world hangs in the balance</p>
-                </div>
-                <a href="#" class="btn btn-white">Read the article</a>
-            </div>
-            <div class="col">
-                <div class="text-holder">
-                    <div class="img-holder" style="background-image: url(/images/image-10.jpg)">
-                    </div>
-                    <h6>Using Banner Stands To Increase Trade Show Traffic.</h6>
-                    <p>A thought experiment on how we measure risk when the fate of the world hangs in the balance</p>
-                </div>
-                <a href="#" class="btn btn-white">Read the article</a>
+                <nuxt-link 
+                    class="button is-light"
+                    :to="localePath({name: 'blog-slug', params: { slug: article.slug } },$i18n.locale)">
+                    {{ $t('read') }}
+                </nuxt-link>
             </div>
         </div>
     </div>
 </section>
 </template>
+<script>
+export default {
+	data: () => {
+		return {
+            section: [],
+            error:null
+		};
+	},
+  	mounted() {
+        console.log("blog section")
+		let locale = this.$i18n.locale;
+        this.$axios.get(`/api/section?path=blog&lang=${locale}&order=date&slice=3`)
+        .then((resp)=>{
+            this.section = resp.data
+        })
+        .catch(err=>{
+            this.error = err
+        })
+		
+	}
+};
+</script>
+
+<i18n>
+{
+    "en":{"lastNotes":"Recent articles from the blog"},
+    "fr":{"lastNotes":"Retrouvez nos articles sur le blog"}
+}
+</i18n>
+

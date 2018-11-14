@@ -22,7 +22,11 @@
               </ul>
             </div>
             <div class="col">
-              <h5>{{ $t('company') }}</h5>
+              <h5><nuxt-link 
+                :to="localePath({name:'policies'}, $i18n.locale)"
+              >
+                {{ $t('company') }}
+              </nuxt-link> </h5>
               <ul class="nav-list">
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Mentions légales</a></li>
