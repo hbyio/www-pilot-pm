@@ -19,7 +19,8 @@ module.exports = {
   },
 
   env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
+    appUrl: 'https://app.pilot.pm'
   },
 
   serverMiddleware: [
@@ -152,7 +153,7 @@ module.exports = {
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
-    baseUrl: "http://localhost:3000",
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
     //debug: true,
   },
 
