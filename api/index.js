@@ -4,7 +4,12 @@ const cors = require('cors')
 
 const app = express()
 
-app.use(cors())
+
+var corsOptions = {
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
+
+app.use(cors(corsOptions))
 
 // // Require API routes
 const contents = require('./routes/content')
