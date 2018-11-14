@@ -1,4 +1,0 @@
-+++
-title       = "Fonctionnalités"
-slug        = "features"
-+++

@@ -59,7 +59,7 @@
             </ul>
           </div>
           <div class="form-block">
-            <!-- <NewsletterSignup></NewsletterSignup> -->
+            <NewsletterSignup></NewsletterSignup>
           </div>
         </div>
       </div>

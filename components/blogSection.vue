@@ -11,11 +11,15 @@
                 <div class="text-holder">
                     <div class="img-holder" :style="{ 'background-image': 'url(' + article.illustration + ')' }">
                     </div>
-                    <h6>{{ article.title }}</h6>
+                    <h6>
+                        <nuxt-link :to="localePath({name: 'blog-slug', params: { slug: article.slug } },$i18n.locale)">
+                            {{ article.title }}
+                        </nuxt-link>
+                    </h6>
                     <p>{{article.short}}</p>
                 </div>
                 <nuxt-link 
-                    class="button is-light"
+                    class="button is-light is-fullwidth"
                     :to="localePath({name: 'blog-slug', params: { slug: article.slug } },$i18n.locale)">
                     {{ $t('read') }}
                 </nuxt-link>

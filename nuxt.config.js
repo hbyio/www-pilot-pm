@@ -27,22 +27,6 @@ module.exports = {
     'redirect-ssl',
     '~/api/index.js',
   ],
-
-  generate: {
-    routes: [
-      "/resources/channels",
-      "/resources/projects",
-      "/resources/items",
-      "/resources/guides",
-      "/resources/faq",
-
-      "/fr/resources/channels",
-      "/fr/resources/projects",
-      "/fr/resources/items",
-      "/fr/resources/guides",
-      "/fr/resources/faq"
-    ]
-  },
   server: {
     port: 3000, // default: 3000
     host: "0.0.0.0" // default: localhost
@@ -83,47 +67,13 @@ module.exports = {
     { src: "~plugins/vue-mq.js", ssr: false },
   ],
 
-  // router: {
-  //   scrollBehavior: async (to, from, savedPosition) => {
-  //     if (savedPosition) {
-  //       return savedPosition;
-  //     }
-
-  //     const findEl = async (hash, x) => {
-  //       return (
-  //         document.querySelector(hash) ||
-  //         new Promise((resolve, reject) => {
-  //           if (x > 50) {
-  //             return resolve();
-  //           }
-  //           setTimeout(() => {
-  //             resolve(findEl(hash, ++x || 1));
-  //           }, 100);
-  //         })
-  //       );
-  //     };
-
-  //     if (to.hash) {
-  //       let el = await findEl(to.hash);
-  //       if ("scrollBehavior" in document.documentElement.style) {
-  //         return window.scrollTo({ top: el.offsetTop, behavior: "smooth" });
-  //       } else {
-  //         return window.scrollTo(0, el.offsetTop);
-  //       }
-  //     }
-
-  //     return { x: 0, y: 0 };
-  //   }
-  // },
-
   /*
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/sitemap',
     // Doc: https://github.com/nuxt-community/axios-module#usage
     "@nuxtjs/axios",
-    // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    //'@nuxtjs/bulma',
     [
       "nuxt-i18n",
       {
@@ -152,14 +102,35 @@ module.exports = {
   ],
   /*
   ** Axios module configuration
+  ** See https://github.com/nuxt-community/axios-module#options
   */
   axios: {
-    // See https://github.com/nuxt-community/axios-module#options
     baseURL: process.env.BASE_URL || 'http://localhost:3000',
     browserBaseURL: process.env.BASE_URL || 'http://localhost:3000',
     https: true
     //debug: true,
   },
+  /*
+  ** Sitemap module configuration
+  ** https://github.com/nuxt-community/sitemap-module
+  */
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: process.env.BASE_URL || 'http://localhost:3000',
+    cacheTime: 1000 * 60 * 15,
+    gzip: true,
+    exclude: [
+      '/secret',
+      '/admin/**'
+    ],
+    routes: [
+      // routes () {
+      //   return axios.get('https://jsonplaceholder.typicode.com/users')
+      //   .then(res => res.data.map(user =>  '/users/' + user.username))
+      // }
+    ]
+  },
+
 
   /*
   ** Build configuration
@@ -188,10 +159,6 @@ module.exports = {
           exclude: /(node_modules)/
         });
       }
-      config.module.rules.push({
-        test: /\.(md)$/,
-        loader: "raw-loader"
-      });
       config.node = { fs: 'empty' };
     }
   }

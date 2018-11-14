@@ -7,6 +7,14 @@ const _ = require('lodash')
 const router = Router()
 
 /* GET markdown files listing. */
+router.get('/routes', function (req, res, next) {
+
+  let mdFiles = fs.readdirSync(`./content`)
+  res.json(mdFiles)
+})
+
+
+/* GET markdown files listing. */
 router.get('/section', function (req, res, next) {
   const path = req.query.path
   const lang = req.query.lang
