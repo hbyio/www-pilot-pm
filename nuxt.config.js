@@ -119,6 +119,7 @@ module.exports = {
     path: '/sitemap.xml',
     hostname: process.env.BASE_URL || 'http://localhost:3000',
     cacheTime: 1000 * 60 * 15,
+    generate: true, //Generates static sitemap file during build/generate instead of serving using middleware.
     gzip: true,
     routes () {
       let endpoint = process.env.BASE_URL || 'http://localhost:3000'
