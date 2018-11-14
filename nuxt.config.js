@@ -24,6 +24,7 @@ module.exports = {
   },
 
   serverMiddleware: [
+    'redirect-ssl',
     '~/api/index.js',
   ],
 
