@@ -1,11 +1,12 @@
-+++
-date        = "2018-01-27"
-title       = "Mentions légales"
-author      = "mb"
-menu        = "policies"
-weight      = 1
-inSitemap   = "false"
-+++
+---
+date: 2015-01-27T11:27:27-04:00
+title: Mentions légales
+author: mb
+slug: legal
+menu: policies
+weight: 1
+inSitemap: false
+---
 
 Editeur du site : 
 

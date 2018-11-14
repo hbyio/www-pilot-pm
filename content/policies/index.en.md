@@ -1,11 +1,12 @@
-+++
-date        = "2018-01-27"
-title       = "Legal mentions"
-author      = "mb"
-menu        = "policies"
-weight      = 1
-inSitemap   = "false"
-+++
+---
+date: 2015-01-27T11:27:27-04:00
+title: Legal mention
+author: mb
+slug: infra
+menu: policies
+weight: 1
+inSitemap: false
+---
 
 Site editor : 
 

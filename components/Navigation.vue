@@ -47,13 +47,13 @@
             class="navbar-item" 
           >
             {{ $t('blog') }}
-          </nuxt-link>
+          </nuxt-link>-->
           <nuxt-link 
             :to="localePath({name:'policies'}, $i18n.locale)"
             class="navbar-item" 
           >
             {{ $t('policies') }}
-          </nuxt-link> -->
+          </nuxt-link> 
         </div>
 
         <div class="navbar-end">

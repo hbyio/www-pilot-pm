@@ -11,6 +11,24 @@
 		<section class="policies-section policies-page">
 			<div class="container">
 				<div class="row">
+					<article class="col"
+						v-for="article in section"
+						:key="article.slug"
+					>
+						<div class="text-holder">
+							<span class="label announcement">{{ $t('legal') }}</span>
+							<h6><a href="#">{{ article.title }}</a></h6>
+							<p>{{ $t('termsandconditionsShort') }}</p>
+						</div>
+						<nuxt-link 
+							:to="localePath({name: 'policies-slug', params: { slug:article.slug } },$i18n.locale)"
+							class="button is-info is-medium is-fullwidth is-outlined" 
+						>
+							{{ $t('view') }}
+						</nuxt-link>
+					</article>
+
+
 					<article class="col">
 						<div class="text-holder">
 							<span class="label announcement">{{ $t('legal') }}</span>
@@ -99,15 +117,25 @@
 </template>
 <script>
 export default {
-  mounted() {
-    this.$nextTick(() => {
-      this.$nuxt.$loading.start();
-      setTimeout(() => this.$nuxt.$loading.finish(), 200);
-    });
-  }
+	data: () => {
+		return {
+			section: []
+		};
+	},
+	mounted() {
+		this.$nextTick(() => {
+		this.$nuxt.$loading.start();
+		setTimeout(() => this.$nuxt.$loading.finish(), 200);
+		});
+	},
+  	async asyncData(context) {
+		let locale = context.app.i18n.locale;
+		let resp = await context.app.$axios.get(`/api/section?path=policies&lang=${locale}`)
+		return { section: resp.data };
+	}
 };
 </script>
-
+http://localhost:3000/api/section?path=policies&lang=fr
 <i18n>
 {
   "en": {
@@ -118,7 +146,7 @@ export default {
 		"legal": "legal",
 		"privacy": "Data",
 		"privacyShort": "Data compliance",
-		"sla": "Service level agreeements",
+		"sla": "Service level agreement",
 		"slaShort": "version 1",
 		"termsandconditions": "General terms and conditions",
 		"termsandconditionsShort": "version 2.2, September 2018",
