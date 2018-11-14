@@ -1,5 +1,7 @@
 const pkg = require("./package");
 const axios = require('axios')
+const readdir = require('readdir-enhanced')
+const path = require('path');
 
 module.exports = {
   mode: "universal",
@@ -122,9 +124,21 @@ module.exports = {
     generate: true, //Generates static sitemap file during build/generate instead of serving using middleware.
     gzip: true,
     routes () {
-      let endpoint = process.env.BASE_URL || 'http://localhost:3000'
-      return axios.get(`${endpoint}/api/routes`)
-      .then(res => res.data)
+      let menu = []
+      let files =  readdir.sync('./content', {filter: '**/*.md',deep: true});
+      files.forEach(file => {
+          let fileCuts = path.parse(file);
+          // Returns:
+          // { root: '/',
+          //   dir: '/home/user/dir',
+          //   base: 'file.txt',
+          //   ext: '.txt',
+          //   name: 'file' }
+          let menuItem = path.join(fileCuts.dir, fileCuts.name);
+          menu.push(menuItem)
+      });
+      return menu
+      
     }
   },
 
