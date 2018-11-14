@@ -16,100 +16,18 @@
 						:key="article.slug"
 					>
 						<div class="text-holder">
-							<span class="label announcement">{{ $t('legal') }}</span>
+							<span class="label" :class="article.tagColor">{{ article.tag }}</span>
 							<h6><a href="#">{{ article.title }}</a></h6>
-							<p>{{ $t('termsandconditionsShort') }}</p>
+							<p v-if="article.short">{{ article.short }}</p>
+							<p v-else>version:{{ article.version }}&nbsp;&bull;&nbsp;{{article.date | formatDate}}</p>
 						</div>
 						<nuxt-link 
-							:to="localePath({name: 'policies-slug', params: { slug:article.slug } },$i18n.locale)"
+							:to="localePath({name: 'policies-slug', params: { slug: article.slug } },$i18n.locale)"
 							class="button is-info is-medium is-fullwidth is-outlined" 
 						>
 							{{ $t('view') }}
 						</nuxt-link>
 					</article>
-
-
-					<article class="col">
-						<div class="text-holder">
-							<span class="label announcement">{{ $t('legal') }}</span>
-							<h6><a href="#">{{ $t('termsandconditions') }}</a></h6>
-							<p>{{ $t('termsandconditionsShort') }}</p>
-						</div>
-						<nuxt-link 
-							:to="localePath({name: 'policies-slug', params: { slug:'terms' } },$i18n.locale)"
-							class="button is-info is-medium is-fullwidth is-outlined" 
-						>
-							{{ $t('view') }}
-						</nuxt-link>
-					</article>
-
-					<article class="col">
-						<div class="text-holder">
-							<span class="label announcement">{{ $t('legal') }}</span>
-							<h6><a href="#">{{ $t('termsofuse') }}</a></h6>
-							<p>{{ $t('termsofuseShort') }}</p>
-						</div>
-						<nuxt-link 
-							:to="localePath({name: 'policies-slug', params: { slug:'termsofuse' } },$i18n.locale)"
-							class="button is-info is-medium is-fullwidth is-outlined" 
-						>
-							{{ $t('view') }}
-						</nuxt-link>
-					</article>
-					
-					<article class="col">
-						<div class="text-holder">
-							<span class="label developpement">{{ $t('service') }}</span>
-							<h6><a href="#">{{ $t('sla') }}</a></h6>
-							<p>{{ $t('slaShort') }}</p>
-						</div>
-						<nuxt-link 
-							:to="localePath({name: 'policies-slug', params: { slug:'sla' } },$i18n.locale)"
-							class="button is-info is-medium is-fullwidth is-outlined" 
-						>
-							{{ $t('view') }}
-						</nuxt-link>
-					</article>
-
-					<article class="col">
-						<div class="text-holder">
-							<span class="label marketing">{{ $t('infra') }}</span>
-							<h6><a href="#">{{ $t('infra') }}</a></h6>
-							<p>{{ $t('infraShort') }}</p>
-						</div>
-						<nuxt-link 
-							:to="localePath({name: 'policies-slug', params: { slug:'infra' } },$i18n.locale)"
-							class="button is-info is-medium is-fullwidth is-outlined" 
-						>
-							{{ $t('view') }}
-						</nuxt-link>
-					</article>
-
-					<article class="col">
-						<div class="text-holder">
-							<span class="label developpement">{{ $t('service') }}</span>
-							<h6><a href="#">{{ $t('privacy') }}</a></h6>
-							<p>{{ $t('privacyShort') }}</p>
-						</div>
-						<nuxt-link 
-							:to="localePath({name: 'policies-slug', params: { slug:'sla' } },$i18n.locale)"
-							class="button is-info is-medium is-fullwidth is-outlined" 
-						>
-							{{ $t('view') }}
-						</nuxt-link>
-					</article>
-
-					<!-- <article class="col">
-						<div class="text-holder">
-							<div class="img-holder" style="background-image: url(images/img-13.jpg)">
-							</div>
-							<span class="label marketing">marketing</span>
-							<h6><a href="#">Using Banner Stands To Increase Trade Show Traffic.</a></h6>
-							<p>A thought experiment on how we measure risk when the fate of the world hangs in the balance</p>
-						</div>
-						<a href="#" class="btn btn-white">Read the article</a>
-					</article> -->
-
 				</div>
 			</div>
 		</section>
@@ -130,7 +48,7 @@ export default {
 	},
   	async asyncData(context) {
 		let locale = context.app.i18n.locale;
-		let resp = await context.app.$axios.get(`/api/section?path=policies&lang=${locale}`)
+		let resp = await context.app.$axios.get(`/api/section?path=policies&lang=${locale}&order=weight`)
 		return { section: resp.data };
 	}
 };
@@ -140,33 +58,11 @@ http://localhost:3000/api/section?path=policies&lang=fr
 {
   "en": {
 		"company": "Company",
-		"companyPageShort": "Legal, administrative and technical documents",
-		"infra": "Hosting",
-		"infraShort": "Description of our main application and backup infrastructure providers",
-		"legal": "legal",
-		"privacy": "Data",
-		"privacyShort": "Data compliance",
-		"sla": "Service level agreement",
-		"slaShort": "version 1",
-		"termsandconditions": "General terms and conditions",
-		"termsandconditionsShort": "version 2.2, September 2018",
-		"termsofuse": "Terms of use",
-		"termsofuseShort": "version 1, May 2018"
+		"companyPageShort": "Legal, administrative and technical documents"
   },
   "fr": {
 		"company":"Société",
-		"companyPageShort":"Documents juridiques, administratifs et techniques",
-		"infra":"Infrastructure",
-		"infraShort":"Description de nos principaux fournisseurs d'infrastructure applicative et de sauvegarde",
-		"legal":"juridique",
-		"privacy":"Données",
-		"privacyShort":"Engagements sur le respect des données",
-		"sla":"Engagements niveaux de service",
-		"slaShort":"version 1",
-		"termsandconditions":"Conditions générales de vente",
-		"termsandconditionsShort":"version 2.2, septembre 2018",
-		"termsofuse":"Conditions générales d'utilisation",
-		"termsofuseShort":"version 1, mai 2018"
+		"companyPageShort":"Documents juridiques, administratifs et techniques"
   }
 }
 </i18n>

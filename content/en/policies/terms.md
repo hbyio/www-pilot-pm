@@ -1,11 +1,13 @@
 ---
-date: 2015-01-27T11:27:27-04:00
-title: Terms and conditions
 author: mb
-slug: terms
-menu: policies
-weight: 3
+date: 2018-09-01
 inSitemap: false
+menu: policies
+slug: terms
+tag: legal
+title: Terms and conditions
+version: "2.2"
+weight: 1
 ---
 
 

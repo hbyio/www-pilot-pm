@@ -1,11 +1,14 @@
 ---
-date: 2015-01-27T11:27:27-04:00
-title: Données
 author: mb
-slug: privacy
-menu: policies
-weight: 3
+date: 2015-01-27T11:27:27-04:00
 inSitemap: false
+menu: policies
+short: Engagements sur le respect des données
+slug: privacy
+tag: service
+tagColor: purple
+title: Données
+weight: 3
 ---
 
 Pilot est un logiciel métier qui héberge uniquement des emails professionnels.

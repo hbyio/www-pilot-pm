@@ -1,11 +1,13 @@
 ---
-date: 2015-01-27T11:27:27-04:00
-title: Legal mention
 author: mb
-slug: infra
-menu: policies
-weight: 1
+date: 2015-01-27T11:27:27-04:00
 inSitemap: false
+menu: policies
+short: SIRET, VAT ...
+slug: index
+tag: legal
+title: Legal mention
+weight: 1
 ---
 
 Site editor : 

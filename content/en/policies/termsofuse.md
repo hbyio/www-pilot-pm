@@ -1,11 +1,13 @@
 ---
-date: 2015-01-27T11:27:27-04:00
-title: Terms of use
 author: mb
-slug: cgu
-menu: policies
-weight: 3
+date: 2018-05-01
 inSitemap: false
+menu: policies
+slug: termsofuse
+tag: legal
+title: Terms of use
+version: "2.0"
+weight: 1
 ---
 
 This document is only availabale en french at the moment

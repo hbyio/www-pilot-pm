@@ -1,11 +1,14 @@
 ---
-date: 2015-01-27T11:27:27-04:00
-title: Infrastructure & securité
 author: mb
-slug: infra
-menu: policies
-weight: 3
+date: 2015-01-27T11:27:27-04:00
 inSitemap: false
+menu: policies
+short: Description de nos principaux fournisseurs d'infrastructure applicative et de sauvegarde
+slug: infra
+tag: infrastructure
+tagColor: green
+title: Infrastructure & securité
+weight: 3
 ---
 
 Pilot est hébergé par les services d’Amazon Web Services.

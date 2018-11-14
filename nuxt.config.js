@@ -76,6 +76,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    "~plugins/filters.js",
     "~plugins/vue-scrollto.js",
     { src: "~plugins/vue-affix.js", ssr: false },
     { src: "~plugins/vue-scrollactive.js", ssr: false },

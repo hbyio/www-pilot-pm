@@ -1,11 +1,15 @@
 ---
-date: 2015-01-27T11:27:27-04:00
-title: Engagement de service
 author: mb
-slug: sla
-menu: policies
-weight: 3
+date: 2015-01-27T11:27:27-04:00
 inSitemap: false
+menu: policies
+short: Description de nos principaux fournisseurs d'infrastructure applicative et de sauvegarde
+slug: sla
+tag: service
+tagColor: purple
+title: Engagement de service
+version: "1.0"
+weight: 3
 ---
 
 Pilot est hébergé par les services d’Amazon Web Services.

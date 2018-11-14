@@ -154,19 +154,11 @@ export default {
     }
   },
   async asyncData(context) {
-    const versionfr = await import(`@/content/policies/${
-      context.params.slug
-    }.md`);
-    const versionen = await import(`@/content/policies/${
-      context.params.slug
-    }.en.md`);
-    // console.log(versionfr.default)
     let locale = context.app.i18n.locale;
-    if (locale === "fr") {
-      return { document: matter(versionfr) };
-    } else {
-      return { document: matter(versionen) };
-    }
+    let resp = await context.app.$axios.get(`/api/content?path=${locale}/policies/${
+      context.params.slug
+    }.md`)
+    return { document: matter(resp.data) };
   }
 };
 </script>

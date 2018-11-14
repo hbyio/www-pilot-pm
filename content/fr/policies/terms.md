@@ -1,11 +1,13 @@
 ---
-date: 2015-01-27T11:27:27-04:00
-title: Conditions générales de vente
 author: mb
-slug: cgv
-menu: policies
-weight: 3
+date: 2018-09-01
 inSitemap: false
+menu: policies
+slug: terms
+tag: juridique
+title: Conditions générales de vente
+version: "2.2"
+weight: 1
 ---
 
 > Version 2.2

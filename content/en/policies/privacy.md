@@ -1,11 +1,14 @@
 ---
-date: 2015-01-27T11:27:27-04:00
-title: Privacy
 author: mb
-slug: privacy
-menu: policies
-weight: 3
+date: 2015-01-27T11:27:27-04:00
 inSitemap: false
+menu: policies
+slug: privacy
+short: Data compliance
+tag: service
+tagColor: purple
+title: Privacy policy
+weight: 3
 ---
 
 Pilot is a business software that only hosts professional emails.

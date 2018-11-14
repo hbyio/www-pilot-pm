@@ -1,11 +1,14 @@
 ---
-date: 2015-01-27T11:27:27-04:00
-title: Infra & security
 author: mb
-slug: infra
-menu: policies
-weight: 3
+date: 2015-01-27T11:27:27-04:00
 inSitemap: false
+menu: policies
+short: Description of our main application and backup infrastructure providers
+slug: infra
+tag: infrastructure
+tagColor: green
+title: Infra & security
+weight: 3
 ---
 
 

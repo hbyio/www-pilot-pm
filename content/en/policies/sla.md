@@ -1,11 +1,15 @@
 ---
-date: 2015-01-27T11:27:27-04:00
-title: Service level agreement
 author: mb
-slug: sla
-menu: policies
-weight: 3
+date: 2015-01-27T11:27:27-04:00
 inSitemap: false
+menu: policies
+short: Data compliance
+slug: sla
+tag: service
+tagColor: purple
+title: Service level agreement
+version: "1.0"
+weight: 3
 ---
 
 Pilot is hosted by Amazon Web Services.

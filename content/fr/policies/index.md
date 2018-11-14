@@ -1,11 +1,13 @@
 ---
-date: 2015-01-27T11:27:27-04:00
-title: Mentions légales
 author: mb
-slug: legal
-menu: policies
-weight: 1
+date: 2015-01-27T11:27:27-04:00
 inSitemap: false
+menu: policies
+short: SIRET, TVA, siège social ...
+slug: index
+tag: juridique
+title: Mentions légales
+weight: 1
 ---
 
 Editeur du site : 
