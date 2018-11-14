@@ -1,11 +1,17 @@
-+++
-title       = "Content Workflow : Comment le mettre en place ? (et faire confiance aux parties prenantes)"
-date        = 2018-09-07T10:11:00+02:00
-author      = "Matthieu"
-slug        = "content-workflow"
-illustration = "/img/blog/daria-nepriakhina-474036-unsplash.jpg"
-draft       = false
-+++
+---
+author: Matthieu
+authorAvatar: /images/avatars/matthieu.png
+date: 2018-09-07
+draft: false
+illustration: /img/blog/daria-nepriakhina-474036-unsplash.jpg
+short: Un bon workflow de contenus s'appuie sur les personnes qui le composent et non sur les outils qui ne sont là que pour "informer" les parties prenantes...
+slug: content-workflow
+tag: best practice
+tagColor: purple
+title: Content Workflow, Comment le mettre en place ? (et faire confiance aux parties prenantes)
+featured: true
+---
+
 
 ![daria-nepriakhina-474036-unsplash.jpg](/img/blog/daria-nepriakhina-474036-unsplash.jpg "daria-nepriakhina-474036-unsplash.jpg")
 

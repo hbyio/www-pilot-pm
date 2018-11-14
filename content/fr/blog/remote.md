@@ -1,15 +1,12 @@
-+++
-title       = "Remote"
-date        = 2018-07-03T17:24:02+02:00
-author      = "Matthieu"
-tags        = []
-topics      = []
-slug        = ""
-headerImage = ""
-imageCreditUrl = ""
-imageCreditName = ""
-draft       = true
-+++
+---
+author: Matthieu
+authorAvatar: /images/avatars/matthieu.png
+date: 2018-09-07
+draft: true
+illustration: /img/blog/daria-nepriakhina-474036-unsplash.jpg
+slug: remote
+title: Remote
+---
 
 ## "Oui, mais c'est surtout utile pour nous mettre au chômage"
 

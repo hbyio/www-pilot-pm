@@ -1,11 +1,15 @@
-+++
-date        = "2018-05-25"
-title       = "Web ❤ Print"
-author      = "Matthieu"
-slug        = "web-love-print"
-illustration = "/img/blog/rotative.jpeg"
-draft       = false
-+++
+---
+author: Matthieu
+authorAvatar: /images/avatars/matthieu.png
+date: 2018-05-25
+draft: false
+illustration: /img/blog/rotative.jpeg
+short: Jen Simmons demonstrates that the web has a lot to learn from print
+slug: web-love-print
+tag: cool people
+title: Web ❤ Print
+---
+
 ![Capture d’écran 2018-06-07 à 11.34.04.png](https://pilotapp-production-master.s3.amazonaws.com/assets/1/17376/1_17376_cover.jpg?v=1)
 
 I strongly advise you to take a look at one of the latest[videos](https://www.youtube.com/watch?v=E005mjqpZ9Y) from[Jen Simmons](http://jensimmons.com/) on Youtube. She speaks about web of course, but especially about printing techniques and we begin to see real "bridges" between graphic disciplines.

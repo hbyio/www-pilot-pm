@@ -53,7 +53,7 @@ export default {
 	}
 };
 </script>
-http://localhost:3000/api/section?path=policies&lang=fr
+
 <i18n>
 {
   "en": {

@@ -1,11 +1,14 @@
-+++
-date        = "2018-07-15"
-title       = "Content production is strangely similar to software development"
-author      = "Matthieu"
-slug        = "your-content-is-your-source-code-E01"
-draft       = false
-illustration = "/img/blog/mancoding.png"
-+++
+---
+author: Matthieu
+authorAvatar: /images/avatars/matthieu.png
+date: 2018-07-15
+draft: false
+illustration: /img/blog/mancoding.png
+short: Producing an application has many similarities with content production. So much so that we thought it would be interesting to start talking about it ...
+slug: your-content-is-your-source-code-E01
+tag: do it
+title: Content production is strangely similar to software development
+---
 
 ![mancoding.png](/img/blog/mancoding.png "mancoding.png")
 

@@ -1,11 +1,16 @@
-+++
-title       = "Content Workflow: How to implement it? (and trust stakeholders)"
-date        = 2018-09-07T10:11:00+02:00
-author      = "Matthieu"
-slug        = "content-workflow"
-illustration = "/img/blog/daria-nepriakhina-474036-unsplash.jpg"
-draft       = false
-+++
+---
+author: Matthieu
+authorAvatar: /images/avatars/matthieu.png
+date: 2018-09-07
+draft: false
+illustration: /img/blog/daria-nepriakhina-474036-unsplash.jpg
+short: A good content workflow is based on the people who compose it and not on the tools that are only there to "inform" stakeholders....
+slug: content-workflow
+tag: best practice
+tagColor: purple
+title: Content Workflow, How to implement it? (and trust stakeholders)
+featured: true
+---
 
 ![daria-nepriakhina-474036-unsplash.jpg](/img/blog/daria-nepriakhina-474036-unsplash.jpg "daria-nepriakhina-474036-unsplash.jpg")
 

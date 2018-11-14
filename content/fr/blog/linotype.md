@@ -1,10 +1,14 @@
-+++
-title       = "Linotype"
-date        = 2018-07-14T15:49:52+02:00
-author      = "Matthieu"
-illustration = "/img/blog/metaltype.png"
-draft       = false
-+++
+---
+author: Matthieu
+authorAvatar: /images/avatars/matthieu.png
+date: 2018-07-14
+draft: false
+illustration: /img/blog/metaltype.png
+short: Comment le New York Times a basculé d'un processus mécanique vers un processus numérique
+slug: linotype
+tag: before
+title: Linotype
+---
 
 ![metaltype.png](/img/blog/metaltype.png "metaltype.png")
 

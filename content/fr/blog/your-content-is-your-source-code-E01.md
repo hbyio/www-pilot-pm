@@ -1,11 +1,15 @@
-+++
-date        = "2018-07-15"
-title       = "La production de contenus ressemble étrangement au développement logiciel"
-author      = "Matthieu"
-slug        = "votre-contenu-est-votre-code-source-E01"
-draft       = false
-illustration = "/img/blog/mancoding.png"
-+++
+---
+author: Matthieu
+authorAvatar: /images/avatars/matthieu.png
+date: 2018-07-15
+draft: false
+illustration: /img/blog/mancoding.png
+short: Produire une application présente de très nombreuses similarités avec la production de contenus. Tellement qu’il nous a semblé intéressant de commencer à en parler ...
+slug: your-content-is-your-source-code-E01
+tag: do it
+title: La production de contenus ressemble étrangement au développement logiciel
+---
+
 
 ![mancoding.png](/img/blog/mancoding.png "mancoding.png")
 
