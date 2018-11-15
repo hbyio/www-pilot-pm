@@ -37,7 +37,7 @@
 <script>
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
-import BlogSection from "@/components/BlogSection.vue";
+import BlogSection from "@/components/SectionBlog.vue";
 
 var string = require("string");
 

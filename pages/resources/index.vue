@@ -124,7 +124,7 @@
 	</main>
 </template>
 <script>
-import BlogSection from "@/components/BlogSection.vue";
+import BlogSection from "@/components/SectionBlog.vue";
 import ContactUs from "@/components/ContactUs.vue"
 import IconItems from "@/components/IconItems.vue"
 import IconProjects from "@/components/IconProjects.vue"

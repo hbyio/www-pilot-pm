@@ -30,7 +30,7 @@
 </template>
 <script>
 export default {
-    name:"BlogSection",
+    name:"SectionBlog",
 	data: () => {
 		return {
             section: [],

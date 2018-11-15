@@ -49,7 +49,7 @@
 <script>
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
-import BlogSection from "@/components/BlogSection.vue";
+import BlogSection from "@/components/SectionBlog.vue";
 import IconItems from "@/components/IconItems.vue"
 import IconProjects from "@/components/IconProjects.vue"
 import IconChannels from "@/components/IconChannels.vue"
