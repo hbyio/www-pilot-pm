@@ -1,6 +1,7 @@
 ---
 date: 2018-01-27
 draft: false
+iconComponent: IconGuides
 illustration: /images/img-overlay-5.png
 menu: docs
 slug: guides

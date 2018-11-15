@@ -54,6 +54,7 @@ import IconItems from "@/components/IconItems.vue"
 import IconProjects from "@/components/IconProjects.vue"
 import IconChannels from "@/components/IconChannels.vue"
 import IconFaq from "@/components/IconFaq.vue"
+import IconGuides from "@/components/IconGuides.vue"
 
 var string = require("string");
 
@@ -82,7 +83,8 @@ export default {
     IconItems,
     IconProjects,
     IconChannels,
-    IconFaq
+    IconFaq,
+    IconGuides
   },
   data: () => {
     return {
