@@ -8068,6 +8068,11 @@ vue-i18n@^8.2.1:
   resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-8.3.0.tgz#8e0b69f036c0e818c2c48368a313680175e30f7e"
   integrity sha512-24VGbpMmRX4pVqOUH8Z65DQP/EA+3mXpJZ6q0SE0f75i/fDyqt0jxLjaPEqBiZrFTHb/wsQXKWXz5/ypU5XNqg==
 
+vue-intercom@^1.0.12:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/vue-intercom/-/vue-intercom-1.0.12.tgz#6aeddd56c3703211ea10e4d42477afb30ddafbb2"
+  integrity sha1-au3dVsNwMhHqEOTUJHevsw3a+7I=
+
 vue-loader@^13.7.2:
   version "13.7.3"
   resolved "https://registry.yarnpkg.com/vue-loader/-/vue-loader-13.7.3.tgz#e07440f78230a639d00ada4da7b96d0e9d62037f"

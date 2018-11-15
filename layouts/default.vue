@@ -13,6 +13,9 @@ export default {
   components:{
     Navigation,
     Footer,
+  },
+  mounted(){
+    this.$intercom.boot();
   }
 }
 </script>

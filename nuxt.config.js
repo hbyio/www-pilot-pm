@@ -70,6 +70,7 @@ module.exports = {
     { src: "~plugins/vue-affix.js", ssr: false },
     { src: "~plugins/vue-scrollactive.js", ssr: false },
     { src: "~plugins/vue-mq.js", ssr: false },
+    { src: "~plugins/vue-intercom.js", ssr: false },
   ],
 
   /*
