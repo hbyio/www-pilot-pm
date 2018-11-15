@@ -10,6 +10,9 @@ tag: best practice
 tagColor: purple
 title: Content Workflow, How to implement it? (and trust stakeholders)
 featured: true
+sitemapShow: false
+sitemapChangeFreq: 'daily'
+sitemapPriority: 0.5
 ---
 
 ![daria-nepriakhina-474036-unsplash.jpg](/img/blog/daria-nepriakhina-474036-unsplash.jpg "daria-nepriakhina-474036-unsplash.jpg")

@@ -1,8 +1,8 @@
 ---
 author: mb
 date: 2018-05-01
-inSitemap: false
 menu: policies
+sitemapShow: false
 slug: termsofuse
 tag: legal
 title: Terms of use

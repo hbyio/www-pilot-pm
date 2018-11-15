@@ -1,10 +1,10 @@
 ---
 author: mb
 date: 2015-01-27T11:27:27-04:00
-inSitemap: false
 menu: policies
-slug: privacy
 short: Data compliance
+sitemapShow: false
+slug: privacy
 tag: service
 tagColor: purple
 title: Privacy policy

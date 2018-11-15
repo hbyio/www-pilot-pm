@@ -1,9 +1,9 @@
 ---
 author: mb
 date: 2015-01-27T11:27:27-04:00
-inSitemap: false
 menu: policies
 short: Engagements sur le respect des données
+sitemapShow: false
 slug: privacy
 tag: service
 tagColor: purple

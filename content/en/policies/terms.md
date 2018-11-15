@@ -1,8 +1,8 @@
 ---
 author: mb
 date: 2018-09-01
-inSitemap: false
 menu: policies
+sitemapShow: false
 slug: terms
 tag: legal
 title: Terms and conditions

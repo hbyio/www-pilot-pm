@@ -1,6 +1,7 @@
 const pkg = require("./package");
 const readdir = require('readdir-enhanced')
 const path = require('path');
+const utils = require('./api/utils.js')
 
 module.exports = {
   mode: "universal",
@@ -100,6 +101,7 @@ module.exports = {
             file: "fr.js"
           }
         ],
+        strategy: 'prefix_and_default',
         defaultLocale: "en",
         parsePages: false,
         vueI18nLoader: true,
@@ -130,21 +132,8 @@ module.exports = {
     generate: true, //Generates static sitemap file during build/generate instead of serving using middleware.
     gzip: true,
     routes () {
-      let menu = []
-      let files =  readdir.sync('./content', {filter: '**/*.md',deep: true});
-      files.forEach(file => {
-          let fileCuts = path.parse(file);
-          // Returns:
-          // { root: '/',
-          //   dir: '/home/user/dir',
-          //   base: 'file.txt',
-          //   ext: '.txt',
-          //   name: 'file' }
-          let menuItem = path.join(fileCuts.dir, fileCuts.name);
-          menu.push(menuItem)
-      });
-      return menu
-      
+      let baseurl = process.env.BASE_URL || 'http://localhost:3000'
+      return utils.generateRoutes()
     }
   },
 

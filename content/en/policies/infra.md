@@ -1,9 +1,9 @@
 ---
 author: mb
 date: 2015-01-27T11:27:27-04:00
-inSitemap: false
 menu: policies
 short: Description of our main application and backup infrastructure providers
+sitemapShow: false
 slug: infra
 tag: infrastructure
 tagColor: green

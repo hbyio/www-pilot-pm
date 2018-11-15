@@ -1,9 +1,9 @@
 ---
 author: mb
 date: 2015-01-27T11:27:27-04:00
-inSitemap: false
 menu: policies
 short: Description de nos principaux fournisseurs d'infrastructure applicative et de sauvegarde
+sitemapShow: false
 slug: sla
 tag: service
 tagColor: purple

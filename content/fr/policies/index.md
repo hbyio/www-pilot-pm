@@ -1,9 +1,9 @@
 ---
 author: mb
 date: 2015-01-27T11:27:27-04:00
-inSitemap: false
 menu: policies
 short: SIRET, TVA, siège social ...
+sitemapShow: false
 slug: index
 tag: juridique
 title: Mentions légales
