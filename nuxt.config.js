@@ -132,8 +132,7 @@ module.exports = {
     generate: true, //Generates static sitemap file during build/generate instead of serving using middleware.
     gzip: true,
     routes () {
-      let baseurl = process.env.BASE_URL || 'http://localhost:3000'
-      return utils.generateRoutes()
+      return utils.generateSitemap()
     }
   },
 

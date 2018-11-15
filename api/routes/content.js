@@ -11,7 +11,7 @@ const router = Router()
 /* GET markdown files listing. */
 router.get('/routes', function (req, res) {
     // TODO change teh way e get the baseurl (ideally from process env) 
-    let menu = utils.generateRoutes(req.headers.host)
+    let menu = utils.generateRoutes()
     res.json(menu)
 })
 
