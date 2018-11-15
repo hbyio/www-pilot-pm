@@ -24,7 +24,10 @@ module.exports = {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000',
     appUrl: 'https://app.pilot.pm'
   },
-
+  
+  render: {
+    resourceHints: false,
+  },
   serverMiddleware: [
     'redirect-ssl',
     '~/api/index.js',
