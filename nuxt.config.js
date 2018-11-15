@@ -1,5 +1,4 @@
 const pkg = require("./package");
-const axios = require('axios')
 const readdir = require('readdir-enhanced')
 const path = require('path');
 
