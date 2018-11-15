@@ -1,6 +1,6 @@
 <template>
   <main id="main">
-    <section class="intro-section ressources-page blog-article-page" style="background-image: url(images/bg-intro.jpg)">
+    <section class="intro-section ressources-page blog-article-page" style="background-image: url(/images/bg-intro.jpg)">
       <div class="container">
         <div class="text-holder">
           <span class="time">8 minutes reading</span>
@@ -20,7 +20,7 @@
         <div class="trial-block">
           <strong class="logo">
             <a href="#">
-              <img src="images/logo-01.svg" alt="LastEdit">
+              <img src="/images/logo-01.svg" alt="LastEdit">
             </a>
           </strong>
           <div class="text-block">

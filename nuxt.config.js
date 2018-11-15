@@ -26,7 +26,7 @@ module.exports = {
   },
   
   render: {
-    resourceHints: false,
+    resourceHints: false, // Lazy load components
   },
   serverMiddleware: [
     'redirect-ssl',
