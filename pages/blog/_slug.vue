@@ -17,18 +17,7 @@
       <div class="container">
         <div class="text-holder" v-html="body">
         </div>
-        <div class="trial-block">
-          <strong class="logo">
-            <a href="#">
-              <img src="/images/logo-01.svg" alt="LastEdit">
-            </a>
-          </strong>
-          <div class="text-block">
-            <h5>Wanna discover LastEdit ?</h5>
-            <p>7 day free trial !</p>
-          </div>
-          <a href="#" class="btn">Try it now !  <i class="icon-arrow-right"></i></a>
-        </div>
+        <CallToTrial></CallToTrial>
       </div>
     </section>
   </main>
@@ -38,6 +27,7 @@
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
 import BlogSection from "@/components/SectionBlog.vue";
+import CallToTrial from '@/components/CallToTrial.vue'
 
 var string = require("string");
 
@@ -62,7 +52,8 @@ const md = MarkdownIt({
 
 export default {
   components: {
-    BlogSection
+    BlogSection,
+    CallToTrial
   },
   data: () => {
     return {
