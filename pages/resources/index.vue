@@ -124,7 +124,7 @@
 	</main>
 </template>
 <script>
-import BlogSection from "@/components/blogSection.vue";
+import BlogSection from "@/components/BlogSection.vue";
 import ContactUs from "@/components/ContactUs.vue"
 import IconItems from "@/components/IconItems.vue"
 import IconProjects from "@/components/IconProjects.vue"
@@ -156,7 +156,16 @@ export default {
 		let locale = context.app.i18n.locale;
 		let resp = await context.app.$axios.get(`/api/section?path=resources&lang=${locale}&order=weight`)
 		return { section: resp.data };
-	}
+	},
+	head() {
+		return {
+				title: 'Pilot | '+this.$i18n.t('resources'),
+				meta: [
+						{ hid: "description", name: "description", content: this.$i18n.t('resourcesShort') }
+				],
+		}
+	},
+
 };
 </script>
 <i18n>
@@ -165,7 +174,7 @@ export default {
 			"resourcesShort":"Documentation, guides, best practices, help ..."
 		},
 		"fr":{
-			"resourcesShort":"Dcoumentation, guides, assistance ..."
+			"resourcesShort":"Documentation, guides, assistance ..."
 		}
 	}
 </i18n>

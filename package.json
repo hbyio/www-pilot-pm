@@ -1,7 +1,7 @@
 {
-  "name": "www",
+  "name": "Pilot",
   "version": "1.0.0",
-  "description": "My exceptional Nuxt.js project",
+  "description": "pilot.pm website",
   "author": "Matthieu Bellon",
   "private": true,
   "license": "MIT",

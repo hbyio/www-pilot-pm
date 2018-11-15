@@ -50,7 +50,12 @@ export default {
 		let locale = context.app.i18n.locale;
 		let resp = await context.app.$axios.get(`/api/section?path=policies&lang=${locale}&order=weight`)
 		return { section: resp.data };
-	}
+	},
+	head() {
+		return {
+			title: 'Pilot | '+this.$i18n.t('company'),
+		}
+	},
 };
 </script>
 

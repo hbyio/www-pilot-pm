@@ -51,7 +51,7 @@
 <script>
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
-import BlogSection from "@/components/blogSection.vue";
+import BlogSection from "@/components/BlogSection.vue";
 
 var string = require("string");
 
@@ -159,7 +159,12 @@ export default {
       context.params.slug
     }.md`)
     return { document: matter(resp.data) };
-  }
+  },
+  head() {
+    return {
+        title: 'Pilot | '+this.title,
+    }
+  },
 };
 </script>
 

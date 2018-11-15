@@ -49,7 +49,7 @@
 <script>
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
-import BlogSection from "@/components/blogSection.vue";
+import BlogSection from "@/components/BlogSection.vue";
 import IconItems from "@/components/IconItems.vue"
 import IconProjects from "@/components/IconProjects.vue"
 import IconChannels from "@/components/IconChannels.vue"
@@ -114,12 +114,6 @@ export default {
     this.addListeners();
     var contentBlock = this.$el.querySelector(".content-block");
     this.headings = contentBlock.querySelectorAll("h1,h2,h3,h4,h5,h6");
-    //console.log(this.headings);
-    //console.log(this.$route);
-    //console.log(this);
-    // if (this.$route.hash) {
-    //   VueScrollTo.scrollTo(this.$route.hash);
-    // }
   },
   beforeDestroy() {
     this.removeListeners();
@@ -167,7 +161,15 @@ export default {
       context.params.slug
     }.md`)
     return { document: matter(resp.data) };
-  }
+  },
+  head() {
+    return {
+        title: 'Pilot | '+this.title,
+        meta: [
+            { hid: "description", name: "description", content: this.$i18n.t('resourcesShort') }
+        ],
+    }
+  },
 };
 </script>
 

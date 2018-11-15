@@ -37,7 +37,6 @@ export default {
 		};
 	},
   	mounted() {
-        console.log("blog section")
 		let locale = this.$i18n.locale;
         this.$axios.get(`/api/section?path=blog&lang=${locale}&order=date&slice=3`)
         .then((resp)=>{

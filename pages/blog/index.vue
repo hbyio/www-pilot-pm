@@ -87,7 +87,12 @@ export default {
 		let locale = context.app.i18n.locale;
 		let resp = await context.app.$axios.get(`/api/section?path=blog&lang=${locale}&order=date`)
 		return { section: resp.data };
-	}
+	},
+	head() {
+		return {
+			title: 'Pilot Blog',
+		}
+	},
 };
 </script>
 <style lang="scss">

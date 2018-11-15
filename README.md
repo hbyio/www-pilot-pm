@@ -1,6 +1,6 @@
-# www
+# Pilot
 
-> My exceptional Nuxt.js project
+> Official website
 
 ## Build Setup
 
