@@ -2,16 +2,14 @@
 author: mb
 date: 2018-01-27
 draft: false
-illustration: trackedtime.png
+iconComponent: IconFaq
+illustration: /images/img-overlay-4.png
 menu: docs
+short: Frequently asked questions (Price, trial period, onboarding experience..)
 slug: faq
 title: Frequently asked questions
 weight: 10
 ---
-
-Frequently asked questions ..
-
-<!--more-->
 
 ## What problem solves Pilot?
 

@@ -2,18 +2,16 @@
 author: mb
 date: 2018-01-27
 draft: false
-illustration: items.png
+iconComponent: IconItems
+illustration: /images/img-overlay-1.png
 menu: docs
+short: Un contenu est le plus simple élément géré par Pilot. C’est une unité éditoriale compréhensible hors contexte.
 slug: items
 title: Contenus
 weight: 2
 ---
 
 ## Qu'est ce qu'un contenu ?
-
-Un contenu est le plus simple élément géré par Pilot. C'est une unité éditoriale compréhensible hors contexte.
-
-<!--more-->
 
 Un article, une interview, un tweet sont des contenus au sens de l'application à l'inverse d'un chapô ou un d'un paragraphe d'article.
 

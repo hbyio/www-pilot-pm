@@ -2,16 +2,14 @@
 author: mb
 date: 2018-01-27
 draft: false
-illustration: channels.png
+iconComponent: IconChannels
+illustration: /images/img-overlay-3.png
 menu: docs
+short: Un canal représente un espace où diffuser un contenu.
 slug: channels
-title: Les canaux
+title: Canaux
 weight: 4
 ---
-
-Pour Pilot un canal représente un espace où diffuser un contenu.
-
-<!--more-->
 
 Exemples :
 

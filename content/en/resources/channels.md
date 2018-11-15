@@ -2,16 +2,14 @@
 author: mb
 date: 2018-01-27
 draft: false
-illustration: channels.png
+iconComponent: IconChannels
+illustration: /images/img-overlay-3.png
 menu: docs
+short: A channel is a space where content can be distributed.
 slug: channels
 title: Channels
 weight: 4
 ---
-
-For Pilot a channel represents a space where to broadcast content.
-
-<!--more-->
 
 Examples :
 

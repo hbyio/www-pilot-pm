@@ -3,7 +3,7 @@
     <section class="intro-section ressources-page ressources-detail-page">
         <div class="container">
             <div class="text-holder">
-                <i class="icon-details" :class="pageIcon"></i>
+                <component v-if="document.data.iconComponent" :is="document.data.iconComponent" :height="24" :color="'#fff'"></component>
                 <h1> {{title}} </h1>
             </div>
         </div>
@@ -50,6 +50,10 @@
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
 import BlogSection from "@/components/blogSection.vue";
+import IconItems from "@/components/IconItems.vue"
+import IconProjects from "@/components/IconProjects.vue"
+import IconChannels from "@/components/IconChannels.vue"
+import IconFaq from "@/components/IconFaq.vue"
 
 var string = require("string");
 
@@ -74,7 +78,11 @@ const md = MarkdownIt({
 
 export default {
   components: {
-    BlogSection
+    BlogSection,
+    IconItems,
+    IconProjects,
+    IconChannels,
+    IconFaq
   },
   data: () => {
     return {
@@ -153,9 +161,9 @@ export default {
   },
   async asyncData(context) {
     let locale = context.app.i18n.locale;
-    let resp = await context.app.$axios.get(`/api/content?path=resources/${
+    let resp = await context.app.$axios.get(`/api/content?path=${locale}/resources/${
       context.params.slug
-    }.${locale}.md`)
+    }.md`)
     return { document: matter(resp.data) };
   }
 };

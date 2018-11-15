@@ -4,34 +4,38 @@
 			<div class="container">
 				<div class="text-holder">
 					<h1 class="capitalize">{{ $t('resources') }}</h1>
-					<p>Pour vraiment pouvoir découvrir plus facilement et le plus simplement possible l’application nous avons disposé de nombreux guides interactifs au sein de l’interface.</p>
+					<p>{{ $t('resourcesShort') }}</p>
 				</div>
 			</div>
 		</section>
 		<section class="card-section">
 			<div class="container">
 				<div class="row card-holder">
-					<div class="card">
-						<div class="card-heading dark-blue-overlay" style="background-image: url(/images/img-overlay-1.png)">
+					<div class="card"
+								v-for="document in section"
+								:key="document.slug"
+								v-if="!document.draft"
+					>
+						<div class="card-heading" :style="{ 'background-image': 'url(' + document.illustration + ')' }">
 							<div class="heading-text">
-								<i class="icon icon-items"></i>
-								<h6>Les contenus</h6>
+								<component v-if="document.iconComponent" :is="document.iconComponent" :height="24" :color="'#fff'"></component>
+								<h6>{{ document.title }}</h6>
 							</div>
 						</div>
 						<div class="card-body">
-							<p>Un contenu est le plus simple élément géré par Pilot. C’est une unité éditoriale compréhensible hors contexte.</p>
+							<p>{{ document.short }}</p>
 						</div>
 						<div class="card-footer">
-							<a href="#" class="ressources-link">13 ressources</a>
+							<!-- <a href="#" class="ressources-link">13 ressources</a> -->
 							<nuxt-link 
-							  :to="localePath({name: 'resources-slug', params: { slug:'items' } },$i18n.locale)"
+							  :to="localePath({name: 'resources-slug', params: { slug: document.slug } },$i18n.locale)"
 							  class="button is-info is-medium is-fullwidth" 
 							>
 							  {{ $t('view') }}
 							</nuxt-link>
 						</div>
 					</div>
-					<div class="card">
+					<!-- <div class="card">
 						<div class="card-heading purple-overlay" style="background-image: url(/images/img-overlay-2.png)">
 							<div class="heading-text">
 								<i class="icon icon-projects" />
@@ -111,21 +115,9 @@
 							  {{ $t('view') }}
 							</nuxt-link>
 						</div>
-					</div>
+					</div> -->
 				</div>
-				<div class="text-holder">
-					<h3>Vous n’avez pas trouvé ce que vous cherchez ?</h3>
-					<p>Contactez-nous nous ferons de notre mieux pour y répondre.</p>
-					<form action="#" class="subscribe-form">
-						<div class="input-holder">
-							<input type="email" placeholder="Entrez votre email…">
-							<i class="icon-mail"></i>
-						</div>
-						<div class="submit-holder">
-							<button type="submit" class="btn">CONTACTEZ-MOI</button>
-						</div>
-					</form>
-				</div>
+				<ContactUs></ContactUs>
 			</div>
 		</section>
 		<BlogSection></BlogSection>
@@ -133,15 +125,45 @@
 </template>
 <script>
 import BlogSection from "@/components/blogSection.vue";
+import ContactUs from "@/components/ContactUs.vue"
+import IconItems from "@/components/IconItems.vue"
+import IconProjects from "@/components/IconProjects.vue"
+import IconChannels from "@/components/IconChannels.vue"
+import IconFaq from "@/components/IconFaq.vue"
 export default {
   components: {
-    BlogSection
+		BlogSection,
+		ContactUs,
+		IconItems,
+		IconProjects,
+		IconChannels,
+		IconFaq
   },
-  mounted() {
-    this.$nextTick(() => {
-      this.$nuxt.$loading.start();
-      setTimeout(() => this.$nuxt.$loading.finish(), 200);
-    });
-  }
+  data: () => {
+		return {
+			section: []
+		};
+	},
+	mounted() {
+		this.$nextTick(() => {
+		this.$nuxt.$loading.start();
+		setTimeout(() => this.$nuxt.$loading.finish(), 200);
+		});
+	},
+		async asyncData(context) {
+		let locale = context.app.i18n.locale;
+		let resp = await context.app.$axios.get(`/api/section?path=resources&lang=${locale}&order=weight`)
+		return { section: resp.data };
+	}
 };
 </script>
+<i18n>
+	{
+		"en":{
+			"resourcesShort":"Documentation, guides, best practices, help ..."
+		},
+		"fr":{
+			"resourcesShort":"Dcoumentation, guides, assistance ..."
+		}
+	}
+</i18n>

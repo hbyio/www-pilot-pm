@@ -2,16 +2,14 @@
 author: mb
 date: 2018-01-27
 draft: false
-illustration: trackedtime.png
+iconComponent: IconFaq
+illustration: /images/img-overlay-4.png
 menu: docs
+short: Prix, période d'essai, prise en main, ...
 slug: faq
 title: Questions fréquentes
 weight: 10
 ---
-
-Collection des questions que vous nous posez le plus souvent
-
-<!--more-->
 
 ## Quel problème règle Pilot ?
 

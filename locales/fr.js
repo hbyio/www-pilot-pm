@@ -13,7 +13,7 @@ export default {
   featuresNone:"Pas de fonctionnalités avancées",
   home: {
     catchphrase:"Gérez vos projets, tâches, versions de documents et planning éditoriaux.",
-    createYourDesk:"Créer votre desk",
+    createYourDesk:"Créez votre desk",
     benefits:{
       WhoWhatWhen:"Vous savez ce qui est fait, par qui et quand.",
       noMoreExcel:"Plus besoin de tableurs Excels de planification éditoriale ",

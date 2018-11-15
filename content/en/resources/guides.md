@@ -1,7 +1,7 @@
 ---
 date: 2018-01-27
 draft: false
-illustration: trackedtime.png
+illustration: /images/img-overlay-5.png
 menu: docs
 slug: guides
 title: Application tour guides

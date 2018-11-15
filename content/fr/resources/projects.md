@@ -2,16 +2,14 @@
 author: mb
 date: 2018-01-27
 draft: false
-illustration: projects.png
+iconComponent: Iconprojects
+illustration: /images/img-overlay-2.png
 menu: docs
+short: Vous pouvez rassembler vos contenus dans des projets pour organiser le travail de l’équipe
 slug: projects
 title: Projets
 weight: 3
 ---
-
-Vous pouvez rassembler vos contenus dans des projets pour organiser le travail de l'équipe.
-
-<!--more-->
 
 Un projet peut être ce qui vous convient le mieux : un évènement, la refonte d'un site, l'édition mensuelle de votre magazine interne.
 

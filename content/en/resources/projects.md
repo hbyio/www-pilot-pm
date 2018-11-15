@@ -2,16 +2,14 @@
 author: mb
 date: 2018-01-27
 draft: false
-illustration: projects.png
+iconComponent: IconProjects
+illustration: /images/img-overlay-2.png
 menu: docs
+short: You can group your content into projects to organize the team's work.
 slug: projects
 title: Projects
 weight: 3
 ---
-
-You can group your content into projects to organize the team's work.
-
-<!--more-->
 
 A project can be what suits you best: an event, the redesign of a site, the monthly edition of your internal magazine.
 

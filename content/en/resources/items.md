@@ -2,18 +2,16 @@
 author: mb
 date: 2018-01-27
 draft: false
-illustration: items.png
+iconComponent: IconItems
+illustration: /images/img-overlay-1.png
 menu: docs
+short: A content is an editorial unit that can be understood out of context (article, tweet, ..).
 slug: items
 title: Contents
 weight: 2
 ---
 
-## What an "item" is exactly ?
-
-A content is the simplest element managed by Pilot. It is an understandable editorial unit out of context.
-
-<!--more-->
+## What is an "item" exactly ?
 
 An article, an interview, a tweet are contents in the sense of Pilot as opposed to a chapô or a paragraph of an article.
 
