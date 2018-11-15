@@ -152,7 +152,7 @@ export default {
 		setTimeout(() => this.$nuxt.$loading.finish(), 200);
 		});
 	},
-		async asyncData(context) {
+	async asyncData(context) {
 		let locale = context.app.i18n.locale;
 		let resp = await context.app.$axios.get(`/api/section?path=resources&lang=${locale}&order=weight`)
 		return { section: resp.data };
