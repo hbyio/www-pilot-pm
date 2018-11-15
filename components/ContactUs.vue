@@ -1,7 +1,7 @@
 <template>
     <div class="text-holder">
         <h3>{{ $t('youDidNotFind') }}</h3>
-        <button class="button is-info" @click.prevent="showIntercom()">{{ $t('contactUs') }}</button>
+        <button class="button is-info is-outlined" @click.prevent="showIntercom()">{{ $t('contactUs') }}</button>
         <!-- <form action="#" class="subscribe-form">
             <div class="input-holder">
                 <input type="email" placeholder="Entrez votre email…">

@@ -80,6 +80,9 @@ module.exports = {
     '@nuxtjs/sitemap',
     // Doc: https://github.com/nuxt-community/axios-module#usage
     "@nuxtjs/axios",
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-121081781-1'
+    }],
     [
       "nuxt-i18n",
       {
