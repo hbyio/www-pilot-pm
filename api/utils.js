@@ -43,10 +43,10 @@ var generateSitemap = function (){
            route.priority = fileMatter.data.sitemapPriority || 1
            route.lastmodISO = fileMatter.data.date || moment().format()
            route.links = [
-               { lang: 'en', url: path.join('en', route.url), },
+               { lang: 'en', url: path.join('en', route.url), }, // TODO warning : we are creating links here for content that may not exists in the other language
                { lang: 'fr', url: path.join('fr', route.url), },
            ]
-           if(route.sitemapShow === false){
+           if(route.sitemapShow === false || route.draft === true){
                break
            }
            routes.push(route)
