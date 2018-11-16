@@ -295,20 +295,3 @@ export default {
 }
 </style>
 
-
-<i18n>
-{
-  "en": {
-    "company": "Company",
-    "product": "Product",
-    "useCases": "Case studies",
-    "resources":"resources"
-  },
-  "fr": {
-    "company":"Société",
-    "product":"Produit",
-    "useCases":"Cas pratiques",
-    "resources":"resources"
-  }
-}
-</i18n>

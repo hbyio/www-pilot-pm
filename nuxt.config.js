@@ -101,7 +101,7 @@ module.exports = {
             file: "fr.js"
           }
         ],
-        strategy: 'prefix_and_default',
+        //strategy: 'prefix_and_default',
         defaultLocale: "en",
         parsePages: false,
         vueI18nLoader: true,
