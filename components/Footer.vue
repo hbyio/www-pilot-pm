@@ -140,6 +140,8 @@ export default {
     flex-direction: column;
     @include media("<=tablet") {
       margin-bottom: 3em;
+      justify-content: center;
+      width: 100%;
     }
   }
 
