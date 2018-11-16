@@ -4,7 +4,9 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h5>{{ $t('resources') }}</h5>
+            <nuxt-link :to="localePath({name:'resources'}, $i18n.locale)">
+              <h5>{{ $t('resources') }}</h5>
+            </nuxt-link> 
 
               <nuxt-link 
                   v-for="link in resources"
@@ -22,7 +24,6 @@
             <div><a href="#">Accompagner son équipe sur la plateforme</a></div>
           </div> -->
           <div class="col">
-            
             <nuxt-link :to="localePath({name:'policies'}, $i18n.locale)">
               <h5>{{ $t('company') }}</h5>
             </nuxt-link> 
@@ -43,7 +44,9 @@
             </nuxt-link> 
           </div>
           <div class="col">
-            <h5>{{ $t('product') }}</h5>
+            <nuxt-link :to="localePath({name:'index'}, $i18n.locale)">
+              <h5>{{ $t('product') }}</h5>
+            </nuxt-link> 
             <nuxt-link :to="localePath({name:'index', hash:'#functionality-section'},$i18n.locale)">
               {{ $t('features') }}
             </nuxt-link>
@@ -126,12 +129,18 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    @include media("<=tablet") {
+      flex-direction: column;
+    }
   }
   .col {
     width: 100%;
     margin-right: 1em;
     display: flex;
     flex-direction: column;
+    @include media("<=tablet") {
+      margin-bottom: 3em;
+    }
   }
 
   .contact-holder {
@@ -210,7 +219,7 @@ export default {
     font-size: 15px;
     color: $white;
     font-weight: 500;
-    margin-bottom: 19px;
+    margin-bottom: .4em;
   }
 
   .nav-list {
