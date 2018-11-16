@@ -549,11 +549,15 @@ blockquote {
 
     @include media(">=tablet") {
       display: flex;
-      margin-bottom: 40px;
+     
+    }
+
+    @include media("<=tablet") {
+      margin-bottom: 150px;
     }
 
     @include media(">=desktop") {
-      margin-bottom: 139px;
+      margin-bottom: 239px;
     }
 
     &.reverse {
