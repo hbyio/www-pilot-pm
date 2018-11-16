@@ -276,4 +276,10 @@ export default {
     
   }
 };
-</script>
+</script></script>
+<style lang="scss" scoped>
+
+.container{
+  margin-bottom:150px;
+}
+</style>

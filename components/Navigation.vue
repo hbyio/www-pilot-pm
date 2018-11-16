@@ -53,7 +53,8 @@
         <div class="navbar-end">
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">
-              {{ $i18n.locale }}
+              <img v-if="$i18n.locale === 'fr'" :src="'/icons/en.png'" alt="">
+              <img v-if="$i18n.locale === 'en'" :src="'/icons/fr.png'" alt="">
             </a>
 
             <div class="navbar-dropdown is-boxed">
@@ -62,7 +63,7 @@
                           :key="locale.code" 
                           :class="{'is-active': locale.code === $i18n.locale}"
                           :to="switchLocalePath(locale.code)">
-                {{ locale.name }}
+                          {{ locale.name }}
               </nuxt-link>
             </div>
           </div>
