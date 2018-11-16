@@ -1,6 +1,5 @@
 <template>
     <div class="trial-block">
-     <div class="logo">{{appName}}</div>
       <div class="text-block">
         <h5>{{ $t('wannaTry') }}</h5>
       </div>

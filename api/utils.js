@@ -38,17 +38,20 @@ var generateSitemap = function (){
            }else{
                route.url = path.join(pathInfo.dir, pathInfo.name)
            }
-           route.sitemapShow = _.isBoolean(fileMatter.data.sitemapShow) ? fileMatter.data.sitemapShow : true
+           route.inSitemap = _.isBoolean(fileMatter.data.sitemapShow) ? fileMatter.data.sitemapShow : true
+           route.isDraft = _.isBoolean(fileMatter.data.draft) ? fileMatter.data.draft : false
            route.changefreq = fileMatter.data.sitemapChangeFreq ||  'daily'
            route.priority = fileMatter.data.sitemapPriority || 1
            route.lastmodISO = fileMatter.data.date || moment().format()
            route.links = [
-               { lang: 'en', url: path.join('en', route.url), }, // TODO warning : we are creating links here for content that may not exists in the other language
+               { lang: 'en', url: route.url, }, // TODO warning : we are creating links here for content that may not exists in the other language. Check if content exists in other folder
                { lang: 'fr', url: path.join('fr', route.url), },
            ]
-           if(route.sitemapShow === false || route.draft === true){
+           
+           if(route.inSitemap === false){
                break
            }
+
            routes.push(route)
         }
     }
