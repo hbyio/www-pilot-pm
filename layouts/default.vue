@@ -15,7 +15,9 @@ export default {
     Footer,
   },
   mounted(){
-    this.$intercom.boot();
+    if(!this.$store.app.context.isDev){
+        this.$intercom.boot();
+    }
   }
 }
 </script>
