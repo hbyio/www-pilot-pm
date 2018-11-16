@@ -168,13 +168,3 @@ export default {
 
 };
 </script>
-<i18n>
-	{
-		"en":{
-			"resourcesShort":"Documentation, guides, best practices, help ..."
-		},
-		"fr":{
-			"resourcesShort":"Documentation, guides, assistance ..."
-		}
-	}
-</i18n>

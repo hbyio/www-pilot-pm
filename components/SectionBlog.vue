@@ -50,11 +50,3 @@ export default {
 	}
 };
 </script>
-
-<i18n>
-{
-    "en":{"lastNotes":"Recent articles from the blog"},
-    "fr":{"lastNotes":"Retrouvez nos articles sur le blog"}
-}
-</i18n>
-
