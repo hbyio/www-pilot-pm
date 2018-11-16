@@ -252,15 +252,28 @@
 </template>
 <script>
 import ButtonStartTrial from '@/components/ButtonStartTrial.vue'
+import VueScrollTo from 'vue-scrollto';
 export default {
   components:{
     ButtonStartTrial
+  },
+  watch:{
+    $route(newval, oldval){
+      if(newval.hash){
+        VueScrollTo.scrollTo(newval.hash)
+      }
+    }
   },
   mounted() {
     this.$nextTick(() => {
       this.$nuxt.$loading.start();
       setTimeout(() => this.$nuxt.$loading.finish(), 200);
     });
+
+    if(this.$route.hash){
+      VueScrollTo.scrollTo(this.$route.hash)
+    }
+    
   }
 };
 </script>
