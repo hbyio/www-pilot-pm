@@ -5,16 +5,11 @@ const utils = require('../utils.js')
 const _ = require('lodash')
 const router = Router()
 
-
-
-
-/* GET markdown files listing. */
+/* GET markdown files paths listing. */
 router.get('/routes', function (req, res) {
-    // TODO change teh way e get the baseurl (ideally from process env) 
     let menu = utils.generateRoutes()
     res.json(menu)
 })
-
 
 /* GET markdown files listing. */
 router.get('/section', function (req, res, next) {

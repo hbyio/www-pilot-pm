@@ -133,7 +133,7 @@
         </div>
       </div>
     </section>
-    <section class="partners-section">
+    <section id="clients-section" class="partners-section">
       <div class="container">
         <h1>Clients</h1>
         <span class="subtitle"></span>

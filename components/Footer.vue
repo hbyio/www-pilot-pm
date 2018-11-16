@@ -5,15 +5,15 @@
         <div class="row">
           <div class="col">
             <h5>{{ $t('resources') }}</h5>
-            <div
-              v-for="link in resources"
-              :key="link.slug"
-              v-if="!link.draft"
-            >
-              <nuxt-link :to="localePath({name:'resources-slug', params: { slug: link.slug }}, $i18n.locale)">
+
+              <nuxt-link 
+                  v-for="link in resources"
+                  :key="link.slug"
+                  v-if="!link.draft"
+                  :to="localePath({name:'resources-slug', params: { slug: link.slug }}, $i18n.locale)">
                 {{ link.title }}
               </nuxt-link> 
-            </div>
+
           </div>
           <!-- <div class="col">
             <h5>{{ $t('useCases') }}</h5>
@@ -22,43 +22,37 @@
             <div><a href="#">Accompagner son équipe sur la plateforme</a></div>
           </div> -->
           <div class="col">
-            <h5>
-              <nuxt-link :to="localePath({name:'policies'}, $i18n.locale)">
-                {{ $t('company') }}
-              </nuxt-link> 
-            </h5>
-            <div>
-              <nuxt-link :to="localePath({name:'blog'}, $i18n.locale)">
-                {{ $t('blog') }}
-              </nuxt-link> 
-            </div>
-            <div>
-              <nuxt-link :to="localePath({name:'policies-slug', params: { slug: 'terms' }}, $i18n.locale)">
-                {{ $t('terms') }}
-              </nuxt-link> 
-            </div>
-            <div>
-              <nuxt-link :to="localePath({name:'policies-slug', params: { slug: 'sla' }}, $i18n.locale)">
-                {{ $t('sla') }}
-              </nuxt-link> 
-            </div>
-            <div>
-              <nuxt-link :to="localePath({name:'policies-slug', params: { slug: 'infra' }}, $i18n.locale)">
-                {{ $t('infra') }}
-              </nuxt-link> 
-            </div>
-            <div>
-              <nuxt-link :to="localePath({name:'policies-slug', params: { slug: 'privacy' }}, $i18n.locale)">
-                {{ $t('privacy') }}
-              </nuxt-link> 
-            </div>
+            
+            <nuxt-link :to="localePath({name:'policies'}, $i18n.locale)">
+              <h5>{{ $t('company') }}</h5>
+            </nuxt-link> 
+            <nuxt-link :to="localePath({name:'blog'}, $i18n.locale)">
+              {{ $t('blog') }}
+            </nuxt-link> 
+            <nuxt-link :to="localePath({name:'policies-slug', params: { slug: 'terms' }}, $i18n.locale)">
+              {{ $t('terms') }}
+            </nuxt-link> 
+            <nuxt-link :to="localePath({name:'policies-slug', params: { slug: 'sla' }}, $i18n.locale)">
+              {{ $t('sla') }}
+            </nuxt-link> 
+            <nuxt-link :to="localePath({name:'policies-slug', params: { slug: 'infra' }}, $i18n.locale)">
+              {{ $t('infra') }}
+            </nuxt-link> 
+            <nuxt-link :to="localePath({name:'policies-slug', params: { slug: 'privacy' }}, $i18n.locale)">
+              {{ $t('privacy') }}
+            </nuxt-link> 
           </div>
           <div class="col">
             <h5>{{ $t('product') }}</h5>
-            <div><a href="#">Les Fonctionnadivtés</a></div>
-            <div><a href="#">Nos Tarifs</a></div>
-            <div><a href="#">Nos Cdivents</a></div>
-            <div><a href="#">Cas Pratiques</a></div>
+            <nuxt-link :to="localePath({name:'index', hash:'#functionality-section'},$i18n.locale)">
+              {{ $t('features') }}
+            </nuxt-link>
+            <nuxt-link :to="localePath({name:'index', hash:'#prices-section'},$i18n.locale)">
+              {{ $t('prices') }}
+            </nuxt-link>
+            <nuxt-link :to="localePath({name:'index', hash:'#clients-section'},$i18n.locale)">
+              {{ $t('clients') }}
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -120,6 +114,8 @@ export default {
   a{
     text-decoration: none;
     color: #f9f9f9;
+    text-transform: capitalize;
+    margin-bottom: .4em;
   }
   .container {
     margin: 0 auto;
@@ -134,6 +130,8 @@ export default {
   .col {
     width: 100%;
     margin-right: 1em;
+    display: flex;
+    flex-direction: column;
   }
 
   .contact-holder {
