@@ -4,7 +4,7 @@
     <div class="container">
       <div class="navbar-brand">
         <nuxt-link class="navbar-item" :to="localePath('index', $i18n.locale)">
-          <img src="/images/logo-01.svg" width="121" height="34" alt="LastEdit">
+          <div class="logo">{{appName}}</div>
         </nuxt-link>
         <a role="button" 
             :class="{'is-active':isMenuOpen}"
@@ -96,6 +96,9 @@ export default {
       },
       loginUrl(){
         return process.env.appUrl+"/login?lang="+this.$store.app.i18n.locale
+      },
+      appName(){
+        return process.env.appName
       }
   },
   methods: {

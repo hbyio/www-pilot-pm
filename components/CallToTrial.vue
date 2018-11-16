@@ -1,10 +1,6 @@
 <template>
     <div class="trial-block">
-      <strong class="logo">
-        <a href="/">
-          <img src="/images/logo-01.svg" alt="LastEdit">
-        </a>
-      </strong>
+     <div class="logo">{{appName}}</div>
       <div class="text-block">
         <h5>{{ $t('wannaTry') }}</h5>
       </div>
@@ -16,14 +12,19 @@ import ButtonStartTrial from '@/components/ButtonStartTrial.vue'
 export default {
   components:{
     ButtonStartTrial
-  }
+  },
+  computed: {
+    appName(){
+      return process.env.appName
+    }
+  },
 }
 </script>
 
 <i18n>
 {
   "en":{
-    "wannaTry":"Dou you want to discover Pilot ?"
+    "wannaTry":"Do you want to discover Pilot ?"
   },
   "fr":{
     "wannaTry":"Vous voulez découvrir Pilot ?"

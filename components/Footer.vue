@@ -63,12 +63,10 @@
       <div class="container">
         <div class="contact-holder">
           <div class="info-block">
-            <strong class="logo">
-              <a href="#"><img src="/images/logo.svg" alt="LastEdit"></a>
-            </strong>
+            <div class="logo">{{appName}}</div>
             <ul class="social-networks">
-              <li><a href="#"><i class="icon icon-twitter"></i>@lastedit</a></li>
-              <li><a href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#108;&#097;&#115;&#116;&#101;&#100;&#105;&#116;&#046;&#099;&#111;&#109;"><i class="icon icon-mailto"></i>&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#108;&#097;&#115;&#116;&#101;&#100;&#105;&#116;&#046;&#099;&#111;&#109;</a></li>
+              <li><a :href="'https://twitter.com/'+twitter"><i class="icon icon-twitter"></i>@{{ twitter }}</a></li>
+              <li><a :href="'mailto:'+appEmail"><i class="icon icon-mail"></i>{{appEmail}}</a></li>
             </ul>
           </div>
           <div class="form-block">
@@ -76,7 +74,7 @@
           </div>
         </div>
       </div>
-      <div class="credits">© Huckleberry 2018 🤖 🚀 - SIRET 79817197100012 - TVA FR18798171971 - Fabriqué en Europe 🇪🇺 / 🇫🇷 .</div>
+      <div class="credits">© Huckleberry 2018 🤖 🚀 - SIRET 79817197100012 - TVA FR18798171971 - made in Europe 🇪🇺 / 🇫🇷 .</div>
     </footer>
 </template>
 <script>
@@ -91,6 +89,18 @@ export default {
       resources: [],
       error:null
     };
+  },
+  computed:{
+    twitter(){
+      return process.env.appTwitter
+    },
+    appEmail(){
+      return process.env.appEmail
+    },
+    appName(){
+      return process.env.appName
+    }
+    
   },
   mounted() {
     let locale = this.$i18n.locale;

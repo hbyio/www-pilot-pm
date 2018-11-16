@@ -23,7 +23,11 @@ module.exports = {
 
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000',
-    appUrl: 'https://app.pilot.pm'
+    appUrl: 'https://app.pilot.pm',
+    appName: "Pilot",
+    appTwitter: "pilot_app",
+    appEmail:"hello@pilot.pm",
+    appSupportEmail:"support@pilot.pm"
   },
   
   render: {

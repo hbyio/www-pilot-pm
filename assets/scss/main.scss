@@ -52,3 +52,13 @@ $media-expressions: (
 .capitalize {
   text-transform: capitalize;
 }
+
+.logo{
+  background-color: $bg-blue;
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #424242;
+  padding: 3px 10px;
+  border-right: 4px solid $light-blue;
+}
