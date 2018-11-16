@@ -191,8 +191,6 @@
                 <div>5 {{ $t('projects') }}</div>
                 <div>100 {{ $t('items') }}</div>
                 <div>10G {{ $t('storage') }}</div>
-                <div>{{ $t('featuresNone') }}</div>
-                <div>{{ $t('home.support.none') }}</div>
               </div>
               <div class="btn-holder">
                 <ButtonStartTrial buttonClasses="is-light"></ButtonStartTrial>
@@ -215,7 +213,7 @@
                 <div>10 {{ $t('projects') }}</div>
                 <div>300 {{ $t('items') }}</div>
                 <div>30Go {{ $t('storage') }} </div>
-                <div>{{ $t('featuresNone') }}</div>
+                <!-- <div>{{ $t('featuresNone') }}</div> -->
                 <div>{{ $t('home.support.medium') }}</div>
               </div>
               <div class="btn-holder">
