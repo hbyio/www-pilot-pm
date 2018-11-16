@@ -105,9 +105,10 @@ module.exports = {
         defaultLocale: "en",
         parsePages: false,
         vueI18nLoader: true,
-        baseUrl: "https://www.pilot.pm",
         lazy: true,
-        langDir: "locales/"
+        langDir: "locales/",
+        seo: true,
+        baseUrl: process.env.BASE_URL || 'http://localhost:3000',
       }
     ]
   ],
