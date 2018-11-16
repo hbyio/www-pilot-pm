@@ -3,7 +3,7 @@ import VueMq from 'vue-mq'
 
 Vue.use(VueMq, {
   breakpoints: { // default breakpoints - customize this
-    xsphone: 320,
+    //xsphone: 320,
     phone: 480,
     tablet: 768,
     desktop: Infinity,
