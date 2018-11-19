@@ -8,14 +8,13 @@
         </nuxt-link>
         <a role="button" 
             :class="{'is-active':isMenuOpen}"
-            class="navbar-burger burger" 
+            class="navbar-menu-toggle" 
             @click="toggleMenu()"
             aria-label="menu" 
             aria-expanded="false" 
         >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
+          <template v-if="isMenuOpen">{{ $t('close') }}</template>
+          <template v-else>Menu</template>
         </a>
       </div>
 
@@ -115,6 +114,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/assets/scss/base/_variables.scss";
+@import "@/assets/scss/vendors/_include-media.scss";
 
 a {
   text-decoration: none;
@@ -148,5 +148,20 @@ a {
 
 .navbar-item {
   text-transform: capitalize;
+}
+
+.navbar-menu-toggle{
+  align-items: center;
+  color: #4a4a4a;
+  cursor: pointer;
+  display: flex;
+  height: 52px;
+  justify-content: flex-end;
+  padding-right: 1em;
+  text-decoration: underline;
+  width: 100%;
+  @include media(">=desktop") {
+      display: none;
+  }
 }
 </style>

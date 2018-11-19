@@ -6,7 +6,7 @@ export default {
   calendars:"calendriers",
   calendarsShort:"Créez facilement des plannings éditoriaux ou de tâches, sauvegardez, partagez des calendriers personnalisés avec vos clients. Changez votre programmation de publication simplement par drag&drop",
   clients:"Clients",
-  close:"fermer",
+  close:"Fermer",
   company:"société",
   enterprise:"entreprise",
   feature:"fonctionnalité",

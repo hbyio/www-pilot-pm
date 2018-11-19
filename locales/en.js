@@ -6,7 +6,7 @@ export default {
   calendars: "calendars",
   calendarsShort: "Easily create editorial or tasks schedules, save, share personalized calendars with your customers. Change your publication schedule simply by drag&drop",
   clients:"Clients",
-  close:"close",
+  close:"Close",
   company:"company",
   enterprise:"enterprise",
   feature: "feature",
