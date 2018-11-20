@@ -52,17 +52,19 @@
         <div class="navbar-end">
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">
-              <img v-if="$i18n.locale === 'fr'" :src="'/icons/en.png'" alt="">
-              <img v-if="$i18n.locale === 'en'" :src="'/icons/fr.png'" alt="">
+              <img :src="'/icons/'+$i18n.locale+'.png'" alt="">
             </a>
 
             <div class="navbar-dropdown is-boxed">
               <nuxt-link  class="navbar-item" 
-                          v-for="locale in $i18n.locales" 
-                          :key="locale.code" 
-                          :class="{'is-active': locale.code === $i18n.locale}"
-                          :to="switchLocalePath(locale.code)">
-                          {{ locale.name }}
+                          v-if="$i18n.locale === 'fr'"
+                          :to="switchLocalePath('en')">
+                          <img src="/icons/en.png" alt=""/>&nbsp;&nbsp;Switch to English
+              </nuxt-link>
+              <nuxt-link  class="navbar-item" 
+                          v-if="$i18n.locale === 'en'"
+                          :to="switchLocalePath('fr')">
+                          <img src="/icons/fr.png" alt=""/>&nbsp;&nbsp;Interface en Français
               </nuxt-link>
             </div>
           </div>
@@ -146,8 +148,10 @@ a {
   padding: 0;
 }
 
-.navbar-item {
-  text-transform: capitalize;
+.navbar-link{
+  @include media("<=desktop") {
+      display: none;
+  }
 }
 
 .navbar-menu-toggle{
