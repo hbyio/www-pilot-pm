@@ -22,7 +22,7 @@ module.exports = {
   },
 
   env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
+    baseUrl: process.env.BASE_URL || 'http://localhost:1313',
     appUrl: 'https://app.pilot.pm',
     appName: "Pilot",
     appTwitter: "pilot_app",
@@ -38,7 +38,7 @@ module.exports = {
     '~/api/index.js',
   ],
   server: {
-    port: 3000, // default: 3000
+    port: 1313, // default: 3000
     host: "0.0.0.0" // default: localhost
   },
 
@@ -120,7 +120,7 @@ module.exports = {
         lazy: true,
         langDir: "locales/",
         seo: true,
-        baseUrl: process.env.BASE_URL || 'http://localhost:3000',
+        baseUrl: process.env.BASE_URL || 'http://localhost:1313',
       }
     ]
   ],
@@ -129,8 +129,8 @@ module.exports = {
   ** See https://github.com/nuxt-community/axios-module#options
   */
   axios: {
-    baseURL: process.env.BASE_URL || 'http://localhost:3000',
-    browserBaseURL: process.env.BASE_URL || 'http://localhost:3000',
+    baseURL: process.env.BASE_URL || 'http://localhost:1313',
+    browserBaseURL: process.env.BASE_URL || 'http://localhost:1313',
     https: true
     //debug: true,
   },
@@ -140,7 +140,7 @@ module.exports = {
   */
   sitemap: {
     path: '/sitemap.xml',
-    hostname: process.env.BASE_URL || 'http://localhost:3000',
+    hostname: process.env.BASE_URL || 'http://localhost:1313',
     cacheTime: 1000 * 60 * 15,
     generate: true, //Generates static sitemap file during build/generate instead of serving using middleware.
     gzip: true,

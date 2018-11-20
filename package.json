@@ -6,7 +6,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon --watch api --exec \"nuxt\"",
+    "dev": "HOST=0.0.0.0 PORT=1313  nodemon --watch api --exec \"nuxt\"",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
