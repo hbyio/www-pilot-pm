@@ -80,7 +80,7 @@ export default {
     return {
       document: {
         data: {
-          title:"Organiser sa production pour les réseaux sociaux : exemple d'Harmonie Mutuelle et Moët Hennessy",
+          title:"Organiser sa production pour les réseaux sociaux : exemples d'Harmonie Mutuelle et Moët Hennessy",
           tag:"Retour d'expérience",
           tagColor:"purple"
         }
