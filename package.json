@@ -5,6 +5,9 @@
   "author": "Matthieu Bellon",
   "private": true,
   "license": "MIT",
+  "engines": {
+    "node": "v8.11.1"
+  },
   "scripts": {
     "dev": "HOST=0.0.0.0 PORT=1313  nodemon --watch api --exec \"nuxt\"",
     "build": "nuxt build",
