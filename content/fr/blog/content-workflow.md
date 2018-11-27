@@ -9,7 +9,7 @@ slug: content-workflow
 tag: retour d'expérience
 tagColor: purple
 title: Content Workflow, Comment le mettre en place ? (et faire confiance aux parties prenantes)
-featured: true
+featured: false
 ---
 
 

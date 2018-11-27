@@ -9,7 +9,7 @@ slug: content-workflow
 tag: best practice
 tagColor: purple
 title: Content Workflow, How to implement it? (and trust stakeholders)
-featured: true
+featured: false
 sitemapShow: false
 sitemapChangeFreq: 'daily'
 sitemapPriority: 0.5
