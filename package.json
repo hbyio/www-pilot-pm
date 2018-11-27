@@ -6,7 +6,9 @@
   "private": true,
   "license": "MIT",
   "engines": {
-    "node": "v8.11.1"
+    "node": "v8.11.1",
+    "npm":"6.4.0",
+    "yarn":"1.12.3"
   },
   "scripts": {
     "dev": "HOST=0.0.0.0 PORT=1313  nodemon --watch api --exec \"nuxt\"",
