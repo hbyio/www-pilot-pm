@@ -46,7 +46,7 @@ const md = MarkdownIt({
 }).use(require("markdown-it-anchor"), {
   permalink: true,
   permalinkBefore: false,
-  permalinkSymbol: "§",
+  permalinkSymbol: "&target;",
   slugify: legacySlugify
 });
 

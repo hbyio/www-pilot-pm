@@ -94,12 +94,9 @@ $media-expressions: (
   box-sizing: border-box;
   //border-right: 1px solid #eaecef;
   flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis:250px;
-  width: 250px;
+  flex-basis:200px;
+  width: 200px;
   margin-right: 1em;
-
-
   @include media("<tablet") {
     display: none;
     padding: 2em;
@@ -126,24 +123,23 @@ $media-expressions: (
 
   .menu-item{
     padding: 0.3em;
+    margin-bottom: 0.3em;
     font-size: 0.9em;
-
     text-decoration: none;
     color: #546e7a;
 
     @include media("<tablet") {
       padding: 0.5em 1em;
     }
-
     &:hover {
-      background: #eceff1;
+      background: #6d93b1;
       border-radius: 5px;
-      color: #2196f3;
+      color: #fafafa !important;
     }
     &.is-active {
-      background: #eceff1;
+      background: #2196f3;
       border-radius: 5px;
-      color: #2196f3 !important;
+      color: #fafafa !important;
     }
     &.H2{
       margin-left: 1.2em;
@@ -151,7 +147,7 @@ $media-expressions: (
       color: #5c6165bd;
     }
     &.H3 {
-      padding-left: 2em;
+      margin-left: 1.2em;
     }
 
   }
@@ -172,4 +168,6 @@ $media-expressions: (
   
 }
 
-
+.header-anchor{
+  text-decoration: none;
+}

@@ -70,7 +70,7 @@ const md = MarkdownIt({
 }).use(require("markdown-it-anchor"), {
   permalink: true,
   permalinkBefore: false,
-  permalinkSymbol: "§",
+  permalinkSymbol: "&target;",
   slugify: legacySlugify
 });
 
@@ -106,12 +106,6 @@ export default {
     this.addListeners();
     var contentBlock = this.$el.querySelector(".content-block");
     this.headings = contentBlock.querySelectorAll("h1,h2,h3,h4,h5,h6");
-    console.log(this.headings);
-    //console.log(this.$route);
-    //console.log(this);
-    // if (this.$route.hash) {
-    //   VueScrollTo.scrollTo(this.$route.hash);
-    // }
   },
   beforeDestroy() {
     this.removeListeners();
