@@ -9,12 +9,18 @@ h6, .h6,
 .h {
 	font-family: $headings-font-family;
 	font-weight: bold;
-	margin: 0 0 0.5em;
+	margin: 0;
 	color: $headings-color;
+	text-transform: lowercase;
+	&::first-letter{
+			text-transform: capitalize;
+	}
+	line-height: 1.1em;
 }
 
 h1, .h1 {
 	font-size: $h1-font-size;
+	margin-top: 1.2em;
 }
 
 h2, .h2 {
@@ -48,3 +54,4 @@ a {
 		text-decoration: none;
 	}
 }
+
