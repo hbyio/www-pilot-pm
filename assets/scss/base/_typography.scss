@@ -11,10 +11,6 @@ h6, .h6,
 	font-weight: bold;
 	margin: 0;
 	color: $headings-color;
-	text-transform: lowercase;
-	&::first-letter{
-			text-transform: capitalize;
-	}
 	line-height: 1.1em;
 }
 

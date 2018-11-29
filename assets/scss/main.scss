@@ -98,7 +98,7 @@ $media-expressions: (
   flex-basis:250px;
   width: 250px;
   margin-right: 1em;
-  background-color: aqua;
+
 
   @include media("<tablet") {
     display: none;
@@ -123,29 +123,32 @@ $media-expressions: (
   @include media("<tablet") {
     margin-top: 2em;
   }
+
   .menu-item{
-    padding: 0.3em 1em;
+    padding: 0.3em;
     font-size: 0.9em;
-    text-transform: lowercase;
-    &::first-letter{
-      text-transform: capitalize;
-    }
-    border-left:3px solid #eceff1;
+
     text-decoration: none;
     color: #546e7a;
-    width: 100%;
+
     @include media("<tablet") {
       padding: 0.5em 1em;
     }
 
     &:hover {
       background: #eceff1;
-      border-left:3px solid #2196f3;
+      border-radius: 5px;
       color: #2196f3;
     }
     &.is-active {
-      border-left:3px solid #2196f3;
-      color: #2196f3;
+      background: #eceff1;
+      border-radius: 5px;
+      color: #2196f3 !important;
+    }
+    &.H2{
+      margin-left: 1.2em;
+      font-size: 0.8em;
+      color: #5c6165bd;
     }
     &.H3 {
       padding-left: 2em;
