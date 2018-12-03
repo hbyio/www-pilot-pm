@@ -10,7 +10,7 @@ version: "2.2"
 weight: 1
 ---
 
-> Version 2.3
+> Version 2.6
 
 PILOT est une plateforme de production de contenus proposée en mode SAAS. La solution s’adresse à toute structure souhaitant produire du contenu de manière collaborative, et en particulier aux équipes des services communication / marketing des entreprises et à leurs partenaires / clients / prestataires.
 
@@ -84,7 +84,7 @@ Le Client s’engage à respecter les droits de propriété intellectuelle relat
 
 Le présent Contrat est conclu pour une durée indéterminée courant à compter de la confirmation, par la Société, de la souscription de l’accès à la Plateforme. Il pourra être résilié selon les modalités prévues à l’article RÉSILIATION du présent contrat.
 
-Le Client bénéficie automatiquement d’une période d’essai de 30 jours, au cours de laquelle l’accès aux Services n’est soumis à aucune contrepartie financière en faveur de la Société. A l’expiration de ce délai et sauf accord particulier entre les Parties au présent Contrat, il appartiendra au Client de procéder au paiement de l’offre choisie. A défaut, le Contrat sera considéré comme résilié de plein droit. La Société se réserve le droit de refuser toute nouvelle souscription à la Plateforme de la part d’un Client qui aurait déjà bénéficié d’une période d’essai gratuite au cours de l’année écoulée.
+Le Client bénéficie automatiquement d’une période d’essai de 30 jours, au cours de laquelle l’accès aux Services n’est soumis à aucune contrepartie financière en faveur de la Société. Ce délai est porté à 90 jours pour les clients en licence “entreprise”. A l’expiration de ce délai et sauf accord particulier entre les Parties au présent Contrat, il appartiendra au Client de procéder au paiement de l’offre choisie. A défaut, le Contrat sera considéré comme résilié de plein droit. La Société se réserve le droit de refuser toute nouvelle souscription à la Plateforme de la part d’un Client qui aurait déjà bénéficié d’une période d’essai gratuite au cours de l’année écoulée.
 
 # 5. Les obligations de la société
 
@@ -178,6 +178,8 @@ Dans la mesure du possible, une réponse est fournie par la Société aux questi
 
 ## 5.6 Réversibilité
 
+A tout moment le Client reste propriétaire des contenus placés par ses soins sur la plateforme. 
+
 A tout moment durant le Contrat le Client peut exporter ses données à l’adresse https://app.pilot.pm/desk/edit/ onglet “Export”.
 
 Les données sont exportées en plusieurs formats (texte, MsWord, HTML).
@@ -260,9 +262,9 @@ Le Client reconnaît et accepte que la Société soit autorisée à faire évolu
 
 La Société concède au Client un droit personnel, non exclusif, non cessible et non transférable d'utilisation de la Plateforme, pendant toute la durée du Contrat et pour le monde entier.
 
-Le Client ne peut utiliser la Plateforme que conformément à ses besoins.
+Le Client ne peut utiliser la Plateforme que conformément à ses besoins. 
 
-La Société est titulaire de l'ensemble des droits de propriété intellectuelle relatifs à la Plateforme et notamment de tous les éléments graphiques, textuels, logiciels, ou de toute autre nature la composant.
+La Société est titulaire de l'ensemble des droits de propriété intellectuelle relatifs à la Plateforme et notamment de tous les éléments graphiques, textuels, logiciels, ou de toute autre nature la composant. 
 
 Le Client s'engage ainsi à ne pas porter atteinte aux droits de propriété intellectuelle de la Société et s'interdit, à ce titre, de reproduire tout élément protégé par un droit de propriété intellectuelle, à défaut d'en avoir eu préalablement l'autorisation expresse.
 
@@ -283,8 +285,6 @@ La licence consentie au Client ne l’autorise en aucun cas à :
 * Reproduire ou imiter la Plateforme ;
 
 * Désassembler, décompiler la Plateforme ou permettre à un tiers de le faire en dehors des hypothèses légalement admissibles.
-
-* 
 
 Nonobstant ces interdictions, le Client, dans le cadre du respect des dispositions de l’article L.122-6-1 du Code de la Propriété Intellectuelle, peut solliciter la Société pour obtenir les informations nécessaires afin de mettre en œuvre l’interopérabilité d’un élément de la Plateforme avec un autre élément.
 

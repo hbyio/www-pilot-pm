@@ -11,4 +11,4 @@ weight: 1
 ---
 
 
-This document is only availabale en french at the moment
+This document is only available en french at the moment
