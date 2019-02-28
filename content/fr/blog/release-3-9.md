@@ -9,7 +9,7 @@ slug: release-3-9
 tag: Nouvelle version
 tagColor: green
 title: " 🚚 📦 Version 3.9 : Copie de projet, actions de liste, ..."
-featured: true
+featured: false
 ---
 
 ![drew-beamer-457831-unsplash.jpg](/img/blog/drew-beamer-457831-unsplash.jpg "drew-beamer-457831-unsplash.jpg")
