@@ -26,7 +26,7 @@ Lorsque vous souhaitez créer un fil de tweets vous pouvez désormais le faire d
 
 Un.e admin doit au préalable configurer un champ Tweet comme pouvant être "répété" dans un formulaire de contenu.
 
-## LecteurPDF et documents MS office
+## Lecteur PDF et documents MS office
 
 Les fichiers PDF, Word, Excel, Powerpoint sont désormais lisibles, entièrement, sur la vue de détail d'un asset. Plus besoin de les télécharger pour les consulter.
 
