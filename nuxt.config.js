@@ -2,9 +2,16 @@ const pkg = require("./package");
 const readdir = require('readdir-enhanced')
 const path = require('path');
 const utils = require('./api/utils.js')
+const redirectSSL = require('redirect-ssl')
+
+// Add middleware
+// app.use(redirectSSL)
 
 module.exports = {
   mode: "universal",
+  serverMiddleware:  [
+    '~/plugins/redirect-to-www.js',
+  ],
   /*
   ** Headers of the page
   */
