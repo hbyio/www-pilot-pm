@@ -41,13 +41,13 @@ La catégorie porte désormais un nom et une couleur. Cette couleur est utilisé
 
 ## Gestion des labels (pour les admins)
 
-Vous découvrirez dans le meniu admin une nouvelle entrée "labels" qui rassemble la notion de tags ou labels précédemment.
+Vous découvrirez dans le menu admin une nouvelle entrée "labels" qui rassemble la notion de tags ou labels précédemment.
 
-Un label est une applation globale pour désigner un élément permettent d'étiqueter des objets (contenus, projets, ..) pour indiquer une information (de classement, de priorité, ..)
+Un label est une appelation globale pour désigner un élément permettent d'étiqueter des objets (contenus, projets, ..) pour indiquer une information (de classement, de priorité, ..)
 
 Pour les projets ces labels sont appelés "catégories" ou "priorités" et pour les contenus "tags"
 
-Le but est d'abord de vous simplifier cette gestion et, plus, de vous permettre de créer vos propres labels et de les affecter où vous souhaitez pour organiser vos process.
+Le but est d'abord de vous simplifier cette gestion et, de plus, vous permettre de créer vos propres labels et de les affecter où vous souhaitez pour organiser vos process.
 
 [Ils sont listés ici](https://app.pilot.pm/labels/)
 
