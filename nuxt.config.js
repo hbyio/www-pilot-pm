@@ -10,7 +10,7 @@ const redirectSSL = require('redirect-ssl')
 module.exports = {
   mode: "universal",
   serverMiddleware:  [
-    '~/plugins/redirect-to-www.js',
+    //'~/plugins/redirect-to-www.js',
   ],
   /*
   ** Headers of the page
@@ -29,7 +29,7 @@ module.exports = {
   },
 
   env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:1313',
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
     appUrl: 'https://app.pilot.pm',
     appName: "Pilot",
     appTwitter: "pilot_app",
@@ -44,10 +44,7 @@ module.exports = {
     'redirect-ssl',
     '~/api/index.js',
   ],
-  server: {
-    port: 1313, // default: 3000
-    host: "0.0.0.0" // default: localhost
-  },
+
 
   loadingIndicator: {
     name: "circle",
@@ -89,55 +86,21 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    'nuxtent',
     '@nuxtjs/sitemap',
     // Doc: https://github.com/nuxt-community/axios-module#usage
     "@nuxtjs/axios",
     ['@nuxtjs/google-analytics', {
       id: 'UA-121081781-1'
-    }],
-    [
-      "nuxt-i18n",
-      {
-        locales: [
-          {
-            code: "en",
-            name: "English",
-            iso: "en-US",
-            file: "en.js"
-          },
-          {
-            code: "fr",
-            name: "Français",
-            iso: "fr-FR",
-            file: "fr.js"
-          }
-        ],
-        strategy: 'prefix_and_default',
-        defaultLocale: "en",
-        detectBrowserLanguage: {
-          // If enabled, a cookie is set once a user has been redirected to his
-          // preferred language to prevent subsequent redirections
-          // Set to false to redirect every time
-          useCookie: true,
-          // Cookie name
-          cookieKey: 'i18n_redirected'
-        },
-        parsePages: false,
-        vueI18nLoader: true,
-        lazy: true,
-        langDir: "locales/",
-        seo: true,
-        baseUrl: process.env.BASE_URL || 'http://localhost:1313',
-      }
-    ]
+    }]
   ],
   /*
   ** Axios module configuration
   ** See https://github.com/nuxt-community/axios-module#options
   */
   axios: {
-    baseURL: process.env.BASE_URL || 'http://localhost:1313',
-    browserBaseURL: process.env.BASE_URL || 'http://localhost:1313',
+    baseURL: process.env.BASE_URL || 'http://localhost:3000',
+    browserBaseURL: process.env.BASE_URL || 'http://localhost:3000',
     https: true
     //debug: true,
   },
@@ -147,7 +110,7 @@ module.exports = {
   */
   sitemap: {
     path: '/sitemap.xml',
-    hostname: process.env.BASE_URL || 'http://localhost:1313',
+    hostname: process.env.BASE_URL || 'http://localhost:3000',
     cacheTime: 1000 * 60 * 15,
     generate: true, //Generates static sitemap file during build/generate instead of serving using middleware.
     gzip: true,
@@ -161,9 +124,6 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    watch: [
-      'api/**/*.js' 
-    ],
     postcss: {
       preset: {
         features: {

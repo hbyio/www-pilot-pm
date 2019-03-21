@@ -1,8 +1,6 @@
 <template>
   <div id="wrapper">
-    <Navigation></Navigation>
     <nuxt/>
-    <Footer></Footer>
   </div>
 </template>
 <script>
