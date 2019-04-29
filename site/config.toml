@@ -7,3 +7,19 @@ title = "My new Victor-Hugo site"
 # See configuration options for more details: 
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+
+DefaultContentLanguage = "en"
+copyright = "Everything is mine"
+
+[languages]
+  [languages.en]
+    LanguageName = "English"
+    title = "Pilot en"
+    weight = 1
+    contentDir = "content/en"
+  [languages.fr]
+    LanguageName = "Français"
+    title = "Pilot fr"
+    weight = 2
+    contentDir = "content/fr"
