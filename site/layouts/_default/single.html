@@ -1,11 +1,15 @@
 {{ define "main" }} 
   <article class="content">
     <affix relative-element-selector=".content-block" style="width: 300px">
-        <header>
-        <h2>{{.Title}}</h2>
-        </header>
         {{.TableOfContents}}
     </affix>
-    <div class="content-block js-content">{{- .Content -}}</div>
+
+    <div class="content-block js-content">
+      <header>
+      <h2>{{.Title}}</h2>
+      </header>
+        <icon-faq></icon-faq>
+        {{- .Content -}}
+      </div>
   </article>
 {{ end }}
