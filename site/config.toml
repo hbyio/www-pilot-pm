@@ -15,11 +15,11 @@ copyright = "Everything is mine"
 [languages]
   [languages.en]
     LanguageName = "English"
-    title = "Pilot en"
+    title = "Huckleberry"
     weight = 1
     contentDir = "content/en"
   [languages.fr]
     LanguageName = "Français"
-    title = "Pilot fr"
+    title = "Huckleberry"
     weight = 2
     contentDir = "content/fr"
