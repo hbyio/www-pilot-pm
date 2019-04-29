@@ -62,10 +62,5 @@
   },
   "resolutions": {
     "natives": "1.1.6"
-  },
-  "dependencies": {
-    "bulma": "^0.7.4",
-    "vue": "^2.6.10",
-    "vue-affix": "^0.5.2"
   }
 }
