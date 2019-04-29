@@ -4,3 +4,10 @@
 @import 'imports/reset.css';
 
 @import "bulma/bulma.sass";
+
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+}
