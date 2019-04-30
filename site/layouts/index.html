@@ -1,13 +1,283 @@
 {{ define "main" }}
 
-<h1>Hugo with Webpack, Sass, and PostCSS</h1>
-
-<h3>Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!</h3>
-
-<a href="{{ "/resources/items" | relURL }}">Check out the tech</a>
-
-{{ range where .Pages "Section" "blog" }}
-  <div><a href="{{ .Permalink }}">{{ .Title }}</a></div>
-{{ end }}
+<main id="main">
+    <section class="intro-section homepage">
+      <div class="container">
+        <div class="text-holder">
+          <h1>{{ i18n "homeTitle" | safeHTML  }}</h1>
+          <p>{{ i18n "catchphrase" }}</p>
+        </div>
+        <div class="relative-holder">
+          <div>
+              <a href="#" class="button is-info is-large">
+                  {{ i18n "createYourDesk" }}
+              </a>
+              <p class="conditions">{{ i18n "trialConditions" }}</p>
+          </div>
+          <img src="/images/image-01.png" alt="image description">
+          <ul class="tag-block">
+            <li>
+              <div class="img-holder">
+                <img src="/images/icon-03.svg" width="37" height="44" alt="image description">
+              </div>
+              <strong class="title capitalize">{{ i18n "planning" }}</strong>
+            </li>
+            <li>
+              <div class="img-holder">
+                <img src="/images/icon-02.svg" width="50" height="55" alt="image description">
+              </div>
+              <strong class="title capitalize">{{ i18n "tasks" }}</strong>
+            </li>
+            <li>
+              <div class="img-holder">
+                <img src="/images/icon-01.svg" width="54" height="54" alt="image description">
+              </div>
+              <strong class="title capitalize">{{ i18n "calendars" }}</strong>
+            </li>
+            <li>
+              <div class="img-holder">
+                <img src="/images/icon-04.svg" width="68" height="52" alt="image description">
+              </div>
+              <strong class="title capitalize">{{ i18n "versionning" }}</strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="functionality-section" class="functionality-section">
+      <div class="container">
+        <h1 class="capitalize">{{ i18n "features" }}</h1>
+        <span class="subtitle"></span>
+      </div>
+      <div class="relative-holder">
+        <div class="container">
+          <div class="row reverse">
+            <div class="col">
+              <div class="title-holder">
+                <div class="icon-holder blue-holder">
+                  <i class="icon-pen"></i>
+                </div>
+                <h2 class="capitalize">{{ i18n "annotations" }}</h2>
+              </div>
+              <p>{{ i18n "annotationsShort" }}</p>
+            </div>
+            <div class="col">
+              <img src="/images/image-02.png" alt="image description">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-sm">
+              <div class="title-holder">
+                <div class="icon-holder green-holder">
+                  <i class="icon-flag"></i>
+                </div>
+                <h2 class="capitalize">{{ i18n "workflows" }}</h2>
+              </div>
+              <p>{{ i18n "workflowsShort" }}</p>
+            </div>
+            <div class="col">
+              <img src="/images/image-03.png" alt="image description">
+            </div>
+          </div>
+          <div class="row reverse">
+            <div class="col">
+              <div class="title-holder">
+                <div class="icon-holder yellow-holder">
+                  <i class="icon-check-2"></i>
+                </div>
+                <h2 class="capitalize">{{ i18n "tasks" }}</h2>
+              </div>
+              <p>{{ i18n "tasksShort" }}</p>
+            </div>
+            <div class="col">
+              <img src="/images/image-04.png" alt="image description">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-sm">
+              <div class="title-holder">
+                <div class="icon-holder purple-holder">
+                  <i class="icon-projects"></i>
+                </div>
+                <h2 class="capitalize">{{ i18n "projects" }}</h2>
+              </div>
+              <p>{{ i18n "projectsShort" }}</p>
+            </div>
+            <div class="col">
+              <img src="/images/image-05.png" alt="image description">
+            </div>
+          </div>
+          <div class="row reverse">
+            <div class="col">
+              <div class="title-holder">
+                <div class="icon-holder pink-holder">
+                  <i class="icon-plan"></i>
+                </div>
+                <h2 class="capitalize">{{ i18n "calendars" }}</h2>
+              </div>
+              <p>{{ i18n "calendarsShort" }}</p>
+            </div>
+            <div class="col">
+              <img src="/images/image-06.png" alt="image description">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-sm">
+              <div class="title-holder">
+                <div class="icon-holder purple-holder">
+                  <i class="icon-papers"></i>
+                </div>
+                <h2 class="capitalize">{{ i18n "versions" }}</h2>
+              </div>
+              <p>{{ i18n "versionsShort" }}</p>
+              <!-- <a href="#" class="btn">{{ i18n "view" }} <i class="icon-arrow-right"></i></a> -->
+            </div>
+            <div class="col">
+              <img src="/images/image-07.png" alt="image description">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="clients-section" class="partners-section">
+      <div class="container">
+        <h1>Clients</h1>
+        <span class="subtitle"></span>
+        <ul class="logo-list">
+          <li><img src="/images/logo-02.png" width="160" height="73" class="grayscale" alt="Harmonie mutuelle"></li>
+          <li><img src="/images/logo-03.png" width="133" height="36" class="grayscale" alt="VINCI construction"></li>
+          <li><img src="/images/logo-04.png" width="150" height="53" class="grayscale" alt="BANQUE POPULAIRE MEDITERRANEE"></li>
+          <li><img src="/images/logo-05.png" width="80" height="74" class="grayscale" alt="SUEZ"></li>
+          <li><img src="/images/logo-06.png" width="146" height="33" class="grayscale" alt="EDHEC business school"></li>
+        </ul>
+      </div>
+    </section>
+    <section class="contact-us">
+      <div class="container">
+        <h1>{{ i18n "home.doNotWait" }}</h1>
+        <span class="subtitle">{{ i18n "home.startTrialNow" }}</span>
+        <div class="form-holder">
+          <div class="col">
+            <h4>{{ i18n "home.benefits.title" }}</h4>
+            <ul class="check-list">
+              <li>{{ i18n "home.benefits.onePlace" }}</li>
+              <li>{{ i18n "home.benefits.sourceTruth" }}</li>
+              <li>{{ i18n "home.benefits.noMoreExcel" }}</li>
+              <li>{{ i18n "home.benefits.WhoWhatWhen" }}</li>
+              <li>{{ i18n "home.benefits.shortLifecycle" }}</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>{{ i18n "home.daysOnUs" }}</h4>
+            <div class="text-holder">
+              <div>
+                  <a href="#" class="button is-info is-fullwidth">
+                      {{ i18n "home.createYourDesk" }}
+                      
+                  </a>
+                  <p class="conditions">{{ i18n "home.trialConditions" }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="prices-section" class="prices-section">
+      <div class="container">
+        <h1 class="capitalize">{{ i18n "prices" }}</h1>
+        <span class="subtitle">{{ i18n "home.startTrialNow" }}</span>
+        <div class="row">
+          <div class="col">
+            <div class="info-block">
+              <div class="info-head">
+                <h4>Small</h4>
+                <span class="comment">{{ i18n "home.smallIsFor" }}</span>
+                <div class="price-info">
+                  <strong class="price">9€</strong>
+                  <div class="text-holder">
+                    <p>/{{ i18n "month" }}<br>/{{ i18n "user" }}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="info-list">
+                <div>5 {{ i18n "projects" }}</div>
+                <div>100 {{ i18n "items" }}</div>
+                <div>10G {{ i18n "storage" }}</div>
+              </div>
+              <div class="btn-holder">
+                  <div>
+                      <a href="#" class="button">
+                          {{ i18n "home.createYourDesk" }}
+                          
+                      </a>
+                      <p class="conditions">{{ i18n "home.trialConditions" }}</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="info-block active-block">
+              <div class="info-head">
+                <h4>Medium</h4>
+                <span class="comment">{{ i18n "home.mediumIsFor" }}</span>
+                <div class="price-info">
+                  <strong class="price">19€</strong>
+                  <div class="text-holder">
+                    <p>/{{ i18n "month" }}<br>/{{ i18n "user" }}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="info-list">
+                <div>10 {{ i18n "projects" }}</div>
+                <div>300 {{ i18n "items" }}</div>
+                <div>30Go {{ i18n "storage" }} </div>
+                <!-- <div>{{ i18n "featuresNone" }}</div> -->
+                <div>{{ i18n "home.support.medium" }}</div>
+              </div>
+              <div class="btn-holder">
+                  <div>
+                      <a href="#" class="button">
+                          {{ i18n "home.createYourDesk" }}
+                          
+                      </a>
+                      <p class="conditions">{{ i18n "home.trialConditions" }}</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="info-block">
+              <div class="info-head">
+                <h4 class="capitalize">{{ i18n "enterprise" }}</h4>
+                <span class="comment">{{ i18n "home.enterpriseIsFor" }}</span>
+                <div class="price-info">
+                  <strong class="price">39€</strong>
+                  <div class="text-holder">
+                    <p>/{{ i18n "month" }}<br>/{{ i18n "user" }}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="info-list">
+                <div class="capitalize">{{ i18n "projectsUnlimited" }}</div>
+                <div class="capitalize">{{ i18n "itemsUnlimited" }}</div>
+                <div>1To {{ i18n "storage" }}</div>
+                <div>{{ i18n "featuresAdvanced" }}</div>
+                <div>{{ i18n "home.support.advanced" }}</div>
+              </div>
+              <div class="btn-holder">
+                  <div>
+                      <a href="#" class="button">
+                          {{ i18n "home.createYourDesk" }}
+                          
+                      </a>
+                      <p class="conditions">{{ i18n "home.trialConditions" }}</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
 {{ end }}

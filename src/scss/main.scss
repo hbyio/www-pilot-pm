@@ -33,12 +33,12 @@ $media-expressions: (
 
 @import "layout/common";
 
-//@import "bulma/sass/base/_all.sass";
+//@import "bulma/bulma.sass";
 @import "bulma/sass/utilities/_all.sass";
 @import "bulma/sass/elements/button.sass";
 @import "bulma/sass/components/navbar.sass";
-// @import "bulma/sass/components/menu.sass";
-// @import "bulma/sass/components/dropdown.sass";
+@import "bulma/sass/components/menu.sass";
+@import "bulma/sass/components/dropdown.sass";
 
 .page-enter-active,
 .page-leave-active {
@@ -170,4 +170,56 @@ $media-expressions: (
 
 .header-anchor{
   text-decoration: none;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  border-bottom: 1px solid $gray-light;
+}
+.navbar-menu.is-active {
+  .navbar-start,
+  .navbar-item,
+  .navbar-end,
+  .buttons,
+  .navbar-dropdown {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .buttons {
+    padding: 0 1em;
+  }
+  .navbar-item {
+    padding: 1em 0;
+  }
+}
+
+.container {
+  padding: 0;
+}
+
+.navbar-link{
+  @include media("<=desktop") {
+      display: none;
+  }
+}
+
+.navbar-menu-toggle{
+  align-items: center;
+  color: #4a4a4a;
+  cursor: pointer;
+  display: flex;
+  height: 52px;
+  justify-content: flex-end;
+  padding-right: 1em;
+  text-decoration: underline;
+  width: 100%;
+  @include media(">=desktop") {
+      display: none;
+  }
 }

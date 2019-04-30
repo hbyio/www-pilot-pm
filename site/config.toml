@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "My new Victor-Hugo site"
+title = "Pilot"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
@@ -17,12 +17,12 @@ copyright = "Everything is mine"
 [languages.en]
   LanguageName = "English"
   languageCode = "en"
-  title = "Huckleberry"
+  title = "Pilot"
   weight = 1
   contentDir = "content/en"
 [languages.fr]
   LanguageName = "Français"
   languageCode = "fr"
-  title = "Huckleberry"
+  title = "Pilot"
   weight = 2
   contentDir = "content/fr"

@@ -3,14 +3,9 @@
 import "./scss/main.scss";
 
 import Affix from "vue-affix";
-import IconFaq from "./components/IconFaq.vue";
+
 import Vue from "vue";
-
 Vue.use(Affix);
-// Say hello
-console.log("🦊 Hello! Edit me in src/index.js");
-
-
 
 
 var navigationMixin = {
@@ -27,7 +22,7 @@ var navigationMixin = {
   }
 };
 
-var app = new Vue({
+new Vue({
   el: "#app",
   mixins: [navigationMixin],
   data: {
@@ -35,3 +30,7 @@ var app = new Vue({
   },
   delimiters: ["[[", "]]"]
 });
+
+
+// Say hello
+console.log("🦊 Hello! Edit me in src/index.js");
