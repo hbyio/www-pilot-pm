@@ -3,7 +3,7 @@
 import "./css/main.css";
 
 import Affix from "vue-affix";
-import IconFaq from "./IconFaq.vue"
+import IconFaq from "./components/IconFaq.vue"
 import Vue from 'vue'
 
 Vue.use(Affix);
@@ -12,12 +12,13 @@ console.log("🦊 Hello! Edit me in src/index.js");
 
 
 var app = new Vue({
-  el: '.app',
+  el: '.content',
   components: {
     IconFaq,
   },
   data: {
     message: 'You loaded this page on ' + new Date().toLocaleString()
-  }
+  },
+  delimiters: ["[[","]]"]
 })
 

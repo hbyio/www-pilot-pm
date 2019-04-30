@@ -11,19 +11,16 @@
 
 <script>
 export default {
-    name:"IconFaq",
     props:{
         height:{
-            type: Number,
-            default:40
+            type: Number
         },
         width:{
-            type: Number,
-            default:40
+            type: Number
         },
         color: {
             type: String,
-            default: "#000"
+            default: "#fff"
         }
     }
 }

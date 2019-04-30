@@ -14,13 +14,14 @@
 </head>
 
 <body>
-<div class="app">
+<div class="container">
 
   {{ block "header" . }}{{ partial "header" . }}{{end}}
 
   {{ block "main" . }}{{end}}
 
   {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+  
 </div>
 {{ $script := .Site.Data.webpack.main }}
 {{ with $script.js }}
