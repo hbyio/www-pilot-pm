@@ -3,7 +3,7 @@ const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const AssetsPlugin = require("assets-webpack-plugin");
-const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const VueLoaderPlugin = require("vue-loader/lib/plugin");
 
 module.exports = {
   entry: {
@@ -38,7 +38,7 @@ module.exports = {
 
       {
         test: /\.vue$/,
-        loader: 'vue-loader'
+        loader: "vue-loader"
       }
     ]
   },
@@ -66,7 +66,7 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      'vue$': 'vue/dist/vue.esm.js' // 'vue/dist/vue.common.js' for webpack 1
+      "vue$": "vue/dist/vue.esm.js" // 'vue/dist/vue.common.js' for webpack 1
     }
   }
 };

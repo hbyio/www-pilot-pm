@@ -1,11 +1,11 @@
-<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+<nav id="js-navigation" class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="container">
     <div class="navbar-brand">
-      <a class="navbar-item" :to="localePath('index', $i18n.locale)">
+      <a class="navbar-item" href="{{ "/" | absLangURL }}">
         <div class="logo">{{ .Site.Title }}</div>
       </a>
       {{ range .Translations }}
-          <a class="navbar-item" href="{{ .Permalink }}">{{ .Lang }}: {{ .Title }}{{ if .IsPage }} ({{ i18n "wordCount" . }}){{ end }}</a>
+          <a class="navbar-item" href="{{ .Permalink }}">{{ .Lang }}</a>
       {{ end}}
       <a role="button" 
           :class="{'is-active':isMenuOpen}"
@@ -25,25 +25,25 @@
     >
       <div class="navbar-start">
         <a 
-          :to="localePath({name:'index', hash:'#functionality-section'},$i18n.locale)"
+          href="{{ "/#functionality-section" | absLangURL }}"
           class="navbar-item" 
         >
         {{ i18n "features" }}
         </a>
         <a 
-          :to="localePath({name:'index', hash:'#prices-section'},$i18n.locale)"
+          href="/#prices-section"
           class="navbar-item" 
         >
         {{ i18n "prices" }}
         </a>
         <a 
-          :to="localePath({name:'resources'}, $i18n.locale)"
+          href="/resources"
           class="navbar-item" 
         >
         {{ i18n "resources" }}
         </a>
         <a 
-          :to="localePath({name:'blog'}, $i18n.locale)"
+          href="/blog"
           class="navbar-item" 
         >
         {{ i18n "blog" }}
@@ -53,31 +53,21 @@
       <div class="navbar-end">
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">
-            <img :src="'/icons/'+$i18n.locale+'.png'" alt="">
+            <img :src="'/icons/en.png'" alt="">
           </a>
 
           <div class="navbar-dropdown is-boxed">
             {{ range $.Site.Home.AllTranslations }}
                 <a class="navbar-item"  href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
             {{ end }}
-            <!-- <a  class="navbar-item" 
-                        v-if="$i18n.locale === 'fr'"
-                        :to="switchLocalePath('en')">
-                        <img src="/icons/en.png" alt=""/>&nbsp;&nbsp;Switch to English
-            </a>
-            <a  class="navbar-item" 
-                        v-if="$i18n.locale === 'en'"
-                        :to="switchLocalePath('fr')">
-                        <img src="/icons/fr.png" alt=""/>&nbsp;&nbsp;Interface en Français
-            </a> -->
           </div>
         </div>
         <div class="navbar-item">
           <div class="buttons">
-            <a :href="registrationUrl" class="button is-info" :class="{'is-medium is-fullwidth':isMenuOpen}">
+            <a href="/" class="button is-info" :class="{'is-medium is-fullwidth':isMenuOpen}">
                 {{ i18n "signup" }}
             </a>
-            <a :href="loginUrl" class="button is-outlined" :class="{'is-medium is-fullwidth':isMenuOpen}">
+            <a href="/" class="button is-outlined" :class="{'is-medium is-fullwidth':isMenuOpen}">
                 {{ i18n "login" }}
             </a>
           </div>

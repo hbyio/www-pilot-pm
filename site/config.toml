@@ -13,13 +13,15 @@ DefaultContentLanguage = "en"
 copyright = "Everything is mine"
 
 [languages]
-  [languages.en]
-    LanguageName = "English"
-    title = "Huckleberry"
-    weight = 1
-    contentDir = "content/en"
-  [languages.fr]
-    LanguageName = "Français"
-    title = "Huckleberry"
-    weight = 2
-    contentDir = "content/fr"
+[languages.en]
+  LanguageName = "English"
+  languageCode = "en"
+  title = "Huckleberry"
+  weight = 1
+  contentDir = "content/en"
+[languages.fr]
+  LanguageName = "Français"
+  languageCode = "fr"
+  title = "Huckleberry"
+  weight = 2
+  contentDir = "content/fr"
