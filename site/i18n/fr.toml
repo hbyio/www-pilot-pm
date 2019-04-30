@@ -1,190 +1,124 @@
 [annotations]
 other = "annotations"
-
 [annotationsShort]
 other = "Annoter vos documents précisément et engagez des conversations sans perdre de temps. Les membres de l’équipe seront notifiés avec un lien les menant directement vers le document et l’annotation."
-
 [blog]
 other = "Blog"
-
 [calendar]
 other = "calendrier"
-
 [calendars]
 other = "calendriers"
-
 [calendarsShort]
 other = "Créez facilement des plannings éditoriaux ou de tâches, sauvegardez, partagez des calendriers personnalisés avec vos clients. Changez votre programmation de publication simplement par drag&drop"
-
 [clients]
 other = "Clients"
-
 [close]
 other = "Fermer"
-
 [company]
 other = "société"
-
 [enterprise]
 other = "entreprise"
-
 [feature]
 other = "fonctionnalité"
-
 [features]
 other = "Fonctionnalités"
-
 [featuresAdvanced]
 other = "Fonctionnalités avancées"
-
 [featuresNone]
 other = "Pas de fonctionnalités avancées"
-
-
-[home]
-[catchphrase]
-other = "Gérez vos projets, tâches, versions de documents et planning éditoriaux."
-[createYourDesk]
-other = "Créez votre desk"
-[WhoWhatWhen]
-other = "Vous savez ce qui est fait, par qui et quand."
-[noMoreExcel]
-other = "Plus besoin de tableurs Excels de planification éditoriale "
-[onePlace]
-other = "Suivez et gérez la production des contenus en un seul lieu."
-[shortLifecycle]
-other = "Le cycle de vie d'un projet est plus court "
-[sourceTruth]
-other = "Tout le monde en permanence à jour avec la bonne info."
-[title]
-other = "Des avantages immédiats"
-[daysOnUs]
-other  = "30 jours offerts, pas de CB, pas d'engagement"
-[doNotWait]
-other  = "N’attendez plus"
-[enterYourEmail]
-other  = "Entrez votre email…"
-[mediumIsFor]
-other  = "Agences, collectifs, .."
-[enterpriseIsFor]
-other  = "Grands groupes, marketing, communication, juridique"
-[smallIsFor]
-other  = "Freelances, consultants, traducteurs/trices,.."
-[startTrial]
-other  = "Créez votre compte"
-[startTrialNow]
-other  = "Débutez votre période d’essai dès maintenant"
-[supportNone]
-other = "Pas de support"
-[supportMedium]
-other = "Support email j+2"
-[supportAdvanced]
-other = "Support In-app or email J+1"
-[homeTitle]
-other = "La plateforme de production de contenus <strong>pour les équipes.</strong>"
-[trialConditions]
-other = "30 jours gratuits - pas de CB demandée"
-  
-
 [infra]
 other = "Infrastructure"
-
 [item]
 other = "document"
-
 [items]
 other = "documents"
-
 [itemsUnlimited]
 other = "documents illimités"
-
 [lastNotes]
 other = "Recent articles from the blog"
-
 [login]
 other =  "Se connecter"
-
 [menu]
 other = "menu"
-
 [month]
 other = "mois"
-
 [planning]
 other = "planning"
-
 [prices]
 other =  "Tarifs"
-
 [privacy]
 other = "Données personnelles"
-
 [product]
 other = "produit"
-
 [project]
 other = "projet"
-
 [projects]
 other = "projets"
-
 [projectsShort]
 other = "Organisez vos contenus en projets, assignez des responsables, des ordres de priorité. Notez en un seul endroit tous les éléments importants comme le brief, joignez des press kit ou des vidéos haute définition, autant d’éléments pouvant servir aux personnes en charge de la production"
-
 [projectsUnlimited]
 other = "projets illimités"
-
 [read]
 other = "Lire"
-
 [resources]
 other =  "Ressources"
-
 [resourcesShort]
 other = "Documentation, guides, assistance ..."
-
 [signup]
 other =  "Essai gratuit"
-
 [sla]
 other = "Engagement de service"
-
 [storage]
 other = "stockage"
-
 [task]
 other = "tâche"
-
 [tasks]
 other = "tâches"
-
 [tasksShort]
 other = "Affectez des tâches à vos contenus, pour vous même ou d’autres membres de l’équipe et retrouvez dans un calendrier unique toutes les dates limites de livraison à l’imprimeur"
-
 [terms]
 other = "Conditions générales de vente"
-
 [termsofuse]
 other = "Conditions générales d'utilisation"
-
 [user]
 other = "personne"
-
 [versionning]
 other = "versionning"
-
 [versions]
 other = "versions"
-
 [versionsShort]
 other = "Nous conservons toutes les versions de tous les documents. Analysez rapidement les différences, restaurez d’anciennes versions ou découvrez qui a fait cette faute de conjuguaison et à quelle date."
-
 [view]
 other = "voir"
-
 [workflows]
 other = "workflows"
-
 [workflowsShort]
 other = "Définissez vos statuts de workflow et attribuez les à vos contenus au fil du process de production. Grâce aux filtres avancés filtrez la liste en fonction des statuts qui vous concernent."
 
+#   home: {
+#     catchphrase:"Gérez vos projets, tâches, versions de documents et planning éditoriaux.",
+#     createYourDesk:"Créez votre desk",
+#     benefits:{
+#       WhoWhatWhen:"Vous savez ce qui est fait, par qui et quand.",
+#       noMoreExcel:"Plus besoin de tableurs Excels de planification éditoriale ",
+#       onePlace:"Suivez et gérez la production des contenus en un seul lieu.",
+#       shortLifecycle:"Le cycle de vie d'un projet est plus court ",
+#       sourceTruth:"Tout le monde en permanence à jour avec la bonne info.",
+#       title:"Des avantages immédiats",
+#     },
+#     daysOnUs:"30 jours offerts, pas de CB, pas d'engagement",
+#     doNotWait:"N’attendez plus",
+#     enterYourEmail:"Entrez votre email…",
+#     mediumIsFor:"Agences, collectifs, ..",
+#     enterpriseIsFor:"Grands groupes, marketing, communication, juridique",
+#     smallIsFor:"Freelances, consultants, traducteurs/trices,..",
+#     startTrial:"Créez votre compte",
+#     startTrialNow:"Débutez votre période d’essai dès maintenant",
+#     support:{
+#       none:"Pas de support",
+#       medium:"Support email j+2",
+#       advanced:"Support In-app or email J+1"
+#     },
+#     title:"La plateforme de production de contenus <strong>pour les équipes.</strong>",
+#     trialConditions:"30 jours gratuits - pas de CB demandée",
+#   },

@@ -10,6 +10,7 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 
 DefaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
 copyright = "Everything is mine"
 
 [languages]
