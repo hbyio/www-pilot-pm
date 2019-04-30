@@ -4,7 +4,7 @@
 			<div class="container">
 				<div class="text-holder">
 					<h1 class="capitalize">{{ i18n "resources" }}</h1>
-					<p>{{ i18n "resourcesShort" }}</p>
+					<div class="is-title is-2">{{ i18n "resourcesShort" }}</div>
 				</div>
 			</div>
         </section>
@@ -13,7 +13,7 @@
 			<div class="container">
 				<div class="row card-holder">
 					{{ range .Pages }}
-						<li>{{.Title}}</li>
+
 						<div class="card">
 						<div class="card-heading" >
 							<div class="heading-text">
