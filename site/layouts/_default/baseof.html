@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ $.Site.Language.Lang }}">
+<html class="has-navbar-fixed-top" lang="{{ $.Site.Language.Lang }}">
 
 <head>
   <meta charset="utf-8">
@@ -19,10 +19,9 @@
   {{ block "header" . }}{{ partial "header" . }}{{end}}
 
   {{ block "main" . }}{{end}}
-
-  {{ block "footer" . }}{{ partial "footer" . }}{{end}}
   
 </div>
+{{ block "footer" . }}{{ partial "footer" . }}{{end}}
 {{ $script := .Site.Data.webpack.main }}
 {{ with $script.js }}
   <script src="{{ relURL . }}"></script>

@@ -32,6 +32,7 @@ $media-expressions: (
 @import "base/forms";
 
 @import "layout/common";
+@import "footer";
 
 //@import "bulma/bulma.sass";
 @import "bulma/sass/utilities/_all.sass";
@@ -223,3 +224,4 @@ a {
       display: none;
   }
 }
+

@@ -8,6 +8,13 @@ title = "Pilot"
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
+[params]
+  # baseUrl = process.env.BASE_URL || 'http://localhost:1313'
+  appUrl = "https://app.pilot.pm"
+  appName = "Pilot"
+  appTwitter = "pilot_app"
+  appEmail = "hello@pilot.pm"
+  appSupportEmail = "support@pilot.pm"
 
 DefaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
@@ -17,12 +24,10 @@ copyright = "Everything is mine"
 [languages.en]
   LanguageName = "English"
   languageCode = "en"
-  title = "Pilot"
   weight = 1
   contentDir = "content/en"
 [languages.fr]
   LanguageName = "Français"
   languageCode = "fr"
-  title = "Pilot"
   weight = 2
   contentDir = "content/fr"

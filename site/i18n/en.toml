@@ -101,28 +101,48 @@ other = "Define your workflow statuses and assign them to your content throughou
 other = "Manage your projects, tasks, document versions and editorial planning."
 [createYourDesk]
 other = "Create your desk"
-#     benefits:{
-#       WhoWhatWhen: "You know what is being done, by whom and when.",
-#       noMoreExcel: "No more need for Excels spreadsheets for editorial planning",
-#       onePlace: "Track and manage content production in one place.",
-#       shortLifecycle: "The life cycle of a project is shorter",
-#       sourceTruth: "Everyone always up to date with the right information.",
-#       title: "Immediate benefits",
-#     },
-#     daysOnUs: "30 days free, no credit card, no commitment",
-#     doNotWait: "Don't wait any longer",
-#     enterYourEmail: "Enter your email...",
-#     mediumIsFor: "Agencies, collectives,...",
-#     enterpriseIsFor: "Big corp, marketing, communication, legal",
-#     smallIsFor: "Freelancers, consultants, translators,...",
-#     startTrial: "Start your trial",
-#     startTrialNow: "Start your trial now",
-#     support:{
-#       none: "No support",
-#       medium: "Support email D+2",
-#       advanced: "Support In-app or email D+1"
-#     },
+
+[WhoWhatWhen]
+other = "You know what is being done, by whom and when."
+[noMoreExcel]
+other = "No more need for Excels spreadsheets for editorial planning"
+[onePlace]
+other = "Track and manage content production in one place."
+[shortLifecycle]
+other = "The life cycle of a project is shorter"
+[sourceTruth]
+other = "Everyone always up to date with the right information."
+[title]
+other = "Immediate benefits"
+
+[daysOnUs]
+other = "30 days free, no credit card, no commitment"
+[doNotWait]
+other = "Don't wait any longer"
+[enterYourEmail]
+other = "Enter your email..."
+[mediumIsFor]
+other = "Agencies, collectives,..."
+[enterpriseIsFor]
+other = "Big corp, marketing, communication, legal"
+[smallIsFor]
+other = "Freelancers, consultants, translators,..."
+[startTrial]
+other = "Start your trial"
+[startTrialNow]
+other = "Start your trial now"
+[supportNone]
+other = "No support"
+[supportMedium]
+other = "Support email D+2"
+[supportAdvanced]
+other = "Support In-app or email D+1"
 [homeTitle]
 other = "The content production platform <strong>for teams.</strong>"
 [trialConditions]
 other  = "30 days free - no credit card required"
+
+[leaveYourEmail]
+other = "Subscribe to the newsletter"
+[newsletterSignUp]
+other = "Subscribe"

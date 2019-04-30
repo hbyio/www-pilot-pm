@@ -64,10 +64,10 @@
         </div>
         <div class="navbar-item">
           <div class="buttons">
-            <a href="/" class="button is-info" :class="{'is-medium is-fullwidth':isMenuOpen}">
+            <a href="{{ .Site.Params.AppUrl }}/registration?lang={{.Site.Language.Lang}}" class="button is-info" :class="{'is-medium is-fullwidth':isMenuOpen}">
                 {{ i18n "signup" }}
             </a>
-            <a href="/" class="button is-outlined" :class="{'is-medium is-fullwidth':isMenuOpen}">
+            <a href="{{ .Site.Params.AppUrl }}/login?lang={{.Site.Language.Lang}}" class="button is-outlined" :class="{'is-medium is-fullwidth':isMenuOpen}">
                 {{ i18n "login" }}
             </a>
           </div>
