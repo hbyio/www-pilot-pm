@@ -167,19 +167,19 @@ blockquote {
     padding-left: 60px;
     padding-bottom: 26px;
 
-    &:before {
+    .icongreen {
       @include size(36px);
-
-      content: "\e905";
-      font-family: "icomoon";
-      line-height: 36px;
       text-align: center;
-      background-color: rgba(#c0e7de, 0.54);
-      color: #449f8b;
+      background-color: #fff;
+      svg{
+        path {
+          fill:#4caf50;
+        }
+      }
       border-radius: 50%;
       display: block;
       position: absolute;
-      top: -7px;
+      top: -2px;
       left: 13px;
     }
   }
@@ -610,44 +610,63 @@ blockquote {
       position: relative;
       display: inline-block;
       vertical-align: middle;
-      background-color: #9f9f9f;
-      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       &.blue-holder {
-        color: $light-blue;
-        background-color: #ddf1ff;
+        svg {
+          path {
+            fill:$light-blue;
+          }
+        }
+        
       }
 
       &.pink-holder {
-        background-color: #ffddf1;
-        color: #f54ec6;
+        svg {
+          path {
+            stroke:#f54ec6;
+          }
+        }
       }
 
       &.purple-holder {
-        color: #652f97;
-        background-color: #dccfe8;
+        svg {
+          path {
+            stroke: #652f97;
+          }
+        }
       }
 
       &.green-holder {
-        background-color: #dfeecf;
-        color: #559114;
+        svg {
+          path {
+            stroke:#559114;
+          }
+        }
+        
       }
 
       &.yellow-holder {
-        background-color: #ffeed2;
-        color: $orange;
+        svg {
+          path {
+            stroke: $orange;
+          }
+        }
       }
 
-      i {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
+      
     }
 
     .title-holder {
       margin-bottom: 22px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      h2 {
+        margin:0;
+      }
     }
   }
 

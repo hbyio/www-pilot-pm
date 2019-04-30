@@ -55,7 +55,7 @@
             <div class="col">
               <div class="title-holder">
                 <div class="icon-holder blue-holder">
-                  <i class="icon-pen"></i>
+                  {{ partial "svgPen" .}}
                 </div>
                 <h2 class="capitalize">{{ i18n "annotations" }}</h2>
               </div>
@@ -69,7 +69,7 @@
             <div class="col col-sm">
               <div class="title-holder">
                 <div class="icon-holder green-holder">
-                  <i class="icon-flag"></i>
+                    {{ partial "svgFlag" .}}
                 </div>
                 <h2 class="capitalize">{{ i18n "workflows" }}</h2>
               </div>
@@ -83,7 +83,7 @@
             <div class="col">
               <div class="title-holder">
                 <div class="icon-holder yellow-holder">
-                  <i class="icon-check-2"></i>
+                    {{ partial "svgTasks" .}}
                 </div>
                 <h2 class="capitalize">{{ i18n "tasks" }}</h2>
               </div>
@@ -97,7 +97,7 @@
             <div class="col col-sm">
               <div class="title-holder">
                 <div class="icon-holder purple-holder">
-                  <i class="icon-projects"></i>
+                    {{ partial "svgProject" . }}
                 </div>
                 <h2 class="capitalize">{{ i18n "projects" }}</h2>
               </div>
@@ -111,7 +111,7 @@
             <div class="col">
               <div class="title-holder">
                 <div class="icon-holder pink-holder">
-                  <i class="icon-plan"></i>
+                    {{ partial "svgCalendar" . }}
                 </div>
                 <h2 class="capitalize">{{ i18n "calendars" }}</h2>
               </div>
@@ -125,7 +125,7 @@
             <div class="col col-sm">
               <div class="title-holder">
                 <div class="icon-holder purple-holder">
-                  <i class="icon-papers"></i>
+                    {{ partial "svgVersions" . }}
                 </div>
                 <h2 class="capitalize">{{ i18n "versions" }}</h2>
               </div>
@@ -160,11 +160,11 @@
           <div class="col">
             <h4>{{ i18n "homeTitle" | safeHTML }}</h4>
             <ul class="check-list">
-              <li>{{ i18n "onePlace" }}</li>
-              <li>{{ i18n "sourceTruth" }}</li>
-              <li>{{ i18n "noMoreExcel" }}</li>
-              <li>{{ i18n "WhoWhatWhen" }}</li>
-              <li>{{ i18n "shortLifecycle" }}</li>
+              <li><span class="icongreen">{{ partial "svgCheck" . }}</span>{{ i18n "onePlace" }}</li>
+              <li><span class="icongreen">{{ partial "svgCheck" . }}</span>{{ i18n "sourceTruth" }}</li>
+              <li><span class="icongreen">{{ partial "svgCheck" . }}</span>{{ i18n "noMoreExcel" }}</li>
+              <li><span class="icongreen">{{ partial "svgCheck" . }}</span>{{ i18n "WhoWhatWhen" }}</li>
+              <li><span class="icongreen">{{ partial "svgCheck" . }}</span>{{ i18n "shortLifecycle" }}</li>
             </ul>
           </div>
           <div class="col">

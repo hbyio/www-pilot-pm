@@ -48,12 +48,12 @@
       </div>
 
       <div class="navbar-end">
-        <!-- {{ range .Translations }}
-          <a class="navbar-item" href="{{ .Permalink }}">{{ .Lang }}</a>
-        {{ end}} -->
-        <div class="navbar-item has-dropdown is-hoverable">
+        {{ range .Translations }}
+          <a class="navbar-item" href="{{ .Permalink }}"><img src="/icons/{{.Site.Language.Lang}}.png" alt=""></a>
+        {{ end}}
+        <!-- <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">
-            <img :src="'/icons/{{ .LanguagePrefix }}.png'" alt="">
+            
           </a>
 
           <div class="navbar-dropdown is-boxed">
@@ -61,7 +61,7 @@
                 <a class="navbar-item"  href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
             {{ end }}
           </div>
-        </div>
+        </div> -->
         <div class="navbar-item">
           <div class="buttons">
             <a href="{{ .Site.Params.AppUrl }}/registration?lang={{.Site.Language.Lang}}" class="button is-info" :class="{'is-medium is-fullwidth':isMenuOpen}">
