@@ -1,0 +1,46 @@
+{{ define "main" }} 
+<main id="main">
+		<section class="intro-section ressources-page">
+			<div class="container">
+				<div class="text-holder">
+					<h1 class="capitalize">{{ i18n "resources" }}</h1>
+					<p>{{ i18n "resourcesShort" }}</p>
+				</div>
+			</div>
+        </section>
+
+		<section class="card-section">
+			<div class="container">
+				<div class="row card-holder">
+					{{ range .Pages }}
+						<li>{{.Title}}</li>
+						<div class="card">
+						<div class="card-heading" >
+							<div class="heading-text">
+								
+								<h6>{{ .Title }}</h6>
+							</div>
+						</div>
+						<div class="card-body">
+							<p>{{ .Params.Short }}</p>
+						</div>
+						<div class="card-footer">
+							<!-- <a href="#" class="ressources-link">13 ressources</a> -->
+							<a 
+							  href="{{ .Permalink }}"
+							  class="button is-info is-medium is-fullwidth" 
+							>
+							  {{ i18n "view" }}
+							</a>
+						</div>
+					</div>
+        	{{ end }}
+					
+					
+				</div>
+				<ContactUs></ContactUs>
+			</div>
+		</section>
+		<BlogSection></BlogSection>
+    </main>
+{{ end }}
