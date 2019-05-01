@@ -5,7 +5,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
-  <title>{{ $.Site.Title }}</title>
+
+  {{ if .IsTranslated }}
+    {{ range .Translations }}
+      <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}"/>
+    {{ end}}
+  {{ end }}
+
+  <!-- Primary Meta Tags -->
+  <title>The content production platform for marketing teams. </title>
+  <meta name="title" content="The content production platform for marketing teams. ">
+  <meta name="description" content="Organize all your content production in one place. All team access the last validated version of each document or file. ">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.pilot.pm/">
+  <meta property="og:title" content="The content production platform for marketing teams. ">
+  <meta property="og:description" content="Organize all your content production in one place. All team access the last validated version of each document or file. 
+
+  ">
+  <meta property="og:image" content="/images/image-01.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.pilot.pm/">
+  <meta property="twitter:title" content="The content production platform for marketing teams. ">
+  <meta property="twitter:description" content="Organize all your content production in one place. All team access the last validated version of each document or file. 
+
+  ">
+  <meta property="twitter:image" content="/images/image-01.png">
 
   {{ $stylesheet := .Site.Data.webpack.main }}
   {{ with $stylesheet.css }}
