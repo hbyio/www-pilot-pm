@@ -1,4 +1,4 @@
-baseurl = "https://www.pilot.pm/"
+baseURL = "/"
 languageCode = "en-us"
 languageLang = "en"
 title = "Pilot"
