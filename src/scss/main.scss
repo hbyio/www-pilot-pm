@@ -33,7 +33,19 @@ $media-expressions: (
 @import "layout/common";
 @import "footer";
 
-@import "bulma/bulma.sass";
+@import "~bulma/bulma.sass";
+
+@import '~tocbot/src/scss/tocbot-core';
+@import '~tocbot/src/scss/tocbot-default-theme';
+
+h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
+  display: block;
+  content: " ";
+  height: 60px;
+  margin-top: -60px;
+  visibility: hidden;
+}
+
 
 
 .img-holder {

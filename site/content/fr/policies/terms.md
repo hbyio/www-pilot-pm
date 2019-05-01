@@ -10,7 +10,7 @@ version: "2.2"
 weight: 1
 ---
 
-> Version 2.6
+<span class="tag is-warning">Version 2.6</span>
 
 PILOT est une plateforme de production de contenus proposée en mode SAAS. La solution s’adresse à toute structure souhaitant produire du contenu de manière collaborative, et en particulier aux équipes des services communication / marketing des entreprises et à leurs partenaires / clients / prestataires.
 
