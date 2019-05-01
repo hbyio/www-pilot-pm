@@ -1,0 +1,70 @@
+{{ define "main" }} 
+<main id="main">
+    <section class="intro-section ressources-page">
+        <div class="container">
+            <div>
+                <div class="title is-1">Blog</div>
+                <p>{{ i18n "blogShort" }}</p>
+            </div>
+        </div>
+    </section>
+    <section class="blog-section blog-page">
+        <div class="container">
+            {{ range .Pages }}
+             {{ if .Params.Featured }}
+             <article class="comment-block">
+                 <div class="img-block" style="background-image:url({{.Params.Illustration}});"></div>
+                 <div class="text-block">
+                     <div class="title is-3">
+                         <a href="{{ .Permalink }}">
+                             <h1>{{ .Title }}</h1>
+                         </a>
+                     </div>
+                     <span class="tag is-medium" class="{{.Params.TagColor}}">{{ .Params.Tag }}</span>
+                     <p>{{ .Params.Short }}</p>
+                     <ul class="info-list">
+                         <li><img src="{{ .Params.AuthorAvatar }}" alt="image description"></li>
+                         <li>{{ .Params.Author }}</li>
+                         <li class="time">8 minuts read</li>
+                     </ul>
+                 </div>
+             </article>
+             {{ end }}
+            {{ end }}
+            <div class="title is-4 has-text-centered">{{ i18n "lastArticles" }}</div>
+            <div class="section">
+                <div class="columns is-multiline">
+            {{ range .Pages }}
+            {{ if not .Params.Featured }}
+            
+                <article class="column is-4">
+                    <div class="text-holder">
+                        <div class="img-holder" style="background-image:url({{.Params.Illustration}});">
+                        </div>
+                        <span class="tag is-medium {{ .Params.TagColor }}">{{ .Params.Tag }}</span>
+                        <div class="title is-5">
+                            <a href="{{ .Permalink }}">
+                                {{ .Title }}
+                            </a>
+                        </div>
+                        <p>{{ .Params.Short }}</p>
+                    </div>
+                    <a href="{{ .Permalink }}"
+                        class="button is-info is-medium is-fullwidth is-outlined" 
+                    >
+                        {{ i18n "read" }}
+                    </a>
+                </article>
+
+                <!-- <div class="btn-holder">
+                    <a href="#" class="btn btn-white btn-more">Show more</a>
+                </div> -->
+            
+            {{ end }}
+            {{ end }}
+        </div>
+        </div>
+        </div>
+    </section>
+</main>
+{{ end }}

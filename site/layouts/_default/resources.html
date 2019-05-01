@@ -3,8 +3,8 @@
 		<section class="intro-section ressources-page">
 			<div class="container">
 				<div class="text-holder">
-					<h1 class="capitalize">{{ i18n "resources" }}</h1>
-					<div class="is-title is-2">{{ i18n "resourcesShort" }}</div>
+					<h1 class="title is-2">{{ i18n "resources" }}</h1>
+					<div class="subtitle is-3">{{ i18n "resourcesShort" }}</div>
 				</div>
 			</div>
         </section>
@@ -17,12 +17,11 @@
 						<div class="card">
 						<div class="card-heading" >
 							<div class="heading-text">
-								
-								<h6>{{ .Title }}</h6>
+								<div class="title is-4">{{ .Title }}</div>
 							</div>
 						</div>
 						<div class="card-body">
-							<p>{{ .Params.Short }}</p>
+							<div class="subtitle is-5">{{ .Params.Short }}</div>
 						</div>
 						<div class="card-footer">
 							<!-- <a href="#" class="ressources-link">13 ressources</a> -->

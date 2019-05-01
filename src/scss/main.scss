@@ -33,14 +33,21 @@ $media-expressions: (
 @import "layout/common";
 @import "footer";
 
-//@import "bulma/bulma.sass";
-@import "bulma/sass/utilities/_all.sass";
-@import "bulma/sass/elements/button.sass";
-@import "bulma/sass/components/navbar.sass";
-@import "bulma/sass/components/menu.sass";
-@import "bulma/sass/components/dropdown.sass";
+@import "bulma/bulma.sass";
 
 
+.img-holder {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  min-height: 153px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+
+  @include media(">=tablet") {
+    margin-bottom: 26px;
+  }
+}
 
 .page-enter-active,
 .page-leave-active {

@@ -448,7 +448,7 @@ blockquote {
 
   &.ressources-page {
     @include media(">=phone") {
-      padding-bottom: 110px;
+      padding-bottom: 50px;
     }
   }
 
@@ -1257,7 +1257,6 @@ blockquote {
       text-align: center;
       display: flex;
       justify-content: center;
-      color: $white;
       font-size: 1em;
 
       .heading-text {
@@ -1390,28 +1389,11 @@ blockquote {
     padding: 62px 0 94px;
   }
 
-
-
   .container {
     max-width: 996px;
   }
 
-  .row {
-    @include media(">=phone") {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin: 0 -10px;
-    }
 
-    @include media(">=tablet") {
-      margin: 0 -20px;
-    }
-
-    @include media(">=desktop") {
-      margin: 0 -40px;
-    }
-  }
 
   .col {
     font-size: 13px;
@@ -1747,6 +1729,7 @@ blockquote {
 }
 
 .comment-block {
+  display: flex;
   max-width: 375px;
   margin: 0 auto 43px;
   border-radius: 10px;

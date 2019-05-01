@@ -36,6 +36,8 @@ other = "documents"
 other = "unlimited documents"
 [lastNotes]
 other ="Retrouvez nos articles sur le blog"
+[lastArticles]
+other ="Last posts"
 [login]
 other = "Login"
 [menu]
