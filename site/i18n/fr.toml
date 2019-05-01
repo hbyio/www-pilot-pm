@@ -1,13 +1,13 @@
 [annotations]
-other = "annotations"
+other = "Annotations"
 [annotationsShort]
 other = "Annoter vos documents précisément et engagez des conversations sans perdre de temps. Les membres de l’équipe seront notifiés avec un lien les menant directement vers le document et l’annotation."
 [blog]
 other = "Blog"
 [calendar]
-other = "calendrier"
+other = "Calendrier"
 [calendars]
-other = "calendriers"
+other = "Calendriers"
 [calendarsShort]
 other = "Créez facilement des plannings éditoriaux ou de tâches, sauvegardez, partagez des calendriers personnalisés avec vos clients. Changez votre programmation de publication simplement par drag&drop"
 [clients]
@@ -53,13 +53,13 @@ other = "Données personnelles"
 [product]
 other = "produit"
 [project]
-other = "projet"
+other = "Projet"
 [projects]
-other = "projets"
+other = "Projets"
 [projectsShort]
 other = "Organisez vos contenus en projets, assignez des responsables, des ordres de priorité. Notez en un seul endroit tous les éléments importants comme le brief, joignez des press kit ou des vidéos haute définition, autant d’éléments pouvant servir aux personnes en charge de la production"
 [projectsUnlimited]
-other = "projets illimités"
+other = "Projets illimités"
 [read]
 other = "Lire"
 [resources]
@@ -73,9 +73,9 @@ other = "Engagement de service"
 [storage]
 other = "stockage"
 [task]
-other = "tâche"
+other = "Tâche"
 [tasks]
-other = "tâches"
+other = "Tâches"
 [tasksShort]
 other = "Affectez des tâches à vos contenus, pour vous même ou d’autres membres de l’équipe et retrouvez dans un calendrier unique toutes les dates limites de livraison à l’imprimeur"
 [terms]
@@ -85,15 +85,15 @@ other = "Conditions générales d'utilisation"
 [user]
 other = "personne"
 [versionning]
-other = "versionning"
+other = "Versionning"
 [versions]
-other = "versions"
+other = "Versions"
 [versionsShort]
 other = "Nous conservons toutes les versions de tous les documents. Analysez rapidement les différences, restaurez d’anciennes versions ou découvrez qui a fait cette faute de conjuguaison et à quelle date."
 [view]
 other = "voir"
 [workflows]
-other = "workflows"
+other = "Workflows"
 [workflowsShort]
 other = "Définissez vos statuts de workflow et attribuez les à vos contenus au fil du process de production. Grâce aux filtres avancés filtrez la liste en fonction des statuts qui vous concernent."
 

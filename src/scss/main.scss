@@ -46,13 +46,16 @@ h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
   visibility: hidden;
 }
 
+.container{
+  max-width: 900px;
+}
 
 
 .img-holder {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  min-height: 153px;
+  //min-height: 153px;
   border-radius: 4px;
   margin-bottom: 15px;
 

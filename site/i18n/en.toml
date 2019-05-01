@@ -1,13 +1,13 @@
 [annotations]
-other = "annotations"
+other = "Annotations"
 [annotationsShort]
 other = "Annotate your documents accurately and start conversations without delay. Team members will be notified with a link leading directly to the document and the annotation."
 [blog]
 other ="Blog"
 [calendar]
-other = "calendar"
+other = "Calendar"
 [calendars]
-other = "calendars"
+other = "Calendars"
 [calendarsShort]
 other = "Easily create editorial or tasks schedules, save, share personalized calendars with your customers. Change your publication schedule simply by drag&drop"
 [clients]
@@ -51,11 +51,11 @@ other = "Prices"
 [privacy]
 other ="GDPR"
 [product]
-other ="product"
+other ="Product"
 [project]
-other = "project"
+other = "Project"
 [projects]
-other = "projects"
+other = "Projects"
 [projectsShort]
 other ="Organize your content into projects, assign managers, prioritize. Note in one place all the important elements such as the brief, attach press kits or high definition videos, all of which can be useful to those in charge of production"
 [projectsUnlimited]
@@ -73,9 +73,9 @@ other ="Service level agreement"
 [storage]
 other = "storage"
 [task]
-other = "task"
+other = "Task"
 [tasks]
-other = "tasks"
+other = "Tasks"
 [tasksShort]
 other = "Assign tasks to your content, for yourself or other team members and find in a single calendar all the deadlines for delivery to your digital agency"
 [terms]
@@ -85,15 +85,15 @@ other ="Terms of use"
 [user]
 other = "person"
 [versionning]
-other = "versionning"
+other = "Versionning"
 [versions]
-other = "versions"
+other = "Versions"
 [versionsShort]
 other = "We keep all versions of all documents. Analyze differences quickly, restore old versions or find out who made this specific edit and when."
 [view]
 other = "see"
 [workflows]
-other = "workflows"
+other = "Workflows"
 [workflowsShort]
 other = "Define your workflow statuses and assign them to your content throughout the production process. With advanced filters, filter the list according to the statuses that concern you."
 
