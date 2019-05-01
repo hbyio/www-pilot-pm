@@ -22,25 +22,25 @@
     >
       <div class="navbar-start">
         <a 
-          href="{{ .LanguagePrefix }}/#functionality-section"
+          href="{ "/" | absLangURL  }}/#functionality-section"
           class="navbar-item" 
         >
         {{ i18n "features" }}
         </a>
         <a 
-          href="{{ .LanguagePrefix }}/#prices-section"
+          href="{ "/" | absLangURL  }}/#prices-section"
           class="navbar-item" 
         >
         {{ i18n "prices" }}
         </a>
         <a 
-          href="{{ "/resources" | relLangURL  }}"
+          href="{{ "/resources" | absLangURL  }}"
           class="navbar-item" 
         >
         {{ i18n "resources" }}
         </a>
         <a 
-          href="{{ "/blog" | relLangURL  }}"
+          href="{{ "/blog" | absLangURL  }}"
           class="navbar-item" 
         >
         {{ i18n "blog" }}
