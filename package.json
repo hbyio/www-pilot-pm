@@ -1,8 +1,8 @@
 {
-  "name": "victor-hugo",
+  "name": "www-pilot-pm",
   "version": "1.0.0",
-  "description": "Victor Hugo is a Hugo boilerplate for creating truly epic websites!",
-  "repository": "netlify/victor-hugo",
+  "description": "pilot app public website",
+  "repository": "gitlab.com/huckleberry/www-pilot-pm",
   "main": "index.js",
   "scripts": {
     "lint": "eslint src",
