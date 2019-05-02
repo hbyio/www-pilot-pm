@@ -54,6 +54,10 @@
 {{ with $script.js }}
   <script src="{{ relURL . }}"></script>
 {{ end }}
+{{ if in (string .Site.BaseURL) "localhost" }}
+  {{ partial "intercom.html" . }}
+  {{ partial "analytics.html" . }}
+{{ end }}
 </body>
 
 </html>
