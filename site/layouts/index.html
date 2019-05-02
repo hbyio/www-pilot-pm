@@ -170,7 +170,7 @@
           <div class="col">
             <h4>{{ i18n "daysOnUs" }}</h4>
             <div class="text-holder">
-                <a href="#" class="button is-info is-medium is-fullwidth">
+                <a href="{{ .Site.Params.AppUrl }}/registration?lang={{.Site.Language.Lang}}" class="button is-info is-medium is-fullwidth">
                     {{ i18n "createYourDesk" }}
                 </a>
                 <p class="conditions">{{ i18n "trialConditions" }}</p>
