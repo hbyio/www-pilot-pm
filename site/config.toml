@@ -15,10 +15,13 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
   appTwitter = "pilot_app"
   appEmail = "hello@pilot.pm"
   appSupportEmail = "support@pilot.pm"
+  descriptionShort = "The content production platform for marketing teams."
+  description = "Organize all your content production in one place. All team access the last validated version of each document or file."
+  copyright = "Copyright 2019"
 
 DefaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
-copyright = "Everything is mine"
+
 
 [languages]
 [languages.en]

@@ -2,43 +2,75 @@
 <html class="has-navbar-fixed-top" lang="{{ $.Site.Language.Lang }}">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-  {{ if .IsTranslated }}
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+    <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
+    {{ if .IsTranslated }}
     {{ range .Translations }}
-      <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}"/>
+    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}"/>
     {{ end}}
-  {{ end }}
+    {{ end }}
+    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" /> 
 
-  <!-- Primary Meta Tags -->
-  <title>The content production platform for marketing teams. </title>
-  <meta name="title" content="The content production platform for marketing teams. ">
-  <meta name="description" content="Organize all your content production in one place. All team access the last validated version of each document or file. ">
+    <!-- Primary Meta Tags -->
+    <title>The content production platform for marketing teams. </title>
+    <meta name="title" content="{{ .Site.Params.DescriptionShort }}">
+    <meta name="description" content="{{ .Site.Params.Description }}">
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.pilot.pm/">
-  <meta property="og:title" content="The content production platform for marketing teams. ">
-  <meta property="og:description" content="Organize all your content production in one place. All team access the last validated version of each document or file. 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.pilot.pm/">
+    <meta property="og:title" content="The content production platform for marketing teams. ">
+    <meta property="og:description" content="{{ .Site.Params.Description }}">
+    <meta property="og:image" content="/images/image-01.png">
 
-  ">
-  <meta property="og:image" content="/images/image-01.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.pilot.pm/">
+    <meta property="twitter:title" content="{{ .Site.Params.Description }}">
+    <meta property="twitter:description" content="{{ .Site.Params.Description }}">
+    <meta property="twitter:image" content="/images/image-01.png">
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://www.pilot.pm/">
-  <meta property="twitter:title" content="The content production platform for marketing teams. ">
-  <meta property="twitter:description" content="Organize all your content production in one place. All team access the last validated version of each document or file. 
+    <!-- Dublin Core basic info -->
+    <meta name="dcterms.Identifier" content="{{ .Site.BaseURL }}" />
+    <meta name="dcterms.Format" content="text/html" />
+    <meta name="dcterms.Relation" content="{{ .Site.Title }}" />
+    <meta name="dcterms.Language" content="{{ .Site.LanguageCode }}" />
+    <meta name="dcterms.Publisher" content="{{ .Site.Title }}" />
+    <meta name="dcterms.Type" content="text/html" />
+    <meta name="dcterms.Coverage" content="{{ .Site.BaseURL }}" />
+    <meta name="dcterms.Rights" content="{{ .Site.Params.Copyright }} {{ .Site.Title }}." />
+    <meta name="dcterms.Title" content="{{ .Site.Title }}" />
+    <meta name="dcterms.Subject" content="{{ .Site.Params.Description }}" />
+    <meta name="dcterms.Contributor" content="{{ .Site.Title }}" />
 
-  ">
-  <meta property="twitter:image" content="/images/image-01.png">
 
-  {{ $stylesheet := .Site.Data.webpack.main }}
-  {{ with $stylesheet.css }}
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebApplication",
+      "name": "Pilot",
+      "browserRequirements": "IE 11+, Chrome, Firefox. Requires HTML 5 support",
+      "applicationCategory": "https://schema.org/WebApplication",
+      "operatingSystem": "Windows, OSX, Android",
+      "offers": {
+          "@type": "AggregateOffer",
+          "highPrice": "39",
+          "lowPrice": "9",
+          "priceCurrency": "EUR"
+        }
+    }
+    </script>
+
+    {{ $stylesheet := .Site.Data.webpack.main }}
+    {{ with $stylesheet.css }}
     <link href="{{ relURL . }}" rel="stylesheet">
-  {{ end }}
+    {{ end }}
 </head>
 
 <body>
