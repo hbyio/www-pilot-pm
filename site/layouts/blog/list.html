@@ -38,22 +38,35 @@
             {{ if not .Params.Featured }}
             
                 <article class="column is-4">
-                    <div class="text-holder">
-                        <div class="img-holder" style="background-image:url({{.Params.Illustration}});">
-                        </div>
-                        <span class="tag is-medium {{ .Params.TagColor }}">{{ .Params.Tag }}</span>
-                        <div class="title is-5">
-                            <a href="{{ .Permalink }}">
-                                {{ .Title }}
-                            </a>
-                        </div>
-                        <p>{{ .Params.Short }}</p>
-                    </div>
-                    <a href="{{ .Permalink }}"
-                        class="button is-info is-medium is-fullwidth is-outlined" 
-                    >
-                        {{ i18n "read" }}
-                    </a>
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                            <img src="{{.Params.Illustration}}">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                    
+                                    <div class="media-content">
+                                        <div class="title is-5">
+                                        <a href="{{ .Permalink }}">
+                                            {{ .Title }}
+                                        </a>
+                                        </div>
+                                            <span class="tag is-warning is-medium {{ .Params.TagColor }}">{{ .Params.Tag }}</span>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="content">
+                                            {{ .Params.Short }}
+                                    </div>
+                                    <a href="{{ .Permalink }}" class="button is-info is-fullwidth">
+                                        {{ i18n "read" }}
+                                    </a>
+                                </div>
+                            </div>
+                    
+                    
                 </article>
 
                 <!-- <div class="btn-holder">
