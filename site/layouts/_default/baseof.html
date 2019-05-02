@@ -86,7 +86,9 @@
 {{ with $script.js }}
   <script src="{{ relURL . }}"></script>
 {{ end }}
-{{ if in (string .Site.BaseURL) "localhost" }}
+{{ if not .Site.IsServer }}
+  <!-- OR WITH ENV VAR if eq (getenv "HUGO_ENV") "production"  -->
+	<!--ONLY PRODUCTION-->
   {{ partial "intercom.html" . }}
   {{ partial "analytics.html" . }}
 {{ end }}
