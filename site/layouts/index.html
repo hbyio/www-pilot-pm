@@ -1,281 +1,278 @@
 {{ define "main" }}
+<section class="section intro-section homepage">
+  <div class="container">
+    <div class="text-holder">
+      <h1>{{ i18n "homeTitle" | safeHTML  }}</h1>
+      <p>{{ i18n "catchphrase" }}</p>
+    </div>
+    <div class="relative-holder">
+      <div>
+          <a href="{{ .Site.Params.AppUrl }}/registration?lang={{.Site.Language.Lang}}" class="button is-info is-large">
+              {{ i18n "createYourDesk" }}
+          </a>
+          <p class="conditions">{{ i18n "trialConditions" }}</p>
+      </div>
+      <img src="/images/image-01.png" alt="image description">
+      <ul class="tag-block">
+        <li>
+          <div class="img-holder">
+            <img src="/images/icon-03.svg" width="37" height="44" alt="image description">
+          </div>
+          <strong class="capitalize">{{ i18n "planning" }}</strong>
+        </li>
+        <li>
+          <div class="img-holder">
+            <img src="/images/icon-02.svg" width="50" height="55" alt="image description">
+          </div>
+          <strong class="capitalize">{{ i18n "tasks" }}</strong>
+        </li>
+        <li>
+          <div class="img-holder">
+            <img src="/images/icon-01.svg" width="54" height="54" alt="image description">
+          </div>
+          <strong class="capitalize">{{ i18n "calendars" }}</strong>
+        </li>
+        <li>
+          <div class="img-holder">
+            <img src="/images/icon-04.svg" width="68" height="52" alt="image description">
+          </div>
+          <strong class="capitalize">{{ i18n "versionning" }}</strong>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="functionality-section" class="section functionality-section">
+  <div class="container">
+    <h1 class="title is-2">{{ i18n "features" }}</h1>
+    <span class="subtitle"></span>
+    <div class="relative-holder">
+      <div class="container">
+        <div class="row reverse">
+          <div class="col">
+            <div class="title-holder">
+              <div class="icon-holder blue-holder">
+                {{ partial "svgPen" .}}
+              </div>
+              <h2 class="title is-4">{{ i18n "annotations" }}</h2>
+            </div>
+            <div class="content">{{ i18n "annotationsShort" }}</div>
+          </div>
+          <div class="col">
+            <img src="/images/image-02.png" alt="image description">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-sm">
+            <div class="title-holder">
+              <div class="icon-holder green-holder">
+                  {{ partial "svgFlag" .}}
+              </div>
+              <h2 class="title is-3">{{ i18n "workflows" }}</h2>
+            </div>
+            <p>{{ i18n "workflowsShort" }}</p>
+          </div>
+          <div class="col">
+            <img src="/images/image-03.png" alt="image description">
+          </div>
+        </div>
+        <div class="row reverse">
+          <div class="col">
+            <div class="title-holder">
+              <div class="icon-holder yellow-holder">
+                  {{ partial "svgTasks" .}}
+              </div>
+              <h2 class="title is-3">{{ i18n "tasks" }}</h2>
+            </div>
+            <p>{{ i18n "tasksShort" }}</p>
+          </div>
+          <div class="col">
+            <img src="/images/image-04.png" alt="image description">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-sm">
+            <div class="title-holder">
+              <div class="icon-holder purple-holder">
+                  {{ partial "svgProject" . }}
+              </div>
+              <h2 class="title is-3">{{ i18n "projects" }}</h2>
+            </div>
+            <p>{{ i18n "projectsShort" }}</p>
+          </div>
+          <div class="col">
+            <img src="/images/image-05.png" alt="image description">
+          </div>
+        </div>
+        <div class="row reverse">
+          <div class="col">
+            <div class="title-holder">
+              <div class="icon-holder pink-holder">
+                  {{ partial "svgCalendar" . }}
+              </div>
+              <h2 class="title is-3">{{ i18n "calendars" }}</h2>
+            </div>
+            <p>{{ i18n "calendarsShort" }}</p>
+          </div>
+          <div class="col">
+            <img src="/images/image-06.png" alt="image description">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-sm">
+            <div class="title-holder">
+              <div class="icon-holder purple-holder">
+                  {{ partial "svgVersions" . }}
+              </div>
+              <h2 class="title is-3">{{ i18n "versions" }}</h2>
+            </div>
+            <p>{{ i18n "versionsShort" }}</p>
+            <!-- <a href="#" class="btn">{{ i18n "view" }} <i class="icon-arrow-right"></i></a> -->
+          </div>
+          <div class="col">
+            <img src="/images/image-07.png" alt="image description">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<main id="main">
-    <section class="intro-section homepage">
-      <div class="container">
-        <div class="text-holder">
-          <h1>{{ i18n "homeTitle" | safeHTML  }}</h1>
-          <p>{{ i18n "catchphrase" }}</p>
-        </div>
-        <div class="relative-holder">
-          <div>
-              <a href="{{ .Site.Params.AppUrl }}/registration?lang={{.Site.Language.Lang}}" class="button is-info is-large">
-                  {{ i18n "createYourDesk" }}
-              </a>
-              <p class="conditions">{{ i18n "trialConditions" }}</p>
-          </div>
-          <img src="/images/image-01.png" alt="image description">
-          <ul class="tag-block">
-            <li>
-              <div class="img-holder">
-                <img src="/images/icon-03.svg" width="37" height="44" alt="image description">
-              </div>
-              <strong class="capitalize">{{ i18n "planning" }}</strong>
-            </li>
-            <li>
-              <div class="img-holder">
-                <img src="/images/icon-02.svg" width="50" height="55" alt="image description">
-              </div>
-              <strong class="capitalize">{{ i18n "tasks" }}</strong>
-            </li>
-            <li>
-              <div class="img-holder">
-                <img src="/images/icon-01.svg" width="54" height="54" alt="image description">
-              </div>
-              <strong class="capitalize">{{ i18n "calendars" }}</strong>
-            </li>
-            <li>
-              <div class="img-holder">
-                <img src="/images/icon-04.svg" width="68" height="52" alt="image description">
-              </div>
-              <strong class="capitalize">{{ i18n "versionning" }}</strong>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section id="functionality-section" class="functionality-section">
-      <div class="container">
-        <h1 class="title is-2">{{ i18n "features" }}</h1>
-        <span class="subtitle"></span>
-      </div>
-      <div class="relative-holder">
-        <div class="container">
-          <div class="row reverse">
-            <div class="col">
-              <div class="title-holder">
-                <div class="icon-holder blue-holder">
-                  {{ partial "svgPen" .}}
-                </div>
-                <h2 class="title is-4">{{ i18n "annotations" }}</h2>
-              </div>
-              <div class="content">{{ i18n "annotationsShort" }}</div>
-            </div>
-            <div class="col">
-              <img src="/images/image-02.png" alt="image description">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col col-sm">
-              <div class="title-holder">
-                <div class="icon-holder green-holder">
-                    {{ partial "svgFlag" .}}
-                </div>
-                <h2 class="title is-3">{{ i18n "workflows" }}</h2>
-              </div>
-              <p>{{ i18n "workflowsShort" }}</p>
-            </div>
-            <div class="col">
-              <img src="/images/image-03.png" alt="image description">
-            </div>
-          </div>
-          <div class="row reverse">
-            <div class="col">
-              <div class="title-holder">
-                <div class="icon-holder yellow-holder">
-                    {{ partial "svgTasks" .}}
-                </div>
-                <h2 class="title is-3">{{ i18n "tasks" }}</h2>
-              </div>
-              <p>{{ i18n "tasksShort" }}</p>
-            </div>
-            <div class="col">
-              <img src="/images/image-04.png" alt="image description">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col col-sm">
-              <div class="title-holder">
-                <div class="icon-holder purple-holder">
-                    {{ partial "svgProject" . }}
-                </div>
-                <h2 class="title is-3">{{ i18n "projects" }}</h2>
-              </div>
-              <p>{{ i18n "projectsShort" }}</p>
-            </div>
-            <div class="col">
-              <img src="/images/image-05.png" alt="image description">
-            </div>
-          </div>
-          <div class="row reverse">
-            <div class="col">
-              <div class="title-holder">
-                <div class="icon-holder pink-holder">
-                    {{ partial "svgCalendar" . }}
-                </div>
-                <h2 class="title is-3">{{ i18n "calendars" }}</h2>
-              </div>
-              <p>{{ i18n "calendarsShort" }}</p>
-            </div>
-            <div class="col">
-              <img src="/images/image-06.png" alt="image description">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col col-sm">
-              <div class="title-holder">
-                <div class="icon-holder purple-holder">
-                    {{ partial "svgVersions" . }}
-                </div>
-                <h2 class="title is-3">{{ i18n "versions" }}</h2>
-              </div>
-              <p>{{ i18n "versionsShort" }}</p>
-              <!-- <a href="#" class="btn">{{ i18n "view" }} <i class="icon-arrow-right"></i></a> -->
-            </div>
-            <div class="col">
-              <img src="/images/image-07.png" alt="image description">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="clients-section" class="partners-section">
-      <div class="container">
-        <h1 class="title is-1">Clients</h1>
-        <span class="subtitle"></span>
-        <ul class="logo-list">
-          <li><img src="/images/logo-02.png" width="160" height="73" class="grayscale" alt="Harmonie mutuelle"></li>
-          <li><img src="/images/logo-03.png" width="133" height="36" class="grayscale" alt="VINCI construction"></li>
-          <li><img src="/images/logo-04.png" width="150" height="53" class="grayscale" alt="BANQUE POPULAIRE MEDITERRANEE"></li>
-          <li><img src="/images/logo-05.png" width="80" height="74" class="grayscale" alt="SUEZ"></li>
-          <li><img src="/images/logo-06.png" width="146" height="33" class="grayscale" alt="EDHEC business school"></li>
+</section>
+<section id="clients-section" class="section partners-section">
+  <div class="container">
+    <h1 class="title is-1">Clients</h1>
+    <span class="subtitle"></span>
+    <ul class="logo-list">
+      <li><img src="/images/logo-02.png" width="160" height="73" class="grayscale" alt="Harmonie mutuelle"></li>
+      <li><img src="/images/logo-03.png" width="133" height="36" class="grayscale" alt="VINCI construction"></li>
+      <li><img src="/images/logo-04.png" width="150" height="53" class="grayscale" alt="BANQUE POPULAIRE MEDITERRANEE"></li>
+      <li><img src="/images/logo-05.png" width="80" height="74" class="grayscale" alt="SUEZ"></li>
+      <li><img src="/images/logo-06.png" width="146" height="33" class="grayscale" alt="EDHEC business school"></li>
+    </ul>
+  </div>
+</section>
+<section class="contact-us section">
+  <div class="container">
+
+    <h1 class="title is-1">{{ i18n "startTrialNow" }}</h1>
+    <div class="form-holder">
+      <div class="col">
+        <h4>{{ i18n "homeTitle" | safeHTML }}</h4>
+        <ul class="check-list">
+          <li><span class="icongreen">{{ partial "svgCheck" . }}</span>{{ i18n "onePlace" }}</li>
+          <li><span class="icongreen">{{ partial "svgCheck" . }}</span>{{ i18n "sourceTruth" }}</li>
+          <li><span class="icongreen">{{ partial "svgCheck" . }}</span>{{ i18n "noMoreExcel" }}</li>
+          <li><span class="icongreen">{{ partial "svgCheck" . }}</span>{{ i18n "WhoWhatWhen" }}</li>
+          <li><span class="icongreen">{{ partial "svgCheck" . }}</span>{{ i18n "shortLifecycle" }}</li>
         </ul>
       </div>
-    </section>
-    <section class="contact-us">
-      <div class="container">
-
-        <h1 class="title is-1">{{ i18n "startTrialNow" }}</h1>
-        <div class="form-holder">
-          <div class="col">
-            <h4>{{ i18n "homeTitle" | safeHTML }}</h4>
-            <ul class="check-list">
-              <li><span class="icongreen">{{ partial "svgCheck" . }}</span>{{ i18n "onePlace" }}</li>
-              <li><span class="icongreen">{{ partial "svgCheck" . }}</span>{{ i18n "sourceTruth" }}</li>
-              <li><span class="icongreen">{{ partial "svgCheck" . }}</span>{{ i18n "noMoreExcel" }}</li>
-              <li><span class="icongreen">{{ partial "svgCheck" . }}</span>{{ i18n "WhoWhatWhen" }}</li>
-              <li><span class="icongreen">{{ partial "svgCheck" . }}</span>{{ i18n "shortLifecycle" }}</li>
-            </ul>
-          </div>
-          <div class="col">
-            <h4>{{ i18n "daysOnUs" }}</h4>
-            <div class="text-holder">
-                <a href="{{ .Site.Params.AppUrl }}/registration?lang={{.Site.Language.Lang}}" class="button is-info is-medium is-fullwidth">
-                    {{ i18n "createYourDesk" }}
-                </a>
-                <p class="conditions">{{ i18n "trialConditions" }}</p>
+      <div class="col">
+        <h4>{{ i18n "daysOnUs" }}</h4>
+        <div class="text-holder">
+            <a href="{{ .Site.Params.AppUrl }}/registration?lang={{.Site.Language.Lang}}" class="button is-info is-medium is-fullwidth">
+                {{ i18n "createYourDesk" }}
+            </a>
+            <p class="conditions">{{ i18n "trialConditions" }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="prices-section" class="section prices-section">
+  <div class="container">
+    <h1 class="title is-2">{{ i18n "prices" }}</h1>
+    <span class="subtitle"></span>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="info-block">
+          <div class="info-head">
+            <h4>Small</h4>
+            <span class="comment">{{ i18n "smallIsFor" }}</span>
+            <div class="price-info">
+              <strong class="price">9€</strong>
+              <div class="text-holder">
+                <p>/{{ i18n "month" }}<br>/{{ i18n "user" }}</p>
+              </div>
             </div>
+          </div>
+          <div class="info-list">
+            <div>5 {{ i18n "projects" }}</div>
+            <div>100 {{ i18n "items" }}</div>
+            <div>10G {{ i18n "storage" }}</div>
+          </div>
+          <div class="btn-holder">
+              <div>
+                  <a href="{{ .Site.Params.AppUrl }}/registration?lang={{.Site.Language.Lang}}"class="button is-fullwidth is-medium is-info">
+                      {{ i18n "createYourDesk" }}
+                      
+                  </a>
+                  <p class="conditions">{{ i18n "trialConditions" }}</p>
+              </div>
           </div>
         </div>
       </div>
-    </section>
-    <section id="prices-section" class="prices-section">
-      <div class="container">
-        <h1 class="title is-2">{{ i18n "prices" }}</h1>
-        <span class="subtitle"></span>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="info-block">
-              <div class="info-head">
-                <h4>Small</h4>
-                <span class="comment">{{ i18n "smallIsFor" }}</span>
-                <div class="price-info">
-                  <strong class="price">9€</strong>
-                  <div class="text-holder">
-                    <p>/{{ i18n "month" }}<br>/{{ i18n "user" }}</p>
-                  </div>
-                </div>
-              </div>
-              <div class="info-list">
-                <div>5 {{ i18n "projects" }}</div>
-                <div>100 {{ i18n "items" }}</div>
-                <div>10G {{ i18n "storage" }}</div>
-              </div>
-              <div class="btn-holder">
-                  <div>
-                      <a href="{{ .Site.Params.AppUrl }}/registration?lang={{.Site.Language.Lang}}"class="button is-fullwidth is-medium is-info">
-                          {{ i18n "createYourDesk" }}
-                          
-                      </a>
-                      <p class="conditions">{{ i18n "trialConditions" }}</p>
-                  </div>
+      <div class="col">
+        <div class="info-block active-block">
+          <div class="info-head">
+            <h4>Medium</h4>
+            <span class="comment">{{ i18n "mediumIsFor" }}</span>
+            <div class="price-info">
+              <strong class="price">19€</strong>
+              <div class="text-holder">
+                <p>/{{ i18n "month" }}<br>/{{ i18n "user" }}</p>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="info-block active-block">
-              <div class="info-head">
-                <h4>Medium</h4>
-                <span class="comment">{{ i18n "mediumIsFor" }}</span>
-                <div class="price-info">
-                  <strong class="price">19€</strong>
-                  <div class="text-holder">
-                    <p>/{{ i18n "month" }}<br>/{{ i18n "user" }}</p>
-                  </div>
-                </div>
-              </div>
-              <div class="info-list">
-                <div>10 {{ i18n "projects" }}</div>
-                <div>300 {{ i18n "items" }}</div>
-                <div>30Go {{ i18n "storage" }} </div>
-                <!-- <div>{{ i18n "featuresNone" }}</div> -->
-                <div>{{ i18n "supportMedium" }}</div>
-              </div>
-              <div class="btn-holder">
-                  <div>
-                      <a href="{{ .Site.Params.AppUrl }}/registration?lang={{.Site.Language.Lang}}" class="button is-fullwidth is-medium is-info">
-                          {{ i18n "createYourDesk" }}
-                          
-                      </a>
-                      <p class="conditions">{{ i18n "trialConditions" }}</p>
-                  </div>
-              </div>
-            </div>
+          <div class="info-list">
+            <div>10 {{ i18n "projects" }}</div>
+            <div>300 {{ i18n "items" }}</div>
+            <div>30Go {{ i18n "storage" }} </div>
+            <!-- <div>{{ i18n "featuresNone" }}</div> -->
+            <div>{{ i18n "supportMedium" }}</div>
           </div>
-          <div class="col">
-            <div class="info-block">
-              <div class="info-head">
-                <h4 class="capitalize">{{ i18n "enterprise" }}</h4>
-                <span class="comment">{{ i18n "enterpriseIsFor" }}</span>
-                <div class="price-info">
-                  <strong class="price">39€</strong>
-                  <div class="text-holder">
-                    <p>/{{ i18n "month" }}<br>/{{ i18n "user" }}</p>
-                  </div>
-                </div>
+          <div class="btn-holder">
+              <div>
+                  <a href="{{ .Site.Params.AppUrl }}/registration?lang={{.Site.Language.Lang}}" class="button is-fullwidth is-medium is-info">
+                      {{ i18n "createYourDesk" }}
+                      
+                  </a>
+                  <p class="conditions">{{ i18n "trialConditions" }}</p>
               </div>
-              <div class="info-list">
-                <div class="capitalize">{{ i18n "projectsUnlimited" }}</div>
-                <div class="capitalize">{{ i18n "itemsUnlimited" }}</div>
-                <div>1To {{ i18n "storage" }}</div>
-                <div>{{ i18n "featuresAdvanced" }}</div>
-                <div>{{ i18n "supportAdvanced" }}</div>
-              </div>
-              <div class="btn-holder">
-                  <div>
-                      <a href="{{ .Site.Params.AppUrl }}/registration?lang={{.Site.Language.Lang}}" class="button is-fullwidth is-medium is-info">
-                          {{ i18n "createYourDesk" }}
-                      </a>
-                      <p class="conditions">{{ i18n "trialConditions" }}</p>
-                  </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
-    </section>
-  </main>
-
+      <div class="col">
+        <div class="info-block">
+          <div class="info-head">
+            <h4 class="capitalize">{{ i18n "enterprise" }}</h4>
+            <span class="comment">{{ i18n "enterpriseIsFor" }}</span>
+            <div class="price-info">
+              <strong class="price">39€</strong>
+              <div class="text-holder">
+                <p>/{{ i18n "month" }}<br>/{{ i18n "user" }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="info-list">
+            <div class="capitalize">{{ i18n "projectsUnlimited" }}</div>
+            <div class="capitalize">{{ i18n "itemsUnlimited" }}</div>
+            <div>1To {{ i18n "storage" }}</div>
+            <div>{{ i18n "featuresAdvanced" }}</div>
+            <div>{{ i18n "supportAdvanced" }}</div>
+          </div>
+          <div class="btn-holder">
+              <div>
+                  <a href="{{ .Site.Params.AppUrl }}/registration?lang={{.Site.Language.Lang}}" class="button is-fullwidth is-medium is-info">
+                      {{ i18n "createYourDesk" }}
+                  </a>
+                  <p class="conditions">{{ i18n "trialConditions" }}</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {{ end }}

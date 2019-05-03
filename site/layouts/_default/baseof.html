@@ -74,13 +74,8 @@
 </head>
 
 <body>
-<div id="app" class="container">
-
-  {{ block "header" . }}{{ partial "header" . }}{{end}}
-
-  {{ block "main" . }}{{end}}
-  
-</div>
+{{ block "header" . }}{{ partial "header" . }}{{end}}
+{{ block "main" . }}{{end}}
 {{ block "footer" . }}{{ partial "footer" . }}{{end}}
 {{ $script := .Site.Data.webpack.main }}
 {{ with $script.js }}
