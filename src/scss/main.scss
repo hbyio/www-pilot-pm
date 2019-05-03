@@ -330,3 +330,47 @@ img.grayscale {
   filter: gray;
   -webkit-filter: grayscale(100%);
 }
+
+
+.intro-section {
+
+  text-align: center;
+  position: relative;
+
+  padding: 10px 0 10px;
+
+
+  .container {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 2em;
+  }
+
+  
+  .mainTitle {
+    padding: 2em 0;
+
+    @include media("<=tablet") {
+      padding: 1em 0;
+    }
+
+    strong {
+      position: relative;
+      display: inline-block;
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        right: 0;
+        height: 17px;
+        background-color: #ffbf08;
+        display: block;
+        transform: rotate(-1deg);
+        z-index: -1;
+      }
+    }
+  }
+
+}

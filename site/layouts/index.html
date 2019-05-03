@@ -1,47 +1,49 @@
 {{ define "main" }}
-<section class="section intro-section homepage">
+<section class="section intro-section">
   <div class="container">
-    <div class="text-holder">
-      <h1>{{ i18n "homeTitle" | safeHTML  }}</h1>
-      <p>{{ i18n "catchphrase" }}</p>
+    <div class="has-text-centered">
+      <h1 class="title is-1 mainTitle">{{ i18n "homeTitle" | safeHTML  }}</h1>
+      
     </div>
-    <div class="relative-holder">
-      <div>
-          <a href="{{ .Site.Params.AppUrl }}/registration?lang={{.Site.Language.Lang}}" class="button is-info is-large">
-              {{ i18n "createYourDesk" }}
-          </a>
-          <p class="conditions">{{ i18n "trialConditions" }}</p>
-      </div>
-      <img src="/images/image-01.png" alt="image description">
-      <ul class="tag-block">
-        <li>
-          <div class="img-holder">
-            <img src="/images/icon-03.svg" width="37" height="44" alt="image description">
-          </div>
-          <strong class="capitalize">{{ i18n "planning" }}</strong>
-        </li>
-        <li>
-          <div class="img-holder">
-            <img src="/images/icon-02.svg" width="50" height="55" alt="image description">
-          </div>
-          <strong class="capitalize">{{ i18n "tasks" }}</strong>
-        </li>
-        <li>
-          <div class="img-holder">
-            <img src="/images/icon-01.svg" width="54" height="54" alt="image description">
-          </div>
-          <strong class="capitalize">{{ i18n "calendars" }}</strong>
-        </li>
-        <li>
-          <div class="img-holder">
-            <img src="/images/icon-04.svg" width="68" height="52" alt="image description">
-          </div>
-          <strong class="capitalize">{{ i18n "versionning" }}</strong>
-        </li>
-      </ul>
-    </div>
+    <div class="subtitle is-4">{{ i18n "catchphrase" }}</div>
+  </div>
+  <div class="container">
+    <a href="{{ .Site.Params.AppUrl }}/registration?lang={{.Site.Language.Lang}}" class="button is-info is-large">
+        {{ i18n "createYourDesk" }}
+    </a>
+    <p class="subtitle is-6">{{ i18n "trialConditions" }}</p>
+  </div>
+  <div class="container has-bg">
+    <img src="/images/image-01.png" alt="image description">
+    <ul class="tag-block">
+      <li>
+        <div class="img-holder">
+          <img src="/images/icon-03.svg" width="37" height="44" alt="image description">
+        </div>
+        <strong class="capitalize">{{ i18n "planning" }}</strong>
+      </li>
+      <li>
+        <div class="img-holder">
+          <img src="/images/icon-02.svg" width="50" height="55" alt="image description">
+        </div>
+        <strong class="capitalize">{{ i18n "tasks" }}</strong>
+      </li>
+      <li>
+        <div class="img-holder">
+          <img src="/images/icon-01.svg" width="54" height="54" alt="image description">
+        </div>
+        <strong class="capitalize">{{ i18n "calendars" }}</strong>
+      </li>
+      <li>
+        <div class="img-holder">
+          <img src="/images/icon-04.svg" width="68" height="52" alt="image description">
+        </div>
+        <strong class="capitalize">{{ i18n "versionning" }}</strong>
+      </li>
+    </ul>
   </div>
 </section>
+
 <section id="functionality-section" class="section functionality-section">
   <div class="container">
     <h1 class="title is-2">{{ i18n "features" }}</h1>

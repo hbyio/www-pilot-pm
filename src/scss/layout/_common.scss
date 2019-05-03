@@ -37,205 +37,7 @@
   }
 }
 
-.intro-section {
-  text-align: center;
-  position: relative;
 
-  padding: 10px 0 10px;
-  font-size: 15px;
-
-  @include media(">=tablet") {
-    padding: 56px 0 47px;
-  }
-
-  &.homepage {
-    background: transparent;
-    padding: 20px 0 70px;
-    color: #585858;
-
-    @include media(">=desktop") {
-      padding: 53px 0 148px;
-    }
-
-    h1 {
-      color: #282828;
-
-      @include media(">=tablet") {
-        margin-bottom: 31px;
-      }
-    }
-
-    .text-holder {
-      max-width: 650px;
-      font-size: 18px;
-      line-height: 1.5;
-    }
-  }
-
-  .container {
-    position: relative;
-    z-index: 2;
-  }
-
-  .relative-holder {
-    &:before {
-      content: "";
-      position: absolute;
-      top: -55px;
-      right: -210px;
-      width: 930px;
-      height: 500px;
-      background: url(/images/pattern-1.png) no-repeat;
-      z-index: -1;
-
-      @include media(">=tablet") {
-        top: -65px;
-      }
-    }
-  }
-  
-  h1 {
-    
-    margin-bottom: 14px;
-
-    @include media(">=desktop") {
-      font-size: 35px;
-      margin-bottom: 24px;
-    }
-
-    strong {
-      position: relative;
-      display: inline-block;
-
-      &:after {
-        content: "";
-        position: absolute;
-        bottom: -6px;
-        left: 0;
-        right: 0;
-        height: 17px;
-        background-color: #ffbf08;
-        display: block;
-        transform: rotate(-1deg);
-        z-index: -1;
-      }
-    }
-  }
-
-  p {
-    margin-bottom: 25px;
-  }
-
-  .text-holder {
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.6875;
-
-    .time {
-      display: inline-block;
-      vertical-align: top;
-      font-size: 13px;
-      color: rgba(255, 255, 255, 0.7);
-      font-weight: 400;
-    }
-
-    p {
-      margin-bottom: 22px;
-    }
-  }
-
-  .subscribe-form {
-    max-width: 514px;
-    margin: 0 auto 19px;
-
-    input[type="submit"],
-    button[type="submit"] {
-      font-family: $roboto-font;
-      font-weight: 500;
-
-      @include media(">=desktop") {
-        font-size: 16px;
-      }
-    }
-  }
-
-  .info-list {
-    li {
-      color: rgba(255, 255, 255, 0.7);
-    }
-
-    img {
-      border: 1px solid $white;
-      width: 30px;
-      height: 30px;
-    }
-  }
-
-  &.ressources-page {
-    @include media(">=phone") {
-      padding-bottom: 50px;
-    }
-  }
-
-  &.ressources-detail-page {
-    padding: 20px;
-
-    @include media(">=tablet") {
-      padding: 34px 0 16px;
-    }
-
-    h3 {
-      color: $white;
-      font-size: 27px;
-    }
-
-    .icon-details {
-      width: 51px;
-      height: 51px;
-      font-size: 21px;
-      background-color: #00182a;
-      border-radius: 13px;
-    }
-  }
-
-  &.blog-article-page {
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    padding: 109px 0 31px;
-    margin-top: -80px;
-
-    @include media(">=phone") {
-      padding: 109px 0 31px;
-    }
-
-    .subheading {
-      margin-bottom: 7px;
-    }
-
-    h1 {
-      @include media(">=tablet") {
-        margin-bottom: 13px;
-      }
-    }
-
-    .label {
-      padding: 3px 9px;
-      margin-bottom: 15px;
-    }
-
-    .info-list {
-      li {
-        font-size: 16px;
-      }
-
-      img {
-        width: 33px;
-        height: 33px;
-      }
-    }
-  }
-}
 
 .functionality-section {
   text-align: center;
@@ -254,18 +56,6 @@
     }
   }
 
-  .relative-holder {
-    &:before {
-      content: "";
-      position: absolute;
-      top: 50px;
-      left: -28%;
-      width: 100%;
-      height: 100%;
-      background: url(/images/oval-1.svg) top right no-repeat;
-      z-index: -1;
-    }
-  }
 
   .row {
     text-align: left;
@@ -646,16 +436,6 @@
     padding-bottom: 100px;
   }
 
-  &:before {
-    content: "";
-    position: absolute;
-    top: 101px;
-    left: 0;
-    width: 60%;
-    height: 500px;
-    background: url(/images/oval-2.svg) top right no-repeat;
-    z-index: -1;
-  }
   h4 {
     color: #3e4e5a;
     margin-bottom: 31px;
@@ -785,21 +565,6 @@
     padding-bottom: 74px;
   }
 
-  &:before {
-    content: "";
-    position: absolute;
-    top: -296px;
-    left: -54%;
-    right: -41%;
-    height: 611px;
-    background: url(/images/pattern-2.svg) center/cover no-repeat;
-    z-index: -1;
-
-    @include media(">=1600px") {
-      left: -20%;
-      right: -20%;
-    }
-  }
 
   h1 {
     color: inherit;
