@@ -1,20 +1,24 @@
 {{ define "main" }} 
-  <article class="withtoc section">
-    <div class="columns">
-      <div class="column">
-          <affix
-            relative-element-selector="#example-content" 
-            :offset="{ top: 40, bottom: 40 }"
-            style="width: 300px">
-              <div class="toc js-toc"></div>
-          </affix>
-      </div>
-      <div id="example-content" class="column is-two-thirds js-toc-content">
-        <div class="title is-2">{{.Title}}</div>
-        <div class="content x">
-            {{- .Content -}}
+  <div class="section">
+    <div class="container">
+      <article class="withtoc section">
+        <div class="columns">
+          <div class="column">
+              <affix
+                relative-element-selector="#example-content" 
+                :offset="{ top: 40, bottom: 40 }"
+                style="width: 300px">
+                  <div class="toc js-toc"></div>
+              </affix>
+          </div>
+          <div id="example-content" class="column is-two-thirds js-toc-content">
+            <div class="title is-2">{{.Title}}</div>
+            <div class="content x">
+                {{- .Content -}}
+            </div>
+          </div>
         </div>
-      </div>
+      </article>
     </div>
-  </article>
+  </div>
 {{ end }}
