@@ -6,7 +6,7 @@
                 <a href="{{ "/resources" | absLangURL  }}">
                   <div class="title is-5 has-text-white has-text-weight-bold">{{ i18n "resources" }}</div>
                 </a>
-                {{ range where .Pages "Section" "resources" }}
+                {{ range where .Site.RegularPages "Section" "resources" }}
                 <div>
                     <a href="{{ .Permalink }}">
                       {{ .Title }}
