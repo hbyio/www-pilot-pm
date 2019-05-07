@@ -35,7 +35,7 @@ other = "documents"
 [itemsUnlimited]
 other = "unlimited documents"
 [lastNotes]
-other ="Retrouvez nos articles sur le blog"
+other ="Recent articles from the blog"
 [lastArticles]
 other ="Last posts"
 [login]
