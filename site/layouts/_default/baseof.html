@@ -9,7 +9,7 @@
 
     <meta name="referrer" content="no-referrer-when-downgrade" />
     
-    <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ .RelPermalink }}{{ end }}">
+    <base href="{{ .RelPermalink }}">
     
     {{ if .IsTranslated }}
     {{ range .Translations }}
