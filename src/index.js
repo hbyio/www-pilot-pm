@@ -4,7 +4,7 @@ import "./scss/main.scss";
 
 import { Affix } from "vue-affix";
 import Vue from "vue";
-import tocbot from "./vendors/tocbot";
+import tocbot from "tocbot";
 
 Vue.config.delimiters = ["[[", "]]"]
 
