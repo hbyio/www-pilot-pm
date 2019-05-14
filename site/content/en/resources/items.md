@@ -7,7 +7,7 @@ illustration: /images/img-overlay-1.png
 menu: docs
 short: A content is an editorial unit that can be understood out of context (article, tweet, ..).
 slug: items
-title: Contents
+title: Items
 weight: 2
 ---
 
