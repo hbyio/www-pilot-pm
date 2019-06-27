@@ -2,6 +2,9 @@
 languageCode = "en-us"
 languageLang = "en"
 title = "Pilot"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
@@ -19,8 +22,6 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
   description = "Organize all your content production in one place. All team access the last validated version of each document or file."
   copyright = "Copyright 2019"
 
-DefaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
 
 
 [languages]
