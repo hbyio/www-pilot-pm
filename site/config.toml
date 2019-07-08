@@ -1,6 +1,6 @@
 
-languageCode = "en-us"
-languageLang = "en"
+# languageCode = "en-us"
+# languageLang = "en"
 title = "Pilot"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
@@ -27,11 +27,11 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 [languages]
 [languages.en]
   LanguageName = "English"
-  languageCode = "en"
+  # languageCode = "en"
   weight = 1
   contentDir = "content/en"
 [languages.fr]
   LanguageName = "Français"
-  languageCode = "fr"
+  # languageCode = "fr"
   weight = 2
   contentDir = "content/fr"

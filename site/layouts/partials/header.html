@@ -1,7 +1,7 @@
 <nav id="js-navigation" class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="container">
     <div class="navbar-brand">
-      <a class="navbar-item" href="{{ "/" | absLangURL }}">
+      <a class="navbar-item" href="{{ .LanguagePrefix }}/">
         <div class="logo">{{ .Site.Title }}</div>
       </a>
       <a role="button" 
@@ -34,13 +34,13 @@
         {{ i18n "prices" }}
         </a>
         <a 
-          href="{{ "/resources" | absLangURL  }}"
+          href="{{ .LanguagePrefix }}/resources"
           class="navbar-item" 
         >
         {{ i18n "resources" }}
         </a>
         <a 
-          href="{{ "/blog" | absLangURL  }}"
+          href="{{ .LanguagePrefix }}/blog"
           class="navbar-item" 
         >
         {{ i18n "blog" }}
