@@ -22,14 +22,16 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
   description = "Organize all your content production in one place. All team access the last validated version of each document or file."
   copyright = "Copyright 2019"
 
+
+
 [languages]
 [languages.en]
   LanguageName = "English"
   # languageCode = "en"
   weight = 1
-#  contentDir = "content/en"
+  contentDir = "content/en"
 [languages.fr]
   LanguageName = "Français"
   # languageCode = "fr"
   weight = 2
- # contentDir = "content/fr"
+  contentDir = "content/fr"
