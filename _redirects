@@ -2,3 +2,4 @@
 
 # Redirect default Netlify subdomain to primary domain
 https://www-pilot-pm.netlify.com/* https://www.pilot.pm/:splat 301!
+https://www.pilot.pm/en/* https://www.pilot.pm/:splat 301!
