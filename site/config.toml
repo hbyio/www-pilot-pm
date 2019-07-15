@@ -2,6 +2,7 @@ languageCode = "en"
 defaultContentLanguage = "en"
 #defaultContentLanguageInSubdir = true
 title = "Pilot"
+baseURL = "https://pilot.pm"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
