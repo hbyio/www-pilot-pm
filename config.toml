@@ -1,0 +1,35 @@
+languageCode = "en"
+defaultContentLanguage = "en"
+#defaultContentLanguageInSubdir = true
+title = "Pilot.pm"
+baseURL = "https://pilot.pm"
+
+# RSS, categories and tags disabled for an easy start
+# See configuration options for more details: 
+# https://gohugo.io/getting-started/configuration/#toml-configuration
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+enableMissingTranslationPlaceholders = true
+
+[params]
+  appUrl = "https://app.pilot.pm"
+  appName = "Pilot"
+  appTwitter = "pilot_app"
+  appEmail = "hello@pilot.pm"
+  appSupportEmail = "support@pilot.pm"
+  copyright = "Copyright 2020"
+  image = "images/features/teamwork.png"
+
+[languages]
+  [languages.en]
+    LanguageName = "English"
+    description = "Organize your content marketing production in one place. Synchronize your team."
+    languageCode = "en"
+    weight = 1
+    contentDir = "content/en"
+  [languages.fr]
+    LanguageName = "Français"
+    description = "Organisez votre production de contenus marketing en un seul endroit. Synchronisez votre équipe."
+    languageCode = "fr"
+    weight = 2
+    contentDir = "content/fr"

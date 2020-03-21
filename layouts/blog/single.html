@@ -1,0 +1,18 @@
+{{ define "main" }} 
+  
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+  <!-- We've used 3xl here, but feel free to try other max-widths based on your needs -->
+  <div class="max-w-3xl mx-auto">
+    <a href="{{ "/blog" | relLangURL  }}" class="flex items-center text-blue-600 my-5 text-lg font-medium">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+      Blog
+    </a>
+    <div class="text-3xl mb-10 text-brand-900 font-black">{{.Title}}</div>
+    <div class="content">
+        {{- .Content -}}
+    </div>
+  </div>
+</div>
+  <!-- {{ partial "readMore" . }} -->
+{{ end }}

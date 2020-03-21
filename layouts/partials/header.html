@@ -1,0 +1,86 @@
+<header class="relative bg-white">
+  <div class="relative p-6">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
+      <nav class="relative flex items-center justify-between sm:h-10 md:justify-center">
+        <div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
+          <div class="flex items-center justify-between w-full md:w-auto">
+            <a href="{{ .Site.LanguagePrefix }}/" class="flex items-center text-black text-2xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-2xl sm:leading-none md:text-3xl" href="#">
+                <img class="h-5 mr-1 w-auto sm:h-6" src="/img/logo.png" alt="" />{{ .Site.Title }}
+            </a>
+            <div class="-mr-2 flex items-center md:hidden">
+              <button @click="menuopen = true" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-900 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hidden md:block capitalize">
+          <a href="{{ .Site.LanguagePrefix }}/#features-section" class="font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out">
+            {{ i18n "features" }}
+          </a>
+          <a href="{{ .Site.LanguagePrefix }}/#prices-section" class="ml-10 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out">
+            {{ i18n "prices" }}
+          </a>
+          <a href="{{ .Site.LanguagePrefix }}/resources" class="ml-10 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out">
+            {{ i18n "resources" }}
+          </a>
+          <a href="{{ .Site.LanguagePrefix }}/blog" class="ml-10 font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out">
+            {{ i18n "blog" }}
+          </a>
+        </div>
+        <div class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
+          <span class="inline-flex items-center justify-center h-6 w-6 rounded-full hover:bg-gray-50 mx-10">
+            {{ range .Translations }}
+            <a href="{{ .Permalink }}">
+              <span class="text-xs font-medium leading-none text-white"><img src="/icons/{{.Site.Language.Lang}}.png" alt=""></span>
+            </a>
+            {{ end}}
+          </span>
+
+          <span class="inline-flex rounded-md shadow">
+            <a href="{{ .Site.Params.AppUrl }}/login?lang={{.Site.Language.Lang}}" class="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded text-black bg-white hover:text-indigo-500 focus:outline-none focus:shadow-outline-blue active:bg-gray-50 active:text-indigo-700 transition duration-150 ease-in-out">
+              {{ i18n "login" }}
+            </a>
+          </span>
+        </div>
+      </nav>
+    </div>
+
+    <div x-show="menuopen" style="display: none;" class="absolute top-0 z-40 inset-x-0 p-2 md:hidden">
+      <div class="rounded-lg shadow-md transition transform origin-top-right" x-show="menuopen" x-transition:enter="duration-150 ease-out" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="duration-100 ease-in" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95">
+        <div class="rounded-lg bg-white shadow-xs overflow-hidden">
+          <div class="px-5 pt-4 flex items-center justify-between">
+            <div>
+              <img class="h-8 w-auto" src="/img/logo.png" alt="" />
+            </div>
+            <div class="-mr-2">
+              <button @click="menuopen = false" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="px-2 pt-2 pb-3">
+            <a href="{{ .Site.LanguagePrefix }}/#features-section" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">{{ i18n "features" }}</a>
+            <a href="{{ .Site.LanguagePrefix }}/#prices-section" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">{{ i18n "prices" }}</a>
+            <a href="{{ .Site.LanguagePrefix }}/resources" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">{{ i18n "resources" }}</a>
+            <a href="{{ .Site.LanguagePrefix }}/blog" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">{{ i18n "blog" }}</a>
+          </div>
+          <div>
+            {{ range .Translations }}
+            <a href="{{ .RelPermalink }}" class="block w-full px-5 py-3 text-center hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">
+              <img src="/icons/{{.Site.Language.Lang}}.png" alt="">
+            </a>
+            {{ end}}
+            <a href="{{ .Site.Params.AppUrl }}/login?lang={{.Site.Language.Lang}}" class="block w-full px-5 py-3 text-center font-medium text-gray-600 bg-gray-50 hover:bg-gray-100 hover:text-gray-700 focus:outline-none focus:bg-gray-100 focus:text-gray-700 transition duration-150 ease-in-out">
+              {{ i18n "login" }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

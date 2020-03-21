@@ -1,0 +1,237 @@
+{
+  "annotations": {
+    "other": "Annotations"
+  },
+  "annotationsShort": {
+    "other": "Annotate your documents accurately and start conversations without wasting time. Team members will be notified with a link leading them directly to the document and the annotation."
+  },
+  "blog": {
+    "other": "Blog"
+  },
+  "calendar": {
+    "other": "calendar"
+  },
+  "calendars": {
+    "other": "Calendars"
+  },
+  "calendarsShort": {
+    "other": "Easily create editorial or task schedules, save, share custom calendars with your customers. Change your publishing schedule simply by drag&drop"
+  },
+  "catchphrase": {
+    "other": "Structure your processes, save time, free your team from non-value added tasks"
+  },
+  "close": {
+    "other": "close"
+  },
+  "collabEditing": {
+    "other": "editing + collaborating"
+  },
+  "collabEditingExplained": {
+    "other": "Create documents with several people, have them validated with one click"
+  },
+  "collaboration": {
+    "other": "Exchanges in context"
+  },
+  "collaborationText": {
+    "other": "Discuss as a team directly in the context of a document or project, don't lose important decisions"
+  },
+  "contactUs": {
+    "other": "Contact Us"
+  },
+  "contactUsForDemo": {
+    "other": "Contact us for a demo"
+  },
+  "contactUsForWhatever": {
+    "other": "To plan a demo, discuss your project or your spontaneous application ... write to us, we always answer."
+  },
+  "featBudget": {
+    "other": "Optimize your budgets"
+  },
+  "featBudgetExplained": {
+    "other": "Do you manage recurring campaigns? Don't re-produce (and re-pay) the same content every year. Click \"duplicate\", adapt, done."
+  },
+  "featShareAssets": {
+    "other": "Share your files"
+  },
+  "featShareAssetsExplained": {
+    "other": "Write down in one place all the important elements like the brief, attach press kits or high definition videos, all of which can be used by the people in charge of the production."
+  },
+  "features": {
+    "other": "features"
+  },
+  "freeLicences": {
+    "other": "Free licenses with no time limit."
+  },
+  "freeLicencesExplained": {
+    "other": "Are you a developer or a non-profit organisation, would you like to get a free account? We offer licenses for certain uses"
+  },
+  "fullOptions": {
+    "other": "allOptions"
+  },
+  "futureFeatures": {
+    "other": "All new features"
+  },
+  "heroTitle1": {
+    "other": "Structure your"
+  },
+  "heroTitle2": {
+    "other": "content production"
+  },
+  "items": {
+    "one": "content",
+    "other": "contents"
+  },
+  "joinCommunity": {
+    "other": "Join a community of professionals"
+  },
+  "joinCommunityExplained": {
+    "other": "An application can't do everything and will never replace the exchange of experience and best practice"
+  },
+  "login": {
+    "other": "login"
+  },
+  "month": {
+    "other": "month"
+  },
+  "noConflict": {
+    "other": "Zero version conflicts"
+  },
+  "noConflictExplained": {
+    "other": "Collaborate with others, at the same time, on the same document. No more version conflicts, no more stepping on each other's toes."
+  },
+  "noMissingDueDate": {
+    "other": "Don't miss a publication date again."
+  },
+  "noMissingDueDateExplained": {
+    "other": "Set reminders, like in Google Calendar, for the most important tasks related to your content (publish, validate, send to printer, set to Buffer)"
+  },
+  "oneLastVersion": {
+    "other": "You don't have to look for the latest version, it's right here."
+  },
+  "oneLastVersionExplained": {
+    "other": "Minor versions, major versions, all are stored from the first modification to the most recent. Browse the full history of a document, analyze the changes."
+  },
+  "organiseTasksText": {
+    "other": "Share your documents or projects in one click, your contacts can validate directly from their mobile phones"
+  },
+  "organizeTasks": {
+    "other": "Get your documents approved with one click"
+  },
+  "prices": {
+    "other": "prices"
+  },
+  "pricesEnterpriseExplained": {
+    "other": "For a large group"
+  },
+  "pricesMediumExplained": {
+    "other": "For an agency"
+  },
+  "pricesSmallExplained": {
+    "other": "For a freelancer"
+  },
+  "prioritySupport": {
+    "other": "Priority access to support"
+  },
+  "privacy": {
+    "other": "Personal data"
+  },
+  "project": {
+    "one": "project",
+    "other": "projects"
+  },
+  "projectBrief": {
+    "other": "Marketing campaign, website redesign, internal magazine, whatever the project is, you can centralize all the information needed by the team that will carry it out and deploy it"
+  },
+  "projectLifeCycle": {
+    "other": "Shorter project times"
+  },
+  "projectLifeCycleText": {
+    "other": "Centralizing and making available the information needed to carry out a marketing campaign allows to shorten its development time"
+  },
+  "resources": {
+    "other": "resources"
+  },
+  "shareFiles": {
+    "other": "Share your files with no file size limit"
+  },
+  "shareFilesText": {
+    "other": "No size limit - make large files available for your webmasters, designers, video editors"
+  },
+  "signup": {
+    "other": "free trial"
+  },
+  "sla": {
+    "other": "Service Commitment"
+  },
+  "someMadesomeRequested": {
+    "other": "Constantly evolving, depending on your uses"
+  },
+  "sourceOfTruth": {
+    "other": "One source of truth, one team in sync."
+  },
+  "startTrial": {
+    "other": "start my trial"
+  },
+  "storage": {
+    "other": "storage files"
+  },
+  "subscribe": {
+    "other": "Subscribe"
+  },
+  "subscribeNewsletter": {
+    "other": "Subscribe to our newsletter"
+  },
+  "subscribeNewsletterExplained": {
+    "other": "Some important announcements from time to time. You can easily unsubscribe with one click."
+  },
+  "tasks": {
+    "one": "task",
+    "other": "tasks"
+  },
+  "tasksCalendar": {
+    "other": "A global view of the activity."
+  },
+  "tasksCalendarExplained": {
+    "other": "At a glance, identify bottlenecks that will penalize the team or when a specific target is overburdened on multiple channels."
+  },
+  "tasksExplained": {
+    "other": "Assign tasks to your content or projects, for yourself or other team members."
+  },
+  "templates": {
+    "other": "Build your content templates "
+  },
+  "templatesExplained": {
+    "other": "Frame your contributors' production with forms specially adapted to your constraints (cms, mobile application): character limits, email, repeatable fields ... You can even create forms with versionable and annotable PDFs (useful for magazine validation)"
+  },
+  "terms": {
+    "other": "Terms and Conditions"
+  },
+  "translationsManagement": {
+    "other": "Language management & translations"
+  },
+  "transparentPricing": {
+    "other": "Clear prices, no surprises"
+  },
+  "trialConditions": {
+    "other": "30 days free - no credit card required."
+  },
+  "unlimitedArchives": {
+    "other": "unlimitedArchiving"
+  },
+  "unlimitedItems": {
+    "other": "unlimited content"
+  },
+  "unlimitedProjects": {
+    "other": "unlimitedProjects"
+  },
+  "unlimitedUsers": {
+    "other": "unlimitedUsers"
+  },
+  "user": {
+    "one": "user",
+    "other": "users"
+  },
+  "whoWhatWhen": {
+    "other": "You know what is done, by whom and when."
+  }
+}
