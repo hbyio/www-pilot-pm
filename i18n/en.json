@@ -66,10 +66,10 @@
     "other": "Are you a developer or a non-profit organisation, would you like to get a free account? We offer licenses for certain uses"
   },
   "fullOptions": {
-    "other": "allOptions"
+    "other": "All options available"
   },
   "futureFeatures": {
-    "other": "All new features"
+    "other": "All upcoming features"
   },
   "heroTitle1": {
     "other": "Structure your"
@@ -114,8 +114,8 @@
   "organiseTasksText": {
     "other": "Share your documents or projects in one click, your contacts can validate directly from their mobile phones"
   },
-  "organizeTasks": {
-    "other": "Get your documents approved with one click"
+  "organiseTasks": {
+    "other": "Get your documents approved in one click"
   },
   "prices": {
     "other": "prices"
@@ -164,7 +164,7 @@
     "other": "Service Commitment"
   },
   "someMadesomeRequested": {
-    "other": "Constantly evolving, depending on your uses"
+    "other": "Constantly evolving, depending on users feedbacks"
   },
   "sourceOfTruth": {
     "other": "One source of truth, one team in sync."
@@ -216,16 +216,16 @@
     "other": "30 days free - no credit card required."
   },
   "unlimitedArchives": {
-    "other": "unlimitedArchiving"
+    "other": "Unlimited document versions and archives"
   },
   "unlimitedItems": {
     "other": "unlimited content"
   },
   "unlimitedProjects": {
-    "other": "unlimitedProjects"
+    "other": "unlimited Projects"
   },
   "unlimitedUsers": {
-    "other": "unlimitedUsers"
+    "other": "unlimited Users"
   },
   "user": {
     "one": "user",
