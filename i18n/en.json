@@ -24,7 +24,7 @@
     "other": "close"
   },
   "collabEditing": {
-    "other": "editing + collaborating"
+    "other": "Collaborative editing"
   },
   "collabEditingExplained": {
     "other": "Create documents with several people, have them validated with one click"
@@ -121,13 +121,13 @@
     "other": "prices"
   },
   "pricesEnterpriseExplained": {
-    "other": "For a large group"
+    "other": "Corporate"
   },
   "pricesMediumExplained": {
-    "other": "For an agency"
+    "other": "Agency"
   },
   "pricesSmallExplained": {
-    "other": "For a freelancer"
+    "other": "Freelance"
   },
   "prioritySupport": {
     "other": "Priority access to support"
@@ -158,7 +158,7 @@
     "other": "No size limit - make large files available for your webmasters, designers, video editors"
   },
   "signup": {
-    "other": "free trial"
+    "other": "Free trial"
   },
   "sla": {
     "other": "Service Commitment"

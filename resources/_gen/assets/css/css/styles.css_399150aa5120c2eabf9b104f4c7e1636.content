@@ -886,10 +886,6 @@ img.grayscale {
   -webkit-filter: grayscale(100%);
 }
 
-a:hover {
-  color: #B39DDB;
-}
-
 #main a {
   color: #3f83f8;
   text-decoration: underline;

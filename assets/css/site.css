@@ -23,9 +23,7 @@ img.grayscale {
   -webkit-filter: grayscale(100%);
 }
 
-a:hover {
-  @apply text-brand-200;
-}
+
 #main a {
     @apply text-blue-500;
     @apply underline;
