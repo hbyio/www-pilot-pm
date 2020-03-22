@@ -96,7 +96,6 @@
   {{ if not .Site.IsServer }}
     <!-- OR WITH ENV VAR if eq (getenv "HUGO_ENV") "production"  -->
     <!--ONLY PRODUCTION-->
-    {{ partial "intercom.html" . }}
     {{ partial "analytics.html" . }}
   {{ end }}
 
