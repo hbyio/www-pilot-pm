@@ -1,6 +1,5 @@
 ---
 author: Matthieu
-authorAvatar: /images/avatars/matthieu.png
 date: 2018-09-07
 draft: false
 illustration: /img/blog/daria-nepriakhina-474036-unsplash.jpg
@@ -8,7 +7,7 @@ short: A good content workflow is based on the people who compose it and not on 
 slug: content-workflow
 tag: best practice
 tagColor: purple
-title: Content Workflow, How to implement it? (and trust stakeholders)
+title: Content Workflow, How to implement it? 
 featured: false
 sitemapShow: false
 sitemapChangeFreq: 'daily'

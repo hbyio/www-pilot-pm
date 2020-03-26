@@ -1,6 +1,5 @@
 ---
 author: Matthieu
-authorAvatar: /images/avatars/matthieu.png
 date: 2018-09-07
 draft: false
 illustration: /img/blog/daria-nepriakhina-474036-unsplash.jpg
@@ -8,7 +7,7 @@ short: Un bon workflow de contenus s'appuie sur les personnes qui le composent e
 slug: content-workflow
 tag: retour d'expérience
 tagColor: purple
-title: Content Workflow, Comment le mettre en place ? (et faire confiance aux parties prenantes)
+title: Content Workflow, Comment le mettre en place ? 
 featured: false
 ---
 

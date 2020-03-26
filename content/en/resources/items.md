@@ -5,6 +5,7 @@ draft: false
 iconComponent: IconItems
 illustration: /images/img-overlay-1.png
 menu: docs
+icon: file-text
 short: A content is an editorial unit that can be understood out of context (article, tweet, ..).
 slug: items
 title: Items

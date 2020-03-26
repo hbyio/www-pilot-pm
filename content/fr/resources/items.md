@@ -5,6 +5,7 @@ draft: false
 iconComponent: IconItems
 illustration: /images/img-overlay-1.png
 menu: docs
+icon: file-text
 short: Un contenu est le plus simple élément géré par Pilot. C’est une unité éditoriale compréhensible hors contexte.
 slug: items
 title: Contenus

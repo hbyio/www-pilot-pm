@@ -5,6 +5,7 @@ draft: false
 iconComponent: IconProjects
 illustration: /images/img-overlay-2.png
 menu: docs
+icon: folder
 short: Vous pouvez rassembler vos contenus dans des projets pour organiser le travail de l’équipe
 slug: projects
 title: Projets

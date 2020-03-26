@@ -10,6 +10,7 @@ baseURL = "https://pilot.pm"
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 enableMissingTranslationPlaceholders = true
+summaryLength = 30
 
 [params]
   appUrl = "https://app.pilot.pm"

@@ -1,6 +1,5 @@
 ---
 author: Matthieu
-authorAvatar: /images/avatars/matthieu.png
 date: 2018-05-25
 draft: false
 illustration: /img/blog/rotative.jpeg

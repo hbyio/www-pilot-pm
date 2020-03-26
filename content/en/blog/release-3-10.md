@@ -1,13 +1,13 @@
 ---
-author: Matthieu
-authorAvatar: /images/avatars/matthieu.png
+author: Thomas
 date: 2019-02-27
 draft: false
 illustration: /img/blog/arrival.jpeg
 short: Release version 3.10
 slug: release-3-10
-tag: New version
-tagColor: green
+tag: New release 📦 
+icon: package
+emoji: 📦
 title: "Version 3.10 : Twitter thread, PDF and Ms Office document reader,  team management ..  🚚 📦 "
 featured: true
 ---

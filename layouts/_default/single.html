@@ -1,11 +1,16 @@
-{{ define "main" }} 
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+{{ define "main" }}
+<div class="px-4 sm:px-6 max-w-3xl">
+
   <!-- We've used 3xl here, but feel free to try other max-widths based on your needs -->
-  <div class="max-w-3xl mx-auto">
-    <div class="text-3xl mb-10 text-brand-900 font-black">{{.Title}}</div>
-      <div class="content">
-          {{- .Content -}}
-      </div>
+  <div class="text-3xl mb-3 text-gray-900 font-black flex-col sm:flex items-start">
+    <a href="{{ .Site.LanguagePrefix }}/{{ path.Dir .Path }}"
+      class="flex mr-3 stroke-current text-brand-900 rounded-full p-2 bg-brand-50">
+      {{ partial "svg/arrow-left.svg" . }}
+    </a>
+    {{.Title}}
+  </div>
+  <div class="content">
+    {{- .Content -}}
   </div>
 </div>
 {{ end }}

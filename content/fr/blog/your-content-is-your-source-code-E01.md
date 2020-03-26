@@ -1,6 +1,5 @@
 ---
 author: Matthieu
-authorAvatar: /images/avatars/matthieu.png
 date: 2018-07-15
 draft: false
 illustration: /img/blog/mancoding.png
