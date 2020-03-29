@@ -4,13 +4,12 @@
   <div class="text-center">
     <h2
       class="mainTitle text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
-      {{ i18n "heroTitle1" | safeHTML  }}
-      <br class="xl:hidden" />
-      <strong class="xl:ml-1">{{ i18n "heroTitle2" | safeHTML  }}</strong>
+      {{ i18n "heroTitle" | safeHTML  }}
     </h2>
-    <p class="mt-3 max-w-md mx-auto text-base text-black sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-      {{ .Site.Params.description | safeHTML }}
-    </p>
+    <h3
+      class="text-center mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+      {{ i18n "sourceOfTruth" }}
+    </h3>
     <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
       <div>
         <a href="{{ .Site.Params.AppUrl }}/registration?lang={{.Site.Language.Lang}}"
@@ -34,10 +33,7 @@
 
       <div class="w-full flex items-center justify-center"><img src="/images/features/teamwork.png"
           alt="image description"></div>
-      <h3
-        class="text-center mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-        {{ i18n "sourceOfTruth" }}
-      </h3>
+
 
     </div>
     <div class="mt-10 flex justify-center">

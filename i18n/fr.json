@@ -74,11 +74,8 @@
   "futureFeatures": {
     "other": "Toutes nouvelles fonctionnalités"
   },
-  "heroTitle1": {
-    "other": "Structurez votre"
-  },
-  "heroTitle2": {
-    "other": "production de contenus"
+  "heroTitle": {
+    "other": "Organisez votre marketing de contenu"
   },
   "items": {
     "one": "contenu",

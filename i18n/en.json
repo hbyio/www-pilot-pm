@@ -74,11 +74,8 @@
   "futureFeatures": {
     "other": "All upcoming features"
   },
-  "heroTitle1": {
-    "other": "Structure your"
-  },
-  "heroTitle2": {
-    "other": "content production"
+  "heroTitle": {
+    "other": "Organize your content marketing"
   },
   "items": {
     "one": "content",
