@@ -2,15 +2,14 @@
 <html class="has-navbar-fixed-top" lang="{{ $.Site.Language.Lang }}">
 
 <head>
+    <title>{{.Title}}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <meta name="referrer" content="no-referrer-when-downgrade" />
-
-    <base href="{{ .RelPermalink }}">
-
+    <link rel="canonical" href="{{ .Permalink }}">
     {{ if .IsTranslated }}
     {{ range .Translations }}
     <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
