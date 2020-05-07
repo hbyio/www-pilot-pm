@@ -18,7 +18,9 @@
     <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
 
     <!-- Primary Meta Tags -->
+    {{ if .Site.Params.DescriptionShort }}
     <meta name="title" content="{{ .Site.Params.DescriptionShort }}">
+    {{ end }}
     <meta name="description" content="{{ .Site.Params.Description }}">
 
     <!-- Open Graph / Facebook -->
