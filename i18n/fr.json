@@ -167,13 +167,25 @@
     "other": "En constante évolution, en fonction de vos usages"
   },
   "sourceOfTruth": {
-    "other": "Une seule source de vérité, une équipe synchronisée."
+    "other": "Pilot rend le pouvoir aux équipes de production de contenu, de la création à la mise en ligne"
+  },
+  "manysectorsOnegoal": {
+    "other": "Ils nous font confiance"
   },
   "startTrial": {
     "other": "Démarrer mon essai"
   },
   "storage": {
     "other": "stockage fichiers"
+  },
+  "strategic": {
+    "other": "Les contenus sont plus que jamais stratégiques."
+  },
+  "strategicExplain": {
+    "other": "Pilot est conçu pour répondre aux enjeux partagés par les équipes marketing : ne plus perdre de temps inutilement et se concentrer sur l’essentiel"
+  },
+  "strategicValue": {
+    "other": "Des versions à valider qui se perdent ? Des comités éditoriaux à répétition ? Ca vous semble familier ?  Voici comment Pilot va optimiser votre stratégie de contenus"
   },
   "subscribe": {
     "other": "S'inscrire"

@@ -167,13 +167,25 @@
     "other": "Constantly evolving, depending on users feedbacks"
   },
   "sourceOfTruth": {
-    "other": "One source of truth, one team in sync."
+    "other": "Pilot empowers content production teams from creation to online delivery"
+  },
+  "manysectorsOnegoal": {
+    "other": "Some of our customers"
   },
   "startTrial": {
     "other": "start my trial"
   },
   "storage": {
     "other": "storage files"
+  },
+  "strategic": {
+    "other": "Content is more strategic than ever."
+  },
+  "strategicExplain": {
+    "other": "Pilot is designed to meet the challenges shared by marketing teams: to stop wasting time and focus on what's important."
+  },
+  "strategicValue": {
+    "other": "Lost versions to validate? Repeated editorial meetings? Sounds familiar?  Here's how Pilot will optimize your content strategy."
   },
   "subscribe": {
     "other": "Subscribe"
