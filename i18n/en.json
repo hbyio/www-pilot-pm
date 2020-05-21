@@ -105,6 +105,9 @@
   "noMissingDueDateExplained": {
     "other": "Set reminders, like in Google Calendar, for the most important tasks related to your content (publish, validate, send to printer, set to Buffer)"
   },
+  "noSignup": {
+    "other": "No signup required"
+  },
   "oneLastVersion": {
     "other": "You don't have to look for the latest version, it's right here."
   },

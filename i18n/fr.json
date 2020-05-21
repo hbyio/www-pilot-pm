@@ -105,6 +105,9 @@
   "noMissingDueDateExplained": {
     "other": "Programmez vous des rappels, comme sur Google Calendar, pour les tâches les plus importantes liées à vos contenus (publier, valider, envoyer à l'imprimeur, programmer sur Buffer)"
   },
+  "noSignup": {
+    "other": "Sans login"
+  },
   "oneLastVersion": {
     "other": "Plus besoin de chercher la dernière version, elle est là"
   },
