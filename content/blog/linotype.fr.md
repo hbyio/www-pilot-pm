@@ -10,8 +10,6 @@ tag: before
 title: Linotype
 ---
 
-![metaltype.png](/img/blog/metaltype.png "metaltype.png")
-
 Nous ne savons pas pourquoi mais ce genre de documentaire nous fascine. On y voit la production du New York Times basculer d'un processus mécanique ([machines Linotype](https://fr.wikipedia.org/wiki/Linotype)) vers un processus numérique. 
 
 Chaque jour ( ! ) des centaines de personnes étaient capables de façonner à la main les plaques qui serviraient aux presses pour imprimer le journal du lendemain. La relecture, les derniers ajustements se faisaient directement sur lesdites plaques. 

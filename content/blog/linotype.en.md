@@ -10,8 +10,6 @@ tag: before
 title: Linotype
 ---
 
-![metaltype.png](/img/blog/metaltype.png "metaltype.png")
-
 We don't know why, but this kind of documentary fascinates us. It shows the New York Times production switching from a mechanical process ([Linotype machines](https://fr.wikipedia.org/wiki/Linotype)) to a digital process. 
 
 Every day (!) hundreds of people were able to hand-form the plates that would be used by the presses to print the next day's newspaper. The last adjustments were made directly on the plates. 
