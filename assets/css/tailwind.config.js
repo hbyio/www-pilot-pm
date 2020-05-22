@@ -1,6 +1,10 @@
+const defaultTheme = require('../../node_modules/tailwindcss/defaultTheme')
 module.exports = {
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+      },
       colors: {
         brand: {
           "50": "#EDE7F6",
