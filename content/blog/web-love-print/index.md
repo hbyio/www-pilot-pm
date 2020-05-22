@@ -3,26 +3,25 @@ author: Matthieu
 authorAvatar: /images/avatars/matthieu.png
 date: 2018-05-25
 draft: false
-illustration: /img/blog/rotative.jpeg
+illustration: ./illustration.png
 short: Jen Simmons demonstrates that the web has a lot to learn from print
 slug: web-love-print
 tag: cool people
 title: Web ❤ Print
+subtitle: The CSS module "Grid layout" will allow, finally, to compose pages on a screen as we used to do for printing. Better late ...
 ---
 
-I strongly advise you to take a look at one of the latest[videos](https://www.youtube.com/watch?v=E005mjqpZ9Y) from[Jen Simmons](http://jensimmons.com/) on Youtube. She speaks about web of course, but especially about printing techniques and we begin to see real "bridges" between graphic disciplines.
+<iframe width="100%" height="430" class="my-10 mx-auto" src="https://www.youtube.com/embed/E005mjqpZ9Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Anyone working in communication, digital, publishing or content production in general has one day suffered, participated or ardently and maliciously poisoned a debate of this kind where the "print people" opposed the "web people" on the real or supposed merits of their preferred medium.
+For someone who has always worked on a computer, organizing textpads for screens, it is always fascinating to discover, through this video by [Jen Simmons](http://jensimmons.com/), the history of typesetting in printing, the techniques, methods and tools used at the time. 
 
-Most of the conflict was often rooted in the techniques, the history, the almost infinite layout capabilities of the print in the face of the "poverty" of HTML, which put everything in "boxes". 
-
-The people of the Web clumsily defended themselves by dressing in the costume of the Moderns, arguing of their gift of ubiquity and instantaneity, called the people of the Print of "old world" and the debate generally closed on this exit by the bottom.
+We quickly see the legacy of the printing press that has spread throughout our code and how the story continues for the digital world, especially with the recent CSS "Grid" module that finally seems to allow us to reach the degree of flexibility that the printing press enjoyed.
 
 ## CSS "Grid"
 
-The subject of his intervention concerns a still "green" CSS functionality, namely the "CSS Grid". In short, the ability for a developer to build, on screen, a layout much more freely, almost close to that of print.
+![timeline.jpg](timeline.jpg)
 
-From her lab ([http://labs.jensimmons.com/2017/03-004.html](http://labs.jensimmons.com/2017/03-004.html)) some examples actually show advanced possibilities, which can even be combined with *responsive*.
+From her lab ([http://labs.jensimmons.com/2017/03-004.html](http://labs.jensimmons.com/2017/03-004.html)) some examples actually show advanced possibilities, which can even be combined with *responsive* techniques.
 
 ![webloveprint3.png](https://pilotapp-production-master.s3.amazonaws.com/assets/1/17371/1_17371_cover.jpg?v=1)
 

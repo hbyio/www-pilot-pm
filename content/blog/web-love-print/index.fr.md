@@ -2,26 +2,25 @@
 author: Matthieu
 date: 2018-05-25
 draft: false
-illustration: /img/blog/rotative.jpeg
+illustration: ./illustration.png
 short: Jen Simmons démontre que le web a beaucoup à apprendre du print
 slug: web-love-print
-tag: cool people
+tag: Produire pour le web
 title: Web ❤ Print
+subtitle: Le module CSS "Grid layout" va permettre, enfin, de composer des pages sur un écran comme on le faisait pour l'imprimerie. Mieux vaut tard ..
 ---
 
-Je vous conseille vivement de jeter un oeil à une des dernières [vidéos](https://www.youtube.com/watch?v=E005mjqpZ9Y) de [Jen Simmons](http://jensimmons.com/) sur Youtube. Elle y parle de web bien sûr, mais surtout de techniques d’imprimerie et on commence à apercevoir de véritables “ponts” entre les disciplines graphiques.
+<iframe width="100%" height="430" class="my-10 mx-auto" src="https://www.youtube.com/embed/E005mjqpZ9Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-N’importe qui travaillant dans la communication, le numérique, l’édition où la production de contenus en général a un jour subit, participé ou ardemment et malicieusement envenimé un débat de ce genre où les “gens du print” s’opposaient aux “gens du web” sur les mérites réels ou supposés de leur support de prédilection.
+Pour quelqu'un ayant toujours travaillé sur un ordinateur, à organiser des pavés de texte pour des écrans c'est toujours fascinant de découvrir, au travers de cette vidéo de [Jen Simmons](http://jensimmons.com/), l'histoire de la composition de pages d'imprimeries, des techniques, méthodes et outils alors utilisés. 
 
-L’essentiel du conflit était souvent ancré sur les techniques, l’histoire, les capacités de mise en page quasi infinies du print face à la “pauvreté” de l’HTML qui rangeait tout dans des “boîtes”. 
-
-Les gens du web se défendaient maladroitement en s’habillant du costume des Modernes, en arguant de leur don d’ubiquité et d’instantanéité, traitaient les gens du Print de “vieux monde” et le débat se clôturait généralement sur cette sortie par le bas.
+On voit rapidement l'héritage de l'imprimerie qui s'est diffusé dans notre code et comment l'histoire se poursuit pour le numérique, notamment avec le récent module CSS "Grid" qui semble enfin nous permettre d'atteindre le degré de souplesse dont bénéficiait l'imprimerie (40 ans après le premier ordinateur en gros).
 
 ## CSS “Grid”
 
-Le sujet de son intervention concerne une fonctionnalité, encore “verte” des CSS, à savoir le “CSS Grid”. En bref la capacité pour un développeur de pouvoir bâtir, à l’écran, une mise en page beaucoup plus librement, quasiment proche de celle du print.
+![timeline.jpg](timeline.jpg)
 
-Issus de son labo ([http://labs.jensimmons.com/2017/03-004.html](http://labs.jensimmons.com/2017/03-004.html)) quelques exemples montrent effectivement des possibilité avancées, que l’on peut même marier avec du *responsive*
+Issus de son labo ([http://labs.jensimmons.com/2017/03-004.html](http://labs.jensimmons.com/2017/03-004.html)) quelques exemples montrent effectivement des possibilité avancées, que l’on peut même marier avec des techniques de *responsive design*
 
 ![webloveprint3.png](https://pilotapp-production-master.s3.amazonaws.com/assets/1/17371/1_17371_cover.jpg?v=1)
 
@@ -55,5 +54,3 @@ On va y ajouter la fin du débat stérile print vs. web et surtout le fait de po
 >
 > Ses expériences : [http://labs.jensimmons.com/](http://labs.jensimmons.com/)
 
-
-Photo : <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@henkmul?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Henk Mul"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Henk Mul</span></a>

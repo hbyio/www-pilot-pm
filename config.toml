@@ -12,6 +12,25 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 enableMissingTranslationPlaceholders = true
 summaryLength = 30
 
+[markup]
+[markup.goldmark]
+  [markup.goldmark.extensions]
+    definitionList = true
+    footnote = true
+    linkify = true
+    strikethrough = true
+    table = true
+    taskList = true
+    typographer = true
+  [markup.goldmark.parser]
+    attribute = true
+    autoHeadingID = true
+    autoHeadingIDType = "github"
+  [markup.goldmark.renderer]
+    hardWraps = true
+    unsafe = true
+    xhtml = false
+
 [params]
   appUrl = "https://app.pilot.pm"
   appName = "Pilot"

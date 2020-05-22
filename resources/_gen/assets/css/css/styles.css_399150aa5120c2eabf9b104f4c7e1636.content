@@ -908,13 +908,13 @@ img.grayscale {
 }
 
 .content {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   color: #161e2e;
   line-height: 1.5;
   overflow-wrap: break-word;
 }
 
-.content > * + * {
+.content > * + *, iframe {
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -943,7 +943,7 @@ img.grayscale {
 .content h1 {
   line-height: 1.25;
   font-size: 2.25rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
   padding-bottom: 0.5rem;
@@ -951,8 +951,8 @@ img.grayscale {
 
 .content h2 {
   line-height: 1.25;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.875rem;
+  font-weight: 700;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
   padding-bottom: 0.5rem;
@@ -960,7 +960,7 @@ img.grayscale {
 
 .content h3 {
   line-height: 1.375;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 1rem;
   margin-top: 1.5rem;

@@ -43,12 +43,13 @@ img.grayscale {
 }
 
 .content {
-  @apply text-lg text-gray-900 leading-normal break-words;
+  @apply text-xl text-gray-900 leading-normal break-words;
 }
 
-.content > * + * {
+.content > * + *, iframe {
   @apply mt-0 mb-4;
 }
+
 
 .content li + li {
   @apply mt-1;
@@ -71,15 +72,15 @@ img.grayscale {
 }
 
 .content h1 {
-  @apply leading-tight text-4xl font-semibold mb-4 mt-6 pb-2;
+  @apply leading-tight text-4xl font-bold mb-4 mt-6 pb-2;
 }
 
 .content h2 {
-  @apply leading-tight text-2xl font-semibold mb-4 mt-6 pb-2;
+  @apply leading-tight text-3xl font-bold mb-4 mt-6 pb-2;
 }
 
 .content h3 {
-  @apply leading-snug text-lg font-semibold mb-4 mt-6;
+  @apply leading-snug text-xl font-semibold mb-4 mt-6;
 }
 
 .content h4 {

@@ -1,7 +1,7 @@
 {{ define "main" }}
-<div class="max-w-6xl mx-auto">
+<div class="max-w-6xl mb-20 mx-auto">
   <div class="flex flex-col py-5 md:flex-row relative max-w-screen mx-auto">
-    <div id="NoteHeader" class="flex-1 mx-auto flex-col max-w-3xl">
+    <div id="NoteHeader" class="flex-1 mx-auto  max-w-3xl">
       {{ if eq .Section "blog" }}
       <a href="{{ .Site.LanguagePrefix }}/blog" class="flex stroke-current text-gray-900 underline mb-10">
         Back to blog
@@ -26,14 +26,14 @@
     </div>
     {{ end }}
   </div>
-  <div class="relative max-w-3xl bg-white mx-auto z-30  rounded ">
+  <div class="relative max-w-3xl bg-white mx-auto z-30 my-10">
     <div class="content">
       {{- .Content -}}
     </div>
   </div>
 
 </div>
-<div class="bg-gray-100 text-brand-900">
+<div class="bg-gray-100 text-brand-900 mt-10">
   {{ partial "callToAction.html" . }}
 </div>
 {{ end }}
