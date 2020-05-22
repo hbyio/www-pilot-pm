@@ -8,7 +8,8 @@ slug: linotype
 tag: before
 title: Linotype
 ---
-<iframe src="https://player.vimeo.com/video/127605643?byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<iframe src="https://player.vimeo.com/video/127605643?byline=0&portrait=0" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/127605643">Farewell - ETAOIN SHRDLU - 1978</a> from <a href="https://vimeo.com/user4747369">Linotype: The Film</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 
