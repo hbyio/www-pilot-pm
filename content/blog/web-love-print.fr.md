@@ -9,8 +9,6 @@ tag: cool people
 title: Web ❤ Print
 ---
 
-![Capture d’écran 2018-06-07 à 11.34.04.png](https://pilotapp-production-master.s3.amazonaws.com/assets/1/17376/1_17376_cover.jpg?v=1)
-
 Je vous conseille vivement de jeter un oeil à une des dernières [vidéos](https://www.youtube.com/watch?v=E005mjqpZ9Y) de [Jen Simmons](http://jensimmons.com/) sur Youtube. Elle y parle de web bien sûr, mais surtout de techniques d’imprimerie et on commence à apercevoir de véritables “ponts” entre les disciplines graphiques.
 
 N’importe qui travaillant dans la communication, le numérique, l’édition où la production de contenus en général a un jour subit, participé ou ardemment et malicieusement envenimé un débat de ce genre où les “gens du print” s’opposaient aux “gens du web” sur les mérites réels ou supposés de leur support de prédilection.

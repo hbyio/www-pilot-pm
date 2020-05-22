@@ -9,10 +9,6 @@ tag: do it
 title: La production de contenus ressemble étrangement au développement logiciel
 ---
 
-
-![mancoding.png](/img/blog/mancoding.png "mancoding.png")
-
-
 **Produire une application présente de très nombreuses similarités avec la production de contenus. Tellement qu’il nous a semblé intéressant de commencer à en parler dans une série de notes (“Votre contenu est votre code source”).**
 
 Au coeur du développement (logiciel, web, mobile,..) il y a un texte. Le [code source](https://fr.wikipedia.org/wiki/Code_source). Quelle que soit la technologie utilisée, le langage employé, tout peut se réduire à une chose : des lignes de texte qui indiquent à une machine ce qu’elle doit faire.

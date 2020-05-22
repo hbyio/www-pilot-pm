@@ -9,8 +9,6 @@ tag: do it
 title: Content production is strangely similar to software development
 ---
 
-![mancoding.png](/img/blog/mancoding.png "mancoding.png")
-
 **Producing an application has many similarities with content production. So much so that we thought it would be interesting to start talking about it in a series of notes ("Your content is your source code").**
 
 At the heart of development (software, web, mobile,..) there is a text. The [source code](https://fr.wikipedia.org/wiki/Code_source). Whatever the technology used, whatever the language used, everything can be reduced to one thing: lines of text that tell a machine what to do.
