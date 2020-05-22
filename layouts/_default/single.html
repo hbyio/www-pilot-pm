@@ -1,18 +1,39 @@
 {{ define "main" }}
-<div class="container mx-auto px-4 sm:px-6">
-  <div class="max-w-3xl px-4 sm:px-6">
-
-    <!-- We've used 3xl here, but feel free to try other max-widths based on your needs -->
-    <div class="text-3xl mb-3 text-gray-900 font-black flex-col sm:flex items-start">
-      <a href="{{ .Site.LanguagePrefix }}/{{ path.Dir .Path }}"
-        class="flex mr-3 stroke-current text-gray-900 rounded p-2 bg-gray-50">
-        {{ partial "svg/arrow-left.svg" . }}
+<div class="max-w-6xl mx-auto">
+  <div class="flex flex-col py-5 md:flex-row relative max-w-screen mx-auto">
+    <div id="NoteHeader" class="flex-1 mx-auto flex-col max-w-3xl">
+      {{ if eq .Section "blog" }}
+      <a href="{{ .Site.LanguagePrefix }}/blog" class="flex stroke-current text-gray-900 underline mb-10">
+        Back to blog
       </a>
-      {{.Title}}
+      {{ end }}
+      {{ if eq .Section "resources" }}
+      <a href="{{ .Site.LanguagePrefix }}/resources" class="flex stroke-current text-gray-900 underline mb-10">
+        Back to resources
+      </a>
+      {{ end }}
+
+      <div class="text-4xl md:text-4xl lg:text-5xl font-black leading-none">
+        {{.Title}}
+      </div>
+      {{ if isset .Params "subtitle" }}
+      <div class="text-gray-700 text-2xl my-10">{{ .Params.subtitle }}</div>
+      {{ end }}
     </div>
+    {{ if isset .Params "illustration" }}
+    <div id="Illustration" class="mx-10 flex-shrink-0 flex-1">
+      <img class="object-contain" w-full src="{{ .Params.Illustration }}" alt="">
+    </div>
+    {{ end }}
+  </div>
+  <div class="relative max-w-3xl bg-white mx-auto z-30  rounded ">
     <div class="content">
       {{- .Content -}}
     </div>
   </div>
+
+</div>
+<div class="bg-gray-100 text-brand-900">
+  {{ partial "callToAction.html" . }}
 </div>
 {{ end }}

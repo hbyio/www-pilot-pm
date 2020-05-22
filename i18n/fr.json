@@ -175,8 +175,11 @@
   "manysectorsOnegoal": {
     "other": "Ils nous font confiance"
   },
+  "readyToDive": {
+    "other": "Prêt à vous lancer?"
+  },
   "startTrial": {
-    "other": "Démarrer mon essai"
+    "other": "Démarrer votre essai aujourd'hui"
   },
   "storage": {
     "other": "stockage fichiers"

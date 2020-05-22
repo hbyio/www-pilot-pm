@@ -2,21 +2,18 @@
 author: Matthieu
 date: 2018-09-07
 draft: false
-illustration: /img/blog/daria-nepriakhina-474036-unsplash.jpg
+illustration: ./content-workflow.png
 short: A good content workflow is based on the people who compose it and not on the tools that are only there to "inform" stakeholders....
 slug: content-workflow
 tag: best practice
 tagColor: purple
 title: Content Workflow, How to implement it? 
+subtitle: A good content workflow is based on the people who compose it and not on the tools that are only there to "inform" stakeholders. 
 featured: false
 sitemapShow: false
 sitemapChangeFreq: 'daily'
 sitemapPriority: 0.5
 ---
-
-![daria-nepriakhina-474036-unsplash.jpg](/img/blog/daria-nepriakhina-474036-unsplash.jpg "daria-nepriakhina-474036-unsplash.jpg")
-
-**A good content workflow is based on the people who compose it and not on the tools that are only there to "inform" stakeholders. Things change over time and human beings' adaptability is more powerful than that of machines.**
 
 # A workflow is here (do you want it or not) as soon as two people work together on the same object
 

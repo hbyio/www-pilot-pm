@@ -2,7 +2,7 @@
 author: Leo
 date: 2018-11-27
 draft: false
-illustration: /img/blog/drew-beamer-457831-unsplash.jpg
+illustration: /img/blog/delivery.png
 short: Release version 3.9
 slug: release-3-9
 tag: New release 📦 

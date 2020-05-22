@@ -2,7 +2,7 @@
 author: Thomas
 date: 2019-02-27
 draft: false
-illustration: /img/blog/arrival.jpeg
+illustration: /img/blog/delivery.png
 short: Release version 3.10
 slug: release-3-10
 tag: New release 📦 

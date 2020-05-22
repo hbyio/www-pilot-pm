@@ -175,8 +175,11 @@
   "manysectorsOnegoal": {
     "other": "Some of our customers"
   },
+  "readyToDive": {
+    "other": "Ready to go?"
+  },
   "startTrial": {
-    "other": "start my trial"
+    "other": "Start your trial today"
   },
   "storage": {
     "other": "storage files"
