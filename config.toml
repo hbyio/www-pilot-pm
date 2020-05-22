@@ -27,10 +27,9 @@ summaryLength = 30
     description = "Organize your content marketing production in one place. Synchronize your team."
     languageCode = "en"
     weight = 1
-    contentDir = "content/en"
+
   [languages.fr]
     LanguageName = "Français"
     description = "Organisez votre production de contenus marketing en un seul endroit. Synchronisez votre équipe."
     languageCode = "fr"
     weight = 2
-    contentDir = "content/fr"
