@@ -2,8 +2,6 @@
 author: mb
 date: 2018-01-27
 draft: false
-iconComponent: IconChannels
-illustration: /images/img-overlay-3.png
 menu: docs
 icon: share
 short: Un canal représente un espace où diffuser un contenu.

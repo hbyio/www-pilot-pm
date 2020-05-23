@@ -2,8 +2,6 @@
 author: mb
 date: 2018-01-27
 draft: false
-iconComponent: IconProjects
-illustration: /images/img-overlay-2.png
 menu: docs
 icon: folder
 short: You can group your content into projects to organize the team's work.
