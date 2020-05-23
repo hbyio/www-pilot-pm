@@ -13,11 +13,11 @@
       </a>
       {{ end }}
 
-      <div class="text-4xl md:text-4xl lg:text-5xl font-black leading-none">
+      <h1 class="text-4xl md:text-4xl lg:text-5xl font-black leading-none">
         {{.Title}}
-      </div>
-      {{ if isset .Params "subtitle" }}
-      <div class="text-gray-700 text-2xl my-10">{{ .Params.subtitle }}</div>
+      </h1>
+      {{ if isset .Params "description" }}
+      <div class="text-gray-700 text-2xl my-10">{{ .Params.description }}</div>
       {{ end }}
     </div>
     {{ if isset .Params "illustration" }}

@@ -4,7 +4,7 @@ date: 2018-01-27
 draft: false
 menu: docs
 icon: folder
-short: Vous pouvez rassembler vos contenus dans des projets pour organiser le travail de l’équipe
+description: Vous pouvez rassembler vos contenus dans des projets pour organiser le travail de l’équipe
 slug: projects
 title: Projets
 weight: 3

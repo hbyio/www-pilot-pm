@@ -3,7 +3,7 @@ author: Matthieu
 authorAvatar: /images/avatars/matthieu.png
 date: 2018-07-14
 draft: false
-short: How the New York Times production switched from a mechanical to a digital process
+description: How the New York Times production switched from a mechanical to a digital process
 slug: linotype
 tag: before
 title: Linotype

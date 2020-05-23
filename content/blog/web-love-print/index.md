@@ -8,7 +8,7 @@ short: Jen Simmons demonstrates that the web has a lot to learn from print
 slug: web-love-print
 tag: cool people
 title: Web ❤ Print
-subtitle: The CSS module "Grid layout" will allow, finally, to compose pages on a screen as we used to do for printing. Better late ...
+description: The CSS module "Grid layout" will allow, finally, to compose pages on a screen as we used to do for printing. Better late ...
 ---
 
 <iframe width="100%" height="430" class="my-10 mx-auto" src="https://www.youtube.com/embed/E005mjqpZ9Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -3,13 +3,11 @@ author: Matthieu
 date: 2018-07-15
 draft: false
 illustration: /img/blog/mancoding.png
-short: Producing an application has many similarities with content production. So much so that we thought it would be interesting to start talking about it ...
+description: Producing an application has many similarities with content production. So much so that we thought it would be interesting to start talking about it in a blog notes serie.
 slug: your-content-is-your-source-code-E01
 tag: do it
 title: Content production is strangely similar to software development
 ---
-
-**Producing an application has many similarities with content production. So much so that we thought it would be interesting to start talking about it in a series of notes ("Your content is your source code").**
 
 At the heart of development (software, web, mobile,..) there is a text. The [source code](https://fr.wikipedia.org/wiki/Code_source). Whatever the technology used, whatever the language used, everything can be reduced to one thing: lines of text that tell a machine what to do.
 

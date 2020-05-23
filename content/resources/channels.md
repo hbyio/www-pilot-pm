@@ -4,7 +4,7 @@ date: 2018-01-27
 draft: false
 menu: docs
 icon: share
-short: A channel is a space where content can be distributed.
+description: A channel is a space where content can be distributed.
 slug: channels
 title: Channels
 weight: 4

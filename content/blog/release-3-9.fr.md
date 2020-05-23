@@ -3,7 +3,7 @@ author: Leo
 date: 2018-11-27
 draft: false
 illustration: /img/blog/delivery.png
-short: Release version 3.9
+description: Release version 3.9
 slug: release-3-9
 tag: Nouvelle version 📦 
 icon: package

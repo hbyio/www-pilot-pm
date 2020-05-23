@@ -4,7 +4,7 @@ date: 2018-01-27
 draft: false
 menu: docs
 icon: file-text
-short: Un contenu est le plus simple élément géré par Pilot. C’est une unité éditoriale compréhensible hors contexte.
+description: Un contenu est le plus simple élément géré par Pilot. C’est une unité éditoriale compréhensible hors contexte.
 slug: items
 title: Contenus
 weight: 2

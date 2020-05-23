@@ -4,7 +4,7 @@ date: 2018-01-27
 draft: false
 menu: docs
 icon: folder
-short: You can group your content into projects to organize the team's work.
+description: You can group your content into projects to organize the team's work.
 slug: projects
 title: Projects
 weight: 3

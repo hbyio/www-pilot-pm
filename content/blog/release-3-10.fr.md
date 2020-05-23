@@ -3,7 +3,7 @@ author: Thomas
 date: 2019-02-27
 draft: false
 illustration: /img/blog/delivery.png
-short: Release version 3.10
+description: Release version 3.10
 slug: release-3-10
 tag: Nouvelle version 📦 
 icon: package

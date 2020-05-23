@@ -9,7 +9,7 @@ tag: retour d'expérience
 tagColor: purple
 title: Content workflow, comment le mettre en place dans votre équipe ?
 featured: false
-subtitle: Un bon processus de production de contenus doit s'adapter aux personnes qui le composent pour pouvoir être pérenne. 
+description: Un bon processus de production de contenus doit s'adapter aux personnes qui le composent pour pouvoir être pérenne. 
 ---
 
 # Qu’appelle t-on Content Workflow ? 

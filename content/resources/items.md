@@ -4,7 +4,7 @@ date: 2018-01-27
 draft: false
 menu: docs
 icon: file-text
-short: A content is an editorial unit that can be understood out of context (article, tweet, ..).
+description: A content is an editorial unit that can be understood out of context (article, tweet, ..).
 slug: items
 title: Items
 weight: 2

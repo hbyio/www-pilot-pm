@@ -25,20 +25,28 @@
     {{ if .Site.Params.DescriptionShort }}
     <meta name="title" content="{{ .Site.Params.DescriptionShort }}">
     {{ end }}
-    <meta name="description" content="{{ .Site.Params.Description }}">
+
+    <!-- Description tags -->
+    <meta name="description"
+        content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    <meta itemprop="description"
+        content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    <meta property="og:description"
+        content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    <meta name="twitter:description"
+        content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.pilot.pm/">
     <meta property="og:title" content="The content production platform for marketing teams. ">
-    <meta property="og:description" content="{{ .Site.Params.Description }}">
     <meta property="og:image" content="{{ .Site.Params.Image | absURL }}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.pilot.pm/">
     <meta property="twitter:title" content="{{ .Site.Params.Description }}">
-    <meta property="twitter:description" content="{{ .Site.Params.Description }}">
     <meta property="twitter:image" content="{{ .Site.Params.Image | absURL }}">
 
     <!-- Dublin Core basic info -->

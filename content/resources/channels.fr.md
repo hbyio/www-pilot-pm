@@ -4,7 +4,7 @@ date: 2018-01-27
 draft: false
 menu: docs
 icon: share
-short: Un canal représente un espace où diffuser un contenu.
+description: Un canal représente un espace où diffuser un contenu.
 slug: channels
 title: Canaux
 weight: 4
