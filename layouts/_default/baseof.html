@@ -90,14 +90,14 @@
 
     <div class="backdrop absolute h-full w-full bg-gray-50 opacity-75 " x-show="menuopen"></div>
 
-    <div id="page" class="min-h-screen  px-5 ">
-        <div id="header" class="container mx-auto">
+    <div id="page" class="min-h-screen container mx-auto px-5">
+        <div id="header">
             {{ block "header" . }}{{ partial "header" . }}{{end}}
         </div>
-        <div id="content" class="container mx-auto flex-grow">
+        <div id="content">
             {{ block "main" . }}{{end}}
         </div>
-        <div id="footer" class="bg-gray-900">
+        <div id="footer">
             {{ block "footer" . }}{{ partial "footer" . }}{{end}}
         </div>
     </div>
