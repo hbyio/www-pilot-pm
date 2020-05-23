@@ -2,7 +2,11 @@
 <html class="has-navbar-fixed-top" lang="{{ $.Site.Language.Lang }}">
 
 <head>
-    <title>{{.Title}}</title>
+    {{ if .IsHome -}}
+    <title>{{ .Site.Title }}</title>
+    {{- else -}}
+    <title>{{ .Title }} – {{ .Site.Title }}</title>
+    {{- end }}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
