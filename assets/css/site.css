@@ -80,19 +80,19 @@ img.grayscale {
 }
 
 .content h3 {
-  @apply leading-snug text-xl font-semibold mb-4 mt-6;
+  @apply leading-snug text-2xl font-semibold mb-4 mt-6;
 }
 
 .content h4 {
-  @apply leading-none text-base font-semibold mb-4 mt-6;
+  @apply leading-none text-xl font-semibold mb-4 mt-6;
 }
 
 .content h5 {
-  @apply leading-tight text-sm font-semibold mb-4 mt-6;
+  @apply leading-tight text-xl font-semibold mb-4 mt-6;
 }
 
 .content h6 {
-  @apply leading-tight text-sm font-semibold text-gray-600 mb-4 mt-6;
+  @apply leading-tight text-xl font-semibold text-gray-600 mb-4 mt-6;
 }
 
 .content blockquote {
@@ -100,7 +100,7 @@ img.grayscale {
 }
 
 .content code {
-  @apply font-mono text-sm inline bg-gray-200 rounded px-1 py-05;
+  @apply font-mono inline bg-gray-200 rounded px-1 py-05;
 }
 
 .content pre {
@@ -112,11 +112,11 @@ img.grayscale {
 }
 
 .content ul {
-  @apply text-base pl-8 list-disc;
+  @apply pl-8 list-disc;
 }
 
 .content ol {
-  @apply text-base pl-8 list-decimal;
+  @apply pl-8 list-decimal;
 }
 
 .content kbd {
@@ -124,7 +124,7 @@ img.grayscale {
 }
 
 .content table {
-  @apply text-base border-gray-600;
+  @apply border-gray-600;
 }
 
 .content th {

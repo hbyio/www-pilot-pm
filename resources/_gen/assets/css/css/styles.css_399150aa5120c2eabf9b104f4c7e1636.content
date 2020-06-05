@@ -960,7 +960,7 @@ img.grayscale {
 
 .content h3 {
   line-height: 1.375;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
@@ -968,7 +968,7 @@ img.grayscale {
 
 .content h4 {
   line-height: 1;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
@@ -976,7 +976,7 @@ img.grayscale {
 
 .content h5 {
   line-height: 1.25;
-  font-size: 0.875rem;
+  font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
@@ -984,7 +984,7 @@ img.grayscale {
 
 .content h6 {
   line-height: 1.25;
-  font-size: 0.875rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #4b5563;
   margin-bottom: 1rem;
@@ -1002,7 +1002,6 @@ img.grayscale {
 
 .content code {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 0.875rem;
   display: inline;
   background-color: #e5e7eb;
   border-radius: 0.25rem;
@@ -1027,13 +1026,11 @@ img.grayscale {
 }
 
 .content ul {
-  font-size: 1rem;
   padding-left: 2rem;
   list-style-type: disc;
 }
 
 .content ol {
-  font-size: 1rem;
   padding-left: 2rem;
   list-style-type: decimal;
 }
@@ -1054,7 +1051,6 @@ img.grayscale {
 }
 
 .content table {
-  font-size: 1rem;
   border-color: #4b5563;
 }
 
