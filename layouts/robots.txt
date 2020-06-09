@@ -1,0 +1,7 @@
+
+User-agent: *
+
+{{range (where .Site.Pages ".Section" "policies") }}
+{{- range .Translations -}}Disallow: {{.RelPermalink}}{{end}}
+Disallow: {{.RelPermalink}}
+{{end}}
