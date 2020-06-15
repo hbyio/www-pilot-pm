@@ -46,6 +46,11 @@ img.grayscale {
   @apply text-xl text-gray-900 leading-normal break-words;
 }
 
+.content img {
+  @apply shadow-lg my-5;
+  max-width: initial !important;
+}
+
 .content > * + *, iframe {
   @apply mt-0 mb-4;
 }
@@ -80,7 +85,7 @@ img.grayscale {
 }
 
 .content h2 {
-  @apply leading-tight text-3xl font-bold mb-4 mt-6 pb-2;
+  @apply leading-tight text-3xl font-bold mb-2 mt-10 pb-2;
 }
 
 .content h3 {

@@ -16,7 +16,9 @@ Une nouvelle interface, qui s'adapte à la largeur de vos écrans, plus simple �
 ## Un menu plus simple et qui regroupe tous vos outils
 ![newmenu.png](newmenu.png)
 
-
+## Les contenus ont un menu plus facile à utiliser
+Ce type de menu est devenu la norme sur toute l'application.
+![itemmenu.png](itemmenu.png)
 
 # Sauvegarde en temps réél
 
