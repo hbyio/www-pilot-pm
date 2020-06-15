@@ -16,7 +16,7 @@ Une nouvelle interface, qui s'adapte à la largeur de vos écrans, plus simple �
 
 # Sauvegarde en temps réél
 
-Désormais la sauvegarde de vos contenus se fait en temps réél. Plus besoin de sauvargarder manuellement. Vous travailler, nous nous occupons du reste.
+Désormais la sauvegarde de vos contenus se fait en temps réél. Plus besoin de sauvegarder manuellement. Vous travaillez, nous nous occupons du reste.
 
 Les formulaires d'édition de contenus sont aussi désormais collaboratifs, vous pouvez vous y connecter à plusieurs sans problème.
 
