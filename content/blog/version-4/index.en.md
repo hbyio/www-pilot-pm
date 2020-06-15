@@ -11,7 +11,7 @@ description: New UI, real time and collaborative edition, discover the new Pilot
 
 A new interface, which adapts to the width of your screens, easier to understand and use on a daily basis.
 
-![ui.png](ui.png)
+![responsive.gif](responsive.gif)
 
 
 # Real-time saving

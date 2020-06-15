@@ -13,6 +13,12 @@ Une nouvelle interface, qui s'adapte à la largeur de vos écrans, plus simple �
 
 ![ui.png](ui.png)
 
+## Où que vous soyez
+
+En réunion sur grand écran, dans un taxi sur votre téléphone, nous sommes là.
+
+![responsive.gif](responsive.gif)
+
 ## Un menu plus simple et qui regroupe tous vos outils
 ![newmenu.png](newmenu.png)
 
