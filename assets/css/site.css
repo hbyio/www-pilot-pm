@@ -72,7 +72,11 @@ img.grayscale {
 }
 
 .content h1 {
-  @apply leading-tight text-4xl font-bold mb-4 mt-6 pb-2;
+  @apply leading-tight text-4xl font-bold mb-4 mt-20 pb-2;
+}
+
+.content h1:first-child {
+  @apply mt-0;
 }
 
 .content h2 {
