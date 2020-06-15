@@ -13,6 +13,10 @@ Une nouvelle interface, qui s'adapte à la largeur de vos écrans, plus simple �
 
 ![ui.png](ui.png)
 
+## Un menu plus simple et qui regroupe tous vos outils
+![newmenu.png](newmenu.png)
+
+
 
 # Sauvegarde en temps réél
 
