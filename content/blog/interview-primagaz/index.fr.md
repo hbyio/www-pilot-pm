@@ -1,14 +1,16 @@
 ---
 author: Matthieu
-date: 2020-06-14
+date: 2020-06-16
 draft: false
 illustration: illustration.png
 illustration2: chloe_larmignat.jpg
 title: Pourquoi Primagaz a centralisé sa production de contenu ?
 featured: false
-tag: Interview client
+tag: Cas client
 tagColor: yellow
-description:  Interview avec Chloé Larmignat, Content & social media manager chez Primagaz France.
+guestImage: chloe_larmignat.jpg
+guestLogo: images/clients/primagaz.svg
+description:  Interview avec <a href="https://www.linkedin.com/in/chloelarmignat">Chloé Larmignat</a>, Content & social media manager chez Primagaz France.
 ---
 [Primagaz](https://www.primagaz.fr/), distributeur de gaz propane, a choisi d’utiliser Pilot pour centraliser la production et la gestion de ses contenus digitaux depuis un an et demi. Chloé Larmignat est Content et Social Media Manager, elle travaille sur le pôle digital, principalement avec les équipes marketing et communication. Elle explique pourquoi l’utilisation d’un outil de gestion de contenu collaboratif est devenu indispensable.
 
@@ -40,9 +42,11 @@ En gros : favoriser l’esprit collaboratif !
 
 ### Comment s’est passé la recherche de solution ?
 
-Nous avons réalisé un benchmark de différentes plateformes de gestion, dont certaines étaient déjà utilisées en interne et finalement c’est Pilot qui est ressorti. Il ne faut pas choisir une plateforme de gestion de projet quand on veut faire un focus sur le contenu car gérer des équipes et des projets ou gérer des contenus sont deux process bien différents.
+Nous avons réalisé un benchmark de différentes plateformes de gestion, dont certaines étaient déjà utilisées en interne et finalement c’est Pilot qui est ressorti. 
 
-Avec Pilot, nous avons tout ce qu’il nous faut : nous suivons les contenus, mais également les tâches en lien avec la production et les équipes impliquées. C’est ce qui fait la différence.
+Il ne faut pas choisir une plateforme de gestion de projet quand on veut faire un focus sur le contenu car gérer des équipes et des projets ou gérer des contenus sont deux process bien différents.
+
+**Avec Pilot, nous avons tout ce qu’il nous faut : nous suivons les contenus, mais également les tâches en lien avec la production et les équipes impliquées. C’est ce qui fait la différence.**
 
 Ca fait maintenant un an et demi que nous utilisons l’outil au sein des équipes.
 
@@ -54,4 +58,4 @@ En terme de recherche de l’information, le temps est divisé par deux. D’un 
 
 ### Si vous deviez résumer votre expérience globale avec l’outil, que diriez-vous ?
 
-Certaines plateformes ont une infinité de paramètres, et au final, personne ne les utilise de la même façon et elles finissent par être abandonnées. Ce que j’aime avec Pilot, **c’est que chaque fonctionnalité a du sens.** Mention spéciale pour la fonction recherche et filtrage. C’est donc plus facilement que la plateforme est acceptée en interne, car le plus dur c’est bien de faire du change management quand on modifie drastiquement la manière de fonctionner d’une équipe !
+Certaines plateformes ont une infinité de paramètres, et au final, personne ne les utilise de la même façon et elles finissent par être abandonnées. Ce que j’aime avec Pilot, **c’est que chaque fonctionnalité a du sens.** Mention spéciale pour la fonction recherche et filtrage. C’est donc plus facilement que la plateforme est acceptée en interne, car le plus dur c’est bien de faire du *change management* quand on modifie drastiquement la manière de fonctionner d’une équipe !

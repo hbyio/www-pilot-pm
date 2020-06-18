@@ -18,17 +18,29 @@
         {{ .Params.Tag }}
       </div>
       {{ end }}
-
+      {{ if .Params.guestLogo }}
+      <div class="w-40 my-5"><img src="/{{ .Params.guestLogo }}"/> </div>
+      {{ end }}
       <h1 class="text-4xl md:text-4xl lg:text-5xl font-black leading-none">
         {{.Title}}
       </h1>
+
+
+      <div class="flex items-center">
+        {{ if .Params.guestLogo }}
+          <img
+            class="w-20 h-20 mr-4 rounded-full flex shadow"
+            src="{{ .Params.guestImage }}"
+            />
+        {{ end }}
+        {{ if .Params.description }}
+          <div class="text-gray-700 text-2xl my-10">{{ .Params.description | safeHTML }}</div>
+        {{ end }}
+      </div>
       
-      {{ if isset .Params "description" }}
-      <div class="text-gray-700 text-2xl my-10">{{ .Params.description | safeHTML }}</div>
-      {{ end }}
     </div>
     {{ if isset .Params "illustration" }}
-    <div id="Illustration" class="mx-10 mt-10 md:my-0 flex-shrink-0 flex-1">
+    <div id="Illustration" class="max-w-10  mx-10 mt-10 md:my-0 flex-shrink-0 flex-1 hidden lg:flex">
       <img class="object-contain" w-full src="{{ .Params.Illustration }}" alt="">
     </div>
     {{ end }}

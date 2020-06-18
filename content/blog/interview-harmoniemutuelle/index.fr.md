@@ -9,6 +9,7 @@ featured: false
 tag: Cas client
 tagColor: yellow
 guestImage: sabine_rebitzer-harmonie_mutuelle.jpg
+guestLogo: images/clients/harmonie.jpg
 description:  Echanges avec <a href="https://www.linkedin.com/in/sabine-rebitzer-39499831/">Sabine Rebitzer</a>, responsable du rayonnement des contenus chez Harmonie Mutuelle.
 ---
 
@@ -24,15 +25,32 @@ Depuis 5 ans, l’utilisation de Pilot garantit la coordination et l’optimisat
 
 La production de contenus est un enjeu stratégique : il faut donc garantir une cohésion dans la manière de diffuser les messages et agencer l’ensemble des flux de communication.
 
-Sabine Rebitzer, responsable du rayonnement des contenus chez Harmonie Mutuelle, orchestre la diffusion des informations qui émanent tant des régions que des différentes directions d’Harmonie Mutuelle. Les objectifs principaux ? La publication multisites des contenus tant sur les réseaux sociaux (Linkedin, Twitter, Facebook, Instagram, soit près de 70 000 abonnés en cumulé) que sur les sites internet d’Harmonie Mutuelle. A cela s’ajoutent les enjeux liés à la e-réputation, à la communication commerciale, à la marque employeur, aux évènements sponsorisés (Semi-marathon de Paris par exemple)...
+Sabine Rebitzer, responsable du rayonnement des contenus chez Harmonie Mutuelle, orchestre la diffusion des informations qui émanent tant des régions que des différentes directions d’Harmonie Mutuelle. 
+Les objectifs principaux ? La publication multisites des contenus tant sur les réseaux sociaux (Linkedin, Twitter, Facebook, Instagram, soit près de 70 000 abonnés en cumulé) que sur les sites internet d’Harmonie Mutuelle. 
+A cela s’ajoutent les enjeux liés à la e-réputation, à la communication commerciale, à la marque employeur, aux évènements sponsorisés (Semi-marathon de Paris par exemple)...
 
 En toute logique, cela représente énormément de contenus : les réseaux sociaux sont notamment alimentés quotidiennement, voire plusieurs fois par jour.
 
 ## Du fichier Excel à un outil de gestion de contenus collaboratif
 
-Il y a cinq ans, Harmonie Mutuelle publiait déjà une quantité importante de contenus. A l’époque, Sabine gérait des comités de rédaction de contenus. Ces comités étaient l’occasion d’échanger avec les différentes directions de l’entreprise (marketing, communication, la Fondation Harmonie Mutuelle…) et avec les régions au sujet de la stratégie de contenus mais aussi sur les informations à diffuser pour le mois à venir. Ces communications étaient listées et détaillées dans un fichier Excel, qu’il fallait donc mettre à jour perpétuellement. Ce fichier Excel était complété par des fiches de rédaction.
+Il y a cinq ans, Harmonie Mutuelle publiait déjà une quantité importante de contenus. A l’époque, Sabine gérait des comités de rédaction de contenus. 
+Ces comités étaient l’occasion d’échanger avec les différentes directions de l’entreprise (marketing, communication, la Fondation Harmonie Mutuelle…) et avec les régions au sujet de la stratégie de contenus mais aussi sur les informations à diffuser pour le mois à venir. 
+Ces communications étaient listées et détaillées dans un fichier Excel, qu’il fallait donc mettre à jour perpétuellement. Ce fichier Excel était complété par des fiches de rédaction.
 
-*“Tous les mois, nous échangions autours de ces contenus et nous devions donc mettre à jour ce fichier Excel, et quand on avait terminé, il fallait recommencer pour mois suivant ! Cela devenait ingérable.” - Sabine Rebitzer*
+<div class="bg-gray-50 p-4 text-xl  rounded shadow">
+<p class="mb-4 font-medium italic">"Tous les mois, nous échangions autour de ces contenus et nous devions donc mettre à jour ce fichier Excel, et quand on avait terminé, il fallait recommencer pour le mois suivant ! Cela devenait ingérable."</p>
+<div class="flex items-center">
+    <img
+    alt="Sabine Rebitzer"
+    class="w-12 mr-4 rounded-full bg-neutral-500"
+    src="sabine_rebitzer-harmonie_mutuelle.jpg"
+    />
+    <div class="flex flex-col items-start">
+        <span class="mb-1 font-bold">Sabine Rebitzer</span>
+        <span class="text-xs text-gray-700 uppercase">Harmonie Mutuelle</span>
+    </div>
+</div>
+</div>
 
 La nécessité de migrer vers un outil spécifiquement dédié aux problématiques métiers liées à la production de contenus est vite devenue incontournable. La gestion des contenus, la circulation de différentes versions d’un même document, les réunions d’équipe, les mails… Tout cela était chronophage. Cette organisation pouvait et devait être pensée différemment !
 
@@ -41,7 +59,20 @@ Au début, l’outil était destiné aux contenus digitaux uniquement. Puis peti
 
 Harmonie Mutuelle est d’ailleurs passée vers un forfait permettant de créer un nombre illimité d’utilisateurs.
 
-*“Pilot est devenu un outil central dans notre stratégie de contenus” Sabine Rebitzer*
+<div class="bg-gray-50 p-4 text-xl  rounded shadow">
+<p class="mb-4 font-medium italic">"Pilot est devenu un outil central dans notre stratégie de contenus"</p>
+<div class="flex items-center">
+    <img
+    alt="Sabine Rebitzer"
+    class="w-12 mr-4 rounded-full bg-neutral-500"
+    src="sabine_rebitzer-harmonie_mutuelle.jpg"
+    />
+    <div class="flex flex-col items-start">
+        <span class="mb-1 font-bold">Sabine Rebitzer</span>
+        <span class="text-xs text-gray-700 uppercase">Harmonie Mutuelle</span>
+    </div>
+</div>
+</div>
 
 ## Une coordination centralisée des contenus
 
@@ -51,7 +82,20 @@ Un cercle vertueux est ainsi généré : l’équipe complète la base de conten
 
 **Les échanges de mails non nécessaires ont** également **diminué**, ce qui évite la surcharge d’informations et les éventuelles erreurs. Tout ce qui concerne le contenu se trouve à un seul et même endroit. Les membres de l’équipe peuvent alors insérer leurs commentaires, et travailler simultanément sur un même document.
 
-*“On comprend largement l’utilité de Pilot quand on voit tout ce qu’on est capable de gérer en termes de volumétrie notamment sur les réseaux sociaux, où l’activité éditoriale est intense. ” Sabine Rebitzer*
+<div class="bg-gray-50 p-4 text-xl rounded  shadow">
+<p class="mb-4 font-medium italic">"On comprend largement l’utilité de Pilot quand on voit tout ce qu’on est capable de gérer en termes de volumétrie notamment sur les réseaux sociaux, où l’activité éditoriale est intense. "</p>
+<div class="flex items-center">
+    <img
+    alt="Sabine Rebitzer"
+    class="w-12 mr-4 rounded-full bg-neutral-500"
+    src="sabine_rebitzer-harmonie_mutuelle.jpg"
+    />
+    <div class="flex flex-col items-start">
+        <span class="mb-1 font-bold">Sabine Rebitzer</span>
+        <span class="text-xs text-gray-700 uppercase">Harmonie Mutuelle</span>
+    </div>
+</div>
+</div>
 
 Un autre bénéfice constaté chez Harmonie Mutuelle : la vision d’ensemble et en temps réel des prises de parole de l’entreprise grâce au calendrier intégré à l’outil.
 
