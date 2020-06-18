@@ -10,19 +10,8 @@ module.exports = {
       path: ["assets/css"],
     }), 
     require('tailwindcss')('./assets/css/tailwind.config.js'),    
-    require('@fullhuman/postcss-purgecss')({
-      content: ['layouts/**/*.html'],
-      extractors: [
-      {
-        extractor: TailwindExtractor,
-        extensions: ['html']
-      }], 
-      fontFace: false,
-      whitelist: ['class1', 'class2']
-    }),    
     require('autoprefixer')({
       grid: true,
-      overrideBrowserslist: ['>1%']
     }),    
   ]
 }
