@@ -5,6 +5,8 @@ draft: false
 illustration: Update.png
 title: Pilot version 4, new features 
 featured: false
+tag: release
+tagColor: green
 description: New UI, real time and collaborative edition, discover the new Pilot. 
 ---
 # New interface

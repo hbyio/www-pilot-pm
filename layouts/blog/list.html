@@ -6,16 +6,21 @@
     </h1>
     <div class="mt-12">
       {{ range .Pages }}
-      <div class="flex items-center">
+      
+      <div class="flex items-center my-2 lg:my-10">
 
-        <div class="flex-1 bg-white flex flex-col justify-between">
-          <div class="flex-1 my-5">
-            <a class="mt-2 text-3xl leading-7 font-bold text-blue-900 visited:text-purple-700 hover:underline"
-              href="{{ .RelPermalink }}">
-
+        <div class="flex-1 bg-white flex flex-col justify-between my-1 ">
+          <div class="flex-1 flex-col my-5">
+            {{ if .Params.Tag }}
+            <div class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium leading-5 bg-{{ .Params.TagColor | default .Site.Params.BrandColor }}-100 text-{{ .Params.TagColor | default .Site.Params.BrandColor }}-800">
+              {{ .Params.Tag }}
+            </div>
+            {{ end }}
+            <a class="mt-2 block text-3xl leading-7 font-bold text-blue-900 visited:text-purple-700 hover:underline"
+            href="{{ .RelPermalink }}">
               {{ .Title }}
-
             </a>
+
             <p class="mt-1 text-xl text-gray-600">
               {{ .Summary | safeHTML | truncate 100 }}
             </p>
@@ -39,6 +44,11 @@
           </div>
 
         </div>
+        {{ if .Params.Illustration }}
+        <div class="hidden lg:flex">
+          <img class="object-contain h-48 w-48" src="{{ .RelPermalink }}{{ .Params.Illustration }}" width="100" alt="">
+        </div>
+        {{ end }}
       </div>
       {{ end }}
     </div>

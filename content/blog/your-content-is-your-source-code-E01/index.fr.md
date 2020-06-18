@@ -2,10 +2,9 @@
 author: Matthieu
 date: 2018-07-15
 draft: false
-illustration: /img/blog/mancoding.png
+illustration: illustration.png
 description: Produire une application présente de très nombreuses similarités avec la production de contenus. Tellement qu’il nous a semblé intéressant de commencer à en parler dans une série de notes.
 slug: your-content-is-your-source-code-E01
-tag: do it
 title: La production de contenus ressemble étrangement au développement logiciel
 ---
 

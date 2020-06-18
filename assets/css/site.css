@@ -27,6 +27,9 @@ img.grayscale {
   -webkit-filter: grayscale(100%);
 }
 
+a {
+  text-decoration: underline;
+}
 
 #main a {
     @apply text-blue-500;

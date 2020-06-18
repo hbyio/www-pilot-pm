@@ -891,6 +891,10 @@ img.grayscale {
   -webkit-filter: grayscale(100%);
 }
 
+a {
+  text-decoration: underline;
+}
+
 #main a {
   color: #3f83f8;
   text-decoration: underline;

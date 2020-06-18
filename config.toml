@@ -40,6 +40,7 @@ enableRobotsTXT = true
   appSupportEmail = "support@pilot.pm"
   copyright = "Copyright 2020"
   image = "images/features/teamwork.png"
+  brandColor = "gray"
 
 [languages]
   [languages.en]

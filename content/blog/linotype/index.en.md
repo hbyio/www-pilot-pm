@@ -5,7 +5,7 @@ date: 2018-07-14
 draft: false
 description: How the New York Times production switched from a mechanical to a digital process
 slug: linotype
-tag: before
+tag: history
 title: Linotype
 ---
 

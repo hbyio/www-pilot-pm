@@ -13,11 +13,18 @@
       </a>
       {{ end }}
 
+      {{ if .Params.Tag }}
+      <div class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium leading-5 bg-{{ .Params.TagColor | default .Site.Params.BrandColor }}-100 text-{{ .Params.TagColor | default .Site.Params.BrandColor }}-800">
+        {{ .Params.Tag }}
+      </div>
+      {{ end }}
+
       <h1 class="text-4xl md:text-4xl lg:text-5xl font-black leading-none">
         {{.Title}}
       </h1>
+      
       {{ if isset .Params "description" }}
-      <div class="text-gray-700 text-2xl my-10">{{ .Params.description }}</div>
+      <div class="text-gray-700 text-2xl my-10">{{ .Params.description | safeHTML }}</div>
       {{ end }}
     </div>
     {{ if isset .Params "illustration" }}

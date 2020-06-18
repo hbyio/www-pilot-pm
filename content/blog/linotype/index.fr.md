@@ -5,7 +5,7 @@ date: 2018-07-14
 draft: false
 description: Comment le New York Times a basculé d'un processus mécanique vers un processus numérique
 slug: linotype
-tag: before
+tag: histoire
 title: Linotype
 ---
 
