@@ -4,7 +4,7 @@
     <div id="NoteHeader" class="flex-1 mx-auto w-full">
       {{ if eq .Section "blog" }}
       <a href="{{ .Site.LanguagePrefix }}/blog" class="flex stroke-current text-gray-900 underline mb-10">
-        Back to blog
+        <- Back to blog
       </a>
       {{ end }}
       {{ if eq .Section "resources" }}
@@ -13,11 +13,7 @@
       </a>
       {{ end }}
 
-      {{ if .Params.Tag }}
-      <div class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium leading-5 bg-{{ .Params.TagColor | default .Site.Params.BrandColor }}-100 text-{{ .Params.TagColor | default .Site.Params.BrandColor }}-800">
-        {{ .Params.Tag }}
-      </div>
-      {{ end }}
+      {{ partial "tag.html" . }}
       {{ if .Params.guestLogo }}
       <div class="w-40 my-5"><img src="/{{ .Params.guestLogo }}"/> </div>
       {{ end }}

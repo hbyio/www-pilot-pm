@@ -5,7 +5,7 @@ draft: false
 illustration: Update.png
 title: Pilot version 4, les nouvelles fonctionnalités 
 featured: false
-tag: release
+tag: 📦 Release
 tagColor: green
 description: Nouvelle UI, édition temps réél et collaborative, découvrez le nouveau Pilot. 
 ---

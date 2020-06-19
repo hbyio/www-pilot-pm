@@ -6,7 +6,7 @@ illustration: illustration.png
 illustration2: chloe_larmignat.jpg
 title: Pourquoi Primagaz a centralisé sa production de contenu ?
 featured: false
-tag: Cas client
+tag: 🎙 Cas client
 tagColor: yellow
 guestImage: chloe_larmignat.jpg
 guestLogo: images/clients/primagaz.svg

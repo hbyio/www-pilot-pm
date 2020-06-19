@@ -1,7 +1,7 @@
 LAN-IP := $(shell ipconfig getifaddr en0) # Get local network router IP
 
 # each time you update tailwind config or postcss you need to generate a new styles css file in resources folder (that you must commit)
-rebuild:
+build:
 	hugo --gc
 
 dev: 

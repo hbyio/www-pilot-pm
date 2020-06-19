@@ -6,7 +6,7 @@ illustration: illustration.png
 illustration2: sabine_rebitzer-harmonie_mutuelle.jpg
 title: Comment Harmonie Mutuelle optimise sa stratégie éditoriale avec Pilot ?
 featured: false
-tag: Cas client
+tag: 🎙 Cas client
 tagColor: yellow
 guestImage: sabine_rebitzer-harmonie_mutuelle.jpg
 guestLogo: images/clients/harmonie.jpg
