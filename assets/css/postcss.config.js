@@ -4,8 +4,6 @@ module.exports = {
       path: ["assets/css"],
     }), 
     require('tailwindcss')('./assets/css/tailwind.config.js'),      
-    require('autoprefixer')({
-      grid: true,
-    }),    
+    require('autoprefixer'),    
   ]
 }
