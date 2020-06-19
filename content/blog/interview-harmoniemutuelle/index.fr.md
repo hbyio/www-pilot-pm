@@ -37,20 +37,10 @@ Il y a cinq ans, Harmonie Mutuelle publiait déjà une quantité importante de c
 Ces comités étaient l’occasion d’échanger avec les différentes directions de l’entreprise (marketing, communication, la Fondation Harmonie Mutuelle…) et avec les régions au sujet de la stratégie de contenus mais aussi sur les informations à diffuser pour le mois à venir. 
 Ces communications étaient listées et détaillées dans un fichier Excel, qu’il fallait donc mettre à jour perpétuellement. Ce fichier Excel était complété par des fiches de rédaction.
 
-<div class="bg-gray-50 p-4 text-xl  rounded shadow">
-<p class="mb-4 font-medium italic">"Tous les mois, nous échangions autour de ces contenus et nous devions donc mettre à jour ce fichier Excel, et quand on avait terminé, il fallait recommencer pour le mois suivant ! Cela devenait ingérable."</p>
-<div class="flex items-center">
-    <img
-    alt="Sabine Rebitzer"
-    class="w-12 mr-4 rounded-full bg-neutral-500"
-    src="sabine_rebitzer-harmonie_mutuelle.jpg"
-    />
-    <div class="flex flex-col items-start">
-        <span class="mb-1 font-bold">Sabine Rebitzer</span>
-        <span class="text-xs text-gray-700 uppercase">Harmonie Mutuelle</span>
-    </div>
-</div>
-</div>
+{{< blockquote profilePath="sabine_rebitzer-harmonie_mutuelle.jpg" author="Sabine Rebitzer" company="harmonie mutuelle" >}}
+Tous les mois, nous échangions autour de ces contenus et nous devions donc mettre à jour ce fichier Excel, et quand on avait terminé, il fallait recommencer pour le mois suivant ! Cela devenait ingérable.
+{{< / blockquote >}}
+
 
 La nécessité de migrer vers un outil spécifiquement dédié aux problématiques métiers liées à la production de contenus est vite devenue incontournable. La gestion des contenus, la circulation de différentes versions d’un même document, les réunions d’équipe, les mails… Tout cela était chronophage. Cette organisation pouvait et devait être pensée différemment !
 
@@ -59,20 +49,9 @@ Au début, l’outil était destiné aux contenus digitaux uniquement. Puis peti
 
 Harmonie Mutuelle est d’ailleurs passée vers un forfait permettant de créer un nombre illimité d’utilisateurs.
 
-<div class="bg-gray-50 p-4 text-xl  rounded shadow">
-<p class="mb-4 font-medium italic">"Pilot est devenu un outil central dans notre stratégie de contenus"</p>
-<div class="flex items-center">
-    <img
-    alt="Sabine Rebitzer"
-    class="w-12 mr-4 rounded-full bg-neutral-500"
-    src="sabine_rebitzer-harmonie_mutuelle.jpg"
-    />
-    <div class="flex flex-col items-start">
-        <span class="mb-1 font-bold">Sabine Rebitzer</span>
-        <span class="text-xs text-gray-700 uppercase">Harmonie Mutuelle</span>
-    </div>
-</div>
-</div>
+{{< blockquote profilePath="sabine_rebitzer-harmonie_mutuelle.jpg" author="Sabine Rebitzer" company="harmonie mutuelle" >}}
+Pilot est devenu un outil central dans notre stratégie de contenus
+{{< / blockquote >}}
 
 ## Une coordination centralisée des contenus
 
@@ -82,20 +61,9 @@ Un cercle vertueux est ainsi généré : l’équipe complète la base de conten
 
 **Les échanges de mails non nécessaires ont** également **diminué**, ce qui évite la surcharge d’informations et les éventuelles erreurs. Tout ce qui concerne le contenu se trouve à un seul et même endroit. Les membres de l’équipe peuvent alors insérer leurs commentaires, et travailler simultanément sur un même document.
 
-<div class="bg-gray-50 p-4 text-xl rounded  shadow">
-<p class="mb-4 font-medium italic">"On comprend largement l’utilité de Pilot quand on voit tout ce qu’on est capable de gérer en termes de volumétrie notamment sur les réseaux sociaux, où l’activité éditoriale est intense. "</p>
-<div class="flex items-center">
-    <img
-    alt="Sabine Rebitzer"
-    class="w-12 mr-4 rounded-full bg-neutral-500"
-    src="sabine_rebitzer-harmonie_mutuelle.jpg"
-    />
-    <div class="flex flex-col items-start">
-        <span class="mb-1 font-bold">Sabine Rebitzer</span>
-        <span class="text-xs text-gray-700 uppercase">Harmonie Mutuelle</span>
-    </div>
-</div>
-</div>
+{{< blockquote profilePath="sabine_rebitzer-harmonie_mutuelle.jpg" author="Sabine Rebitzer" company="harmonie mutuelle" >}}
+On comprend largement l’utilité de Pilot quand on voit tout ce qu’on est capable de gérer en termes de volumétrie notamment sur les réseaux sociaux, où l’activité éditoriale est intense. 
+{{< / blockquote >}}
 
 Un autre bénéfice constaté chez Harmonie Mutuelle : la vision d’ensemble et en temps réel des prises de parole de l’entreprise grâce au calendrier intégré à l’outil.
 
