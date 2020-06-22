@@ -5,7 +5,9 @@
 {{ partial "clients.html" . }}
 
 {{ partial "strategicContent.html" . }}
-
+{{ if eq .Lang "fr" }}
+{{ partial "testimonials.html" }}
+{{ end }}
 {{ partial "featuresHome.html" . }}
 
 {{ partial "prices.html" . }}
