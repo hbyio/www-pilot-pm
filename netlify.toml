@@ -22,10 +22,10 @@ HUGO_VERSION = "0.67.1"
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
 
-[[redirects]]
-  from = "/"
-  to = "/fr"
-  status = 301
-  force = false
-  query = {path = ":path"}
-  conditions = {Language = ["fr"], Country = ["FR"],}
+# [[redirects]]
+#   from = "/"
+#   to = "/fr"
+#   status = 301
+#   force = false
+#   query = {path = ":path"}
+#   conditions = {Language = ["fr"], Country = ["FR"],}

@@ -2,3 +2,13 @@
 
 # Redirect default Netlify subdomain to primary domain
 https://www-pilot-pm.netlify.com/* https://www.pilot.pm/:splat 301!
+
+# Redirect users with french language preference from / to /fr
+/  /fr/  301!  Language=fr
+/  /fr/  301!  Language=fr-BE
+/  /fr/  301!  Language=fr-CA
+/  /fr/  301!  Language=fr-CH
+/  /fr/  301!  Language=fr-FR
+/  /fr/  301!  Language=fr-LU
+/  /fr/  301!  Language=fr-MC
+/  /en/  301
