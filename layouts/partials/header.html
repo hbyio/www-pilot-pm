@@ -86,9 +86,9 @@
           </div>
           <div>
             {{ range .Translations }}
-            <a href="{{ .RelPermalink }}"
-              class="block w-full px-5 py-3 text-center hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">
-              <img src="/icons/{{.Site.Language.Lang}}.png" alt="">
+            <a href="{{ .Permalink }}"
+              class="block w-full mb-5 items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded text-black bg-white hover:text-indigo-500 focus:outline-none focus:shadow-outline-blue active:bg-gray-50 active:text-indigo-700 transition duration-150 ease-in-out">
+              {{.Site.Language.LanguageName}}
             </a>
             {{ end}}
             <a href="{{ .Site.Params.AppUrl }}/login?lang={{.Site.Language.Lang}}"
