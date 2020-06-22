@@ -25,6 +25,7 @@ HUGO_ENABLEGITINFO = "true"
 [[redirects]]
   from = "/"
   to = "/fr"
-  status = 302
+  status = 301
   force = false
-  conditions = {Country = ["fr"]} 
+  query = {path = ":path"}
+  conditions = {Language = ["fr"], Country = ["FR"],}
