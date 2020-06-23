@@ -12,7 +12,7 @@ Au coeur du développement (logiciel, web, mobile,..) il y a un texte. Le [code 
 
 Ce texte “raconte” le comportement de la machine en fonction des interactions qu’elle va avoir soit avec des êtres humains soit avec d’autres machines. Tout comme une marque “raconte”  ce qu’elle est en interaction avec les différents publics qu’elle adresse.
 
-![photocode.jpg](https://pilotapp-production-master.s3.amazonaws.com/assets/1/18274/1_18274_original.jpg "photocode.jpg")
+![photocode.jpg](photocode.jpg "photocode.jpg")
 
 Et aussi étonnant que cela puisse paraître le code source d’une application, comme la communication, porte du sens et des valeurs : vais-je respecter ou exploiter la vie privée de mes utilisateurs ? Vais je m’adapter ou non aux situations de handicap ? Serai-je accessible aux personnes ne bénéficiant pas de débits élevés ? 
 
@@ -27,9 +27,6 @@ Un texte mal écrit, mal pensé, aura plus ou moins d’efficacité pour atteind
 Sur le fond code source et contenu éditorial sont identiques : du texte, écrit par des êtres humains (donc faillible), à l’attention d’un public.
 
 ## Les mêmes outils ?
-
-![order.jpg](https://pilotapp-production-master.s3.amazonaws.com/assets/1/18272/1_18272_original.jpg "order.jpg")\
-![chaos.jpg](https://pilotapp-production-master.s3.amazonaws.com/assets/1/18273/1_18273_original.jpg "chaos.jpg")
 
 Ecrire ce code est très complexe, non pas à cause du langage informatique en lui-même (la maîtrise de la grammaire et de l’orthographe est courante), mais parce qu’il faut très souvent le faire à plusieurs mains. 
 
@@ -68,9 +65,3 @@ Nous sommes convaincus que de nombreux ponts sont possibles entre les métiers q
 Les “content strategist” travaillent souvent étroitement avec les équipes de développement non pas pour uniquement écrire le contenu mais aussi le “contenant”. 
 
 C’est un premier “pont” entre les métiers, on pourra en imaginer beaucoup d’autres.
-
-**Crédits photos**
-
-Photo by [Chris Ried](https://unsplash.com/photos/ieic5Tq8YMk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/code?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)\
-Photo by [Cristina Gottardi](https://unsplash.com/photos/8hJQKRIQZMY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)\
-Photo by [Gabriel Sollmann](https://unsplash.com/photos/Y7d265_7i08?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

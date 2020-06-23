@@ -1372,10 +1372,6 @@ a {
   border-top-right-radius: 0.25rem !important;
 }
 
-.border-2 {
-  border-width: 2px !important;
-}
-
 .border {
   border-width: 1px !important;
 }

@@ -12,7 +12,7 @@ At the heart of development (software, web, mobile,..) there is a text. The [sou
 
 This text "tells" the behaviour of the machine according to the interactions it will have either with human beings or with other machines. Just like a brand "tells" what it is in interaction with the different audiences it addresses.
 
-![photocode.jpg](https://pilotapp-production-master.s3.amazonaws.com/assets/1/18274/1_18274_original.jpg "photocode.jpg")
+![photocode.jpg](photocode.jpg "photocode.jpg")
 
 And as surprising as it may seem, the source code of an application, like communication, carries meaning and values: will I respect or exploit the privacy of my users? Will I adapt or not to disability situations? Will I be accessible to people who do not benefit from high speeds? 
 
@@ -27,9 +27,6 @@ A badly written text, badly thought out, will have more or less effectiveness to
 On the background source code and editorial content are identical: text, written by human beings (therefore fallible), to the attention of an audience.
 
 ## Same tools ?
-
-![order.jpg](https://pilotapp-production-master.s3.amazonaws.com/assets/1/18272/1_18272_original.jpg "order.jpg")\
-![chaos.jpg](https://pilotapp-production-master.s3.amazonaws.com/assets/1/18273/1_18273_original.jpg "chaos.jpg")
 
 Writing this code is very complex, not because of the computer language itself (grammar and spelling are common), but because it often requires several hands. 
 
@@ -69,8 +66,3 @@ Content strategists often work closely with development teams not only to write 
 
 It is a first "bridge" between trades, many others can be imagined.
 
-**Photo credits**
-
-Photo by [Chris Ried](https://unsplash.com/photos/ieic5Tq8YMk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/code?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)\
-Photo by [Cristina Gottardi](https://unsplash.com/photos/8hJQKRIQZMY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)\
-Photo by [Gabriel Sollmann](https://unsplash.com/photos/Y7d265_7i08?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
