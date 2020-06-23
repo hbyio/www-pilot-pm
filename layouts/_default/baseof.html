@@ -11,6 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    {{ if .Params.author }}<meta name="author" content="{{ .Params.author }}">{{ end }}
+    {{ if .Params.date }}<meta name="date" content="{{ .Date.Format `Jan 2, 2006` }}">{{ end }}
 
     <meta name="referrer" content="no-referrer-when-downgrade" />
     <link rel="canonical" href="{{ .Permalink }}">
