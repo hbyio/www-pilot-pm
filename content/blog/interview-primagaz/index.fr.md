@@ -10,7 +10,8 @@ tag: 🎙 Cas client
 tagColor: yellow
 guestImage: chloe_larmignat.jpg
 guestLogo: images/clients/primagaz.svg
-description:  Interview avec <a href="https://www.linkedin.com/in/chloelarmignat">Chloé Larmignat</a>, Content & social media manager chez Primagaz France.
+guestLinkedin: https://www.linkedin.com/in/chloelarmignat
+description:  Interview avec Chloé Larmignat, Content & social media manager chez Primagaz France.
 ---
 [Primagaz](https://www.primagaz.fr/), distributeur de gaz propane, a choisi d’utiliser Pilot pour centraliser la production et la gestion de ses contenus digitaux depuis un an et demi. Chloé Larmignat est Content et Social Media Manager, elle travaille sur le pôle digital, principalement avec les équipes marketing et communication. Elle explique pourquoi l’utilisation d’un outil de gestion de contenu collaboratif est devenu indispensable.
 
