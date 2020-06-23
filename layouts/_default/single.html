@@ -23,15 +23,28 @@
 
 
       <div class="flex items-center">
-        {{ if .Params.guestLogo }}
+        {{ if .Params.guestImage }}
           <img
             class="w-20 h-20 mr-4 rounded-full flex shadow"
             src="{{ .Params.guestImage }}"
             />
         {{ end }}
         {{ if .Params.description }}
-          <div class="text-gray-700 text-2xl my-10">{{ .Params.description | safeHTML }}</div>
+          <div class="text-gray-700 text-2xl my-10">
+            {{ .Params.description | safeHTML }}
+            {{ if .Params.guestLinkedin }}
+            <a
+              class="link text-blue-700"
+              href="{{ .Params.guestLinkedin }}"
+            >
+              Linkedin
+            </a>
+            {{ end }}
+
+
+          </div>
         {{ end }}
+        
       </div>
       
     </div>

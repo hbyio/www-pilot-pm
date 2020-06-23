@@ -10,7 +10,8 @@ tag: 🎙 Cas client
 tagColor: yellow
 guestImage: sabine_rebitzer-harmonie_mutuelle.jpg
 guestLogo: images/clients/harmonie.jpg
-description:  Echanges avec <a href="https://www.linkedin.com/in/sabine-rebitzer-39499831/">Sabine Rebitzer</a>, responsable du rayonnement des contenus chez Harmonie Mutuelle.
+guestLinkedin: https://www.linkedin.com/in/sabine-rebitzer-39499831/
+description:  Echanges avec Sabine Rebitzer, responsable du rayonnement des contenus chez Harmonie Mutuelle.
 ---
 
 Harmonie Mutuelle fait partie du Groupe VYV, qui constitue le plus grand réseau de mutuelles santé en France en 2020. Harmonie Mutuelle, c’est 4,7 millions de clients, et près de 5 000 collaborateurs.
