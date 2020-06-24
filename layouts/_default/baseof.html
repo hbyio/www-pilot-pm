@@ -9,35 +9,29 @@
     {{- end }}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    {{ if .Params.author }}<meta name="author" content="{{ .Params.author }}">{{ end }}
-    {{ if .Params.date }}<meta name="date" content="{{ .Date.Format `Jan 2, 2006` }}">{{ end }}
-
+    {{ if .Params.author -}}
+    <meta name="author" content="{{ .Params.author }}">
+    {{- end }}
+    {{ if .Params.date -}}
+    <meta name="date" content="{{ .Date.Format `Jan 2, 2006` }}">
+    {{- end }}
+    {{ if eq .Section "policies" -}}
+    <meta name="robots" content="noindex" />
+    {{- end }}
     <meta name="referrer" content="no-referrer-when-downgrade" />
     <link rel="canonical" href="{{ .Permalink }}">
-    {{ if .IsTranslated }}
-    {{ range .Translations }}
+    {{- if .IsTranslated }}
+    {{- range .Translations }}
     <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
-    {{ end}}
-    {{ end }}
+    {{- end}}
+    {{- end }}
     <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
-
     <!-- Primary Meta Tags -->
-    {{ if .Site.Params.DescriptionShort }}
-    <meta name="title" content="{{ .Site.Params.DescriptionShort }}">
-    {{ end }}
-
+    <meta name="title" content="{{ .Title }}">
     <!-- Description tags -->
-    <meta name="description"
-        content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
-    <meta itemprop="description"
-        content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
-    <meta property="og:description"
-        content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
-    <meta name="twitter:description"
-        content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    <meta name="description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    <meta itemprop="description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -54,18 +48,12 @@
     <meta property="twitter:image" content="{{ if .Params.illustration }}{{ .Permalink }}{{ .Params.illustration }}{{ else }}{{ .Site.Params.Image | absURL }}{{ end }}">
 
     {{ if .Site.IsServer }}
-
-    {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/dev/postcss.config.js") | fingerprint }}
-
+    {{- $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/dev/postcss.config.js") | fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" data>
-
     {{ else }}
-
-    {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js")  | minify | fingerprint }}
-
+    {{- $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js")  | minify | fingerprint -}}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
-
-    {{ end }}
+    {{ end -}}
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 </head>
