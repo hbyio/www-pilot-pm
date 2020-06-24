@@ -1,6 +1,6 @@
 ---
-author: mb
-date: 2018-01-27
+author: justine
+date: 2020-06-20
 draft: false
 menu: docs
 icon: file-text
@@ -10,71 +10,88 @@ title: Contenus
 weight: 2
 ---
 
-## Qu'est ce qu'un contenu ?
+## Qu’est ce qu’un contenu ?
 
-Un article, une interview, un tweet sont des contenus au sens de l'application à l'inverse d'un chapô ou un d'un paragraphe d'article.
+Pilot vous permet de créer différents types de contenus. Par exemple :
 
-Chaque contenu a un cycle de vie propre (brouillon > à valider > à publier > ..) ainsi que ses propres commentaires, versions, partages.
+* Un article 
 
-Des contenus peuvent être rassemblés dans un <a href="/resources/projects">projet</a> et/ou dans un <a href="/resources/channels">canal</a>.
+* Un tweet (et même un thread Twitter)
 
-## Créer un contenu
+* Une publication Instagram, Facebook, Linkedin...
 
-![vue de détail d'un contenu](/img/screenshots/additem.png)
+* Une vidéo 
 
-Cliquez sur "Ajouter un contenu" puis sélectionnez le type de contenu que vous souhaitez créer.
+* Un podcast
 
-Dans notre exemple nous en avons 3 par défaut. Le type "Article" est celui par défaut de l'application, il est constitué d'un champ titre et d'un champ contenu.
+* Un email...
 
-## Vue de détail d'un contenu
+Les contenus créés peuvent être affectés à un projet. Vous pourrez aussi les diffuser via les canaux de votre choix. 
 
-Plus loin dans la documentation nous nous référerons à cette vue comme "vue de détail" d'un contenu.
+## Comment créer un contenu ?
 
-![vue de détail d'un contenu](/img/screenshots/item_detail.png)
+![](https://pilotapp-leader.s3.amazonaws.com/assets/136/34806/136_34806_working.jpg "Nouveau contenu ")
+
+Pour créer un nouveau contenu, rendez-vous dans la section "**Contenus**" du menu de gauche. Puis cliquez sur "**Ajouter un contenu"**. Vous pourrez ensuite puis sélectionner le type de contenu que vous souhaitez créer. 
+
+Selon vos besoins, il est possible de configurer la liste des types de contenus disponibles.
+
+## Vue d'ensemble d'un contenu 
+
+Ici, le contenu que nous avons choisi de créer est un article. Voici à quoi ça ressemble dans l'application :
+
+![](https://pilotapp-leader.s3.amazonaws.com/assets/136/34809/136_34809_working.jpg "Nouveau contenu de type article.png")
 
 ## Les outils spécifiques aux contenus
 
-<img style="float:right; margin-left:1em;" src="/img/screenshots/item_detail_menu.png" alt="">
+Sur la partie supérieure se trouvent 6 catégories : 
 
-### Informations
+![](https://pilotapp-leader.s3.amazonaws.com/assets/136/34810/136_34810_original.png "Informations liées au contenu.png")
 
-Ce menu permet d'afficher les informations générales relatives au contenu :
+#### Infos :
 
-- Le projet auquel le contenu est affecté
-- Le canal où le contenu sera publié
-- Les éventuels responsables du document
-- Les contenus liés (dans le cas de traduction par exemple pour avoir une référence au "master" ou pour lier un brief au contenu rédigé)
+Ce menu permet d’afficher les informations générales relatives au contenu :
 
-### Versions et différences
+* Le projet auquel le contenu est affecté
 
-A chaque sauvegarde d'un contenu nous créons une "version mineure" (1.1, 1.2, etc ..) avec l'heure de la création et la référence à la personne ayant créé cette version.
+* Le canal où le contenu sera publié
 
-Il est impossible de sauvegarder un document sans créer de version. C'est le concept "d'immutabilité" d'un document qui vous permet de savoir avec assurance ce qui a été fait, par qui et quand sur un texte.
+* Les éventuels responsables du contenu
 
-Chaque version peut être "restaurée" pour revenir à un moment dans le passé et effacer les modifications qui auraient pu être introduite sur une version récente. La restauration entraîne la création d'une nouvelle version avec toutes les informations nécessaires à sa compréhension (qui a restauré, à partir de quelle version et quand). **Ainsi aucune information n'est pas perdue**
+* Les contenus liés (dans le cas de traduction par exemple, pour avoir une référence au “master”, ou pour lier un brief au contenu rédigé)
 
-Afin de bénéficier totalement de ce système de version l'application propose une "vue des différences" entre versions afin de vous permettre de savoir très facilement et très rapidement ce qui a été ajouté ou supprimée d'une version à l'autre
+#### Date de publication
 
-<img src="/img/screenshots/diff.png" alt="vue des différences" />
+Affiche un calendrier qui vous permet de sélectionner la date à laquelle le contenu sera publié. 
 
-### Commentaires
+#### Versions 
 
-Vous pourrez discuter de l'évolution du document grâce à cette fonctionnalité qui offre en outre un système simple de mention et d'alerte des membres de l'équipe.
+Pilot sauvegarde automatiquement les modifications apportées à un contenu. Une nouvelle version du contenu est créée toutes les 15 minutes si vous apportez des modifications supplémentaires. Vous pourrez alors naviguer entre la version V1.1, V1.2 etc...  
 
-L'avantage indéniable de ce type d'outil est de pouvoir consulter l'historique d'un document au sein de l'équipe.
+![](https://pilotapp-leader.s3.amazonaws.com/assets/136/34814/136_34814_working.jpg "Version 1 et version 2.41.png")
+
+#### Commentaires
+
+Vous pourrez discuter de l'évolution du document grâce à cette fonctionnalité qui offre en outre un système simple de mention et d’alerte des membres de l'équipe. 
+
+![](https://pilotapp-leader.s3.amazonaws.com/assets/136/34812/136_34812_working.jpg "Ajout d'un commentaire .png")
+
+La personne mentionnée recevra une alerte dans ses notifications. 
 
 ### Tâches
 
-A chaque contenu vous pourrez affecter des tâches librement. Chacune de ces tâches aura une date de rendu et un ou plusieurs responsables.
+Il est possible d'affecter des tâches à chaque contenu. Chacune de ces tâches aura une date de rendu et un ou plusieurs responsables.
 
-### Partage
+![](https://pilotapp-leader.s3.amazonaws.com/assets/136/34816/136_34816_working.jpg "Tâches associées.png")
 
-Le partage avec validation externe est utile pour interroger des personnes ne possédant pas de compte sur Pilot. Il est possible de permettre à votre interlocuteur de modifier le document envoyé. Lorsqu'il vous le renverra vous pourrez consulter les modifications apportées et le sintégrer, dans l'outil, une par une ou globalement en créant ue nouvelle version.
+#### Fichiers liés
 
-### Fichiers liés
+Vous pouvez lier un ou plusieurs fichiers à votre contenu, sans limite de taille de document. Il peut s'agir d'un brief par exemple. Pour lier un fichier, vous pouvez le sélectionner depuis votre ordinateur, ou depuis la médiathèque.
 
-Vous pouvez lier un ou plusieurs fichiers à votre contenu (**sans limite de taille de document**) et ce de deux manières :
+#### Partage
 
-1. En uploadant directement un fichier (bouton "Ajouter un fichier") : Le fichier sera lié exclusivement à ce contenu. On ne pourra pas le "lier" depuis d'autres contenus.
+En cliquant sur les points de suspension à droite de "Fichiers", des options supplémentaires apparaissent : 
 
-2. En faisant un lien depuis la médiathèque (bouton "chercher dans la médiathèque") : Le fichier est dans la médiathéque, peut être attaché à d'autres contenus, et n'est pas supprimé quand le contenu est supprimé.
+![](https://pilotapp-leader.s3.amazonaws.com/assets/136/34817/136_34817_original.png "Partager un contenu.png")
+
+Le partage avec validation externe est utile pour interroger des personnes ne possédant pas de compte sur Pilot. Il est possible de permettre à votre interlocuteur de modifier le document envoyé. 
