@@ -14,11 +14,12 @@ guestLinkedin: https://www.linkedin.com/in/sabine-rebitzer-39499831/
 description:  Echanges avec Sabine Rebitzer, responsable du rayonnement des contenus chez Harmonie Mutuelle.
 ---
 
+##
+
 Harmonie Mutuelle fait partie du Groupe VYV, qui constitue le plus grand réseau de mutuelles santé en France en 2020. Harmonie Mutuelle, c’est 4,7 millions de clients, et près de 5 000 collaborateurs.
 
-<br/>
-
-Dans sa volonté d’être au plus près de ses adhérents et de préserver une société de solidarité, l’entreprise a fait des contenus le centre de sa stratégie éditoriale. Ils portent son nouveau positionnement de marque, expriment ses combats, valorisent son offre de services et font la démonstration de sa différenciation.
+Dans sa volonté d’être au plus près de ses adhérents et de préserver une société de solidarité, l’entreprise a fait des contenus le centre de sa stratégie éditoriale. 
+Ils portent son nouveau positionnement de marque, expriment ses combats, valorisent son offre de services et font la démonstration de sa différenciation.
 
 Depuis 5 ans, l’utilisation de Pilot garantit la coordination et l’optimisation des contenus, de leur création jusqu’à leur mise en ligne.
 
@@ -27,7 +28,9 @@ Depuis 5 ans, l’utilisation de Pilot garantit la coordination et l’optimisat
 La production de contenus est un enjeu stratégique : il faut donc garantir une cohésion dans la manière de diffuser les messages et agencer l’ensemble des flux de communication.
 
 Sabine Rebitzer, responsable du rayonnement des contenus chez Harmonie Mutuelle, orchestre la diffusion des informations qui émanent tant des régions que des différentes directions d’Harmonie Mutuelle. 
+
 Les objectifs principaux ? La publication multisites des contenus tant sur les réseaux sociaux (Linkedin, Twitter, Facebook, Instagram, soit près de 70 000 abonnés en cumulé) que sur les sites internet d’Harmonie Mutuelle. 
+
 A cela s’ajoutent les enjeux liés à la e-réputation, à la communication commerciale, à la marque employeur, aux évènements sponsorisés (Semi-marathon de Paris par exemple)...
 
 En toute logique, cela représente énormément de contenus : les réseaux sociaux sont notamment alimentés quotidiennement, voire plusieurs fois par jour.
@@ -35,7 +38,9 @@ En toute logique, cela représente énormément de contenus : les réseaux socia
 ## Du fichier Excel à un outil de gestion de contenus collaboratif
 
 Il y a cinq ans, Harmonie Mutuelle publiait déjà une quantité importante de contenus. A l’époque, Sabine gérait des comités de rédaction de contenus. 
+
 Ces comités étaient l’occasion d’échanger avec les différentes directions de l’entreprise (marketing, communication, la Fondation Harmonie Mutuelle…) et avec les régions au sujet de la stratégie de contenus mais aussi sur les informations à diffuser pour le mois à venir. 
+
 Ces communications étaient listées et détaillées dans un fichier Excel, qu’il fallait donc mettre à jour perpétuellement. Ce fichier Excel était complété par des fiches de rédaction.
 
 {{< blockquote profilePath="sabine_rebitzer-harmonie_mutuelle.jpg" author="Sabine Rebitzer" company="harmonie mutuelle" >}}
@@ -43,7 +48,9 @@ Tous les mois, nous échangions autour de ces contenus et nous devions donc mett
 {{< / blockquote >}}
 
 
-La nécessité de migrer vers un outil spécifiquement dédié aux problématiques métiers liées à la production de contenus est vite devenue incontournable. La gestion des contenus, la circulation de différentes versions d’un même document, les réunions d’équipe, les mails… Tout cela était chronophage. Cette organisation pouvait et devait être pensée différemment !
+La nécessité de migrer vers un outil spécifiquement dédié aux problématiques métiers liées à la production de contenus est vite devenue incontournable. 
+
+La gestion des contenus, la circulation de différentes versions d’un même document, les réunions d’équipe, les mails… Tout cela était chronophage. Cette organisation pouvait et devait être pensée différemment !
 
 Aussi, en 2015 Harmonie Mutuelle a commencé à utiliser la solution Pilot.pm. \
 Au début, l’outil était destiné aux contenus digitaux uniquement. Puis petit à petit, Harmonie Mutuelle a élargi le champ d’application et Pilot est devenu l’outil central de la stratégie de communication.
