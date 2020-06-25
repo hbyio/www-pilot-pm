@@ -48,11 +48,14 @@
       </div>
       
     </div>
-    {{ if isset .Params "illustration" }}
-    <div id="Illustration" class="max-w-10  mx-10 mt-10 md:my-0 flex-shrink-0 flex-1 hidden lg:flex">
-      <img class="object-contain" w-full src="{{ .Params.Illustration }}" alt="">
-    </div>
+    {{ $image := .Resources.GetMatch (printf "**%s" .Params.illustration) }}
+    {{ with $image }}
+      {{ $image := $image.Resize "600x" }}
+      <div id="Illustration" class="max-w-10 flex-shrink-0 flex-1 hidden lg:flex">
+        <img class="object-contain" w-full src="{{ $image.RelPermalink }}" alt="">
+      </div>
     {{ end }}
+
   </div>
   <div class="relative max-w-3xl bg-white mx-auto z-30 my-5">
     <div class="content">

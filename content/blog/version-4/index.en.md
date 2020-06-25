@@ -2,7 +2,7 @@
 author: Matthieu
 date: 2020-06-14
 draft: false
-illustration: Update.png
+illustration: rocket.png
 title: Pilot version 4, new features 
 featured: false
 tag: 📦 Release

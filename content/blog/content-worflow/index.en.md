@@ -2,7 +2,7 @@
 author: Matthieu
 date: 2018-09-07
 draft: false
-illustration: ./content-workflow.png
+illustration: illustration.png
 short: A good content workflow is based on the people who compose it and not on the tools that are only there to "inform" stakeholders....
 slug: content-workflow
 tag: best practice

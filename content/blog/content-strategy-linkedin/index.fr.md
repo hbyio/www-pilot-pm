@@ -2,7 +2,7 @@
 author: Justine
 date: 2020-06-02
 draft: false
-illustration: ./illustration.png
+illustration: illustration.png
 slug: content-strategy-linkedin
 tag: Stratégie
 tagColor: purple

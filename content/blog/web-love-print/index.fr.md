@@ -2,7 +2,7 @@
 author: Matthieu
 date: 2018-05-25
 draft: false
-illustration: ./illustration.png
+illustration: illustration.png
 short: Jen Simmons démontre que le web a beaucoup à apprendre du print
 slug: web-love-print
 tag: Produire pour le web

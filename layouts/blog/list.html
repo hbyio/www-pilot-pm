@@ -42,7 +42,11 @@
         </div>
         {{ if .Params.Illustration }}
         <div class="hidden lg:flex">
-          <img class="object-contain h-48 w-48" src="{{ .RelPermalink }}{{ .Params.Illustration }}" width="100" alt="">
+          {{ $image := .Resources.GetMatch (.Params.Illustration) }}
+          {{ with $image }}
+                  {{ $image := $image.Resize "200x" }}
+                  <img class="object-contain h-48 w-48" src="{{ $image.RelPermalink }}">
+          {{ end }}
         </div>
         {{ end }}
       </div>

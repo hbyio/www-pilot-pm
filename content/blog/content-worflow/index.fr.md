@@ -2,7 +2,7 @@
 author: Matthieu
 date: 2018-09-07
 draft: false
-illustration: ./content-workflow.png
+illustration: illustration.png
 short: Un bon workflow de contenus s'appuie sur les personnes qui le composent et non sur les outils qui ne sont là que pour "informer" les parties prenantes...
 slug: content-workflow
 tag: stratégie

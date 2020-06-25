@@ -3,7 +3,7 @@ author: Matthieu
 authorAvatar: /images/avatars/matthieu.png
 date: 2018-05-25
 draft: false
-illustration: ./illustration.png
+illustration: illustration.png
 short: Jen Simmons demonstrates that the web has a lot to learn from print
 slug: web-love-print
 tag: cool people
