@@ -74,9 +74,9 @@
         <div id="content">
             {{ block "main" . }}{{end}}
         </div>
-        <div id="footer">
-            {{ block "footer" . }}{{ partial "footer" . }}{{end}}
-        </div>
+        <footer id="footer">
+            {{ partial "footer.html" . }}
+        </footer>
     </div>
 
     {{ if not .Site.IsServer }}

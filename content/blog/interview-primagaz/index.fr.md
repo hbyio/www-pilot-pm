@@ -9,7 +9,7 @@ featured: false
 tag: 🎙 Cas client
 tagColor: yellow
 guestImage: chloe_larmignat.jpg
-guestLogo: images/clients/primagaz.svg
+guestLogo: /images/clients/primagaz.svg
 guestLinkedin: https://www.linkedin.com/in/chloelarmignat
 description:  Interview avec Chloé Larmignat, Content & social media manager chez Primagaz France.
 ---

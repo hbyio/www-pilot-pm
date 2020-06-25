@@ -9,7 +9,7 @@ featured: false
 tag: 🎙 Cas client
 tagColor: yellow
 guestImage: sabine_rebitzer-harmonie_mutuelle.jpg
-guestLogo: images/clients/harmonie.jpg
+guestLogo: /images/clients/harmonie.jpg
 guestLinkedin: https://www.linkedin.com/in/sabine-rebitzer-39499831/
 description:  Echanges avec Sabine Rebitzer, responsable du rayonnement des contenus chez Harmonie Mutuelle.
 ---

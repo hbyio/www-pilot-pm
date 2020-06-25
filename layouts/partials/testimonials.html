@@ -15,7 +15,7 @@
                 <footer class="mt-8">
                 <div class="flex">
                     <div class="flex-shrink-0 inline-flex rounded-full">
-                    <img class="h-12 w-12 rounded-full" src="/fr/blog/interview-harmoniemutuelle/sabine_rebitzer-harmonie_mutuelle.jpg" alt="" />
+                    {{ partial "img.html" (dict "context" . "src" "/fr/blog/interview-harmoniemutuelle/sabine_rebitzer-harmonie_mutuelle.jpg" "alt" "Sabine Rebitzer profile image" "class" "h-12 w-12 rounded-full") }}
                     </div>
                     <div class="ml-4">
                     <div class="text-base leading-6 font-medium text-white">
@@ -27,7 +27,7 @@
                     </div>
                 </div>
                 <a href="/fr/blog/interview-harmoniemutuelle"
-                class="flex items-center justify-center mt-5 px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white border border-white opacity-50 hover:opacity-100 bg-transparent focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                class="flex items-center justify-center mt-5 px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white border border-white hover:bg-brand-700 bg-transparent focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
                     Voir le témoignage
                 </a>
                 </footer>
@@ -46,7 +46,7 @@
                 <footer class="mt-8">
                 <div class="flex">
                     <div class="flex-shrink-0 inline-flex rounded-full">
-                    <img class="h-12 w-12 rounded-full" src="/fr/blog/interview-primagaz/chloe_larmignat.jpg" alt="" />
+                    {{ partial "img.html" (dict "context" . "src" "/fr/blog/interview-primagaz/chloe_larmignat.jpg" "alt" "Chloé Larmignat profile image" "class" "h-12 w-12 rounded-full") }}
                     </div>
                     <div class="ml-4">
                     <div class="text-base leading-6 font-medium text-white">Chloé Larmignat
@@ -57,7 +57,7 @@
                 </div>
                 </footer>
                 <a href="/fr/blog/interview-primagaz"
-                    class="flex items-center justify-center mt-5 px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white border border-white opacity-50 hover:opacity-100 bg-transparent focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                    class="flex items-center justify-center mt-5 px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white border border-white hover:bg-brand-700  bg-transparent focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
                     Voir le témoignage
                 </a>
             </blockquote>

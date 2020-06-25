@@ -20,7 +20,7 @@
               {{ .Summary | safeHTML | truncate 100 }}
             </p>
             {{ partial "tag.html" . }}
-            <div class="flex items-center  text-sm text-gray-500">
+            <div class="flex items-center  text-sm text-gray-700">
               <p class="text-sm font-medium">
                 {{.Params.Author}}
               </p>
@@ -45,7 +45,7 @@
           {{ $image := .Resources.GetMatch (.Params.Illustration) }}
           {{ with $image }}
                   {{ $image := $image.Resize "200x" }}
-                  <img class="object-contain h-48 w-48" src="{{ $image.RelPermalink }}">
+                  {{ partial "img.html" (dict "context" . "src" $image.RelPermalink "alt" "illustration" "class" "object-contain h-48 w-48") }}         
           {{ end }}
         </div>
         {{ end }}

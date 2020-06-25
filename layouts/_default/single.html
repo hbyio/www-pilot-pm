@@ -15,7 +15,9 @@
 
       {{ partial "tag.html" . }}
       {{ if .Params.guestLogo }}
-      <div class="w-40 my-5"><img src="/{{ .Params.guestLogo }}"/> </div>
+      <div class="w-40 my-5">
+        {{ partial "img.html" (dict "context" . "src" .Params.guestLogo "alt" "Guest corporate logo" "class" "") }}
+      </div>
       {{ end }}
       <h1 class="text-4xl md:text-4xl lg:text-5xl font-black leading-none">
         {{.Title}}
@@ -24,11 +26,9 @@
 
       <div class="flex items-center">
         {{ if .Params.guestImage }}
-          <img
-            class="w-20 h-20 mr-4 rounded-full flex shadow"
-            src="{{ .Params.guestImage }}"
-            />
-        {{ end }}
+            {{ partial "img.html" (dict "context" . "src" .Params.guestImage "alt" .Params.guestImage "class" "w-20 h-20 mr-4 rounded-full flex shadow") }}
+        {{ end }}          
+
         {{ if .Params.description }}
           <div class="text-gray-700 text-2xl my-10">
             {{ .Params.description | safeHTML }}
@@ -52,7 +52,7 @@
     {{ with $image }}
       {{ $image := $image.Resize "600x" }}
       <div id="Illustration" class="max-w-10 flex-shrink-0 flex-1 hidden lg:flex">
-        <img class="object-contain" w-full src="{{ $image.RelPermalink }}" alt="">
+        {{ partial "img.html" (dict "context" . "src" $image.RelPermalink "alt" "Illustration" "class" "object-contain") }}
       </div>
     {{ end }}
 
