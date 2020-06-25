@@ -54,8 +54,13 @@
     {{- $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js")  | minify | fingerprint -}}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
     {{ end -}}
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    
+    {{ $script := resources.Get "js/alpine.js" | minify | fingerprint }}
+    <script type="text/javascript" src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+
+    {{ $font := resources.Get "css/inter.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $font.RelPermalink }}" integrity="{{ $font.Data.Integrity }}">
+
 </head>
 
 <body x-data="{ menuopen: false }">
