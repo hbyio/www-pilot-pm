@@ -1,6 +1,6 @@
 ---
-author: mb
-date: 2018-01-27
+author: Justine
+date: 2020-06-20
 draft: false
 menu: docs
 icon: share
@@ -10,23 +10,32 @@ title: Canaux
 weight: 4
 ---
 
-Exemples :
+# **Canaux**
 
-- Un ou plusieurs comptes Twitter / Facebook / Linkedin etc ..
-- Un discours
-- Un évènement
-- Un magazine interne
-- Une plaquette d'information
-- Une newsletter
-- Un site institutionnel (et/ou ses sous-ensemble : RH, actualités, ..)
-- ..
+## Qu’est-ce qu’un canal ?
 
-Chaque canal a un ou plusieurs responsables en charge de la publication (webmaster, community manager, imprimeur, ..).
+Un canal correspond à un endroit où sera **diffusé** votre contenu. Vous pouvez affecter un ou plusieurs canaux à vos projets et contenus. 
 
-Pilot n'est pas un outil de publication et de mise en forme comme peuvent l'être InDesign ou Hootsuite. Nous gérons uniquement la production, validation du contenu brut. A charge aux responsables des canaux de publier ces matériels à partir des sources validées.
+Par exemple :
 
-Les canaux tels que nous les proposons vous permettent de classer vos contenus pour pouvoir les retrover facilement après des années de production et poruvoir, par exemple, retrouver ce qui a produit, pour tel canal et pour telle cible en 2015.
+* Un réseau social : Twitter, Linkedin, Facebook, Snapchat, Instagram … 
+* Un podcast
+* Un site internet
+* Une newsletter
+* Un magazine etc… 
 
-## Architecture de l'information
+## Comment créer un nouveau canal ?
 
-Notez que les canaux peuvent être hiérarchisés comme un plan de site afin de s'adapter au plus près à votre architecture d'information sur vos différents supports numériques (Internet, Intranet, applications mobiles)
+Pour ajouter un nouveau canal, rendez-vous sur “Canaux” depuis le menu de gauche. Cliquez ensuite sur “**Nouveau canal**”
+
+![](https://lh3.googleusercontent.com/UndLFMzB9-6Lt3xDRhIsuGIAU2ZqLnfO3b49OM1HH2RSUzM4vJYxraq81wd-g_XI8kUVtBxd154KpPgLd-XBn3_8wb45nQvAsrwJ_mArq7t-xsty_UGCtDqerjCrA15LFRVG_hZN)
+
+Vous pouvez définir un ou plusieurs **responsables** pour chaque canal, qui pourront ensuite publier les contenus validés sur les canaux associés. 
+
+*Astuce : grâce aux canaux, vous pouvez classer et retrouver vos contenus facilement après des années de production (exemple : ce qui a été produit, pour tel canal et pour telle cible en 2015.)*
+
+## Architecture de l’information
+
+Notez que les **canaux peuvent être hiérarchisés** comme un plan de site afin de s’adapter au plus près à l’architecture d’information de vos différents supports numériques (site internet, Intranet, applications mobiles...)
+
+Il est ainsi possible d’associer chaque nouveau canal à un **canal parent.**

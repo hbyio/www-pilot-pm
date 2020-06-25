@@ -10,18 +10,34 @@ title: Projets
 weight: 3
 ---
 
-Un projet peut être ce qui vous convient le mieux : un évènement, la refonte d'un site, l'édition mensuelle de votre magazine interne.
+# **Projets**
 
-<img src="/img/features/projects.png">
+Vous pouvez **rassembler vos contenus dans des projets** pour organiser le travail de l’équipe. Toutes les informations relatives à un projet sont ainsi visibles à un seul et même endroit. 
 
-## Faut il d'abord créer les contenus ou le projet ?
+Fini les consignes répétées à chaque réunion ! 😇
 
-Il y a plusieurs écoles à ce sujet et ce sera selon ce qui vous convient le mieux avec vos équipes. La première stratégie serait de créer un projet et de le qualifier (rédiger son brief, lui affecter des responsables, indiquer son degré de priorité etc ..)
+Un projet peut être ce qui vous convient le mieux , par exemple :
 
-Ensuite, grâce aux commentaires propre à cet objet vous pourrez interpeller et inviter des membres de l'équipe sur cet espace et leur affecter des contenus à produire.
+* un évènement 
+* la refonte d’un site
+* l'édition mensuelle de votre magazine interne
+* une campagne publicitaire … 
 
-Comme vous pouvez lier des fichiers sans aucune limite de taille (kit de presse, videos haute définition, etc ..) sur ce projet les différents rédacteurs.trices peuvent s'en emparer pour produire les contenus relevant de leurs responsabilités.
+## **![](https://lh3.googleusercontent.com/fc3jbAJXgHpxylcd-_SaWRthNzQeld4V8ofTu_5SFrOWXceZH2g1s3PUlk3j4N_uNLCKitq6458MygmpmSsY-G0QGdDSa9CBgM-n-Vlf6A2P44YKR4-OaUcAEJL8E-qJsezhk6E-)**
 
-Ainsi toute l'information relative à un projet est disposée à un seul et même endroit. Vous ne répétez plus sans cesse les mêmes consignes de réunions en réunions.
+Sous le nom du projet, vous trouverez plusieurs sections :
 
-Bien entendu des contenus déjà créés peuvent être regroupés, _a posteriori_ dans un projet.
+* **Infos** : affiche une vision d’ensemble du projet (responsables, priorité, dates, canaux…)
+* **Contenus** : la liste des contenus associés à ce projet
+* **Commentaires** : vous pouvez y interpeller un membre de l’équipe
+* **Fichiers** : ce sont les fichiers liés au projet (kit de presse, brief, moodboard …)
+* **Tâches** : pour créer une tâche, ou bien un groupe de tâches pré-défini 
+
+## **Faut il d’abord créer les contenus ou le projet ?**
+
+C’est vous qui décidez ! Une **première stratégie** peut être de **créer un projet et le qualifier** : rédiger son brief, lui affecter des responsables, indiquer son degré de priorité etc ...
+
+Ensuite vous pourrez ajouter des membres de l'équipe sur ce projet et leur **affecter des contenus à produire.**
+
+**Autre possibilité** : aller dans la liste de vos **contenus existants**, et leur affecter un projet. Bien sur, il n’est pas obligatoire d’affecter un projet à un contenu !
+
