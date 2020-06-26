@@ -7,7 +7,9 @@
   <div class="max-w-screen-xl flex items-center justify-between mx-auto  px-4 sm:px-6  lg:px-8">
 
     <div class="flex flex-col sm:flex-row">
-      <img class="max-h-20" src="/images/clients/harmonie.jpg" alt="Harmonie mutuelle" />
+      {{- $resource := resources.Get "images/clients/harmonie.jpg" -}}
+      {{ $image := $resource.Resize "400x jpg" }}
+      {{ partial "img.html" (dict "context" . "src" $image.RelPermalink "alt" "Harmonie mutuelle" "class" "max-h-20") }}
     </div>
     <div class="flex flex-col sm:flex-row">
       <img class="max-h-20" src="/images/clients/vinci.jpg" alt="VINCI construction" />
