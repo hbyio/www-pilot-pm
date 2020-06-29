@@ -1,6 +1,6 @@
-languageCode = "en"
-defaultContentLanguage = "en"
-#defaultContentLanguageInSubdir = true
+languageCode = "fr"
+defaultContentLanguage = "fr"
+defaultContentLanguageInSubdir = true
 title = "Pilot"
 baseURL = "https://www.pilot.pm"
 
@@ -47,10 +47,10 @@ enableRobotsTXT = true
     LanguageName = "English"
     description = "Organize your content marketing production in one place. Synchronize your team."
     languageCode = "en"
-    weight = 1
+    weight = 2
 
   [languages.fr]
     LanguageName = "Français"
     description = "Organisez votre production de contenus marketing en un seul endroit. Synchronisez votre équipe."
     languageCode = "fr"
-    weight = 2
+    weight = 1
