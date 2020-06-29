@@ -1,6 +1,6 @@
 languageCode = "fr"
 defaultContentLanguage = "fr"
-defaultContentLanguageInSubdir = true
+#defaultContentLanguageInSubdir = true
 title = "Pilot"
 baseURL = "https://www.pilot.pm"
 
