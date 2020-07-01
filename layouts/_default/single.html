@@ -50,8 +50,8 @@
     </div>
     {{ $image := .Resources.GetMatch (printf "**%s" .Params.illustration) }}
     {{ with $image }}
-      {{ $image := $image.Resize "600x" }}
-      <div id="Illustration" class="max-w-10 flex-shrink-0 flex-1 hidden lg:flex">
+      {{ $image := $image.Resize "400x" }}
+      <div id="Illustration" class="flex-shrink-0 flex items-end hidden lg:flex">
         {{ partial "img.html" (dict "context" . "src" $image.RelPermalink "alt" "Illustration" "class" "object-contain") }}
       </div>
     {{ end }}
