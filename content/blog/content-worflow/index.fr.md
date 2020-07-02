@@ -3,26 +3,26 @@ author: Matthieu
 date: 2018-09-07
 draft: false
 illustration: illustration.png
-short: Un bon workflow de contenus s'appuie sur les personnes qui le composent et non sur les outils qui ne sont là que pour "informer" les parties prenantes...
+short: Un workflow éditorial solide s'appuie sur les personnes qui le composent et non sur les outils qui ne sont là que pour "informer" les parties prenantes...
 slug: content-workflow
 tag: stratégie
 tagColor: purple
 title: Content workflow, comment le mettre en place dans votre équipe ?
 featured: false
-description: Un bon processus de production de contenus doit s'adapter aux personnes qui le composent pour pouvoir être pérenne. 
+description: Un workflow éditorial solide s'appuie sur les personnes qui le composent et non sur les outils qui ne sont là que pour "informer" les parties prenantes...
 ---
 
-# Qu’appelle t-on Content Workflow ? 
+# Qu’appelle t-on Content Workflow ou workflow éditorial ? 
 
 Un workflow est une représentation standardisée des différentes étapes qui permettent d’accomplir une tâche. On peut ainsi parler de workflow dans une infinité de domaines : pour un processus de production, pour suivre sa liste de tâches personnelles, pour la gestion des demandes client entrantes etc.. Il s’impose généralement à partir du moment ou au moins deux personnes travaillent ensemble sur un même projet.
 
-Dans le cas du Content Workflow, ou “flux de production des contenus”, il s’agit de définir le rôle de chaque membre de l’équipe à différents moments du processus. Par exemple :
+Dans le cas du Content Workflow, ou workflow éditorial, il s’agit de définir le rôle de chaque membre de l’équipe à différents moments du processus. Par exemple :
 
 Qui écrit les briefs pour les clients ?
 Qui valide les vidéos destinées au site internet ? 
 Quel est le rôle du social media manager ?
 
-## Pourquoi mettre en place un workflow est important 
+## Pourquoi mettre en place un workflow éditorial est important 
 
 A partir du moment où plusieurs personnes interviennent sur un projet pour l’imaginer, le concevoir, le fabriquer, le valider, le re-valider, l’améliorer et, finalement, le distribuer, mettre en place ce workflow est impératif. L’ensemble des personnes impliquées ont ainsi connaissance de ce processus. Les enjeux sont multiples : éviter la perte de temps, produire de manière qualitative et efficace. 
 La mise en place du content workflow permet également d’avoir une vision d’ensemble à un instant “t” de l’état d’avancement des projets liés aux contenus produits (combien de contenus à produire, qu’est-ce qui est prêt à être diffusé …). 
