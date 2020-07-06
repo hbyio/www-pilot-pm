@@ -4,42 +4,46 @@ date: 2018-09-07
 draft: false
 illustration: illustration.png
 short: Un workflow éditorial solide s'appuie sur les personnes qui le composent et non sur les outils qui ne sont là que pour "informer" les parties prenantes...
-slug: content-workflow
+slug: workflow-editorial
 tag: stratégie
 tagColor: purple
-title: Content workflow, comment le mettre en place dans votre équipe ?
+title: workflow éditorial, comment le mettre en place dans votre équipe ?
 featured: false
 description: Un workflow éditorial solide s'appuie sur les personnes qui le composent et non sur les outils qui ne sont là que pour "informer" les parties prenantes...
 ---
 
-# Qu’appelle t-on Content Workflow ou workflow éditorial ? 
+# Qu’appelle t-on workflow éditorial ? 
 
-Un workflow est une représentation standardisée des différentes étapes qui permettent d’accomplir une tâche. On peut ainsi parler de workflow dans une infinité de domaines : pour un processus de production, pour suivre sa liste de tâches personnelles, pour la gestion des demandes client entrantes etc.. Il s’impose généralement à partir du moment ou au moins deux personnes travaillent ensemble sur un même projet.
+Un workflow éditorial est une représentation standardisée des différentes étapes qui permettent d’accomplir une tâche. On peut ainsi parler de workflow dans une infinité de domaines : pour un processus de production, pour suivre sa liste de tâches personnelles, pour la gestion des demandes client entrantes etc.. Il s’impose généralement à partir du moment ou au moins deux personnes travaillent ensemble sur un même projet.
 
-Dans le cas du Content Workflow, ou workflow éditorial, il s’agit de définir le rôle de chaque membre de l’équipe à différents moments du processus. Par exemple :
+Dans le cas du workflow éditorial, il s’agit de définir le rôle de chaque membre de l’équipe à différents moments du processus. Par exemple :
 
-Qui écrit les briefs pour les clients ?
-Qui valide les vidéos destinées au site internet ? 
-Quel est le rôle du social media manager ?
+- Qui écrit les briefs pour les clients ?
+- Qui valide les vidéos destinées au site internet ? 
+- Quel est le rôle du social media manager ?
 
 ## Pourquoi mettre en place un workflow éditorial est important 
 
-A partir du moment où plusieurs personnes interviennent sur un projet pour l’imaginer, le concevoir, le fabriquer, le valider, le re-valider, l’améliorer et, finalement, le distribuer, mettre en place ce workflow est impératif. L’ensemble des personnes impliquées ont ainsi connaissance de ce processus. Les enjeux sont multiples : éviter la perte de temps, produire de manière qualitative et efficace. 
-La mise en place du content workflow permet également d’avoir une vision d’ensemble à un instant “t” de l’état d’avancement des projets liés aux contenus produits (combien de contenus à produire, qu’est-ce qui est prêt à être diffusé …). 
+A partir du moment où plusieurs personnes interviennent sur un projet pour l’imaginer, le concevoir, le fabriquer, le valider, le re-valider, l’améliorer et, finalement, le distribuer, mettre en place ce workflow est impératif. 
+
+L’ensemble des personnes impliquées ont ainsi connaissance de ce processus. Les enjeux sont multiples : éviter la perte de temps, produire de manière qualitative et efficace. 
+
+La mise en place du workflow éditorial permet également d’avoir une vision d’ensemble à un instant “t” de l’état d’avancement des projets liés aux contenus produits (combien de contenus à produire, qu’est-ce qui est prêt à être diffusé …). 
+
 Enfin, le dernier enjeu (qui découle des deux précédents) concerne la gestion budgétaire liés à la production de contenus. On anticipe ainsi les problèmes de goulots d’étranglement sur une partie du flux de production. 
 
-# Mettre en place un content workflow pour son équipe
+# Mettre en place un workflow éditorial pour son équipe
 
 ## Identifier les rôles des membres de l’équipe 
 Avant de se lancer dans le paramétrage d’un outil de workflow management, il est primordial de commencer par un travail d’identification des rôles. 
 
-Les étapes liées au workflow de contenu vont de la création à diffusion, voire même post diffusion (social media management par exemple). De ce fait, il faut inclure les membres des équipes concernées (marketing, communication, web), et clarifier les rôles et tâches de chacun. Par exemple, le responsable de la stratégie va définir le brief, le rédacteur va créer le contenu , le graphiste va faire les visuels… 
+Les étapes liées au workflow de contenu vont de la création à diffusion, voire même post diffusion (social media management par exemple). De ce fait, il faut inclure les membres des équipes concernées (marketing, communication, web), et clarifier les rôles et tâches de chacun. Par exemple, le responsable de la stratégie va définir le brief, le rédacteur va créer le contenu, le graphiste va faire les visuels… 
 
 Chaque entreprise aura donc son propre workflow en fonction de la manière dont sont constituées les équipes. Il s’agit de formaliser la façon de travailler préexistante de façon à l’optimiser.
 
 Attention, identifier les rôles de chacun ne signifie pas uniquement “désigner”. Un échange avec l’ensemble des membres des équipe concernées est nécessaire :  les personnes impliquées sont-elles d’accord avec leur place dans le processus ? Pensent-elles que le choix du workflow est pertinent ? Disposent-elles des moyens réels d’accomplir la mission confiée (temps, compétences, légitimité) ?
-Identifier les intervenants d’un processus est une phase extrêmement importante, garante de sa pérennité. Car, in fine, ce seront les personnes impliquées qui feront vivre ce schéma et l’aideront à évoluer.
 
+Identifier les intervenants d’un processus est une phase extrêmement importante, garante de sa pérennité. Car, in fine, ce seront les personnes impliquées qui feront vivre ce schéma et l’aideront à évoluer.
 
 ##  Définir les étapes et leur durée
 
