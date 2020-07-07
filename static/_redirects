@@ -9,4 +9,4 @@ https://www-pilot-pm.netlify.com/* https://www.pilot.pm/:splat 301!
 /en/blog/content-workflow/ /en/blog/editorial-workflow/ 301!
 
 # Redirect users with english language
-/* /en/:splat 302  Language=en
+/ /en 302  Language=en
