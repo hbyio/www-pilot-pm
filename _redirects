@@ -6,6 +6,7 @@ https://www-pilot-pm.netlify.com/* https://www.pilot.pm/:splat 301!
 https://www.pilot.pm/fr/*  https://www.pilot.pm/:splat 301! 
 
 https://www.pilot.pm/blog/content-workflow/ https://www.pilot.pm/blog/workflow-editorial/ 301! 
+https://www.pilot.pm/fr/blog/content-workflow/ https://www.pilot.pm/blog/workflow-editorial/ 301! 
 
 # Redirect users with french language preference from / to /fr
 # / /fr 302  Language=fr,fr-fr,fr-ca,fr-FR,fr-fr
