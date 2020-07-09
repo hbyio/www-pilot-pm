@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="mb-20 mx-auto">
+<div class="mb-20 mx-auto" itemscope itemtype="https://schema.org/Article">
   <div class="flex flex-col py-5 md:flex-row relative max-w-screen">
     <div id="NoteHeader" class="flex-1 mx-auto w-full">
       {{ if eq .Section "blog" }}
@@ -19,7 +19,7 @@
         {{ partial "img.html" (dict "context" . "src" .Params.guestLogo "alt" "Guest corporate logo" "class" "") }}
       </div>
       {{ end }}
-      <h1 class="text-4xl md:text-4xl lg:text-5xl font-black leading-none">
+      <h1 class="text-4xl md:text-4xl lg:text-5xl font-black leading-none" itemprop="name">
         {{.Title}}
       </h1>
 
@@ -58,7 +58,7 @@
 
   </div>
   <div class="relative max-w-3xl bg-white mx-auto z-30 my-5">
-    <div class="content">
+    <div class="content" itemprop="articleBody">
       {{- .Content -}}
     </div>
   </div>
