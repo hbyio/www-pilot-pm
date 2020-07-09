@@ -11,7 +11,7 @@
         {{ if .Params.featured }}
             <div>
                 {{ partial "tag.html" . }}
-                <a href="#" class="flex items-center">
+                <a href="{{ .RelPermalink }}" class="flex items-center">
                     {{ if .Params.Illustration }}
                         <div class="mr-2">
                         {{ $image := .Resources.GetMatch (.Params.Illustration) }}
