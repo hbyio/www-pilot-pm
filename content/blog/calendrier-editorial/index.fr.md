@@ -1,7 +1,7 @@
 ---
 author: Justine
 date: 2020-07-01
-draft: true
+draft: false
 illustration: illustration.png
 tag: stratégie
 tagColor: purple
@@ -13,13 +13,13 @@ Si vous vous intéressez de près ou de loin à la création de contenu, vous av
 
 Vous vous êtes peut être déjà demandé : "Est-ce que j'ai vraiment besoin d'avoir un planning pour mes contenus ?"
 
-A moins que vous n'ayez choisi de publier des articles, vidéos et autres types de contenus sans raison particulière (on en doute un peu !), le calendrier éditorial a plusieurs avantages : 
+A moins que vous n'ayez choisi de publier des articles, vidéos et autres types de contenus sans raison particulière (on en doute un peu !), **le calendrier éditorial a plusieurs avantages** : 
 
-* avoir une vision claire et instantanée de l'ensemble de vos prises de paroles 
+* avoir une **vision claire et instantanée** de l'ensemble de vos prises de paroles 
 
-* être régulier, ce qui est un facteur essentiel pour atteindre vos objectifs 
+* **être régulier**, ce qui est un facteur essentiel pour atteindre vos objectifs 
 
-* vérifier la cohérence de vos contenus au regard de votre ligne éditoriale 
+* vérifier la **cohérence de vos contenus** au regard de votre ligne éditoriale 
 
 En résumé, qui dit "stratégie de contenus" dit forcément "calendrier éditorial" ! 
 
@@ -41,7 +41,7 @@ Tout comme le titre, réfléchissez en avance au type de contenu à créer :
 
 * un article 
 
-* une vidéo 
+* une vidéo
 
 * un post Linkedin 
 
@@ -57,7 +57,7 @@ Si vous travaillez en équipe, vous pouvez (vous devriez !) attribuer la product
 
 **Le brief**
 
-Notez les grandes idées relatives au contenu. Par exemple pour un article de blog, écrivez les éventuelles questions auxquelles il devra répondre, les points clés etc... 
+Notez les **grandes idées** relatives au contenu. Par exemple pour un article de blog, écrivez les éventuelles questions auxquelles il devra répondre, les points clés etc... 
 
 **Le canal** 
 
@@ -89,7 +89,7 @@ C'est à vous de déterminer ce qui correspond le mieux à la réalité de votre
 
 Il serait dommage de l'oublier, dans un calendrier. 🙃
 
-### Les champs personnalisées 
+### Les champs personnalisés 
 
 **Les mots clés** 
 
@@ -111,23 +111,43 @@ Il existe de nombreux outils pour créer un calendrier éditorial. Celui qui vou
 
 ### Les plus simples
 
-Pour utilisation perso : excel, Google sheets et autres tableurs
+Pour débuter avec un calendrier éditorial, ou pour une utilisation personnelle, une feuille de calcul devrait vous suffire.
 
-👍  bien pour débuter, simple 
+Si vous êtes un habitué d'**Excel** vous parviendrez rapidement à créer un tableau simple et efficace. 
 
-🚫  limité pour les fonctions avancées 
+Pour travailler avec une équipe restreinte, vous pouvez utiliser des équivalents en ligne, comme **Google Sheets**. 
+
+👍🏻 **Les points positifs** : bien pour débuter, simple à créer
+
+👎🏻 **Les points négatifs :** fonctionnalités limitées, peut rapidement devenir compliqué à utiliser en équipe 
 
 ### Les plus généraux
 
-Collaboration avec petite équipe : trello, basecamp, asana
+Il existe énormément d'outils destinés à travailler en équipe sur de la gestion de projet. Parmi les plus connus :
 
-👍  collaboration 
+**Trello** peut servir d'outil de suivi des contenus avec son organisation type kanban. Une variante du format calendrier que certaines personnes peuvent préférer. 
 
-🚫  outils de gestion de projets, pas pensés pour les stratégies de contenu 
+**Asana, Basecamp, Wrike** sont des exemples d'outils de gestion de projet qui peuvent vous convenir pour construire et suivre un calendrier de contenus. 
+
+Leur fonctionnement est relativement similaire : les tâches affectées aux membres de l'équipe évoluent au rythme de la production (à faire, en cours, fait). 
+
+👍🏻 **Les points positifs** : aspect collaboratif, suivi des tâches simple.
+
+👎🏻 **Les points négatifs :** ce sont avant tout des outils de gestion de projet "generalistes" qui ne sont pas spécifiquement développés la gestion du contenu.
 
 ### Le plus spécialisé
 
-✅  outils spécialisés et pour grandes équipes : Pilot of course 
+En tant qu'outil dédié à la gestion des contenus, **Pilot** intègre un calendrier éditorial : 
+
+![Capture d’écran 2020-07-09 à 11.44.39.png](https://pilotapp-leader.s3.amazonaws.com/assets/136/35369/136_35369_working.jpg "Capture d’écran 2020-07-09 à 11.44.39.png")*image : <https://pilot.pm/>*
+
+La [fonction calendrier](https://www.pilot.pm/resources/calendars/) est particulièrement appréciée par nos clients. Au-delà de l'aspect prévisionnel, il permet de rechercher et filtrer les contenus de manière avancée.   
+
+👍🏻 **Les points positifs** : outil pensé pour les équipes en lien avec la production de contenu
+
+👎🏻 **Les points négatifs :** Pilot s'adresse avant tout aux équipes ! 
+
+*NB: Si vous êtes freelance spécialisé dans la création de contenu (rédaction web, copywriting...) vous pouvez être embarqué sur le Desk (l'espace de travail) de vos clients pour collaborer avec eux !*
 
 # Bonus : conseils pour bien utiliser un calendrier éditorial  
 
@@ -135,4 +155,8 @@ Gardez à l'esprit que la calendrier éditorial n'est qu'un outil dont l'efficac
 
 **Communiquez les règles à votre équipe**
 
-Assurez-vous que toutes les personnes impliquées dans l'utilisation du planning de contenu l'utilisent de la même manière (tous les membres de l'équipe devront écrire des titres complets, par exemple). 
+Assurez-vous que toutes les personnes impliquées dans l'utilisation du planning de contenu l'**utilisent de la même manière** (tous les membres de l'équipe devront écrire des titres complets, par exemple). 
+
+**Mettre à jour** 
+
+Prenez l'habitude de mettre à jour régulièrement votre calendrier éditorial : dates de publication si nécessaire, mais aussi le statut de vos contenus. Vous éviterez ainsi d'oublier de publier vos contenus 😉
