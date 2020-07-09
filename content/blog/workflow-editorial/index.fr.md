@@ -7,7 +7,7 @@ short: Un workflow éditorial solide s'appuie sur les personnes qui le composent
 tag: stratégie
 tagColor: purple
 title: workflow éditorial, comment le mettre en place dans votre équipe ?
-featured: false
+featured: true
 description: Un workflow éditorial solide s'appuie sur les personnes qui le composent et non sur les outils qui ne sont là que pour "informer" les parties prenantes...
 ---
 
