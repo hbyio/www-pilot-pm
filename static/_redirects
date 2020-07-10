@@ -3,7 +3,6 @@
 # Redirect default Netlify subdomain to primary domain
 https://www-pilot-pm.netlify.com/* https://www.pilot.pm/:splat 301!
 
-/fr/*  /:splat 301!
 /blog/editorial-workflow/ /blog/workflow-editorial/ 301!
 /fr/blog/editorial-workflow/ /blog/workflow-editorial/ 301!
 /blog/content-workflow/ /blog/workflow-editorial/ 301!
