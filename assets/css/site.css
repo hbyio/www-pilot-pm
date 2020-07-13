@@ -51,7 +51,6 @@ a {
 
 .content img {
   @apply shadow-lg my-5;
-  max-width: initial !important;
 }
 
 .content > * + *, iframe {
