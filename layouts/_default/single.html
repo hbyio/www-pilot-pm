@@ -29,9 +29,9 @@
             {{ partial "img.html" (dict "context" . "src" .Params.guestImage "alt" .Params.guestImage "class" "w-20 h-20 mr-4 rounded-full flex shadow") }}
         {{ end }}          
 
-        {{ if .Params.description }}
+        {{ if .Params.subtitle }}
           <div class="text-gray-700 text-2xl my-10">
-            {{ .Params.description | safeHTML }}
+            {{ .Params.subtitle | safeHTML }}
             {{ if .Params.guestLinkedin }}
             <a
               class="link text-blue-700 block"

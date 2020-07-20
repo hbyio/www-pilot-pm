@@ -5,6 +5,7 @@ draft: false
 menu: docs
 icon: file-text
 description: "Le workflow éditorial consiste à définir précisément quel est le rôle de chaque membre de l'équipe par rapport à la production contenus. Ce workflow peut accompagner le contenu sur toute sa durée de vie."
+subtitle: "Le workflow éditorial consiste à définir précisément quel est le rôle de chaque membre de l'équipe par rapport à la production contenus. Ce workflow peut accompagner le contenu sur toute sa durée de vie."
 slug: tutorial-workflow-editorial
 title: "Workflow éditorial : comment le mettre en place avec Pilot ?"
 weight: 1

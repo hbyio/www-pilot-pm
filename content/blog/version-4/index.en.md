@@ -8,6 +8,7 @@ featured: false
 tag: 📦 Release
 tagColor: green
 description: New UI, real time and collaborative edition, discover the new Pilot. 
+subtitle: New UI, real time and collaborative edition, discover the new Pilot. 
 ---
 # New interface
 

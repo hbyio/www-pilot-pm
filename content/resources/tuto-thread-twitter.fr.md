@@ -5,6 +5,7 @@ draft: false
 menu: docs
 icon: file-text
 description: "La limite de 280 caractères par tweet peut être bloquante lorsque vous avez besoin de développer une idée. Pour remédier à cela, Twitter permet de poster une succession de tweets liés les uns aux autres, qui apparaissent sous forme d’une discussion  : les threads."
+subtitle: "La limite de 280 caractères par tweet peut être bloquante lorsque vous avez besoin de développer une idée. Pour remédier à cela, Twitter permet de poster une succession de tweets liés les uns aux autres, qui apparaissent sous forme d’une discussion  : les threads."
 slug: thread-twitter
 title: "Thread Twitter, comment le produire et le valider ? "
 weight: 1

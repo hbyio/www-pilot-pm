@@ -8,6 +8,7 @@ slug: web-love-print
 tag: Produire pour le web
 title: Web ❤ Print
 description: Le module CSS "Grid layout" va permettre, enfin, de composer des pages sur un écran comme on le faisait pour l'imprimerie. Mieux vaut tard ..
+subtitle: Le module CSS "Grid layout" va permettre, enfin, de composer des pages sur un écran comme on le faisait pour l'imprimerie. Mieux vaut tard ..
 ---
 
 <iframe width="100%" height="430" class="my-10 mx-auto" src="https://www.youtube.com/embed/E005mjqpZ9Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

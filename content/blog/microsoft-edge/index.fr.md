@@ -5,7 +5,6 @@ draft: true
 illustration: man.png
 title: Abandon du support d'IE11 et découverte de Microsoft Edge
 featured: false
-description: 
 ---
 The perils of using Internet Explorer as your default browser
 https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-perils-of-using-internet-explorer-as-your-default-browser/ba-p/331732#

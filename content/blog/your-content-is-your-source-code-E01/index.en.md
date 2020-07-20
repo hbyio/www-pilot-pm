@@ -4,6 +4,7 @@ date: 2018-07-15
 draft: false
 illustration: illustration.png
 description: Producing an application has many similarities with content production. So much so that we thought it would be interesting to start talking about it in a blog notes serie.
+subtitle: Producing an application has many similarities with content production. So much so that we thought it would be interesting to start talking about it in a blog notes serie.
 slug: your-content-is-your-source-code-E01
 title: Content production is strangely similar to software development
 ---

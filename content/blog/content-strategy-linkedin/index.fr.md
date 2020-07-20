@@ -9,6 +9,7 @@ tagColor: purple
 title: "Stratégie de contenu : comment l’adapter à Linkedin ?"
 featured: false
 description: Si vous n’êtes pas encore présent sur ce réseau, ou si vous aimeriez l’utiliser davantage pour votre entreprise, voici quelques conseils
+subtitle: Si vous n’êtes pas encore présent sur ce réseau, ou si vous aimeriez l’utiliser davantage pour votre entreprise, voici quelques conseils
 ---
 
  Linkedin est la plateforme par excellence pour développer son réseau professionnel, et donc, son activité commerciale. Vous avez peut-être déjà entendu ces chiffres:  plus de 600 millions d’utilisateurs, dont 40% sont actifs quotidiennement. [Plus de la moitié du trafic social](https://sumo.com/stories/linkedin-traffic) généré vers des sites B2B provient d’ailleurs de Linkedin. 

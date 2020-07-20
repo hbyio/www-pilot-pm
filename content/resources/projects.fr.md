@@ -10,8 +10,6 @@ title: Projets
 weight: 3
 ---
 
-# **Projets**
-
 Vous pouvez **rassembler vos contenus dans des projets** pour organiser le travail de l’équipe. Toutes les informations relatives à un projet sont ainsi visibles à un seul et même endroit. 
 
 Fini les consignes répétées à chaque réunion ! 😇
