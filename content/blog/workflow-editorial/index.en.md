@@ -15,7 +15,7 @@ sitemapChangeFreq: 'daily'
 sitemapPriority: 0.5
 ---
 
-# A workflow is here (do you want it or not) as soon as two people work together on the same object
+## A workflow is here (do you want it or not) as soon as two people work together on the same object
 
 From the moment an "object" is produced with several hands it is de facto placed in a "production line" or workflow. 
 
@@ -23,7 +23,7 @@ Several people can intervene to imagine, design, manufacture, validate, revalida
 
 Content is no exception. Especially at a time when regulatory constraints can be extremely strong and the demand is constantly increasing.
 
-# Identify stakeholders
+## Identify stakeholders
 
 It is necessary to identify the stakeholders: who will be involved? What will its mission be? 
 
@@ -31,7 +31,7 @@ Be careful, identifying does not only mean designating but also convincing. Does
 
 Identifying the participants in a process is an extremely important phase, guaranteeing its sustainability. Because, *in the end* it will be the people involved who will bring this scheme to life and help it evolve.
 
-# Carefully design "states" or workflow steps
+## Carefully design "states" or workflow steps
 
 A workflow is a series of *sequential* steps through which the content will have to pass. At each step the content will be in a specific "state". The number of steps is extremely important. 
 
@@ -43,7 +43,7 @@ Each worklfow status must be correctly thought out beforehand to correctly desig
 
 On Pilot, on average, teams design 5 workflow states. Never more than 10. Never less than 3.
 
-# Dissociate "status" from content and "tasks" to be performed.
+## Dissociate "status" from content and "tasks" to be performed.
 
 For a long time we have linked, in the same functionality, states and tasks on Pilot. But this caused a lot of confusion because they are two very different "messages".
 
@@ -57,7 +57,7 @@ Having the "To be validated" and "Validated" states coexist brings confusion whe
 
 This is the other advantage allowed by the dissociation of tasks and states. The team may have to perform several tasks to move from one state to another, and these tasks may vary from one content to another. This need for flexibility must be guaranteed and supported. However, we cannot change too often the sequence of states of a workflow which remains the backbone of the production chain.
 
-# Content workflow: A complex process that is more human than mechanical
+## Content workflow: A complex process that is more human than mechanical
 
 A good content workflow is a complex thing to set up. It must be both directive (to prevent cacophony) but also permissive, to admit that processes change, temporarily or not, that humans are not constant machines.
 

@@ -1,15 +1,16 @@
 
   <div class="bg-gray-800 rounded-t">
+    <h2 class="text-gray-800">Informations complémentaires</h2>
     <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="grid grid-cols-2 gap-8 xl:col-span-2">
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h4 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
+              <h3 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
                 <a href="{{ "/resources" | absLangURL  }}">
                   {{ i18n "resources" }}
                 </a>
-              </h4>
+              </h3>
 
               <ul class="mt-4">
                 {{ range where .Site.RegularPages "Section" "resources" }}
@@ -22,9 +23,9 @@
               </ul>
             </div>
             <div class="mt-12 md:mt-0">
-              <h4 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
+              <h3 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
                 Support
-              </h4>
+              </h3>
               <ul class="mt-4">
                 <li>
                   <a href="{{ .Site.LanguagePrefix }}/#prices-section"
@@ -43,9 +44,9 @@
           </div>
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h4 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
+              <h3 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
                 Company
-              </h4>
+              </h3>
               <ul class="mt-4">
                 <li>
                   <a href="#" class="text-base leading-6 text-gray-300 hover:text-white">
@@ -66,9 +67,9 @@
               </ul>
             </div>
             <div class="mt-12 md:mt-0">
-              <h4 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
+              <h3 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
                 Legal
-              </h4>
+              </h3>
               <ul class="mt-4">
                 <li>
                   <a href="{{ "/policies/terms" | relLangURL  }}"
@@ -93,9 +94,9 @@
           </div>
         </div>
         <div class="mt-8 xl:mt-0">
-          <h4 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
+          <h3 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
             {{ i18n "subscribeNewsletter" }}
-          </h4>
+          </h3>
           <p class="mt-4 text-gray-300 text-base leading-6">
             {{ i18n "subscribeNewsletterExplained" }}
           </p>

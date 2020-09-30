@@ -12,7 +12,7 @@ description: Un workflow éditorial solide s'appuie sur les personnes qui le com
 subtitle: Un workflow éditorial solide s'appuie sur les personnes qui le composent et non sur les outils qui ne sont là que pour "informer" les parties prenantes...
 ---
 
-# Qu’appelle t-on workflow éditorial ? 
+## Qu’appelle t-on workflow éditorial ? 
 
 Un workflow éditorial est une représentation standardisée des différentes étapes qui permettent d’accomplir une tâche. On peut ainsi parler de workflow dans une infinité de domaines : pour un processus de production, pour suivre sa liste de tâches personnelles, pour la gestion des demandes client entrantes etc.. Il s’impose généralement à partir du moment ou au moins deux personnes travaillent ensemble sur un même projet.
 
@@ -32,9 +32,9 @@ La mise en place du workflow éditorial permet également d’avoir une vision d
 
 Enfin, le dernier enjeu (qui découle des deux précédents) concerne la gestion budgétaire liés à la production de contenus. On anticipe ainsi les problèmes de goulots d’étranglement sur une partie du flux de production. 
 
-# Mettre en place un workflow éditorial pour son équipe
+## Mettre en place un workflow éditorial pour son équipe
 
-## Identifier les rôles des membres de l’équipe 
+### Identifier les rôles des membres de l’équipe 
 Avant de se lancer dans le paramétrage d’un outil de workflow management, il est primordial de commencer par un travail d’identification des rôles. 
 
 Les étapes liées au workflow de contenu vont de la création à diffusion, voire même post diffusion (social media management par exemple). De ce fait, il faut inclure les membres des équipes concernées (marketing, communication, web), et clarifier les rôles et tâches de chacun. Par exemple, le responsable de la stratégie va définir le brief, le rédacteur va créer le contenu, le graphiste va faire les visuels… 
@@ -45,7 +45,7 @@ Attention, identifier les rôles de chacun ne signifie pas uniquement “désign
 
 Identifier les intervenants d’un processus est une phase extrêmement importante, garante de sa pérennité. Car, in fine, ce seront les personnes impliquées qui feront vivre ce schéma et l’aideront à évoluer.
 
-##  Définir les étapes et leur durée
+###  Définir les étapes et leur durée
 
 Une fois que les parties prenantes ont été identifiées, et leur rôle attribué, il faut définir les différentes étapes du content workflow, ainsi que leur durée. 
 
@@ -57,7 +57,7 @@ Il faut donc que chaque statut du workflow de contenu soit correctement pensé e
 Les équipes qui utilisent Pilot définissent en moyenne 5 statuts différents pour leur workflow de contenu.
 Les deadlines ont aussi leur rôle à jouer : elles doivent être claires et raisonnables (“au plus vite” n’est pas une deadline !). 
 
-## S’aider d’outils de gestion du workflow de contenu 
+### S’aider d’outils de gestion du workflow de contenu 
 
 Passer d’un statut à un autre peut impliquer la réalisation d’une tâche par un membre de l’équipe. Par exemple, “À valider par le service juridique” est une tâche. “Validé” est un état. 
 

@@ -20,9 +20,6 @@ Et plus le web évolue plus IE11 dégrade l'expérience (réactivité de l'inter
 
 That's some text with a footnote.[^1]
 
-
-
-
 ## Fin du support d'IE11 qui passe en mode "best effort"
 
 ## Le remplaçant officiel (et moderne) : Microsoft Edge

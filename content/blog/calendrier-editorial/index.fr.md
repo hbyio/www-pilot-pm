@@ -26,7 +26,7 @@ En résumé, qui dit "stratégie de contenus" dit forcément "calendrier éditor
 
 On vous explique tout ce qu'il y a à savoir pour utiliser un calendrier de contenus de manière optimale : 
 
-# Que doit contenir un calendrier éditorial ?
+## Que doit contenir un calendrier éditorial ?
 
 Les informations qui vont apparaître dans votre planning éditorial vont dépendre de votre organisation (travaillez-vous seul ou avec une équipe ? à qui sont destinés vos contenus ? etc...). Cependant, certaines données sont bien évidemment indispensables. 
 
@@ -106,7 +106,7 @@ Ici vous pourrez noter si votre contenu est destiné à des clients existants, d
 
 Maintenant que vous savez tout sur les informations importantes à faire figurer dans votre calendrier de contenu, voyons ce qu'il en est des outils.
 
-# Quel outil utiliser pour un calendrier éditorial ? 
+## Quel outil utiliser pour un calendrier éditorial ? 
 
 Il existe de nombreux outils pour créer un calendrier éditorial. Celui qui vous sera le plus adapté dépend de la taille de votre équipe et de la place accordée au contenu dans votre stratégie. 
 
@@ -150,7 +150,7 @@ La [fonction calendrier](https://www.pilot.pm/resources/calendars/) est particul
 
 *NB: Si vous êtes freelance spécialisé dans la création de contenu (rédaction web, copywriting...) vous pouvez être embarqué sur le Desk (l'espace de travail) de vos clients pour collaborer avec eux !*
 
-# Bonus : conseils pour bien utiliser un calendrier éditorial  
+## Bonus : conseils pour bien utiliser un calendrier éditorial  
 
 Gardez à l'esprit que la calendrier éditorial n'est qu'un outil dont l'efficacité dépend de la manière dont il est utilisé. Voici quelques conseils à ce propos :
 

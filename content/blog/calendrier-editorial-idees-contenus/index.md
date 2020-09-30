@@ -21,7 +21,7 @@ Cet article vous sera utile si :
 
 * **vous êtes parfois perdu dans votre organisation**
 
-# Pré-requis
+## Pré-requis
 
 Attention, pour que la méthode et les astuces qui vont suivre fonctionnent, il y a un pré-requis : vous devez connaître votre cible sur le bout des doigts ! 
 
@@ -39,7 +39,7 @@ Pour cela, il faut déterminer un ou plusieurs **personas**, c'est-à-dire, une 
 
 Plus vous avez d'informations sur vos cibles, plus le travail de recherche d'idées de contenus sera simple. 
 
-# Trouver et organiser ses idées grâce aux Topics Clusters
+## Trouver et organiser ses idées grâce aux Topics Clusters
 
 Un Topic Cluster, c'est un **groupe de sujets** liés à une thématique principale. 
 
@@ -71,7 +71,7 @@ La méthode des Topics Clusters permet de trouver facilement les sous-sujets en 
 
 En revanche, il peut être plus complexe de connaître les questions que se posent vos cibles. Pour les trouver, il vous faudra passer par une étape de recherche. 
 
-# Produire des contenus utiles pour vos lecteurs
+## Produire des contenus utiles pour vos lecteurs
 
 Les contenus que vous créez permettent aux personnes que vous ciblez de vous trouver plus facilement, à condition de savoir de quelle manière elles effectuent leurs recherches. 
 

@@ -15,8 +15,6 @@ description:  Echanges avec Sabine Rebitzer, responsable du rayonnement des cont
 subtitle:  Echanges avec Sabine Rebitzer, responsable du rayonnement des contenus chez Harmonie Mutuelle.
 ---
 
-##
-
 Harmonie Mutuelle fait partie du Groupe VYV, qui constitue le plus grand réseau de mutuelles santé en France en 2020. Harmonie Mutuelle, c’est 4,7 millions de clients, et près de 5 000 collaborateurs.
 
 Dans sa volonté d’être au plus près de ses adhérents et de préserver une société de solidarité, l’entreprise a fait des contenus le centre de sa stratégie éditoriale. 
