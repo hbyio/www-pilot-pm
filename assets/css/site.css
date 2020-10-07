@@ -27,9 +27,7 @@ img.grayscale {
   -webkit-filter: grayscale(100%);
 }
 
-a {
-  text-decoration: underline;
-}
+
 
 #main a {
     @apply text-blue-500;
@@ -71,7 +69,7 @@ a {
 }
 
 .content a {
-  @apply text-blue-600 font-semibold;
+  @apply text-blue-600 font-semibold underline;
 }
 
 .content strong a {
