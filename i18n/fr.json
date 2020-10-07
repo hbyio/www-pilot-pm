@@ -193,6 +193,9 @@
   "strategicValue": {
     "other": "Des versions à valider qui se perdent ? Des comités éditoriaux à répétition ? Ca vous semble familier ?  Voici comment Pilot va optimiser votre stratégie de contenus"
   },
+  "submit": {
+    "other": "Envoyer"
+  },
   "subscribe": {
     "other": "S'inscrire"
   },

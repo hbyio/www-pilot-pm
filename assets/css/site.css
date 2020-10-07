@@ -27,6 +27,10 @@ img.grayscale {
   -webkit-filter: grayscale(100%);
 }
 
+.form-input{
+  margin-bottom: 1.5em;
+}
+
 
 
 #main a {
