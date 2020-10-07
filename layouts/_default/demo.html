@@ -16,7 +16,7 @@
             {{.Content}}
           </h2>
           {{ if .Params.displayForm }}
-          <form action="/demo-form-success" method="POST" class="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8" netlify-honeypot="bot-field" data-netlify="true">
+          <form action="/demo-form-success" name="askfordemo" method="POST" class="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8" netlify-honeypot="bot-field" data-netlify="true">
             <p class="hidden">
               <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
             </p>
@@ -27,9 +27,9 @@
               </div>
             </div>
             <div class="sm:col-span-2">
-              <label for="email" class="block text-sm font-medium leading-5 text-gray-700">Email</label>
+              <label for="email" class="block text-sm font-medium leading-5 text-gray-700">Email (obligatoire)</label>
               <div class="mt-1 relative rounded-md shadow-sm">
-                <input name="email" type="email" class="form-input block w-full transition ease-in-out duration-150 sm:text-sm sm:leading-5">
+                <input name="email" type="email" required class="form-input block w-full transition ease-in-out duration-150 sm:text-sm sm:leading-5">
               </div>
             </div>
             <div class="sm:col-span-2">
