@@ -61,9 +61,20 @@
     {{ $font := resources.Get "css/inter.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $font.RelPermalink }}" integrity="{{ $font.Data.Integrity }}">
 
+    {{ if not .Site.IsServer }}
+    <!-- OR WITH ENV VAR if eq (getenv "HUGO_ENV") "production"  -->
+    <!--ONLY PRODUCTION-->
+    {{ partial "analytics.html" . }}
+    {{ end }}
+
+
 </head>
 
 <body x-data="{ menuopen: false }">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7KJ6QP"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <div class="backdrop absolute h-full w-full bg-gray-50 opacity-75 " x-show="menuopen"></div>
 
@@ -79,11 +90,6 @@
         </footer>
     </div>
 
-    {{ if not .Site.IsServer }}
-    <!-- OR WITH ENV VAR if eq (getenv "HUGO_ENV") "production"  -->
-    <!--ONLY PRODUCTION-->
-    {{ partial "analytics.html" . }}
-    {{ end }}
 
 </body>
 
