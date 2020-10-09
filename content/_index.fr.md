@@ -1,3 +1,0 @@
----
-askDemo: Planifier une démo
----

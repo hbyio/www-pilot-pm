@@ -5,6 +5,9 @@
   "annotations": {
     "other": "Annotations"
   },
+  "askDemo": {
+    "other": "Demander une démo"
+  },
   "annotationsShort": {
     "other": "Annoter vos documents précisément et engagez des conversations sans perdre de temps. Les membres de l’équipe seront notifiés avec un lien les menant directement vers le document et l’annotation."
   },
@@ -161,7 +164,7 @@
     "other": "Sans limite de poids mettez à disposition des fichiers volumineux pour vos webmasters, maquettistes, monteurs vidéos"
   },
   "signup": {
-    "other": "Essai gratuit"
+    "other": "Essayez gratuitement"
   },
   "sla": {
     "other": "Engagement de service"

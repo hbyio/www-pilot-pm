@@ -2,6 +2,9 @@
   "whatsappChannel": {
     "other": "Chat with us on WhatsApp"
   },
+  "askDemo": {
+    "other": "Schedule demo"
+  },
   "annotations": {
     "other": "Annotations"
   },
