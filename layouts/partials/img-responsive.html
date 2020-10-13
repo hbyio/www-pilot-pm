@@ -1,0 +1,9 @@
+
+{{- $image := resources.Get (.src) -}}
+<img
+    {{ if .class }}class="{{ .class }}"{{ end }}
+    src="{{ $image.Permalink }}"
+    alt="{{ .alt }}"
+    width="{{ $image.Width }}" 
+    height="{{ $image.Height }}"
+/>

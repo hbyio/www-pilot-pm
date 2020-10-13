@@ -1,15 +1,12 @@
 {
-  "whatsappChannel": {
-    "other": "Nous sommes aussi disponibles sur WhatsApp"
-  },
   "annotations": {
     "other": "Annotations"
   },
-  "askDemo": {
-    "other": "Demander une démo"
-  },
   "annotationsShort": {
     "other": "Annoter vos documents précisément et engagez des conversations sans perdre de temps. Les membres de l’équipe seront notifiés avec un lien les menant directement vers le document et l’annotation."
+  },
+  "askDemo": {
+    "other": "Demander une démo"
   },
   "blog": {
     "other": "Blog"
@@ -77,8 +74,11 @@
   "futureFeatures": {
     "other": "Toutes nouvelles fonctionnalités"
   },
+  "heroSubTitle": {
+    "other": "Pilot facilite et rend plus agréable la planification et la production de contenus avec vos équipes, où qu'elles se trouvent."
+  },
   "heroTitle": {
-    "other": "Organisez votre marketing de contenu"
+    "other": "Pilot aide les équipes qui produisent des contenus"
   },
   "items": {
     "one": "contenu",
@@ -154,6 +154,9 @@
   "projectLifeCycleText": {
     "other": "Centraliser et mettre à disposition l'information nécessaire à la réalisation d'une campagne marketing permet d'en raccourcir son temps de développement"
   },
+  "readyToDive": {
+    "other": "Prêt à vous lancer?"
+  },
   "resources": {
     "other": "ressources"
   },
@@ -171,15 +174,6 @@
   },
   "someMadesomeRequested": {
     "other": "En constante évolution, en fonction de vos usages"
-  },
-  "sourceOfTruth": {
-    "other": "Pilot rend le pouvoir aux équipes de production de contenu, de la création à la mise en ligne"
-  },
-  "manysectorsOnegoal": {
-    "other": "Ils nous font confiance"
-  },
-  "readyToDive": {
-    "other": "Prêt à vous lancer?"
   },
   "startTrial": {
     "other": "Démarrez votre essai aujourd'hui"
@@ -233,6 +227,9 @@
   "testimonials": {
     "other": "Témoignages"
   },
+  "theyTrustUs": {
+    "other": "Pilot aide ces grands comptes à structurer leurs prises de parole (parfois depuis 6 ans!)"
+  },
   "translationsManagement": {
     "other": "Gestion des langues & traductions"
   },
@@ -257,6 +254,9 @@
   "user": {
     "one": "utilisateur",
     "other": "utilisateurs"
+  },
+  "whatsappChannel": {
+    "other": "Nous sommes aussi disponibles sur WhatsApp"
   },
   "whoWhatWhen": {
     "other": "Vous savez ce qui est fait, par qui et quand."
