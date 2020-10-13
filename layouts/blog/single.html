@@ -1,0 +1,70 @@
+{{ define "main" }}
+<div class="mb-20 mx-auto" itemscope itemtype="https://schema.org/Article">
+  <div class="flex flex-col py-5 md:flex-row relative max-w-screen">
+    <div id="NoteHeader" class="flex-1 mx-auto w-full">
+      {{ if eq .Section "blog" }}
+      <a href="{{ .Site.LanguagePrefix }}/blog" class="flex stroke-current text-gray-900 underline mb-10">
+        <- Back to blog
+      </a>
+      {{ end }}
+      {{ if eq .Section "resources" }}
+      <a href="{{ .Site.LanguagePrefix }}/resources" class="flex stroke-current text-gray-900 underline mb-10">
+        Back to resources
+      </a>
+      {{ end }}
+
+      {{ partial "tag.html" . }}
+      {{ if .Params.guestLogo }}
+      <div class="w-40 my-5">
+        {{ partial "img.html" (dict "context" . "src" .Params.guestLogo "alt" "Guest corporate logo" "class" "") }}
+      </div>
+      {{ end }}
+      <h1 class="text-4xl md:text-4xl lg:text-5xl font-black leading-none" itemprop="name">
+        {{.Title}}
+      </h1>
+
+
+      <div class="flex items-center">
+        {{ if .Params.guestImage }}
+            {{ partial "img.html" (dict "context" . "src" .Params.guestImage "alt" .Params.guestImage "class" "w-20 h-20 mr-4 rounded-full flex shadow") }}
+        {{ end }}          
+
+        {{ if .Params.subtitle }}
+          <div class="text-gray-700 text-2xl my-10">
+            {{ .Params.subtitle | safeHTML }}
+            {{ if .Params.guestLinkedin }}
+            <a
+              class="link text-blue-700 block"
+              href="{{ .Params.guestLinkedin }}"
+            >
+              Linkedin
+            </a>
+            {{ end }}
+
+
+          </div>
+        {{ end }}
+        
+      </div>
+      
+    </div>
+    {{ $image := .Resources.GetMatch (printf "**%s" .Params.illustration) }}
+    {{ with $image }}
+      {{ $image := $image.Resize "400x" }}
+      <div id="Illustration" class="flex-shrink-0 flex items-end hidden lg:flex">
+        {{ partial "img.html" (dict "context" . "src" $image.RelPermalink "alt" "Illustration" "class" "object-contain") }}
+      </div>
+    {{ end }}
+
+  </div>
+  <div class="relative max-w-3xl bg-white mx-auto z-30 my-5">
+    <div class="content" itemprop="articleBody">
+      {{- .Content -}}
+    </div>
+  </div>
+
+</div>
+<div class="bg-gray-100 text-brand-900 mt-10 rounded-t">
+  {{ partial "callToAction.html" . }}
+</div>
+{{ end }}

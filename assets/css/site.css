@@ -1,3 +1,5 @@
+[x-cloak] { display: none; }
+
 .mainTitle > strong {
     position: relative;
     display: inline-block;

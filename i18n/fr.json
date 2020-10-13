@@ -60,7 +60,7 @@
     "other": "Notez en un seul endroit tous les éléments importants comme le brief, joignez des press kit ou des vidéos haute définition, autant d’éléments pouvant servir aux personnes en charge de la production"
   },
   "features": {
-    "other": "fonctionnalités"
+    "other": "Fonctionnalités"
   },
   "freeLicences": {
     "other": "Licences gratuites sans limite de temps"
@@ -123,8 +123,8 @@
   "organiseTasksText": {
     "other": "Partagez vos documents ou projets en un clic, vos contacts valident directement depuis leurs portables"
   },
-  "prices": {
-    "other": "tarifs"
+  "pricing": {
+    "other": "Tarification"
   },
   "pricesEnterpriseExplained": {
     "other": "Pour un grand groupe"
@@ -158,7 +158,7 @@
     "other": "Prêt à vous lancer?"
   },
   "resources": {
-    "other": "ressources"
+    "other": "Ressources"
   },
   "shareFiles": {
     "other": "Partagez vos fichiers sans limite de poids"
