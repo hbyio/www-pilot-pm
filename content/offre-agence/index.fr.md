@@ -3,23 +3,24 @@ author: Matthieu
 date: 2020-06-14
 draft: false
 illustration: illustration.png
-title: Offre agence
+title: Pilot pour les agences
 featured: false
-description: L'offre Pilot dédiée aux agences 
-subtitle: Gérez chacun de vos clients sur un desk dédié 
+description: Pilot pour les agences
+overtitle: Solution
+subtitle: L'outil de gestion de projet éditorial qui va vous permettre d'être plus confiant et plus rapide.
+figcaption: Des centaines d'échanges importants au sein de votre agence en une seule journée, assurez vous de tout suivre
 ---
 
-# Vous êtes une agence ? Engager vos clients n’a jamais été aussi simple
+Aujourd’hui, chacun de vos clients fonctionne d'une manière différente lorsqu'il s'agit de la gestion de leurs contenus.  
 
-Aujourd’hui, chacun de vos clients fonctionne d'une manière différente lorsqu'il s'agit de la gestion de leurs contenus. 
+A mesure que le volume des échanges et des contenus à produire augmente la complexité vient entraver vos équipes. La plus-value diminue à mesure que le temps passé est consacré à la recherche de la dernière version d'un fichier Word dans une boite mail.
 
-Et si vous pouviez arrêter de courir après les échanges d’e-mails, de fichiers Word ? 
 
-### Voici comment Pilot va vous faciliter la vie :
+## Voici comment Pilot va vous faciliter la vie :
 
 1 Desk = 1 client = un espace de travail partagé entre votre équipe et celle de votre client
 
-![illu_Plan de travail 1.jpg](illustration.png "illu_Plan de travail 1.jpg")
+<!-- ![illu_Plan de travail 1.jpg](illustration.png "illu_Plan de travail 1.jpg") -->
 
 * Centralisez vos projets clients : plus de temps perdu à échanger par mail pour chaque demande de modification 
 
@@ -29,7 +30,7 @@ Et si vous pouviez arrêter de courir après les échanges d’e-mails, de fichi
 
 * Engagez vos clients : commenter, modifier et valider directement sur Pilot
 
-### Une formule flexible, adaptée à votre quotidien
+## Une formule flexible, adaptée à votre quotidien
 
 Avec l’offre agence :
 

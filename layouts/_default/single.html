@@ -33,19 +33,22 @@
       </svg>
     </div>
   </div>
+
   <div class="relative px-4 sm:px-6 lg:px-8">
-    <div class="text-lg max-w-prose mx-auto mb-6">
-      <p class="text-base  leading-6 text-indigo-600 font-semibold tracking-wide uppercase">Introducing</p>
-      <h1 class="mt-2 mb-8 text-3xl  leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">{{- .Title -}}</h1>
-      <p class="text-xl text-gray-500 leading-8">Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas fringilla sapien.</p>
+    {{ if .Params.figcaption }} 
+    <div class="text-xl max-w-prose mx-auto mb-6">
+      <p class="text-base leading-6 text-indigo-600 font-black tracking-wide uppercase">{{.Params.overtitle}}</p>
     </div>
-    <div class="prose prose-lg text-gray-500 mx-auto">
+    {{ end }}
+    <article class="prose prose-xl text-gray-700 mx-auto">
+      <h1>{{- .Title -}}</h1>
+      <h2 class="">{{- .Params.Subtitle -}}</h2>
       <figure>
         <img class="w-full rounded-lg" src="{{ .Params.Illustration }}" alt="" width="1310" height="873">
-        <figcaption>Sagittis scelerisque nulla cursus in enim consectetur quam.</figcaption>
+        {{ if .Params.figcaption }} <figcaption>{{ .Params.figcaption }}</figcaption> {{ end }}
       </figure>
       {{- .Content -}}
-    </div>
+    </article>
   </div>
 </div>
 <div class="bg-gray-100 text-brand-900 mt-10 rounded-t">

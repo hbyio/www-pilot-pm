@@ -1,0 +1,13 @@
+
+{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+{{ $.Scratch.Add "path" .Site.BaseURL }}
+<div class="mx-auto max-w-screen-xl breadcrumbs flex">
+  <a class="px-2 bg-gray-100" href="/">home /</a>
+  {{ range $index, $element := split $url "/" }}
+    {{ $.Scratch.Add "path" $element }}
+      {{ if ne $element "" }}
+      <a class="px-2 bg-gray-100" href='{{ $.Scratch.Get "path" }}'>{{ . }}</a> / 
+      {{ $.Scratch.Add "path" "/" }}
+      {{ end }}
+  {{ end }}
+</div>
