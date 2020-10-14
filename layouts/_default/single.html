@@ -40,13 +40,15 @@
       <p class="text-base leading-6 text-indigo-600 font-black tracking-wide uppercase">{{.Params.overtitle}}</p>
     </div>
     {{ end }}
-    <article class="prose prose-xl text-gray-700 mx-auto">
+    <article class="prose prose-xl text-gray-900 mx-auto">
       <h1>{{- .Title -}}</h1>
       <h2 class="">{{- .Params.Subtitle -}}</h2>
+      {{ if .Params.Illustration }}
       <figure>
         <img class="w-full rounded-lg" src="{{ .Params.Illustration }}" alt="" width="1310" height="873">
         {{ if .Params.figcaption }} <figcaption>{{ .Params.figcaption }}</figcaption> {{ end }}
       </figure>
+      {{ end }}
       {{- .Content -}}
     </article>
   </div>

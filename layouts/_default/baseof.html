@@ -69,14 +69,16 @@
 
 </head>
 
-<body class="" x-data="{ mobileMenuOpen: false }">    
+<body x-data="{ mobileMenuOpen: false }">    
     <div class="flex flex-col h-screen justify-between">
         {{ block "header" . }}{{ partial "header2" . }}{{end}}
-        <main class="">
+        <main>
             {{ partial "breadcrumb" . }}
             {{ block "main" . }}{{end}}
         </main>
-        <footer class="h-10">        {{ partial "footer.html" . }}</footer>
+        <footer>
+            {{ partial "footer.html" . }}
+        </footer>
     </div>
 </body>
 
