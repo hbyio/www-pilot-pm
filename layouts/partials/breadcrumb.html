@@ -8,9 +8,9 @@
     {{ range $index, $element := split $url "/" }}
       {{ $.Scratch.Add "path" $element }}
         {{ if ne $element "" }}
-        <div class="mx-2">&bull; </div>
+        <div class="mx-2">&rarr;</div>
         <a class="underline" href='{{ $.Scratch.Get "path" }}'>{{ . }}</a>
-        {{ $.Scratch.Add "path" "&bull;" }}
+        {{ $.Scratch.Add "path" "	&rarr;" }}
         {{ end }}
     {{ end }}
  </div>

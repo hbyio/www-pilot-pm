@@ -1,15 +1,17 @@
+---
+author: Mathieu
+title: Contactez nous
+date: 2020-07-01
+draft: false
+---
+
+Pour planifier une démo, discuter de votre projet ou de votre candidature spontanée ... écrivez nous, on répond toujours.
+
+
 <div id="section-contactus" class="bg-white">
-  <div class="max-w-screen-xl mx-auto  py-12 lg:py-16">
+  <div class="lg:py-16">
     <div class="px-6 py-6 bg-brand-700 rounded md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center">
-      <div class="xl:w-0 xl:flex-1">
-        <h2 class="text-2xl leading-8 font-extrabold tracking-tight text-white sm:text-3xl sm:leading-9">
-          {{ i18n "contactUs"}}&nbsp;&nbsp;📬
-        </h2>
-        <p class="mt-3 max-w-3xl text-lg leading-6 text-indigo-200">
-          {{ i18n "contactUsForWhatever" }}
-        </p>
-      </div>
-      <div class="mt-8 sm:w-full sm:max-w-md xl:mt-0 xl:ml-8">
+      <div class="mt-8 sm:w-full  xl:mt-0 xl:ml-8">
         <form name="contact" method="POST" data-netlify="true">
           <div class="flex flex-col">
             <input aria-label="Email address" type="email" name="email" required
@@ -24,12 +26,6 @@
             </button>
           </div>
         </form>
-        <p class="mt-3 text-sm leading-5 text-indigo-200">
-          We care about the protection of your data.
-          <!-- <a href="#" class="text-white font-medium underline">
-            Read our Privacy Policy.
-          </a> -->
-        </p>
       </div>
     </div>
   </div>

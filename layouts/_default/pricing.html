@@ -1,1094 +1,262 @@
 {{ define "main" }}
 
-<div class="bg-white mb-10">
-    <div class="bg-indigo-900">
-      <!-- Header section with select menu -->
-      <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-screen-xl">
-        <div class="px-0 sm:px-4 lg:px-0 lg:flex lg:justify-between lg:items-center">
-          <div class="max-w-xl">
-            <h2 class="text-4xl leading-10 font-extrabold text-white sm:text-5xl sm:leading-none sm:tracking-tight lg:text-6xl">Pricing Plans</h2>
-            <p class="mt-5 text-xl leading-7 text-indigo-300">Start building for free, then add a site plan to go live. Account plans unlock additional features.</p>
-          </div>
-          <div class="mt-10 w-full max-w-xs lg:mt-0">
-            <label for="currency" class="block text-base leading-6 font-medium text-indigo-300">Currency</label>
-            <div class="mt-1.5 relative">
-              <select id="currency" class="appearance-none block w-full bg-indigo-400 bg-opacity-25 border border-transparent rounded-md py-2 pl-3 pr-10 text-base leading-6 text-white focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5">
-                <option class="bg-gray-900">Argentina (ARS)</option>
-                <option class="bg-gray-900">Australia (AUD)</option>
-                <option class="bg-gray-900" selected>United States (USD)</option>
-                <option class="bg-gray-900">Canada (CAD)</option>
-                <option class="bg-gray-900">France (EUR)</option>
-                <option class="bg-gray-900">Japan (JPY)</option>
-                <option class="bg-gray-900">Nigeria (NGN)</option>
-                <option class="bg-gray-900">Switzerland (CHF)</option>
-                <option class="bg-gray-900">United Kingdom (GBP)</option>
-              </select>
-              <div class="pointer-events-none absolute inset-y-0 right-0 px-2 flex items-center" aria-hidden="true">
-                <!-- Heroicon name: chevron-down -->
-                <svg class="h-4 w-4 text-indigo-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
+<div class="container my-10">
+  <div id="prices-section" class="bg-gray-900 rounded">
+    <div class="pt-12 sm:pt-16 lg:pt-24">
+      <div class="max-w-screen-xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto lg:max-w-none">
+          <h2 class="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider">
+            {{ i18n "pricing" }}
+          </h2>
+          <p
+            class="mt-2 text-3xl leading-9 font-extrabold text-white sm:text-4xl sm:leading-10 lg:text-5xl lg:leading-none">
+            {{ i18n "transparentPricing" }}
+          </p>
+          <!-- <p class="mt-2 text-xl leading-7 text-gray-300">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum sequi unde repudiandae natus.
+          </p> -->
+        </div>
+      </div>
+    </div>
+    <div class="mt-8 pb-12 bg-gray-900 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24">
+      <div class="relative">
+        <div class="absolute inset-0 h-3/4 bg-gray-900"></div>
+        <div class="relative z-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-lg mx-auto lg:max-w-6xl lg:grid lg:grid-cols-2 lg:gap-5">
+            <div id="priceMedium" class="mt-4 rounded-lg shadow-lg overflow-hidden lg:mt-0">
+              <div class="px-6 py-8 bg-white sm:p-10 sm:pb-6">
+                <div>
+                  <span
+                    class="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600">
+                    Medium
+                  </span>
+                </div>
+                <div class="mt-4 flex items-center justify-start">
+                  <span class="pr-4 flex items-start text-6xl leading-none tracking-tight text-gray-900">
+                    <span class="mt-2 mr-2 text-4xl font-medium">
+                      €
+                    </span>
+                    <span class="font-extrabold">
+                      399
+                    </span>
+                  </span>
+                  <span class="text-xl leading-7 font-medium text-gray-700">
+                    /{{ i18n "month" }}
+                  </span>
+                </div>
+                <p class="mt-5 text-lg leading-7 text-gray-500">
+                  
+                  <a href="offre-agence">{{ i18n "pricesMediumExplained" }}</a>
+                </p>
+              </div>
+              <div class="h-full px-6 pt-6 pb-8 bg-gray-50 sm:p-10 sm:pt-6">
+                <ul>
+                  <li class="flex items-start">
+                    <div class="flex-shrink-0">
+                      <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="capitalize ml-3 text-base leading-6 text-gray-700">
+                      10 {{ i18n "user" 2}}
+                    </p>
+                  </li>
+                  <li class="mt-4 flex items-start">
+                    <div class="flex-shrink-0">
+                      <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="ml-3 text-base leading-6 text-gray-700">
+                      15 {{ i18n "project" 2 }}
+                    </p>
+                  </li>
+                  <li class="mt-4 flex items-start">
+                    <div class="flex-shrink-0">
+                      <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="ml-3 text-base leading-6 text-gray-700">
+                      300 {{ i18n "items" 2 }}
+                    </p>
+                  </li>
+                  <li class="mt-4 flex items-start">
+                    <div class="flex-shrink-0">
+                      <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="ml-3 text-base leading-6 text-gray-700">
+                      30G {{ i18n "storage" }}
+                    </p>
+                  </li>
+                </ul>
+                <div class="mt-6 rounded-md shadow">
+                  <a href="{{ .Site.Params.AppUrl }}/registration?lang={{.Site.Language.Lang}}"
+                    class="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                    {{ i18n "startTrial" }}
+                  </a>
+                </div>
+                <p class="text-xs text-gray-500 w-full mt-2 text-center">{{ i18n "trialConditions" }}</p>
+              </div>
+            </div>
+            <div id="priceEntreprise" class="mt-4 rounded-lg shadow-lg overflow-hidden lg:mt-0">
+              <div class="px-6 py-8 bg-white sm:p-10 sm:pb-6">
+                <div>
+                  <span
+                    class="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600">
+                    Enterprise
+                  </span>
+                </div>
+                <div class="mt-4 flex items-center justify-start">
+                  <span class="pr-4 flex items-start text-6xl leading-none tracking-tight text-gray-900">
+                    <span class="mt-2 mr-2 text-4xl font-medium">
+                      €
+                    </span>
+                    <span class="font-extrabold">
+                      1199
+                    </span>
+                  </span>
+                  <span class="text-xl leading-7 font-medium text-gray-700">
+                    /{{ i18n "month" }}
+                  </span>
+                </div>
+                <p class="mt-5 text-lg leading-7 text-gray-500">
+                  {{ i18n "pricesEnterpriseExplained" }}
+                </p>
+              </div>
+              <div class="px-6 pt-6 pb-8 bg-gray-50 sm:p-10 sm:pt-6">
+                <ul x-data="{ morefeat: false }" @keydown.escape="morefeat = false" @click.away="morefeat = false">
+                  <li class="flex items-start">
+                    <div class="flex-shrink-0">
+                      <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="capitalize ml-3 text-base leading-6 text-gray-700 capitalize">
+                      {{ i18n "unlimitedUsers" }}
+                    </p>
+                  </li>
+                  <li class="mt-4 flex items-start">
+                    <div class="flex-shrink-0">
+                      <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="ml-3 text-base leading-6 text-gray-700 capitalize">
+                      {{ i18n "unlimitedProjects" }}
+                    </p>
+                  </li>
+                  <li class="mt-4 flex items-start">
+                    <div class="flex-shrink-0">
+                      <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="ml-3 text-base leading-6 text-gray-700 capitalize">
+                      {{ i18n "unlimitedItems" }}
+                    </p>
+                  </li>
+                  <li class="mt-4 flex items-start">
+                    <div class="flex-shrink-0">
+                      <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="ml-3 text-base leading-6 text-gray-700">
+                      1To {{ i18n "storage" }}
+                    </p>
+                  </li>
+                  <li class="mt-4 flex items-start">
+                    <div class="flex-shrink-0">
+                      <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="ml-3 text-base leading-6 text-gray-700">
+                      {{ i18n "prioritySupport" }}
+                    </p>
+                  </li>
+                  <li class="mt-4 flex items-start">
+                    <div class="flex-shrink-0">
+                      <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="ml-3 text-base leading-6 text-gray-700">
+                      <button @click="morefeat = !morefeat"
+                        class="underline flex items-center  hover:text-gray-600 focus:outline-none focus:text-gray-600">
+                        {{ i18n "fullOptions" }}
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                          class="feather feather-chevron-down">
+                          <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                      </button>
+                    </p>
+                  </li>
+                  <div x-show="morefeat" x-transition:enter="transition ease-out duration-100"
+                    x-transition:enter-start="transform opacity-0 scale-95"
+                    x-transition:enter-end="transform opacity-100 scale-100"
+                    x-transition:leave="transition ease-in duration-75"
+                    x-transition:leave-start="transform opacity-100 scale-100"
+                    x-transition:leave-end="transform opacity-0 scale-95" class="relative mt-2 rounded-md shadow-lg">
+                    <div class="rounded-md bg-white shadow-xs">
+                      <div class="py-1">
+                        <span
+                          class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900">
+                          {{ i18n "unlimitedArchives" }}
+                        </span>
+                        <span
+                          class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900">
+                          {{ i18n "translationsManagement" }}
+                        </span>
+                        <span
+                          class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900">
+                          {{ i18n "futureFeatures" }}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+                <div class="mt-6 rounded-md shadow">
+                  <a href="{{ .Site.Params.AppUrl }}/registration?lang={{.Site.Language.Lang}}"
+                    class="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                    {{ i18n "startTrial" }}
+                  </a>
+                </div>
+                <p class="text-xs text-gray-500 w-full mt-2 text-center">{{ i18n "trialConditions" }}</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  
-    <!-- Comparison table -->
-    <div class="max-w-2xl mx-auto bg-white py-16 sm:py-24 sm:px-6 lg:max-w-screen-xl lg:px-8">
-      <!-- xs to lg -->
-      <div class="space-y-24 lg:hidden">
-        <div>
-          <div class="px-4">
-            <h2 class="text-lg leading-6 font-medium text-gray-900">Basic</h2>
-            <p class="mt-4">
-              <span class="text-4xl leading-10 font-extrabold text-gray-900">$9</span>
-              <span class="text-base leading-6 font-medium text-gray-500">/mo</span>
-            </p>
-            <p class="mt-4 text-sm leading-5 text-gray-500">Quis suspendisse ut fermentum neque vivamus non tellus.</p>
-            <button type="button" class="mt-6 w-full bg-gradient-to-r from-orange-500 to-pink-500 border border-transparent rounded-md shadow py-2 text-sm leading-5 font-semibold text-white hover:to-pink-600 focus:outline-none focus:shadow-outline-gray transition duration-150 ease-in-out">Buy Basic</button>
-          </div>
-  
-          <table class="mt-8 w-full">
-            <caption class="bg-gray-50 border-t border-gray-200 py-3 px-4 text-sm leading-5 font-medium text-gray-900 text-left">
-              Features
-            </caption>
-            <thead>
-              <tr>
-                <th class="sr-only" scope="col">Feature</th>
-                <th class="sr-only" scope="col">Included</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Molestie lobortis massa.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: check -->
-                  <svg class="ml-auto h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">Yes</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Urna purus felis.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: check -->
-                  <svg class="ml-auto h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">Yes</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Tellus pulvinar sit dictum.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: minus -->
-                  <svg class="ml-auto h-5 w-5 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">No</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Convallis.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: minus -->
-                  <svg class="ml-auto h-5 w-5 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">No</span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-  
-          <table class="w-full">
-            <caption class="bg-gray-50 border-t border-gray-200 py-3 px-4 text-sm leading-5 font-medium text-gray-900 text-left">
-              Reporting
-            </caption>
-            <thead>
-              <tr>
-                <th class="sr-only" scope="col">Feature</th>
-                <th class="sr-only" scope="col">Included</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Adipiscing.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: check -->
-                  <svg class="ml-auto h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">Yes</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Eget risus integer.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: minus -->
-                  <svg class="ml-auto h-5 w-5 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">No</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Gravida leo urna velit.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: minus -->
-                  <svg class="ml-auto h-5 w-5 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">No</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Elementum ut dapibus mi feugiat cras nisl.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: minus -->
-                  <svg class="ml-auto h-5 w-5 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">No</span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-  
-          <table class="w-full">
-            <caption class="bg-gray-50 border-t border-gray-200 py-3 px-4 text-sm leading-5 font-medium text-gray-900 text-left">
-              Support
-            </caption>
-            <thead>
-              <tr>
-                <th class="sr-only" scope="col">Feature</th>
-                <th class="sr-only" scope="col">Included</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Sit dignissim.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: check -->
-                  <svg class="ml-auto h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">Yes</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Congue at nibh et.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: minus -->
-                  <svg class="ml-auto h-5 w-5 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">No</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Volutpat feugiat mattis.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: minus -->
-                  <svg class="ml-auto h-5 w-5 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">No</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Tristique pellentesque ornare diam sapien.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: minus -->
-                  <svg class="ml-auto h-5 w-5 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">No</span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-  
-          <div class="border-t border-gray-200 px-4 pt-5">
-            <button type="button" class="w-full bg-gradient-to-r from-orange-500 to-pink-500 border border-transparent rounded-md shadow py-2 text-sm leading-5 font-semibold text-white hover:to-pink-600 focus:outline-none focus:shadow-outline-gray transition duration-150 ease-in-out">Buy Basic</button>
-          </div>
-        </div>
-  
-        <div>
-          <div class="px-4">
-            <h2 class="text-lg leading-6 font-medium text-gray-900">Essential</h2>
-            <p class="mt-4">
-              <span class="text-4xl leading-10 font-extrabold text-gray-900">$29</span>
-              <span class="text-base leading-6 font-medium text-gray-500">/mo</span>
-            </p>
-            <p class="mt-4 text-sm leading-5 text-gray-500">Quis eleifend a tincidunt pellentesque. A tempor in sed.</p>
-            <button type="button" class="mt-6 w-full bg-gradient-to-r from-orange-500 to-pink-500 border border-transparent rounded-md shadow py-2 text-sm leading-5 font-semibold text-white hover:to-pink-600 focus:outline-none focus:shadow-outline-gray transition duration-150 ease-in-out">Buy Essential</button>
-          </div>
-  
-          <table class="mt-8 w-full">
-            <caption class="bg-gray-50 border-t border-gray-200 py-3 px-4 text-sm leading-5 font-medium text-gray-900 text-left">
-              Features
-            </caption>
-            <thead>
-              <tr>
-                <th class="sr-only" scope="col">Feature</th>
-                <th class="sr-only" scope="col">Included</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Molestie lobortis massa.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: check -->
-                  <svg class="ml-auto h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">Yes</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Urna purus felis.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: check -->
-                  <svg class="ml-auto h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">Yes</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Tellus pulvinar sit dictum.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: check -->
-                  <svg class="ml-auto h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">Yes</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Convallis.</th>
-                <td class="py-5 pr-4">
-                  <span class="block text-sm leading-5 text-gray-700 text-right">Up to 20 users</span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-  
-          <table class="w-full">
-            <caption class="bg-gray-50 border-t border-gray-200 py-3 px-4 text-sm leading-5 font-medium text-gray-900 text-left">
-              Reporting
-            </caption>
-            <thead>
-              <tr>
-                <th class="sr-only" scope="col">Feature</th>
-                <th class="sr-only" scope="col">Included</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Adipiscing.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: check -->
-                  <svg class="ml-auto h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">Yes</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Eget risus integer.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: check -->
-                  <svg class="ml-auto h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">Yes</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Gravida leo urna velit.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: minus -->
-                  <svg class="ml-auto h-5 w-5 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">No</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Elementum ut dapibus mi feugiat cras nisl.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: minus -->
-                  <svg class="ml-auto h-5 w-5 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">No</span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-  
-          <table class="w-full">
-            <caption class="bg-gray-50 border-t border-gray-200 py-3 px-4 text-sm leading-5 font-medium text-gray-900 text-left">
-              Support
-            </caption>
-            <thead>
-              <tr>
-                <th class="sr-only" scope="col">Feature</th>
-                <th class="sr-only" scope="col">Included</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Sit dignissim.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: check -->
-                  <svg class="ml-auto h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">Yes</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Congue at nibh et.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: check -->
-                  <svg class="ml-auto h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">Yes</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Volutpat feugiat mattis.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: check -->
-                  <svg class="ml-auto h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">Yes</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Tristique pellentesque ornare diam sapien.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: minus -->
-                  <svg class="ml-auto h-5 w-5 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">No</span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-  
-          <div class="border-t border-gray-200 px-4 pt-5">
-            <button type="button" class="w-full bg-gradient-to-r from-orange-500 to-pink-500 border border-transparent rounded-md shadow py-2 text-sm leading-5 font-semibold text-white hover:to-pink-600 focus:outline-none focus:shadow-outline-gray transition duration-150 ease-in-out">Buy Essential</button>
-          </div>
-        </div>
-  
-        <div>
-          <div class="px-4">
-            <h2 class="text-lg leading-6 font-medium text-gray-900">Premium</h2>
-            <p class="mt-4">
-              <span class="text-4xl leading-10 font-extrabold text-gray-900">$59</span>
-              <span class="text-base leading-6 font-medium text-gray-500">/mo</span>
-            </p>
-            <p class="mt-4 text-sm leading-5 text-gray-500">Orci volutpat ut sed sed neque, dui eget. Quis tristique non.</p>
-            <button type="button" class="mt-6 w-full bg-gradient-to-r from-orange-500 to-pink-500 border border-transparent rounded-md shadow py-2 text-sm leading-5 font-semibold text-white hover:to-pink-600 focus:outline-none focus:shadow-outline-gray transition duration-150 ease-in-out">Buy Premium</button>
-          </div>
-  
-          <table class="mt-8 w-full">
-            <caption class="bg-gray-50 border-t border-gray-200 py-3 px-4 text-sm leading-5 font-medium text-gray-900 text-left">
-              Features
-            </caption>
-            <thead>
-              <tr>
-                <th class="sr-only" scope="col">Feature</th>
-                <th class="sr-only" scope="col">Included</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Molestie lobortis massa.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: check -->
-                  <svg class="ml-auto h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">Yes</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Urna purus felis.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: check -->
-                  <svg class="ml-auto h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">Yes</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Tellus pulvinar sit dictum.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: check -->
-                  <svg class="ml-auto h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">Yes</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Convallis.</th>
-                <td class="py-5 pr-4">
-                  <span class="block text-sm leading-5 text-gray-700 text-right">Up to 50 users</span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-  
-          <table class="w-full">
-            <caption class="bg-gray-50 border-t border-gray-200 py-3 px-4 text-sm leading-5 font-medium text-gray-900 text-left">
-              Reporting
-            </caption>
-            <thead>
-              <tr>
-                <th class="sr-only" scope="col">Feature</th>
-                <th class="sr-only" scope="col">Included</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Adipiscing.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: check -->
-                  <svg class="ml-auto h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">Yes</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Eget risus integer.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: check -->
-                  <svg class="ml-auto h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">Yes</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Gravida leo urna velit.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: check -->
-                  <svg class="ml-auto h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">Yes</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Elementum ut dapibus mi feugiat cras nisl.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: check -->
-                  <svg class="ml-auto h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">Yes</span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-  
-          <table class="w-full">
-            <caption class="bg-gray-50 border-t border-gray-200 py-3 px-4 text-sm leading-5 font-medium text-gray-900 text-left">
-              Support
-            </caption>
-            <thead>
-              <tr>
-                <th class="sr-only" scope="col">Feature</th>
-                <th class="sr-only" scope="col">Included</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Sit dignissim.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: check -->
-                  <svg class="ml-auto h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">Yes</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Congue at nibh et.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: check -->
-                  <svg class="ml-auto h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">Yes</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Volutpat feugiat mattis.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: check -->
-                  <svg class="ml-auto h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">Yes</span>
-                </td>
-              </tr>
-  
-              <tr class="border-t border-gray-200">
-                <th class="py-5 px-4 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Tristique pellentesque ornare diam sapien.</th>
-                <td class="py-5 pr-4">
-                  <!-- Heroicon name: check -->
-                  <svg class="ml-auto h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="sr-only">Yes</span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-  
-          <div class="border-t border-gray-200 px-4 pt-5">
-            <button type="button" class="w-full bg-gradient-to-r from-orange-500 to-pink-500 border border-transparent rounded-md shadow py-2 text-sm leading-5 font-semibold text-white hover:to-pink-600 focus:outline-none focus:shadow-outline-gray transition duration-150 ease-in-out">Buy Premium</button>
-          </div>
-        </div>
-      </div>
-  
-      <!-- lg+ -->
-      <div class="hidden lg:block">
-        <table class="w-full h-px table-fixed">
-          <caption class="sr-only">
-            Pricing plan comparison
-          </caption>
-          <thead>
-            <tr>
-              <th class="pb-4 pl-6 pr-6 text-sm leading-5 font-medium text-gray-900 text-left" scope="col">
-                <span class="sr-only">Feature by</span>
-                <span>Plans</span>
-              </th>
-  
-              <th class="w-1/4 pb-4 px-6 text-lg leading-6 font-medium text-gray-900 text-left" scope="col">Basic</th>
-  
-              <th class="w-1/4 pb-4 px-6 text-lg leading-6 font-medium text-gray-900 text-left" scope="col">Essential</th>
-  
-              <th class="w-1/4 pb-4 px-6 text-lg leading-6 font-medium text-gray-900 text-left" scope="col">Premium</th>
-            </tr>
-          </thead>
-          <tbody class="border-t border-gray-200 divide-y divide-gray-200">
-            <tr>
-              <th class="py-8 pl-6 pr-6 align-top text-sm leading-5 font-medium text-gray-900 text-left" scope="row">Pricing</th>
-  
-              <td class="h-full py-8 px-6 align-top">
-                <div class="h-full flex flex-col justify-between">
-                  <div>
-                    <p>
-                      <span class="text-4xl leading-10 font-extrabold text-gray-900">$9</span>
-                      <span class="text-base leading-6 font-medium text-gray-500">/mo</span>
-                    </p>
-                    <p class="mt-4 text-sm leading-5 text-gray-500">Quis suspendisse ut fermentum neque vivamus non tellus.</p>
-                  </div>
-                  <button type="button" class="mt-6 w-full bg-gradient-to-r from-orange-500 to-pink-500 border border-transparent rounded-md shadow py-2 text-sm leading-5 font-semibold text-white hover:to-pink-600 focus:shadow-outline-gray transition duration-150 ease-in-out">Buy Basic</button>
-                </div>
-              </td>
-  
-              <td class="h-full py-8 px-6 align-top">
-                <div class="h-full flex flex-col justify-between">
-                  <div>
-                    <p>
-                      <span class="text-4xl leading-10 font-extrabold text-gray-900">$29</span>
-                      <span class="text-base leading-6 font-medium text-gray-500">/mo</span>
-                    </p>
-                    <p class="mt-4 text-sm leading-5 text-gray-500">Quis eleifend a tincidunt pellentesque. A tempor in sed.</p>
-                  </div>
-                  <button type="button" class="mt-6 w-full bg-gradient-to-r from-orange-500 to-pink-500 border border-transparent rounded-md shadow py-2 text-sm leading-5 font-semibold text-white hover:to-pink-600 focus:shadow-outline-gray transition duration-150 ease-in-out">Buy Essential</button>
-                </div>
-              </td>
-  
-              <td class="h-full py-8 px-6 align-top">
-                <div class="h-full flex flex-col justify-between">
-                  <div>
-                    <p>
-                      <span class="text-4xl leading-10 font-extrabold text-gray-900">$59</span>
-                      <span class="text-base leading-6 font-medium text-gray-500">/mo</span>
-                    </p>
-                    <p class="mt-4 text-sm leading-5 text-gray-500">Orci volutpat ut sed sed neque, dui eget. Quis tristique non.</p>
-                  </div>
-                  <button type="button" class="mt-6 w-full bg-gradient-to-r from-orange-500 to-pink-500 border border-transparent rounded-md shadow py-2 text-sm leading-5 font-semibold text-white hover:to-pink-600 focus:shadow-outline-gray transition duration-150 ease-in-out">Buy Premium</button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <th class="py-3 pl-6 bg-gray-50 text-sm leading-5 font-medium text-gray-900 text-left" colspan="4" scope="colgroup">Features</th>
-            </tr>
-  
-            <tr>
-              <th class="py-5 pl-6 pr-6 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Molestie lobortis massa.</th>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: check -->
-                <svg class="h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Included in Basic</span>
-              </td>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: check -->
-                <svg class="h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Included in Essential</span>
-              </td>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: check -->
-                <svg class="h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Included in Premium</span>
-              </td>
-            </tr>
-  
-            <tr>
-              <th class="py-5 pl-6 pr-6 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Urna purus felis.</th>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: check -->
-                <svg class="h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Included in Basic</span>
-              </td>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: check -->
-                <svg class="h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Included in Essential</span>
-              </td>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: check -->
-                <svg class="h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Included in Premium</span>
-              </td>
-            </tr>
-  
-            <tr>
-              <th class="py-5 pl-6 pr-6 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Tellus pulvinar sit dictum.</th>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: minus -->
-                <svg class="h-5 w-5 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Not included in Basic</span>
-              </td>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: check -->
-                <svg class="h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Included in Essential</span>
-              </td>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: check -->
-                <svg class="h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Included in Premium</span>
-              </td>
-            </tr>
-  
-            <tr>
-              <th class="py-5 pl-6 pr-6 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Convallis.</th>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: minus -->
-                <svg class="h-5 w-5 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Not included in Basic</span>
-              </td>
-              <td class="py-5 px-6">
-                <span class="block text-sm leading-5 text-gray-700">Up to 20 users</span>
-              </td>
-              <td class="py-5 px-6">
-                <span class="block text-sm leading-5 text-gray-700">Up to 50 users</span>
-              </td>
-            </tr>
-  
-            <tr>
-              <th class="py-3 pl-6 bg-gray-50 text-sm leading-5 font-medium text-gray-900 text-left" colspan="4" scope="colgroup">Reporting</th>
-            </tr>
-  
-            <tr>
-              <th class="py-5 pl-6 pr-6 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Adipiscing.</th>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: check -->
-                <svg class="h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Included in Basic</span>
-              </td>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: check -->
-                <svg class="h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Included in Essential</span>
-              </td>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: check -->
-                <svg class="h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Included in Premium</span>
-              </td>
-            </tr>
-  
-            <tr>
-              <th class="py-5 pl-6 pr-6 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Eget risus integer.</th>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: minus -->
-                <svg class="h-5 w-5 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Not included in Basic</span>
-              </td>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: check -->
-                <svg class="h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Included in Essential</span>
-              </td>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: check -->
-                <svg class="h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Included in Premium</span>
-              </td>
-            </tr>
-  
-            <tr>
-              <th class="py-5 pl-6 pr-6 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Gravida leo urna velit.</th>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: minus -->
-                <svg class="h-5 w-5 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Not included in Basic</span>
-              </td>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: minus -->
-                <svg class="h-5 w-5 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Not included in Essential</span>
-              </td>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: check -->
-                <svg class="h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Included in Premium</span>
-              </td>
-            </tr>
-  
-            <tr>
-              <th class="py-5 pl-6 pr-6 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Elementum ut dapibus mi feugiat cras nisl.</th>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: minus -->
-                <svg class="h-5 w-5 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Not included in Basic</span>
-              </td>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: minus -->
-                <svg class="h-5 w-5 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Not included in Essential</span>
-              </td>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: check -->
-                <svg class="h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Included in Premium</span>
-              </td>
-            </tr>
-  
-            <tr>
-              <th class="py-3 pl-6 bg-gray-50 text-sm leading-5 font-medium text-gray-900 text-left" colspan="4" scope="colgroup">Support</th>
-            </tr>
-  
-            <tr>
-              <th class="py-5 pl-6 pr-6 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Sit dignissim.</th>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: check -->
-                <svg class="h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Included in Basic</span>
-              </td>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: check -->
-                <svg class="h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Included in Essential</span>
-              </td>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: check -->
-                <svg class="h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Included in Premium</span>
-              </td>
-            </tr>
-  
-            <tr>
-              <th class="py-5 pl-6 pr-6 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Congue at nibh et.</th>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: minus -->
-                <svg class="h-5 w-5 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Not included in Basic</span>
-              </td>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: check -->
-                <svg class="h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Included in Essential</span>
-              </td>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: check -->
-                <svg class="h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Included in Premium</span>
-              </td>
-            </tr>
-  
-            <tr>
-              <th class="py-5 pl-6 pr-6 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Volutpat feugiat mattis.</th>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: minus -->
-                <svg class="h-5 w-5 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Not included in Basic</span>
-              </td>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: check -->
-                <svg class="h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Included in Essential</span>
-              </td>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: check -->
-                <svg class="h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Included in Premium</span>
-              </td>
-            </tr>
-  
-            <tr>
-              <th class="py-5 pl-6 pr-6 text-sm leading-5 font-normal text-gray-500 text-left" scope="row">Tristique pellentesque ornare diam sapien.</th>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: minus -->
-                <svg class="h-5 w-5 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Not included in Basic</span>
-              </td>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: minus -->
-                <svg class="h-5 w-5 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Not included in Essential</span>
-              </td>
-              <td class="py-5 px-6">
-                <!-- Heroicon name: check -->
-                <svg class="h-5 w-5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Included in Premium</span>
-              </td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr class="border-t border-gray-200">
-              <th class="sr-only" scope="row">Choose your plan</th>
-  
-              <td class="pt-5 px-6">
-                <button type="button" class="w-full bg-gradient-to-r from-orange-500 to-pink-500 border border-transparent rounded-md shadow py-2 text-sm leading-5 font-semibold text-white hover:to-pink-600 focus:shadow-outline-gray transition duration-150 ease-in-out">Buy Basic</button>
-              </td>
-  
-              <td class="pt-5 px-6">
-                <button type="button" class="w-full bg-gradient-to-r from-orange-500 to-pink-500 border border-transparent rounded-md shadow py-2 text-sm leading-5 font-semibold text-white hover:to-pink-600 focus:shadow-outline-gray transition duration-150 ease-in-out">Buy Essential</button>
-              </td>
-  
-              <td class="pt-5 px-6">
-                <button type="button" class="w-full bg-gradient-to-r from-orange-500 to-pink-500 border border-transparent rounded-md shadow py-2 text-sm leading-5 font-semibold text-white hover:to-pink-600 focus:shadow-outline-gray transition duration-150 ease-in-out">Buy Premium</button>
-              </td>
-            </tr>
-          </tfoot>
-        </table>
-      </div>
-    </div>
-  
-    <!-- Logo cloud -->
-    <div class="max-w-screen-xl mx-auto border-t border-gray-200 py-12 px-4 sm:px-6 lg:py-20 lg:px-8">
-      <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-        <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-          <img class="h-12" src="https://tailwindui.com/img/logos/tuple-logo.svg" alt="Tuple">
-        </div>
-        <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-          <img class="h-12" src="https://tailwindui.com/img/logos/mirage-logo.svg" alt="Mirage">
-        </div>
-        <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-          <img class="h-12" src="https://tailwindui.com/img/logos/statickit-logo.svg" alt="StaticKit">
-        </div>
-        <div class="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
-          <img class="h-12" src="https://tailwindui.com/img/logos/transistor-logo.svg" alt="Transistor">
-        </div>
-        <div class="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
-          <img class="h-12" src="https://tailwindui.com/img/logos/workcation-logo.svg" alt="Workcation">
-        </div>
-      </div>
-    </div>
-  
-    <div class="bg-gray-50">
-      <!-- FAQ -->
-      <div class="max-w-screen-xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-        <h2 class="text-3xl leading-9 font-extrabold text-gray-900 text-center">
-          Frequently asked questions
-        </h2>
-        <div class="mt-12">
-          <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:grid-rows-2 md:col-gap-8 md:row-gap-12 lg:grid-cols-3">
-            <div class="space-y-2">
-              <dt class="text-lg leading-6 font-medium text-gray-900">
-                What's the best thing about Switzerland?
-              </dt>
-              <dd class="text-base leading-6 text-gray-500">
-                I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
-              </dd>
+      <div class="mt-4 relative max-w-screen-xl mx-auto px-5 sm:px-6 lg:px-12 lg:mt-5">
+        <div class="w-full">
+          <div class="rounded-lg bg-gray-100 px-6 py-8 sm:p-10 lg:flex lg:items-center">
+            <div class="flex-1">
+              <div>
+                <span
+                  class="inline-flex px-4 py-1 rounded-sm text-sm leading-5 font-semibold tracking-wide uppercase bg-white text-brand-800">
+                  {{ i18n "freeLicences" }}
+                </span>
+              </div>
+              <div class="mt-4 text-lg leading-7 text-gray-700">
+                {{ i18n "freeLicencesExplained" }}
+              </div>
             </div>
-            <div class="space-y-2">
-              <dt class="text-lg leading-6 font-medium text-gray-900">
-                How do you make holy water?
-              </dt>
-              <dd class="text-base leading-6 text-gray-500">
-                You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
-              </dd>
+            <div class="mt-6 rounded-md shadow lg:mt-0 lg:ml-10 lg:flex-shrink-0">
+              <a href="{{"/contact"|absLangURL}}"
+                class="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-brand-800 hover:text-gray-200 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                {{ i18n "contactUs" }}
+              </a>
             </div>
-            <div class="space-y-2">
-              <dt class="text-lg leading-6 font-medium text-gray-900">
-                Why do you never see elephants hiding in trees?
-              </dt>
-              <dd class="text-base leading-6 text-gray-500">
-                Because they're so good at it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
-              </dd>
-            </div>
-            <div class="space-y-2">
-              <dt class="text-lg leading-6 font-medium text-gray-900">
-                What do you call someone with no body and no nose?
-              </dt>
-              <dd class="text-base leading-6 text-gray-500">
-                Nobody knows. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
-              </dd>
-            </div>
-            <div class="space-y-2">
-              <dt class="text-lg leading-6 font-medium text-gray-900">
-                Why can't you hear a pterodactyl go to the bathroom?
-              </dt>
-              <dd class="text-base leading-6 text-gray-500">
-                Because the pee is silent. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
-              </dd>
-            </div>
-            <div class="space-y-2">
-              <dt class="text-lg leading-6 font-medium text-gray-900">
-                Why did the invisible man turn down the job offer?
-              </dt>
-              <dd class="text-base leading-6 text-gray-500">
-                He couldn't see himself doing it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
-              </dd>
-            </div>
-          </dl>
-        </div>
-      </div>
-    </div>
-  
-    <!-- Feature section with brand panel -->
-    <div class="relative">
-      <div class="absolute inset-0 flex flex-col" aria-hidden="true">
-        <div class="flex-1 bg-gray-50"></div>
-        <div class="flex-1"></div>
-      </div>
-      <div class="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-gradient-to-r from-orange-400 to-pink-500 rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
-          <div class="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
-            <div class="lg:self-center">
-              <h2 class="text-3xl leading-9 font-extrabold text-white sm:text-4xl sm:leading-10">
-                <span class="block">Ready to dive in?</span>
-                <span class="block text-red-900">Start your free trial today.</span>
-              </h2>
-              <p class="mt-4 text-lg leading-6 text-orange-50">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.</p>
-              <a href="#" class="mt-8 bg-orange-100 border border-transparent rounded-md shadow py-3 px-6 inline-flex items-center text-base leading-6 font-medium text-red-600 hover:text-red-500 focus:outline-none focus:border-red-300 focus:shadow-outline-red transition duration-150 ease-in-out">Sign up for free</a>
-            </div>
-          </div>
-          <div class="relative pb-3/5 -mt-6 md:pb-1/2">
-            <img class="absolute inset-0 w-full h-full transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20" src="https://tailwindui.com/img/component-images/full-width-with-sidebar.jpg" alt="App screenshot">
           </div>
         </div>
       </div>
     </div>
-  
-
+  </div>
 </div>
   
 {{ end }}
