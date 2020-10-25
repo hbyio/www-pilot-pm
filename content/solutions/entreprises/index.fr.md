@@ -6,7 +6,7 @@ title: Pilot pour les entreprises
 featured: false
 description: Pilot pour les entreprises
 overtitle: Solution
-subtitle: L'outil de gestion de projet éditorial qui va vous permettre de répondre de gérer une complexité croissante de vos métiers
+subtitle: Un outil pour structurer votre prise de parole.
 ---
 
 Aujourd'hui les services marketing et communication des grandes entreprises sont soumis à des exigences accrues : répondre aux demandes des directions métiers ou produits efficacement, organiser et animer le travail d'un réseau de communicants à l'échelle mondiale, s'appuyer sur un réseau d'agences externes. 
