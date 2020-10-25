@@ -1,0 +1,262 @@
+{{ define "main" }}
+
+<div class="container my-10">
+  <div id="prices-section" class="bg-gray-900 rounded">
+    <div class="pt-12 sm:pt-16 lg:pt-24">
+      <div class="max-w-screen-xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto lg:max-w-none">
+          <h2 class="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider">
+            {{ i18n "pricing" }}
+          </h2>
+          <p
+            class="mt-2 text-3xl leading-9 font-extrabold text-white sm:text-4xl sm:leading-10 lg:text-5xl lg:leading-none">
+            {{ i18n "transparentPricing" }}
+          </p>
+          <!-- <p class="mt-2 text-xl leading-7 text-gray-300">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum sequi unde repudiandae natus.
+          </p> -->
+        </div>
+      </div>
+    </div>
+    <div class="mt-8 pb-12 bg-gray-900 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24">
+      <div class="relative">
+        <div class="absolute inset-0 h-3/4 bg-gray-900"></div>
+        <div class="relative z-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-lg mx-auto lg:max-w-6xl lg:grid lg:grid-cols-2 lg:gap-5">
+            <div id="priceMedium" class="mt-4 rounded-lg shadow-lg overflow-hidden lg:mt-0">
+              <div class="px-6 py-8 bg-white sm:p-10 sm:pb-6">
+                <div>
+                  <span
+                    class="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600">
+                    Medium
+                  </span>
+                </div>
+                <div class="mt-4 flex items-center justify-start">
+                  <span class="pr-4 flex items-start text-6xl leading-none tracking-tight text-gray-900">
+                    <span class="mt-2 mr-2 text-4xl font-medium">
+                      €
+                    </span>
+                    <span class="font-extrabold">
+                      399
+                    </span>
+                  </span>
+                  <span class="text-xl leading-7 font-medium text-gray-700">
+                    /{{ i18n "month" }}
+                  </span>
+                </div>
+                <p class="mt-5 text-lg leading-7 text-gray-500">
+                  
+                  <a href="offre-agence">{{ i18n "pricesMediumExplained" }}</a>
+                </p>
+              </div>
+              <div class="h-full px-6 pt-6 pb-8 bg-gray-50 sm:p-10 sm:pt-6">
+                <ul>
+                  <li class="flex items-start">
+                    <div class="flex-shrink-0">
+                      <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="capitalize ml-3 text-base leading-6 text-gray-700">
+                      10 {{ i18n "user" 2}}
+                    </p>
+                  </li>
+                  <li class="mt-4 flex items-start">
+                    <div class="flex-shrink-0">
+                      <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="ml-3 text-base leading-6 text-gray-700">
+                      15 {{ i18n "project" 2 }}
+                    </p>
+                  </li>
+                  <li class="mt-4 flex items-start">
+                    <div class="flex-shrink-0">
+                      <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="ml-3 text-base leading-6 text-gray-700">
+                      300 {{ i18n "items" 2 }}
+                    </p>
+                  </li>
+                  <li class="mt-4 flex items-start">
+                    <div class="flex-shrink-0">
+                      <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="ml-3 text-base leading-6 text-gray-700">
+                      30G {{ i18n "storage" }}
+                    </p>
+                  </li>
+                </ul>
+                <div class="mt-6 rounded-md shadow">
+                  <a href="{{ .Site.Params.AppUrl }}/registration?lang={{.Site.Language.Lang}}"
+                    class="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                    {{ i18n "startTrial" }}
+                  </a>
+                </div>
+                <p class="text-xs text-gray-500 w-full mt-2 text-center">{{ i18n "trialConditions" }}</p>
+              </div>
+            </div>
+            <div id="priceEntreprise" class="mt-4 rounded-lg shadow-lg overflow-hidden lg:mt-0">
+              <div class="px-6 py-8 bg-white sm:p-10 sm:pb-6">
+                <div>
+                  <span
+                    class="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600">
+                    Enterprise
+                  </span>
+                </div>
+                <div class="mt-4 flex items-center justify-start">
+                  <span class="pr-4 flex items-start text-6xl leading-none tracking-tight text-gray-900">
+                    <span class="mt-2 mr-2 text-4xl font-medium">
+                      €
+                    </span>
+                    <span class="font-extrabold">
+                      1199
+                    </span>
+                  </span>
+                  <span class="text-xl leading-7 font-medium text-gray-700">
+                    /{{ i18n "month" }}
+                  </span>
+                </div>
+                <p class="mt-5 text-lg leading-7 text-gray-500">
+                  {{ i18n "pricesEnterpriseExplained" }}
+                </p>
+              </div>
+              <div class="px-6 pt-6 pb-8 bg-gray-50 sm:p-10 sm:pt-6">
+                <ul x-data="{ morefeat: false }" @keydown.escape="morefeat = false" @click.away="morefeat = false">
+                  <li class="flex items-start">
+                    <div class="flex-shrink-0">
+                      <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="capitalize ml-3 text-base leading-6 text-gray-700 capitalize">
+                      {{ i18n "unlimitedUsers" }}
+                    </p>
+                  </li>
+                  <li class="mt-4 flex items-start">
+                    <div class="flex-shrink-0">
+                      <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="ml-3 text-base leading-6 text-gray-700 capitalize">
+                      {{ i18n "unlimitedProjects" }}
+                    </p>
+                  </li>
+                  <li class="mt-4 flex items-start">
+                    <div class="flex-shrink-0">
+                      <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="ml-3 text-base leading-6 text-gray-700 capitalize">
+                      {{ i18n "unlimitedItems" }}
+                    </p>
+                  </li>
+                  <li class="mt-4 flex items-start">
+                    <div class="flex-shrink-0">
+                      <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="ml-3 text-base leading-6 text-gray-700">
+                      1To {{ i18n "storage" }}
+                    </p>
+                  </li>
+                  <li class="mt-4 flex items-start">
+                    <div class="flex-shrink-0">
+                      <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="ml-3 text-base leading-6 text-gray-700">
+                      {{ i18n "prioritySupport" }}
+                    </p>
+                  </li>
+                  <li class="mt-4 flex items-start">
+                    <div class="flex-shrink-0">
+                      <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="ml-3 text-base leading-6 text-gray-700">
+                      <button @click="morefeat = !morefeat"
+                        class="underline flex items-center  hover:text-gray-600 focus:outline-none focus:text-gray-600">
+                        {{ i18n "fullOptions" }}
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                          class="feather feather-chevron-down">
+                          <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                      </button>
+                    </p>
+                  </li>
+                  <div x-show="morefeat" x-transition:enter="transition ease-out duration-100"
+                    x-transition:enter-start="transform opacity-0 scale-95"
+                    x-transition:enter-end="transform opacity-100 scale-100"
+                    x-transition:leave="transition ease-in duration-75"
+                    x-transition:leave-start="transform opacity-100 scale-100"
+                    x-transition:leave-end="transform opacity-0 scale-95" class="relative mt-2 rounded-md shadow-lg">
+                    <div class="rounded-md bg-white shadow-xs">
+                      <div class="py-1">
+                        <span
+                          class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900">
+                          {{ i18n "unlimitedArchives" }}
+                        </span>
+                        <span
+                          class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900">
+                          {{ i18n "translationsManagement" }}
+                        </span>
+                        <span
+                          class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900">
+                          {{ i18n "futureFeatures" }}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+                <div class="mt-6 rounded-md shadow">
+                  <a href="{{ .Site.Params.AppUrl }}/registration?lang={{.Site.Language.Lang}}"
+                    class="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                    {{ i18n "startTrial" }}
+                  </a>
+                </div>
+                <p class="text-xs text-gray-500 w-full mt-2 text-center">{{ i18n "trialConditions" }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4 relative max-w-screen-xl mx-auto px-5 sm:px-6 lg:px-12 lg:mt-5">
+        <div class="w-full">
+          <div class="rounded-lg bg-gray-100 px-6 py-8 sm:p-10 lg:flex lg:items-center">
+            <div class="flex-1">
+              <div>
+                <span
+                  class="inline-flex px-4 py-1 rounded-sm text-sm leading-5 font-semibold tracking-wide uppercase bg-white text-brand-800">
+                  {{ i18n "freeLicences" }}
+                </span>
+              </div>
+              <div class="mt-4 text-lg leading-7 text-gray-700">
+                {{ i18n "freeLicencesExplained" }}
+              </div>
+            </div>
+            <div class="mt-6 rounded-md shadow lg:mt-0 lg:ml-10 lg:flex-shrink-0">
+              <a href="{{"/contact"|absLangURL}}"
+                class="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-brand-800 hover:text-gray-200 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                {{ i18n "contactUs" }}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+{{ end }}

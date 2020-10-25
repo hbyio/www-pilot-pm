@@ -1,15 +1,15 @@
 {
-  "whatsappChannel": {
-    "other": "Nous sommes aussi disponibles sur WhatsApp"
+  "seeMore": {
+    "other": "Voir plus"
   },
   "annotations": {
     "other": "Annotations"
   },
-  "askDemo": {
-    "other": "Demander une démo"
-  },
   "annotationsShort": {
     "other": "Annoter vos documents précisément et engagez des conversations sans perdre de temps. Les membres de l’équipe seront notifiés avec un lien les menant directement vers le document et l’annotation."
+  },
+  "askDemo": {
+    "other": "Demander une démo"
   },
   "blog": {
     "other": "Blog"
@@ -63,7 +63,7 @@
     "other": "Notez en un seul endroit tous les éléments importants comme le brief, joignez des press kit ou des vidéos haute définition, autant d’éléments pouvant servir aux personnes en charge de la production"
   },
   "features": {
-    "other": "fonctionnalités"
+    "other": "Fonctionnalités"
   },
   "freeLicences": {
     "other": "Licences gratuites sans limite de temps"
@@ -77,8 +77,11 @@
   "futureFeatures": {
     "other": "Toutes nouvelles fonctionnalités"
   },
+  "heroSubTitle": {
+    "other": "Pilot facilite et rend plus agréable la planification et la production de contenus avec vos équipes, où qu'elles se trouvent."
+  },
   "heroTitle": {
-    "other": "Organisez votre marketing de contenu"
+    "other": "Pilot aide les équipes qui produisent des contenus"
   },
   "items": {
     "one": "contenu",
@@ -123,8 +126,8 @@
   "organiseTasksText": {
     "other": "Partagez vos documents ou projets en un clic, vos contacts valident directement depuis leurs portables"
   },
-  "prices": {
-    "other": "tarifs"
+  "pricing": {
+    "other": "Tarification"
   },
   "pricesEnterpriseExplained": {
     "other": "Pour un grand groupe"
@@ -146,7 +149,7 @@
     "other": "projets"
   },
   "projectBrief": {
-    "other": "Campagne marketing, refonte de site web, magazine interne, quel que soit le projet vous pouvez centraliser l'ensemble des informations nécessaires à l'équipe qui va la réaliser et la déployer"
+    "other": "Campagne marketing, refonte de site web, magazine interne, mettez toutes les informations nécessaires à l'équipe en un seul lieu au lieu de multiplier les réunions."
   },
   "projectLifeCycle": {
     "other": "Des temps de projets plus courts"
@@ -154,8 +157,11 @@
   "projectLifeCycleText": {
     "other": "Centraliser et mettre à disposition l'information nécessaire à la réalisation d'une campagne marketing permet d'en raccourcir son temps de développement"
   },
+  "readyToDive": {
+    "other": "Prêt à vous lancer?"
+  },
   "resources": {
-    "other": "ressources"
+    "other": "Ressources"
   },
   "shareFiles": {
     "other": "Partagez vos fichiers sans limite de poids"
@@ -171,15 +177,6 @@
   },
   "someMadesomeRequested": {
     "other": "En constante évolution, en fonction de vos usages"
-  },
-  "sourceOfTruth": {
-    "other": "Pilot rend le pouvoir aux équipes de production de contenu, de la création à la mise en ligne"
-  },
-  "manysectorsOnegoal": {
-    "other": "Ils nous font confiance"
-  },
-  "readyToDive": {
-    "other": "Prêt à vous lancer?"
   },
   "startTrial": {
     "other": "Démarrez votre essai aujourd'hui"
@@ -233,6 +230,9 @@
   "testimonials": {
     "other": "Témoignages"
   },
+  "theyTrustUs": {
+    "other": "Pilot aide ces grands comptes à structurer leurs prises de parole (parfois depuis 6 ans!)"
+  },
   "translationsManagement": {
     "other": "Gestion des langues & traductions"
   },
@@ -257,6 +257,9 @@
   "user": {
     "one": "utilisateur",
     "other": "utilisateurs"
+  },
+  "whatsappChannel": {
+    "other": "Nous sommes aussi disponibles sur WhatsApp"
   },
   "whoWhatWhen": {
     "other": "Vous savez ce qui est fait, par qui et quand."

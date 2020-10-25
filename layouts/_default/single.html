@@ -1,68 +1,57 @@
 {{ define "main" }}
-<div class="mb-20 mx-auto" itemscope itemtype="https://schema.org/Article">
-  <div class="flex flex-col py-5 md:flex-row relative max-w-screen">
-    <div id="NoteHeader" class="flex-1 mx-auto w-full">
-      {{ if eq .Section "blog" }}
-      <a href="{{ .Site.LanguagePrefix }}/blog" class="flex stroke-current text-gray-900 underline mb-10">
-        <- Back to blog
-      </a>
-      {{ end }}
-      {{ if eq .Section "resources" }}
-      <a href="{{ .Site.LanguagePrefix }}/resources" class="flex stroke-current text-gray-900 underline mb-10">
-        Back to resources
-      </a>
-      {{ end }}
-
-      {{ partial "tag.html" . }}
-      {{ if .Params.guestLogo }}
-      <div class="w-40 my-5">
-        {{ partial "img.html" (dict "context" . "src" .Params.guestLogo "alt" "Guest corporate logo" "class" "") }}
-      </div>
-      {{ end }}
-      <h1 class="text-4xl md:text-4xl lg:text-5xl font-black leading-none" itemprop="name">
-        {{.Title}}
-      </h1>
-
-
-      <div class="flex items-center">
-        {{ if .Params.guestImage }}
-            {{ partial "img.html" (dict "context" . "src" .Params.guestImage "alt" .Params.guestImage "class" "w-20 h-20 mr-4 rounded-full flex shadow") }}
-        {{ end }}          
-
-        {{ if .Params.subtitle }}
-          <div class="text-gray-700 text-2xl my-10">
-            {{ .Params.subtitle | safeHTML }}
-            {{ if .Params.guestLinkedin }}
-            <a
-              class="link text-blue-700 block"
-              href="{{ .Params.guestLinkedin }}"
-            >
-              Linkedin
-            </a>
-            {{ end }}
-
-
-          </div>
-        {{ end }}
-        
-      </div>
-      
+<!--
+  Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
+  Read the documentation to get started: https://tailwindui.com/documentation
+-->
+<!-- This component requires Tailwind CSS >= 1.5.1 and @tailwindcss/ui >= 0.4.0 -->
+<div class="relative py-16 bg-white overflow-hidden">
+  <div class="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
+    <div class="relative h-full text-lg max-w-prose mx-auto">
+      <svg class="absolute top-12 left-full transform translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">
+        <defs>
+          <pattern id="74b3fd99-0a6f-4271-bef2-e80eeafdf357" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+          </pattern>
+        </defs>
+        <rect width="404" height="384" fill="url(#74b3fd99-0a6f-4271-bef2-e80eeafdf357)" />
+      </svg>
+      <svg class="absolute top-1/2 right-full transform -translate-y-1/2 -translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">
+        <defs>
+          <pattern id="f210dbf6-a58d-4871-961e-36d5016a0f49" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+          </pattern>
+        </defs>
+        <rect width="404" height="384" fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)" />
+      </svg>
+      <svg class="absolute bottom-12 left-full transform translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">
+        <defs>
+          <pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+          </pattern>
+        </defs>
+        <rect width="404" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
+      </svg>
     </div>
-    {{ $image := .Resources.GetMatch (printf "**%s" .Params.illustration) }}
-    {{ with $image }}
-      {{ $image := $image.Resize "400x" }}
-      <div id="Illustration" class="flex-shrink-0 flex items-end hidden lg:flex">
-        {{ partial "img.html" (dict "context" . "src" $image.RelPermalink "alt" "Illustration" "class" "object-contain") }}
-      </div>
+  </div>
+
+  <div class="relative px-4 sm:px-6 lg:px-8">
+    {{ if .Params.overtitle }} 
+    <div class="text-xl max-w-prose mx-auto mb-6">
+      <p class="text-base leading-6 text-indigo-600 font-black tracking-wide uppercase">{{.Params.overtitle}}</p>
+    </div>
     {{ end }}
-
-  </div>
-  <div class="relative max-w-3xl bg-white mx-auto z-30 my-5">
-    <div class="content" itemprop="articleBody">
+    <article class="prose prose-xl text-gray-900 mx-auto">
+      <h1>{{- .Title -}}</h1>
+      <h2 class="">{{- .Params.Subtitle -}}</h2>
+      {{ if .Params.Illustration }}
+      <figure>
+        <img class="w-full rounded-lg" src="{{ .Params.Illustration }}" alt="" width="1310" height="873">
+        {{ if .Params.figcaption }} <figcaption>{{ .Params.figcaption }}</figcaption> {{ end }}
+      </figure>
+      {{ end }}
       {{- .Content -}}
-    </div>
+    </article>
   </div>
-
 </div>
 <div class="bg-gray-100 text-brand-900 mt-10 rounded-t">
   {{ partial "callToAction.html" . }}
