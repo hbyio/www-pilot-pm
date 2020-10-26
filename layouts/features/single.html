@@ -46,17 +46,21 @@
         <h2 class="">{{- .Params.Subtitle -}}</h2>
       </div>
 
-      <div class="max-w-screen-xl mx-auto">
+      <div class="mx-auto">
         {{ if .Params.Illustration }}
         <figure>
-          {{ partial "img-responsive.html" (dict "src" "screenshots/project_detail.jpg" "alt" "Item list" "class" "relative rounded-lg") }}
+          <img
+              src="{{ .Params.Illustration }}"
+              height="100%"
+              alt="{{.Params.Alt}}"
+          />
           {{ if .Params.figcaption }} <figcaption>{{ .Params.figcaption }}</figcaption> {{ end }}
         </figure>
         {{ end }}
       </div>
-      <article class="prose prose-xl text-gray-900 mx-auto">
-      {{- .Content -}}
-    </article>
+      <article class="prose prose-xl content text-gray-900 mx-auto flex flex-col">
+        {{- .Content -}}
+      </article>
   </div>
 </div>
 <div class="bg-gray-100 text-brand-900 mt-10 rounded-t">

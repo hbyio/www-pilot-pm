@@ -1,7 +1,7 @@
 ---
 author: Mathieu
 title: Tâches
-illustration: screenshot/project_detail.jpg
+illustration: tasks.png
 overtitle: Fonctionnalité
 ---
 

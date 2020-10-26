@@ -1,7 +1,7 @@
 ---
 author: Mathieu
 title: Projets
-illustration: screenshots/project_detail.jpg
+illustration: project_detail.jpg
 overtitle: Fonctionnalité
 subtitle: Campagne marketing, refonte de site web, magazine interne, mettez toutes les informations nécessaires à l'équipe en un seul lieu au lieu de multiplier les réunions.
 ---
