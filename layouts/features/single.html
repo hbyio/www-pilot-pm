@@ -35,26 +35,31 @@
     </div>
   </div>
 
-  <div class="relative px-4 sm:px-6 lg:px-8">
-    {{ if .Params.figcaption }} 
-    <div class="text-xl max-w-prose mx-auto mb-6">
-      <p class="text-base leading-6 text-indigo-600 font-black tracking-wide uppercase">{{.Params.overtitle}}</p>
-    </div>
+  <div class="container relative">
+    {{ if .Params.overtitle }} 
+      <div class="text-xl max-w-prose mb-6">
+        <p class="text-base leading-6 text-indigo-600 font-black tracking-wide uppercase">{{.Params.overtitle}}</p>
+      </div>
     {{ end }}
-      <div class="prose prose-xl text-gray-900 mx-auto">
+      <div class="prose prose-xl text-gray-900">
         <h1>{{- .Title -}}</h1>
         <h2 class="">{{- .Params.Subtitle -}}</h2>
       </div>
 
-      <div class="max-w-screen-xl mx-auto flex items-center justify-center">
+      <div class="max-w-screen-2xl">
         {{ if .Params.Illustration }}
-        <img
+        <figure class="full-width">
+          <img
               src="{{ .Params.Illustration }}"
               alt="{{.Params.Alt}}"
+              class="rounded-lg shadow-lg"
           />
+          <figcaption>Toutes les versions sont conservées. </figcaption>
+        </figure>
+
         {{ end }}
       </div>
-      <article class="prose prose-xl content text-gray-900 mx-auto flex flex-col">
+      <article class="prose prose-xl content text-gray-900  flex flex-col">
         {{- .Content -}}
       </article>
   </div>
