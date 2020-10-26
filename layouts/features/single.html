@@ -46,16 +46,12 @@
         <h2 class="">{{- .Params.Subtitle -}}</h2>
       </div>
 
-      <div class="mx-auto">
+      <div class="max-w-screen-xl mx-auto flex items-center justify-center">
         {{ if .Params.Illustration }}
-        <figure>
-          <img
+        <img
               src="{{ .Params.Illustration }}"
-              height="100%"
               alt="{{.Params.Alt}}"
           />
-          {{ if .Params.figcaption }} <figcaption>{{ .Params.figcaption }}</figcaption> {{ end }}
-        </figure>
         {{ end }}
       </div>
       <article class="prose prose-xl content text-gray-900 mx-auto flex flex-col">

@@ -1,7 +1,7 @@
 ---
 author: Mathieu
 title: Construisez vos contenus en équipe
-illustration: diff3.png
+illustration: validation.png
 overtitle: Fonctionnalité
 ---
 
@@ -14,8 +14,8 @@ Encadrez la production de vos contributeurs avec des formulaires spécialement a
 ## Zéro conflit de versions
 
 Collaborez à plusieurs, en même temps, sur un même document. Plus de problème de conflits de versions, on ne se marche plus sur les pieds.
-<!-- 
-{{< figure src="diff3.png" title="Visualisation des différences entre deux versions" width="1333px" >}} -->
+
+<!-- {{< figure src="diff.png" title="Visualisation des différences entre deux versions" width="1333px" >}} -->
 
 
 ## Les mentions ont plus de valeur que les emails !
@@ -28,4 +28,4 @@ Mentionnez les membres de votre équipes sur une partie d'un texte ou même un P
 
 Ce document est il valide selon la structure décidée ? Repérez les problèmes le plus t^tot possible pour ne pas perdre de temps et évitez de devoir reprendre tout une site ou une maquette à la dernière minute parce qu'il manque des informations ou vous rendre compte trop tard qu'elles ne correspondent pas aux gabarits
 
-![alt text](validation.png "validation")
+![alt text](validation_detail1.png "validation")
