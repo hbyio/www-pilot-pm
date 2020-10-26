@@ -9,8 +9,8 @@
       {{ $.Scratch.Add "path" $element }}
         {{ if ne $element "" }}
         <div class="mx-2">&rarr;</div>
-        <a class="underline" href='{{ $.Scratch.Get "path" }}'>{{ . }}</a>
-        {{ $.Scratch.Add "path" "	&rarr;" }}
+        <a class="underline" href='{{ $.Scratch.Get "path" }}/'>{{ . }}</a>
+        {{ $.Scratch.Add "path" "/" }}
         {{ end }}
     {{ end }}
  </div>
