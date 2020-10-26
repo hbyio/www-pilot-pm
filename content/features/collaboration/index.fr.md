@@ -30,5 +30,5 @@ Mentionnez les membres de votre équipes sur une partie d'un texte ou même un P
 
 ## Qualifiez vos documents en un clin d'oeil
 
-Ce document est il valide selon la structure décidée ? Repérez les problèmes le plus t^tot possible pour ne pas perdre de temps et évitez de devoir reprendre tout une site ou une maquette à la dernière minute parce qu'il manque des informations ou vous rendre compte trop tard qu'elles ne correspondent pas aux gabarits
+Ce document est il valide selon la structure décidée ? Repérez les problèmes le plus tôt possible pour ne pas perdre de temps et évitez de devoir reprendre tout une site ou une maquette à la dernière minute parce qu'il manque des informations ou vous rendre compte trop tard qu'elles ne correspondent pas aux gabarits
 
