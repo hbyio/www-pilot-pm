@@ -71,7 +71,7 @@
 
 <body x-data="{ mobileMenuOpen: false }">    
     <div class="flex flex-col h-screen justify-between">
-        {{ block "header" . }}{{ partial "header2" . }}{{end}}
+        {{ block "header" . }}{{ partial "header" . }}{{end}}
         <main>
             {{ partial "breadcrumb" . }}
             {{ block "main" . }}{{end}}
