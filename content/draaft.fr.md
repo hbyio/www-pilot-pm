@@ -1,6 +1,6 @@
 ---
 author: Mathieu
-title: Draaft
+title: Pilot CLI (nom de code Draaft)
 overtitle: Outils développeurs
 date: 2020-07-01
 draft: false
