@@ -3,7 +3,7 @@ author: Matthieu
 date: 2020-06-14
 draft: false
 illustration: rocket.png
-title: Pilot version 4, les nouvelles fonctionnalités 
+title: 📦 Pilot version 4 (Juin 2020)
 featured: false
 tag: 📦 Release
 tagColor: green

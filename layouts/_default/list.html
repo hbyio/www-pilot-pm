@@ -1,14 +1,20 @@
 
 {{ define "main" }}
-<div id="pageList" class="my-2 mx-auto max-w-screen-xl px-6">
-    {{ range .Pages }}
-             <h2 class="my-2 font-bold">
-                <a class="text-2xl" href="{{ .Permalink }}">
-                    {{ .Title }}
-                </a>
-            </h2>
-    {{ end }}
+<div class="container">
+    <h1 class="text-xl my-6 leading-9 tracking-tight font-extrabold sm:text-4xl sm:leading-10">
+        {{.Title}}
+    </h1>
+    <div id="pageList" class="my-2">
+        {{ range .Pages }}
+                 <h2 class="my-2 font-bold">
+                    <a class="text-2xl underline" href="{{ .Permalink }}">
+                        {{ .Title }}
+                    </a>
+                </h2>
+        {{ end }}
+    </div>
 </div>
+
 {{ end }}
 
 
