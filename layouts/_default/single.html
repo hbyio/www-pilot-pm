@@ -4,6 +4,7 @@
   Read the documentation to get started: https://tailwindui.com/documentation
 -->
 <!-- This component requires Tailwind CSS >= 1.5.1 and @tailwindcss/ui >= 0.4.0 -->
+
 <div class="relative py-16 bg-white overflow-hidden">
   <div class="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
     <div class="relative h-full text-lg max-w-prose mx-auto">
@@ -34,23 +35,33 @@
     </div>
   </div>
 
-  <div class="relative px-4 sm:px-6 lg:px-8">
+  <div class="container relative">
     {{ if .Params.overtitle }} 
-    <div class="text-xl max-w-prose mx-auto mb-6">
-      <p class="text-base leading-6 text-indigo-600 font-black tracking-wide uppercase">{{.Params.overtitle}}</p>
-    </div>
+      <div class="text-xl max-w-prose mb-6">
+        <p class="text-base leading-6 text-indigo-600 font-black tracking-wide uppercase">{{.Params.overtitle}}</p>
+      </div>
     {{ end }}
-    <article class="prose prose-xl text-gray-900 mx-auto">
-      <h1>{{- .Title -}}</h1>
-      <h2 class="">{{- .Params.Subtitle -}}</h2>
-      {{ if .Params.Illustration }}
-      <figure>
-        <img class="w-full rounded-lg" src="{{ .Params.Illustration }}" alt="" width="1310" height="873">
-        {{ if .Params.figcaption }} <figcaption>{{ .Params.figcaption }}</figcaption> {{ end }}
-      </figure>
-      {{ end }}
-      {{- .Content -}}
-    </article>
+      <div class="prose prose-xl text-gray-900">
+        <h1>{{- .Title -}}</h1>
+        <h2 class="">{{- .Params.Subtitle -}}</h2>
+      </div>
+
+      <div class="max-w-screen-2xl">
+        {{ if .Params.Illustration }}
+        <figure class="full-width my-10">
+          <img
+              src="{{ .Params.Illustration }}"
+              alt="{{.Params.Alt}}"
+              class="rounded-lg shadow-lg"
+          />
+          <!-- <figcaption>Toutes les versions sont conservées. </figcaption> -->
+        </figure>
+
+        {{ end }}
+      </div>
+      <article class="prose prose-xl content text-gray-900  flex flex-col">
+        {{- .Content -}}
+      </article>
   </div>
 </div>
 <div class="bg-gray-100 text-brand-900 mt-10 rounded-t">

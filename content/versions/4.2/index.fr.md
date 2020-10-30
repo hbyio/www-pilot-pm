@@ -21,8 +21,9 @@ Ces dernières semaines nous avons mené un travail de fond pour améliorer ces 
 
 Au global vous disposez désormais d'une interface plus réactive, qui charge uniquement l'essentiel.
 
-![fast.gif](fast.gif)
-
+<figure class="full-width">
+<img class="rounded-lg shadow-lg" src="fast.gif">
+</figure>
 
 ## Blocage d'édition
 
@@ -30,14 +31,18 @@ Désormais vous pouvez bloquer l'édition d'un contenu et signaler à l'équipe 
 
 Utile en cas de contenu sensible devant obligatoirement être validé en l'état par votre service juridique.
 
-![blocage.gif](blocage.gif)
-
+<figure class="full-width">
+<img class="rounded-lg shadow-lg" src="blocage.gif">
+</figure>
 
 ## Un drag and drop d'image directement dans l'éditeur l'ajoute automatiquement aux fichiers liés.
 
 Vous pouvez glisser-déplacer une image directement dans l'éditeur et elle sera automatiquement ajoutée aux fichiers liés. Plus de besoin de l'uploader d'abord et l'insérer ensuite. Gain de temps.
 
-![dragupload.gif](dragupload.gif)
+<figure class="full-width">
+<img class="rounded-lg shadow-lg" src="dragupload.gif">
+</figure>
+
 
 ## Sécurité des partages  
 
@@ -51,4 +56,6 @@ Cela permet de repérer les plus vieux, par exemple, pour les fermer. Ou de tout
 
 Attention, vos partages restent sécurisés et sont effectués grâce à des urls uniques envoyées à vos contacts.
 
-![security.gif](security.gif)
+<figure class="full-width">
+<img class="rounded-lg shadow-lg" src="security.gif">
+</figure>
