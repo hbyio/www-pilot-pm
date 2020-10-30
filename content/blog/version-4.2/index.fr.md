@@ -8,15 +8,15 @@ featured: false
 tag: 📦 Release
 tagColor: green
 description: Rapidité, sécurité, blocage d'édition, drag and drop d'image, ..
-subtitle: Rapidité, sécurité, blocage d'édition, drag and drop d'image, ..
+subtitle: "Au menu de cette nouvelle version : rapidité, sécurité, blocage d'édition, drag and drop d'image, .."
 ---
 
 
 ## Interface encore plus rapide
 
-Au quotidien vous changez de page des centaines de fois pour circuler depuis un contenu vers une liste puis vers un projet etc ..
+Au quotidien vous changez de page des centaines de fois pour circuler depuis un contenu vers une liste puis vers un projet etc .. **Chaque milliseconde compte.**
 
-Chaque milliseconde compte.
+
 
 Ces dernières semaines nous avons mené un travail de fond pour améliorer ces temps de rendu pour chaque opération, gagner 10 millisecondes ici, 1 seconde là.
 

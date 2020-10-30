@@ -41,9 +41,9 @@
         <p class="text-base leading-6 text-indigo-600 font-black tracking-wide uppercase">{{.Params.overtitle}}</p>
       </div>
     {{ end }}
-      <div class="prose prose-xl text-gray-900">
+      <div class="prose prose-xl text-gray-900 mb-10">
         <h1>{{- .Title -}}</h1>
-        <h2 class="">{{- .Params.Subtitle -}}</h2>
+        <div class="text-3xl font-semibold leading-8 text-gray-500">{{- .Params.Subtitle -}}</div>
       </div>
 
       <div class="max-w-screen-2xl">
@@ -59,7 +59,7 @@
 
         {{ end }}
       </div>
-      <article class="prose prose-xl content text-gray-900  flex flex-col">
+      <article class="prose prose-xl text-gray-900  flex flex-col">
         {{- .Content -}}
       </article>
   </div>
