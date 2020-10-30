@@ -7,9 +7,10 @@ slug: v4.2
 featured: false
 tag: 📦 Release
 tagColor: green
-description: Interface plus rapide, blocage d'édition, drag and drop d'image, ..
-subtitle: Interface plus rapide, blocage d'édition, drag and drop d'image, ..
+description: Rapidité, sécurité, blocage d'édition, drag and drop d'image, ..
+subtitle: Rapidité, sécurité, blocage d'édition, drag and drop d'image, ..
 ---
+
 
 ## Interface encore plus rapide
 
