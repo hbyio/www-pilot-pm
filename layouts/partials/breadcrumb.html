@@ -1,43 +1,23 @@
 
 {{ if not .IsHome }}
-<nav aria-label="breadcrumb" class="container bg-white text-gray-400 py-2">
-  <div class="breadcrumb"  class="flex flex-row bg-yellow-50" itemscope itemtype="http://schema.org/BreadcrumbList">
-  
-    <a href="{{  .Site.BaseURL  }}" class="underline" itemprop="item">
-      <span itemprop="name">
-        Home
-      </span>
-      <meta itemprop="position" content="1" />
-    </a>
 
-    {{ $findUrl := slice }}
+{{ $url := replace .Permalink (printf "%s" .Site.BaseURL) "" }}
+{{ $.Scratch.Add "path" .Site.BaseURL }}
+{{ $.Scratch.Add "path" "/" }}
 
-    {{ range $index, $el := (split .URL "/") }}
-    {{ if gt (len . ) 0 }}
-
-    {{ $findUrl = uniq ($findUrl | append .) | sort }}
-
+<nav class="bg-white text-gray-400 py-2">
+ <div class="breadcrumbs  max-w-screen-xl  px-5 mx-auto flex">
+    <a class="underline" href="/">home</a>
+    {{ range $index, $element := split $url "/" }}
+      {{ $.Scratch.Add "path" $element }}
+        {{ if ne $element "" }}
+          <div class="mx-2">&rarr;</div>
+          <a class="underline" href='{{ $.Scratch.Get "path" }}'>{{ . }}</a>
+          {{ $.Scratch.Add "path" "/" }}
+        {{ end }}
     {{ end }}
-    {{ end }}
-
-    {{ $url := "/" }}
-    {{ range $index, $el := $findUrl }}
-
-   
-    {{ $url = "/" | add . | add $url  }}
-
-      &rarr;<a href="{{ $url }}"  class="underline capitalize" itemprop="item">
-          <span itemprop="name"> {{ . }} </span>
-          {{ $index = $index | add 2 }}
-          <meta itemprop="position" content="{{ $index }}" />
-        </a>
-
-    {{ end }}
-
-  </div>
-
-
+ </div>
 </nav>
 
-<!-- END breadcrumbs -->
-{{end}}
+
+{{ end }}
