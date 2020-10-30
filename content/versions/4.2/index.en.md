@@ -41,7 +41,7 @@ You can drag and drop an image directly in the editor and it will be automatical
 
 ## Sharing security  
 
-[https://app.pilot.pm/sharings/]
+[https://app.pilot.pm/sharings/](https://app.pilot.pm/sharings/)
 
 Managing the security of an account requires a global view of the content sharing that takes place from your account to the outside world. 
 
