@@ -12,15 +12,15 @@ place: Rennes + Remote
 
 Fondé en 2013, Pilot est une application de gestion de projet spécifiquement conçue pour les équipes produisant des contenus (marketing, juridique, communication interne). 
 
-Nous travaillons actuellement avec des grands comptes comme Harmonie Mutuelle, le groupement Mousquetaires, Banque Populaire ou Primagaz. Nous permettons à leurs équipes de centraliser la production de leurs contenus, planifier les tâches, réduire voire éviter de nombreuses réunions, accélerer les cycles de production des projets et rester connectées avec leurs prestataires, en france ou à l'étranger.
+Nous travaillons actuellement avec des grands comptes comme Harmonie Mutuelle, le groupement Mousquetaires, Banque Populaire ou Primagaz. Nous permettons à leurs équipes de centraliser la production de leurs contenus, planifier les tâches, réduire voire éviter de nombreuses réunions, accélérer les cycles de production des projets et rester connectées avec leurs prestataires, en france ou à l'étranger.
 
 En tant que business developer votre rôle sera de ... vendre Pilot (musique dramatique) ! 
 
 Depuis votre position vous aurez un angle d'attaque très large et devrez structurer vos missions depuis l'inbound marketing jusqu'à la signature de nouvelles licences en passant par les démos, webinar et rédaction de contenus pour le site.
 
-Il y a beaucoup à faire, inventer et tester donc vous aurez besoin de rigueur, de résistance, de curisiosité et d'expertise. 
+Il y a beaucoup à faire, inventer et tester donc vous aurez besoin de rigueur, de résistance, de curiosité et d'expertise. 
 
-Avec vous nous développerons une offre dédiée aux développeurs, souhaitons intégrer le marché des CMS headless et dialoguer avec les outils de génération de sites statiques (notament [Hugo](https://gohugo.io)).
+Avec vous nous développerons une offre dédiée aux développeurs, souhaitons intégrer le marché des CMS headless et dialoguer avec les outils de génération de sites statiques (notamment [Hugo](https://gohugo.io)).
 
 
 ## Vos responsabilités
