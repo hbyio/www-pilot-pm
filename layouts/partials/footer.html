@@ -2,9 +2,9 @@
   <div class="bg-gray-800">
     <h2 class="text-gray-800">Informations complémentaires</h2>
     <div class="container py-12">
-      <div class="flex flex-col md:flex-row ">
-        <div class="w-full mr-5">
-          <h3 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
+      <div class="flex flex-col md:flex-row md:justify-between">
+        <div class="w-full mb-8 md:mb-0 md:w-1/4">
+          <h3 class="text-sm leading-5 font-bold tracking-wider text-white uppercase">
             <a href="{{ "/resources" | absLangURL  }}">
               {{ i18n "resources" }}
             </a>
@@ -20,8 +20,8 @@
             {{ end }}
           </ul>
         </div>
-        <div class="w-full mx-5">
-          <h3 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
+        <div class="w-full mb-8 md:mb-0 md:w-1/4 md:mx-4">
+          <h3 class="text-sm leading-5 font-bold tracking-wider text-white uppercase">
             Support
           </h3>
           <ul class="mt-4">
@@ -39,31 +39,25 @@
             </li>
           </ul>
         </div>
-        <div class="w-full mx-5">
-          <h3 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
+        <div class="w-full mb-8 md:mb-0 md:w-1/4 mdmx-4">
+          <h3 class="text-sm leading-5 font-bold tracking-wider text-white uppercase">
             Company
           </h3>
           <ul class="mt-4">
-            <li>
-              <a href="#" class="text-base leading-6 text-gray-300 hover:text-white">
-                About
-              </a>
-            </li>
             <li class="mt-4">
               <a href="{{ "/blog" | relLangURL  }}" class="text-base leading-6 text-gray-300 hover:text-white">
                 Blog
               </a>
             </li>
             <li class="mt-4">
-              <span deactivate class="text-base leading-6 text-gray-800 hover:text-white">
-                Jobs (soon)
-              </span>
+              <a href="{{ "/jobs" | relLangURL  }}" class="text-base leading-6 text-gray-300 hover:text-white">
+                Jobs
+              </a>
             </li>
-
           </ul>
         </div>
-        <div class="w-full ml-5">
-          <h3 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
+        <div class="w-full mb-8 md:mb-0 md:w-1/4">
+          <h3 class="text-sm leading-5 font-bold tracking-wider text-white uppercase">
             Legal
           </h3>
           <ul class="mt-4">

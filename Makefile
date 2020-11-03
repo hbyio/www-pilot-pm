@@ -8,12 +8,3 @@ build:
 	open http://localhost:8910/
 	# Install Caddy webserver on your machine https://caddyserver.com/docs/download
 	caddy run --watch 
-
-
-dev: 
-	open http://${LAN-IP}:1313
-	env HUGO_PARAMS_APPURL="https://staging.pilot.pm" hugo server --navigateToChanged --disableFastRender --bind 0.0.0.0 --baseURL http://${LAN-IP}:1313
-
-new:
-	hugo new --kind blog-bundle blog/slug-de-mon-article
-
