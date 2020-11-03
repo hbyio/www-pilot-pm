@@ -37,6 +37,7 @@ De notre point de vue un client est validé uniquement après avoir pris correct
 ## Vous offrez
 
 - 1 à 4 ans d'expérience dans la vente de produit Saas B2B / B2C
+- Hubspot, SEO, Google Ads, Intercom etc .. sont soit déjà dans votre boite à outils soit dans votre radar.
 - Vous savez écrire en français (absolument obligatoire) et en anglais (optionnel)
 - Vous avez une culture technique avancée ou souhaitez l'acquérir rapidement
 - Votre formation nous importe peu, vos réalisations énormément.
