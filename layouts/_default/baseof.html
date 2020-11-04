@@ -80,6 +80,11 @@
             {{ partial "footer.html" . }}
         </footer>
     </div>
+    {{ if not .Site.IsServer }}
+    <!-- OR WITH ENV VAR if eq (getenv "HUGO_ENV") "production"  -->
+    <!--ONLY PRODUCTION-->
+    {{ partial "hubspot.html" . }}
+    {{ end }}
 </body>
 
 </html>
