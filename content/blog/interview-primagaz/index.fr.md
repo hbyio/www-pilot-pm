@@ -8,13 +8,18 @@ title: Pourquoi Primagaz a centralisé sa production de contenu ?
 featured: true
 tag: 🎙 Cas client
 tagColor: yellow
-guestImage: chloe_larmignat.jpg
+guestImage: chloelarmignat.jpeg
 guestLogo: /images/clients/primagaz.svg
 guestLinkedin: https://www.linkedin.com/in/chloelarmignat
+guestName: Chloé Larmignat, Content & social media manager chez Primagaz France
 description:  Interview avec Chloé Larmignat, Content & social media manager chez Primagaz France.
 subtitle:  Interview avec Chloé Larmignat, Content & social media manager chez Primagaz France.
+layout: interview
+menu: interview
 ---
-[Primagaz](https://www.primagaz.fr/), distributeur de gaz propane, a choisi d’utiliser Pilot pour centraliser la production et la gestion de ses contenus digitaux depuis un an et demi. Chloé Larmignat est Content et Social Media Manager, elle travaille sur le pôle digital, principalement avec les équipes marketing et communication. Elle explique pourquoi l’utilisation d’un outil de gestion de contenu collaboratif est devenu indispensable.
+[Primagaz](https://www.primagaz.fr/), distributeur de gaz propane, a choisi d’utiliser Pilot pour centraliser la production et la gestion de ses contenus digitaux depuis un an et demi. 
+Chloé Larmignat est Content et Social Media Manager, elle travaille sur le pôle digital, principalement avec les équipes marketing et communication. 
+Elle explique pourquoi l’utilisation d’un outil de gestion de contenu collaboratif est devenu indispensable.
 
 ## Bonjour Chloé, pouvez-vous vous présenter ?
 
