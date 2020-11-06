@@ -2,7 +2,7 @@
 author: Justine
 date: 2020-06-16
 draft: false
-illustration: illustration.png
+illustration: chloe_larmignat.jpg
 illustration2: chloe_larmignat.jpg
 title: Pourquoi Primagaz a centralisé sa production de contenu ?
 featured: true
