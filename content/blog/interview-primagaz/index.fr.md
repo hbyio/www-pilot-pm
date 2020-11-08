@@ -3,12 +3,10 @@ author: Justine
 date: 2020-06-16
 draft: false
 illustration: chloelarmignat.jpeg
-illustration2: chloelarmignat.jpeg
 title: Pourquoi Primagaz a centralisé sa production de contenu ?
 featured: true
 tag: 🎙 Cas client
 tagColor: yellow
-guestImage: chloelarmignat.jpeg
 guestLogo: /images/clients/primagaz.svg
 guestLinkedin: https://www.linkedin.com/in/chloelarmignat
 guestName: Chloé Larmignat, Content & social media manager chez Primagaz France

@@ -2,14 +2,12 @@
 author: Justine
 date: 2020-06-14
 draft: false
-illustration: illustration.png
-illustration2: sabine_rebitzer-harmonie_mutuelle.jpg
+illustration: sabine_rebitzer-harmonie_mutuelle.jpg
 title: Comment Harmonie Mutuelle optimise sa stratégie éditoriale avec Pilot ?
 featured: true
 tag: 🎙 Cas client
 tagColor: yellow
 guestName: Sabine Rebitzer, responsable du rayonnement des contenus chez Harmonie Mutuelle
-guestImage: sabine_rebitzer-harmonie_mutuelle.jpg
 guestLogo: /images/clients/harmonie.jpg
 guestLinkedin: https://www.linkedin.com/in/sabine-rebitzer-39499831/
 description:  Echanges avec Sabine Rebitzer, responsable du rayonnement des contenus chez Harmonie Mutuelle.
