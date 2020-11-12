@@ -70,7 +70,7 @@
 </head>
 
 <body x-data="{ mobileMenuOpen: false }">    
-    <div class="flex flex-col h-screen justify-between">
+    <div class="flex flex-col justify-between h-screen">
         {{ block "header" . }}{{ partial "header" . }}{{end}}
         <main class="flex-1">
             {{ partial "breadcrumb" . }}
@@ -83,7 +83,7 @@
     {{ if not .Site.IsServer }}
     <!-- OR WITH ENV VAR if eq (getenv "HUGO_ENV") "production"  -->
     <!--ONLY PRODUCTION-->
-    {{ partial "hubspot.html" . }}
+    {{ partial "chat.html" . }}
     {{ end }}
 </body>
 
