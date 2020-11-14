@@ -45,12 +45,12 @@ enableRobotsTXT = true
 [languages]
   [languages.en]
     LanguageName = "English"
-    description = "Organize your content marketing production in one place. Synchronize your team."
+    description = "Pilot helps teams that produce content."
     languageCode = "en"
     weight = 2
 
   [languages.fr]
     LanguageName = "Français"
-    description = "Organisez votre production de contenus marketing en un seul endroit. Synchronisez votre équipe."
+    description = "Pilot aide les équipes qui produisent des contenus."
     languageCode = "fr"
     weight = 1
