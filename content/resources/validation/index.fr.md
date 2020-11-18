@@ -33,7 +33,7 @@ Vous pouvez égaement créer un lien externe de partage (lecture seule obligatoi
 
 Un lien unique sera envoyé par email à votre contact qui pourra accéder au contenu (en lecture seule ou lecture /écriture selon votre choix)
 
-Le contact externe pourr a modifier directement le document à sa convenance, laisser des annotations ou ne rien faire et simplement cliquer sur "Valider" ou "Ne pas valider" le contenu (avec un commentaire optionnel)
+Le contact externe pourra modifier directement le document à sa convenance, laisser des annotations ou ne rien faire et simplement cliquer sur "Valider" ou "Ne pas valider" le contenu (avec un commentaire optionnel)
 
 L'utilisateur de Pilot ayant initié la demande de validation sera notifié dès la validation effectuée.
 
