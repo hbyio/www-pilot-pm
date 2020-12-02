@@ -2,7 +2,7 @@
 author: Matthieu
 date: 2020-10-28
 draft: false
-title: 📦 Pilot version 4.2 (oct. 2020)
+title: Pilot version 4.2 (oct. 2020)
 slug: v4.2
 featured: false
 tag: 📦 Release
