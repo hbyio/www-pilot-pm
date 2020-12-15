@@ -12,14 +12,14 @@ weight: 4
 
 Examples :
 
-- One or more Twitter / Facebook / Linkedin accounts etc....
-- A speech
-- An event
-- An internal magazine
-- An information leaflet
-- A newsletter
-- An institutional site (and/or its subset: HR, news, ..)
-- ..
+-   One or more Twitter / Facebook / Linkedin accounts etc....
+-   A speech
+-   An event
+-   An internal magazine
+-   An information leaflet
+-   A newsletter
+-   An institutional site (and/or its subset: HR, news, ..)
+-   ..
 
 Each channel has one or more publication managers (webmaster, community manager, printer, etc.).
 

@@ -40,10 +40,10 @@ Later in the documentation we will refer to this view as a "detail view" of a co
 
 This menu displays general information about the content:
 
-- The project to which the content is assigned
-- The channel where the content will be published
-- Any persons responsible for the document
-- The contents linked (in the case of translation for example to have a reference to the "master" or to link a brief to the written content)
+-   The project to which the content is assigned
+-   The channel where the content will be published
+-   Any persons responsible for the document
+-   The contents linked (in the case of translation for example to have a reference to the "master" or to link a brief to the written content)
 
 ### Versions and differences
 

@@ -13,7 +13,7 @@ description: The CSS module "Grid layout" will allow, finally, to compose pages 
 
 <iframe width="100%" height="430" class="my-10 mx-auto" src="https://www.youtube.com/embed/E005mjqpZ9Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-For someone who has always worked on a computer, organizing textpads for screens, it is always fascinating to discover, through this video by [Jen Simmons](http://jensimmons.com/), the history of typesetting in printing, the techniques, methods and tools used at the time. 
+For someone who has always worked on a computer, organizing textpads for screens, it is always fascinating to discover, through this video by [Jen Simmons](http://jensimmons.com/), the history of typesetting in printing, the techniques, methods and tools used at the time.
 
 We quickly see the legacy of the printing press that has spread throughout our code and how the story continues for the digital world, especially with the recent CSS "Grid" module that finally seems to allow us to reach the degree of flexibility that the printing press enjoyed.
 
@@ -21,7 +21,7 @@ We quickly see the legacy of the printing press that has spread throughout our c
 
 ![timeline.jpg](timeline.jpg)
 
-From her lab ([http://labs.jensimmons.com/2017/03-004.html](http://labs.jensimmons.com/2017/03-004.html)) some examples actually show advanced possibilities, which can even be combined with *responsive* techniques.
+From her lab ([http://labs.jensimmons.com/2017/03-004.html](http://labs.jensimmons.com/2017/03-004.html)) some examples actually show advanced possibilities, which can even be combined with _responsive_ techniques.
 
 ![webloveprint3.png](https://pilotapp-production-master.s3.amazonaws.com/assets/1/17371/1_17371_cover.jpg?v=1)
 
@@ -35,7 +35,7 @@ She approaches a technique that she practiced herself, at the time of her beginn
 
 ![Capture d’écran 2018-06-07 à 14.39.54.png](https://pilotapp-production-master.s3.amazonaws.com/assets/1/17381/1_17381_cover.jpg?v=1)
 
-The layout was very free, simply "collage" in fact, and allowed a true release of graphic designers' creativity after centuries of "rigid" composition and in "boxes" imposed by "historical" printing techniques. 
+The layout was very free, simply "collage" in fact, and allowed a true release of graphic designers' creativity after centuries of "rigid" composition and in "boxes" imposed by "historical" printing techniques.
 
 Before the advent of photography and "Paste up" the layout was heavily constrained by the printing techniques then in use: designing text blocks from molten typographic lead, arranging these blocks in metal frames, clamping, locking, and sending to the presses. This was obviously extremely "rigid" and left very few possibilities for a layout beyond the right angle.
 
@@ -47,7 +47,7 @@ We will add the end of the sterile print vs. web debate and especially the fact 
 
 ——————————————————-
 
-> Jen Simmons is *developper advocate* at Mozilla (editor of the Firefox browser), which means that her mission is to keep ahead of the progress of the techno, and summarize the whole to the People of the Web whose head remains buried in the everyday flow of things. You know what I'm talking about.
+> Jen Simmons is _developper advocate_ at Mozilla (editor of the Firefox browser), which means that her mission is to keep ahead of the progress of the techno, and summarize the whole to the People of the Web whose head remains buried in the everyday flow of things. You know what I'm talking about.
 >
 > Her website : [http://jensimmons.com/](http://jensimmons.com/)
 >

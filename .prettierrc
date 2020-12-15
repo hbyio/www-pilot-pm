@@ -1,11 +1,19 @@
 {
-  "tabWidth": 4,
-  "semi": false,
-  "singleQuote": false,
-  "quoteProps": "as-needed",
-  "trailingComma": "all",
-  "printWidth": 100,
-  "endOfLine": "lf",
-  "htmlWhitespaceSensitivity": "ignore",
-  "singleAttributePerLine": true
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": false,
+    "quoteProps": "as-needed",
+    "trailingComma": "all",
+    "printWidth": 100,
+    "endOfLine": "lf",
+    "htmlWhitespaceSensitivity": "ignore",
+    "singleAttributePerLine": true,
+    "overrides": [
+        {
+            "files": ["*.html"],
+            "options": {
+                "parser": "go-template"
+            }
+        }
+    ]
 }

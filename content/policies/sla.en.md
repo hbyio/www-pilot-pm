@@ -37,17 +37,16 @@ It is understood that the Service Provider is liable only for unavailability for
 
 If it is established that the Supplier has not reached the Availability Level, upon written request from the Customer, the Supplier undertakes to grant it compensation in the form of a discount in accordance with the following matrix and only for "Enterprise" type licenses:
 
-- First month of non-compliance with the Availability Level in the last 6 (six) months (including the month affected by the non-compliance): ten percent (10%) discount;
-- Second month of non-compliance with the Availability Level in the last 6 (six) months (including the month affected by the non-compliance): ten percent (10%) discount;
-- Third month of non-compliance with the Availability Level in the last 6 (six) months (including the month affected by the non-compliance): twenty percent (20%) discount;
-- Fourth month of non-compliance with the Availability Level in the last 12 (twelve) months (including the month affected by the non-compliance): thirty percent (30%) discount;
+-   First month of non-compliance with the Availability Level in the last 6 (six) months (including the month affected by the non-compliance): ten percent (10%) discount;
+-   Second month of non-compliance with the Availability Level in the last 6 (six) months (including the month affected by the non-compliance): ten percent (10%) discount;
+-   Third month of non-compliance with the Availability Level in the last 6 (six) months (including the month affected by the non-compliance): twenty percent (20%) discount;
+-   Fourth month of non-compliance with the Availability Level in the last 12 (twelve) months (including the month affected by the non-compliance): thirty percent (30%) discount;
     Page 21 of 25
-- Fifth month of non-compliance with the Availability Level in the last 12 (twelve) months (including the month affected by the non-compliance): forty percent (40%) discount;
-- Sixth month (or more) of non-compliance with the Availability Level in the last 12 (twelve) months (including the month affected by the non-compliance): fifty percent (50%) discount;
+-   Fifth month of non-compliance with the Availability Level in the last 12 (twelve) months (including the month affected by the non-compliance): forty percent (40%) discount;
+-   Sixth month (or more) of non-compliance with the Availability Level in the last 12 (twelve) months (including the month affected by the non-compliance): fifty percent (50%) discount;
 
 In addition, if it is established that the Service has not achieved an availability (excluding Maintenance Operation(s), test or pre-production environments) of 90% during a given calendar month, upon written request by the Client and as the sole compensation due to the latter, the Service Provider undertakes to grant it compensation in the form of a discount corresponding to one hundred percent (100%) of the discount.
 
 The discount is calculated from the price paid by the Customer for the Service during the month affected by the unavailability period, and is deducted from the next invoice.
 
 The total amount of penalties that the Supplier may be required to pay to the Customer under the Agreement is capped at thirty percent (30%) of the total annual amount of Subscriptions paid by the Customer.
-

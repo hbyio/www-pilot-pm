@@ -11,12 +11,9 @@ description: Rapidité, sécurité, blocage d'édition, drag and drop d'image, .
 subtitle: "Au menu de cette nouvelle version : rapidité, sécurité, blocage d'édition, drag and drop d'image, .."
 ---
 
-
 ## Interface encore plus rapide
 
 Au quotidien vous changez de page des centaines de fois pour circuler depuis un contenu vers une liste puis vers un projet etc .. **Chaque milliseconde compte.**
-
-
 
 Ces dernières semaines nous avons mené un travail de fond pour améliorer ces temps de rendu pour chaque opération, gagner 10 millisecondes ici, 1 seconde là.
 
@@ -44,14 +41,13 @@ Vous pouvez glisser-déplacer une image directement dans l'éditeur et elle sera
 <img class="rounded-lg shadow-lg" src="dragupload.gif">
 </figure>
 
-
-## Sécurité des partages  
+## Sécurité des partages
 
 [https://app.pilot.pm/sharings/](https://app.pilot.pm/sharings/)
 
-Gérer la sécurité d'un compte passe par une vue globale des partages de contenus qui sont effectués depuis votre compte vers l'extérieur. 
+Gérer la sécurité d'un compte passe par une vue globale des partages de contenus qui sont effectués depuis votre compte vers l'extérieur.
 
-Cette nouvelle interface, accessible aux administrateurs uniquement, permet d'avoir une vue complète sur tous les partages effectués par les membres de l'équipe. 
+Cette nouvelle interface, accessible aux administrateurs uniquement, permet d'avoir une vue complète sur tous les partages effectués par les membres de l'équipe.
 
 Cela permet de repérer les plus vieux, par exemple, pour les fermer. Ou de tout fermer immédiatement en cas de souci (pour ceux partagés sans mot de passe).
 

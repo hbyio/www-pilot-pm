@@ -7,9 +7,10 @@ title: 📦 Pilot version 4 (Juin 2020)
 featured: false
 tag: 📦 Release
 tagColor: green
-description: Nouvelle UI, édition temps réél et collaborative, découvrez le nouveau Pilot. 
-subtitle: Nouvelle UI, édition temps réél et collaborative, découvrez le nouveau Pilot. 
+description: Nouvelle UI, édition temps réél et collaborative, découvrez le nouveau Pilot.
+subtitle: Nouvelle UI, édition temps réél et collaborative, découvrez le nouveau Pilot.
 ---
+
 ## Nouvelle interface
 
 Une nouvelle interface, qui s'adapte à la largeur de vos écrans, plus simple à comprendre et à utiliser au quotidien.
@@ -23,9 +24,11 @@ En réunion sur grand écran, dans un taxi sur votre téléphone, nous sommes l�
 ![responsive.gif](responsive.gif)
 
 ### Un menu plus simple et qui regroupe tous vos outils
+
 ![newmenu.png](newmenu.png)
 
 ### Les contenus ont un menu plus facile à utiliser
+
 Ce type de menu est devenu la norme sur toute l'application.
 ![itemmenu.png](itemmenu.png)
 

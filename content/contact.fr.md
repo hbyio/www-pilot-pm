@@ -7,7 +7,6 @@ draft: false
 
 Pour planifier une démo, discuter de votre projet ou de votre candidature spontanée ... écrivez nous, on répond toujours.
 
-
 <div id="section-contactus" class="bg-white">
   <div class="lg:py-16">
     <div class="px-6 py-6 bg-brand-700 rounded md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center">

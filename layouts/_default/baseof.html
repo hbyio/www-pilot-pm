@@ -1,90 +1,115 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="has-navbar-fixed-top" lang="{{ $.Site.Language.Lang }}">
+    <head>
+        {{ if .IsHome -}}
+            <title>{{ .Site.Title }}</title>
+            {{- else -}}
+            <title>{{ .Title }} – {{ .Site.Title }}</title>
+        {{- end }}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        {{ if .Params.author -}}
+            <meta name="author" content="{{ .Params.author }}" />
+        {{- end }}
+        {{ if .Params.date -}}
+            <meta name="date" content="{{ .Date.Format `Jan 2, 2006` }}" />
+        {{- end }}
+        {{ if eq .Section "policies" -}}
+            <meta name="robots" content="noindex" />
+        {{- end }}
+        <meta name="referrer" content="no-referrer-when-downgrade" />
+        <link rel="canonical" href="{{ .Permalink }}" />
+        {{- if .IsTranslated }}
+            {{- range .Translations }}
+                <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
+            {{- end }}
+        {{- end }}
+        <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="{{ .Title }}" />
+        <!-- Description tags -->
+        <meta
+            name="description"
+            content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}"
+        />
+        <meta
+            itemprop="description"
+            content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}"
+        />
 
-<head>
-    {{ if .IsHome -}}
-    <title>{{ .Site.Title }}</title>
-    {{- else -}}
-    <title>{{ .Title }} – {{ .Site.Title }}</title>
-    {{- end }}
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    {{ if .Params.author -}}
-    <meta name="author" content="{{ .Params.author }}">
-    {{- end }}
-    {{ if .Params.date -}}
-    <meta name="date" content="{{ .Date.Format `Jan 2, 2006` }}">
-    {{- end }}
-    {{ if eq .Section "policies" -}}
-    <meta name="robots" content="noindex" />
-    {{- end }}
-    <meta name="referrer" content="no-referrer-when-downgrade" />
-    <link rel="canonical" href="{{ .Permalink }}">
-    {{- if .IsTranslated }}
-    {{- range .Translations }}
-    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
-    {{- end}}
-    {{- end }}
-    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="{{ .Title }}">
-    <!-- Description tags -->
-    <meta name="description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
-    <meta itemprop="description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="{{ .Permalink }}" />
+        <meta property="og:title" content="{{ .Title }}" />
+        <meta
+            property="og:description"
+            content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}"
+        />
+        <meta
+            property="og:image"
+            content="{{ if .Params.illustration }}{{ .Permalink }}{{ .Params.illustration }}{{ else }}{{ .Site.Params.Image | absURL }}{{ end }}"
+        />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ .Permalink }}">
-    <meta property="og:title" content="{{ .Title }}">
-    <meta property="og:description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-    <meta property="og:image" content="{{ if .Params.illustration }}{{ .Permalink }}{{ .Params.illustration }}{{ else }}{{ .Site.Params.Image | absURL }}{{ end }}">
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="{{ .Permalink }}" />
+        <meta property="twitter:title" content="{{ .Title }}" />
+        <meta
+            property="twitter:description"
+            content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}"
+        />
+        <meta
+            property="twitter:image"
+            content="{{ if .Params.illustration }}{{ .Permalink }}{{ .Params.illustration }}{{ else }}{{ .Site.Params.Image | absURL }}{{ end }}"
+        />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="{{ .Permalink }}">
-    <meta property="twitter:title" content="{{ .Title }}">
-    <meta property="twitter:description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-    <meta property="twitter:image" content="{{ if .Params.illustration }}{{ .Permalink }}{{ .Params.illustration }}{{ else }}{{ .Site.Params.Image | absURL }}{{ end }}">
+        {{ if .Site.IsServer }}
+            {{- $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/dev/postcss.config.js") | fingerprint }}
+            <link rel="stylesheet" href="{{ $style.RelPermalink }}" data />
+            {{ else }}
+            {{- $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js")  | minify | fingerprint -}}
+            <link
+                rel="stylesheet"
+                href="{{ $style.RelPermalink }}"
+                integrity="{{ $style.Data.Integrity }}"
+            />
+        {{ end -}}
 
-    {{ if .Site.IsServer }}
-    {{- $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/dev/postcss.config.js") | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}" data>
-    {{ else }}
-    {{- $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js")  | minify | fingerprint -}}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
-    {{ end -}}
-    
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.0/dist/alpine.min.js" defer></script>
+        <script
+            src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.0/dist/alpine.min.js"
+            defer
+        ></script>
 
-    {{ $font := resources.Get "css/inter.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $font.RelPermalink }}" integrity="{{ $font.Data.Integrity }}">
+        {{ $font := resources.Get "css/inter.css" | minify | fingerprint }}
+        <link
+            rel="stylesheet"
+            href="{{ $font.RelPermalink }}"
+            integrity="{{ $font.Data.Integrity }}"
+        />
 
-    {{ if not .Site.IsServer }}
-    <!-- OR WITH ENV VAR if eq (getenv "HUGO_ENV") "production"  -->
-    <!--ONLY PRODUCTION-->
-    {{ partial "analytics.html" . }}
-    {{ end }}
+        {{ if not .Site.IsServer }}
+            <!-- OR WITH ENV VAR if eq (getenv "HUGO_ENV") "production"  -->
+            <!--ONLY PRODUCTION-->
+            {{ partial "analytics.html" . }}
+        {{ end }}
+    </head>
 
-
-</head>
-
-<body x-data="{ mobileMenuOpen: false }">    
-    <div class="flex flex-col justify-between h-screen">
-        {{ block "header" . }}{{ partial "header" . }}{{end}}
-        <main class="flex-1">
-            {{ partial "breadcrumb" . }}
-            {{ block "main" . }}{{end}}
-        </main>
-        <footer>
-            {{ partial "footer.html" . }}
-        </footer>
-    </div>
-    {{ if not .Site.IsServer }}
-    <!-- OR WITH ENV VAR if eq (getenv "HUGO_ENV") "production"  -->
-    <!--ONLY PRODUCTION-->
-    {{ partial "chat.html" . }}
-    {{ end }}
-</body>
-
+    <body x-data="{ mobileMenuOpen: false }">
+        <div class="flex flex-col justify-between h-screen">
+            {{ block "header" . }}{{ partial "header" . }}{{ end }}
+            <main class="flex-1">
+                {{ partial "breadcrumb" . }}
+                {{ block "main" . }}{{ end }}
+            </main>
+            <footer>
+                {{ partial "footer.html" . }}
+            </footer>
+        </div>
+        {{ if not .Site.IsServer }}
+            <!-- OR WITH ENV VAR if eq (getenv "HUGO_ENV") "production"  -->
+            <!--ONLY PRODUCTION-->
+            {{ partial "chat.html" . }}
+        {{ end }}
+    </body>
 </html>

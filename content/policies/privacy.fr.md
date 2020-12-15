@@ -13,4 +13,3 @@ weight: 3
 
 Pilot est un logiciel métier qui héberge uniquement des emails professionnels.
 Toute demande d'accès à vos données doit être faite auprès de support@pilot.pm
-

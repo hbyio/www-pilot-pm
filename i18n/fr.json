@@ -1,267 +1,267 @@
 {
-  "seeMore": {
-    "other": "Voir plus"
-  },
-  "annotations": {
-    "other": "Annotations"
-  },
-  "annotationsShort": {
-    "other": "Annoter vos documents précisément et engagez des conversations sans perdre de temps. Les membres de l’équipe seront notifiés avec un lien les menant directement vers le document et l’annotation."
-  },
-  "askDemo": {
-    "other": "Demander une démo"
-  },
-  "blog": {
-    "other": "Blog"
-  },
-  "calendar": {
-    "other": "Calendrier"
-  },
-  "calendars": {
-    "other": "Calendriers"
-  },
-  "calendarsShort": {
-    "other": "Créez facilement des plannings éditoriaux ou de tâches, sauvegardez, partagez des calendriers personnalisés avec vos clients. Changez votre programmation de publication simplement par drag&drop"
-  },
-  "catchphrase": {
-    "other": "Structurez vos process, gagnez du temps, libérez votre équipe des tâches sans valeur ajoutée"
-  },
-  "close": {
-    "other": "Fermer"
-  },
-  "collabEditing": {
-    "other": "Rédaction + collaboration"
-  },
-  "collabEditingExplained": {
-    "other": "Créez des documents à plusieurs, faites valider en un clic "
-  },
-  "collaboration": {
-    "other": "Des échanges en contexte"
-  },
-  "collaborationText": {
-    "other": "Discuter en équipe directement dans le contexte d'un document ou d'un projet, ne perdez plus de décisions importantes"
-  },
-  "contactUs": {
-    "other": "Contactez nous"
-  },
-  "contactUsForDemo": {
-    "other": "Contactez nous pour une démo"
-  },
-  "contactUsForWhatever": {
-    "other": "Pour planifier une démo, discuter de votre projet ou de votre candidature spontanée ... écrivez nous, on répond toujours."
-  },
-  "featBudget": {
-    "other": "Optimisez vos budgets"
-  },
-  "featBudgetExplained": {
-    "other": "Vous gérez des campagnes récurrentes ? Ne re-produisez (et re-payez) pas les mêmes contenus chaque année, cliquez sur \"dupliquer\", adaptez, c'est fait"
-  },
-  "featShareAssets": {
-    "other": "Partagez vos fichiers"
-  },
-  "featShareAssetsExplained": {
-    "other": "Notez en un seul endroit tous les éléments importants comme le brief, joignez des press kit ou des vidéos haute définition, autant d’éléments pouvant servir aux personnes en charge de la production"
-  },
-  "features": {
-    "other": "Fonctionnalités"
-  },
-  "freeLicences": {
-    "other": "Licences gratuites sans limite de temps"
-  },
-  "freeLicencesExplained": {
-    "other": "Vous êtes développeur  ou une organisation non caritative, vous souhaitez bénéficier d'un compte gratuit ? Nous offrons des licences pour certains usages"
-  },
-  "fullOptions": {
-    "other": "Toutes les options"
-  },
-  "futureFeatures": {
-    "other": "Toutes nouvelles fonctionnalités"
-  },
-  "heroSubTitle": {
-    "other": "Pilot facilite et rend plus agréable la planification et la production de contenus avec vos équipes, où qu'elles se trouvent."
-  },
-  "heroTitle": {
-    "other": "Pilot aide les équipes qui produisent des contenus"
-  },
-  "items": {
-    "one": "contenu",
-    "other": "contenus"
-  },
-  "joinCommunity": {
-    "other": "Rejoignez une communauté de professionnels"
-  },
-  "joinCommunityExplained": {
-    "other": "Une application ne peut pas tout faire et ne remplacera jamais l'échange d'expériences et de bonnes pratiques"
-  },
-  "login": {
-    "other": "se connecter"
-  },
-  "month": {
-    "other": "mois"
-  },
-  "noConflict": {
-    "other": "Zéro conflit de versions"
-  },
-  "noConflictExplained": {
-    "other": "Collaborez à plusieurs, en même temps, sur un même document. Plus de problème de conflits de versions, on ne se marche plus sur les pieds."
-  },
-  "noMissingDueDate": {
-    "other": "Ne ratez plus une date de publication"
-  },
-  "noMissingDueDateExplained": {
-    "other": "Programmez vous des rappels, comme sur Google Calendar, pour les tâches les plus importantes liées à vos contenus (publier, valider, envoyer à l'imprimeur, programmer sur Buffer)"
-  },
-  "noSignup": {
-    "other": "Sans login"
-  },
-  "oneLastVersion": {
-    "other": "Plus besoin de chercher la dernière version, elle est là"
-  },
-  "oneLastVersionExplained": {
-    "other": "Versions mineures, versions majeures, toutes sont stockées depuis la première modification jusqu'à la plus récente. Parcourez l'historique complet d'un document, analysez les changements."
-  },
-  "organiseTasks": {
-    "other": "Faites valider vos documents en un clic"
-  },
-  "organiseTasksText": {
-    "other": "Partagez vos documents ou projets en un clic, vos contacts valident directement depuis leurs portables"
-  },
-  "pricing": {
-    "other": "Tarification"
-  },
-  "pricesEnterpriseExplained": {
-    "other": "Pour un grand groupe"
-  },
-  "pricesMediumExplained": {
-    "other": "Pour une agence"
-  },
-  "pricesSmallExplained": {
-    "other": "Pour un free lance"
-  },
-  "prioritySupport": {
-    "other": "Accès prioritaire au support"
-  },
-  "privacy": {
-    "other": "Données personnelles"
-  },
-  "project": {
-    "one": "projet",
-    "other": "projets"
-  },
-  "projectBrief": {
-    "other": "Campagne marketing, refonte de site web, magazine interne, mettez toutes les informations nécessaires à l'équipe en un seul lieu au lieu de multiplier les réunions."
-  },
-  "projectLifeCycle": {
-    "other": "Des temps de projets plus courts"
-  },
-  "projectLifeCycleText": {
-    "other": "Centraliser et mettre à disposition l'information nécessaire à la réalisation d'une campagne marketing permet d'en raccourcir son temps de développement"
-  },
-  "readyToDive": {
-    "other": "Prêt à vous lancer?"
-  },
-  "resources": {
-    "other": "Ressources"
-  },
-  "shareFiles": {
-    "other": "Partagez vos fichiers sans limite de poids"
-  },
-  "shareFilesText": {
-    "other": "Sans limite de poids mettez à disposition des fichiers volumineux pour vos webmasters, maquettistes, monteurs vidéos"
-  },
-  "signup": {
-    "other": "Essayez gratuitement"
-  },
-  "sla": {
-    "other": "Engagement de service"
-  },
-  "someMadesomeRequested": {
-    "other": "En constante évolution, en fonction de vos usages"
-  },
-  "startTrial": {
-    "other": "Démarrez votre essai aujourd'hui"
-  },
-  "storage": {
-    "other": "stockage fichiers"
-  },
-  "strategic": {
-    "other": "Vos contenus sont plus que jamais stratégiques."
-  },
-  "strategicExplain": {
-    "other": "Pilot est conçu pour répondre aux enjeux partagés par les équipes marketing : ne plus perdre de temps inutilement et se concentrer sur l’essentiel"
-  },
-  "strategicValue": {
-    "other": "Des versions à valider qui se perdent ? Des comités éditoriaux à répétition ? Ca vous semble familier ?  Voici comment Pilot va optimiser votre stratégie de contenus"
-  },
-  "submit": {
-    "other": "Envoyer"
-  },
-  "subscribe": {
-    "other": "S'inscrire"
-  },
-  "subscribeNewsletter": {
-    "other": "Inscrivez vous à notre newsletter"
-  },
-  "subscribeNewsletterExplained": {
-    "other": "Quelques annonces importantes de temps à autre. Vous pourrez vous désinscrire facilement en un clic"
-  },
-  "tasks": {
-    "one": "tâche",
-    "other": "tâches"
-  },
-  "tasksCalendar": {
-    "other": "Une vue globale de l'activité"
-  },
-  "tasksCalendarExplained": {
-    "other": "En un coup d'oeil repérez les goulets d'étranglements qui vont pénaliser l'équipe ou quand une cible précise est trop sollicitée sur de multiples canaux."
-  },
-  "tasksExplained": {
-    "other": "Affectez des tâches à vos contenus ou projets, pour vous même ou à d’autres membres de l’équipe"
-  },
-  "templates": {
-    "other": "Construisez vos modèles de contenus "
-  },
-  "templatesExplained": {
-    "other": "Encadrez la production de vos contributeurs avec des formulaires spécialement adaptés à vos contraintes (cms, application mobile) : limites de caractères, email, champs répétables .. Vous pouvez même créer des formulaires avec PDF versionnables et annotables (pratique pour les validation de magazines)"
-  },
-  "terms": {
-    "other": "Conditions Générales de Vente"
-  },
-  "testimonials": {
-    "other": "Témoignages"
-  },
-  "theyTrustUs": {
-    "other": "Pilot aide ces grands comptes à structurer leurs prises de parole"
-  },
-  "translationsManagement": {
-    "other": "Gestion des langues & traductions"
-  },
-  "transparentPricing": {
-    "other": "Des prix clairs, sans surprises"
-  },
-  "trialConditions": {
-    "other": "30 jours gratuits - pas de CB demandée"
-  },
-  "unlimitedArchives": {
-    "other": "Archivage illimité"
-  },
-  "unlimitedItems": {
-    "other": "contenus illimités"
-  },
-  "unlimitedProjects": {
-    "other": "projets illimités"
-  },
-  "unlimitedUsers": {
-    "other": "utilisateurs illimités"
-  },
-  "user": {
-    "one": "utilisateur",
-    "other": "utilisateurs"
-  },
-  "whatsappChannel": {
-    "other": "Nous sommes aussi disponibles sur WhatsApp"
-  },
-  "whoWhatWhen": {
-    "other": "Vous savez ce qui est fait, par qui et quand."
-  }
+    "seeMore": {
+        "other": "Voir plus"
+    },
+    "annotations": {
+        "other": "Annotations"
+    },
+    "annotationsShort": {
+        "other": "Annoter vos documents précisément et engagez des conversations sans perdre de temps. Les membres de l’équipe seront notifiés avec un lien les menant directement vers le document et l’annotation."
+    },
+    "askDemo": {
+        "other": "Demander une démo"
+    },
+    "blog": {
+        "other": "Blog"
+    },
+    "calendar": {
+        "other": "Calendrier"
+    },
+    "calendars": {
+        "other": "Calendriers"
+    },
+    "calendarsShort": {
+        "other": "Créez facilement des plannings éditoriaux ou de tâches, sauvegardez, partagez des calendriers personnalisés avec vos clients. Changez votre programmation de publication simplement par drag&drop"
+    },
+    "catchphrase": {
+        "other": "Structurez vos process, gagnez du temps, libérez votre équipe des tâches sans valeur ajoutée"
+    },
+    "close": {
+        "other": "Fermer"
+    },
+    "collabEditing": {
+        "other": "Rédaction + collaboration"
+    },
+    "collabEditingExplained": {
+        "other": "Créez des documents à plusieurs, faites valider en un clic "
+    },
+    "collaboration": {
+        "other": "Des échanges en contexte"
+    },
+    "collaborationText": {
+        "other": "Discuter en équipe directement dans le contexte d'un document ou d'un projet, ne perdez plus de décisions importantes"
+    },
+    "contactUs": {
+        "other": "Contactez nous"
+    },
+    "contactUsForDemo": {
+        "other": "Contactez nous pour une démo"
+    },
+    "contactUsForWhatever": {
+        "other": "Pour planifier une démo, discuter de votre projet ou de votre candidature spontanée ... écrivez nous, on répond toujours."
+    },
+    "featBudget": {
+        "other": "Optimisez vos budgets"
+    },
+    "featBudgetExplained": {
+        "other": "Vous gérez des campagnes récurrentes ? Ne re-produisez (et re-payez) pas les mêmes contenus chaque année, cliquez sur \"dupliquer\", adaptez, c'est fait"
+    },
+    "featShareAssets": {
+        "other": "Partagez vos fichiers"
+    },
+    "featShareAssetsExplained": {
+        "other": "Notez en un seul endroit tous les éléments importants comme le brief, joignez des press kit ou des vidéos haute définition, autant d’éléments pouvant servir aux personnes en charge de la production"
+    },
+    "features": {
+        "other": "Fonctionnalités"
+    },
+    "freeLicences": {
+        "other": "Licences gratuites sans limite de temps"
+    },
+    "freeLicencesExplained": {
+        "other": "Vous êtes développeur  ou une organisation non caritative, vous souhaitez bénéficier d'un compte gratuit ? Nous offrons des licences pour certains usages"
+    },
+    "fullOptions": {
+        "other": "Toutes les options"
+    },
+    "futureFeatures": {
+        "other": "Toutes nouvelles fonctionnalités"
+    },
+    "heroSubTitle": {
+        "other": "Pilot facilite et rend plus agréable la planification et la production de contenus avec vos équipes, où qu'elles se trouvent."
+    },
+    "heroTitle": {
+        "other": "Pilot aide les équipes qui produisent des contenus"
+    },
+    "items": {
+        "one": "contenu",
+        "other": "contenus"
+    },
+    "joinCommunity": {
+        "other": "Rejoignez une communauté de professionnels"
+    },
+    "joinCommunityExplained": {
+        "other": "Une application ne peut pas tout faire et ne remplacera jamais l'échange d'expériences et de bonnes pratiques"
+    },
+    "login": {
+        "other": "se connecter"
+    },
+    "month": {
+        "other": "mois"
+    },
+    "noConflict": {
+        "other": "Zéro conflit de versions"
+    },
+    "noConflictExplained": {
+        "other": "Collaborez à plusieurs, en même temps, sur un même document. Plus de problème de conflits de versions, on ne se marche plus sur les pieds."
+    },
+    "noMissingDueDate": {
+        "other": "Ne ratez plus une date de publication"
+    },
+    "noMissingDueDateExplained": {
+        "other": "Programmez vous des rappels, comme sur Google Calendar, pour les tâches les plus importantes liées à vos contenus (publier, valider, envoyer à l'imprimeur, programmer sur Buffer)"
+    },
+    "noSignup": {
+        "other": "Sans login"
+    },
+    "oneLastVersion": {
+        "other": "Plus besoin de chercher la dernière version, elle est là"
+    },
+    "oneLastVersionExplained": {
+        "other": "Versions mineures, versions majeures, toutes sont stockées depuis la première modification jusqu'à la plus récente. Parcourez l'historique complet d'un document, analysez les changements."
+    },
+    "organiseTasks": {
+        "other": "Faites valider vos documents en un clic"
+    },
+    "organiseTasksText": {
+        "other": "Partagez vos documents ou projets en un clic, vos contacts valident directement depuis leurs portables"
+    },
+    "pricing": {
+        "other": "Tarification"
+    },
+    "pricesEnterpriseExplained": {
+        "other": "Pour un grand groupe"
+    },
+    "pricesMediumExplained": {
+        "other": "Pour une agence"
+    },
+    "pricesSmallExplained": {
+        "other": "Pour un free lance"
+    },
+    "prioritySupport": {
+        "other": "Accès prioritaire au support"
+    },
+    "privacy": {
+        "other": "Données personnelles"
+    },
+    "project": {
+        "one": "projet",
+        "other": "projets"
+    },
+    "projectBrief": {
+        "other": "Campagne marketing, refonte de site web, magazine interne, mettez toutes les informations nécessaires à l'équipe en un seul lieu au lieu de multiplier les réunions."
+    },
+    "projectLifeCycle": {
+        "other": "Des temps de projets plus courts"
+    },
+    "projectLifeCycleText": {
+        "other": "Centraliser et mettre à disposition l'information nécessaire à la réalisation d'une campagne marketing permet d'en raccourcir son temps de développement"
+    },
+    "readyToDive": {
+        "other": "Prêt à vous lancer?"
+    },
+    "resources": {
+        "other": "Ressources"
+    },
+    "shareFiles": {
+        "other": "Partagez vos fichiers sans limite de poids"
+    },
+    "shareFilesText": {
+        "other": "Sans limite de poids mettez à disposition des fichiers volumineux pour vos webmasters, maquettistes, monteurs vidéos"
+    },
+    "signup": {
+        "other": "Essayez gratuitement"
+    },
+    "sla": {
+        "other": "Engagement de service"
+    },
+    "someMadesomeRequested": {
+        "other": "En constante évolution, en fonction de vos usages"
+    },
+    "startTrial": {
+        "other": "Démarrez votre essai aujourd'hui"
+    },
+    "storage": {
+        "other": "stockage fichiers"
+    },
+    "strategic": {
+        "other": "Vos contenus sont plus que jamais stratégiques."
+    },
+    "strategicExplain": {
+        "other": "Pilot est conçu pour répondre aux enjeux partagés par les équipes marketing : ne plus perdre de temps inutilement et se concentrer sur l’essentiel"
+    },
+    "strategicValue": {
+        "other": "Des versions à valider qui se perdent ? Des comités éditoriaux à répétition ? Ca vous semble familier ?  Voici comment Pilot va optimiser votre stratégie de contenus"
+    },
+    "submit": {
+        "other": "Envoyer"
+    },
+    "subscribe": {
+        "other": "S'inscrire"
+    },
+    "subscribeNewsletter": {
+        "other": "Inscrivez vous à notre newsletter"
+    },
+    "subscribeNewsletterExplained": {
+        "other": "Quelques annonces importantes de temps à autre. Vous pourrez vous désinscrire facilement en un clic"
+    },
+    "tasks": {
+        "one": "tâche",
+        "other": "tâches"
+    },
+    "tasksCalendar": {
+        "other": "Une vue globale de l'activité"
+    },
+    "tasksCalendarExplained": {
+        "other": "En un coup d'oeil repérez les goulets d'étranglements qui vont pénaliser l'équipe ou quand une cible précise est trop sollicitée sur de multiples canaux."
+    },
+    "tasksExplained": {
+        "other": "Affectez des tâches à vos contenus ou projets, pour vous même ou à d’autres membres de l’équipe"
+    },
+    "templates": {
+        "other": "Construisez vos modèles de contenus "
+    },
+    "templatesExplained": {
+        "other": "Encadrez la production de vos contributeurs avec des formulaires spécialement adaptés à vos contraintes (cms, application mobile) : limites de caractères, email, champs répétables .. Vous pouvez même créer des formulaires avec PDF versionnables et annotables (pratique pour les validation de magazines)"
+    },
+    "terms": {
+        "other": "Conditions Générales de Vente"
+    },
+    "testimonials": {
+        "other": "Témoignages"
+    },
+    "theyTrustUs": {
+        "other": "Pilot aide ces grands comptes à structurer leurs prises de parole"
+    },
+    "translationsManagement": {
+        "other": "Gestion des langues & traductions"
+    },
+    "transparentPricing": {
+        "other": "Des prix clairs, sans surprises"
+    },
+    "trialConditions": {
+        "other": "30 jours gratuits - pas de CB demandée"
+    },
+    "unlimitedArchives": {
+        "other": "Archivage illimité"
+    },
+    "unlimitedItems": {
+        "other": "contenus illimités"
+    },
+    "unlimitedProjects": {
+        "other": "projets illimités"
+    },
+    "unlimitedUsers": {
+        "other": "utilisateurs illimités"
+    },
+    "user": {
+        "one": "utilisateur",
+        "other": "utilisateurs"
+    },
+    "whatsappChannel": {
+        "other": "Nous sommes aussi disponibles sur WhatsApp"
+    },
+    "whoWhatWhen": {
+        "other": "Vous savez ce qui est fait, par qui et quand."
+    }
 }

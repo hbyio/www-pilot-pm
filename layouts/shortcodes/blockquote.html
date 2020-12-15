@@ -1,12 +1,10 @@
 <div class="bg-gray-50 p-4 text-xl rounded shadow">
-    <p class="mb-4 font-medium italic">
-        "{{ .Inner }}"
-    </p>
+    <p class="mb-4 font-medium italic">"{{ .Inner }}"</p>
     <div class="flex items-center">
         <img
-        alt="Sabine Rebitzer"
-        class="w-12 my-0 mr-4 rounded-full bg-neutral-500"
-        src="{{ .Get `profilePath` }}"
+            alt="Sabine Rebitzer"
+            class="w-12 my-0 mr-4 rounded-full bg-neutral-500"
+            src="{{ .Get `profilePath` }}"
         />
         <div class="flex flex-col items-start">
             <span class="font-bold">{{ .Get "author" }}</span>

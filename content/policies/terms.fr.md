@@ -48,19 +48,19 @@ Contenus : désigne tout document, fichier, information ou contenu, de quelqu
 
 La Plateforme permet l’accès à différents Services permettant la gestion des projets de communication et la gestion de production de Contenus :
 
-* création de Contenus ;
+-   création de Contenus ;
 
-* gestion des versions des Contenus ;
+-   gestion des versions des Contenus ;
 
-* validation des Contenus ;
+-   validation des Contenus ;
 
-* présentation des Contenus dans des calendriers éditoriaux ;
+-   présentation des Contenus dans des calendriers éditoriaux ;
 
-* stockage centralisé des Contenus et médias utilisables dans les Contenus en cours de production ;
+-   stockage centralisé des Contenus et médias utilisables dans les Contenus en cours de production ;
 
-* interfaçage du compte Client avec des applications tierces ;
+-   interfaçage du compte Client avec des applications tierces ;
 
-* (…).
+-   (…).
 
 La liste des Services accessibles via la Plateforme, détaillée sur le site de la Société, est susceptible d’évoluer, ce que le Client reconnaît et accepte.
 
@@ -74,9 +74,9 @@ Il reconnaît que les informations communiquées sont exactes et s’engage à l
 
 L’accès à la Plateforme s’effectue :
 
-* à partir d’un ordinateur ou de tout autre moyen permettant une connexion Internet, à la charge du Client et des Utilisateurs ;
+-   à partir d’un ordinateur ou de tout autre moyen permettant une connexion Internet, à la charge du Client et des Utilisateurs ;
 
-* par le biais d’un navigateur supporté par la Société (liste accessible sur le site internet de la Société http://pilot.pm).
+-   par le biais d’un navigateur supporté par la Société (liste accessible sur le site internet de la Société http://pilot.pm).
 
 Le Client s’engage à respecter les droits de propriété intellectuelle relatifs à la Plateforme.
 
@@ -98,17 +98,17 @@ La Société s’engage sur une disponibilité de la Plateforme à hauteur  de 
 
 S’il est établi que ce Niveau de Disponibilité n’est pas atteint, le Client est en droit, sur demande écrite de sa part, de solliciter auprès de la Société l’attribution d’une compensation financière selon les modalités suivantes :
 
-* Premier mois de non-respect du Niveau de Disponibilité dans les 6 (six) derniers mois (mois concerné par le non-respect inclus) : dix pour cent (10%) de remise ;
+-   Premier mois de non-respect du Niveau de Disponibilité dans les 6 (six) derniers mois (mois concerné par le non-respect inclus) : dix pour cent (10%) de remise ;
 
-* Deuxième mois de non-respect du Niveau de Disponibilité dans les 6 (six) derniers mois (mois concerné par le non-respect inclus) : dix pour cent (10%) de remise ;
+-   Deuxième mois de non-respect du Niveau de Disponibilité dans les 6 (six) derniers mois (mois concerné par le non-respect inclus) : dix pour cent (10%) de remise ;
 
-* Troisième mois de non-respect du Niveau de Disponibilité dans les 6 (six) derniers mois (mois concerné par le non-respect inclus) : vingt pour cent (20%) de remise ;
+-   Troisième mois de non-respect du Niveau de Disponibilité dans les 6 (six) derniers mois (mois concerné par le non-respect inclus) : vingt pour cent (20%) de remise ;
 
-* Quatrième mois de non-respect du Niveau de Disponibilité dans les 12 (douze) derniers mois (mois concerné par le non-respect inclus) : trente pour cent (30%) de remise ;
+-   Quatrième mois de non-respect du Niveau de Disponibilité dans les 12 (douze) derniers mois (mois concerné par le non-respect inclus) : trente pour cent (30%) de remise ;
 
-* Cinquième mois de non-respect du Niveau de Disponibilité dans les 12 (douze) derniers mois (mois concerné par le non-respect inclus) : quarante pour cent (40%) de remise ;
+-   Cinquième mois de non-respect du Niveau de Disponibilité dans les 12 (douze) derniers mois (mois concerné par le non-respect inclus) : quarante pour cent (40%) de remise ;
 
-* Sixième mois (ou plus) de non-respect du Niveau de Disponibilité dans les 12 (douze) derniers mois (mois concerné par le non-respect inclus) : cinquante pour cent (50%) de remise ;
+-   Sixième mois (ou plus) de non-respect du Niveau de Disponibilité dans les 12 (douze) derniers mois (mois concerné par le non-respect inclus) : cinquante pour cent (50%) de remise ;
 
 En complément, s’il est établi que la Plateforme n’a pas atteint une disponibilité (hors maintenance, hors environnements de test ou de pré-production) de 90% durant un mois calendaire donné, sur demande écrite du Client et comme unique compensation due à ce dernier, la Société s’engage à lui attribuer une compensation sous forme de remise correspondant à cent pour cent (100%) de remise.
 
@@ -152,21 +152,21 @@ Il appartient au Client de signaler à la Société par courrier électronique a
 
 La Société décline toute responsabilité au titre des obligations souscrites dans le cadre de la maintenance dans les cas suivants :
 
-* refus du Client de collaborer avec la Société dans la résolution des anomalies et notamment de répondre aux questions et demandes de renseignement ;
+-   refus du Client de collaborer avec la Société dans la résolution des anomalies et notamment de répondre aux questions et demandes de renseignement ;
 
-* utilisation de la Plateforme de manière non conforme aux dispositions du présent Contrat ;
+-   utilisation de la Plateforme de manière non conforme aux dispositions du présent Contrat ;
 
-* modification non autorisée de la Plateforme par le Client ou par un tiers à la demande du Client ;
+-   modification non autorisée de la Plateforme par le Client ou par un tiers à la demande du Client ;
 
-* manquement du Client à ses obligations au titre du Contrat ;
+-   manquement du Client à ses obligations au titre du Contrat ;
 
-* implantation par le Client de tous progiciels, logiciels ou système d'exploitation non compatibles avec la Plateforme sans l’autorisation préalable de la Société ;
+-   implantation par le Client de tous progiciels, logiciels ou système d'exploitation non compatibles avec la Plateforme sans l’autorisation préalable de la Société ;
 
-* défaillance des réseaux de communication électronique ;
+-   défaillance des réseaux de communication électronique ;
 
-* acte volontaire de dégradation, malveillance, sabotage ;
+-   acte volontaire de dégradation, malveillance, sabotage ;
 
-* détérioration due à un cas de force majeure ou à une mauvaise utilisation de la Plateforme.
+-   détérioration due à un cas de force majeure ou à une mauvaise utilisation de la Plateforme.
 
 La Société assure également la sauvegarde régulière et redondante des Contenus.
 
@@ -178,7 +178,7 @@ Dans la mesure du possible, une réponse est fournie par la Société aux questi
 
 ## 5.6 Réversibilité
 
-A tout moment le Client reste propriétaire des contenus placés par ses soins sur la plateforme. 
+A tout moment le Client reste propriétaire des contenus placés par ses soins sur la plateforme.
 
 A tout moment durant le Contrat le Client peut exporter ses données à l’adresse https://app.pilot.pm/desk/edit/ onglet “Export”.
 
@@ -262,9 +262,9 @@ Le Client reconnaît et accepte que la Société soit autorisée à faire évolu
 
 La Société concède au Client un droit personnel, non exclusif, non cessible et non transférable d'utilisation de la Plateforme, pendant toute la durée du Contrat et pour le monde entier.
 
-Le Client ne peut utiliser la Plateforme que conformément à ses besoins. 
+Le Client ne peut utiliser la Plateforme que conformément à ses besoins.
 
-La Société est titulaire de l'ensemble des droits de propriété intellectuelle relatifs à la Plateforme et notamment de tous les éléments graphiques, textuels, logiciels, ou de toute autre nature la composant. 
+La Société est titulaire de l'ensemble des droits de propriété intellectuelle relatifs à la Plateforme et notamment de tous les éléments graphiques, textuels, logiciels, ou de toute autre nature la composant.
 
 Le Client s'engage ainsi à ne pas porter atteinte aux droits de propriété intellectuelle de la Société et s'interdit, à ce titre, de reproduire tout élément protégé par un droit de propriété intellectuelle, à défaut d'en avoir eu préalablement l'autorisation expresse.
 
@@ -278,13 +278,13 @@ La mise à disposition de la Plateforme ne saurait être considérée comme une 
 
 La licence consentie au Client ne l’autorise en aucun cas à :
 
-* Permettre à un tiers d’installer et utiliser la Plateforme à titre gratuit ou onéreux, ou de l’utiliser pour le bénéfice d’un tiers, en dehors des cas prévus au présent Contrat ;
+-   Permettre à un tiers d’installer et utiliser la Plateforme à titre gratuit ou onéreux, ou de l’utiliser pour le bénéfice d’un tiers, en dehors des cas prévus au présent Contrat ;
 
-* Commercialiser la Plateforme, la louer, la prêter, la distribuer, la sous licencier, ni à en créer des œuvres dérivées ;
+-   Commercialiser la Plateforme, la louer, la prêter, la distribuer, la sous licencier, ni à en créer des œuvres dérivées ;
 
-* Reproduire ou imiter la Plateforme ;
+-   Reproduire ou imiter la Plateforme ;
 
-* Désassembler, décompiler la Plateforme ou permettre à un tiers de le faire en dehors des hypothèses légalement admissibles.
+-   Désassembler, décompiler la Plateforme ou permettre à un tiers de le faire en dehors des hypothèses légalement admissibles.
 
 Nonobstant ces interdictions, le Client, dans le cadre du respect des dispositions de l’article L.122-6-1 du Code de la Propriété Intellectuelle, peut solliciter la Société pour obtenir les informations nécessaires afin de mettre en œuvre l’interopérabilité d’un élément de la Plateforme avec un autre élément.
 
@@ -316,41 +316,31 @@ La Société traite les données à caractère personnel pour le compte du Clien
 
 La Société, en sa qualité de sous-traitant ,s’engage à :
 
-* s’abstenir de toute utilisation ou traitement des données personnelles du Client ne respectant pas les instructions écrites du Client ou sortant du cadre de la mise en œuvre du présent Contrat ;
+-   s’abstenir de toute utilisation ou traitement des données personnelles du Client ne respectant pas les instructions écrites du Client ou sortant du cadre de la mise en œuvre du présent Contrat ;
 
+-   ne prendre aucune copie des documents et supports d'informations comportant des données personnelles sauf si cela est nécessaire à l’exécution du Contrat, et seulement après avoir recueilli l’accord préalable écrit du Client;
 
-* ne prendre aucune copie des documents et supports d'informations comportant des données personnelles sauf si cela est nécessaire à l’exécution du Contrat, et seulement après avoir recueilli l’accord préalable écrit du Client;
+-   ne pas utiliser pour son propre compte, y compris à des fins commerciales ou statistiques et/ou à des fins d’analyse, de recherche et d’étude, les données personnelles du Client ou les données issues du traitement desdites données personnelles, y compris lorsque ledit traitement entraîne une dépersonnalisation ou une anonymisation desdites données personnelles ;
 
+-   ne conserver les données personnelles du Client, sous une forme permettant aux personnes concernées par le traitement de leurs données personnelles d’être identifiées, que pour la durée nécessaire à la fourniture du service objet du présent Contrat ;
 
-* ne pas utiliser pour son propre compte, y compris à des fins commerciales ou statistiques et/ou à des fins d’analyse, de recherche et d’étude, les données personnelles du Client ou les données issues du traitement desdites données personnelles, y compris lorsque ledit traitement entraîne une dépersonnalisation ou une anonymisation desdites données personnelles ;
+-   ne divulguer les données personnelles du Client à aucun tiers sans l’accord écrit préalable du Client et sous réserve que ce tiers soit soumis à des obligations identiques à celles contenues aux présentes en matière de protection des données personnelles ;
 
+-   traiter les données personnelles du Client exclusivement sur le territoire d’un Etat membre de l’EEE, ou sur le territoire d’un Etat pour lequel la Commission européenne a constaté par voie de décision que cet Etat assure un niveau de protection des données adéquat ;
 
-* ne conserver les données personnelles du Client, sous une forme permettant aux personnes concernées par le traitement de leurs données personnelles d’être identifiées, que pour la durée nécessaire à la fourniture du service objet du présent Contrat ;
+-   collaborer avec le Client et mettre tout en œuvre pour aider le Client à prouver qu’il respecte toute obligation législative ou réglementaire prévue par toute réglementation applicable en matière de données personnelles ;
 
+-   réaliser des contrôles réguliers de la fiabilité des matériels et logiciels utilisés pour le traitement des données à caractère personnel qui lui sont confiées ;
 
-* ne divulguer les données personnelles du Client à aucun tiers sans l’accord écrit préalable du Client et sous réserve que ce tiers soit soumis à des obligations identiques à celles contenues aux présentes en matière de protection des données personnelles ;
+-   mettre en œuvre les moyens techniques et logiques utiles afin de garantir la confidentialité, l’intégrité et la disponibilité des données à caractère personnel dont elle pourrait être amenée à avoir connaissance dans le cadre du Contrat ;
 
+-   assurer la sécurité et l’intégrité des systèmes d’information employés pour le traitement des données personnelles contre toute atteinte accidentelle ou volontaire ;
 
-* traiter les données personnelles du Client exclusivement sur le territoire d’un Etat membre de l’EEE, ou sur le territoire d’un Etat pour lequel la Commission européenne a constaté par voie de décision que cet Etat assure un niveau de protection des données adéquat ;
-
-
-* collaborer avec le Client et mettre tout en œuvre pour aider le Client à prouver qu’il respecte toute obligation législative ou réglementaire prévue par toute réglementation applicable en matière de données personnelles ;
-
-
-* réaliser des contrôles réguliers de la fiabilité des matériels et logiciels utilisés pour le traitement des données à caractère personnel qui lui sont confiées ;
-
-
-* mettre en œuvre les moyens techniques et logiques utiles afin de garantir la confidentialité, l’intégrité et la disponibilité des données à caractère personnel dont elle pourrait être amenée à avoir connaissance dans le cadre du Contrat ;
-
-
-* assurer la sécurité et l’intégrité des systèmes d’information employés pour le traitement des données personnelles contre toute atteinte accidentelle ou volontaire ;
-
-
-* mettre en place des procédures de sécurité appropriées, notamment en ce qui concerne les codes d’accès et mots de passe et la réalisation de sauvegardes complètes et incrémentales régulières ainsi que la garantie du fonctionnement des restaurations.
+-   mettre en place des procédures de sécurité appropriées, notamment en ce qui concerne les codes d’accès et mots de passe et la réalisation de sauvegardes complètes et incrémentales régulières ainsi que la garantie du fonctionnement des restaurations.
 
 Dans l’hypothèse où une demande serait adressée par une personne concernée par le traitement directement à la Société, celle-ci en informera sans délai le Client, à charge pour ce dernier d’y donner les suites appropriées.
 
-La Société fournira au Client, sur demande écrite de ce dernier et aux frais de celui-ci, les informations raisonnablement accessibles et pertinentes concernant les traitements effectués, afin de permettre au Client de remplir les documents requis (tels que  les études d'impact), et de se conformer à ses obligations de démonstration de la mise en œuvre de mesures de sécurité techniques et organisationnelles adéquates.  
+La Société fournira au Client, sur demande écrite de ce dernier et aux frais de celui-ci, les informations raisonnablement accessibles et pertinentes concernant les traitements effectués, afin de permettre au Client de remplir les documents requis (tels que  les études d'impact), et de se conformer à ses obligations de démonstration de la mise en œuvre de mesures de sécurité techniques et organisationnelles adéquates.
 
 La Société tiendra un registre des traitements effectués pour le compte du Client au titre du présent Contrat.
 
@@ -382,21 +372,21 @@ La Société n'est pas en mesure de garantir la continuité de la Plateforme, ex
 
 Les Parties conviennent expressément que la Société ne pourra également être tenue responsable des interruptions de la Plateforme ou des dommages liés :
 
-*  à un cas de force majeure ou à une décision des autorités ; des événements de force majeure comprennent, sans toutefois s’y limiter, les catastrophes naturelles, les insurrections ou les désordres civils, actes de terrorisme, la guerre ou les opérations militaires, les urgences nationales ou locales, les pandémies, les actes ou omissions d’un gouvernement, les blocus, embargos, restrictions, sanctions, ou ordonnances civiles, de la protection civile, ou des autorités militaires, action ou décret gouvernemental, acte d’un ennemi public, émeute ou conflit civil, pénurie générale des transports, de marchandises ou d'énergie, ou toute autre circonstance semblable, panne des réseaux de télécommunication, conflits sociaux de quelque nature que ce soit, incendie, tremblement de terre ou inondation, grève ou autre conflit du travail, explosion ;
+-   à un cas de force majeure ou à une décision des autorités ; des événements de force majeure comprennent, sans toutefois s’y limiter, les catastrophes naturelles, les insurrections ou les désordres civils, actes de terrorisme, la guerre ou les opérations militaires, les urgences nationales ou locales, les pandémies, les actes ou omissions d’un gouvernement, les blocus, embargos, restrictions, sanctions, ou ordonnances civiles, de la protection civile, ou des autorités militaires, action ou décret gouvernemental, acte d’un ennemi public, émeute ou conflit civil, pénurie générale des transports, de marchandises ou d'énergie, ou toute autre circonstance semblable, panne des réseaux de télécommunication, conflits sociaux de quelque nature que ce soit, incendie, tremblement de terre ou inondation, grève ou autre conflit du travail, explosion ;
 
-* à une interruption de la fourniture de l'électricité ou des lignes de transmissions due aux opérateurs publics ou privés ;
+-   à une interruption de la fourniture de l'électricité ou des lignes de transmissions due aux opérateurs publics ou privés ;
 
-* à une utilisation anormale ou frauduleuse par le Client, y compris le manque de licences requises auprès de tiers, selon ce qui pourra être nécessaire, afin de gérer le Contenu et l’utilisation de la Plateforme, ou des tiers nécessitant l'arrêt de la Plateforme pour des raisons de sécurité;
+-   à une utilisation anormale ou frauduleuse par le Client, y compris le manque de licences requises auprès de tiers, selon ce qui pourra être nécessaire, afin de gérer le Contenu et l’utilisation de la Plateforme, ou des tiers nécessitant l'arrêt de la Plateforme pour des raisons de sécurité;
 
-* à une intrusion ou à un maintien frauduleux d'un tiers dans le système, ou à l'extraction illicite de données, malgré la mise en œuvre des moyens de sécurisation conformes aux données actuelles de la technique, la Société ne supportant qu'une obligation de moyen au regard des techniques connues de sécurisation ;
+-   à une intrusion ou à un maintien frauduleux d'un tiers dans le système, ou à l'extraction illicite de données, malgré la mise en œuvre des moyens de sécurisation conformes aux données actuelles de la technique, la Société ne supportant qu'une obligation de moyen au regard des techniques connues de sécurisation ;
 
-* à la nature et au contenu du Contenu stocké sur le Desk ; plus généralement, la Société ne peut en aucun cas être responsable à raison des données, informations, résultats ou analyses provenant d'un tiers, transmises ou reçues au travers de l'utilisation de la Plateforme portant atteinte aux droits de tiers ou qui violent de quelque manière que ce soit la législation en vigueur ;
+-   à la nature et au contenu du Contenu stocké sur le Desk ; plus généralement, la Société ne peut en aucun cas être responsable à raison des données, informations, résultats ou analyses provenant d'un tiers, transmises ou reçues au travers de l'utilisation de la Plateforme portant atteinte aux droits de tiers ou qui violent de quelque manière que ce soit la législation en vigueur ;
 
-* à une perte ou retard dans l'acheminement des informations et données, lorsque la Société n'est pas à l'origine de ce retard ;
+-   à une perte ou retard dans l'acheminement des informations et données, lorsque la Société n'est pas à l'origine de ce retard ;
 
-* au fonctionnement du réseau Internet ou des réseaux téléphoniques ou câblés d'accès à Internet non mis en œuvre par la Société;
+-   au fonctionnement du réseau Internet ou des réseaux téléphoniques ou câblés d'accès à Internet non mis en œuvre par la Société;
 
-* à une défaillance des prestataires tiers auxquels la Société recourt au titre de l’hébergement de la Plateforme et des Contenus.
+-   à une défaillance des prestataires tiers auxquels la Société recourt au titre de l’hébergement de la Plateforme et des Contenus.
 
 La Société ne saurait être tenue responsable des dommages ou pertes indirects, pertes de profit ou d’économie prévues, de pertes de revenus ou ne résultant pas directement et exclusivement d'une défaillance de la Plateforme, ni de recours de tiers.
 
@@ -460,4 +450,4 @@ En vue de trouver ensemble une solution à tout litige qui surviendrait dans l'e
 
 Si au terme d'un nouveau délai de \[30\] jours, les Parties n'arrivaient pas à se mettre d'accord sur un compromis ou une solution, le litige serait alors soumis aux tribunaux compétents de la ville d’Aix-en-Provence.
 
-*DOCUMENT STRICTEMENT CONFIDENTIEL – REPRODUCTION INTERDITE MEME PARTIELLEMENT*
+_DOCUMENT STRICTEMENT CONFIDENTIEL – REPRODUCTION INTERDITE MEME PARTIELLEMENT_

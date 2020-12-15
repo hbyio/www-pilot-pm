@@ -14,29 +14,29 @@ weight: 2
 
 Pilot vous permet de créer différents types de contenus. Par exemple :
 
-* Un article 
+-   Un article
 
-* Un tweet (et même un thread Twitter)
+-   Un tweet (et même un thread Twitter)
 
-* Une publication Instagram, Facebook, Linkedin...
+-   Une publication Instagram, Facebook, Linkedin...
 
-* Une vidéo 
+-   Une vidéo
 
-* Un podcast
+-   Un podcast
 
-* Un email...
+-   Un email...
 
-Les contenus créés peuvent être affectés à un projet. Vous pourrez aussi les diffuser via les canaux de votre choix. 
+Les contenus créés peuvent être affectés à un projet. Vous pourrez aussi les diffuser via les canaux de votre choix.
 
 ## Comment créer un contenu ?
 
 ![](https://pilotapp-leader.s3.amazonaws.com/assets/136/34806/136_34806_working.jpg "Nouveau contenu ")
 
-Pour créer un nouveau contenu, rendez-vous dans la section "**Contenus**" du menu de gauche. Puis cliquez sur "**Ajouter un contenu"**. Vous pourrez ensuite puis sélectionner le type de contenu que vous souhaitez créer. 
+Pour créer un nouveau contenu, rendez-vous dans la section "**Contenus**" du menu de gauche. Puis cliquez sur "**Ajouter un contenu"**. Vous pourrez ensuite puis sélectionner le type de contenu que vous souhaitez créer.
 
 Selon vos besoins, il est possible de configurer la liste des types de contenus disponibles.
 
-## Vue d'ensemble d'un contenu 
+## Vue d'ensemble d'un contenu
 
 Ici, le contenu que nous avons choisi de créer est un article. Voici à quoi ça ressemble dans l'application :
 
@@ -44,7 +44,7 @@ Ici, le contenu que nous avons choisi de créer est un article. Voici à quoi ç
 
 ## Les outils spécifiques aux contenus
 
-Sur la partie supérieure se trouvent 6 catégories : 
+Sur la partie supérieure se trouvent 6 catégories :
 
 ![](https://pilotapp-leader.s3.amazonaws.com/assets/136/34810/136_34810_original.png "Informations liées au contenu.png")
 
@@ -52,31 +52,31 @@ Sur la partie supérieure se trouvent 6 catégories :
 
 Ce menu permet d’afficher les informations générales relatives au contenu :
 
-* Le projet auquel le contenu est affecté
+-   Le projet auquel le contenu est affecté
 
-* Le canal où le contenu sera publié
+-   Le canal où le contenu sera publié
 
-* Les éventuels responsables du contenu
+-   Les éventuels responsables du contenu
 
-* Les contenus liés (dans le cas de traduction par exemple, pour avoir une référence au “master”, ou pour lier un brief au contenu rédigé)
+-   Les contenus liés (dans le cas de traduction par exemple, pour avoir une référence au “master”, ou pour lier un brief au contenu rédigé)
 
 #### Date de publication
 
-Affiche un calendrier qui vous permet de sélectionner la date à laquelle le contenu sera publié. 
+Affiche un calendrier qui vous permet de sélectionner la date à laquelle le contenu sera publié.
 
-#### Versions 
+#### Versions
 
-Pilot sauvegarde automatiquement les modifications apportées à un contenu. Une nouvelle version du contenu est créée toutes les 15 minutes si vous apportez des modifications supplémentaires. Vous pourrez alors naviguer entre la version V1.1, V1.2 etc...  
+Pilot sauvegarde automatiquement les modifications apportées à un contenu. Une nouvelle version du contenu est créée toutes les 15 minutes si vous apportez des modifications supplémentaires. Vous pourrez alors naviguer entre la version V1.1, V1.2 etc...
 
 ![](https://pilotapp-leader.s3.amazonaws.com/assets/136/34814/136_34814_working.jpg "Version 1 et version 2.41.png")
 
 #### Commentaires
 
-Vous pourrez discuter de l'évolution du document grâce à cette fonctionnalité qui offre en outre un système simple de mention et d’alerte des membres de l'équipe. 
+Vous pourrez discuter de l'évolution du document grâce à cette fonctionnalité qui offre en outre un système simple de mention et d’alerte des membres de l'équipe.
 
 ![](https://pilotapp-leader.s3.amazonaws.com/assets/136/34812/136_34812_working.jpg "Ajout d'un commentaire .png")
 
-La personne mentionnée recevra une alerte dans ses notifications. 
+La personne mentionnée recevra une alerte dans ses notifications.
 
 ### Tâches
 
@@ -90,8 +90,8 @@ Vous pouvez lier un ou plusieurs fichiers à votre contenu, sans limite de taill
 
 #### Partage
 
-En cliquant sur les points de suspension à droite de "Fichiers", des options supplémentaires apparaissent : 
+En cliquant sur les points de suspension à droite de "Fichiers", des options supplémentaires apparaissent :
 
 ![](https://pilotapp-leader.s3.amazonaws.com/assets/136/34817/136_34817_original.png "Partager un contenu.png")
 
-Le partage avec validation externe est utile pour interroger des personnes ne possédant pas de compte sur Pilot. Il est possible de permettre à votre interlocuteur de modifier le document envoyé. 
+Le partage avec validation externe est utile pour interroger des personnes ne possédant pas de compte sur Pilot. Il est possible de permettre à votre interlocuteur de modifier le document envoyé.

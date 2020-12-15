@@ -10,5 +10,4 @@ version: "2.2"
 weight: 1
 ---
 
-
 This document is only available en french at the moment

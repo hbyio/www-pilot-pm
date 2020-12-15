@@ -10,13 +10,14 @@ tagColor: yellow
 guestLogo: /images/clients/primagaz.svg
 guestLinkedin: https://www.linkedin.com/in/chloelarmignat
 guestName: Chloé Larmignat, Content & social media manager chez Primagaz France
-description:  Interview avec Chloé Larmignat, Content & social media manager chez Primagaz France.
-subtitle:  Interview avec Chloé Larmignat, Content & social media manager chez Primagaz France.
+description: Interview avec Chloé Larmignat, Content & social media manager chez Primagaz France.
+subtitle: Interview avec Chloé Larmignat, Content & social media manager chez Primagaz France.
 layout: interview
 menu: interview
 ---
-[Primagaz](https://www.primagaz.fr/), distributeur de gaz propane, a choisi d’utiliser Pilot pour centraliser la production et la gestion de ses contenus digitaux depuis un an et demi. 
-Chloé Larmignat est Content et Social Media Manager, elle travaille sur le pôle digital, principalement avec les équipes marketing et communication. 
+
+[Primagaz](https://www.primagaz.fr/), distributeur de gaz propane, a choisi d’utiliser Pilot pour centraliser la production et la gestion de ses contenus digitaux depuis un an et demi.
+Chloé Larmignat est Content et Social Media Manager, elle travaille sur le pôle digital, principalement avec les équipes marketing et communication.
 Elle explique pourquoi l’utilisation d’un outil de gestion de contenu collaboratif est devenu indispensable.
 
 ## Bonjour Chloé, pouvez-vous vous présenter ?
@@ -47,7 +48,7 @@ En gros : favoriser l’esprit collaboratif !
 
 ## Comment s’est passé la recherche de solution ?
 
-Nous avons réalisé un benchmark de différentes plateformes de gestion, dont certaines étaient déjà utilisées en interne et finalement c’est Pilot qui est ressorti. 
+Nous avons réalisé un benchmark de différentes plateformes de gestion, dont certaines étaient déjà utilisées en interne et finalement c’est Pilot qui est ressorti.
 
 Il ne faut pas choisir une plateforme de gestion de projet quand on veut faire un focus sur le contenu car gérer des équipes et des projets ou gérer des contenus sont deux process bien différents.
 
@@ -63,4 +64,4 @@ En terme de recherche de l’information, le temps est divisé par deux. D’un 
 
 ## Si vous deviez résumer votre expérience globale avec l’outil, que diriez-vous ?
 
-Certaines plateformes ont une infinité de paramètres, et au final, personne ne les utilise de la même façon et elles finissent par être abandonnées. Ce que j’aime avec Pilot, **c’est que chaque fonctionnalité a du sens.** Mention spéciale pour la fonction recherche et filtrage. C’est donc plus facilement que la plateforme est acceptée en interne, car le plus dur c’est bien de faire du *change management* quand on modifie drastiquement la manière de fonctionner d’une équipe !
+Certaines plateformes ont une infinité de paramètres, et au final, personne ne les utilise de la même façon et elles finissent par être abandonnées. Ce que j’aime avec Pilot, **c’est que chaque fonctionnalité a du sens.** Mention spéciale pour la fonction recherche et filtrage. C’est donc plus facilement que la plateforme est acceptée en interne, car le plus dur c’est bien de faire du _change management_ quand on modifie drastiquement la manière de fonctionner d’une équipe !

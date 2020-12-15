@@ -3,19 +3,19 @@ author: Matthieu
 date: 2020-06-14
 draft: false
 illustration: rocket.png
-title: Pilot version 4, new features 
+title: Pilot version 4, new features
 featured: false
 tag: 📦 Release
 tagColor: green
-description: New UI, real time and collaborative edition, discover the new Pilot. 
-subtitle: New UI, real time and collaborative edition, discover the new Pilot. 
+description: New UI, real time and collaborative edition, discover the new Pilot.
+subtitle: New UI, real time and collaborative edition, discover the new Pilot.
 ---
+
 # New interface
 
 A new interface, which adapts to the width of your screens, easier to understand and use on a daily basis.
 
 ![responsive.gif](responsive.gif)
-
 
 # Real-time saving
 

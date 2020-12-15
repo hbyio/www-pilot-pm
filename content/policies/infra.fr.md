@@ -21,11 +21,11 @@ Pilot bénéficie des exigences de sécurité de la plateforme Amazon Web Se
 Notre prestataire possède des infrastructures sécurisées avec accès contrôlés, surveillance des flux et des infrastructures permanente.
 Toutes les informations sont présentées ici : http://aws.amazon.com/fr/security/
 
-Certifications http://aws.amazon.com/fr/compliance/ : 
-    * ISO 27001 et 9001
-    * SOC 1 and SOC 2/SSAE 16/ISAE 3402 (Previously SAS 70 Type II) PCI Level 1
-    * FISMA Moderate
-    * Sarbanes-Oxley (SOX)
+Certifications http://aws.amazon.com/fr/compliance/ :
+_ ISO 27001 et 9001
+_ SOC 1 and SOC 2/SSAE 16/ISAE 3402 (Previously SAS 70 Type II) PCI Level 1
+_ FISMA Moderate
+_ Sarbanes-Oxley (SOX)
 
 ## Pérennité des données
 
