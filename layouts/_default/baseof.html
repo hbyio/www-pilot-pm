@@ -96,21 +96,23 @@
         {{ end }}
     </head>
 
-    <body x-data="{ mobileMenuOpen: false }">
-        <!--[if gt IE 8]>
-            <div class="py-15 p-10 bg-yellow-300 text-cool-gray-900 text-center">
-                <div class="text-lg font-black">
-                    Ce site ne peut pas être affiché correctement sur votre navigateur
-                </div>
-                <p>Téléchargez et utilisez un navigateur moderne (Edge, Chrome, Firefox)</p>
-                <p
-                    class="bg-yellow-100 text-yellow-900 font-medium max-w-max-content mx-auto p-2 rounded my-2"
-                >
-                    Vous êtes sur Windows 10 ? Tapez directement Ctrl+Shift+E pour ouvrir cette page
-                    dans Edge
-                </p>
+    <body x-data="{ mobileMenuOpen: false, iealert: true }">
+        <div
+            id="IEalert"
+            style="display: none;"
+            class="py-15 p-10 bg-yellow-300 text-cool-gray-900 text-center"
+        >
+            <div class="text-lg font-black">
+                Ce site ne peut pas être affiché correctement sur votre navigateur
             </div>
-        <![endif]-->
+            <p>Téléchargez et utilisez un navigateur moderne (Edge, Chrome, Firefox)</p>
+            <p
+                class="bg-yellow-100 text-yellow-900 font-medium max-w-max-content mx-auto p-2 rounded my-2"
+            >
+                Vous êtes sur Windows 10 ? Tapez directement Ctrl+Shift+E pour ouvrir cette page
+                dans Edge
+            </p>
+        </div>
 
         <div class="flex flex-col justify-between h-screen">
             {{ block "header" . }}{{ partial "header" . }}{{ end }}
@@ -128,5 +130,15 @@
             <!--ONLY PRODUCTION-->
             {{ partial "chat.html" . }}
         {{ end }}
+        <script>
+            if (
+                navigator.userAgent.indexOf("MSIE") !== -1 ||
+                navigator.appVersion.indexOf("Trident/") > -1
+            ) {
+                console.log("IE detected")
+                var element = document.getElementById("IEalert")
+                element.style.display = "block"
+            }
+        </script>
     </body>
 </html>
