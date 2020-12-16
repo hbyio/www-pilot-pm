@@ -97,20 +97,39 @@
     </head>
 
     <body x-data="{ mobileMenuOpen: false, iealert: true }">
-        <div
-            id="IEalert"
-            style="display: none;"
-            class="py-15 p-10 bg-yellow-300 text-cool-gray-900 text-center"
-        >
+        <div id="IEalert" class="py-15 p-10 bg-yellow-300 text-cool-gray-900 text-center">
             <div class="text-lg font-black">
                 Ce site ne peut pas être affiché correctement sur votre navigateur
             </div>
-            <p>Téléchargez et utilisez un navigateur moderne (Edge, Chrome, Firefox)</p>
-            <p
-                class="bg-yellow-100 text-yellow-900 font-medium max-w-max-content mx-auto p-2 rounded my-2"
+            <a
+                href="microsoft-edge:https://www.pilot.pm"
+                class="bg-yellow-100 hover:bg-gray-200 active:bg-gray-300 focus:shadow-outline-gray border border-yellow-200 shadow text-yellow-900 text-center font-medium p-2 rounded my-2 inline-flex items-center"
             >
-                Vous êtes sur Windows 10 ? Tapez directement Ctrl+Shift+E pour ouvrir cette page
-                dans Edge
+                Vous êtes sur Windows 10 ? Cliquez ici ( ou Ctrl+Shift+E ) pour ouvrir ce site avec
+                Edge
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    class="h-4 w-4 mx-2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                </svg>
+            </a>
+            <p>
+                Sinon vous pouvez télécharger un navigateur moderne (
+                <a class="underline" href="https://www.microsoft.com/fr-fr/edge">Edge</a>
+                ,
+                <a class="underline" href="https://www.google.com/intl/fr_fr/chrome/">Chrome</a>
+                ,
+                <a class="underline" href="https://www.mozilla.org/fr/firefox/new/">Firefox</a>
+                )
             </p>
         </div>
 
