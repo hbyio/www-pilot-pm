@@ -69,6 +69,7 @@
             <link rel="stylesheet" href="{{ $style.RelPermalink }}" data />
             {{ else }}
             {{- $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js")  | minify | fingerprint -}}
+
             <link
                 rel="stylesheet"
                 href="{{ $style.RelPermalink }}"
@@ -96,12 +97,28 @@
     </head>
 
     <body x-data="{ mobileMenuOpen: false }">
+        <!--[if IE]>
+            <div class="py-15 p-10 bg-yellow-300 text-cool-gray-900 text-center">
+                <div class="text-lg font-black">
+                    Ce site ne peut pas être affiché correctement sur votre navigateur
+                </div>
+                <p>Téléchargez et utilisez un navigateur moderne (Edge, Chrome, Firefox)</p>
+                <p
+                    class="bg-yellow-100 text-yellow-900 font-medium max-w-max-content mx-auto p-2 rounded my-2"
+                >
+                    Vous êtes sur Windows 10 ? Tapez directement Ctrl+Shift+E pour ouvrir cette page
+                    dans Edge
+                </p>
+            </div>
+        <![endif]-->
+
         <div class="flex flex-col justify-between h-screen">
             {{ block "header" . }}{{ partial "header" . }}{{ end }}
             <main class="flex-1">
                 {{ partial "breadcrumb" . }}
                 {{ block "main" . }}{{ end }}
             </main>
+
             <footer>
                 {{ partial "footer.html" . }}
             </footer>
