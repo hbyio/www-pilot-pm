@@ -25,13 +25,11 @@ Les documents de l'onglet "documents de référence" qui étaient présents dans
 
 ## ✅ Gérez vos contenus en arborescence dans vos canaux
 
-Certains de vos canaux représentent des sites web et la notion de "hiérarchie" entre canaux que nous aviosn jusqu'à présent n'était pas idéale pour vous permettre de manipuler et construire facilement l'architecture d'information que vous souhaitiez.
+Certains de vos canaux représentent des sites web et la notion de "hiérarchie" entre canaux que nous avions jusqu'à présent n'était pas idéale pour vous permettre de manipuler et construire facilement l'architecture d'information que vous souhaitiez.
 
 Les canaux disposent maintenant d'un onglet "arborescence" où vous pourrez créer des dossiers, glisser déplacer vos contenus et ré-créer fidèlement votre plan de site.
 
 Cette arborescence peut être filtrée comme une liste classique pour vous donner, en un coup d'oeil et en contexte, les éléments du site à valider ou à publier.
-
-🎁 En passant vous remarquerez que les canaux bénéficient aussi maintenant des mêmes outils que les projets : commentaires, tâches, fichiers liés etc ..
 
 ### Arborescence - démo vidéo (2 min.) 👇
 
