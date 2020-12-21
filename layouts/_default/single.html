@@ -1,20 +1,16 @@
 {{ define "main" }}
-    <div class="overflow-hidden bg-white">
-        <div class="container max-w-screen-md  py-16">
-            <div class="mx-auto text-base max-w-prose lg:max-w-none">
-                <p
-                    class="text-base font-semibold leading-6 tracking-wide text-indigo-600 uppercase"
-                >
-                    {{ .Params.tag }}
-                </p>
-                <h1
-                    class="mt-2 mb-8 text-4xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-5xl sm:leading-none"
-                >
-                    {{ .Title }}
-                </h1>
-            </div>
-            <div class="mx-auto">
-                <div class="mx-auto prose prose-lg sm:prose-xl text-gray-800">{{ .Content }}</div>
+    <div class="container">
+        <div class="max-w-prose mx-auto text-base">
+            <p class="text-base font-semibold leading-6 tracking-wide text-indigo-600 uppercase">
+                {{ .Params.tag }}
+            </p>
+            <h1
+                class="mb-8 text-4xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-5xl sm:leading-none"
+            >
+                {{ .Title }}
+            </h1>
+            <div class="prose prose-lg sm:prose-xl text-gray-800">
+                {{ .Content }}
             </div>
         </div>
     </div>
