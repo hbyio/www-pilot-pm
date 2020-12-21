@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html class="has-navbar-fixed-top" lang="{{ $.Site.Language.Lang }}">
+<html
+    class="has-navbar-fixed-top text-gray-800 antialiased bg-white"
+    lang="{{ $.Site.Language.Lang }}"
+>
     <head>
         {{ if .IsHome -}}
             <title>{{ .Site.Title }}</title>
@@ -132,14 +135,14 @@
 
         <div class="flex flex-col justify-between h-screen">
             {{ block "header" . }}{{ partial "header" . }}{{ end }}
-            <main class="flex-1">
-                {{ partial "breadcrumb" . }}
+            <main class="flex-1 mt-32 ">
                 {{ block "main" . }}{{ end }}
             </main>
-
-            <footer>
-                {{ partial "footer.html" . }}
-            </footer>
+            {{ if ne .Type "documentation" }}
+                <footer>
+                    {{ partial "footer.html" . }}
+                </footer>
+            {{ end }}
         </div>
         {{ if not .Site.IsServer }}
             <!-- OR WITH ENV VAR if eq (getenv "HUGO_ENV") "production"  -->
@@ -156,5 +159,6 @@
                 element.style.display = "block"
             }
         </script>
+        {{ block "script" . }}{{ end }}
     </body>
 </html>

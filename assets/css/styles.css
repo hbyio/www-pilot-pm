@@ -25,6 +25,7 @@ img.grayscale {
 
 a {
     @apply text-brand-900 hover:text-blue-800;
+    transition: all 100ms ease-in-out;
 }
 
 .form-input {
@@ -44,9 +45,14 @@ a {
 }
 
 #TableOfContents > ul > li > a {
-    @apply text-gray-900 hover:text-accent-900 group rounded-md  py-2 flex items-center text-base font-medium;
+    @apply group rounded-md  py-2 flex items-center text-base font-medium;
 }
 
 #TableOfContents > ul > li > ul > li > a {
-    @apply text-gray-900 hover:text-accent-900 group rounded-md pl-8 py-2 flex items-center text-base font-medium;
+    @apply group rounded-md pl-8 py-1 flex items-center text-base font-medium;
+}
+
+#TableOfContents > ul > li > a.active,
+#TableOfContents > ul > li > ul > li > a.active {
+    @apply text-accent-600 font-medium;
 }

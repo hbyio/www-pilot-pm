@@ -1,0 +1,106 @@
+{{ define "main" }}
+    <main class="max-w-screen-xl mx-auto pb-10">
+        <div class="lg:grid lg:grid-cols-12 ">
+            <aside
+                class="fixed top-0 mt-20 bottom-0 w-80 overflow-y-auto bg-white py-12 pr-2 lg:col-span-3"
+            >
+                <nav class="space-y-1">
+                    {{ .TableOfContents }}
+                    {{ range .Site.Menus.documentation }}
+                        <a
+                            href="{{ .URL }}"
+                            title="{{ .Title }}"
+                            class="text-gray-900 hover:text-gray-900 hover:bg-gray-50 group rounded-md  py-2 flex items-center texte-base font-medium"
+                        >
+                            <svg
+                                class="text-accent-400 group-hover:text-accent-500 flex-shrink-0  mr-3 h-6 w-6"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z"
+                                />
+                            </svg>
+                            <span class="truncate">{{- .Name -}}</span>
+                        </a>
+                    {{ end }}
+                </nav>
+            </aside>
+
+            <!-- Content -->
+            <div
+                id="contentArea"
+                class="bg-purple-100 ml-80 float-left w-full sm:px-6 lg:px-20 lg:col-span-9"
+            >
+                <section class="mx-auto">
+                    <div class="mx-auto text-base">
+                        <p
+                            class="text-base font-semibold leading-6 tracking-wide text-indigo-600 uppercase"
+                        >
+                            {{ .Params.tag }}
+                        </p>
+                        <h1
+                            class="mb-8 text-4xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-5xl sm:leading-none"
+                        >
+                            {{ .Title }}
+                        </h1>
+                    </div>
+                    <div class="prose prose-lg sm:prose-xl text-gray-800">
+                        {{ .Content }}
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+{{ end }}
+
+{{ define "script" }}
+    <script>
+        console.log("coucou top")
+        window.addEventListener("DOMContentLoaded", () => {
+            var options = {
+                // root: document.querySelector("#contentArea"),
+                rootMargin: "0px 0px 0px 0px",
+                // threshold: 0.5,
+            }
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    const id = entry.target.getAttribute("id")
+                    console.log({
+                        boundingClientRect: entry.boundingClientRect,
+                        intersectionRatio: entry.intersectionRatio,
+                        intersectionRect: entry.intersectionRect,
+                        isIntersecting: entry.isIntersecting,
+                        rootBounds: entry.rootBounds,
+                        target: entry.target,
+                        time: entry.time,
+                    })
+                    let ratio = entry.intersectionRatio
+
+                    if (entry.isIntersecting) {
+                        document
+                            .querySelector(`nav#TableOfContents ul li a[href="#${id}"]`)
+                            .classList.add("active")
+                    } else {
+                        document
+                            .querySelector(`nav#TableOfContents ul li a[href="#${id}"]`)
+                            .classList.remove("active")
+                    }
+                })
+            }, options)
+
+            // Track all sections that have an `id` applied
+            document.querySelectorAll("h2[id]").forEach((section) => {
+                observer.observe(section)
+            })
+            document.querySelectorAll("h3[id]").forEach((section) => {
+                observer.observe(section)
+            })
+        })
+    </script>
+{{ end }}
