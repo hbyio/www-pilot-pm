@@ -65,10 +65,10 @@
         />
 
         {{ if .Site.IsServer }}
-            {{- $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/dev/postcss.config.js") | fingerprint }}
+            {{- $style := resources.Get "css/styles.css" | postCSS (dict "config" "./postcss.config.js") | fingerprint }}
             <link rel="stylesheet" href="{{ $style.RelPermalink }}" data />
             {{ else }}
-            {{- $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js")  | minify | fingerprint -}}
+            {{- $style := resources.Get "css/styles.css" | postCSS (dict "config" "./postcss.config.js")  | minify | fingerprint -}}
 
             <link
                 rel="stylesheet"
@@ -81,13 +81,6 @@
             src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.0/dist/alpine.min.js"
             defer
         ></script>
-
-        {{ $font := resources.Get "css/inter.css" | minify | fingerprint }}
-        <link
-            rel="stylesheet"
-            href="{{ $font.RelPermalink }}"
-            integrity="{{ $font.Data.Integrity }}"
-        />
 
         {{ if not .Site.IsServer }}
             <!-- OR WITH ENV VAR if eq (getenv "HUGO_ENV") "production"  -->
