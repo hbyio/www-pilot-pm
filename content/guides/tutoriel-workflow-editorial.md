@@ -3,7 +3,7 @@ author: Justine
 date: 2020-07-14
 draft: false
 menu: guides
-icon: file-text
+icon: item
 description: "Le workflow éditorial consiste à définir précisément quel est le rôle de chaque membre de l'équipe par rapport à la production contenus. Ce workflow peut accompagner le contenu sur toute sa durée de vie."
 subtitle: "Le workflow éditorial consiste à définir précisément quel est le rôle de chaque membre de l'équipe par rapport à la production contenus. Ce workflow peut accompagner le contenu sur toute sa durée de vie."
 slug: tutorial-workflow-editorial

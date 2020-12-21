@@ -2,9 +2,14 @@
 author: Justine
 date: 2020-06-20
 draft: false
-menu: documentation
+menu:
+    documentation:
+        weight: 2
+        params:
+            svg: channel
+            class: text-green-400
 description: Un canal représente un espace où diffuser un contenu.
-slug: channels
+slug: canaux
 title: Les canaux
 ---
 

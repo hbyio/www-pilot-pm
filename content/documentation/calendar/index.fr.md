@@ -2,7 +2,12 @@
 author: Justine
 date: 2020-06-20
 draft: false
-menu: documentation
+menu:
+    documentation:
+        weight: 2
+        params:
+            svg: calendar
+            class: text-yellow-400
 icon: share
 description: Le calendrier permet à votre équipe d’avoir une vision d’ensemble des prises de parole de l’entreprise sur une période définie.
 slug: calendars

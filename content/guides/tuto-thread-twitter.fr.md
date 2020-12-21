@@ -3,7 +3,7 @@ author: Justine
 date: 2020-06-20
 draft: false
 menu: guides
-icon: file-text
+icon: item
 description: "Créez, versionnez et faites valider vos threads Twitter par vos clients"
 subtitle: "Créez, versionnez et faites valider vos threads Twitter par vos clients"
 slug: thread-twitter

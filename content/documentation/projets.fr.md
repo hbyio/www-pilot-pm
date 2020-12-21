@@ -2,12 +2,17 @@
 author: mb
 date: 2018-01-27
 draft: false
-menu: documentation
-icon: folder
+menu:
+    documentation:
+        weight: 1
+        params:
+            svg: project
+            class: text-purple-400
+
+icon: project
 description: Vous pouvez rassembler vos contenus dans des projets pour organiser le travail de l’équipe
 slug: projets
 title: Les projets
-weight: 3
 ---
 
 ## Intérêt

@@ -2,10 +2,15 @@
 author: mb
 date: 2018-01-27
 draft: false
-menu: documentation
+menu:
+    documentation:
+        weight: 2
+        params:
+            svg: task
+            class: text-red-400
 icon: folder
 description: Vous pouvez rassembler vos contenus dans des projets pour organiser le travail de l’équipe
-slug: projects
+slug: taches
 title: Les tâches
 weight: 3
 ---

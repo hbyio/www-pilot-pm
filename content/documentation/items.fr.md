@@ -2,10 +2,15 @@
 author: justine
 date: 2020-06-20
 draft: false
-menu: documentation
-icon: file-text
+menu:
+    documentation:
+        weight: 1
+        params:
+            svg: item
+            class: text-blue-400
+icon: item
 description: Un contenu est le plus simple élément géré par Pilot. C’est une unité éditoriale compréhensible hors contexte.
-slug: items
+slug: contenus
 title: Les contenus
 weight: 2
 ---
