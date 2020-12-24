@@ -45,7 +45,7 @@ a {
 }
 
 .menu {
-    @apply inline-flex items-center py-2 text-base font-semibold rounded-md text-gray-900 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+    @apply inline-flex items-center py-2 text-base font-semibold rounded-md text-gray-900 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500;
 }
 
 #TableOfContents > ul > li > a {
@@ -59,4 +59,12 @@ a {
 #TableOfContents > ul > li > a.active,
 #TableOfContents > ul > li > ul > li > a.active {
     @apply text-blue-600 font-medium;
+}
+
+.prose ul > li::before {
+    background-color: black;
+}
+
+.prose > p > img {
+    @apply shadow-md;
 }
