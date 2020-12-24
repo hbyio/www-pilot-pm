@@ -4,10 +4,10 @@
     Switch website to english
   </a>
 </div> -->
-<div class="fixed top-0 w-full shadow bg-white z-40">
+<div>
     <!-- Desktop menu -->
     <div
-        class="max-w-screen-xl py-2 mx-auto flex justify-between lg:justify-start items-center border-gray-100 md:justify-start md:space-x-10"
+        class="max-w-screen-xl py-2 mx-auto flex justify-between items-center border-gray-100 lg:justify-start lg:space-x-10"
     >
         <!-- Logo -->
         <div class="lg:flex">
@@ -19,15 +19,11 @@
             </a>
         </div>
         <!-- Hamburger menu mobile -->
-        <div class="md:hidden">
-            <button
-                type="button"
-                @click="mobileMenuOpen = !mobileMenuOpen"
-                class="inline-flex bg-white items-center justify-center p-2 rounded-md text-gray-800 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
-            >
+        <div class="lg:hidden">
+            <button type="button" @click="mobileMenuOpen = !mobileMenuOpen" class="button">
                 <!-- Heroicon name: menu -->
                 <svg
-                    class="h-6 w-6"
+                    class="h-5 w-5 mr-1"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -40,10 +36,11 @@
                         d="M4 6h16M4 12h16M4 18h16"
                     />
                 </svg>
+                Menu
             </button>
         </div>
         <!-- Top navigation -->
-        <nav class="hidden md:flex space-x-10">
+        <nav class="hidden lg:flex space-x-10">
             <div x-on:keydown.escape="isOpen = false" x-data="{ isOpen: false }" class="relative">
                 <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
                 <button type="button" @click="isOpen = !isOpen" class="ButtonMainNav">
@@ -587,7 +584,7 @@
             </div>
         </nav>
         <!-- Action buttons -->
-        <div class="hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
+        <div class="hidden lg:flex items-center justify-end space-x-8 lg:flex-1 lg:w-0">
             <a
                 href="{{ .Site.Params.AppUrl }}/login?lang={{ .Site.Language.Lang }}"
                 class="whitespace-no-wrap text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900"
@@ -614,170 +611,160 @@
         x-transition:leave="duration-100 ease-in"
         x-transition:leave-start="opacity-100 scale-100"
         x-transition:leave-end="opacity-0 scale-95"
-        class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+        class="absolute top-0 bottom-0 z-50 h-screen w-screen overflow-y-auto inset-x-0 p-0 transition transform origin-top-right lg:hidden"
     >
-        <div class="rounded-lg  shadow-lg">
-            <div class="rounded-lg shadow-xs bg-white divide-y-2 divide-gray-50">
-                <div class="pt-5 pb-6 px-5 space-y-6">
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <a
-                                href="{{ .Site.LanguagePrefix }}/"
-                                class="flex items-center text-black text-2xl tracking-tight font-black text-gray-900  sm:text-2xl sm:leading-none md:text-3xl"
-                            >
-                                {{ .Site.Title }}
-                            </a>
-                        </div>
-                        <div class="-mr-2">
-                            <button
-                                type="button"
-                                @click="mobileMenuOpen = false"
-                                class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
-                            >
-                                <!-- Heroicon name: x -->
-                                <svg
-                                    class="h-6 w-6"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M6 18L18 6M6 6l12 12"
-                                    />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div>
-                        <nav class="grid gap-y-8">
-                            <div class="text-lg font-semibold">{{ i18n "features" }}</div>
-                            <a
-                                href="{{ "features/projects" | absLangURL }}"
-                                class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
-                            >
-                                <!-- Heroicon name: folder-open -->
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    class="flex-shrink-0 h-6 w-6 text-brand-600"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z"
-                                    />
-                                </svg>
-                                <div class="space-y-1">
-                                    <p
-                                        class="text-base leading-6 font-medium text-gray-900 capitalize"
-                                    >
-                                        {{ i18n "project" 2 }}
-                                    </p>
-                                    <p class="text-sm leading-5 text-gray-500">
-                                        {{ i18n "projectBrief" }}
-                                    </p>
-                                </div>
-                            </a>
-                            <a
-                                href="{{ "features/collaboration" | absLangURL }}"
-                                class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
-                            >
-                                <!-- Heroicon name: cursor-click -->
-                                <svg
-                                    class="flex-shrink-0 h-6 w-6 text-brand-600"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
-                                    />
-                                </svg>
-                                <div class="space-y-1">
-                                    <p class="text-base leading-6 font-medium text-gray-900">
-                                        {{ i18n "collabEditing" }}
-                                    </p>
-                                    <p class="text-sm leading-5 text-gray-500">
-                                        {{ i18n "collabEditingExplained" }}
-                                    </p>
-                                </div>
-                            </a>
-                            <a
-                                href="{{ "features/tasks/" | absLangURL }}"
-                                class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
-                            >
-                                <!-- Heroicon name: shield-check -->
-                                <svg
-                                    class="flex-shrink-0 h-6 w-6 text-brand-600"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M5 13l4 4L19 7"
-                                    />
-                                </svg>
-                                <div class="space-y-1">
-                                    <p
-                                        class="text-base leading-6 font-medium text-gray-900 capitalize"
-                                    >
-                                        {{ i18n "tasks" 2 }}
-                                    </p>
-                                    <p class="text-sm leading-5 text-gray-500">
-                                        {{ i18n "tasksExplained" }}
-                                    </p>
-                                </div>
-                            </a>
-                            <a
-                                href="{{ "draaft/" | absLangURL }}"
-                                class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
-                            >
-                                <!-- Heroicon name: view-grid -->
-                                <svg
-                                    class="flex-shrink-0 h-6 w-6 text-brand-600"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
-                                    />
-                                </svg>
-                                <div class="space-y-1">
-                                    <p class="text-base leading-6 font-medium text-gray-900">
-                                        Integrations
-                                    </p>
-                                    <p class="text-sm leading-5 text-gray-500">
-                                        L'avenir est aux générateurs de sites statiques. Grâce à
-                                        Draaft, notre client d'API Pilot vous récupérez facilement
-                                        tous vos contenus pour un projet de site.
-                                    </p>
-                                </div>
-                            </a>
-                        </nav>
-                    </div>
+        <div class="bg-yellow-200 px-5 py-2">
+            <div class="flex items-center justify-between mb-5">
+                <div>
+                    <a
+                        href="{{ .Site.LanguagePrefix }}/"
+                        class="flex items-center text-black text-2xl tracking-tight font-black text-gray-900  sm:text-2xl sm:leading-none md:text-3xl"
+                    >
+                        {{ .Site.Title }}
+                    </a>
                 </div>
-                <div class="py-6 px-5 space-y-6">
-                    <!-- <div class="grid grid-cols-2 gap-y-4 gap-x-8">
+                <button type="button" @click="mobileMenuOpen = !mobileMenuOpen" class="button">
+                    <!-- Heroicon name: x -->
+                    <svg
+                        class="h-5 w-5 mr-1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12"
+                        />
+                    </svg>
+                    Fermer
+                </button>
+            </div>
+            <div class="space-y-6">
+                <div>
+                    <nav class="grid gap-y-8">
+                        <div class="text-lg font-semibold">{{ i18n "features" }}</div>
+                        <a
+                            href="{{ "features/projects" | absLangURL }}"
+                            class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
+                        >
+                            <!-- Heroicon name: folder-open -->
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="flex-shrink-0 h-6 w-6 text-brand-600"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z"
+                                />
+                            </svg>
+                            <div class="space-y-1">
+                                <p class="text-base leading-6 font-medium text-gray-900 capitalize">
+                                    {{ i18n "project" 2 }}
+                                </p>
+                                <p class="text-sm leading-5 text-gray-500">
+                                    {{ i18n "projectBrief" }}
+                                </p>
+                            </div>
+                        </a>
+                        <a
+                            href="{{ "features/collaboration" | absLangURL }}"
+                            class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
+                        >
+                            <!-- Heroicon name: cursor-click -->
+                            <svg
+                                class="flex-shrink-0 h-6 w-6 text-brand-600"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
+                                />
+                            </svg>
+                            <div class="space-y-1">
+                                <p class="text-base leading-6 font-medium text-gray-900">
+                                    {{ i18n "collabEditing" }}
+                                </p>
+                                <p class="text-sm leading-5 text-gray-500">
+                                    {{ i18n "collabEditingExplained" }}
+                                </p>
+                            </div>
+                        </a>
+                        <a
+                            href="{{ "features/tasks/" | absLangURL }}"
+                            class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
+                        >
+                            <!-- Heroicon name: shield-check -->
+                            <svg
+                                class="flex-shrink-0 h-6 w-6 text-brand-600"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M5 13l4 4L19 7"
+                                />
+                            </svg>
+                            <div class="space-y-1">
+                                <p class="text-base leading-6 font-medium text-gray-900 capitalize">
+                                    {{ i18n "tasks" 2 }}
+                                </p>
+                                <p class="text-sm leading-5 text-gray-500">
+                                    {{ i18n "tasksExplained" }}
+                                </p>
+                            </div>
+                        </a>
+                        <a
+                            href="{{ "draaft/" | absLangURL }}"
+                            class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150"
+                        >
+                            <!-- Heroicon name: view-grid -->
+                            <svg
+                                class="flex-shrink-0 h-6 w-6 text-brand-600"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
+                                />
+                            </svg>
+                            <div class="space-y-1">
+                                <p class="text-base leading-6 font-medium text-gray-900">
+                                    Integrations
+                                </p>
+                                <p class="text-sm leading-5 text-gray-500">
+                                    L'avenir est aux générateurs de sites statiques. Grâce à Draaft,
+                                    notre client d'API Pilot vous récupérez facilement tous vos
+                                    contenus pour un projet de site.
+                                </p>
+                            </div>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+            <div class="py-6 px-5 space-y-6">
+                <!-- <div class="grid grid-cols-2 gap-y-4 gap-x-8">
             <a href="#" class="text-base leading-6 font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150">
               Pricing
             </a>
@@ -797,25 +784,24 @@
               Blog
             </a>
           </div> -->
-                    <div class="m-6">
-                        <span class="w-full flex rounded-md shadow-sm">
-                            <a
-                                href="{{ .Site.Params.AppUrl }}/registration?lang={{ .Site.Language.Lang }}"
-                                class="w-full flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-brand-600 hover:bg-brand-500 focus:outline-none focus:border-brand-700 focus:shadow-outline-brand active:bg-brand-700 transition ease-in-out duration-150"
-                            >
-                                Creér un compte
-                            </a>
-                        </span>
-                        <p class="text-center text-base leading-6 font-medium text-gray-500 py-6">
-                            Vous êtes déjà client ?
-                            <a
-                                href="{{ .Site.Params.AppUrl }}/login?lang={{ .Site.Language.Lang }}"
-                                class="text-brand-600 hover:text-brand-500 transition ease-in-out duration-150"
-                            >
-                                {{ i18n "login" }}
-                            </a>
-                        </p>
-                    </div>
+                <div class="m-6">
+                    <span class="w-full flex rounded-md shadow-sm">
+                        <a
+                            href="{{ .Site.Params.AppUrl }}/registration?lang={{ .Site.Language.Lang }}"
+                            class="w-full flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-brand-600 hover:bg-brand-500 focus:outline-none focus:border-brand-700 focus:shadow-outline-brand active:bg-brand-700 transition ease-in-out duration-150"
+                        >
+                            Creér un compte
+                        </a>
+                    </span>
+                    <p class="text-center text-base leading-6 font-medium text-gray-500 py-6">
+                        Vous êtes déjà client ?
+                        <a
+                            href="{{ .Site.Params.AppUrl }}/login?lang={{ .Site.Language.Lang }}"
+                            class="text-brand-600 hover:text-brand-500 transition ease-in-out duration-150"
+                        >
+                            {{ i18n "login" }}
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>

@@ -7,15 +7,13 @@ menu:
         weight: 2
         params:
             svg: channel
-            class: text-green-400
+            class: text-green-600
 description: Un canal représente un espace où diffuser un contenu.
 slug: canaux
 title: Les canaux
 ---
 
-# **Canaux**
-
-## Qu’est-ce qu’un canal ?
+## Présentation
 
 Un canal correspond à un endroit où sera **diffusé** votre contenu. Vous pouvez affecter un ou plusieurs canaux à vos projets et contenus.
 
