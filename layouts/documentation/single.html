@@ -7,7 +7,7 @@
                     id="tabs"
                     name="tabs"
                     onchange="location = this.value;"
-                    class="block w-full  cursor-pointer focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                    class="block w-full   cursor-pointer focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                 >
                     {{ range .Site.Menus.documentation.ByWeight }}
                         <option value="{{ .URL }}">
@@ -17,30 +17,33 @@
                 </select>
             </div>
             <aside
-                class="hidden lg:block fixed top-32 bottom-0 w-80 -ml-2 px-1 overflow-y-auto bg-white py-8 px-2 sm:px-6 lg:py-0 lg:px-0 lg:col-span-3"
+                style="height:calc(100% - 120px);"
+                class="hidden mb-2 py-3 -mx-2 px-2 lg:flex z-50 flex-col fixed h-full bg-white  w-80 overflow-y-auto lg:col-span-3"
             >
-                <nav class="space-y-1 flex flex-col m-1">
-                    {{ .Scratch.Set "currentPage" .Title }}
-                    {{ range .Site.Menus.documentation.ByWeight }}
-                        <a href="{{ .URL }}" title="{{ .Title }}" class="menu">
-                            {{ if ne .Params.svg nil }}
-                                <div class="{{ .Params.class }} w-6 h-6 mr-2 ">
-                                    {{ partial (printf "svg/%s.svg" .Params.svg) }}
-                                </div>
-                            {{ end }}
-                            <span class="truncate">{{- .Name -}}</span>
-                        </a>
-                        {{ if eq .Page.Title ($.Scratch.Get "currentPage") }}
-                            <div class="ml-9 mb-5">
-                                {{ .Page.TableOfContents }}
+                {{ .Scratch.Set "currentPage" .Title }}
+                {{ range .Site.Menus.documentation.ByWeight }}
+                    <a href="{{ .URL }}" title="{{ .Title }}" class="menu">
+                        {{ if ne .Params.svg nil }}
+                            <div class="{{ .Params.class }} w-6 h-6 mr-1">
+                                {{ partial (printf "svg/%s.svg" .Params.svg) }}
+                            </div>
+                            {{ else }}
+                            <div class="{{ .Params.class }} text-brand-400 w-6 h-6 mr-1">
+                                {{ partial "svg/book.svg" }}
                             </div>
                         {{ end }}
+                        <span class="truncate">{{- .Name -}}</span>
+                    </a>
+                    {{ if eq .Page.Title ($.Scratch.Get "currentPage") }}
+                        <div class="ml-3 pl-4 border-l border-gray-200">
+                            {{ .Page.TableOfContents }}
+                        </div>
                     {{ end }}
-                </nav>
+                {{ end }}
             </aside>
 
             <!-- Content -->
-            <div class="lg:ml-80 float-left w-full  lg:col-span-9">
+            <div class="lg:ml-80 float-left w-full px-5  lg:col-span-9">
                 <section class="mx-auto">
                     <div class="mx-auto text-base">
                         <p

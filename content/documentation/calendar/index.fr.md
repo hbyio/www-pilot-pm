@@ -15,8 +15,6 @@ title: Les calendriers
 weight: 4
 ---
 
-# **Calendrier**
-
 Le calendrier permet à votre équipe d’avoir une vision d’ensemble des prises de parole de l’entreprise sur une période définie.
 
 ## Calendrier principal 
