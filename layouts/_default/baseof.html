@@ -79,11 +79,13 @@
                 integrity="{{ $style.Data.Integrity }}"
             />
         {{ end -}}
-
+        {{- $alpine := resources.Get "js/alpine.js" | minify | fingerprint }}
+        {{- $lazysizes := resources.Get "js/lazysizes.js" | minify | fingerprint }}
         <script
-            src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.0/dist/alpine.min.js"
+            src="{{ $alpine.RelPermalink }}"
             defer
         ></script>
+        <script src="{{ $lazysizes.RelPermalink }}" defer async=""></script>
 
         {{ if not .Site.IsServer }}
             <!-- OR WITH ENV VAR if eq (getenv "HUGO_ENV") "production"  -->
