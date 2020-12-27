@@ -2,10 +2,12 @@ const defaultTheme = require("tailwindcss/defaultTheme")
 const colors = require("tailwindcss/colors")
 
 module.exports = {
-    //     purge: {
-    //         enabled: true,
-    //         content: ["./layouts/**/*.html", "./content/**/*.md"],
-    //     },
+    // Warning /!\ Purge is called only with NODE_ENV variable set to 'production'
+    purge: {
+        mode: "all",
+        preserveHtmlElements: false,
+        content: ["./layouts/**/*.html", "./content/**/*.md", "./layouts/**/*.svg"],
+    },
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
