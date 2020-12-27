@@ -4,13 +4,13 @@
         <div class="flex flex-col md:flex-row md:justify-between">
             <div class="w-full mb-8 md:mb-0 md:w-1/4">
                 <h3 class="text-sm leading-5 font-bold tracking-wider text-white uppercase">
-                    <a href="{{ "/resources" | absLangURL }}">
-                        {{ i18n "resources" }}
+                    <a class="text-white" href="{{ "/guides" | absLangURL }}">
+                        {{ i18n "guides" }}
                     </a>
                 </h3>
 
                 <ul class="mt-4">
-                    {{ range where .Site.RegularPages "Section" "resources" }}
+                    {{ range where .Site.RegularPages "Section" "guides" }}
                         <li class="mt-4">
                             <a
                                 href="{{ .Permalink }}"

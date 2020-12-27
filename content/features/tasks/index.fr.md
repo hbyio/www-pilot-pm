@@ -3,6 +3,14 @@ author: Mathieu
 title: Tâches
 illustration: tasks.png
 overtitle: Fonctionnalité
+menu:
+    main:
+        weight: 1
+        parent: features
+        params:
+            svg: task
+            subtitle: Affectez des tâches à vos contenus ou projets, pour vous même ou à d’autres membres de l’équipe
+            class: text-red-400
 ---
 
 ## Ne ratez plus une date de publication

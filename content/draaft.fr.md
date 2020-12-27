@@ -4,6 +4,13 @@ title: Pilot CLI (nom de code Draaft)
 overtitle: Outils développeurs
 date: 2020-07-01
 draft: false
+menu:
+    main:
+        weight: 5
+        parent: features
+        params:
+            svg: integration
+            subtitle: L'avenir est aux générateurs de sites statiques. Grâce à Draaft, notre client d'API Pilot vous récupérez facilement tous vos contenus pour un projet de site.
 ---
 
 ## Un outil en ligne de commande simple pour récupérer rapidement tous les contenus d'un projet sous forme de fichiers markdown structurés

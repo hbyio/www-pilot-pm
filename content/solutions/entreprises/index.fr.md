@@ -7,6 +7,12 @@ featured: false
 description: Pilot pour les entreprises
 overtitle: Solution
 subtitle: Un outil pour structurer votre prise de parole.
+menu:
+    main:
+        weight: 1
+        parent: solutions
+        params:
+            subtitle: Organiser vos échanges avec vos agences, les directions métiers ou produits et vos entités à travers le monde
 ---
 
 Aujourd'hui les services marketing et communication des grandes entreprises sont soumis à des exigences accrues : répondre aux demandes des directions métiers ou produits efficacement, organiser et animer le travail d'un réseau de communicants à l'échelle mondiale, s'appuyer sur un réseau d'agences externes.

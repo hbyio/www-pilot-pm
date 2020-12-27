@@ -10,11 +10,12 @@
         "dev": "env HUGO_PARAMS_APPURL=\"https://staging.pilot.pm\" hugo server --navigateToChanged --disableFastRender --bind 0.0.0.0 --baseURL http://0.0.0.0:1313"
     },
     "devDependencies": {
+        "@prettier/plugin-xml": "^0.12.0",
         "autoprefixer": "^10.1.0",
         "eslint-config-prettier": "^7.0.0",
         "postcss": "^8.2.1",
         "postcss-import": "^12.0.1",
-        "prettier": "2.2.1",
+        "prettier": "^2.2.1",
         "prettier-plugin-go-template": "0.0.10"
     },
     "dependencies": {

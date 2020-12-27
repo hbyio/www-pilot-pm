@@ -1,8 +1,17 @@
 ---
 author: Mathieu
-title: Construisez vos contenus en équipe
+title: Rédaction + Collaboration
 illustration: validation.png
 overtitle: Fonctionnalité
+
+menu:
+    main:
+        weight: 2
+        parent: features
+        params:
+            svg: collaboration
+            subtitle: Créez des documents à plusieurs, faites valider en un clic
+            class: text-red-400
 ---
 
 ## Plus besoin de chercher la dernière version, elle est là

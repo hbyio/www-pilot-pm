@@ -3,7 +3,14 @@ author: Mathieu
 title: Projets
 illustration: project_detail.png
 overtitle: Fonctionnalité
-subtitle: Campagne marketing, refonte de site web, magazine interne, mettez toutes les informations nécessaires à l'équipe en un seul lieu au lieu de multiplier les réunions.
+menu:
+    main:
+        weight: 1
+        parent: features
+        params:
+            svg: project
+            subtitle: Campagne marketing, refonte de site web, magazine interne, mettez toutes les informations nécessaires à l'équipe en un seul lieu au lieu de multiplier les réunions.
+            class: text-red-400
 ---
 
 ## Partagez vos fichiers

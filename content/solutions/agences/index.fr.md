@@ -9,6 +9,12 @@ description: Pilot pour les agences
 overtitle: Solution
 subtitle: L'outil de gestion de projet éditorial qui va vous permettre d'être plus confiant et plus rapide.
 figcaption: Des centaines d'échanges importants au sein de votre agence en une seule journée, assurez vous de tout suivre
+menu:
+    main:
+        weight: 1
+        parent: solutions
+        params:
+            subtitle: Structurez vos process avec autant de clients que vous voulez.
 ---
 
 Aujourd’hui, chacun de vos clients fonctionne d'une manière différente lorsqu'il s'agit de la gestion de leurs contenus.

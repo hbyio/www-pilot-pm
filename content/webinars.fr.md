@@ -3,6 +3,15 @@ author: Mathieu
 title: Webinars
 date: 2020-07-01
 draft: false
+menu:
+    main:
+        name: Webinars gratuits
+        parent: Ressources
+        weight: 1
+        params:
+            svg: webinar
+            subtitle: Depuis chez vous ou votre bureau découvrez ou apprenez à
+                vous servir de Pilot en 30 minutes maximum
 ---
 
 ## Découvrir Pilot en 20 minutes
