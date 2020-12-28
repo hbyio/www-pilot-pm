@@ -1,18 +1,18 @@
 {{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get 0)) }}
-{{ $image := $src.Resize "1200x600 q100" }}
-{{ $medium := $image.Resize "800x q100" | images.Filter  (images.Pixelate 4) }}
-{{ $small := $image.Resize "400x q100" | images.Filter (images.Pixelate 8) }}
-<figure style="width: 100%;">
+{{ $image := $src.Resize "1200x q100" }}
+{{ $medium := $image.Resize "800x q100" }}
+{{ $small := $image.Resize "400x q100" }}
+<figure>
     <img
-        style="width: 100%; height: auto;"
+        style="width: auto; height: auto;"
         src="{{ $image.RelPermalink }}"
         srcset="
             {{ $image.RelPermalink }} 1200w,
             {{ $medium.RelPermalink }}  800w,
             {{ $small.RelPermalink }}  400w
         "
-        sizes="100vw"
-        class="shadow-lg rounded-lg border border-gray-200"
+        sizes="1200px"
+        class="shadow-xl rounded-lg border border-gray-200 mx-auto"
     />
     <figcaption>
         <span class="text-purple-900 italic">

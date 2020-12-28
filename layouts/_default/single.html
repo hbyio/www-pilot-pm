@@ -4,7 +4,7 @@
             {{ .Params.tag }}
         </p>
         <h1
-            class="mb-8 text-4xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-5xl sm:leading-none"
+            class="mb-8 text-4xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-5xl sm:py-10 sm:leading-none"
         >
             {{ .Title }}
         </h1>
@@ -12,6 +12,5 @@
             {{ .Content }}
         </div>
     </div>
-
     {{ partial "callToAction.html" . }}
 {{ end }}
