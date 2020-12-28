@@ -191,41 +191,43 @@
         x-transition:leave="duration-100 ease-in"
         x-transition:leave-start="opacity-100 scale-100"
         x-transition:leave-end="opacity-0 scale-95"
-        class="absolute top-0 bottom-0 z-50 h-screen w-screen overflow-y-auto inset-x-0 p-0 transition transform origin-top-right lg:hidden"
+        class="absolute top-0 bottom-0 h-full  bg-brand-50 z-50 h-screen w-screen overflow-y-auto inset-x-0 p-0 transition transform origin-top-right lg:hidden"
     >
-        <div class="bg-white px-5 py-2">
-            <header class="flex items-center justify-between mb-5">
-                <div>
-                    <a
-                        href="{{ .Site.LanguagePrefix }}/"
-                        class="flex items-center text-black text-2xl tracking-tight font-black text-gray-900  sm:text-2xl sm:leading-none md:text-3xl"
-                    >
-                        {{ .Site.Title }}
-                    </a>
-                </div>
-                <button type="button" @click="mobileMenuOpen = !mobileMenuOpen" class="button">
-                    <!-- Heroicon name: x -->
-                    <svg
-                        class="h-5 w-5 mr-1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M6 18L18 6M6 6l12 12"
-                        />
-                    </svg>
-                    Fermer
-                </button>
-            </header>
-            <nav class="space-y-5">
-                {{ range .Site.Menus.main }}
+        <header
+            class="sticky top-0 bg-brand-900 shadow flex items-center justify-between mb-5 px-5 "
+        >
+            <div>
+                <a
+                    href="{{ .Site.LanguagePrefix }}/"
+                    class="flex items-center text-white text-2xl tracking-tight font-black   sm:text-2xl sm:leading-none md:text-3xl"
+                >
+                    {{ .Site.Title }}
+                </a>
+            </div>
+            <button type="button" @click="mobileMenuOpen = !mobileMenuOpen" class="button">
+                <!-- Heroicon name: x -->
+                <svg
+                    class="h-5 w-5 mr-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                    />
+                </svg>
+                Fermer
+            </button>
+        </header>
+        <nav class="space-y-5 px-5 ">
+            {{ range .Site.Menus.main }}
+                <div class="mb-10">
                     <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
-                    <a href="{{ .URL }}" class="block text-brand-800 text-lg font-black">
+                    <a href="{{ .URL }}" class="block text-purple-900 text-2xl font-black">
                         {{ .Name }}
                     </a>
 
@@ -234,43 +236,41 @@
                             {{ range .Children }}
                                 <a
                                     href="{{ .URL }}"
-                                    class="{{ if $currentPage.IsMenuCurrent "main" . }}bg-yellow-200{{ end }}"
+                                    class="block flex flex-col -mx-2 p-2 rounded {{ if $currentPage.IsMenuCurrent "main" . }}bg-purple-200{{ end }}"
                                 >
-                                    <div class="space-y-1">
-                                        <p
-                                            class="text-base leading-6 font-bold text-gray-900 capitalize"
-                                        >
-                                            {{ .Name }}
-                                        </p>
-                                        <p class="text-base leading-5 text-gray-500">
-                                            {{ .Params.Subtitle }}
-                                        </p>
-                                    </div>
+                                    <span
+                                        class="text-lg leading-6 font-bold text-brand-800 capitalize"
+                                    >
+                                        {{ .Name }}
+                                    </span>
+                                    <span class="text-base leading-5 text-brand-700">
+                                        {{ .Params.Subtitle }}
+                                    </span>
                                 </a>
                             {{ end }}
                         </div>
                     {{ end }}
-                {{ end }}
-            </nav>
-            <div class="m-6">
-                <span class="w-full flex rounded-md shadow-sm">
-                    <a
-                        href="{{ .Site.Params.AppUrl }}/registration?lang={{ .Site.Language.Lang }}"
-                        class="w-full flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-brand-600 hover:bg-brand-500 focus:outline-none focus:border-brand-700 focus:shadow-outline-brand active:bg-brand-700 transition ease-in-out duration-150"
-                    >
-                        Creér un compte
-                    </a>
-                </span>
-                <p class="text-center text-base leading-6 font-medium text-gray-500 py-6">
-                    Vous êtes déjà client ?
-                    <a
-                        href="{{ .Site.Params.AppUrl }}/login?lang={{ .Site.Language.Lang }}"
-                        class="text-brand-600 hover:text-brand-500 transition ease-in-out duration-150"
-                    >
-                        {{ i18n "login" }}
-                    </a>
-                </p>
-            </div>
+                </div>
+            {{ end }}
+        </nav>
+        <div class="my-10 px-5">
+            <span class="w-full flex rounded-md shadow-sm">
+                <a
+                    href="{{ .Site.Params.AppUrl }}/registration?lang={{ .Site.Language.Lang }}"
+                    class="w-full flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-brand-600 hover:bg-brand-500 focus:outline-none focus:border-brand-700 focus:shadow-outline-brand active:bg-brand-700 transition ease-in-out duration-150"
+                >
+                    Creér un compte
+                </a>
+            </span>
+            <p class="text-center text-base leading-6 font-medium text-gray-500 py-6">
+                Vous êtes déjà client ?
+                <a
+                    href="{{ .Site.Params.AppUrl }}/login?lang={{ .Site.Language.Lang }}"
+                    class="text-blue-600 hover:text-brand-500 transition ease-in-out duration-150"
+                >
+                    {{ i18n "login" }}
+                </a>
+            </p>
         </div>
     </div>
 
