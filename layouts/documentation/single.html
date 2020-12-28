@@ -18,7 +18,7 @@
             </div>
             <aside
                 style="height:calc(100% - 120px);"
-                class="hidden mb-2 py-3 -mx-2 px-2 lg:flex z-50 flex-col fixed h-full bg-white  w-80 overflow-y-auto lg:col-span-3"
+                class="hidden mb-2 py-3 -mx-2 px-2 lg:flex  flex-col fixed h-full bg-white  w-80 overflow-y-auto lg:col-span-3"
             >
                 {{ .Scratch.Set "currentPage" .Title }}
                 {{ range .Site.Menus.documentation.ByWeight }}
@@ -68,7 +68,6 @@
 
 {{ define "script" }}
     <script>
-        console.log("coucou top")
         window.addEventListener("DOMContentLoaded", () => {
             var options = {
                 // root: document.querySelector("#contentArea"),

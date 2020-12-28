@@ -26,10 +26,9 @@ Encadrez la production de vos contributeurs avec des formulaires spécialement a
 
 Collaborez à plusieurs, en même temps, sur un même document. Plus de problème de conflits de versions, on ne se marche plus sur les pieds.
 
-<figure class="full-width">
-<img class="rounded-lg shadow-lg" src="diff.png">
-<figcaption>Toutes les versions sont conservées. </figcaption>
-</figure>
+{{<img "diff.png" >}}
+Repérez les différences en un coup d'oeil
+{{</img>}}
 
 ## Les mentions ont plus de valeur que les emails !
 
