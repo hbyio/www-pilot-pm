@@ -3,9 +3,9 @@ author: Matthieu
 date: 2020-06-14
 draft: false
 illustration: illustration.png
-title: Pilot pour les agences
+title: Pour les agences
 featured: false
-description: Pilot pour les agences
+description: Pour les agences
 overtitle: Solution
 subtitle: L'outil de gestion de projet éditorial qui va vous permettre d'être plus confiant et plus rapide.
 figcaption: Des centaines d'échanges importants au sein de votre agence en une seule journée, assurez vous de tout suivre

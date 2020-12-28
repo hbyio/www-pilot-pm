@@ -2,9 +2,9 @@
 author: Matthieu
 date: 2020-06-14
 draft: false
-title: Pilot pour les entreprises
+title: Pour les entreprises
 featured: false
-description: Pilot pour les entreprises
+description: Pour les entreprises
 overtitle: Solution
 subtitle: Un outil pour structurer votre prise de parole.
 menu:
