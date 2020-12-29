@@ -19,7 +19,7 @@ _site
 
 # OS or Editor folders
 *.scssc
-.DS_Store
+*.DS_Store
 Thumbs.db
 .cache
 .project
@@ -27,7 +27,10 @@ Thumbs.db
 .tmproj
 .asset-cache
 .sass-cache
-public
-# Folders to ignore
-node_modules
+
+# Project Folders to ignore
+
 .draaft/config.json
+/public
+/node_modules
+/resources
