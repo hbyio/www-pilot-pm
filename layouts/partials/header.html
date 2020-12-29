@@ -223,9 +223,9 @@
                 Fermer
             </button>
         </header>
-        <nav class="space-y-5 px-5 ">
+        <nav class="space-y-16 px-5 ">
             {{ range .Site.Menus.main }}
-                <div class="mb-10">
+                <div>
                     <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
                     <a href="{{ .URL }}" class="block text-purple-900 text-2xl font-black">
                         {{ .Name }}
@@ -253,7 +253,7 @@
                 </div>
             {{ end }}
         </nav>
-        <div class="my-10 px-5">
+        <div class="mt-20 mb-16 px-5">
             <span class="w-full flex rounded-md shadow-sm">
                 <a
                     href="{{ .Site.Params.AppUrl }}/registration?lang={{ .Site.Language.Lang }}"
