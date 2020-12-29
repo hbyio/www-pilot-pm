@@ -3,7 +3,8 @@ publish = "public"
 command = "hugo --gc"
 
 [context.production.environment]
-HUGO_VERSION = "0.74.2"
+HUGO_VERSION = "0.79.0"
+NODE_ENV = "production"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
@@ -11,10 +12,11 @@ HUGO_ENABLEGITINFO = "true"
 command = "hugo --gc --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
-HUGO_VERSION = "0.74.2"
+HUGO_VERSION = "0.79.0"
+NODE_ENV = "production"
 
 [context.branch-deploy]
-command = "hugo --gc -b $DEPLOY_PRIME_URL"
+command = "hugo --gc --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.79.0"
