@@ -1,0 +1,28 @@
+{{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get 0)) }}
+{{ $large := $src.Resize "1200x" }}
+{{ $medium := $src.Resize "800x" }}
+{{ $small := $src.Resize "400x" }}
+<figure class="bg-brand-50 rounded-lg py-6 border border-gray-100 px-4 xl:px-0">
+    <img
+        style="width:inherit;"
+        srcset="
+            {{ $small.RelPermalink }}  400w,
+            {{ $medium.RelPermalink }}  800w,
+            {{ $large.RelPermalink }} 1200w
+        "
+        src="{{ $large.RelPermalink }}"
+        sizes=" (max-width: 400px) 100vw,
+                (max-width: 800px) 100vw,
+                1200px
+        "
+        class="shadow-xl rounded-lg border border-gray-200 mx-auto "
+        alt="{{ $src }}"
+    />
+    {{ with .Inner }}
+        <figcaption>
+            <div style="max-width: 1200px;" class="text-brand-500 font-medium mx-auto -mb-3">
+                {{ . }}
+            </div>
+        </figcaption>
+    {{ end }}
+</figure>
