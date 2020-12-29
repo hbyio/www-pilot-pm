@@ -71,7 +71,7 @@ a {
 
 .reading > h1,
 .reading > div > *:not(figure) {
-    max-width: 700px;
+    max-width: 680px;
     @apply mx-auto;
 }
 
