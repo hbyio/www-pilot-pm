@@ -16,6 +16,13 @@ module.exports = {
                 gray: colors.coolGray,
                 accent: colors.amber,
             },
+            // typography: {
+            //     xl: {
+            //         css: {
+            //             lineHeight: "1.7rem",
+            //         },
+            //     },
+            // },
         },
     },
     variants: {},
