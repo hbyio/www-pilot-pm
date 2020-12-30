@@ -98,45 +98,48 @@
         <div
             id="IEalert"
             style="display: none;"
-            class="py-15 p-10 bg-yellow-300 text-cool-gray-900 text-center"
+            class=" mt-16 py-15 p-10 bg-yellow-300 text-cool-gray-900"
         >
-            <div class="text-lg font-black">
-                Ce site ne peut pas être affiché correctement sur votre navigateur
-            </div>
-            <a
-                href="microsoft-edge:https://www.pilot.pm"
-                class="bg-yellow-100 hover:bg-gray-200 active:bg-gray-300 focus:shadow-outline-gray border border-yellow-200 shadow text-yellow-900 text-center font-medium p-2 rounded my-2 inline-flex items-center"
-            >
-                Vous êtes sur Windows 10 ? Cliquez ici ( ou Ctrl+Shift+E ) pour ouvrir ce site avec
-                Edge
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    class="h-4 w-4 mx-2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
+            <div class="max-w-7xl mx-auto">
+                <div class="text-lg font-black">Votre navigateur n'est plus supporté</div>
+                <a
+                    href="microsoft-edge:https://www.pilot.pm"
+                    class="bg-yellow-100 hover:bg-gray-200 active:bg-gray-300 focus:shadow-outline-gray border border-yellow-200 shadow text-yellow-900 text-center font-medium p-2 rounded my-2 inline-flex items-center"
                 >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                    />
-                </svg>
-            </a>
-            <p>
-                Sinon vous pouvez télécharger un navigateur moderne (
-                <a class="underline" href="https://www.microsoft.com/fr-fr/edge">Edge</a>
-                ,
-                <a class="underline" href="https://www.google.com/intl/fr_fr/chrome/">Chrome</a>
-                ,
-                <a class="underline" href="https://www.mozilla.org/fr/firefox/new/">Firefox</a>
-                )
-            </p>
+                    Vous êtes sur Windows 10 ? Cliquez ici ( ou Ctrl+Shift+E ) pour ouvrir ce site
+                    avec Edge
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        class="h-4 w-4 mx-2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                        />
+                    </svg>
+                </a>
+                <p>
+                    Sinon vous pouvez télécharger un navigateur moderne (
+                    <a class="underline" href="https://www.microsoft.com/fr-fr/edge">Edge</a>
+                    ,
+                    <a class="underline" href="https://www.google.com/intl/fr_fr/chrome/">Chrome</a>
+                    ,
+                    <a class="underline" href="https://www.mozilla.org/fr/firefox/new/">Firefox</a>
+                    )
+                </p>
+            </div>
         </div>
 
         <div class="flex flex-col justify-between h-screen w-full">
-            <header class="fixed top-0 w-full shadow bg-white z-40 px-5">
+            <header
+                id="mainnav"
+                class="transform top-0 left-0 fixed top-0 w-full shadow bg-white z-40 px-5 transition-all ease-in duration-300 "
+            >
                 {{ partial "header" . }}
             </header>
             <main class="flex-1 mt-28 px-5">
@@ -164,5 +167,59 @@
             }
         </script>
         {{ block "script" . }}{{ end }}
+        <script>
+            ;(function () {
+                var doc = document.documentElement
+                var w = window
+
+                var prevScroll = w.scrollY || doc.scrollTop
+                var curScroll
+                var direction = 0
+                var prevDirection = 0
+                var buffer = 0
+
+                var header = document.getElementById("mainnav")
+
+                var checkScroll = function () {
+                    /*
+                     ** Find the direction of scroll
+                     ** 0 - initial, 1 - up, 2 - down
+                     */
+
+                    curScroll = w.scrollY || doc.scrollTop
+                    if (curScroll > prevScroll) {
+                        //scrolled up
+                        direction = 2
+                    } else if (curScroll < prevScroll) {
+                        //scrolled down
+                        direction = 1
+                    }
+
+                    if (direction !== prevDirection) {
+                        toggleHeader(direction, curScroll)
+                    }
+
+                    prevScroll = curScroll
+                }
+                var checkDelta = function () {
+                    var position = w.scrollY || doc.scrollTop
+                }
+
+                var toggleHeader = function (direction, curScroll) {
+                    if (direction === 2) {
+                        //replace 52 with the height of your header in px
+
+                        header.classList.add("-translate-y-full")
+                        prevDirection = direction
+                    } else if (direction === 1) {
+                        header.classList.remove("-translate-y-full")
+                        prevDirection = direction
+                    }
+                }
+
+                window.addEventListener("scroll", checkScroll)
+                window.addEventListener("scroll", checkDelta)
+            })()
+        </script>
     </body>
 </html>

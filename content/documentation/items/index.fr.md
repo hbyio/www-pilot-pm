@@ -40,7 +40,7 @@ Selon vos besoins, il est possible de configurer la liste des types de contenus 
 
 Ici, le contenu que nous avons choisi de créer est un article. Voici à quoi ça ressemble dans l'application :
 
-<video controls poster="main.jpg">
+<video controls poster="main.png">
     <source src="video.mp4" type="video/mp4" />
     <!-- some other alternative sources -->
     <!-- <source src="foobar.ogv" type="video/ogv" /> -->
