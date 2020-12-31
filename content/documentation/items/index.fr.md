@@ -30,7 +30,7 @@ Les contenus créés peuvent être affectés à un projet. Vous pourrez aussi le
 
 ## Comment créer un contenu ?
 
-![](1.png "Nouveau contenu ")
+{{<img src="add-content.png" alt="Nouveau contenu">}}
 
 Pour créer un nouveau contenu, rendez-vous dans la section "**Contenus**" du menu de gauche. Puis cliquez sur "**Ajouter un contenu"**. Vous pourrez ensuite puis sélectionner le type de contenu que vous souhaitez créer.
 
@@ -40,20 +40,15 @@ Selon vos besoins, il est possible de configurer la liste des types de contenus 
 
 Ici, le contenu que nous avons choisi de créer est un article. Voici à quoi ça ressemble dans l'application :
 
-<video controls poster="main.png">
-    <source src="video.mp4" type="video/mp4" />
-    <!-- some other alternative sources -->
-    <!-- <source src="foobar.ogv" type="video/ogv" /> -->
-    Sorry, your browser doesn't support embedded videos.
-</video>
+<!-- {{<video src="video.mp4" >}} -->
 
-![](main.png "Nouveau contenu de type article.png")
+{{<img src="main.png" alt="Nouveau contenu de type">}}
 
 ## Les outils spécifiques aux contenus
 
 Sur la partie supérieure se trouvent 6 catégories :
 
-![](https://pilotapp-leader.s3.amazonaws.com/assets/136/34810/136_34810_original.png "Informations liées au contenu.png")
+{{<img src="outils.png" alt="Outils liés au contenu">}}
 
 ### Infos ou méta-données
 
@@ -75,21 +70,15 @@ Affiche un calendrier qui vous permet de sélectionner la date à laquelle le co
 
 Pilot sauvegarde automatiquement les modifications apportées à un contenu. Une nouvelle version du contenu est créée toutes les 15 minutes si vous apportez des modifications supplémentaires. Vous pourrez alors naviguer entre la version V1.1, V1.2 etc...
 
-![](versions.png "Version 1 et version 2.41.png")
-
 ### Commentaires
 
 Vous pourrez discuter de l'évolution du document grâce à cette fonctionnalité qui offre en outre un système simple de mention et d’alerte des membres de l'équipe.
-
-![](https://pilotapp-leader.s3.amazonaws.com/assets/136/34812/136_34812_working.jpg "Ajout d'un commentaire .png")
 
 La personne mentionnée recevra une alerte dans ses notifications.
 
 ### Tâches
 
 Il est possible d'affecter des tâches à chaque contenu. Chacune de ces tâches aura une date de rendu et un ou plusieurs responsables.
-
-![](https://pilotapp-leader.s3.amazonaws.com/assets/136/34816/136_34816_working.jpg "Tâches associées.png")
 
 ### Fichiers liés
 
@@ -98,7 +87,5 @@ Vous pouvez lier un ou plusieurs fichiers à votre contenu, sans limite de taill
 ### Partage
 
 En cliquant sur les points de suspension à droite de "Fichiers", des options supplémentaires apparaissent :
-
-![](https://pilotapp-leader.s3.amazonaws.com/assets/136/34817/136_34817_original.png "Partager un contenu.png")
 
 Le partage avec validation externe est utile pour interroger des personnes ne possédant pas de compte sur Pilot. Il est possible de permettre à votre interlocuteur de modifier le document envoyé.
