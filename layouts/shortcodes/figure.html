@@ -5,18 +5,19 @@
 <figure class="bg-brand-50 rounded-lg py-6 border border-gray-100 px-4">
     <img
         style="width:inherit;"
-        data-srcset="
+        srcset="
             {{ $small.RelPermalink }}  400w,
             {{ $medium.RelPermalink }}  800w,
             {{ $large.RelPermalink }} 1200w
         "
-        data-src="{{ $large.RelPermalink }}"
-        data-sizes=" (max-width: 400px) 100vw,
+        src="{{ $large.RelPermalink }}"
+        sizes=" (max-width: 400px) 100vw,
                 (max-width: 800px) 100vw,
                 1200px
         "
-        class="lazyload shadow-xl rounded-lg border border-gray-200 mx-auto "
+        class="shadow-xl rounded-lg border border-gray-200 mx-auto "
         alt="{{ $src }}"
+        loading="lazy"
     />
     {{ with .Inner }}
         <figcaption>
