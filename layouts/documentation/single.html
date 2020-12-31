@@ -1,19 +1,21 @@
 {{ define "main" }}
-    {{ $headerHeight :=  "85px" }}{{ $headerHeight }}
+    {{ $headerHeight :=  "85px" }}
     <div id="documentationPage" class="flex ">
         <div
             id="documentation_aside"
             style="height: calc(100vh - {{ $headerHeight }}); top: {{ $headerHeight }};"
-            class="flex-1 z-10 overflow-y-auto hidden xl:flex flex-col sticky bg-white  w-80"
+            class="flex z-10 overflow-y-auto hidden lg:flex flex-col sticky bg-white"
         >
-            <div class="w-60  pt-10 h-full flex flex-col border-r border-gray-200">
-                <div class="text-sm font-bold mb-5 uppercase">Documentation</div>
-                {{ .Scratch.Set "currentPage" .Title }}
+            <div class="w-80 pt-10 h-full flex flex-col border-r border-gray-200">
+                <div class="text-sm font-bold mb-5 uppercase pl-12">Documentation</div>
+
+                {{ $currentPage := . }}
+
                 {{ range .Site.Menus.documentation.ByWeight }}
                     <a
                         href="{{ .URL }}"
                         title="{{ .Title }}"
-                        class="inline-flex items-center py-2  text-base font-medium rounded-md text-gray-900  hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+                        class="{{ if $currentPage.IsMenuCurrent "documentation" . }}bg-brand-300{{ end }} pl-5 inline-flex items-center py-2  text-base font-medium rounded-l-md text-brand-900  hover:bg-brand-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500 "
                     >
                         {{ if ne .Params.svg nil }}
                             <div class="{{ .Params.class }} w-6 h-6 mr-1">
@@ -31,8 +33,8 @@
         </div>
 
         <!-- Content -->
-        <div class="mx-auto text-base my-24">
-            <div class="reading">
+        <div class="bg-brand-100 flex-1 flex-col text-base py-24 lg:px-10 max-w-full">
+            <div class="reading mx-auto  lg:max-w-xl xl:max-w-4xl 2xl:max-w-5xl">
                 <p
                     class="text-base font-semibold leading-6 tracking-wide text-indigo-600 uppercase"
                 >
@@ -43,35 +45,40 @@
                 >
                     {{ .Title }}
                 </h1>
-                <div class="prose prose-lg sm:prose-xl text-gray-800 mx-auto">
+                <div class=" prose prose-lg sm:prose-xl text-gray-800 mx-auto">
                     {{ .Content }}
                 </div>
             </div>
-            <div class="h-24 bg-green-600 flex justify-between mt-10">
+            <div class=" bg-brand-200 flex justify-between mt-10">
                 {{ with .Site.RegularPages.Prev . }}
-                    <a class="button" href="{{ .RelPermalink }}">{{ . }}</a>
+                    <a class="button" href="{{ .RelPermalink }}">
+                        {{ partial "svg/chevron-left.svg" . }}
+                        {{ .Name }}
+                    </a>
                 {{ end }}
                 {{ with .Site.RegularPages.Next . }}
-                    <a class="button" href="{{ .RelPermalink }}">{{ . }}</a>
+                    <a class="button" href="{{ .RelPermalink }}">
+                        {{ .Name }}
+                        {{ partial "svg/chevron-right.svg" . }}
+                    </a>
                 {{ end }}
             </div>
         </div>
 
         <!-- ToC -->
-        {{ if eq .Page.Title ($.Scratch.Get "currentPage") }}
-            <div
-                id="documentation_toc"
-                style="height: calc(100vh - {{ $headerHeight }}); top: {{ $headerHeight }};"
-                class="flex-1 z-10 overflow-y-auto hidden lg:flex flex-col sticky bg-white  w-80 "
-            >
-                <div class="pt-10 h-full border-l border-gray-200 ml-10 px-5 text-brand-700 w-80">
-                    {{ if ne false .Params.toc }}
-                        <div class="text-sm font-bold mb-5 uppercase">Dans cette page</div>
-                        {{ .Page.TableOfContents }}
-                    {{ end }}
-                </div>
+
+        <div
+            id="documentation_toc"
+            style="height: calc(100vh - {{ $headerHeight }}); top: {{ $headerHeight }};"
+            class="flex z-10 overflow-x-hidden hidden lg:flex flex-col sticky bg-white"
+        >
+            <div class="pt-10 w-80 h-full border-l border-gray-200 px-5 text-brand-700">
+                {{ if ne false .Params.toc }}
+                    <div class="text-sm font-bold mb-5 uppercase">Dans cette page</div>
+                    {{ .Page.TableOfContents }}
+                {{ end }}
             </div>
-        {{ end }}
+        </div>
     </div>
 {{ end }}
 

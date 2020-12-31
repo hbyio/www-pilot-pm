@@ -67,7 +67,7 @@ a:hover {
 
 #TableOfContents > ul > li > a.active,
 #TableOfContents > ul > li > ul > li > a.active {
-    @apply text-green-600 font-medium;
+    @apply text-yellow-800 bg-yellow-50 font-medium;
 }
 
 .prose ul > li::before {
@@ -79,7 +79,7 @@ a:hover {
 }
 
 .reading > h1,
-.reading > div > *:not(figure) {
+.reading > div > *:not(figure, video, img) {
     max-width: 680px;
     @apply mx-auto;
 }

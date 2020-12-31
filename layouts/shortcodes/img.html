@@ -1,0 +1,29 @@
+{{ with .Get "alt" }}
+    {{ else }}
+    {{ errorf "Missing mandatory value for param 'alt': %s" .Position }}
+{{ end }}
+
+{{ $src := (.Get "src") }}
+{{ $alt := (.Get "alt") }}
+
+{{ $src := .Page.Resources.GetMatch (printf "*%s*" $src) }}
+{{ $large := $src.Resize "1200x" }}
+{{ $medium := $src.Resize "800x" }}
+{{ $small := $src.Resize "400x" }}
+
+<img
+    srcset="
+        {{ $small.RelPermalink }}  400w,
+        {{ $medium.RelPermalink }}  800w,
+        {{ $large.RelPermalink }} 1200w
+    "
+    src="{{ $large.RelPermalink }}"
+    sizes=" 
+        (max-width: 400px) 100vw,
+        (max-width: 800px) 100vw,
+        1200px
+    "
+    class="shadow-xl rounded-lg border border-gray-200"
+    alt="{{ $alt }}"
+    loading="lazy"
+/>
