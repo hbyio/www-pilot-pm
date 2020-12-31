@@ -2,6 +2,7 @@
 title: Documentation
 description: Toutes les fonctionnalités expliquées
 layout: single
+toc: false
 menu:
     main:
         name: Documentation

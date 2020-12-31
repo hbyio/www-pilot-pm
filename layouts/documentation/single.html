@@ -31,21 +31,29 @@
         </div>
 
         <!-- Content -->
-        <div class="reading mx-auto text-base my-24">
-            <p class="text-base font-semibold leading-6 tracking-wide text-indigo-600 uppercase">
-                {{ .Params.tag }}
-            </p>
-            <h1
-                class="mb-8 text-4xl font-extrabold  tracking-tight text-gray-900 sm:text-5xl  sm:leading-none"
-            >
-                {{ .Title }}
-            </h1>
-            <div class="prose prose-lg sm:prose-xl text-gray-800 mx-auto">
-                {{ .Content }}
+        <div class="mx-auto text-base my-24">
+            <div class="reading">
+                <p
+                    class="text-base font-semibold leading-6 tracking-wide text-indigo-600 uppercase"
+                >
+                    {{ .Params.tag }}
+                </p>
+                <h1
+                    class="mb-8 text-4xl font-extrabold  tracking-tight text-gray-900 sm:text-5xl  sm:leading-none"
+                >
+                    {{ .Title }}
+                </h1>
+                <div class="prose prose-lg sm:prose-xl text-gray-800 mx-auto">
+                    {{ .Content }}
+                </div>
             </div>
-            <div class="h-24 bg-green-600 flex justify-around mt-10">
-                <button class="button">previous page</button>
-                <button class="button">next page</button>
+            <div class="h-24 bg-green-600 flex justify-between mt-10">
+                {{ with .Site.RegularPages.Prev . }}
+                    <a class="button" href="{{ .RelPermalink }}">{{ . }}</a>
+                {{ end }}
+                {{ with .Site.RegularPages.Next . }}
+                    <a class="button" href="{{ .RelPermalink }}">{{ . }}</a>
+                {{ end }}
             </div>
         </div>
 
@@ -57,8 +65,10 @@
                 class="flex-1 z-10 overflow-y-auto hidden lg:flex flex-col sticky bg-white  w-80 "
             >
                 <div class="pt-10 h-full border-l border-gray-200 ml-10 px-5 text-brand-700 w-80">
-                    <div class="text-sm font-bold mb-5 uppercase">Dans cette page</div>
-                    {{ .Page.TableOfContents }}
+                    {{ if ne false .Params.toc }}
+                        <div class="text-sm font-bold mb-5 uppercase">Dans cette page</div>
+                        {{ .Page.TableOfContents }}
+                    {{ end }}
                 </div>
             </div>
         {{ end }}
