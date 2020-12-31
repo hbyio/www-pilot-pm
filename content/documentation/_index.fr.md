@@ -1,6 +1,7 @@
 ---
 title: Documentation
 description: Toutes les fonctionnalités expliquées
+layout: single
 menu:
     main:
         name: Documentation

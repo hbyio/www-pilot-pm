@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<html
-    class="has-navbar-fixed-top text-gray-800 antialiased bg-white"
-    lang="{{ $.Site.Language.Lang }}"
->
+<html class="text-gray-900 antialiased bg-white" lang="{{ $.Site.Language.Lang }}">
     <head>
         {{ if .IsHome -}}
             <title>{{ .Site.Title }}</title>
@@ -95,6 +92,7 @@
     </head>
 
     <body x-data="{ mobileMenuOpen: false, iealert: true }">
+        <!-- IE alert  -->
         <div
             id="IEalert"
             style="display: none;"
@@ -138,11 +136,12 @@
         <div class="flex flex-col justify-between h-screen w-full">
             <header
                 id="mainnav"
-                class="transform top-0 left-0 fixed top-0 w-full shadow bg-white z-40 px-5 transition-all ease-in duration-300 "
+                class="transform fixed w-full border-b border-gray-200 bg-white z-40 px-5 transition-all ease-in duration-300 "
             >
                 {{ partial "header" . }}
             </header>
-            <main class="flex-1 mt-28 px-5">
+            <div class="spacer"></div>
+            <main id="body" class="flex-1 w-full px-5 ">
                 {{ block "main" . }}{{ end }}
             </main>
             {{ if ne .Type "documentation" }}
@@ -151,11 +150,15 @@
                 </footer>
             {{ end }}
         </div>
+
+        <!-- Intercom -->
         {{ if not .Site.IsServer }}
             <!-- OR WITH ENV VAR if eq (getenv "HUGO_ENV") "production"  -->
             <!--ONLY PRODUCTION-->
             {{ partial "chat.html" . }}
         {{ end }}
+
+        <!-- IE alert -->
         <script>
             if (
                 navigator.userAgent.indexOf("MSIE") !== -1 ||
@@ -166,9 +169,25 @@
                 element.style.display = "block"
             }
         </script>
+
         {{ block "script" . }}{{ end }}
-        <script>
+        <!-- <script>
             ;(function () {
+                var debounce = function (func, wait, immediate) {
+                    var timeout
+                    return function () {
+                        var context = this,
+                            args = arguments
+                        var later = function () {
+                            timeout = null
+                            if (!immediate) func.apply(context, args)
+                        }
+                        var callNow = immediate && !timeout
+                        clearTimeout(timeout)
+                        timeout = setTimeout(later, wait)
+                        if (callNow) func.apply(context, args)
+                    }
+                }
                 var doc = document.documentElement
                 var w = window
 
@@ -179,8 +198,11 @@
                 var buffer = 0
 
                 var header = document.getElementById("mainnav")
+                // var main = document.getElementById("body")
+                // var aside = document.getElementById("documentation_aside")
+                // var toc = document.getElementById("documentation_toc")
 
-                var checkScroll = function () {
+                var checkScroll = debounce(function () {
                     /*
                      ** Find the direction of scroll
                      ** 0 - initial, 1 - up, 2 - down
@@ -200,26 +222,26 @@
                     }
 
                     prevScroll = curScroll
-                }
-                var checkDelta = function () {
-                    var position = w.scrollY || doc.scrollTop
-                }
+                }, 150)
 
                 var toggleHeader = function (direction, curScroll) {
-                    if (direction === 2) {
+                    if (direction === 2 && curScroll > 100) {
+                        //scrolling up
                         //replace 52 with the height of your header in px
 
                         header.classList.add("-translate-y-full")
+
                         prevDirection = direction
                     } else if (direction === 1) {
+                        //scrolling down
                         header.classList.remove("-translate-y-full")
+
                         prevDirection = direction
                     }
                 }
 
                 window.addEventListener("scroll", checkScroll)
-                window.addEventListener("scroll", checkDelta)
             })()
-        </script>
+        </script> -->
     </body>
 </html>

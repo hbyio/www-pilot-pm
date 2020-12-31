@@ -7,7 +7,7 @@
 <div>
     <!-- Desktop menu -->
     <div
-        class="max-w-screen-xl py-0 lg:py-2 mx-auto flex justify-between items-center border-gray-100 lg:justify-start lg:space-x-10"
+        class="max-w-screen-xl py-1 mx-auto flex justify-between items-center border-gray-100 lg:justify-start lg:space-x-10"
     >
         <!-- Logo -->
         <div class="lg:flex">
@@ -275,5 +275,25 @@
     </div>
 
     <!-- Breadcrumb -->
-    {{ partial "breadcrumb" . }}
+    {{ if not .IsHome }}
+        {{ $url := replace .Permalink (printf "%s" .Site.BaseURL) "" }}
+        {{ $.Scratch.Add "path" .Site.BaseURL }}
+        {{ $.Scratch.Add "path" "/" }}
+
+        <nav class="py-1 text-brand-400 font-medium bg-white border-t border-gray-50">
+            <div class="flex max-w-screen-xl  mx-auto">
+                <a class="text-brand-400 hover:underline" href="/">home</a>
+                {{ range $index, $element := split $url "/" }}
+                    {{ $.Scratch.Add "path" $element }}
+                    {{ if ne $element "" }}
+                        <div class="mx-2">&rarr;</div>
+                        <a class="text-brand-400 hover:underline" href="{{ $.Scratch.Get "path" }}">
+                            {{ . }}
+                        </a>
+                        {{ $.Scratch.Add "path" "/" }}
+                    {{ end }}
+                {{ end }}
+            </div>
+        </nav>
+    {{ end }}
 </div>

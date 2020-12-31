@@ -49,11 +49,11 @@ a {
 }
 
 #TableOfContents > ul > li > a {
-    @apply group rounded-md  py-1 flex z-50 items-center text-base font-medium;
+    @apply group rounded-md  py-1 flex z-50 items-center text-brand-700 text-sm font-medium;
 }
 
 #TableOfContents > ul > li > ul > li > a {
-    @apply group rounded-md pl-8 py-1 flex items-center text-base font-medium;
+    @apply group rounded-md pl-6 py-1 flex items-center text-brand-700 text-sm font-medium;
 }
 
 #TableOfContents > ul > li > a.active,

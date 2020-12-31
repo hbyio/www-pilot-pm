@@ -3,7 +3,7 @@
     {{ $.Scratch.Add "path" .Site.BaseURL }}
     {{ $.Scratch.Add "path" "/" }}
 
-    <nav class="py-2 text-brand-400 font-medium bg-white border-t border-gray-50">
+    <nav class="h-8 text-brand-400 font-medium bg-white border-t border-gray-50">
         <div class="flex max-w-screen-xl  mx-auto">
             <a class="text-brand-400 hover:underline" href="/">home</a>
             {{ range $index, $element := split $url "/" }}

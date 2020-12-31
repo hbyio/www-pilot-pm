@@ -1,28 +1,20 @@
 {{ define "main" }}
-    <main class="max-w-screen-xl mx-auto pb-10">
-        <div class="lg:grid lg:grid-cols-12 ">
-            <div class="lg:hidden py-2">
-                <label for="tabs" class="sr-only">Select a tab</label>
-                <select
-                    id="tabs"
-                    name="tabs"
-                    onchange="location = this.value;"
-                    class="block w-full   cursor-pointer focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
-                >
-                    {{ range .Site.Menus.documentation.ByWeight }}
-                        <option value="{{ .URL }}">
-                            <span class="truncate">{{- .Name -}}</span>
-                        </option>
-                    {{ end }}
-                </select>
-            </div>
-            <aside
-                style="height:calc(100% - 120px);"
-                class="hidden mb-2 py-3 -mx-2 px-2 lg:flex  flex-col fixed h-full bg-white  w-80 overflow-y-auto lg:col-span-3"
-            >
+    {{ $headerHeight :=  "85px" }}{{ $headerHeight }}
+    <div id="documentationPage" class="flex ">
+        <div
+            id="documentation_aside"
+            style="height: calc(100vh - {{ $headerHeight }}); top: {{ $headerHeight }};"
+            class="flex-1 z-10 overflow-y-auto hidden xl:flex flex-col sticky bg-white  w-80"
+        >
+            <div class="w-60  pt-10 h-full flex flex-col border-r border-gray-200">
+                <div class="text-sm font-bold mb-5 uppercase">Documentation</div>
                 {{ .Scratch.Set "currentPage" .Title }}
                 {{ range .Site.Menus.documentation.ByWeight }}
-                    <a href="{{ .URL }}" title="{{ .Title }}" class="menu">
+                    <a
+                        href="{{ .URL }}"
+                        title="{{ .Title }}"
+                        class="inline-flex items-center py-2  text-base font-medium rounded-md text-gray-900  hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+                    >
                         {{ if ne .Params.svg nil }}
                             <div class="{{ .Params.class }} w-6 h-6 mr-1">
                                 {{ partial (printf "svg/%s.svg" .Params.svg) }}
@@ -34,36 +26,43 @@
                         {{ end }}
                         <span class="truncate">{{- .Name -}}</span>
                     </a>
-                    {{ if eq .Page.Title ($.Scratch.Get "currentPage") }}
-                        <div class="ml-3 pl-4 border-l border-gray-200">
-                            {{ .Page.TableOfContents }}
-                        </div>
-                    {{ end }}
                 {{ end }}
-            </aside>
-
-            <!-- Content -->
-            <div class="lg:ml-80 float-left w-full px-5  lg:col-span-9">
-                <section class="mx-auto">
-                    <div class="mx-auto text-base">
-                        <p
-                            class="text-base font-semibold leading-6 tracking-wide text-indigo-600 uppercase"
-                        >
-                            {{ .Params.tag }}
-                        </p>
-                        <h1
-                            class="mb-8 text-4xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-5xl sm:leading-none"
-                        >
-                            {{ .Title }}
-                        </h1>
-                    </div>
-                    <div class="prose prose-lg sm:prose-xl text-gray-800">
-                        {{ .Content }}
-                    </div>
-                </section>
             </div>
         </div>
-    </main>
+
+        <!-- Content -->
+        <div class="reading mx-auto text-base my-24">
+            <p class="text-base font-semibold leading-6 tracking-wide text-indigo-600 uppercase">
+                {{ .Params.tag }}
+            </p>
+            <h1
+                class="mb-8 text-4xl font-extrabold  tracking-tight text-gray-900 sm:text-5xl  sm:leading-none"
+            >
+                {{ .Title }}
+            </h1>
+            <div class="prose prose-lg sm:prose-xl text-gray-800 mx-auto">
+                {{ .Content }}
+            </div>
+            <div class="h-24 bg-green-600 flex justify-around mt-10">
+                <button class="button">previous page</button>
+                <button class="button">next page</button>
+            </div>
+        </div>
+
+        <!-- ToC -->
+        {{ if eq .Page.Title ($.Scratch.Get "currentPage") }}
+            <div
+                id="documentation_toc"
+                style="height: calc(100vh - {{ $headerHeight }}); top: {{ $headerHeight }};"
+                class="flex-1 z-10 overflow-y-auto hidden lg:flex flex-col sticky bg-white  w-80 "
+            >
+                <div class="pt-10 h-full border-l border-gray-200 ml-10 px-5 text-brand-700 w-80">
+                    <div class="text-sm font-bold mb-5 uppercase">Dans cette page</div>
+                    {{ .Page.TableOfContents }}
+                </div>
+            </div>
+        {{ end }}
+    </div>
 {{ end }}
 
 {{ define "script" }}

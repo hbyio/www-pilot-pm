@@ -9,9 +9,9 @@ title: La validation externe
 weight: 4
 ---
 
-<figure class="full-width">
-<img class="rounded-lg shadow-lg" src="validation.png">
-</figure>
+{{<figure "validation.png" >}}
+Qualifiez vos documents et contrôlez leur validation
+{{</figure>}}
 
 Pilot permet à ses utilisateurs de communiquer des documents à valider vers des contacts ne disposant pas de compte sur la plateforme.
 
@@ -33,6 +33,6 @@ Le contact externe pourra modifier directement le document à sa convenance, lai
 
 L'utilisateur de Pilot ayant initié la demande de validation sera notifié dès la validation effectuée.
 
-<figure class="full-width">
-<img class="rounded-lg shadow-lg" src="validationexterne.gif">
-</figure>
+{{<figure "validationexterne.gif" >}}
+Qualifiez vos documents et contrôlez leur validation
+{{</figure>}}
