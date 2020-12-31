@@ -96,7 +96,7 @@
                 links: null,
                 headings: null,
                 intersectionOptions: {
-                    rootMargin: "0px",
+                    rootMargin: "0px -10% -30%",
                     threshold: 1,
                 },
                 previousSection: null,
@@ -114,27 +114,27 @@
                     })
                 },
 
-                handleLinkClick(evt) {
-                    evt.preventDefault()
-                    let id = evt.target.getAttribute("href").replace("#", "")
+                // handleLinkClick(evt) {
+                //     evt.preventDefault()
+                //     let id = evt.target.getAttribute("href").replace("#", "")
 
-                    let section = this.headings.find((heading) => {
-                        return heading.getAttribute("id") === id
-                    })
+                //     let section = this.headings.find((heading) => {
+                //         return heading.getAttribute("id") === id
+                //     })
 
-                    section.setAttribute("tabindex", -1)
-                    section.focus()
+                //     section.setAttribute("tabindex", -1)
+                //     section.focus()
 
-                    window.scroll({
-                        behavior: motionQuery.matches ? "instant" : "smooth",
-                        top: section.offsetTop - 15,
-                        block: "start",
-                    })
+                //     window.scroll({
+                //         behavior: motionQuery.matches ? "instant" : "smooth",
+                //         top: section.offsetTop,
+                //         block: "start",
+                //     })
 
-                    if (this.container.classList.contains("is-active")) {
-                        this.container.classList.remove("is-active")
-                    }
-                },
+                //     if (this.container.classList.contains("is-active")) {
+                //         this.container.classList.remove("is-active")
+                //     }
+                // },
 
                 handleObserver(entries, observer) {
                     entries.forEach((entry) => {
