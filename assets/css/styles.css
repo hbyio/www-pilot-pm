@@ -24,8 +24,11 @@ img.grayscale {
 }
 
 a {
-    @apply text-brand-900 hover:text-blue-800 cursor-pointer;
+    @apply text-brand-900 cursor-pointer;
     transition: all 100ms ease-in-out;
+}
+a:hover {
+    @apply text-blue-800;
 }
 
 .form-input {
@@ -51,14 +54,20 @@ a {
 #TableOfContents > ul > li > a {
     @apply group rounded-md  py-1 flex z-50 items-center text-brand-700 text-sm font-medium;
 }
+#TableOfContents > ul > li > a:hover {
+    @apply text-blue-800 bg-blue-50;
+}
 
 #TableOfContents > ul > li > ul > li > a {
     @apply group rounded-md pl-6 py-1 flex items-center text-brand-700 text-sm font-medium;
 }
+#TableOfContents > ul > li > ul > li > a:hover {
+    @apply text-blue-800 bg-blue-50;
+}
 
 #TableOfContents > ul > li > a.active,
 #TableOfContents > ul > li > ul > li > a.active {
-    @apply text-blue-600 font-medium;
+    @apply text-green-600 font-medium;
 }
 
 .prose ul > li::before {
