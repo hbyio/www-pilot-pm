@@ -65,9 +65,14 @@ a:hover {
     @apply text-blue-800 bg-blue-50;
 }
 
-#TableOfContents > ul > li > a.active,
-#TableOfContents > ul > li > ul > li > a.active {
+#TableOfContents > ul > li > a.is-active,
+#TableOfContents > ul > li > ul > li > a.is-active {
     @apply text-yellow-800 bg-yellow-50 font-medium;
+}
+
+#TableOfContents > ul > li > a.is-visible,
+#TableOfContents > ul > li > ul > li > a.is-visible {
+    @apply text-green-800 bg-green-50 font-medium;
 }
 
 .prose ul > li::before {
