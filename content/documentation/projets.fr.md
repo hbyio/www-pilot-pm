@@ -4,7 +4,7 @@ date: 2018-01-27
 draft: false
 menu:
     documentation:
-        weight: 1
+        weight: 2
         params:
             svg: project
             class: text-purple-400

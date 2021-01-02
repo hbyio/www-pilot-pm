@@ -2,7 +2,11 @@
 author: mb
 date: 2018-01-27
 draft: false
-menu: documentation
+menu:
+    documentation:
+        weight: 11
+        params:
+            svg: documentation
 icon: folder
 description: Vous pouvez rassembler vos contenus dans des projets pour organiser le travail de l’équipe
 slug: modeles-contenus

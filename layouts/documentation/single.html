@@ -1,13 +1,13 @@
 {{ define "main" }}
-    {{ $headerHeight :=  "85px" }}
-    <div id="documentationPage" class="flex ">
-        <div
+    {{ $headerHeight :=  "84px" }}
+    <div id="documentationPage" class="flex px-2">
+        <aside
             id="documentation_aside"
             style="height: calc(100vh - {{ $headerHeight }}); top: {{ $headerHeight }};"
-            class="py-5 flex z-10 overflow-y-auto hidden lg:flex flex-col sticky bg-white"
+            class="py-5 overflow-y-auto hidden sticky lg:flex lg:flex-col  "
         >
-            <div class="w-60 xl:w-80  h-full flex flex-col border-r border-brand-100">
-                <div class="text-sm font-bold mb-5 uppercase pl-12">Documentation</div>
+            <div class="space-y-1 p-2 h-full flex flex-col">
+                <a href="/documentation" class="text-base font-bold p-2 uppercase">Documentation</a>
 
                 {{ $currentPage := . }}
 
@@ -15,14 +15,14 @@
                     <a
                         href="{{ .URL }}"
                         title="{{ .Title }}"
-                        class="{{ if $currentPage.IsMenuCurrent "documentation" . }}bg-brand-100{{ end }} pl-5 inline-flex items-center py-2  text-base font-medium rounded-l-md text-brand-900  hover:bg-brand-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500 "
+                        class="doc-menu {{ if $currentPage.IsMenuCurrent "documentation" . }}is-active{{ end }} "
                     >
                         {{ if ne .Params.svg nil }}
-                            <div class="{{ .Params.class }} w-6 h-6 mr-1">
+                            <div class="{{ .Params.class }} w-5 h-5 mr-1">
                                 {{ partial (printf "svg/%s.svg" .Params.svg) }}
                             </div>
                             {{ else }}
-                            <div class="{{ .Params.class }} text-brand-400 w-6 h-6 mr-1">
+                            <div class="{{ .Params.class }} text-brand-400 w-5 h-5 mr-1">
                                 {{ partial "svg/documentation.svg" }}
                             </div>
                         {{ end }}
@@ -30,10 +30,13 @@
                     </a>
                 {{ end }}
             </div>
-        </div>
+        </aside>
 
         <!-- Content -->
-        <div id="article" class="bg-brand-100 flex-1 flex-col text-base py-5 lg:px-10 max-w-full">
+        <div
+            id="article"
+            class="bg-brand-50 flex-1 flex-col text-base py-5 pb-72  lg:px-10 max-w-full"
+        >
             <div class="reading mx-auto  lg:max-w-xl xl:max-w-4xl 2xl:max-w-5xl">
                 <p
                     class="text-base font-semibold leading-6 tracking-wide text-indigo-600 uppercase"
@@ -50,13 +53,13 @@
                 </div>
             </div>
             <div class=" bg-brand-200 flex justify-between mt-10 rounded-lg">
-                {{ with .Site.RegularPages.Prev . }}
+                {{ with .PrevInSection }}
                     <a class="button" href="{{ .RelPermalink }}">
                         {{ partial "svg/chevron-left.svg" . }}
                         {{ .Name }}
                     </a>
                 {{ end }}
-                {{ with .Site.RegularPages.Next . }}
+                {{ with .NextInSection }}
                     <a class="button" href="{{ .RelPermalink }}">
                         {{ .Name }}
                         {{ partial "svg/chevron-right.svg" . }}
@@ -70,11 +73,11 @@
         <div
             id="toc"
             style="height: calc(100vh - {{ $headerHeight }}); top: {{ $headerHeight }};"
-            class="py-5 flex z-10 overflow-x-hidden hidden lg:flex flex-col sticky bg-white"
+            class="w-60 xl:w-80 py-5 overflow-y-auto hidden sticky lg:flex lg:flex-col"
         >
-            <div class=" w-60 xl:w-80 h-full border-l border-gray-200 px-5 text-brand-700">
+            <div class="h-full px-5 text-brand-700">
                 {{ if ne false .Params.toc }}
-                    <div class="text-sm font-bold mb-5 uppercase">Dans cette page</div>
+                    <div class="text-sm font-bold mb-5 px-2 uppercase">Dans cette page</div>
                     {{ .Page.TableOfContents }}
                 {{ end }}
             </div>
@@ -96,7 +99,7 @@
                 links: null,
                 headings: null,
                 intersectionOptions: {
-                    rootMargin: "0px -10% -30%",
+                    rootMargin: "-5% -10% -50%",
                     threshold: 1,
                 },
                 previousSection: null,

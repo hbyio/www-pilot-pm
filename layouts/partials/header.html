@@ -83,7 +83,7 @@
                                                 class="-m-3 p-3 flex items-start space-x-4 rounded hover:bg-gray-50 transition ease-in-out duration-150 {{ if $currentPage.IsMenuCurrent "main" . }}bg-brand-100{{ end }}"
                                             >
                                                 {{ if .Params.Svg }}
-                                                    {{ partial (printf "svg/%s.svg" .Params.Svg ) (dict "color" "text-brand-500") . }}
+                                                    {{ partial (printf "svg/%s.svg" .Params.Svg ) (dict "class" "h-6 w-6 text-brand-500") . }}
                                                 {{ end }}
                                                 <div class="space-y-1">
                                                     <p

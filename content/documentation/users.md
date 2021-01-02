@@ -2,12 +2,14 @@
 author: mb
 date: 2018-01-27
 draft: false
-menu: documentation
+menu:
+    documentation:
+        weight: 13
+
 icon: folder
 description: Vous pouvez rassembler vos contenus dans des projets pour organiser le travail de l’équipe
 slug: utilisateurs
 title: Gérer les utilisateurs
-weight: 3
 ---
 
 ## Présentation

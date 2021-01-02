@@ -2,7 +2,12 @@
 author: Mathieu
 date: 2020-06-20
 draft: false
-menu: documentation
+menu:
+    documentation:
+        weight: 12
+        params:
+            svg: documentation
+
 description: La validation des contenus
 slug: validation
 title: La validation externe

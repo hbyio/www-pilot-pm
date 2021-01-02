@@ -4,7 +4,7 @@ date: 2020-06-20
 draft: false
 menu:
     documentation:
-        weight: 2
+        weight: 3
         params:
             svg: channel
             class: text-green-600

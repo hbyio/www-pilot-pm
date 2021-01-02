@@ -51,30 +51,6 @@ a:hover {
     @apply inline-flex items-center py-2  text-base font-semibold rounded-md text-gray-900 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500;
 }
 
-#TableOfContents > ul > li > a {
-    @apply group rounded-md  py-1 flex z-50 items-center text-brand-700 text-sm font-medium;
-}
-#TableOfContents > ul > li > a:hover {
-    @apply text-blue-800 bg-blue-50;
-}
-
-#TableOfContents > ul > li > ul > li > a {
-    @apply group rounded-md pl-6 py-1 flex items-center text-brand-700 text-sm font-medium;
-}
-#TableOfContents > ul > li > ul > li > a:hover {
-    @apply text-blue-800 bg-blue-50;
-}
-
-#TableOfContents > ul > li > a.is-active,
-#TableOfContents > ul > li > ul > li > a.is-active {
-    @apply text-yellow-800 bg-yellow-50 font-medium;
-}
-
-#TableOfContents > ul > li > a.is-visible,
-#TableOfContents > ul > li > ul > li > a.is-visible {
-    @apply text-green-800 bg-green-50 font-medium;
-}
-
 .prose ul > li::before {
     background-color: black;
 }
@@ -92,4 +68,53 @@ a:hover {
 .reading > div > figure {
     max-width: 100vw;
     @apply mx-auto;
+}
+
+/* 
+ * Documentation
+ *        
+*/
+
+.doc-menu {
+    @apply inline-flex items-center rounded p-2 text-base font-medium rounded text-brand-900;
+    @apply transition-all transition-transform ease-in-out duration-100;
+    @apply hover:bg-brand-100 hover:text-brand-900;
+    @apply focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-brand-400;
+}
+
+.doc-menu.is-active {
+    @apply bg-brand-50;
+}
+
+#TableOfContents > ul {
+    @apply space-y-1;
+}
+
+#TableOfContents > ul > li > ul > li > a,
+#TableOfContents > ul > li > a {
+    @apply rounded p-2 flex items-center text-brand-700 text-sm font-medium;
+}
+
+#TableOfContents > ul > li > ul > li > a {
+    @apply pl-3 py-1;
+}
+
+#TableOfContents > ul > li > ul > li > a::before {
+    content: "\2937";
+    @apply font-bold mr-2;
+}
+
+#TableOfContents > ul > li > ul > li > a:hover,
+#TableOfContents > ul > li > a:hover {
+    @apply text-blue-800 bg-blue-50;
+}
+
+#TableOfContents > ul > li > a.is-active,
+#TableOfContents > ul > li > ul > li > a.is-active {
+    @apply text-yellow-800 bg-yellow-50 font-medium;
+}
+
+#TableOfContents > ul > li > a.is-visible,
+#TableOfContents > ul > li > ul > li > a.is-visible {
+    @apply text-green-900 bg-green-50 font-medium;
 }
