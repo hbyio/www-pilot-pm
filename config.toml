@@ -16,6 +16,10 @@ enableRobotsTXT = true
 [imaging]
 quality = 100
 
+# [build]
+# Used by PurgeCSS
+# writeStats = true
+
 [markup]
 [markup.goldmark]
   [markup.goldmark.extensions]
