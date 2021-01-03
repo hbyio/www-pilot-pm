@@ -44,36 +44,65 @@
                     <div class="flex-1 w-full pb-10 bg-gray-800"></div>
                 </div>
                 <div class="max-w-screen-xl px-4 pb-10 mx-auto sm:px-6">
-                    {{ partial "img-responsive.html" (dict "src" "screenshots/itemlist.png" "alt" "Item list" "class" "relative rounded-lg") }}
+                    {{ partial "img.html" (dict "src" "screenshots/itemlist.png" "alt" "Item list" "class" "relative rounded-lg") . }}
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Our clients -->
-    {{ partial "clients.html" . }}
+    <section id="clients" class="home-section">
+        <div>
+            <p class="text-base text-brand-500 font-semibold tracking-wide uppercase">
+                Ils nous font confiance
+            </p>
+            <h2
+                class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+            >
+                Nos clients
+            </h2>
+            <p class="mt-4 max-w-3xl text-xl text-gray-500 ">
+                Nous accompagnons les équipes de ces grands groupes (certaines depuis 2013) dans
+                leurs refontes de sites, prises de parole sur les réseaux sociaux ou stratégies de
+                marque employeur.
+            </p>
+        </div>
+        <div
+            class="flex items-center overflow-x-auto py-10 space-x-2 md:space-x-5 lg:space-x-8 mx-auto"
+        >
+            {{ partial "img-logo.html" (dict "src" "/images/clients/harmonie.jpg" "alt" "Logo Harmonie Mutuelle") . }}
+            {{ partial "img-logo.html" (dict "src" "/images/clients/primagaz.png" "alt" "Logo Primagaz") . }}
+            {{ partial "img-logo.html" (dict "src" "/images/clients/vinci.jpg" "alt" "Logo Vinci Construction Mutuelle") . }}
+            {{ partial "img-logo.html" (dict "src" "/images/clients/banquepop.png" "alt" "Logo Banque Populaire") . }}
+            {{ partial "img-logo.html" (dict "src" "/images/clients/mousquetaires.jpg" "alt" "Logo Mousquetaires") . }}
+            {{ partial "img-logo.html" (dict "src" "/images/clients/moet.jpg" "alt" "Logo Moët Henessy") . }}
+            {{ partial "img-logo.html" (dict "src" "/images/clients/mgen.jpg" "alt" "Logo Mgen") . }}
+        </div>
+    </section>
 
     <!-- Strategic content -->
-    <div class="container py-10 bg-gray-100 rounded">
-        <h2
-            class="max-w-screen-xl px-4 mx-auto text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-loose sm:px-6 lg:px-8"
-        >
-            {{ i18n "strategic" }}
-        </h2>
-        <div class="flex flex-col justify-center max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8 ">
-            <div class="my-2 text-xl text-gray-900">
+    <section id="added-value" class="home-section">
+        <div>
+            <p class="text-base text-brand-500 font-semibold tracking-wide uppercase">
+                Vos contenus ont de la valeur
+            </p>
+            <h2
+                class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+            >
+                Ne perdez plus de temps
+            </h2>
+            <p class="mt-4 max-w-3xl text-xl text-gray-500 ">
                 {{ i18n "strategicExplain" }}
-            </div>
-            <div class="my-2 text-xl text-gray-600">
-                {{ i18n "strategicValue" }}
-            </div>
-            <div class="flex justify-center mt-10">
+            </p>
+        </div>
+        <div class="flex flex-col justify-center  mx-auto">
+            <div class="flex justify-center">
                 <ul class="max-w-screen-xl md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
                     <li>
                         <div class="flex">
                             <div class="flex-shrink-0">
                                 <div
-                                    class="flex items-center justify-center w-12 h-12 text-white rounded-md bg-brand-700"
+                                    class="flex items-center justify-center w-12 h-12 text-brand-800 rounded-md bg-gradient-to-tr from-accent-100 to-accent-500"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -195,7 +224,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Testimonials -->
     {{ if eq .Lang "fr" }}

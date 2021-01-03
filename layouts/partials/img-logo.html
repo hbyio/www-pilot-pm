@@ -1,0 +1,16 @@
+{{- $image := resources.Get .src -}}
+{{- $image := $image.Filter (images.Grayscale) -}}
+{{- $image := $image.Resize "x100 q75 jpg" -}}
+
+{{ with .alt }}
+    {{ else }}
+    {{ errorf "Missing mandatory value for param 'alt': %s" .Position }}
+{{ end }}
+<img
+    class="relative rounded-lg h-16 md:h-20 p-1 w-auto"
+    height="100"
+    width="auto"
+    src="{{ $image.RelPermalink }}"
+    alt="{{ .alt }}"
+    loading="lazy"
+/>
