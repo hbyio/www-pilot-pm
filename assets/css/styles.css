@@ -60,7 +60,9 @@ a:hover {
 }
 
 .reading > h1,
-.reading > div > *:not(figure, video, img) {
+.reading > div > *:not(figure),
+.reading > div > *:not(img),
+.reading > div > *:not(video) {
     max-width: 680px;
     @apply mx-auto;
 }
