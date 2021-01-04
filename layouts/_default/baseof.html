@@ -81,12 +81,6 @@
             src="{{ $alpine.RelPermalink }}"
             defer
         ></script>
-
-        {{ if not .Site.IsServer }}
-            <!-- OR WITH ENV VAR if eq (getenv "HUGO_ENV") "production"  -->
-            <!--ONLY PRODUCTION-->
-            {{ partial "analytics.html" . }}
-        {{ end }}
     </head>
 
     <body x-data="{ mobileMenuOpen: false, iealert: true }">
@@ -108,13 +102,6 @@
                 </footer>
             {{ end }}
         </div>
-
-        <!-- Intercom -->
-        {{ if not .Site.IsServer }}
-            <!-- OR WITH ENV VAR if eq (getenv "HUGO_ENV") "production"  -->
-            <!--ONLY PRODUCTION-->
-            {{ partial "chat.html" . }}
-        {{ end }}
 
         {{ block "script" . }}{{ end }}
         <!-- https://codingreflections.com/hide-header-on-scroll-down/ -->
