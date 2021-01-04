@@ -13,6 +13,7 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
+            // https://tailwindcss.com/docs/customizing-colors
             colors: {
                 brand: colors.blueGray,
                 gray: colors.coolGray,

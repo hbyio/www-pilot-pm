@@ -2,6 +2,7 @@
     {{ else }}
     {{ errorf "Missing mandatory value for param 'alt': %s" .Position }}
 {{ end }}
+
 <img
     {{ if .class }}class="{{ .class }}"{{ end }}
     src="{{ .src }}"
