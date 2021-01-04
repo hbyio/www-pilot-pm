@@ -40,7 +40,9 @@
                 <div class="flex-1 w-full pb-10 bg-gray-800 rounded"></div>
             </div>
             <div class="max-w-screen-xl px-4 pb-10 mx-auto sm:px-6">
-                {{ partial "img.html" (dict "src" "screenshots/itemlist.png" "alt" "Item list" "class" "relative shadow rounded-lg") . }}
+                {{- $image := resources.Get "screenshots/itemlist.png" -}}
+                {{- $image = $image.Resize "1200x jpg" -}}
+                {{ partial "img.html" (dict "src" $image.RelPermalink "alt" "w" "1200" "h" "611" "Item list" "class" "relative shadow rounded-lg") . }}
             </div>
         </div>
     </section>
