@@ -207,7 +207,7 @@
                                     {{ with .Site.GetPage "/blog/interview-harmoniemutuelle" }}
                                         {{- $image := .Resources.GetMatch "sabine_rebitzer-harmonie_mutuelle.jpg" -}}
                                         {{- $image = $image.Resize "x100 q35 jpg" -}}
-                                        {{ partial "img.html" (dict "src" $image.RelPermalink "alt" "Sabine Rebitzer profile image" "class" "h-12 w-12 rounded-full") }}
+                                        {{ partial "img.html" (dict "src" $image.RelPermalink "alt" "Sabine Rebitzer profile image" "w" $image.Width "h" $image.Height "class" "h-12 w-12 rounded-full") }}
                                     {{ end }}
                                 </div>
                                 <div class="ml-4">
@@ -243,7 +243,7 @@
                                     {{ with .Site.GetPage "/blog/interview-primagaz" }}
                                         {{- $image := .Resources.GetMatch "chloelarmignat.jpeg" -}}
                                         {{- $image = $image.Resize "x100 q35 jpg" -}}
-                                        {{ partial "img.html" (dict "src" $image.RelPermalink "alt" "Chloé Larmignat profile image" "class" "h-12 w-12 rounded-full") }}
+                                        {{ partial "img.html" (dict "src" $image.RelPermalink "alt" "Chloé Larmignat profile image" "w" $image.Width "h" $image.Height "class" "h-12 w-12 rounded-full") }}
                                     {{ end }}
                                 </div>
                                 <div class="ml-4">
