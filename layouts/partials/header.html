@@ -54,10 +54,10 @@
                 >
                     <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
                     {{ if .HasChildren }}
-                        <a type="button" @click="isOpen = !isOpen" class="ButtonMainNav">
+                        <button type="button" @click="isOpen = !isOpen" class="ButtonMainNav">
                             <span>{{ .Name }}</span>
                             {{ partial "svg/chevron-down.svg" . }}
-                        </a>
+                        </button>
                         {{ else }}
                         <a type="button" href="{{ .URL }}" class="ButtonMainNav">
                             <span>{{ .Name }}</span>
@@ -234,9 +234,18 @@
             {{ range .Site.Menus.main }}
                 <div>
                     <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
-                    <a href="{{ .URL }}" class="block text-purple-900 text-2xl font-black">
-                        {{ .Name }}
-                    </a>
+                    {{ if .URL }}
+                        <a
+                            href="{{ .URL }}"
+                            class="block underline text-purple-900 text-2xl font-black"
+                        >
+                            {{ .Name }}
+                        </a>
+                        {{ else }}
+                        <div class="block text-brand-900 text-2xl font-black">
+                            {{ .Name }}
+                        </div>
+                    {{ end }}
 
                     {{ if .HasChildren }}
                         <div class="space-y-3">
