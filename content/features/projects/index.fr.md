@@ -7,9 +7,10 @@ menu:
     main:
         weight: 1
         parent: features
+        name: "Projets : toutes les infos en un seul lieu"
         params:
             svg: project
-            subtitle: Campagne marketing, refonte de site web, magazine interne, mettez toutes les informations nécessaires à l'équipe en un seul lieu au lieu de multiplier les réunions.
+            subtitle: Ne répétez plus les mêmes choses sans arrêt, partagez une url.
             class: text-red-400
 ---
 
