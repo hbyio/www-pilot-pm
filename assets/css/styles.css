@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    @apply max-w-screen-xl px-5 mx-auto;
+    @apply max-w-screen-xl p-5 mx-auto;
 }
 
 img.grayscale {

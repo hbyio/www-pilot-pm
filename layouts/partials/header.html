@@ -198,10 +198,10 @@
         x-transition:leave="duration-100 ease-in"
         x-transition:leave-start="opacity-100 scale-100"
         x-transition:leave-end="opacity-0 scale-95"
-        class="absolute top-0 bottom-0 h-full  bg-brand-50 z-50 h-screen w-screen overflow-y-auto inset-x-0 p-0 transition transform origin-top-right lg:hidden"
+        class="absolute top-0 bottom-0 h-full  bg-white z-50 h-screen w-screen overflow-y-auto inset-x-0 p-0 transition transform origin-top-right lg:hidden"
     >
         <header
-            class="sticky top-0 bg-brand-900 shadow flex items-center justify-between mb-5 px-5 "
+            class="sticky top-0 bg-brand-900 shadow flex items-center justify-between mb-5 px-5"
         >
             <div>
                 <a
@@ -230,14 +230,14 @@
                 Fermer
             </button>
         </header>
-        <nav class="space-y-16 px-5 ">
+        <nav class="space-y-10">
             {{ range .Site.Menus.main }}
-                <div>
+                <div class="space-y-6 bg-brand-50  p-5">
                     <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
                     {{ if .URL }}
                         <a
                             href="{{ .URL }}"
-                            class="block underline text-purple-900 text-2xl font-black"
+                            class="block underline text-blue-900 text-2xl font-black"
                         >
                             {{ .Name }}
                         </a>
@@ -248,7 +248,7 @@
                     {{ end }}
 
                     {{ if .HasChildren }}
-                        <div class="space-y-3">
+                        <div class="space-y-1">
                             {{ range .Children }}
                                 <a
                                     href="{{ .URL }}"
@@ -258,9 +258,6 @@
                                         class="text-lg leading-6 font-bold text-brand-800 capitalize"
                                     >
                                         {{ .Name }}
-                                    </span>
-                                    <span class="text-base leading-5 text-brand-700">
-                                        {{ .Params.Subtitle }}
                                     </span>
                                 </a>
                             {{ end }}
