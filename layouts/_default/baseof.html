@@ -87,9 +87,11 @@
             <!--ONLY PRODUCTION-->
             {{ partial "analytics.html" . }}
         {{ end }}
+
+        <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
     </head>
 
-    <body x-data="{ mobileMenuOpen: false, iealert: true }">
+    <body x-data="{ mobileMenuOpen: false, iealert: true, modalOpen: false }">
         {{ partial "iealert.html" }}
 
         <div class="flex flex-col justify-between h-screen w-full">
@@ -108,7 +110,7 @@
                 </footer>
             {{ end }}
         </div>
-
+        <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
         {{ block "script" . }}{{ end }}
         <!-- https://codingreflections.com/hide-header-on-scroll-down/ -->
         <!-- <script>

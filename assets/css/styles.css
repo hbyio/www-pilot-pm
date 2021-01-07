@@ -56,12 +56,7 @@ a:hover {
 }
 
 .reading > h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+.reading > div > *:not(figure):not(img):not(video):not(.modal) {
     max-width: 680px;
     @apply mx-auto;
 }
@@ -154,4 +149,13 @@ a.button {
 
 .home-section__header {
     @apply my-3 text-3xl font-black uppercase text-gray-900;
+}
+
+video::cue {
+    background-image: #000;
+    color: white;
+}
+
+video::cue(b) {
+    color: green;
 }

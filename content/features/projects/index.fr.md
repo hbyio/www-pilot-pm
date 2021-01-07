@@ -16,7 +16,9 @@ Un projet éditorial est d'abord un ensemble d'informations qui seront utiles à
 
 Ces informations, comme le brief ou le budget, doivent être exposées en un seul endroit pour que tout le monde puisse en prendre connaissance et les utiliser.
 
-{{<video src="projet.mp4" poster="project.png" >}}
+{{<modalvideo src="projet.mp4" poster="project.png" >}}
+Repérez les différences en un coup d'oeil
+{{</modalvideo>}}
 
 {{<figure "project.png" >}}
 Repérez les différences en un coup d'oeil
@@ -34,4 +36,4 @@ Autant qu'un brief ou un kit de presse les échanges et discussions au sein de l
 
 ## Dupliquez et modifiez pour optimiser vos budgets
 
-Vous gérez des campagnes récurrentes ? Ne re-produisez (et re-payez) pas les mêmes contenus chaque année, cliquez sur "dupliquer", adaptez, c'est fait
+Un avantage considérable, lorsque l'on gère l'ensemble des contenus sur notre plateforme, c'est de pouvoir la dupliquer, chaque année ou chaque mois, pour éviter de produire et re-produire sans arrêt les mêmes informations.
