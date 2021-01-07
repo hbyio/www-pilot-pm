@@ -1,15 +1,14 @@
 ---
 author: Mathieu
-title: Tâches
-illustration: tasks.png
+title: Un workflow éditorial pour guider l'équipe
 overtitle: Fonctionnalité
 menu:
     main:
-        weight: 1
+        weight: 3
         parent: features
         params:
-            svg: task
-            subtitle: Affectez des tâches à vos contenus ou projets, pour vous même ou à d’autres membres de l’équipe
+            svg: map
+            subtitle: Créez un chemin de production clair pour tout le monde, depuis le brouillon jusqu'au "prêt à publier"
             class: text-red-400
 ---
 

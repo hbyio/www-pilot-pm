@@ -1,17 +1,14 @@
 ---
 author: Mathieu
-title: Rédaction + Collaboration
-illustration: validation.png
+title: Tout le monde modifie et valide un document unique⚡️
 overtitle: Fonctionnalité
-
 menu:
     main:
         weight: 2
         parent: features
         params:
-            svg: collaboration
-            subtitle: Créez des documents à plusieurs, faites valider en un clic
-            class: text-red-400
+            svg: item
+            subtitle: "Fini les fusions de documents stressantes : Modifiez vos documents à plusieurs, faites valider en un clic."
 ---
 
 ## Plus besoin de chercher la dernière version, elle est là

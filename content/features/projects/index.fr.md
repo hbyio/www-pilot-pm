@@ -11,7 +11,6 @@ menu:
         params:
             svg: project
             subtitle: Ne répétez plus les mêmes choses sans arrêt, partagez une url.
-            class: text-red-400
 ---
 
 ## Partagez vos fichiers
