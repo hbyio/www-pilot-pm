@@ -16,7 +16,7 @@ Un projet éditorial est d'abord un ensemble d'informations qui seront utiles à
 
 Ces informations, comme le brief ou le budget, doivent être exposées en un seul endroit pour que tout le monde puisse en prendre connaissance et les utiliser.
 
-{{<video src="projet.mp4" >}}
+{{<video src="projet.mp4" poster="project.png" >}}
 
 {{<figure "project.png" >}}
 Repérez les différences en un coup d'oeil

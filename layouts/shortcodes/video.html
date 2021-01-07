@@ -1,6 +1,7 @@
 <video
     class="bg-blue-50 rounded-lg py-6 border border-gray-100 px-4 w-full"
     controls
+    preload="none"
     poster="{{ .Get "poster" }}"
 >
     <source src="{{ .Get "src" }}" type="video/mp4" />
