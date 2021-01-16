@@ -1,6 +1,6 @@
 ---
 author: Mathieu
-title: "Projets : toutes les infos en un seul lieu"
+title: "Projets : au coeur du sujet"
 illustration: project_detail.png
 overtitle: Fonctionnalité
 menu:
@@ -12,11 +12,11 @@ menu:
             subtitle: Ne répétez plus les mêmes choses sans arrêt, partagez une url.
 ---
 
+> Contenus, tâches, décisions, images ou vidéo haute définition : rassemblez toutes les ressources nécessaires à l'ensemble de l'équipe. Réduisez sensiblement vos temps et coûts de production.
+
 Dans les outils de gestion de projets classiques vous gérez uniquement des tâches. Avec Pilot nous vous proposons en plus de gérer directement les contenus à produire avec notre éditeur avancé.
 
 Au sein d'un projet vous noterez et qualifierez toutes les informations nécessaires à l'équipe sans avoir à les répéter de multiples fois dans de multiples réunions.
-
-Ces informations, comme le brief ou le budget, doivent être exposées en un seul endroit pour que tout le monde puisse en prendre connaissance et les utiliser.
 
 {{<video src="projeteditorial.mp4" poster="project.png" vtt="project.vtt" >}}
 Vidéo de présentation d'un projet - 2mn
