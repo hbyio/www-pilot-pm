@@ -1,5 +1,6 @@
 ---
 title: Documentation
+draft: true
 description: Toutes les fonctionnalités expliquées
 layout: single
 toc: false

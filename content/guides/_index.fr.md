@@ -1,5 +1,6 @@
 ---
 title: Guides
+draft: true
 menu:
     main:
         name: Guides
