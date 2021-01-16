@@ -23,7 +23,7 @@ Encadrez la production de vos contributeurs avec des formulaires spécialement a
 
 Collaborez à plusieurs, en même temps, sur un même document. Plus de problème de conflits de versions, on ne se marche plus sur les pieds.
 
-{{<figure "diff.png" >}}
+{{<figure src="diff.png" >}}
 Repérez les différences en un coup d'oeil
 {{</figure>}}
 
@@ -35,7 +35,7 @@ Mentionnez les membres de votre équipes sur une partie d'un texte ou même un P
 
 Ce document est il valide selon la structure décidée ? Repérez les problèmes le plus tôt possible pour ne pas perdre de temps et évitez de devoir reprendre tout une site ou une maquette à la dernière minute parce qu'il manque des informations ou vous rendre compte trop tard qu'elles ne correspondent pas aux gabarits
 
-{{<figure "validation.png" >}}
+{{<figure src="validation.png" >}}
 Qualifiez vos documents et contrôlez leur validation
 {{</figure>}}
 
@@ -43,6 +43,6 @@ Qualifiez vos documents et contrôlez leur validation
 
 Ce document est il valide selon la structure décidée ? Repérez les problèmes le plus tôt possible pour ne pas perdre de temps et évitez de devoir reprendre tout une site ou une maquette à la dernière minute parce qu'il manque des informations ou vous rendre compte trop tard qu'elles ne correspondent pas aux gabarits
 
-{{<figure "annotate_pdf.png" >}}
+{{<figure src="annotate_pdf.png" >}}
 Gérez les versions et annotations de documents PDF
 {{</figure>}}

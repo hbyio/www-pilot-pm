@@ -1,4 +1,4 @@
-{{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get 0)) }}
+{{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
 {{ $large := $src.Resize "1200x" }}
 {{ $medium := $src.Resize "800x" }}
 {{ $small := $src.Resize "400x" }}

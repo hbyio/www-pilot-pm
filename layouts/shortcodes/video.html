@@ -1,11 +1,21 @@
-<video
-    class="bg-blue-50 rounded-lg py-6 border border-gray-100 px-4 w-full"
-    controls
-    preload="none"
-    poster="{{ .Get "poster" }}"
->
-    <source src="{{ .Get "src" }}" type="video/mp4" />
-    <!-- some other alternative sources -->
-    <!-- <source src="foobar.ogv" type="video/ogv" /> -->
-    Sorry, your browser doesn't support embedded videos.
-</video>
+{{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "poster")) }}
+{{ $large := $src.Resize "1200x" }}
+{{ $medium := $src.Resize "800x" }}
+{{ $small := $src.Resize "400x" }}
+<figure style="min-height: 700px;" class="bg-purple-50 rounded-lg py-6 border border-gray-100 px-4">
+    <video class="rounded-lg opacity-1" controls preload="none" poster="{{ .Get "poster" }}">
+        <source src="{{ .Get "src" }}" type="video/mp4" />
+        <!-- some other alternative sources -->
+        <!-- <source src="foobar.ogv" type="video/ogv" /> -->
+        Sorry, your browser doesn't support embedded videos.
+        <track src="{{ .Get "vtt" }}" srclang="fr" default />
+    </video>
+
+    {{ with .Inner }}
+        <figcaption>
+            <div style="max-width: 1200px;" class="text-purple-500 font-medium mx-auto -mb-3">
+                {{ . }}
+            </div>
+        </figcaption>
+    {{ end }}
+</figure>

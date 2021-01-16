@@ -87,8 +87,6 @@
             <!--ONLY PRODUCTION-->
             {{ partial "analytics.html" . }}
         {{ end }}
-
-        <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
     </head>
 
     <body x-data="{ mobileMenuOpen: false, iealert: true, modalOpen: false }">
@@ -110,7 +108,6 @@
                 </footer>
             {{ end }}
         </div>
-        <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
         {{ block "script" . }}{{ end }}
         <!-- https://codingreflections.com/hide-header-on-scroll-down/ -->
         <!-- <script>
