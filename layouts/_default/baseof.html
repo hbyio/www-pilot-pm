@@ -87,6 +87,8 @@
             <!--ONLY PRODUCTION-->
             {{ partial "analytics.html" . }}
         {{ end }}
+        <script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/plyr.css" />
     </head>
 
     <body x-data="{ mobileMenuOpen: false, iealert: true, modalOpen: false }">
@@ -108,6 +110,9 @@
                 </footer>
             {{ end }}
         </div>
+        <script>
+            const player = new Plyr("#player")
+        </script>
         {{ block "script" . }}{{ end }}
         <!-- https://codingreflections.com/hide-header-on-scroll-down/ -->
         <!-- <script>
