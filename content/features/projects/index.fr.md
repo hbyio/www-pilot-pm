@@ -1,18 +1,17 @@
 ---
 author: Mathieu
-title: "Le point de rendez-vous : les projets📒"
+title: "Les projets éditoriaux📒"
 illustration: project_detail.png
 overtitle: Fonctionnalité
+svg: project
+subtitle: "Partagez facilement contenus, fichiers et tâches. Réduisez sensiblement vos temps et coûts de production."
 menu:
     main:
         weight: 1
         parent: features
-        params:
-            svg: project
-            subtitle: Ne répétez plus les mêmes choses sans arrêt, partagez une url.
 ---
 
-> Contenus, tâches, décisions, images ou vidéo haute définition : rassemblez toutes les ressources nécessaires à l'ensemble de l'équipe. Réduisez sensiblement vos temps et coûts de production.
+>
 
 Dans les outils de gestion de projets classiques vous gérez uniquement des tâches. Avec Pilot nous vous proposons en plus de gérer directement les contenus à produire avec notre éditeur avancé.
 

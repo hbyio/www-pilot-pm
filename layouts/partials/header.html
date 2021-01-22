@@ -86,11 +86,11 @@
                                                 href="{{ .URL }}"
                                                 class="-m-3 p-3 flex items-start space-x-4 rounded hover:bg-gray-50 transition ease-in-out duration-150 {{ if $currentPage.IsMenuCurrent "main" . }}bg-purple-50{{ end }}"
                                             >
-                                                {{ if .Params.Svg }}
+                                                {{ if .Page.Params.Svg }}
                                                     <div
                                                         class="rounded {{ .Params.backgroundColor }}"
                                                     >
-                                                        {{ partial (printf "svg/%s.svg" .Params.Svg ) (dict "class" "h-6 w-6 text-purple-500") . }}
+                                                        {{ partial (printf "svg/%s.svg" .Page.Params.Svg ) (dict "class" "h-6 w-6 text-purple-500") . }}
                                                     </div>
                                                 {{ end }}
                                                 <div class="space-y-1">
@@ -102,7 +102,7 @@
                                                     <p
                                                         class="text-sm leading-5 font-medium text-brand-600"
                                                     >
-                                                        {{ .Params.Subtitle }}
+                                                        {{ .Page.Params.Subtitle }}
                                                     </p>
                                                 </div>
                                             </a>

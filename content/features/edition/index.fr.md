@@ -1,14 +1,13 @@
 ---
 author: Mathieu
-title: Tout le monde modifie et valide un document unique⚡️
+title: L'éditeur de document pensé pour les équipes⚡️
+subtitle: "Modifiez vos documents à plusieurs, maîtrisez l'historique des versions, faites valider en un clic."
 overtitle: Fonctionnalité
+svg: item
 menu:
     main:
         weight: 2
         parent: features
-        params:
-            svg: item
-            subtitle: "Fini les fusions de documents stressantes : Modifiez vos documents à plusieurs, faites valider en un clic."
 ---
 
 ## Collaboration en temps réél.
