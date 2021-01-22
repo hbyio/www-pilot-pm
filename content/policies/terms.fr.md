@@ -8,6 +8,7 @@ tag: juridique
 title: Conditions générales de vente
 version: "2.2"
 weight: 1
+layout: documentation
 ---
 
 <span class="tag is-warning">Version 2.6</span>
@@ -26,7 +27,7 @@ Après avoir reçu toutes les informations nécessaires lui permettant d’appr�
 
 L’attention du Client est particulièrement attirée sur le fait que la souscription du présent Contrat est réservée aux professionnels.
 
-# 1. Définitions
+## 1. Définitions
 
 *Utilisateur(s) :* désigne individuellement ou collectivement les Super-Users et les Utilisateurs invités.
 
@@ -44,7 +45,7 @@ Services : désigne les services proposés par la Société aux Utilisateurs et
 
 Contenus : désigne tout document, fichier, information ou contenu, de quelques nature et forme que ce soit, stockés dans un Desk et rendu accessible, par le Super-User, aux Utilisateurs invités.
 
-# 2. Description des services
+## 2. Description des services
 
 La Plateforme permet l’accès à différents Services permettant la gestion des projets de communication et la gestion de production de Contenus :
 
@@ -64,7 +65,7 @@ La Plateforme permet l’accès à différents Services permettant la gestion de
 
 La liste des Services accessibles via la Plateforme, détaillée sur le site de la Société, est susceptible d’évoluer, ce que le Client reconnaît et accepte.
 
-# 3. Modalités d’accès à la plateforme
+## 3. Modalités d’accès à la plateforme
 
 La Plateforme est accessible à l’adresse suivante : https://app.pilot.pm.
 
@@ -80,15 +81,15 @@ L’accès à la Plateforme s’effectue :
 
 Le Client s’engage à respecter les droits de propriété intellectuelle relatifs à la Plateforme.
 
-# 4. Durée
+## 4. Durée
 
 Le présent Contrat est conclu pour une durée indéterminée courant à compter de la confirmation, par la Société, de la souscription de l’accès à la Plateforme. Il pourra être résilié selon les modalités prévues à l’article RÉSILIATION du présent contrat.
 
 Le Client bénéficie automatiquement d’une période d’essai de 30 jours, au cours de laquelle l’accès aux Services n’est soumis à aucune contrepartie financière en faveur de la Société. Ce délai est porté à 90 jours pour les clients en licence “entreprise”. A l’expiration de ce délai et sauf accord particulier entre les Parties au présent Contrat, il appartiendra au Client de procéder au paiement de l’offre choisie. A défaut, le Contrat sera considéré comme résilié de plein droit. La Société se réserve le droit de refuser toute nouvelle souscription à la Plateforme de la part d’un Client qui aurait déjà bénéficié d’une période d’essai gratuite au cours de l’année écoulée.
 
-# 5. Les obligations de la société
+## 5. Les obligations de la société
 
-## 5.1 Disponibilité
+### 5.1 Disponibilité
 
 La Société s'engage à prendre les mesures raisonnables afin de permettre un accès à la Plateforme via Internet 24h/24, 7j/7.
 
@@ -120,11 +121,11 @@ Il est rappelé que la responsabilité de la Société est engagée uniquement s
 
 La Société décline également toute responsabilité en cas d’indisponibilité de la Plateforme se rapportant à la connexion Internet du Client ou de l’Utilisateur, ou à  leurs équipements.
 
-## 5.2 Confidentialité et sécurité des accès
+### 5.2 Confidentialité et sécurité des accès
 
 La Société s'engage à mettre en œuvre tout moyen technique, conformément aux règles de l’Art, pour maintenir l'intégrité, la sécurité, la confidentialité des données traitées dans le cadre de la Plateforme.
 
-## 5.3 Hébergement
+### 5.3 Hébergement
 
 L’hébergement de la Plateforme et du Contenu est effectué dans des conditions de sécurité des accès et des locaux conformes aux règles de l’Art.
 
@@ -138,7 +139,7 @@ Amazon Web Services S3 (Hébergement de fichiers) : [http://aws.amazon.com/fr/
 
 Heroku SLA : [https://www.heroku.com/policy/promise](https://www.google.com/url?q=https://www.heroku.com/policy/promise&sa=D&ust=1537793284867000)
 
-## 5.4 Sauvegarde et maintenance
+### 5.4 Sauvegarde et maintenance
 
 La Société assure la maintenance préventive, corrective et évolutive de la Plateforme de façon à permettre sa pérennité et sa disponibilité dans le cadre d'une obligation de moyen. Elle fournit également au Client, sans coût supplémentaire, toutes les mises à jour de la Plateforme.
 
@@ -170,13 +171,13 @@ La Société décline toute responsabilité au titre des obligations souscrites 
 
 La Société assure également la sauvegarde régulière et redondante des Contenus.
 
-## 5.5 Assistance technique
+### 5.5 Assistance technique
 
 La Société propose un service d’assistance technique, accessible les jours ouvrés de 9 h à 18 h par email sur l’adresse [support@pilot.pm](mailto:support@pilot.pm).\
 \
 Dans la mesure du possible, une réponse est fournie par la Société aux questions posées par le Client dans un délai d’un (1) jour ouvré.
 
-## 5.6 Réversibilité
+### 5.6 Réversibilité
 
 A tout moment le Client reste propriétaire des contenus placés par ses soins sur la plateforme.
 
@@ -188,11 +189,11 @@ Seuls sont exportés les contenus, les projets et les médias.
 
 Dans le cas de demandes par le Client de formats d’exports différents, la prestation fera alors l’objet d’une estimation spécifique sur la base d’un TJM de 700 euros Hors Taxes par jour.
 
-# 6. Les obligations du client
+## 6. Les obligations du client
 
 Le Client déclare disposer de la capacité et du pouvoir nécessaires pour s’engager au titre du présent Contrat.
 
-## 6.1 Conformité au besoin
+### 6.1 Conformité au besoin
 
 Le Client assure avoir pris connaissance, préalablement à l'acceptation des présentes, des caractéristiques techniques et des dispositifs de sécurité de la Plateforme proposée, ainsi que des prérequis nécessaires à son utilisation.
 
@@ -200,7 +201,7 @@ Le Client fait son affaire de l’ensemble des pré-requis (matériels, logiciel
 
 Il lui appartient de vérifier, notamment, la compatibilité de la Plateforme à ses équipements et logiciels, et notamment la fiabilité de sa connexion Internet.
 
-## 6.2 Utilisation de la plateforme
+### 6.2 Utilisation de la plateforme
 
 Le Client s'engage à n'utiliser la Plateforme que pour ses besoins propres et pour les seules finalités visées au présent Contrat.
 
@@ -222,7 +223,7 @@ Le Client s’engage à communiquer régulièrement à la Société tout dysfonc
 
 La Société n’a aucune obligation de procéder aux évolutions, corrections et améliorations ainsi communiquées par le Client.
 
-## 6.3 Les codes d’accès
+### 6.3 Les codes d’accès
 
 Il est précisé que l'accès à la Plateforme est sécurisé de façon à protéger, de façon permanente, à l'égard des tiers ou des autres utilisateurs non habilités à en prendre connaissance, toutes les données du Client et des Utilisateurs qui sont amenées à circuler au travers des systèmes dans le cadre de l'utilisation de la Plateforme.
 
@@ -234,7 +235,7 @@ En cas de perte ou de vol des identifiant / mot de passe, il appartiendra au Cli
 
 Le Client se porte fort du respect, par les Super-Users, des dispositions du présent contrat.
 
-# 7. Conditions financières
+## 7. Conditions financières
 
 Le Client choisit, parmi les offres qui lui sont proposées, celle qui convient le mieux à ses besoins.
 
@@ -258,7 +259,7 @@ En application de la loi 2012-387 du 22 mars 2012, en situation de retard de pai
 
 Le Client reconnaît et accepte que la Société soit autorisée à faire évoluer le contenu des Services souscrits par le Client. Dans l’hypothèse où le contenu des Services souscrits serait revu à la hausse, le Client en bénéficiera automatiquement, sans modification de tarif. Dans l’hypothèse où le contenu des Services souscrits serait modifié ou revu à la baisse, le Client se verra proposer un nouveau Contrat, qu’il lui reviendra, le cas échéant, d’accepter. Dans l’hypothèse d’un refus d’acceptation par le Client du nouveau Contrat proposé, le présent Contrat sera résilié à l’expiration d’un délai de 30 jours à compter de la demande de régularisation du nouveau contrat refusée ou restée sans réponse.
 
-# 8. Propriété intellectuelle
+## 8. Propriété intellectuelle
 
 La Société concède au Client un droit personnel, non exclusif, non cessible et non transférable d'utilisation de la Plateforme, pendant toute la durée du Contrat et pour le monde entier.
 
@@ -290,9 +291,9 @@ Nonobstant ces interdictions, le Client, dans le cadre du respect des dispositio
 
 Le Client et les Utilisateurs concèdent à la Société une licence non exclusive sur les Contenus dont ils sont les auteurs, à des fins de fourniture des Services, de développement et de support.
 
-# 9. Données personnelles
+## 9. Données personnelles
 
-## 9.1 Traitées par la Société
+### 9.1 Traitées par la Société
 
 La Société informe le Client et les Utilisateurs que les données à caractère personnel les concernant font l’objet d’un traitement automatisé conformément à la loi Informatique et Libertés du 6 janvier 1978, à des fins de gestion de la relation Clients et de mise à disposition de la Plateforme. Ces données sont conservées pendant toute la durée du présent Contrat. La base légale de ce traitement est l’exécution du présent Contrat.
 
@@ -306,7 +307,7 @@ Dans l’hypothèse où le Client ou l’Utilisateur estimerait que, après avoi
 
 La Société s’engage à ne pas transférer de données relatives au Client et aux Utilisateurs à des tiers.
 
-## 9.2 Traitées par le Client
+### 9.2 Traitées par le Client
 
 Le Client reste responsable de ses propres traitements par le biais de la plateforme, la Société n’intervenant qu’en qualité de sous-traitant à l’égard de ceux-ci. Dans ce contexte, le Client fournit à la Société des instructions expresses  concernant les traitements mis en œuvre par ses soins par le biais de la Plateforme Les Parties conviennent que la fourniture par le Client desdites instructions est nécessaire afin que la Société puisse assister adéquatement le Client dans le respect de ses obligations au titre du droit applicable.
 
@@ -348,7 +349,7 @@ La Société confirme par ailleurs que son personnel est tenu par une obligation
 
 Enfin, la Société informera sans retard le Client de toute violation des données personnelles conduisant à la destruction accidentelle ou illégale, la perte, la modification ou la divulgation non autorisée ou l'accès aux données à caractère personnel traitées dans le cadre du présent Contrat.
 
-# 10. Confidentialité 
+## 10. Confidentialité 
 
 Chaque Partie s'engage à considérer comme confidentielles, et à ne pas reproduire ou divulguer, autrement que pour les seuls besoins d'exécution du Contrat, les informations remises par l'autre Partie pour la mise en œuvre et au cours de l'exécution du Contrat et qui, à raison de leur contenu technique, commercial ou financier devraient être tenues pour confidentielles comme comportant des éléments non divulgués publiquement et/ou purement personnel à la Partie concernée.
 
@@ -358,7 +359,7 @@ Ce devoir de confidentialité ne s’appliquera pas non plus lorsqu’une Partie
 
 Les obligations des Parties à l'égard des informations confidentielles demeureront en vigueur pendant toute la durée du Contrat et aussi longtemps, après son terme, que les informations concernées demeureront confidentielles pour la Partie les divulgant et, en toute hypothèse, pendant une période de \[5\] ans après le terme du Contrat.
 
-# 11. Garanties et responsabilités
+## 11. Garanties et responsabilités
 
 La Société garantit qu'elle dispose de tous les droits de propriété intellectuelle permettant de conclure le présent Contrat et qu'à ce titre, elle garantit que la Plateforme ne constitue pas une contrefaçon d'une œuvre préexistante, de quelque nature qu'elle soit.
 
@@ -400,7 +401,7 @@ Le Client garantit la Société des conséquences, réclamations ou actions dont
 
 Le Client renonce à exercer tout recours contre la Société dans le cadre de poursuites diligentées par un tiers à son encontre du fait de l'utilisation ou de l'exploitation illicite de la Plateforme.
 
-# 12. Résiliation
+## 12. Résiliation
 
 En cas de manquement de l’une ou l’autre des Parties à ses obligations telles que résultant du présent contrat, l'autre Partie dispose de la faculté de résilier ledit contrat, après l’envoi d’une mise en demeure par lettre recommandée avec avis de réception restée infructueuse.
 
@@ -414,35 +415,35 @@ Sauf demande exprimée par écrit par le Client tendant à  ce que ce délai so
 
 Le Client bénéficie de la possibilité, en cas de souscription par ses soins d’un nouveau Contrat avant la suppression définitive du Contenu, de récupérer ledit Contenu, dans son état à la date de résiliation du Contrat initial.
 
-## 13. Assurance
+### 13. Assurance
 
 La Société atteste avoir souscrit une assurance responsabilité civile professionnelle couvrant son activité au titre de la mise à disposition de la Plateforme pour toutes les conséquences pécuniaires de sa responsabilité professionnelle, délictuelle et/ou contractuelle du fait de dommages corporels, matériels et immatériels causés au Client ou Utilisateurs dans le cadre de l’exécution du Contrat.
 
 Cette assurance a été souscrite auprès de compagnies notoires, solvables et les paiements des primes sont et resteront à jour.
 
-# 14. Audit
+## 14. Audit
 
 La Société permettra la réalisation par le Client, sous sa responsabilité et aux frais du Client, d’un audit annuel (sauf faille de sécurité et manquement contractuel de la Société autorisant le Client à prévoir des audits complémentaires) réalisé par un organisme certifié indépendant. Il appartiendra au Client de notifier à la Société, sous réserve du respect d’un préavis de 15 jours ouvrés, l’audit envisagé. De son côté, la Société se soumettra aux opérations d’audit sans y mettre d’obstacle, tout en se réservant la faculté de facturer au Client un montant correspondant au temps consacré par son personnel à la participation aux opérations d’audit. Dans l’hypothèse où le rapport d’audit dûment notifié à la Société ferait apparaître des manquements contractuels ou des risques sur l’intégrité, la confidentialité ou la disponibilité des données à caractère personnel traitées par le Client dans le cadre du service fourni par la Société, les parties se réuniront pour étudier les mesures à mettre en œuvre.
 
-# 15. Sous-traitance
+## 15. Sous-traitance
 
 La Société est habilitée à faire appel à des sous-traitants pour l'exécution d'obligations conformément au présent Contrat. La Société est responsable du travail et des services des sous-traitants dans des condition identiques à celles de ses propres travaux ou services.
 
-# 16. Intégralité et indivisibilité
+## 16. Intégralité et indivisibilité
 
 Le présent Contrat représente la totalité et l'intégralité de l'entente intervenue entre les parties. Si une disposition du présent Contrat était déclarée inapplicable pour quelque raison que ce soit, les autres dispositions du présent Contrat demeureront pleinement en vigueur, et la disposition inapplicable sera modifiée dans la mesure du possible et dans la limite autorisée par la loi pour atteindre autant que faire se peut la même intention et le même effet économique que la disposition originale.
 
 Aucune indication, aucun document, ne peuvent engendrer des obligations au titre des présentes, s'ils ne font l'objet d'un avenant signé par les deux Parties.
 
-# 17. Cession
+## 17. Cession
 
 Le Client se réserve la faculté de transférer le Contrat à toute société le contrôlant, qu’il contrôle ou sous contrôle commun avec lui, directement ou indirectement (au sens donné au terme "contrôle" par l’article L.233-3 du Code de commerce).
 
-# 18. Références
+## 18. Références
 
 Sauf accord préalable et écrit du Client, la Société s’interdit de citer le Client et/ou ses marques parmi ses références, ou de communiquer à ce sujet, notamment dans la presse professionnelle.
 
-# 19. Loi applicable et tribunaux compétents
+## 19. Loi applicable et tribunaux compétents
 
 Le présent Contrat et les relations qui s’ensuivent entre la Société et le Client sont régis par les lois françaises et seront interprétés conformément à celles-ci.
 
