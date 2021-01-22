@@ -7,6 +7,7 @@ tag: Article
 tagColor: gray
 date: 2020-07-27T16:24:29+02:00
 draft: false
+footer: true
 ---
 
 Trouver des idées de contenus pour remplir son calendrier éditorial peut être une épreuve douloureuse.

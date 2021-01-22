@@ -5,6 +5,7 @@ draft: false
 illustration: illustration.png
 slug: content-strategy-linkedin
 tag: Stratégie
+footer: true
 tagColor: purple
 title: "Stratégie de contenu : comment l’adapter à Linkedin ?"
 featured: false

@@ -5,6 +5,7 @@ draft: false
 illustration: illustration.png
 tag: stratégie
 tagColor: purple
+footer: true
 title: Comment créer un calendrier éditorial pour votre équipe ?
 description: Un calendrier éditorial présente de nombreux avantages pour optimiser la diffusion de vos contenus auprès de votre audience. Voici quelques rappels et conseils.
 subtitle: Un calendrier éditorial présente de nombreux avantages pour optimiser la diffusion de vos contenus auprès de votre audience. Voici quelques rappels et conseils.

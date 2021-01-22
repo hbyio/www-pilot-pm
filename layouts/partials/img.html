@@ -1,5 +1,13 @@
+{{ with .alt }}
+    {{ else }}
+    {{ errorf "Missing mandatory value for param 'alt': %s" .Position }}
+{{ end }}
+
 <img
-    {{ if .class }}class="{{ .class }}"{{ end }}
+    class="{{ .class }}"
     src="{{ .src }}"
     alt="{{ .alt }}"
+    height="{{ .h }}"
+    width="{{ .w }}"
+    loading="lazy"
 />

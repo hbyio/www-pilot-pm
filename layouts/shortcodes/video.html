@@ -1,0 +1,36 @@
+{{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "poster")) }}
+{{ $large := $src.Resize "1200x" }}
+{{ $medium := $src.Resize "800x" }}
+{{ $small := $src.Resize "400x" }}
+<figure style="min-height: 700px;" class="bg-black rounded-lg p-6 border border-gray-100">
+    <video
+        id="player"
+        class="rounded-lg opacity-1"
+        playsinline
+        controls
+        poster="{{ .Get "poster" }}"
+        data-poster="{{ .Get "poster" }}"
+        data-plyr-config='{ "title": "Example Title" }'
+    >
+        <source src="{{ .Get "src" }}" type="video/mp4" />
+        <!-- some other alternative sources -->
+        <!-- <source src="foobar.ogv" type="video/ogv" /> -->
+        Sorry, your browser doesn't support embedded videos.
+        <track
+            src="{{ .Get "vtt" }}"
+            kind="captions"
+            label="French captions"
+            srclang="fr"
+            default
+        />
+        <track src="{{ .Get "vtt" }}" kind="chapters" srclang="fr" default />
+    </video>
+
+    {{ with .Inner }}
+        <figcaption>
+            <div style="max-width: 1200px;" class="text-brand-50 font-medium mx-auto -mb-3">
+                {{ . }}
+            </div>
+        </figcaption>
+    {{ end }}
+</figure>

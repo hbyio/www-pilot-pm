@@ -3,14 +3,16 @@
     {{ $.Scratch.Add "path" .Site.BaseURL }}
     {{ $.Scratch.Add "path" "/" }}
 
-    <nav class="py-2 text-gray-400 bg-white border-t border-b border-gray-100">
-        <div class="flex max-w-screen-xl px-5 mx-auto breadcrumbs">
-            <a class="underline" href="/">home</a>
+    <nav class="h-8 text-brand-400 font-medium bg-white border-t border-gray-50">
+        <div class="flex max-w-screen-xl  mx-auto">
+            <a class="text-brand-400 hover:underline" href="/">home</a>
             {{ range $index, $element := split $url "/" }}
                 {{ $.Scratch.Add "path" $element }}
                 {{ if ne $element "" }}
                     <div class="mx-2">&rarr;</div>
-                    <a class="underline" href="{{ $.Scratch.Get "path" }}">{{ . }}</a>
+                    <a class="text-brand-400 hover:underline" href="{{ $.Scratch.Get "path" }}">
+                        {{ . }}
+                    </a>
                     {{ $.Scratch.Add "path" "/" }}
                 {{ end }}
             {{ end }}

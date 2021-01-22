@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="has-navbar-fixed-top" lang="{{ $.Site.Language.Lang }}">
+<html class="text-gray-900 antialiased bg-white" lang="{{ $.Site.Language.Lang }}">
     <head>
         {{ if .IsHome -}}
             <title>{{ .Site.Title }}</title>
@@ -65,10 +65,10 @@
         />
 
         {{ if .Site.IsServer }}
-            {{- $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/dev/postcss.config.js") | fingerprint }}
+            {{- $style := resources.Get "css/styles.css" | postCSS (dict "config" "./postcss.config.js") | fingerprint }}
             <link rel="stylesheet" href="{{ $style.RelPermalink }}" data />
             {{ else }}
-            {{- $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js")  | minify | fingerprint -}}
+            {{- $style := resources.Get "css/styles.css" | postCSS (dict "config" "./postcss.config.js")  | minify | fingerprint -}}
 
             <link
                 rel="stylesheet"
@@ -76,92 +76,116 @@
                 integrity="{{ $style.Data.Integrity }}"
             />
         {{ end -}}
-
+        {{- $alpine := resources.Get "js/alpine.js" | minify | fingerprint }}
         <script
-            src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.0/dist/alpine.min.js"
+            src="{{ $alpine.RelPermalink }}"
             defer
         ></script>
-
-        {{ $font := resources.Get "css/inter.css" | minify | fingerprint }}
-        <link
-            rel="stylesheet"
-            href="{{ $font.RelPermalink }}"
-            integrity="{{ $font.Data.Integrity }}"
-        />
 
         {{ if not .Site.IsServer }}
             <!-- OR WITH ENV VAR if eq (getenv "HUGO_ENV") "production"  -->
             <!--ONLY PRODUCTION-->
             {{ partial "analytics.html" . }}
         {{ end }}
+        <script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/plyr.css" />
     </head>
 
-    <body x-data="{ mobileMenuOpen: false, iealert: true }">
-        <div
-            id="IEalert"
-            style="display: none;"
-            class="py-15 p-10 bg-yellow-300 text-cool-gray-900 text-center"
-        >
-            <div class="text-lg font-black">
-                Ce site ne peut pas être affiché correctement sur votre navigateur
-            </div>
-            <a
-                href="microsoft-edge:https://www.pilot.pm"
-                class="bg-yellow-100 hover:bg-gray-200 active:bg-gray-300 focus:shadow-outline-gray border border-yellow-200 shadow text-yellow-900 text-center font-medium p-2 rounded my-2 inline-flex items-center"
-            >
-                Vous êtes sur Windows 10 ? Cliquez ici ( ou Ctrl+Shift+E ) pour ouvrir ce site avec
-                Edge
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    class="h-4 w-4 mx-2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                    />
-                </svg>
-            </a>
-            <p>
-                Sinon vous pouvez télécharger un navigateur moderne (
-                <a class="underline" href="https://www.microsoft.com/fr-fr/edge">Edge</a>
-                ,
-                <a class="underline" href="https://www.google.com/intl/fr_fr/chrome/">Chrome</a>
-                ,
-                <a class="underline" href="https://www.mozilla.org/fr/firefox/new/">Firefox</a>
-                )
-            </p>
-        </div>
+    <body x-data="{ mobileMenuOpen: false, iealert: true, modalOpen: false }">
+        {{ partial "iealert.html" }}
 
-        <div class="flex flex-col justify-between h-screen">
-            {{ block "header" . }}{{ partial "header" . }}{{ end }}
-            <main class="flex-1">
-                {{ partial "breadcrumb" . }}
+        <div class="flex flex-col justify-between h-screen w-full">
+            <header
+                id="mainnav"
+                class="transform fixed w-full border-b border-gray-200 bg-white z-40 px-5 transition-all ease-in duration-300 "
+            >
+                {{ partial "header" . }}
+            </header>
+            <main id="body" class="flex-1 w-full px-0 lg:px-5  my-20">
                 {{ block "main" . }}{{ end }}
             </main>
-
-            <footer>
-                {{ partial "footer.html" . }}
-            </footer>
+            {{ if ne .Type "documentation" }}
+                <footer>
+                    {{ partial "footer.html" . }}
+                </footer>
+            {{ end }}
         </div>
-        {{ if not .Site.IsServer }}
-            <!-- OR WITH ENV VAR if eq (getenv "HUGO_ENV") "production"  -->
-            <!--ONLY PRODUCTION-->
-            {{ partial "chat.html" . }}
-        {{ end }}
         <script>
-            if (
-                navigator.userAgent.indexOf("MSIE") !== -1 ||
-                navigator.appVersion.indexOf("Trident/") > -1
-            ) {
-                console.log("IE detected")
-                var element = document.getElementById("IEalert")
-                element.style.display = "block"
-            }
+            const player = new Plyr("#player")
         </script>
+        {{ block "script" . }}{{ end }}
+        <!-- https://codingreflections.com/hide-header-on-scroll-down/ -->
+        <!-- <script>
+            ;(function () {
+                var debounce = function (func, wait, immediate) {
+                    var timeout
+                    return function () {
+                        var context = this,
+                            args = arguments
+                        var later = function () {
+                            timeout = null
+                            if (!immediate) func.apply(context, args)
+                        }
+                        var callNow = immediate && !timeout
+                        clearTimeout(timeout)
+                        timeout = setTimeout(later, wait)
+                        if (callNow) func.apply(context, args)
+                    }
+                }
+                var doc = document.documentElement
+                var w = window
+
+                var prevScroll = w.scrollY || doc.scrollTop
+                var curScroll
+                var direction = 0
+                var prevDirection = 0
+                var buffer = 0
+
+                var header = document.getElementById("mainnav")
+                // var main = document.getElementById("body")
+                // var aside = document.getElementById("documentation_aside")
+                // var toc = document.getElementById("documentation_toc")
+
+                var checkScroll = debounce(function () {
+                    /*
+                     ** Find the direction of scroll
+                     ** 0 - initial, 1 - up, 2 - down
+                     */
+
+                    curScroll = w.scrollY || doc.scrollTop
+                    if (curScroll > prevScroll) {
+                        //scrolled up
+                        direction = 2
+                    } else if (curScroll < prevScroll) {
+                        //scrolled down
+                        direction = 1
+                    }
+
+                    if (direction !== prevDirection) {
+                        toggleHeader(direction, curScroll)
+                    }
+
+                    prevScroll = curScroll
+                }, 150)
+
+                var toggleHeader = function (direction, curScroll) {
+                    if (direction === 2 && curScroll > 100) {
+                        //scrolling up
+                        //replace 52 with the height of your header in px
+
+                        header.classList.add("-translate-y-full")
+
+                        prevDirection = direction
+                    } else if (direction === 1) {
+                        //scrolling down
+                        header.classList.remove("-translate-y-full")
+
+                        prevDirection = direction
+                    }
+                }
+
+                window.addEventListener("scroll", checkScroll)
+            })()
+        </script> -->
     </body>
 </html>
