@@ -10,5 +10,9 @@ https://www-pilot-pm.netlify.com/* https://www.pilot.pm/:splat 301!
 /fr/blog/content-workflow/ /blog/editorial-workflow/ 301!
 /en/blog/content-workflow/ /en/blog/editorial-workflow/ 301!
 
+/resources/tutorial-workflow-editorial /guides/tutorial-workflow-editorial 301!
+/resources/thread-twitter /guides/thread-twitter 301!
+/resources/tutorial-calendrier-editorial /guides/tutorial-calendrier-editorial 301!
+
 # Redirect users with english language
 / /en 302  Language=en
