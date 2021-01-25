@@ -1,48 +1,26 @@
 {{ define "main" }}
     {{ $headerHeight :=  "84px" }}
     <div id="documentationPage" class="flex px-2">
-        <aside
-            id="documentation_aside"
+        <!-- ToC -->
+
+        <div
+            id="toc"
             style="height: calc(100vh - {{ $headerHeight }}); top: {{ $headerHeight }};"
-            class="py-5 overflow-y-auto hidden sticky lg:flex lg:flex-col  "
+            class="w-60 xl:w-80 py-5 overflow-y-auto hidden sticky lg:flex lg:flex-col"
         >
-            <div class="space-y-1 p-2 h-full flex flex-col">
-                <a href="/documentation" class="text-base font-bold p-2 uppercase">Documentation</a>
-
-                {{ $currentPage := . }}
-
-                {{ range .Site.Menus.documentation.ByWeight }}
-                    <a
-                        href="{{ .URL }}"
-                        title="{{ .Title }}"
-                        class="doc-menu {{ if $currentPage.IsMenuCurrent "documentation" . }}is-active{{ end }} "
-                    >
-                        {{ if ne .Params.svg nil }}
-                            <div class="{{ .Params.class }} w-5 h-5 mr-1">
-                                {{ partial (printf "svg/%s.svg" .Params.svg) }}
-                            </div>
-                            {{ else }}
-                            <div class="{{ .Params.class }} text-brand-400 w-5 h-5 mr-1">
-                                {{ partial "svg/documentation.svg" }}
-                            </div>
-                        {{ end }}
-                        <span class="truncate">{{- .Name -}}</span>
-                    </a>
+            <div class="h-full px-5 text-brand-700">
+                {{ if ne false .Params.toc }}
+                    <div class="text-sm font-bold mb-5 px-2 uppercase">Dans cette page</div>
+                    {{ .Page.TableOfContents }}
                 {{ end }}
             </div>
-        </aside>
-
+        </div>
         <!-- Content -->
         <div
             id="article"
-            class="bg-brand-50 flex-1 flex-col text-base py-5 pb-72  lg:px-10 max-w-full"
+            class="prose prose-xl bg-brand-50 flex-1 flex-col text-base py-5 pb-72  lg:px-10 max-w-full"
         >
             <div class="reading mx-auto  lg:max-w-xl xl:max-w-4xl 2xl:max-w-5xl">
-                <p
-                    class="text-base font-semibold leading-6 tracking-wide text-indigo-600 uppercase"
-                >
-                    {{ .Params.tag }}
-                </p>
                 <h1
                     class="mb-8 text-4xl font-extrabold  tracking-tight text-gray-900 sm:text-5xl  sm:leading-none"
                 >
@@ -64,21 +42,6 @@
                         {{ .Name }}
                         {{ partial "svg/chevron-right.svg" . }}
                     </a>
-                {{ end }}
-            </div>
-        </div>
-
-        <!-- ToC -->
-
-        <div
-            id="toc"
-            style="height: calc(100vh - {{ $headerHeight }}); top: {{ $headerHeight }};"
-            class="w-60 xl:w-80 py-5 overflow-y-auto hidden sticky lg:flex lg:flex-col"
-        >
-            <div class="h-full px-5 text-brand-700">
-                {{ if ne false .Params.toc }}
-                    <div class="text-sm font-bold mb-5 px-2 uppercase">Dans cette page</div>
-                    {{ .Page.TableOfContents }}
                 {{ end }}
             </div>
         </div>

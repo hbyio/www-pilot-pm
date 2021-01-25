@@ -111,11 +111,11 @@ a.button {
 
 #TableOfContents > ul > li > ul > li > a,
 #TableOfContents > ul > li > a {
-    @apply rounded p-2 flex items-center text-brand-700 text-sm font-medium;
+    @apply rounded px-2 flex items-center text-brand-700 text-sm font-bold;
 }
 
 #TableOfContents > ul > li > ul > li > a {
-    @apply pl-3 py-1;
+    @apply font-normal pl-3 py-1;
 }
 
 #TableOfContents > ul > li > ul > li > a::before {

@@ -8,7 +8,7 @@ tag: juridique
 title: Conditions générales de vente
 version: "2.2"
 weight: 1
-layout: documentation
+layout: withToc
 ---
 
 <span class="tag is-warning">Version 2.6</span>
