@@ -300,13 +300,13 @@
         {{ $.Scratch.Add "path" "/" }}
 
         <nav class="py-1 text-brand-400 font-medium bg-white border-t border-gray-50">
-            <div class="flex max-w-screen-xl  mx-auto">
-                <a class="text-brand-400 hover:underline" href="/">home</a>
+            <div class="flex items-center max-w-screen-xl  mx-auto">
+                <a class="text-brand-500 text-sm hover:underline" href="/">home</a>
                 {{ range $index, $element := split $url "/" }}
                     {{ $.Scratch.Add "path" $element }}
                     {{ if ne $element "" }}
-                        <div class="mx-2">&rarr;</div>
-                        <a class="text-brand-400 hover:underline" href="{{ $.Scratch.Get "path" }}">
+                        <div class="text-brand-500 text-sm mx-2">&rarr;</div>
+                        <a class="text-brand-500 text-sm" href="{{ $.Scratch.Get "path" }}">
                             {{ . }}
                         </a>
                         {{ $.Scratch.Add "path" "/" }}

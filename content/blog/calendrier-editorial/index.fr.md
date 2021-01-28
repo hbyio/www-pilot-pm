@@ -141,8 +141,6 @@ Leur fonctionnement est relativement similaire : les tâches affectées aux memb
 
 En tant qu'outil dédié à la gestion des contenus, **Pilot** intègre un calendrier éditorial :
 
-![Capture d’écran 2020-07-09 à 11.44.39.png](https://pilotapp-leader.s3.amazonaws.com/assets/136/35369/136_35369_working.jpg "Capture d’écran 2020-07-09 à 11.44.39.png")_image : <https://pilot.pm/>_
-
 La [fonction calendrier](https://www.pilot.pm/resources/calendars/) est particulièrement appréciée par nos clients. Au-delà de l'aspect prévisionnel, il permet de rechercher et filtrer les contenus de manière avancée.
 
 👍🏻 **Les points positifs** : outil pensé pour les équipes en lien avec la production de contenu
