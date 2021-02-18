@@ -24,17 +24,17 @@
                 <div class="relative">
                     <div class="absolute inset-0 h-3/4"></div>
                     <div class="relative z-10 mx-auto px-4 ">
-                        <div class="max-w-lg mx-auto lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-5">
+                        <div class="max-w-lg mx-auto lg:max-w-7xl">
                             <div
                                 id="priceMedium"
-                                class="mt-4 rounded-lg shadow-lg overflow-hidden lg:mt-0 flex flex-col justify-between h-full"
+                                class="mt-4 mx-auto  rounded-lg shadow-lg overflow-hidden lg:mt-0 flex flex-col justify-between h-full max-w-screen-sm "
                             >
                                 <div class="px-6 py-8 bg-brand-900 sm:p-10 sm:pb-6 text-white">
                                     <div>
                                         <span
-                                            class="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase "
+                                            class="inline-flex px-4 py-1 rounded-full text-base leading-5 font-semibold tracking-wide uppercase "
                                         >
-                                            Medium
+                                            Asana + Google doc + Dropbox = Pilot
                                         </span>
                                     </div>
                                     <div class="mt-4 flex items-center justify-start ">
@@ -42,7 +42,7 @@
                                             class="pr-4 flex items-start text-6xl leading-none tracking-tight"
                                         >
                                             <span class="mt-2 mr-2 text-4xl font-medium">€</span>
-                                            <span class="font-extrabold">399</span>
+                                            <span class="font-extrabold text-center">99</span>
                                         </span>
                                         <span class="text-xl leading-7 font-medium text-brand-100">
                                             /{{ i18n "month" }}
@@ -50,7 +50,7 @@
                                     </div>
                                 </div>
                                 <div
-                                    class="h-full font-semibold text-base px-6 pt-6 pb-8 bg-brand-50 sm:p-10 sm:pt-6"
+                                    class="h-full font-semibold text-center text-base px-6 pt-6 pb-8 bg-brand-50 sm:p-10 sm:pt-6"
                                 >
                                     <ul>
                                         <li class="flex items-start">
@@ -72,7 +72,7 @@
                                             <p
                                                 class="capitalize ml-3 text-base leading-6 text-gray-700"
                                             >
-                                                10 {{ i18n "user" 2 }}
+                                                Utilisateurs illimités
                                             </p>
                                         </li>
                                         <li class="mt-4 flex items-start">
@@ -92,7 +92,7 @@
                                                 </svg>
                                             </div>
                                             <p class="ml-3 text-base leading-6 text-gray-700">
-                                                15 {{ i18n "project" 2 }}
+                                                10 {{ i18n "project" 2 }}
                                             </p>
                                         </li>
                                         <li class="mt-4 flex items-start">
@@ -152,214 +152,18 @@
                                 </div>
                             </div>
                             <div
-                                id="priceEntreprise"
-                                class="mt-4 rounded-lg shadow-lg overflow-hidden lg:mt-0"
+                                class="mx-auto max-w-screen-sm text-lg font-medium p-4 rounded bg-gray-50 m-10"
                             >
-                                <div class="px-6 py-8 text-white  bg-brand-900 sm:p-10 sm:pb-6">
-                                    <div>
-                                        <span
-                                            class="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase "
-                                        >
-                                            Entreprise
-                                        </span>
-                                    </div>
-                                    <div class="mt-4 flex items-center justify-start">
-                                        <span
-                                            class="pr-4 flex items-start text-6xl leading-none tracking-tight "
-                                        >
-                                            <span class="mt-2 mr-2 text-4xl font-medium">€</span>
-                                            <span class="font-extrabold">1199</span>
-                                        </span>
-                                        <span class="text-xl leading-7 font-medium text-brand-100">
-                                            /{{ i18n "month" }}
-                                        </span>
-                                    </div>
+                                <div class="px-3">
+                                    Nous avons des plans entreprise (tout illimité, 1To stockage,
+                                    SLA, ..)
                                 </div>
-                                <div
-                                    class="px-6 pt-6 pb-8 bg-brand-50 sm:p-10 sm:pt-6 font-semibold text-base"
+                                <a
+                                    href="/contact"
+                                    class="flex items-center justify-center px-3 py-1 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                                 >
-                                    <ul>
-                                        <li class="flex items-start">
-                                            <div class="flex-shrink-0">
-                                                <svg
-                                                    class="h-6 w-6 text-green-500"
-                                                    stroke="currentColor"
-                                                    fill="none"
-                                                    viewBox="0 0 24 24"
-                                                >
-                                                    <path
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-width="4"
-                                                        d="M5 13l4 4L19 7"
-                                                    />
-                                                </svg>
-                                            </div>
-                                            <p
-                                                class="capitalize ml-3 text-base leading-6 text-gray-700 capitalize"
-                                            >
-                                                {{ i18n "unlimitedUsers" }}
-                                            </p>
-                                        </li>
-                                        <li class="mt-4 flex items-start">
-                                            <div class="flex-shrink-0">
-                                                <svg
-                                                    class="h-6 w-6 text-green-500"
-                                                    stroke="currentColor"
-                                                    fill="none"
-                                                    viewBox="0 0 24 24"
-                                                >
-                                                    <path
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-width="4"
-                                                        d="M5 13l4 4L19 7"
-                                                    />
-                                                </svg>
-                                            </div>
-                                            <p
-                                                class="ml-3 text-base leading-6 text-gray-700 capitalize"
-                                            >
-                                                {{ i18n "unlimitedProjects" }}
-                                            </p>
-                                        </li>
-                                        <li class="mt-4 flex items-start">
-                                            <div class="flex-shrink-0">
-                                                <svg
-                                                    class="h-6 w-6 text-green-500"
-                                                    stroke="currentColor"
-                                                    fill="none"
-                                                    viewBox="0 0 24 24"
-                                                >
-                                                    <path
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-width="4"
-                                                        d="M5 13l4 4L19 7"
-                                                    />
-                                                </svg>
-                                            </div>
-                                            <p
-                                                class="ml-3 text-base leading-6 text-gray-700 capitalize"
-                                            >
-                                                {{ i18n "unlimitedItems" }}
-                                            </p>
-                                        </li>
-                                        <li class="mt-4 flex items-start">
-                                            <div class="flex-shrink-0">
-                                                <svg
-                                                    class="h-6 w-6 text-green-500"
-                                                    stroke="currentColor"
-                                                    fill="none"
-                                                    viewBox="0 0 24 24"
-                                                >
-                                                    <path
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-width="4"
-                                                        d="M5 13l4 4L19 7"
-                                                    />
-                                                </svg>
-                                            </div>
-                                            <p class="ml-3 text-base leading-6 text-gray-700">
-                                                1To {{ i18n "storage" }}
-                                            </p>
-                                        </li>
-                                        <li class="mt-4 flex items-start">
-                                            <div class="flex-shrink-0">
-                                                <svg
-                                                    class="h-6 w-6 text-green-500"
-                                                    stroke="currentColor"
-                                                    fill="none"
-                                                    viewBox="0 0 24 24"
-                                                >
-                                                    <path
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-width="4"
-                                                        d="M5 13l4 4L19 7"
-                                                    />
-                                                </svg>
-                                            </div>
-                                            <p class="ml-3 text-base leading-6 text-gray-700">
-                                                {{ i18n "prioritySupport" }}
-                                            </p>
-                                        </li>
-                                        <li class="mt-4 flex items-start">
-                                            <div class="flex-shrink-0">
-                                                <svg
-                                                    class="h-6 w-6 text-green-500"
-                                                    stroke="currentColor"
-                                                    fill="none"
-                                                    viewBox="0 0 24 24"
-                                                >
-                                                    <path
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-width="4"
-                                                        d="M5 13l4 4L19 7"
-                                                    />
-                                                </svg>
-                                            </div>
-                                            <p class="ml-3 text-base leading-6 text-gray-700">
-                                                {{ i18n "unlimitedArchives" }}
-                                            </p>
-                                        </li>
-                                        <li class="mt-4 flex items-start">
-                                            <div class="flex-shrink-0">
-                                                <svg
-                                                    class="h-6 w-6 text-green-500"
-                                                    stroke="currentColor"
-                                                    fill="none"
-                                                    viewBox="0 0 24 24"
-                                                >
-                                                    <path
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-width="4"
-                                                        d="M5 13l4 4L19 7"
-                                                    />
-                                                </svg>
-                                            </div>
-                                            <p class="ml-3 text-base leading-6 text-gray-700">
-                                                {{ i18n "translationsManagement" }}
-                                            </p>
-                                        </li>
-                                        <li class="mt-4 flex items-start">
-                                            <div class="flex-shrink-0">
-                                                <svg
-                                                    class="h-6 w-6 text-green-500"
-                                                    stroke="currentColor"
-                                                    fill="none"
-                                                    viewBox="0 0 24 24"
-                                                >
-                                                    <path
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-width="4"
-                                                        d="M5 13l4 4L19 7"
-                                                    />
-                                                </svg>
-                                            </div>
-                                            <p class="ml-3 text-base leading-6 text-gray-700">
-                                                {{ i18n "futureFeatures" }}
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="px-6 pt-6 pb-8 bg-brand-50 sm:p-10 sm:pt-6">
-                                    <div class="mt-6 rounded-md shadow">
-                                        <a
-                                            href="{{ .Site.Params.AppUrl }}/registration?lang={{ .Site.Language.Lang }}"
-                                            class="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-                                        >
-                                            {{ i18n "startTrial" }}
-                                        </a>
-                                    </div>
-                                    <p class="text-xs text-gray-500 w-full mt-2 text-center">
-                                        {{ i18n "trialConditions" }}
-                                    </p>
-                                </div>
+                                    Contactez nous
+                                </a>
                             </div>
                         </div>
                     </div>
