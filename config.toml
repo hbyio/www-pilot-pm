@@ -50,14 +50,13 @@ writeStats = true
   brandColor = "gray"
 
 [languages]
-  [languages.en]
-    LanguageName = "English"
-    description = "Pilot helps teams that produce content."
-    languageCode = "en"
-    weight = 2
-
-  [languages.fr]
-    LanguageName = "Français"
-    description = "Pilot aide les équipes qui produisent des contenus."
-    languageCode = "fr"
-    weight = 1
+    [languages.fr]
+        languageName = "Français"
+        languageNameShort = "fr"
+        languageFlag = "🇫🇷"
+        weight = 1
+    [languages.en]
+        languageName = "English"
+        languageNameShort = "en"
+        languageFlag = "🇬🇧"
+        weight = 3

@@ -7,10 +7,10 @@
                         <h1
                             class="text-3xl sm:text-4xl lg:text-5xl leading-9 font-extrabold text-brand-900  tracking-wider"
                         >
-                            {{ i18n "pricing" }}
+                            {{ .Title }}
                         </h1>
                         <p
-                            class="mt-2  text-lg  font-semibold text-brand-700  sm:leading-10  lg:leading-none"
+                            class="mt-2  text-2xl  font-semibold text-brand-700  sm:leading-10  lg:leading-none"
                         >
                             {{ i18n "transparentPricing" }}
                         </p>
@@ -34,7 +34,7 @@
                                         <span
                                             class="inline-flex px-4 py-1 rounded-full text-base leading-5 font-semibold tracking-wide uppercase "
                                         >
-                                            Remplace Asana + Google doc + WeTransfer
+                                            Pilot = Asana + Google doc + WeTransfer
                                         </span>
                                     </div>
                                     <div class="mt-4 flex items-center justify-start ">
@@ -72,7 +72,7 @@
                                             <p
                                                 class="capitalize ml-3 text-base leading-6 text-gray-700"
                                             >
-                                                Utilisateurs illimités
+                                                {{ .Params.unlimitedUsers }}
                                             </p>
                                         </li>
                                         <li class="mt-4 flex items-start">

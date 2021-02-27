@@ -177,6 +177,24 @@
         </nav>
         <!-- Action buttons -->
         <div class="hidden lg:flex items-center justify-end space-x-3 lg:flex-1 lg:w-0">
+            {{ $siteLanguages := site.Languages }}
+            {{ $pageLang := .Page.Lang }}
+            {{- range .Page.AllTranslations }}
+                {{ $translation := . }}
+                {{- range sort $siteLanguages "Weight" "asc" }}
+                    {{- if eq $translation.Lang .Lang }}
+                        {{ if eq $pageLang .Lang }}
+                            <a class="button is-white" href="{{ $translation.Permalink | relURL }}">
+                                {{ .Params.languageFlag }}
+                            </a>
+                            {{ else }}
+                            <a class="button is-white" href="{{ $translation.Permalink | relURL }}">
+                                {{ .Params.languageFlag }}
+                            </a>
+                        {{ end }}
+                    {{- end }}
+                {{- end }}
+            {{- end }}
             <a
                 href="{{ .Site.Params.AppUrl }}/login?lang={{ .Site.Language.Lang }}"
                 class="button is-white is-small"
