@@ -1,4 +1,7 @@
 {
+    "send": {
+        "other": "Send"
+    },
     "whatsappChannel": {
         "other": "Chat with us on WhatsApp"
     },

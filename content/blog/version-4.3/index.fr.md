@@ -2,11 +2,11 @@
 author: Matthieu
 date: 2020-12-02
 draft: false
-title: Pilot version 4.3 (déc. 2020)
 slug: v4.3
 featured: false
 tag: 📦 Release
 tagColor: green
+title: Pilot version 4.3 (déc. 2020)
 description: Wiki & Arborescence
 subtitle: "Au menu de cette nouvelle version : Organisez vos informations pour l'équipe grâce au wiki et gérez vos sites avec une nouvelle arborescence .."
 ---

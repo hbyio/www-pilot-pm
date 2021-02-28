@@ -1,7 +1,7 @@
 ---
 author: Mathieu
-title: Pilot.pm
-overtitle: Outils développeurs
+title: Pilot aide les équipes qui produisent des contenus
+heroSubtitle: Pilot facilite et rend plus agréable la planification et la production de contenus avec vos équipes, où qu'elles se trouvent.
 ourClientsSub: Ils nous font confiance
 ourClients: Nos clients
 OurClientsCopy: Nous accompagnons les équipes de ces grands groupes (parfois depuis 2013) dans leurs campagnes marketing, refontes de sites, prises de parole sur les réseaux sociaux ou stratégies de marque employeur.

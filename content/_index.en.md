@@ -1,6 +1,7 @@
 ---
 author: Mathieu
-title: Pilot.pm
+title: Pilot helps teams producing content
+heroSubtitle: Pilot makes it easier and more enjoyable to plan and produce content with your teams, wherever they are.
 ourClientsSub: They trust us
 ourClients: Our clients
 OurClientsCopy: We support the teams of these large groups (sometimes since 2013) in their marketing campaigns, website redesigns, social networking and employer branding strategies.

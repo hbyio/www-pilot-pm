@@ -14,7 +14,7 @@ title: La validation externe
 weight: 4
 ---
 
-{{<figure "validation.png" >}}
+{{<figure src="validation.png" >}}
 Qualifiez vos documents et contrôlez leur validation
 {{</figure>}}
 
@@ -38,6 +38,6 @@ Le contact externe pourra modifier directement le document à sa convenance, lai
 
 L'utilisateur de Pilot ayant initié la demande de validation sera notifié dès la validation effectuée.
 
-{{<figure "validationexterne.gif" >}}
+{{<figure src="validationexterne.gif" >}}
 Qualifiez vos documents et contrôlez leur validation
 {{</figure>}}

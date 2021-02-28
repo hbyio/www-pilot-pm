@@ -159,3 +159,7 @@ video::cue {
 video::cue(b) {
     color: green;
 }
+
+.formfield {
+    @apply appearance-none w-full px-5 py-3 border border-transparent text-base leading-6 rounded text-gray-900 bg-gray-100 placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition duration-150 ease-in-out;
+}

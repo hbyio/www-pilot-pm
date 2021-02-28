@@ -2,35 +2,35 @@
 author: Matthieu
 date: 2020-12-02
 draft: false
-title: Pilot version 4.3 (déc. 2020)
 slug: v4.3
 featured: false
 tag: 📦 Release
 tagColor: green
-description: Wiki & Arborescence
-subtitle: "Au menu de cette nouvelle version : Organisez vos informations pour l'équipe grâce au wiki et gérez vos sites avec une nouvelle arborescence .."
+title: Pilot version 4.3 (Dec. 2020)
+description: Wiki & Hierarchical view
+subtitle: "On the menu of this new version: Organize your information for the team thanks to the wiki and manage your sites with a new Hierarchical view ..."
 ---
 
-## Un wiki pour les informations à partager avec l'équipe
+## A wiki for information to share with the team
 
-Pour pouvoir partager des informations importantes avec votre équipe il n'y avait pas jusqu'à présent de fonctionnalité adéquate.
+To be able to share important information with your team there was no adequate functionality until now.
 
-Alors on a créé un wiki qui vous permettra de consigner des règles de référence pour l'équipe (charte éditoriale, graphique, règles sur vos process internes, etc ..)
+So we created a wiki that will allow you to record reference rules for the team (editorial charter, graphics, rules on your internal processes, etc ...).
 
-Les documents de l'onglet "documents de référence" qui étaient présents dans votre tableau de bord ont été transférés dans le wiki sous forme de pages.
+The documents in the "reference documents" tab that were present in your dashboard were transferred to the wiki in the form of pages.
 
-Une courte vidéo de démonstration 👇
+A short demonstration video 👇
 
-<div style="position: relative; padding-bottom: 55.90909090909091%; height: 0;"><iframe src="https://www.loom.com/embed/83b4ea9c8e724cdeb292d8640377f839" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<div style="position: relative; padding-bottom: 55.90909090909090909091%; height: 0;"><iframe src="https://www.loom.com/embed/83b4ea9c8e724cdeb292d8640377f839" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
-## Gérez vos contenus en arborescence dans vos canaux
+## Manage your content in a tree structure in your channels
 
-Certains de vos canaux représentent des sites web et la notion de "hiérarchie" entre canaux que nous aviosn jusqu'à présent n'était pas idéale pour vous permettre de manipuler et construire facilement l'architecture d'information que vous souhaitiez.
+Some of your channels represent websites and the notion of "hierarchy" between channels that we have had until now was not ideal to allow you to easily manipulate and build the information architecture you wanted.
 
-Les canaux disposent maintenant d'un onglet "arborescence" où vous pourrez créer des dossiers, glisser déplacer vos contenus et ré-créer fidèlement votre plan de site.
+Channels now have a "tree structure" tab where you can create folders, drag and drop your content and re-create your sitemap faithfully.
 
-Cette arborescence peut être filtrée comme une liste classique pour vous donner, en un coup d'oeil et en contexte, les éléments du site à valider ou à publier.
+This tree structure can be filtered like a classic list to give you, at a glance and in context, the elements of the site to validate or publish.
 
-Et une autre courte vidéo de démonstration 👇
+And another short demonstration video 👇
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/0be48b5af42d410498fd2afc4f06d048" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>

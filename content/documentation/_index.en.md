@@ -7,7 +7,7 @@ toc: false
 menu:
     main:
         name: Documentation
-        parent: Ressources
+        parent: Resources
         weight: 1
         params:
             subtitle: Découvrez en détail chaque fonctionnalité de l'application

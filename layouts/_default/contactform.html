@@ -1,0 +1,53 @@
+{{ define "main" }}
+    <div class="max-w-7xl mx-auto my-10">
+        <div id="prices-section">
+            <div class="">
+                <div class="mx-auto  py-4 ">
+                    <div class="max-w-screen-md mx-auto ">
+                        <h1
+                            class="text-3xl sm:text-4xl lg:text-5xl leading-9 font-extrabold text-brand-900  tracking-wider"
+                        >
+                            {{ .Title }}
+                        </h1>
+                        <h2
+                            class="mt-2  text-2xl  font-semibold text-brand-700  sm:leading-10  lg:leading-none"
+                        >
+                            {{ .Content }}
+                        </h2>
+                        <!-- <p class="mt-2 text-xl leading-7 text-gray-300">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum sequi unde repudiandae natus.
+          </p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pb-12 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24 max-w-screen-md mx-auto">
+                <form name="contact" method="POST" data-netlify="true">
+                    <div class="flex flex-col">
+                        <input
+                            aria-label="Email address"
+                            type="email"
+                            name="email"
+                            required
+                            class="formfield mb-3"
+                            placeholder="Enter your email"
+                        />
+                        <textarea
+                            aria-label="Message"
+                            name="message"
+                            required
+                            class="formfield"
+                            placeholder="Enter your message"
+                        ></textarea>
+                        <button
+                            type="submit"
+                            class="w-full mt-2 flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded text-white bg-black hover:bg-indigo-400 focus:outline-none focus:bg-indigo-400 transition duration-150 ease-in-out"
+                        >
+                            Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    {{ partial "callToAction.html" . }}
+{{ end }}
