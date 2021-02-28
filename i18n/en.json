@@ -2,6 +2,9 @@
     "send": {
         "other": "Send"
     },
+    "pricing": {
+        "other": "Pricing"
+    },
     "whatsappChannel": {
         "other": "Chat with us on WhatsApp"
     },
