@@ -72,7 +72,7 @@
                                             <p
                                                 class="capitalize ml-3 text-base leading-6 text-gray-700"
                                             >
-                                                {{ .Params.unlimitedUsers }}
+                                                {{ .Params.usersLimit }}
                                             </p>
                                         </li>
                                         <li class="mt-4 flex items-start">
@@ -92,7 +92,7 @@
                                                 </svg>
                                             </div>
                                             <p class="ml-3 text-base leading-6 text-gray-700">
-                                                10 {{ i18n "project" 2 }}
+                                                {{ .Params.projectsLimit }}
                                             </p>
                                         </li>
                                         <li class="mt-4 flex items-start">
@@ -112,7 +112,7 @@
                                                 </svg>
                                             </div>
                                             <p class="ml-3 text-base leading-6 text-gray-700">
-                                                300 {{ i18n "items" 2 }}
+                                                {{ .Params.documentsLimit }}
                                             </p>
                                         </li>
                                         <li class="mt-4 flex items-start">
@@ -132,7 +132,7 @@
                                                 </svg>
                                             </div>
                                             <p class="ml-3 text-base leading-6 text-gray-700">
-                                                30G {{ i18n "storage" }}
+                                                {{ .Params.storageLimit }}
                                             </p>
                                         </li>
                                     </ul>
