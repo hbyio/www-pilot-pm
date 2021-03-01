@@ -199,14 +199,14 @@
                 href="{{ .Site.Params.AppUrl }}/login?lang={{ .Site.Language.Lang }}"
                 class="button is-white is-small"
             >
-                Se connecter
+                {{ i18n "login" }}
             </a>
             <span class="inline-flex rounded-md shadow-sm">
                 <a
                     href="{{ .Site.Params.AppUrl }}/registration?lang={{ .Site.Language.Lang }}"
                     class="button  is-small"
                 >
-                    Créer un compte
+                    {{ i18n "signin" }}
                 </a>
             </span>
         </div>
@@ -296,7 +296,7 @@
                     href="{{ .Site.Params.AppUrl }}/registration?lang={{ .Site.Language.Lang }}"
                     class="w-full flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-brand-600 hover:bg-brand-500 focus:outline-none focus:border-brand-700 focus:shadow-outline-brand active:bg-brand-700 transition ease-in-out duration-150"
                 >
-                    Creér un compte
+                    {{ i18n "signin" }}
                 </a>
             </span>
             <p class="text-center text-base leading-6 font-medium text-gray-500 py-6">

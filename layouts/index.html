@@ -335,7 +335,7 @@
 
     <section id="publications" class="home-section">
         <h2 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-5xl">
-            Dernières publications
+            {{ .Params.latestPublications }}
         </h2>
         <div class="flex flex-col space-y-2 xl:flex-row xl:space-x-2 xl:space-y-0">
             {{ range (where .Site.RegularPages "Section" "==" "blog") }}

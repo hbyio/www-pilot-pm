@@ -97,7 +97,10 @@
         "other": "Une application ne peut pas tout faire et ne remplacera jamais l'échange d'expériences et de bonnes pratiques"
     },
     "login": {
-        "other": "se connecter"
+        "other": "Se connecter"
+    },
+    "signin": {
+        "other": "Créer un compte"
     },
     "month": {
         "other": "mois"

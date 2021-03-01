@@ -44,4 +44,5 @@ Ce problème n'existe pas avec nous. Bye bye article-ok-v12-validmarket-last.doc
 "
 featuresWorkflow: "Workflow : guidez l'équipe 🗺️"
 featuresWorkflowBody: "Concevez simplement un process clair et adapté à votre contexte. Notez en un seul endroit une information vitale : ce qui doit être fait pour passer du brouillon au \"prêt à publier\""
+latestPublications: Dernières publications
 ---

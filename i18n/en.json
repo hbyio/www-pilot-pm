@@ -97,7 +97,10 @@
         "other": "An application can't do everything and will never replace the exchange of experience and best practice"
     },
     "login": {
-        "other": "login"
+        "other": "Login"
+    },
+    "signin": {
+        "other": "Sign up"
     },
     "month": {
         "other": "month"

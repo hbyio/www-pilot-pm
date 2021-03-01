@@ -4,7 +4,7 @@ title: Pilot helps teams producing content
 heroSubtitle: Pilot makes it easier and more enjoyable to plan and produce content with your teams, wherever they are.
 ourClientsSub: They trust us
 ourClients: Our clients
-OurClientsCopy: We support the teams of these large groups (sometimes since 2013) in their marketing campaigns, website redesigns, social networking and employer branding strategies.
+OurClientsCopy: We help these teams (sometimes since 2013) to save time in the production of content for their website redesigns, marketing campaigns or social media presence.
 moreTimeSub: What we bring you
 moreTime: More time, more serenity, more structure.
 moreTimeCopy: An editorial project management tool is designed to centralise information, organise tasks, and respond quickly and accurately to questions that are repeated tirelessly throughout the day. The rest is up to you.
@@ -40,8 +40,13 @@ featuresValidationBody: "Do you know the problem with Word documents that circul
 
 With the 4 people who validate it who will send you back their versions that you will have to merge?
 
-This problem does not exist with us. Bye bye article-ok-v12-validmarket-last.docx!
+This problem does not exist with us. 
+
+Bye bye article-ok-v12-validmarket-last.docx!
 "
 featuresWorkflow: "Workflow: guide the team 🗺️"
-featuresWorkflowBody: "Simply design a clear process that is adapted to your context. Write down in one place one vital piece of information: what needs to be done to go from draft to \"ready to publish\""
+featuresWorkflowBody: "Simply design a clear process that is adapted to your context. 
+
+Write down in one place one vital piece of information: what needs to be done to go from draft to \"ready to publish\""
+latestPublications: Latest publications
 ---
