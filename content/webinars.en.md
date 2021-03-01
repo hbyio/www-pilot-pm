@@ -7,7 +7,7 @@ draft: false
 svg: webinar
 menu:
     main:
-        parent: Ressources
+        parent: Resources
         weight: 1
 ---
 
